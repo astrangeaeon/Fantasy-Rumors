@@ -16,19 +16,26 @@ body {
 <p>Randomly generated rumors</p>
 
 <p>below will look weird</p>
-<p>There's a <span id='place'></span> in <span id='location'></span> where <span id='subject'></span> <span id='verb'></span></p>
+<p>There's a <span id="place"></span> in <span id="location"></span> where <span id="subject"></span> <span id="verb"></span></p>
 
 <p id="demo"></p>
 
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+
 let place = "place";
-let location = "France";
+let location2 = "France";
 let subject = "the naked ladies";
 let verb = "dance";
 
-let text = `There's a ${place} in ${location} where ${subject} ${verb}.`;
+let text = `There's a ${place} in ${location2} where ${subject} ${verb}.`;
 
-document.getElementByID("demo").innerHTML = text;
+document.getElementById("demo").innerHTML = text;
+
+  // Your code to run when the DOM is ready
+});
+
+
 
 </script>
 
