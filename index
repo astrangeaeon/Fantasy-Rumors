@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Fantasy Rumors</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>Fantasy Rumors</h1>
+<p>Randomly generated rumors</p>
+
+
+<p>There's a <span id='place'></span> in <span id='location'></span> where <span id='subject'></span> <span id='verb'></span></p>
+
+
+</body>
+</html>
