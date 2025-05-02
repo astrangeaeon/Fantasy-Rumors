@@ -15,7 +15,26 @@ body {
 <h1>Fantasy Rumors</h1>
 <p>Randomly generated rumors</p>
 
+<p>below will look weird</p>
 <p>There's a <span id='place'></span> in <span id='location'></span> where <span id='subject'></span> <span id='verb'></span></p>
-  
+
+<p id="demo"></p>
+
+<script>
+let place = "place";
+let location = "France";
+let subject = "the naked ladies";
+let verb = "dance";
+
+let text = `There's a ${place} in ${location} where ${subject} ${verb}.`;
+
+document.getElementByID("demo").innerHTML = text;
+
+</script>
+
+
+
+
+
 </body>
 </html>
