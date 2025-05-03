@@ -15,64 +15,66 @@ body {
 <h1>Fantasy Rumors</h1>
 <p>Randomly generated rumors</p>
 
-<p>below will look weird</p>
-<p>There's a <span id="place"></span> in <span id="location"></span> where <span id="subject"></span> <span id="verb"></span></p>
-
 <p id="demo"></p>
 <button id="generateBtn">Generate Sentence</button>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-    // Define structured options with variations
-    const data = {
-        places: ["place", "spot", "town", "village"],
-        locations: [
-            "France",
-            "Spain",
-            "Germany",
-            "Italy",
-            ["medieval France", "Vichy France", "post-war France"],
-            ["ancient Rome", "modern Italy"],
-            ["Berlin", "Bavaria", "the Black Forest"]
-        ],
-        subjects: [
-            "the naked ladies",
-            "the old men",
-            "the dancers",
-            "the musicians",
-            ["the knights", "the jesters", "the troubadours"]
-        ],
-        verbs: ["dance", "sing", "play music", "whistle", ["chant", "recite poetry", "juggle"]]
-    };
 
-    // Recursive function to pick from strings, arrays, or nested arrays
-    function resolve(value) {
-        if (Array.isArray(value)) {
-            return resolve(value[Math.floor(Math.random() * value.length)]);
-        }
-        return value;
+const tables = {
+    urban_place_adjective: ["charming", "gritty", "bustling"],
+    urban_place: ["market", "alley", "square"],
+    compass_direction: ["north", "south", "east", "west"],
+    landmark: ["the cathedral", "the river", "the castle"],
+    urban_location: ["${compass_direction} of ${landmark}"],
+    urban_subjectplural: ["the merchants", "the performers", "the thieves"],
+    urban_verbplural: ["shout", "dance", "haggle"],
+    urban_subjectsingular: ["a street performer", "a pickpocket", "a monk"],
+    urban_verbsingular: ["sings", "sneaks", "prays"],
+    urban_subjectverb: [
+        "${urban_subjectplural} ${urban_verbplural}",
+        "${urban_subjectsingular} ${urban_verbsingular}"
+    ],
+    sentence: [
+        "There's a ${urban_place_adjective} ${urban_place} ${urban_location}. It's said that here, ${urban_subjectverb}."
+    ]
+};
+
+function resolve(template) {
+    // If it's an array, pick a random entry and resolve it
+    if (Array.isArray(template)) {
+        return resolve(template[Math.floor(Math.random() * template.length)]);
     }
 
-    function generateSentence() {
-        const place = resolve(data.places);
-        const location = resolve(data.locations);
-        const subject = resolve(data.subjects);
-        const verb = resolve(data.verbs);
-        const text = `There's a ${place} in ${location} where ${subject} ${verb}.`;
-        document.getElementById("demo").innerHTML = text;
+    // If it's a string with embedded parameters, resolve them recursively
+    if (typeof template === "string") {
+        return template.replace(/\$\{(\w+)\}/g, (_, key) => {
+            const value = tables[key];
+            if (!value) return `[undefined:${key}]`; // helpful for debugging
+            return resolve(value);
+        });
     }
 
-    // Initial generation
-    generateSentence();
+    return template;
+}
+const output = resolve(tables["sentence"]);
+console.log(output);
+document.getElementById("demo").innerText = output;
+
+function generateSentence() {
+const output = resolve(tables["sentence"]);
+console.log(output);
+document.getElementById("demo").innerText = output;
+console.log("call me maybe " + output);
+}
+
+ // Initial generation
+    resolve();
 
     // Button click
     document.getElementById("generateBtn").addEventListener("click", generateSentence);
-});
+
+
 </script>
-
-
-
-
 
 </body>
 </html>
