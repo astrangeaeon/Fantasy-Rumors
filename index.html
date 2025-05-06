@@ -21,41 +21,109 @@ body {
 <script>
 
 const tables = {
-    urban_place_adjective: ["charming", "gritty", "bustling"],
-    urban_place: ["market", "alley", "square"],
-    compass_direction: ["north", "south", "east", "west"],
-    landmark: ["the cathedral", "the river", "the castle"],
-    urban_location: ["${compass_direction} of ${landmark}"],
-    urban_subjectplural: ["the merchants", "the performers", "the thieves"],
-    urban_verbplural: ["shout", "dance", "haggle"],
-    urban_subjectsingular: ["a street performer", "a pickpocket", "a monk"],
-    urban_verbsingular: ["sings", "sneaks", "prays"],
+    urban_place_adjective: [
+        { value: "charming", weight: 2 },
+        { value: "unusual", weight: 1 },
+        { value: "bustling", weight: 1 }
+    ],
+    urban_place: [
+        { value: "market", weight: 1 },
+        { value: "alley", weight: 1 },
+        { value: "square", weight: 1 }
+    ],
+    compass_direction: [
+        { value: "north", weight: 2 },
+        { value: "south", weight: 2 },
+        { value: "east", weight: 1 },
+        { value: "west", weight: 1 }
+    ],
+    landmark: [
+        { value: "the cathedral", weight: 1 },
+        { value: "the river", weight: 1 },
+        { value: "the castle", weight: 1 }
+    ],
+    urban_location: [
+        { value: "${compass_direction} of ${landmark}", weight: 1 }
+    ],
+    urban_subjectplural: [
+        { value: "the merchants", weight: 1 },
+        { value: "the performers", weight: 1 },
+        { value: "the thieves", weight: 1 }
+    ],
+    urban_verbplural: [
+        { value: "shout", weight: 1 },
+        { value: "dance", weight: 1 },
+        { value: "haggle", weight: 1 }
+    ],
+    urban_subjectsingular: [
+        { value: "street performer", weight: 1 },
+        { value: "pickpocket", weight: 1 },
+        { value: "onion-seller", weight: 1 }
+    ],
+    urban_verbsingular: [
+        { value: "sings", weight: 1 },
+        { value: "sneaks", weight: 1 },
+        { value: "prays", weight: 1 }
+    ],
     urban_subjectverb: [
-        "${urban_subjectplural} ${urban_verbplural}",
-        "${urban_subjectsingular} ${urban_verbsingular}"
+        { value: "${urban_subjectplural} ${urban_verbplural}", weight: 1 },
+        { value: "${a:urban_subjectsingular} ${urban_verbsingular}", weight: 1 }
     ],
     sentence: [
-        "There's a ${urban_place_adjective} ${urban_place} ${urban_location}. It's said that here, ${urban_subjectverb}."
+        { value: "There's ${a:urban_place_adjective} ${urban_place} ${urban_location}. It's said that here, ${urban_subjectverb}.", weight: 1 }
     ]
 };
 
-function resolve(template) {
-    // If it's an array, pick a random entry and resolve it
-    if (Array.isArray(template)) {
-        return resolve(template[Math.floor(Math.random() * template.length)]);
+function getIndefiniteArticle(word) {
+    if (!word) return "a";
+    return /^[aeiou]/i.test(word) ? "an" : "a";
+}
+
+function weightedRandom(items) {
+    if (!Array.isArray(items)) return items;
+
+    const normalizedItems = items.map(item =>
+        typeof item === "object" && item.value !== undefined
+            ? item
+            : { value: item, weight: 1 }
+    );
+
+    const totalWeight = normalizedItems.reduce((sum, item) => sum + item.weight, 0);
+    let random = Math.random() * totalWeight;
+
+    for (const item of normalizedItems) {
+        if (random < item.weight) {
+            return item.value;
+        }
+        random -= item.weight;
     }
 
-    // If it's a string with embedded parameters, resolve them recursively
+    return normalizedItems[normalizedItems.length - 1].value; // fallback
+}
+
+function resolve(template) {
+    if (Array.isArray(template)) {
+        return resolve(weightedRandom(template));
+    }
+
     if (typeof template === "string") {
-        return template.replace(/\$\{(\w+)\}/g, (_, key) => {
+        return template.replace(/\$\{(a:)?(\w+)\}/g, (_, articleFlag, key) => {
             const value = tables[key];
-            if (!value) return `[undefined:${key}]`; // helpful for debugging
-            return resolve(value);
+            if (!value) return `[undefined:${key}]`;
+            const resolved = resolve(value);
+
+            if (articleFlag) {
+                const article = getIndefiniteArticle(resolved);
+                return `${article} ${resolved}`;
+            }
+
+            return resolved;
         });
     }
 
     return template;
 }
+
 const output = resolve(tables["sentence"]);
 console.log(output);
 document.getElementById("demo").innerText = output;
