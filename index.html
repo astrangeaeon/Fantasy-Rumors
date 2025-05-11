@@ -13,8 +13,9 @@ body {
 <body>
 
 <h1>Fantasy Rumors</h1>
-<p>Randomly generated rumors</p>
+<p>Fantasy Rumor Generation</p>
 
+<p id="introtext"></p>
 <p id="demo"></p>
 <button id="generateBtn">Generate Sentence</button>
 
@@ -3376,8 +3377,8 @@ const tables = {
 
   I_herd: [
     { value: "${rm} that", weight: 30 },
-    { value: "You were told that ${lc:${rm}} that", weight: 2 },
-    { value: "${rm} that ${lc:${rm}} that it is said that", weight: 1 },
+    { value: "You were told that ${lc:rm} that", weight: 2 },
+    { value: "${rm} that ${lc:rm} that it is said that", weight: 1 },
   ],
 
   sculptr_adj: [
@@ -5221,8 +5222,8 @@ const tables = {
   ],
 
   FantasyGods: [
-    { value: "${FantasyGodNameFemale}, Empress of ${uc:${FantasyDomain}} and ${uc:${FantasyDomain}}", weight: 1 },
-    { value: "${FantasyGodNameMale}, High Lord of ${uc:${FantasyDomain}} and ${uc:${FantasyDomain}}", weight: 1 },
+    { value: "${FantasyGodNameFemale}, Empress of ${uc:FantasyDomain} and ${uc:FantasyDomain}", weight: 1 },
+    { value: "${FantasyGodNameMale}, High Lord of ${uc:FantasyDomain} and ${uc:FantasyDomain}", weight: 1 },
   ],
 
   FantasyGodNameFemale: [
@@ -5246,13 +5247,13 @@ const tables = {
   FantasyDomain: [
     { value: "storms", weight: 1 },
     { value: "childbirth", weight: 1 },
-    { value: "the night", weight: 1 },
+    { value: "the Night", weight: 1 },
     { value: "silence", weight: 1 },
     { value: "kissing", weight: 1 },
     { value: "blood", weight: 1 },
-    { value: "the moon", weight: 1 },
-    { value: "the sun", weight: 1 },
-    { value: "the stars", weight: 1 },
+    { value: "full Moon", weight: 1 },
+    { value: "bright Sun", weight: 1 },
+    { value: "${Colors} Stars", weight: 1 },
     { value: "rivers", weight: 1 },
     { value: "oceans", weight: 1 },
     { value: "laughter", weight: 1 },
@@ -5260,7 +5261,7 @@ const tables = {
     { value: "science", weight: 1 },
     { value: "hunting", weight: 1 },
     { value: "sorrow", weight: 1 },
-    { value: "the dead", weight: 1 },
+    { value: "death", weight: 1 },
     { value: "mountains", weight: 1 },
     { value: "travelers", weight: 1 },
     { value: "thieves", weight: 1 },
@@ -5601,9 +5602,10 @@ const tables = {
     { value: "mallard", weight: 1 },
   ],
 
-
-
-
+    intro: [
+	    { value: "${I_herd}", weight: 1 }
+		
+	],	
 
     sentence: [
         { value: "${main}", weight: 1 }
@@ -5678,6 +5680,10 @@ function resolve(template) {
 const output = resolve(tables["sentence"]);
 console.log(output);
 document.getElementById("demo").innerText = output;
+
+const output1 = resolve(tables["intro"]);
+console.log(output1);
+document.getElementById("introtext").innerText = output1;
 
 function generateSentence() {
 const output = resolve(tables["sentence"]);
