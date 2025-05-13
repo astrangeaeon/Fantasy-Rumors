@@ -18,35 +18,35 @@ body {
 <p id="introtext"></p>
 <p id="demo"></p>
 
-<p>Urban</p>
+<p><b>Urban</b></p>
 <p id="urban"></p>
 <button id="urbanBtn">New Urban Rumor</button>
 
-<p>Wilds</p>
+<p><b>Wilds</b></p>
 <p id="wilds"></p>
 <button id="wildsBtn">New Wilds Rumor</button>
 
-<p>Maritime</p>
+<p><b>Maritime</b></p>
 <p id="maritime"></p>
 <button id="maritimeBtn">New Maritime Rumor</button>
 
-<p>Dungeon</p>
+<p><b>Dungeon</b></p>
 <p id="dungeon"></p>
 <button id="dungeonBtn">New Dungeon Rumor</button>
 
-<p>Local</p>
+<p><b>Local</b></p>
 <p id="local"></p>
 <button id="localBtn">New Local Rumor</button>
 
-<p>Prophecy</p>
+<p><b>Prophecy</b></p>
 <p id="prophecy"></p>
 <button id="prophecyBtn">New Prophecy Rumor</button>
 
-<p>Strange Custom</p>
+<p><b>Strange Custom</b></p>
 <p id="custom"></p>
 <button id="customBtn">New Strange Custom Rumor</button>
 
-<button id="generateBtn">Generate Sentence</button>
+<!--<button id="generateBtn">Generate Sentence</button>-->
 
 
 <script>
@@ -1847,7 +1847,7 @@ const tables = {
 
   is: [
     { value: "populated by ${islandpop}", weight: 4 },
-    { value: "sacred to ${island_sacred} and protected by ${islandprotector}", weight: 4 },
+    { value: "sacred to ${island_sacred} and protected by ${islandprotector}", weight: 5 },
     { value: "where ${washups} washed up,", weight: 4 },
     { value: "with ${island_riches}. The island is protected by ${islandprotector}", weight: 4 },
     { value: "populated by ${islandpop} ${island_bound} ${island_riches},", weight: 2 },
@@ -2019,7 +2019,7 @@ const tables = {
   ],
 
   island_sacred: [
-    { value: "${FantasyGods},", weight: 3 },
+    { value: "${FantasyGods},", weight: 5 },
     { value: "${membership}, a group which strives to ${order_purpose}", weight: 1 },
     { value: "a many-armed god of silk", weight: 1 },
     { value: "an old god, said to keep darkness fettered by a chain", weight: 1 },
@@ -2238,7 +2238,7 @@ const tables = {
     { value: "${FantasyName}, ${a:QuickNPC}, is descended from the King of ${foreignland}${foreign_phrase}, known as a friend of ${criminals} and driven from power ${when} ago. He supposedly held his exiled court in ${a:urbn_place}", weight: 1 },
     { value: "${FantasyName}, ${a:QuickNPC}, is related to ${heroes_and_villains} by mother’s blood", weight: 1 },
     { value: "${FantasyName}, ${a:QuickNPC}, ${slander} … (but you didn’t hear that from me!)", weight: 1 },
-    { value: "${FantasyName}, ${a{QuickNPC}, keeps ${secret} buried under ${buryingplace} in their yard", weight: 1 },
+    { value: "${FantasyName}, ${a:QuickNPC}, keeps ${secret} buried under ${buryingplace} in their yard", weight: 1 },
     { value: "${FantasyName}, ${a:QuickNPC}, knows more about ${localtopic} than they let on", weight: 1 },
     { value: "${FantasyName}, now ${a:QuickNPC}, used to be ${a:excitingpast} ${excitingemployer}", weight: 1 },
   ],
@@ -5743,9 +5743,9 @@ function resolve(template) {
     return template;
 }
 
-const output = resolve(tables["sentence"]);
-console.log(output);
-document.getElementById("demo").innerText = output;
+//const output = resolve(tables["sentence"]);
+//console.log(output);
+//document.getElementById("demo").innerText = output;
 
 const output1 = resolve(tables["intro"]);
 console.log(output1);
@@ -5829,18 +5829,18 @@ document.getElementById("custom").innerText = custom;
 console.log("call me maybe " + custom);
 }
 
-function generateSentence() {
-const output = resolve(tables["sentence"]);
-console.log(output);
-document.getElementById("demo").innerText = output;
-console.log("call me maybe " + output);
-}
+//function generateSentence() {
+//const output = resolve(tables["sentence"]);
+//console.log(output);
+//document.getElementById("demo").innerText = output;
+//console.log("call me maybe " + output);
+//}
 
  // Initial generation
     resolve();
 
     // Button click
-    document.getElementById("generateBtn").addEventListener("click", generateSentence);
+    //document.getElementById("generateBtn").addEventListener("click", generateSentence);
 	
 	document.getElementById("urbanBtn").addEventListener("click", generateUrban);
 	
