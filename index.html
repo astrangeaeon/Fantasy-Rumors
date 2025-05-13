@@ -17,7 +17,37 @@ body {
 
 <p id="introtext"></p>
 <p id="demo"></p>
+
+<p>Urban</p>
+<p id="urban"></p>
+<button id="urbanBtn">New Urban Rumor</button>
+
+<p>Wilds</p>
+<p id="wilds"></p>
+<button id="wildsBtn">New Wilds Rumor</button>
+
+<p>Maritime</p>
+<p id="maritime"></p>
+<button id="maritimeBtn">New Maritime Rumor</button>
+
+<p>Dungeon</p>
+<p id="dungeon"></p>
+<button id="dungeonBtn">New Dungeon Rumor</button>
+
+<p>Local</p>
+<p id="local"></p>
+<button id="localBtn">New Local Rumor</button>
+
+<p>Prophecy</p>
+<p id="prophecy"></p>
+<button id="prophecyBtn">New Prophecy Rumor</button>
+
+<p>Strange Custom</p>
+<p id="custom"></p>
+<button id="customBtn">New Strange Custom Rumor</button>
+
 <button id="generateBtn">Generate Sentence</button>
+
 
 <script>
 
@@ -3555,7 +3585,7 @@ const tables = {
   ],
 
   Strange_Custom: [
-    { value: "in ${foreign_adj}${foreignland}${foreign_phrase}, there’s ${a:strange} ${custom} where ${strangecustom}", weight: 1 },
+    { value: "in ${foreign_adj}${foreignland}${foreign_phrase}, there’s ${a:strange} ${habit} where ${strangecustom}", weight: 1 },
   ],
 
   strange: [
@@ -3575,7 +3605,7 @@ const tables = {
     { value: "weird", weight: 1 },
   ],
 
-  custom: [
+  habit: [
     { value: "custom", weight: 3 },
     { value: "convention", weight: 1 },
     { value: "habit", weight: 1 },
@@ -5606,6 +5636,42 @@ const tables = {
 	    { value: "${I_herd}", weight: 1 }
 		
 	],	
+	
+	urban: [
+	    { value: "${Urban}", weight: 1 }
+		
+	],	
+	
+	wilds: [
+	    { value: "${Wilds}", weight: 1 }
+		
+	],	
+	
+	maritime: [
+	    { value: "${Maritime}", weight: 1 }
+		
+	],	
+	
+	dungeon: [
+	    { value: "${Dungeon}", weight: 1 }
+		
+	],	
+	
+	local: [
+	    { value: "${Local}", weight: 1 }
+		
+	],	
+	
+	prophecy: [
+	    { value: "${Prophecy}", weight: 1 }
+		
+	],	
+	
+	
+	custom: [
+	    { value: "${Strange_Custom}", weight: 1 }
+		
+	],	
 
     sentence: [
         { value: "${main}", weight: 1 }
@@ -5685,6 +5751,84 @@ const output1 = resolve(tables["intro"]);
 console.log(output1);
 document.getElementById("introtext").innerText = output1;
 
+const urban = resolve(tables["urban"]);
+console.log(urban);
+document.getElementById("urban").innerText = urban;
+
+const wilds = resolve(tables["wilds"]);
+console.log(wilds);
+document.getElementById("wilds").innerText = wilds;
+
+const maritime = resolve(tables["maritime"]);
+console.log(maritime);
+document.getElementById("maritime").innerText = maritime;
+
+const dungeon = resolve(tables["dungeon"]);
+console.log(dungeon);
+document.getElementById("dungeon").innerText = dungeon;
+
+const local = resolve(tables["local"]);
+console.log(local);
+document.getElementById("local").innerText = local;
+
+const prophecy = resolve(tables["prophecy"]);
+console.log(prophecy);
+document.getElementById("prophecy").innerText = prophecy;
+
+const custom = resolve(tables["custom"]);
+console.log(custom);
+document.getElementById("custom").innerText = custom;
+
+
+function generateUrban() {
+const urban = resolve(tables["urban"]);
+console.log(urban);
+document.getElementById("urban").innerText = urban;
+console.log("call me maybe " + urban);
+}
+
+function generateWilds() {
+const wilds = resolve(tables["wilds"]);
+console.log(wilds);
+document.getElementById("wilds").innerText = wilds;
+console.log("call me maybe " + wilds);
+}
+
+function generateMaritime() {
+const maritime = resolve(tables["maritime"]);
+console.log(maritime);
+document.getElementById("maritime").innerText = maritime;
+console.log("call me maybe " + maritime);
+}
+
+function generateDungeon() {
+const dungeon = resolve(tables["dungeon"]);
+console.log(dungeon);
+document.getElementById("dungeon").innerText = dungeon;
+console.log("call me maybe " + dungeon);
+}
+
+function generateLocal() {
+const local = resolve(tables["local"]);
+console.log(local);
+document.getElementById("local").innerText = local;
+console.log("call me maybe " + local);
+}
+
+function generateProphecy() {
+const prophecy = resolve(tables["prophecy"]);
+console.log(prophecy);
+document.getElementById("prophecy").innerText = prophecy;
+console.log("call me maybe " + prophecy);
+}
+
+function generateCustom() {
+const custom = resolve(tables["custom"]);
+console.log(custom);
+document.getElementById("custom").innerText = custom;
+console.log("call me maybe " + custom);
+}
+
 function generateSentence() {
 const output = resolve(tables["sentence"]);
 console.log(output);
@@ -5697,6 +5841,20 @@ console.log("call me maybe " + output);
 
     // Button click
     document.getElementById("generateBtn").addEventListener("click", generateSentence);
+	
+	document.getElementById("urbanBtn").addEventListener("click", generateUrban);
+	
+	document.getElementById("wildsBtn").addEventListener("click", generateWilds);
+	
+	document.getElementById("maritimeBtn").addEventListener("click", generateMaritime);
+	
+	document.getElementById("dungeonBtn").addEventListener("click", generateDungeon);
+	
+	document.getElementById("localBtn").addEventListener("click", generateLocal);
+	
+	document.getElementById("prophecyBtn").addEventListener("click", generateProphecy);
+	
+	document.getElementById("customBtn").addEventListener("click", generateCustom);
 
 
 </script>
