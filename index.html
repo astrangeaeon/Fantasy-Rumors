@@ -12,10 +12,10 @@ body {
 </head>
 <body>
 
-<h1>Fantasy Rumors</h1>
-<p>Fantasy Rumor Generation</p>
+<!--<h1>Fantasy Rumors</h1>
+<p>Fantasy Rumor Generation</p>-->
 
-<p id="introtext"></p>
+<h1 id="introtext"></h1>
 <p id="demo"></p>
 
 <p><b>Urban</b></p>
@@ -5749,7 +5749,7 @@ function resolve(template) {
 
 const output1 = resolve(tables["intro"]);
 console.log(output1);
-document.getElementById("introtext").innerText = output1;
+document.getElementById("introtext").innerText = output1+"...";
 
 const urban = resolve(tables["urban"]);
 console.log(urban);
