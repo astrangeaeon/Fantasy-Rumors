@@ -5252,9 +5252,19 @@ const tables = {
   ],
 
   FantasyGods: [
-    { value: "${FantasyGodNameFemale}, Empress of ${uc:FantasyDomain} and ${uc:FantasyDomain}", weight: 1 },
-    { value: "${FantasyGodNameMale}, High Lord of ${uc:FantasyDomain} and ${uc:FantasyDomain}", weight: 1 },
+    { value: "${FantasyGodNameFemale}, ${uc:FantasyGodAdjective} Empress of ${uc:FantasyDomain} and ${uc:FantasyDomain}", weight: 1 },
+    { value: "${FantasyGodNameMale}, ${uc:FantasyGodAdjective} High Lord of ${uc:FantasyDomain} and ${uc:FantasyDomain}", weight: 1 },
   ],
+  
+  FantasyGodAdjective: [
+	{ value: "", weight: 10 },
+	{ value: "righteous", weight: 1 },
+	{ value: "faultless", weight: 1 },
+	{ value: "peerless", weight: 1 },
+	{ value: "gigantic", weight: 1 },
+	{ value: "former", weight: 1 },
+  ],
+	
 
   FantasyGodNameFemale: [
     { value: "Trixie", weight: 1 },
@@ -5275,11 +5285,11 @@ const tables = {
   ],
 
   FantasyDomain: [
-    { value: "storms", weight: 1 },
+    { value: "faraway Storms", weight: 1 },
     { value: "childbirth", weight: 1 },
     { value: "the Night", weight: 1 },
     { value: "silence", weight: 1 },
-    { value: "kissing", weight: 1 },
+    { value: "passionate Kisses", weight: 1 },
     { value: "blood", weight: 1 },
     { value: "full Moon", weight: 1 },
     { value: "bright Sun", weight: 1 },
@@ -5312,6 +5322,12 @@ const tables = {
     { value: "fish", weight: 1 },
     { value: "justice", weight: 1 },
     { value: "clouds", weight: 1 },
+	{ value: "empty Bottles", weight: 1 },
+    { value: "spent Lovers", weight: 1 },
+    { value: "sturdy Boots", weight: 1 },
+	{ value: "white Lies", weight: 1 },
+    { value: "two in the Afternoon", weight: 1 },
+    { value: "the ${QuickNPCJob}", weight: 1 },
     { value: "rain", weight: 1 },
   ],
 
@@ -5403,6 +5419,7 @@ const tables = {
     { value: "helicopter pilot", weight: 1 },
     { value: "TV and VCR specialist", weight: 1 },
     { value: "special agent", weight: 1 },
+	{ value: "data scientist", weight: 1 },
   ],
 
   MusicalInstrument: [
