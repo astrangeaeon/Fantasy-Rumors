@@ -240,6 +240,7 @@ const tables = {
     { value: " whose soul split into a dozen parts, causing storms at sea and mischief on land,", weight: 1 },
     { value: " whose wife, horse, charioteer, disciple and holy tree were all born at the same moment,", weight: 1 },
     { value: " with the strength of a dozen men,", weight: 1 },
+	{ value: " whose heart was a nest for ${AnimalInsect}s,", weight: 1 },
     { value: " without whom the gods would not know their hour,", weight: 1 },
   ],
 
@@ -4662,11 +4663,13 @@ const tables = {
 
   who_is_buried: [
     { value: "${tc},${tomb_anecdote}", weight: 2 },
+	{ value: "${tc}, child of ${FantasyGods},${tomb_anecdote}", weight: 2 },
     { value: "${EgyptianNameMale}, the ${ordinal} prince of the ${uc:ordinal} Dynasty,${tomb_anecdote}", weight: 1 },
     { value: "Prince Axum, the shining son,${tomb_anecdote}", weight: 1 },
     { value: "Sultan Abdullah Abdullah, the djinn-slayer,${tomb_anecdote}", weight: 1 },
     { value: "the God-Emperor Vibx, first of his race,${tomb_anecdote}", weight: 1 },
 	{ value: "Daimyo Gekido, whose unflinching gaze turned back the Great Tsunami,${tomb_anecdote}", weight: 1 },
+	{ value: "Archon Rabindranath, whose laughter thundered the Jade Pavilion,${tomb_anecdote}", weight: 1 },
     { value: "the King of Dust, in glorious bandages arrayed,${tomb_anecdote}", weight: 1 },
   ],
 
@@ -5253,17 +5256,17 @@ const tables = {
   ],
 
   FantasyGods: [
-    { value: "${FantasyGodNameFemale}, ${uc:FantasyGodAdjective} Empress of ${uc:FantasyDomain} and ${uc:FantasyDomain}", weight: 1 },
-    { value: "${FantasyGodNameMale}, ${uc:FantasyGodAdjective} High Lord of ${uc:FantasyDomain} and ${uc:FantasyDomain}", weight: 1 },
+    { value: "${FantasyGodNameFemale}, ${FantasyGodAdjective} Empress of ${uc:FantasyDomain} and ${uc:FantasyDomain}", weight: 1 },
+    { value: "${FantasyGodNameMale}, ${FantasyGodAdjective} High Lord of ${uc:FantasyDomain} and ${uc:FantasyDomain}", weight: 1 },
   ],
   
   FantasyGodAdjective: [
 	{ value: "", weight: 10 },
-	{ value: "righteous", weight: 1 },
-	{ value: "faultless", weight: 1 },
-	{ value: "peerless", weight: 1 },
-	{ value: "gigantic", weight: 1 },
-	{ value: "former", weight: 1 },
+	{ value: "the Righteous", weight: 1 },
+	{ value: "the Faultless", weight: 1 },
+	{ value: "the Peerless", weight: 1 },
+	{ value: "the Gigantic", weight: 1 },
+	{ value: "the former", weight: 1 },
   ],
 	
 
@@ -5328,7 +5331,7 @@ const tables = {
     { value: "sturdy Boots", weight: 1 },
 	{ value: "white Lies", weight: 1 },
     { value: "two in the Afternoon", weight: 1 },
-    { value: "the ${QuickNPCJob}", weight: 1 },
+    { value: "the ${uc:QuickNPCJob}", weight: 1 },
 	{ value: "the Next Ten Minutes", weight: 1 },
     { value: "rain", weight: 1 },
   ],
