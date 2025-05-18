@@ -5258,6 +5258,8 @@ const tables = {
   FantasyGods: [
     { value: "${FantasyGodNameFemale}, ${FantasyGodAdjective} Empress of ${uc:FantasyDomain} and ${uc:FantasyDomain}", weight: 1 },
     { value: "${FantasyGodNameMale}, ${FantasyGodAdjective} High Lord of ${uc:FantasyDomain} and ${uc:FantasyDomain}", weight: 1 },
+	{ value: "${FantasyGodNameMale}, ${FantasyGodAdjective} Guardian of ${uc:FantasyDomain}${FantasyGodExtra}", weight: 1 },
+	{ value: "${FantasyGodNameFemale}, ${FantasyGodAdjective} Queen of ${uc:FantasyDomain}${FantasyGodExtra}", weight: 1 },
   ],
   
   FantasyGodAdjective: [
@@ -5268,7 +5270,20 @@ const tables = {
 	{ value: "the Gigantic", weight: 1 },
 	{ value: "the former", weight: 1 },
   ],
+  
+  FantasyGodExtra: [
+	{ value: "", weight: 10 },
+	{ value: ", whose followers ${FantasyGodFollowers}", weight: 1 },
+	{ value: ", whose sign is the ${MiscSymbol}", weight: 1 },
+	{ value: ", the ${FamilyMember} of ${ntc}", weight: 1 },
+  ],
 	
+	
+ FantasyGodFollowers: [
+    { value: "don ${Colors} garments", weight: 1 },
+    { value: "abstain from ${addiction}", weight: 1 },
+    { value: "seek to convert ${criminals} and ${criminals}", weight: 1 },
+  ],	
 
   FantasyGodNameFemale: [
     { value: "Trixie", weight: 1 },
@@ -5322,8 +5337,9 @@ const tables = {
     { value: "nature", weight: 1 },
     { value: "animals", weight: 1 },
     { value: "arson", weight: 1 },
-    { value: "birds", weight: 1 },
-    { value: "fish", weight: 1 },
+    { value: "birdsong", weight: 1 },
+	{ value: "spilled Wine", weight: 1 },
+    { value: "rings Thrown into Lakes", weight: 1 },
     { value: "justice", weight: 1 },
     { value: "clouds", weight: 1 },
 	{ value: "empty Bottles", weight: 1 },
