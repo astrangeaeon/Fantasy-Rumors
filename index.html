@@ -1844,6 +1844,84 @@ const tables = {
     { value: "ignored", weight: 1 },
     { value: "silent", weight: 1 },
   ],
+  
+  idol: [
+    { value: "${a:idol_size} ${idol_material} idol ${idol_of} ${a:idol_subject}", weight: 1 },
+  ],
+  
+  idol_size: [
+    { value: "small", weight: 1 },
+	{ value: "life-sized", weight: 1 },
+	{ value: "enormous", weight: 1 },
+  ],
+  
+  idol_material: [
+    { value: "stone", weight: 1 },
+	{ value: "ruby", weight: 1 },
+	{ value: "wooden", weight: 1 },
+	{ value: "crystal", weight: 1 },
+	{ value: "coral", weight: 1 },
+	{ value: "gem-studded", weight: 1 },
+	{ value: "gold", weight: 1 },
+	{ value: "silver", weight: 1 },
+	{ value: "bronze", weight: 1 },
+  ],
+  
+  idol_of: [
+    { value: "of", weight: 10 },
+	{ value: "that vaguely resembles", weight: 3 },
+	{ value: "that's a startlingly realistic depiction of", weight: 1 },
+  ],
+  
+  idol_subject: [
+    { value: "${idol_subject_human}", weight: 1 },
+	{ value: "${idol_subject_animal}", weight: 1 },
+  ],
+  
+  idol_subject_human: [
+    { value: "${idol_subject_human_type}", weight: 1 },
+	{ value: "${idol_subject_human_pre_desc} ${idol_subject_human_type}", weight: 1 },
+	{ value: "${idol_subject_human_type} ${idol_subject_human_post_desc}", weight: 1 },
+	{ value: "${idol_subject_human_pre_desc} ${idol_subject_human_type} ${idol_subject_human_post_desc}", weight: 1 },
+  ],
+  
+  
+   idol_subject_animal: [
+    { value: "${AnimalOrdinary}", weight: 1 },
+	{ value: "${idol_subject_human_pre_desc} ${AnimalOrdinary}", weight: 1 },
+	{ value: "${AnimalOrdinary} ${idol_subject_human_post_desc}", weight: 1 },
+	{ value: "${idol_subject_human_pre_desc} ${AnimalOrdinary} ${idol_subject_human_post_desc}", weight: 1 },
+  ],
+  
+  idol_subject_human_pre_desc: [
+    { value: "grinning", weight: 1 },
+	{ value: "stern", weight: 1 },
+	{ value: "pregnant", weight: 1 },
+	{ value: "suffering", weight: 1 },
+	{ value: "ferocious", weight: 1 },
+	{ value: "beautiful", weight: 1 },
+	{ value: "furious", weight: 1 },
+  ],
+  
+  idol_subject_human_post_desc: [
+    { value: "with a moving tail", weight: 1 },
+	{ value: "that smells like ${Smells}", weight: 1 },
+	{ value: "with a flaming head", weight: 1 },
+	{ value: "with a third eye", weight: 1 },
+	{ value: "with extra arms", weight: 1 },
+	{ value: "with exaggerated genitalia", weight: 1 },
+  ],
+  
+  idol_subject_human_type: [
+    { value: "man", weight: 1 },
+	{ value: "woman", weight: 1 },
+	{ value: "child", weight: 1 },
+	{ value: "boy", weight: 1 },
+	{ value: "girl", weight: 1 },
+	{ value: "elf", weight: 1 },
+	{ value: "dwarf", weight: 1 },
+	{ value: "${occupation}", weight: 1 },
+  ],
 
   island: [
     { value: "an island ${is}", weight: 1 },
@@ -4250,6 +4328,7 @@ const tables = {
     { value: "thieving monkeys who break into homes and steal food", weight: 1 },
     { value: "water contaminated with infected water fleas", weight: 1 },
     { value: "widespread drought", weight: 1 },
+	{ value: "the theft of ${idol}", weight: 1 },
   ],
 
   urbn_subjectplural: [
@@ -4321,6 +4400,7 @@ const tables = {
     { value: "unsmiling, blue-robed halflings", weight: 1 },
     { value: "vicious halflings interbred with animals", weight: 1 },
     { value: "wild druids", weight: 1 },
+	{ value: "worshippers of ${idol}", weight: 1 },
     { value: "wise silver-beards addicted to ${addiction}", weight: 1 },
     { value: "youthful maidens in diaphanous dresses", weight: 1 },
   ],
@@ -4493,6 +4573,7 @@ const tables = {
     { value: "violate their oaths in mockery of those who would control them", weight: 1 },
     { value: "wait patiently for a celestial sign", weight: 1 },
     { value: "with severed tongues are learning telepathy", weight: 1 },
+	{ value: "bow before ${idol}", weight: 1 },
     { value: "worship a terrible god without feet or hands", weight: 1 },
   ],
 
@@ -4586,6 +4667,7 @@ const tables = {
     { value: "suspiciously fits the description of a trickster god", weight: 1 },
     { value: "teaches cantrips to the disenfranchised", weight: 1 },
     { value: "teaches the high art of hypocrisy", weight: 1 },
+	{ value: "tempts the foolish to touch ${idol}", weight: 1 },
     { value: "tells lies about a dark red ocean and rainbows of only three colors", weight: 1 },
     { value: "trades wishes for wine", weight: 1 },
     { value: "trains hounds to smell and track ${huntingmonster}", weight: 1 },
@@ -4624,6 +4706,7 @@ const tables = {
     { value: "a massive tooth, taller than a troll,", weight: 1 },
     { value: "a short-necked giraffe with liquid metal skin", weight: 1 },
     { value: "a vast mollusk", weight: 1 },
+	{ value: "${idol}", weight: 1 },
     { value: "a vast tangled silver thread", weight: 1 },
     { value: "an enormous dead crab", weight: 1 },
     { value: "an enormous jellyfish corpse", weight: 1 },
@@ -4793,6 +4876,7 @@ const tables = {
     { value: "on a high, sombre hill there, 120 knights in silver armor sleep in a cave", weight: 1 },
     { value: "on warm summer nights, strains of elegant music drift from a fallen mansion", weight: 1 },
     { value: "the ancient lights of the Sealed City can be seen", weight: 1 },
+	{ value: "${idol} sits surrounded by scorched earth", weight: 1 },
     { value: "the massive mallet used to hammer out the sky at the dawn of time lies half-buried where it was cast", weight: 1 },
     { value: "there stands a shrine to Korvak, the Hunting Lord", weight: 1 },
     { value: "there’s a 10×10 patch of ground upon which it is impossible to die", weight: 1 },
