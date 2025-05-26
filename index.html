@@ -1654,6 +1654,7 @@ const tables = {
     { value: "lying to God", weight: 1 },
     { value: "stealing from ${monstertype}", weight: 1 },
     { value: "trespassing in sacred ${slumberplace}", weight: 1 },
+	{ value: "stealing ${idol}", weight: 1 },
   ],
 
   hero_fate: [
@@ -1664,6 +1665,7 @@ const tables = {
     { value: "was captured by a savage band of ${criminals}", weight: 1 },
     { value: "was defeated by a beast with a hundred legs", weight: 1 },
     { value: "was eaten by a grue", weight: 1 },
+	{ value: "now hangs in chains before ${idol}", weight: 1 },
     { value: "his skull now houses a family of mice", weight: 1 },
   ],
 
@@ -1912,10 +1914,23 @@ const tables = {
 	{ value: "with exaggerated genitalia", weight: 1 },
 	{ value: "with life-like skin", weight: 1 },
 	{ value: "that sweats", weight: 1 },
+	{ value: "with silver ${wingtype} wings", weight: 1 },
 	{ value: "that cries tears of blood", weight: 1 },
+	{ value: "that's warm to the touch", weight: 1 },
+	{ value: "that's cold as glacier ice", weight: 1 },
 	{ value: "with a tongue of ${DecorativeStone} ", weight: 1 },
 	{ value: "with eyes of ${DecorativeStone}", weight: 1 },
   ],
+  
+  wingtype: [
+    { value: "bird", weight: 1 },
+	{ value: "angel", weight: 1 },
+	{ value: "bat", weight: 1 },
+	{ value: "dragon", weight: 1 },
+	{ value: "daemon", weight: 1 },
+	{ value: "dragonfly", weight: 1 },
+	{ value: "butterfly", weight: 1 },
+ ],	
   
   idol_subject_human_type: [
     { value: "man", weight: 1 },
@@ -1950,6 +1965,7 @@ const tables = {
     { value: "where the hero ${heroes_and_villains} was born holding a golden blade", weight: 1 },
     { value: "where the Jaguar Lady is propitiated by both the lighting of candles and grisly blood rituals", weight: 1 },
     { value: "where the lion-god Aker guards the Gate of the Dawn through which the sun passes", weight: 1 },
+	{ value: "where ${idol} rests atop a high hill", weight: 1 },
     { value: "where the towering pole which holds up the tent of the sky is found, protected by ${islandprotector},", weight: 1 },
     { value: "where the world’s ${AnimalInsect} population arrives every seventeen years to honor their obscure god,", weight: 1 },
   ],
@@ -2005,7 +2021,7 @@ const tables = {
     { value: "snails with ornately decorated house-sized shells", weight: 1 },
     { value: "stone men who mine fire which they eat", weight: 1 },
     { value: "the dreams of Thethomos", weight: 1 },
-    { value: "the last siren", weight: 1 },
+    { value: "the last male siren", weight: 1 },
     { value: "the sad remnants of the Combine Empire", weight: 1 },
     { value: "washed-up survivors from a future calamity", weight: 1 },
     { value: "wise giant tortoises", weight: 1 },
@@ -2741,6 +2757,7 @@ const tables = {
     { value: "A greedy ${monsterA} on the ${floors} floor can be bargained with if its desire for ${collection} to add to its collection is appeased", weight: 1 },
     { value: "${uc:a:monsterA} on the ${floors} floor, pregnant for over a decade, offers to free ${urbn_subjectsingular} they hold captive if any can offer relief", weight: 1 },
     { value: "Here the ${huntingmonster} of ${foreign_adj}${foreignland}${foreign_phrase} dwell amid squalor and noise, bellowing and vomiting black gore", weight: 1 },
+	{ value: "${monstertype} prays to ${idol} in the ruins of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
   ],
 
   monsterA: [
@@ -2778,7 +2795,7 @@ const tables = {
     { value: "${DemonName}, a ${monsterdragontype} dragon,", weight: 1 },
     { value: "${DemonName}, an apple-sweet murmurer,", weight: 1 },
     { value: "${a:DungeonAdjective} ${monsterA}", weight: 1 },
-    { value: "${uc:a:WeirdFantasyMonster}", weight: 1 },
+    { value: "${a:WeirdFantasyMonster}", weight: 1 },
   ],
 
   monstervalue: [
