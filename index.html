@@ -767,6 +767,7 @@ const tables = {
     { value: "lightning", weight: 1 },
     { value: "singing", weight: 1 },
     { value: "spider", weight: 1 },
+	{ value: "spitting", weight: 1 },
     { value: "time", weight: 1 },
     { value: "water", weight: 1 },
     { value: "weeping", weight: 1 },
@@ -1200,11 +1201,13 @@ const tables = {
     { value: "we shall be slain by Vishnu, and Vishnu’s great spear will take us to Vishnu’s heaven, for even the wrath of Vishnu is a blessing", weight: 1 },
     { value: "we shall drink from the cup that is too sweet to pass", weight: 1 },
     { value: "we will lose our immunity to the virus whose side effect is happiness", weight: 1 },
+	{ value: "${historybuild} will return to aid mankind once again", weight: 1 },
   ],
 
   exchangething: [
     { value: "addictive spiced jerky", weight: 1 },
     { value: "amulets from pillaged tombs", weight: 1 },
+	{ value: "artifacts of ${historybuild}", weight: 1 },
     { value: "baby skunks", weight: 1 },
     { value: "backpacks full of fingernails", weight: 1 },
     { value: "bitter white fish", weight: 1 },
@@ -1296,7 +1299,7 @@ const tables = {
 
   facial_desc: [
     { value: "with ${fd}", weight: 10 },
-    { value: "who tells a tale of ${fd_tale}", weight: 2 },
+    { value: "who tells a tale of ${fd_tale}", weight: 8 },
     { value: "bearing mace and discus and conch", weight: 1 },
     { value: "bellowing and drunk", weight: 1 },
     { value: "bitten by ghosts", weight: 1 },
@@ -1369,6 +1372,7 @@ const tables = {
     { value: "an army who fights armorless and naked", weight: 1 },
     { value: "an assassin who kills all his victims by falling on them", weight: 1 },
     { value: "an assassin who works exclusively with flowers", weight: 1 },
+	{ value: "an old man who claims to be one of ${historybuild}", weight: 3 },
     { value: "a beautiful woman with poison in her breasts disguised as a wet nurse and used as an assassin of infants", weight: 1 },
     { value: "a blue dragon which is simultaneously a river that floods", weight: 1 },
     { value: "a canteen full of gold coins found near a skeleton in the desert", weight: 1 },
@@ -1565,6 +1569,7 @@ const tables = {
     { value: "renounce the sword", weight: 1 },
     { value: "sleep under the stars each night", weight: 1 },
     { value: "travel ${CompassDirection} until the blood grows tired", weight: 1 },
+	{ value: "walk in the steps of ${historybuild}", weight: 2 },
   ],
 
   geyserspray: [
@@ -1679,11 +1684,57 @@ const tables = {
     { value: "to recover the bones of ${heroes_and_villains}", weight: 1 },
     { value: "to rescue ${urbn_subjectsingular} trapped in ${a:urbn_place} on the ${floors} floor", weight: 1 },
     { value: "to seek their family members who were transformed into ${herdanimal} by ${creepyvillain}", weight: 1 },
+	{ value: "to honor ${historybuild}", weight: 1 },
   ],
 
   heroname: [
     { value: "${FantasyName}", weight: 1 },
     { value: "${heroes_and_villains}", weight: 3 },
+  ],
+  
+  historybuild: [
+    { value: "${historicalbuilders} who built ${historicalinfrastructure} ${historicalage}", weight: 1 },
+  ],
+  
+   historicalage: [
+    { value: "during the Age of Miracles", weight: 1 },
+    { value: "before the ${ancientpeople}, ${criminals} all, came down from the mountain", weight: 1 },
+    { value: "in the days of Prince Axum", weight: 1 },
+    { value: "before ${foreign_adj} ${foreignland} was settled", weight: 1 },
+    { value: "when ${FantasyGods} was a child", weight: 1 },
+    { value: "back when ${AnimalOrdinary}s still had voices", weight: 1 },
+  ],
+  
+  historicalbuilders: [
+    { value: "${po:FantasyNameMale} Widows", weight: 1 },
+    { value: "${po:FantasyNameFemale} Orphans", weight: 1 },
+	{ value: "the Baglioni of Perugia", weight: 1 },
+    { value: "the Bluejackets of Iddah", weight: 1 },
+    { value: "the Companions of the Rass", weight: 1 },
+    { value: "the Crows of Solomon", weight: 1 },
+    { value: "the Daughters of the Troll", weight: 1 },
+    { value: "the Followers of Chiron", weight: 1 },
+    { value: "the Hounds of Rutilor", weight: 1 },
+    { value: "the L’Karm", weight: 1 },
+    { value: "the Maidens Seven", weight: 1 },
+    { value: "the Malatesta of Rimini", weight: 1 },
+    { value: "the Men of the Chain and Lance", weight: 1 },
+  ],
+  
+  historicalinfrastructure: [
+    { value: "roads", weight: 1 },
+    { value: "windmills", weight: 1 },
+	{ value: "watchtowers", weight: 1 },
+    { value: "bridges", weight: 1 },
+    { value: "tunnels", weight: 1 },
+    { value: "dams", weight: 1 },
+    { value: "boundary walls", weight: 1 },
+    { value: "underground dungeons", weight: 1 },
+    { value: "wells", weight: 1 },
+    { value: "temples", weight: 1 },
+    { value: "harbors", weight: 1 },
+    { value: "lighthouses", weight: 1 },
+    { value: "mausoleums", weight: 1 },
   ],
 
   historicalperson: [
