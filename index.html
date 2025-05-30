@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <title>Fantasy Rumors</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +9,15 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+.rumorbox {
+border: 1px solid black;
+  <!--background-color: lightblue;-->
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  }
+
 </style>
 </head>
 <body>
@@ -18,33 +28,177 @@ body {
 <h1 id="introtext"></h1>
 <p id="demo"></p>
 
+<div class="container rumorbox" style="background-color:LightGrey;">
+  <div class="row gx-5">
+  <p class="text-center"><b>Concerning the Decadent Hives of Men</b></p>
+    <div class="col-md-4">
+      <p id="urban"></p>
+    </div>
+    <div class="col-md-4">
+      <p id="urban2"></p>
+    </div>
+    <div class="col-md-4">
+      <p id="urban3"></p>
+    </div>
+  </div><hr>
+  <div class="text-center">
+  <button id="urbanBtn">New Urban Rumor</button>
+  </div>
+</div>
+<!--<div>
 <p><b>Urban</b></p>
 <p id="urban"></p>
+<p id="urban2"></p>
+<p id="urban3"></p>
 <button id="urbanBtn">New Urban Rumor</button>
+</div>-->
 
-<p><b>Wilds</b></p>
+<div class="container rumorbox" style="background-color:Chartreuse;">
+  <div class="row gx-5">
+  <p class="text-center"><b>Concerning the Perilous Unpoliced Wilds</b></p>
+    <div class="col-md-4">
+      <p id="wilds"></p>
+    </div>
+    <div class="col-md-4">
+      <p id="wilds2"></p>
+    </div>
+    <div class="col-md-4">
+      <p id="wilds3"></p>
+    </div>
+  </div><hr>
+  <div class="text-center">
+  <button id="wildsBtn">New Wilds Rumor</button>
+  </div>
+</div>
+
+
+<!--<p><b>Wilds</b></p>
 <p id="wilds"></p>
-<button id="wildsBtn">New Wilds Rumor</button>
+<p id="wilds2"></p>
+<p id="wilds3"></p>
+<button id="wildsBtn">New Wilds Rumor</button>-->
 
-<p><b>Maritime</b></p>
+<div class="container rumorbox" style="background-color:lightblue;">
+  <div class="row gx-5">
+  <p class="text-center"><b>Concerning Obscure Islands and Mysterious Voyages</b></p>
+    <div class="col-md-4">
+      <p id="maritime"></p>
+    </div>
+    <div class="col-md-4">
+      <p id="maritime2"></p>
+    </div>
+    <div class="col-md-4">
+      <p id="maritime3"></p>
+    </div>
+  </div><hr>
+  <div class="text-center">
+  <button id="maritimeBtn">New Maritime Rumor</button>
+  </div>
+</div>
+
+<!--<p><b>Maritime</b></p>
 <p id="maritime"></p>
-<button id="maritimeBtn">New Maritime Rumor</button>
+<p id="maritime2"></p>
+<p id="maritime3"></p>
+<button id="maritimeBtn">New Maritime Rumor</button>-->
 
-<p><b>Dungeon</b></p>
+<div class="container rumorbox" style="background-color:MediumPurple;">
+  <div class="row gx-5">
+  <p class="text-center"><b>Concerning Chthonic Denizens and Their Dwelling-place</b></p>
+    <div class="col-md-4">
+      <p id="dungeon"></p>
+    </div>
+    <div class="col-md-4">
+      <p id="dungeon2"></p>
+    </div>
+    <div class="col-md-4">
+      <p id="dungeon3"></p>
+    </div>
+  </div><hr>
+  <div class="text-center">
+  <button id="dungeonBtn">New Dungeon Rumor</button>
+  </div>
+</div>
+
+
+<!--<p><b>Dungeon</b></p>
 <p id="dungeon"></p>
-<button id="dungeonBtn">New Dungeon Rumor</button>
+<p id="dungeon2"></p>
+<p id="dungeon3"></p>
+<button id="dungeonBtn">New Dungeon Rumor</button>-->
 
-<p><b>Local</b></p>
+<div class="container rumorbox" style="background-color:SeaShell;">
+  <div class="row gx-5">
+  <p class="text-center"><b>Concerning Gossip, Canards and Idle Chatter </b></p>
+    <div class="col-md-4">
+      <p id="local"></p>
+    </div>
+    <div class="col-md-4">
+      <p id="local2"></p>
+    </div>
+    <div class="col-md-4">
+      <p id="local3"></p>
+    </div>
+  </div><hr>
+  <div class="text-center">
+  <button id="localBtn">New Local Rumor</button>
+  </div>
+</div>
+
+<!--<p><b>Local</b></p>
 <p id="local"></p>
-<button id="localBtn">New Local Rumor</button>
+<p id="local2"></p>
+<p id="local3"></p>
+<button id="localBtn">New Local Rumor</button>-->
 
-<p><b>Prophecy</b></p>
+<div class="container rumorbox" style="background-color:Coral;">
+  <div class="row gx-5">
+  <p class="text-center"><b>Concerning the Things To Come</b></p>
+    <div class="col-md-4">
+      <p id="prophecy"></p>
+    </div>
+    <div class="col-md-4">
+      <p id="prophecy2"></p>
+    </div>
+    <div class="col-md-4">
+      <p id="prophecy3"></p>
+    </div>
+  </div><hr>
+  <div class="text-center">
+  <button id="prophecyBtn">New Prophecy Rumor</button>
+  </div>
+</div>
+
+<!--<p><b>Prophecy</b></p>
 <p id="prophecy"></p>
-<button id="prophecyBtn">New Prophecy Rumor</button>
+<p id="prophecy2"></p>
+<p id="prophecy3"></p>
+<button id="prophecyBtn">New Prophecy Rumor</button>-->
 
-<p><b>Strange Custom</b></p>
+<div class="container rumorbox" style="background-color:MediumSpringGreen;">
+  <div class="row gx-5">
+  <p class="text-center"><b>Concerning Strange Customs from Foreign Lands</b></p>
+    <div class="col-md-4">
+      <p id="custom"></p>
+    </div>
+    <div class="col-md-4">
+      <p id="custom2"></p>
+    </div>
+    <div class="col-md-4">
+      <p id="custom3"></p>
+    </div>
+  </div><hr>
+  <div class="text-center">
+  <button id="customBtn">New Strange Custom Rumor</button>
+  </div>
+</div>
+
+
+<!--<p><b>Strange Custom</b></p>
 <p id="custom"></p>
-<button id="customBtn">New Strange Custom Rumor</button>
+<p id="custom2"></p>
+<p id="custom3"></p>
+<button id="customBtn">New Strange Custom Rumor</button>-->
 
 <!--<button id="generateBtn">Generate Sentence</button>-->
 
@@ -5951,32 +6105,89 @@ console.log(output1);
 document.getElementById("introtext").innerText = output1+"...";
 
 const urban = resolve(tables["urban"]);
-console.log(urban);
+console.log("ubran 1:", urban);
 document.getElementById("urban").innerText = urban;
+
+const urban2 = resolve(tables["urban"]);
+console.log("urban 2:", urban2);
+document.getElementById("urban2").innerText = urban2;
+
+const urban3 = resolve(tables["urban"]);
+console.log("urban 3:", urban2);
+document.getElementById("urban3").innerText = urban3;
 
 const wilds = resolve(tables["wilds"]);
 console.log(wilds);
 document.getElementById("wilds").innerText = wilds;
 
+const wilds2 = resolve(tables["wilds"]);
+console.log(wilds2);
+document.getElementById("wilds2").innerText = wilds2;
+
+const wilds3 = resolve(tables["wilds"]);
+console.log(wilds3);
+document.getElementById("wilds3").innerText = wilds3;
+
 const maritime = resolve(tables["maritime"]);
 console.log(maritime);
 document.getElementById("maritime").innerText = maritime;
+
+const maritime2 = resolve(tables["maritime"]);
+console.log(maritime2);
+document.getElementById("maritime2").innerText = maritime2;
+
+const maritime3 = resolve(tables["maritime"]);
+console.log(maritime3);
+document.getElementById("maritime3").innerText = maritime3;
 
 const dungeon = resolve(tables["dungeon"]);
 console.log(dungeon);
 document.getElementById("dungeon").innerText = dungeon;
 
+const dungeon2 = resolve(tables["dungeon"]);
+console.log(dungeon2);
+document.getElementById("dungeon2").innerText = dungeon2;
+
+const dungeon3 = resolve(tables["dungeon"]);
+console.log(dungeon3);
+document.getElementById("dungeon3").innerText = dungeon3;
+
 const local = resolve(tables["local"]);
 console.log(local);
 document.getElementById("local").innerText = local;
+
+const local2 = resolve(tables["local"]);
+console.log(local2);
+document.getElementById("local2").innerText = local2;
+
+const local3 = resolve(tables["local"]);
+console.log(local3);
+document.getElementById("local3").innerText = local3;
 
 const prophecy = resolve(tables["prophecy"]);
 console.log(prophecy);
 document.getElementById("prophecy").innerText = prophecy;
 
+const prophecy2 = resolve(tables["prophecy"]);
+console.log(prophecy2);
+document.getElementById("prophecy2").innerText = prophecy2;
+
+const prophecy3 = resolve(tables["prophecy"]);
+console.log(prophecy3);
+document.getElementById("prophecy3").innerText = prophecy3;
+
 const custom = resolve(tables["custom"]);
 console.log(custom);
 document.getElementById("custom").innerText = custom;
+
+const custom2 = resolve(tables["custom"]);
+console.log(custom2);
+document.getElementById("custom2").innerText = custom2;
+
+const custom3 = resolve(tables["custom"]);
+console.log(custom3);
+document.getElementById("custom3").innerText = custom3;
+
 
 
 function generateUrban() {
@@ -5984,6 +6195,12 @@ const urban = resolve(tables["urban"]);
 console.log(urban);
 document.getElementById("urban").innerText = urban;
 console.log("call me maybe " + urban);
+const urban2 = resolve(tables["urban"]);
+console.log("urban 2:", urban2);
+document.getElementById("urban2").innerText = urban2;
+const urban3 = resolve(tables["urban"]);
+console.log("urban 3:", urban2);
+document.getElementById("urban3").innerText = urban3;
 }
 
 function generateWilds() {
@@ -5991,6 +6208,12 @@ const wilds = resolve(tables["wilds"]);
 console.log(wilds);
 document.getElementById("wilds").innerText = wilds;
 console.log("call me maybe " + wilds);
+const wilds2 = resolve(tables["wilds"]);
+console.log(wilds2);
+document.getElementById("wilds2").innerText = wilds2;
+const wilds3 = resolve(tables["wilds"]);
+console.log(wilds3);
+document.getElementById("wilds3").innerText = wilds3;
 }
 
 function generateMaritime() {
@@ -5998,6 +6221,12 @@ const maritime = resolve(tables["maritime"]);
 console.log(maritime);
 document.getElementById("maritime").innerText = maritime;
 console.log("call me maybe " + maritime);
+const maritime2 = resolve(tables["maritime"]);
+console.log(maritime2);
+document.getElementById("maritime2").innerText = maritime2;
+const maritime3 = resolve(tables["maritime"]);
+console.log(maritime3);
+document.getElementById("maritime3").innerText = maritime3;
 }
 
 function generateDungeon() {
@@ -6005,6 +6234,12 @@ const dungeon = resolve(tables["dungeon"]);
 console.log(dungeon);
 document.getElementById("dungeon").innerText = dungeon;
 console.log("call me maybe " + dungeon);
+const dungeon2 = resolve(tables["dungeon"]);
+console.log(dungeon2);
+document.getElementById("dungeon2").innerText = dungeon2;
+const dungeon3 = resolve(tables["dungeon"]);
+console.log(dungeon3);
+document.getElementById("dungeon3").innerText = dungeon3;
 }
 
 function generateLocal() {
@@ -6012,6 +6247,12 @@ const local = resolve(tables["local"]);
 console.log(local);
 document.getElementById("local").innerText = local;
 console.log("call me maybe " + local);
+const local2 = resolve(tables["local"]);
+console.log(local2);
+document.getElementById("local2").innerText = local2;
+const local3 = resolve(tables["local"]);
+console.log(local3);
+document.getElementById("local3").innerText = local3;
 }
 
 function generateProphecy() {
@@ -6019,6 +6260,12 @@ const prophecy = resolve(tables["prophecy"]);
 console.log(prophecy);
 document.getElementById("prophecy").innerText = prophecy;
 console.log("call me maybe " + prophecy);
+const prophecy2 = resolve(tables["prophecy"]);
+console.log(prophecy2);
+document.getElementById("prophecy2").innerText = prophecy2;
+const prophecy3 = resolve(tables["prophecy"]);
+console.log(prophecy3);
+document.getElementById("prophecy3").innerText = prophecy3;
 }
 
 function generateCustom() {
@@ -6026,6 +6273,12 @@ const custom = resolve(tables["custom"]);
 console.log(custom);
 document.getElementById("custom").innerText = custom;
 console.log("call me maybe " + custom);
+const custom2 = resolve(tables["custom"]);
+console.log(custom2);
+document.getElementById("custom2").innerText = custom2;
+const custom3 = resolve(tables["custom"]);
+console.log(custom3);
+document.getElementById("custom3").innerText = custom3;
 }
 
 //function generateSentence() {
