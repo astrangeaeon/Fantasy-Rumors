@@ -1279,6 +1279,7 @@ const tables = {
     { value: "${monster}", weight: 1 },
     { value: "${origin}", weight: 1 },
     { value: "${treasure}", weight: 1 },
+	{ value: "${trap}", weight: 1 },
   ],
 
   floors: [
@@ -3377,6 +3378,7 @@ const tables = {
     { value: "Fire", weight: 1 },
     { value: "Law", weight: 1 },
     { value: "Stone", weight: 1 },
+	{ value: "Miracles", weight: 1 },
   ],
 
   prophecyartifact: [
@@ -4269,7 +4271,66 @@ const tables = {
     { value: "thousands of skull beetles", weight: 1 },
     { value: "war spirits, numerous of shape", weight: 1 },
   ],
+  
+  
+   trap: [
+    { value: "${trap_builder} have been ${trap_setup} ${trap_quality} ${trap_type} traps ${trap_location} ${trap_reason}", weight: 1 },
+  ],
+  
+  trap_builder: [
+    { value: "goblins", weight: 1 },
+    { value: "kobolds", weight: 1 },
+    { value: "ratmen", weight: 1 },
+    { value: "blue dwarfs", weight: 1 },
+    { value: "crawling folk", weight: 1 },
+	{ value: "skeletal deserters", weight: 1 },
+  ],
+  
+  trap_setup: [
+    { value: "placing", weight: 1 },
+    { value: "setting up", weight: 1 },
+    { value: "hiding", weight: 1 },
+    { value: "building", weight: 1 },
+    { value: "arming", weight: 1 },
+	{ value: "testing", weight: 1 },
+  ],
 
+  trap_quality: [
+    { value: "crude", weight: 1 },
+    { value: "sophisticated", weight: 1 },
+    { value: "irritating", weight: 1 },
+    { value: "deadly", weight: 1 },
+    { value: "hard to spot", weight: 1 },
+	{ value: "noisy", weight: 1 },
+  ],
+
+
+trap_type: [
+    { value: "magical", weight: 1 },
+    { value: "biological", weight: 1 },
+    { value: "high-tech", weight: 1 },
+  ],
+
+
+trap_location: [
+    { value: "on the ${floors} floor", weight: 1 },
+    { value: "around ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
+  ],
+  
+  trap_reason: [
+    { value: "to restrict access to ${a:trap_thing}", weight: 1 },
+    { value: "under orders from ${a:WeirdFantasyMonster}", weight: 1 },
+    { value: "to stake out their territory", weight: 1 },
+    { value: "to protect ${treasure_adj} ${treasureA}", weight: 1 },
+    { value: "to keep ${huntingmonster} at bay", weight: 1 },
+  ],
+  
+  trap_thing: [
+    { value: "magic fountain", weight: 1 },
+    { value: "staircase", weight: 1 },
+    { value: "${idol}", weight: 1 },
+  ],
+  
   treasure_adj: [
     { value: "a magical", weight: 1 },
     { value: "a one-of-a-kind", weight: 1 },
@@ -5977,6 +6038,10 @@ const tables = {
     { value: "cyclops", weight: 1 },
     { value: "ogre", weight: 1 },
     { value: "golem", weight: 1 },
+	{ value: "beholder", weight: 1 },
+	{ value: "intelligent slime", weight: 1 },
+	{ value: "daemon", weight: 1 },
+	{ value: "dragon", weight: 1 },
   ],
 
   WeirdSymbol: [
