@@ -1178,6 +1178,7 @@ const tables = {
   ],
 
   deadlootmisc: [
+    { value: "${relic}", weight: 5 },
     { value: "a ${magicalcommonobject} that lets the holder grow as tall as a forest tree at will", weight: 1 },
     { value: "a blue-green antasura blade", weight: 1 },
     { value: "a bottomless jug of nutritious but bland yogurt", weight: 1 },
@@ -1253,6 +1254,7 @@ const tables = {
     { value: "to swap body parts", weight: 1 },
     { value: "to swap faces", weight: 1 },
     { value: "to honor and give relief to one of the four dwarfs who hold up the corners of the sky", weight: 1 },
+	{ value: "to venerate ${relic}", weight: 5 },
   ],
 
   decaying_corpse: [
@@ -1846,6 +1848,7 @@ const tables = {
     { value: "to question the oldest ${oldest} in the world", weight: 1 },
     { value: "to reclaim the ${prophecyartifact} rumored to be hidden within", weight: 1 },
     { value: "to recover the bones of ${heroes_and_villains}", weight: 1 },
+	{ value: "to recover ${relic}", weight: 1 },
     { value: "to rescue ${urbn_subjectsingular} trapped in ${a:urbn_place} on the ${floors} floor", weight: 1 },
     { value: "to seek their family members who were transformed into ${herdanimal} by ${creepyvillain}", weight: 1 },
 	{ value: "to honor ${historybuild}", weight: 1 },
@@ -1867,6 +1870,7 @@ const tables = {
     { value: "long ago, in the days of Prince Axum", weight: 1 },
     { value: "back before ${foreign_adj} ${foreignland} was settled", weight: 1 },
     { value: "back when ${FantasyGods} was a child", weight: 1 },
+	{ value: "back before ${relic} was lost", weight: 1 },
     { value: "back when ${AnimalOrdinary}s still spoke the tongues of man", weight: 1 },
 	{ value: "back before the ${huntingmonster} crawled forth from their caves", weight: 1 },
   ],
@@ -2675,6 +2679,7 @@ const tables = {
     { value: "${a:QuickNPC} has started calling themselves the Knight of the Kestrel", weight: 1 },
     { value: "${a:QuickNPCJobPoor} vanished from their bed and a large serpent was found in their place", weight: 1 },
     { value: "a baby was born wearing earrings and a coat of mail", weight: 1 },
+	{ value: "${a:po:QuickNPCJobPoor} dog dug up ${relic}", weight: 1 },
     { value: "a bird maiden\'s feather was stolen, binding her to the earth for nine years", weight: 1 },
     { value: "a child dug up a stone mirror", weight: 1 },
     { value: "a chill wind has begun causing the mirrors to rot", weight: 1 },
@@ -2915,6 +2920,7 @@ const tables = {
     { value: "spend an entire night unarmed in ${landmark_natural}", weight: 1 },
     { value: "spend thirteen days beneath the Grand Waterfall in ${foreignland}", weight: 1 },
     { value: "trade their ${body_part} with another", weight: 1 },
+	{ value: "pray ${onednine} days before ${relic}", weight: 1 },
   ],
 
   mindaltering: [
@@ -2979,7 +2985,7 @@ const tables = {
     { value: "${monstertype} values ${monstervalue} above all things and operates ${a:urbn_place} on the ${floors} floor", weight: 1 },
     { value: "${monstertype} waits on the ${floors} floor disguised in one of its learned forms, most usually ${urbn_subjectsingular} but, sometimes, a pool, or a worm", weight: 1 },
     { value: "A greedy ${monsterA} on the ${floors} floor can be bargained with if its desire for ${collection} to add to its collection is appeased", weight: 1 },
-    { value: "${uc:a:monsterA} on the ${floors} floor, pregnant for over a decade, offers to free ${urbn_subjectsingular} they hold captive if any can offer relief", weight: 1 },
+    { value: "${a:monsterA} on the ${floors} floor, pregnant for over a decade, offers to free ${urbn_subjectsingular} they hold captive if any can offer relief", weight: 1 },
     { value: "Here the ${huntingmonster} of ${foreign_adj}${foreignland}${foreign_phrase} dwell amid squalor and noise, bellowing and vomiting black gore", weight: 1 },
 	{ value: "${monstertype} prays to ${idol} in the ruins of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
   ],
@@ -3153,6 +3159,7 @@ const tables = {
     { value: "rehabilitate ${criminals} and turn them into ${profession}s", weight: 1 },
     { value: "train ${profession}s in the ways of old", weight: 1 },
     { value: "uncover the ${ordinal} name of ${RealGods}", weight: 1 },
+	{ value: "venerate ${relic}", weight: 1 },
   ],
 
   order_secret: [
@@ -3655,6 +3662,61 @@ const tables = {
     { value: "You overhear a mother telling her daughter", weight: 1 },
     { value: "Unfolding a crumpled piece of paper, you read", weight: 1 },
   ],
+  
+  
+  relic: [
+    { value: "the ${relic_remains} of Saint ${SaintName} ${relic_reliquary}", weight: 1 },
+    { value: "the ${relic_possession} of Saint ${SaintName} ${relic_saint_connection}", weight: 1 },
+    { value: "the ${relic_possession} used in the martyrdom of Saint ${SaintName} ${relic_saint_connection}", weight: 1 },
+  ],
+  
+  
+  relic_possession: [
+    { value: "${magicalcommonobject}", weight: 5 },
+	{ value: "tattered robe", weight: 1 },
+	{ value: "worn sandal", weight: 1 },
+	{ value: "wooden soup bowl", weight: 1 },
+	{ value: "chipped clay cup", weight: 1 },
+	{ value: "sunned and shaken book of prayers", weight: 1 },
+	{ value: "broken talisman", weight: 1 },
+	{ value: "heavy stone amulet", weight: 1 },
+  ],
+  
+  
+  relic_remains: [
+    { value: "mellified ${body_part}", weight: 5 },
+	{ value: "fragrant ashes", weight: 1 },
+	{ value: "aromatic blood", weight: 1 },
+	{ value: "sugary tears", weight: 1 },
+	{ value: "last breath", weight: 1 },
+	{ value: "pristine ${relic_teeth}", weight: 1 },
+	{ value: "downy hair from the beard", weight: 1 },
+	{ value: "long and fragile fingernails", weight: 1 },
+	{ value: "curious three eye-socketed skull", weight: 1 },
+  ],
+  
+  relic_saint_connection: [
+    { value: "", weight: 5 },
+    { value: "stained burgundy with holy blood", weight: 1 },
+    { value: "that glistens still with sacred tears", weight: 1 },
+    { value: "kissed by hallowed lips in the final hours", weight: 1 },
+  ],
+
+
+ relic_teeth: [
+    { value: "molars", weight: 1 },
+    { value: "bicuspids", weight: 1 },
+    { value: "fangs", weight: 1 },
+  ],
+  
+ relic_reliquary: [
+    { value: "", weight: 5 },
+    { value: "in a jeweled reliquary", weight: 1 },
+    { value: "in a yellowed ivory reliquary", weight: 1 },
+	{ value: "in a humble sealed jar", weight: 1 },
+	{ value: "embedded in ${Colors} wax-mastic", weight: 1 },
+  ],
+
 
   robbedplace: [
     { value: "churches", weight: 1 },
@@ -3923,8 +3985,6 @@ const tables = {
     { value: "bizarre", weight: 1 },
     { value: "curious", weight: 1 },
     { value: "extraordinary", weight: 1 },
-    { value: "freaky", weight: 1 },
-    { value: "kooky", weight: 1 },
     { value: "mysterious", weight: 1 },
     { value: "odd", weight: 1 },
     { value: "outlandish", weight: 1 },
@@ -3946,6 +4006,7 @@ const tables = {
   ],
 
   strange_fish: [
+    { value: "${relic}", weight: 3 },
     { value: "a disturbing story carved into a stone titled the Tale of the Magician", weight: 1 },
     { value: "a dog-tag with the name ${heroes_and_villains} inscribed on it", weight: 1 },
     { value: "a fine saddle that summons an invisible horse", weight: 1 },
