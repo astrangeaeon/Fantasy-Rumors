@@ -1316,6 +1316,79 @@ const tables = {
     { value: "Tiger", weight: 1 },
     { value: "Wind", weight: 1 },
   ],
+  
+    duo: [
+    { value: "two ${duo_adj} ${duo_type} named ${duo_name1} and ${duo_name2} known for their ${duo_detail}", weight: 1 },
+  ],
+  
+    duo_adj: [
+    { value: "depraved", weight: 1 },
+    { value: "outrageous", weight: 1 },
+	{ value: "colorful", weight: 1 },
+    { value: "universally admired", weight: 1 },
+  ],
+  
+    duo_type: [
+    { value: "twins", weight: 1 },
+    { value: "siblings", weight: 1 },
+    { value: "rival ${occupation}s", weight: 1 },
+	{ value: "${criminals}, partners in crime,", weight: 1 },
+  ],
+  
+  duo_name1: [
+    { value: "Lerr", weight: 1 },
+    { value: "Bo", weight: 1 },
+    { value: "Nalgy", weight: 1 },
+	{ value: "Rygar", weight: 1 },
+    { value: "Leesa", weight: 1 },
+    { value: "Stav", weight: 1 },
+  ],
+  
+  duo_name2: [
+    { value: "Gath", weight: 1 },
+    { value: "Peanut", weight: 1 },
+    { value: "the Kettlefish", weight: 1 },
+	{ value: "the Dangler", weight: 1 },
+    { value: "the Goober", weight: 1 },
+    { value: "the Golfgolf Kid", weight: 1 },
+  ],
+  
+   duo_detail: [
+    { value: "distinctive ${Colors} eyes", weight: 1 },
+    { value: "shocking ${Colors} hair", weight: 1 },
+    { value: "${duo_clothing_adj} ${Colors} ${duo_clothing}", weight: 1 },
+	{ value: "smell of ${Smells}", weight: 1 },
+	{ value: "${duo_clothing_adj} ${Colors} ${duo_jewlery}", weight: 1 },
+  ],
+
+   duo_clothing_adj: [
+    { value: "daring", weight: 1 },
+    { value: "garish", weight: 1 },
+    { value: "outlandish", weight: 1 },
+	{ value: "immodest", weight: 1 },
+	{ value: "edible", weight: 1 },
+  ],
+
+  duo_clothing: [
+    { value: "robes", weight: 1 },
+    { value: "sandals", weight: 1 },
+    { value: "hats", weight: 1 },
+	{ value: "belts", weight: 1 },
+	{ value: "pants", weight: 1 },
+	{ value: "capes", weight: 1 },
+    { value: "shirts", weight: 1 },
+    { value: "jackets", weight: 1 },
+	{ value: "uniforms", weight: 1 },
+	{ value: "undergarments", weight: 1 },
+  ],
+  
+  duo_jewlery: [
+    { value: "bracelets", weight: 1 },
+    { value: "necklaces", weight: 1 },
+    { value: "earrings", weight: 1 },
+	{ value: "finger-rings", weight: 1 },
+	{ value: "crowns", weight: 1 },
+  ],
 
   elemntl_type: [
     { value: "earth", weight: 1 },
@@ -2165,6 +2238,7 @@ const tables = {
 	{ value: "girl", weight: 1 },
 	{ value: "elf", weight: 1 },
 	{ value: "dwarf", weight: 1 },
+	{ value: "hobbit", weight: 1 },
 	{ value: "${occupation}", weight: 1 },
   ],
 
@@ -2266,6 +2340,8 @@ const tables = {
     { value: "a strange time distortion field", weight: 1 },
     { value: "an elephant known as Cloud-Mountain", weight: 1 },
     { value: "an infant born with a piece of colored jade in its mouth", weight: 1 },
+	{ value: "an apple", weight: 1 },
+	{ value: "the mirror cat", weight: 1 },
     { value: "ancient magical wards", weight: 1 },
     { value: "angels mounted on steeds of fire", weight: 1 },
     { value: "birds with emerald talons", weight: 1 },
@@ -4774,7 +4850,8 @@ trap_location: [
     { value: "unsmiling, blue-robed halflings", weight: 1 },
     { value: "vicious halflings interbred with animals", weight: 1 },
     { value: "wild druids", weight: 1 },
-	{ value: "worshippers of ${idol}", weight: 1 },
+	{ value: "${duo}", weight: 2 },
+	{ value: "worshippers of ${idol}", weight: 2 },
     { value: "wise silver-beards addicted to ${addiction}", weight: 1 },
     { value: "youthful maidens in diaphanous dresses", weight: 1 },
   ],
@@ -5987,13 +6064,13 @@ trap_location: [
     { value: "courier", weight: 1 },
     { value: "day laborer", weight: 1 },
     { value: "woodcutter", weight: 1 },
-    { value: "fisherman", weight: 1 },
+    { value: "fisher", weight: 1 },
     { value: "petty criminal", weight: 1 },
     { value: "beggar", weight: 1 },
     { value: "ditchdigger", weight: 1 },
     { value: "slave", weight: 1 },
     { value: "servant", weight: 1 },
-    { value: "clothes mender ", weight: 1 },
+    { value: "clothes mender", weight: 1 },
     { value: "grave digger", weight: 1 },
     { value: "orphan", weight: 1 },
     { value: "butcher", weight: 1 },
@@ -6017,7 +6094,7 @@ trap_location: [
     { value: "baker", weight: 1 },
     { value: "painter", weight: 1 },
     { value: "poet", weight: 1 },
-    { value: "apothecary", weight: 1 },
+    { value: "chemist", weight: 1 },
     { value: "${AnimalOrdinary} tamer", weight: 1 },
     { value: "smuggler", weight: 1 },
     { value: "wainwright", weight: 1 },
@@ -6040,7 +6117,7 @@ trap_location: [
     { value: "scholar", weight: 1 },
     { value: "judge", weight: 1 },
     { value: "dancer", weight: 1 },
-    { value: "criminal genius", weight: 1 },
+    { value: "criminal mastermind", weight: 1 },
   ],
 
   RealGods: [
