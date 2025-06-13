@@ -4576,6 +4576,7 @@ trap_location: [
     { value: "in ${urbn_cityname}, the rich live in great houses with the gates nailed shut, only venturing out once a year to the markets for supplies", weight: 1 },
     { value: "in ${urbn_cityname}, they keep the wine-preserved ${body_part} of ${heroes_and_villains} on display in order to protect the city from ${creepyvillain}", weight: 1 },
     { value: "in order to join ${membership}, prospective members must ${mindaltering} and ${membership_initiation}", weight: 1 },
+	{ value: "everyone should visit the city of ${urbn_cityname}, where the gods misspent their youth, at least once in their life, as the numinous atmosphere is so suffused that ${numinous_sense} engenders a feeling of ${numinous_adj} ${numinous_feeling}", weight: 3 },
   ],
 
   urbn_cityname: [
@@ -6213,6 +6214,84 @@ trap_location: [
     { value: "snail", weight: 1 },
     { value: "mallard", weight: 1 },
   ],
+  
+  
+  numinous_sense: [
+    { value: "the mere sight of ${numinous_sight}", weight: 3 },
+    { value: "${numinous_sound}", weight: 1 },
+    { value: "${numinous_smell}", weight: 1 },
+  ],
+  
+  numinous_sight: [
+    { value: "a stray dog", weight: 1 },
+    { value: "an old barrel", weight: 1 },
+    { value: "a discolored patch of bricks", weight: 1 },
+	{ value: "a scrap of paper", weight: 1 },
+    { value: "a neglected fountain with a statue of ${a:monsterA}", weight: 1 },
+    { value: "a discarded apple core", weight: 1 },
+	{ value: "a discarded sandal", weight: 1 },
+    { value: "the feather of a bird", weight: 1 },
+    { value: "a smelly cat with the skeleton of a fish in its mouth", weight: 1 },
+	{ value: "a bronze coin that fell from a purse onto the street", weight: 1 },
+    { value: "a certain alleyway", weight: 1 },
+    { value: "a puddle outside the stable", weight: 1 },
+	{ value: "a spot ${onednine} paces from the ${CompassDirection} gate", weight: 1 },
+    { value: "an old grave outside the ${CompassDirection} gate", weight: 1 },
+    { value: "${a:urbn_place_adj} ${urbn_place}", weight: 1 },
+	{ value: "a mundane rooftop chimney", weight: 1 },
+    { value: "a faded piece of second-rate graffiti", weight: 1 },
+    { value: "a locked cellar door", weight: 1 },
+	{ value: "the ${Colors} ivy climbing the wall of ${a:urbn_place}", weight: 1 },
+	{ value: "a high balcony no one uses", weight: 1 },
+  ],
+  
+  numinous_sound: [
+    { value: "the call of a dockside gull", weight: 1 },
+    { value: "the plaintive cry of a pitiful mendicant", weight: 1 },
+    { value: "a street sweeper's whistled melody", weight: 1 },
+	{ value: "the squeak of the tavern's gate", weight: 1 },
+	{ value: "the tedious song of a bird", weight: 1 },
+	{ value: "the cry of children playing in an alley", weight: 1 },
+  ],
+  
+  numinous_smell: [
+    { value: "the smell that lingers after a bonfire", weight: 1 },
+    { value: "the scent of the faint salt-laden breeze", weight: 1 },
+    { value: "the aroma of a simple homecooked meal", weight: 1 },
+	{ value: "the strong attack of a farmer's manure cart", weight: 1 },
+  ],
+  
+  numinous_adj: [
+    { value: "holy", weight: 1 },
+    { value: "unconquerable", weight: 1 },
+    { value: "breathless", weight: 1 },
+	{ value: "intense", weight: 1 },
+    { value: "divine", weight: 1 },
+    { value: "sickening", weight: 1 },
+	{ value: "unchecked", weight: 1 },
+    { value: "black", weight: 1 },
+    { value: "beatific", weight: 1 },
+	
+  ],
+  
+  numinous_feeling: [
+    { value: "nostalgia", weight: 1 },
+    { value: "ennui", weight: 1 },
+    { value: "joy", weight: 1 },
+	{ value: "sorrow", weight: 1 },
+    { value: "longing", weight: 1 },
+    { value: "terror", weight: 1 },
+	{ value: "courage", weight: 1 },
+    { value: "grief", weight: 1 },
+    { value: "dread", weight: 1 },
+	{ value: "shame", weight: 1 },
+    { value: "fury", weight: 1 },
+    { value: "despair", weight: 1 },
+	{ value: "disgust", weight: 1 },
+	{ value: "nausea", weight: 1 },
+  ],
+  
+  
 
     intro: [
 	    { value: "${I_herd}", weight: 1 }
