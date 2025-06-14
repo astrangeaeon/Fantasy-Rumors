@@ -5606,7 +5606,7 @@ trap_location: [
   ],
 
   CompoundB: [
-    { value: "splitter ", weight: 1 },
+    { value: "splitter", weight: 1 },
     { value: "killer", weight: 1 },
     { value: "ripper", weight: 1 },
     { value: "smasher", weight: 1 },
@@ -5974,6 +5974,9 @@ trap_location: [
   ],
 
   MiscSymbol: [
+    { value: "${HaftedWeapons}", weight: 5 },
+	{ value: "${MusicalInstrument}", weight: 5 },
+	{ value: "${magicalcommonobject}", weight: 5 },
     { value: "lantern", weight: 1 },
     { value: "open book", weight: 1 },
     { value: "eye", weight: 1 },
@@ -6012,6 +6015,8 @@ trap_location: [
     { value: "ruled by a talking ${AnimalOrdinary}", weight: 1 },
     { value: "the home of the ${prophecyartifact}", weight: 1 },
     { value: "deserted by men, a home for ${herdanimal} now ", weight: 1 },
+	{ value: "the last known location of ${relic}", weight: 1 },
+	{ value: "famous for producing ${idol}", weight: 1 },
   ],
 
   QuickNPC: [
@@ -6232,6 +6237,8 @@ trap_location: [
   ],
 
   WeirdSymbol: [
+    { value: "${AnimalMain}", weight: 5 },
+	{ value: "${WeirdFantasyMonster}", weight: 5 },
     { value: "octopus", weight: 1 },
     { value: "snail", weight: 1 },
     { value: "mallard", weight: 1 },
@@ -6323,9 +6330,28 @@ trap_location: [
   ],
   
   triad_person: [
-    { value: "one of the three best whistlers in the world", weight: 1 },
+    { value: "one of the three ${triad_superlative} ${triad_person_claim} in ${triad_person_scope}", weight: 1 },
   ],
   
+  triad_superlative: [
+    { value: "best", weight: 1 },
+	{ value: "worst", weight: 1 },
+  ],
+  
+   triad_person_claim: [
+    { value: "whistlers", weight: 1 },
+	{ value: "kissers", weight: 1 },
+	{ value: "dancers", weight: 1 },
+	{ value: "dressers", weight: 1 },
+  ],
+  
+  triad_person_scope: [
+    { value: "the village", weight: 5 },
+	{ value: "town", weight: 1 },
+	{ value: "the city", weight: 1 },
+	{ value: "the country", weight: 1 },
+	{ value: "the world", weight: 1 },
+  ],
   
 
     intro: [
