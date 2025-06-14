@@ -239,6 +239,7 @@ const tables = {
     { value: ", rich in silver", weight: 1 },
     { value: ", rich in vineyards", weight: 1 },
     { value: " that lies upon the chalk", weight: 1 },
+	{ value: " that golden basin filled with scorpions", weight: 1 },
     { value: " upon the gulf", weight: 1 },
     { value: " where animals grow unusually large", weight: 1 },
     { value: " where animals grow unusually small", weight: 1 },
@@ -364,6 +365,7 @@ const tables = {
     { value: " who trapped countless daemons within trees, creating the Forest of Spears,", weight: 1 },
     { value: " who traveled across the Lake of Dreams on a marble slab made seaworthy by faith,", weight: 1 },
     { value: " who turned back the light with eyes that never closed,", weight: 1 },
+	{ value: " whose many feet required thirteen pairs of boots,", weight: 1 },
     { value: " who turned Death aside with meats and drinks and charms,", weight: 1 },
     { value: " who united the warring tribes of monkeys, orangutans, gorillas, apes and baboons into a deadly army,", weight: 1 },
     { value: " who used his body to make a floor over nothingness,", weight: 1 },
@@ -387,6 +389,8 @@ const tables = {
     { value: " whose horses wept at his death,", weight: 1 },
     { value: " whose immense body lays in the City of the Not-Dead shrouded in cobwebs,", weight: 1 },
     { value: " whose kiss turned men to ice,", weight: 1 },
+	{ value: " whose treasury held four thousand turbans,", weight: 1 },
+	{ value: " whose golden bowls were filled with silver,", weight: 1 },
 	{ value: " too foul for hell to swallow,", weight: 1 },
 	{ value: " who could recite every line of the prayer of the Salamanders,", weight: 1 },
     { value: " whose mighty ancestor fashioned the first men upon a potter’s wheel using sacred clay from the Nile River,", weight: 1 },
@@ -2640,12 +2644,12 @@ const tables = {
     { value: "${FantasyName}, ${a:QuickNPC} and a racist, believes ${local_racist}", weight: 2 },
     { value: "There are strange things happening every day. For instance, ${local_strange_thing}", weight: 2 },
     { value: "${FantasyName} wanted to be ${a:QuickNPCJobRich} but ended up ${a:QuickNPCJobPoor}", weight: 1 },
-    { value: "${FantasyName}, ${a:QuickNPC}, recently inherited ${a:urbn_place} in ${urbn_cityname} from their ${FamilyMember}, a notorious ${lucrativecareer}", weight: 1 },
-    { value: "${FantasyName}, ${a:QuickNPC}, ${npctonpc} ${FantasyName}, ${a:QuickNPC}", weight: 1 },
+    { value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} recently inherited ${a:urbn_place} in ${urbn_cityname} from their ${FamilyMember}, a notorious ${lucrativecareer}", weight: 1 },
+    { value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} ${npctonpc} ${FantasyName}, ${a:QuickNPC}", weight: 1 },
     { value: "${FantasyName}, ${a:QuickNPC}, is descended from the King of ${foreignland}${foreign_phrase}, known as a friend of ${criminals} and driven from power ${when} ago. He supposedly held his exiled court in ${a:urbn_place}", weight: 1 },
     { value: "${FantasyName}, ${a:QuickNPC}, is related to ${heroes_and_villains} by mother’s blood", weight: 1 },
     { value: "${FantasyName}, ${a:QuickNPC}, ${slander} … (but you didn’t hear that from me!)", weight: 1 },
-    { value: "${FantasyName}, ${a:QuickNPC}, keeps ${secret} buried under ${buryingplace} in their yard", weight: 1 },
+    { value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} keeps ${secret} buried under ${buryingplace} in their yard", weight: 1 },
     { value: "${FantasyName}, ${a:QuickNPC}, knows more about ${localtopic} than they let on", weight: 1 },
     { value: "${FantasyName}, now ${a:QuickNPC}, used to be ${a:excitingpast} ${excitingemployer}", weight: 1 },
   ],
@@ -3073,7 +3077,7 @@ const tables = {
     { value: "ghost crocodile", weight: 1 },
     { value: "harpy", weight: 1 },
     { value: "manticore", weight: 1 },
-    { value: "polar bear", weight: 1 },
+    { value: "${monsterdragontype} bear", weight: 1 },
     { value: "treant", weight: 1 },
     { value: "satyr", weight: 1 },
     { value: "serpent", weight: 1 },
@@ -3083,7 +3087,7 @@ const tables = {
     { value: "spider wife", weight: 1 },
     { value: "time ghost", weight: 1 },
     { value: "wasp queen", weight: 1 },
-    { value: "witch owl", weight: 1 },
+    { value: "witchowl", weight: 1 },
 	{ value: "dryad", weight: 1 },
   ],
 
@@ -3093,6 +3097,7 @@ const tables = {
     { value: "singing", weight: 1 },
     { value: "spider", weight: 1 },
     { value: "weeping", weight: 1 },
+	{ value: "perfumed", weight: 1 },
   ],
 
   monstertype: [
@@ -5494,6 +5499,14 @@ trap_location: [
     { value: "85", weight: 1 },
     { value: "99", weight: 1 },
   ],
+  
+  
+  AnimalMain: [
+    { value: "${AnimalInsect}", weight: 1 },
+    { value: "${AnimalMammal}", weight: 1 },
+    { value: "${AnimalOrdinary}", weight: 1 },
+    { value: "${AnimalReptile}", weight: 1 },
+  ],
 
   AnimalInsect: [
     { value: "spider", weight: 1 },
@@ -6298,6 +6311,19 @@ trap_location: [
     { value: "despair", weight: 1 },
 	{ value: "disgust", weight: 1 },
 	{ value: "nausea", weight: 1 },
+  ],
+  
+  claim_to_fame: [
+    { value: "", weight: 5 },
+    { value: " who invented ${dance},", weight: 1 },
+    { value: " ${triad_person},", weight: 1 },
+    { value: " who discovered ${a:wilds_adj} ${wilds_noun} ${wilds_locn} that ${wilds_hook},", weight: 1 },
+	{ value: " who used to run with ${criminals} but is now reformed,", weight: 1 },
+	{ value: " who keeps a pet ${AnimalMain},", weight: 1 },
+  ],
+  
+  triad_person: [
+    { value: "one of the three best whistlers in the world", weight: 1 },
   ],
   
   
