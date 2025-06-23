@@ -878,7 +878,7 @@ const tables = {
     { value: "heretics", weight: 1 },
     { value: "idolaters", weight: 1 },
     { value: "kidnappers", weight: 1 },
-    { value: "liars", weight: 1 },
+    { value: "truthstretchers", weight: 1 },
     { value: "loiterers", weight: 1 },
     { value: "magic users", weight: 1 },
     { value: "masturbators", weight: 1 },
@@ -2652,6 +2652,7 @@ const tables = {
     { value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} keeps ${secret} buried under ${buryingplace} in their yard", weight: 1 },
     { value: "${FantasyName}, ${a:QuickNPC}, knows more about ${localtopic} than they let on", weight: 1 },
     { value: "${FantasyName}, now ${a:QuickNPC}, used to be ${a:excitingpast} ${excitingemployer}", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, had a vivid dream last night where ${heroes_and_villains} ${cause_of_death}", weight: 2 },
   ],
 
   local_desire: [
@@ -2978,7 +2979,6 @@ const tables = {
   membership: [
     { value: "${brigandnames}", weight: 1 },
     { value: "${dwarfclanname} Clan", weight: 1 },
-    { value: "Maneater Mildred’s Man-eaten Men", weight: 1 },
     { value: "the Academy of Masters", weight: 1 },
     { value: "the Brotherhood of Sleeping Car Porters", weight: 1 },
     { value: "the Chuckle Fraternity", weight: 1 },
@@ -6368,6 +6368,85 @@ trap_location: [
 	{ value: "the world", weight: 1 },
   ],
   
+  
+  cause_of_death: [
+    { value: "drowned ${cod_water}", weight: 1 },
+    { value: "${cod_fire}", weight: 1 },
+    { value: "${cod_battle}", weight: 1 },
+	{ value: "choked on ${a:cod_choke}", weight: 1 },
+	{ value: "${cod_quiet} and ${cod_post}", weight: 1 },
+	{ value: "${cod_ironic}", weight: 1 },
+	{ value: "${cod_misc}", weight: 1 },
+  ],
+  
+  cod_water: [
+    { value: "in the moat outside Castle ${slumberplace}", weight: 1 },
+    { value: "in a puddle of ${cod_liquid}", weight: 1 },
+    { value: "in the ${Colors} sand of a giant hourglass", weight: 1 },
+	{ value: "in the rough waters off ${coastal}", weight: 1 },
+  ],
+  
+  cod_fire: [
+    { value: "was engulfed by a living ${Colors} flame", weight: 1 },
+    { value: "perished in the flames when ${urbn_cityname}, City of ${urbn_citynickname}, was pillaged by ${ntc} or ${creepyvillain}, it's unclear which", weight: 1 },
+    { value: "was burnt to ash by the dragonflame of the great wyrm ${slumberplace}", weight: 1 },
+	{ value: "was roasted over a spit by ${trap_builder}", weight: 1 },
+	{ value: "spontaneously combusted after displeasing ${FantasyGods}", weight: 1 },
+	{ value: "was burned at the stake, the typical punishment for ${criminals}", weight: 1 },
+  ],
+  
+  cod_battle: [
+    { value: "perished before the gates of ${urbn_cityname}, betrayed by ${ntc}, their trusted captain", weight: 1 },
+    { value: "was pierced by ${onedhundred} barbed arrows during the siege of Castle ${slumberplace}", weight: 1 },
+    { value: "was beheaded by ${ntc} after the disastrous Battle of ${propheticbattle}", weight: 1 },
+	{ value: "was unhorsed and unmanned by ${posse_quality} ${posse} from ${placebeyond} during the Battle of ${propheticbattle}", weight: 1 },
+	{ value: "fell while scaling the walls of Castle ${slumberplace}", weight: 1 },
+  ],
+  
+  cod_choke: [
+    { value: "${AnimalMammal} bone", weight: 1 },
+    { value: "bowl of ${Crop} soup", weight: 1 },
+  ],
+  
+  cod_liquid: [
+    { value: "${mysterymeat} blood", weight: 2 },
+    { value: "sacred oil", weight: 1 },
+    { value: "sea water", weight: 1 },
+  ],
+  
+  cod_quiet: [
+    { value: "died in bed with two lovers", weight: 1 },
+    { value: "died in their homeland under the shade of ${a:cod_tree_type} tree", weight: 1 },
+    { value: "died in good cheer, surrounded by their family and friends", weight: 1 },
+  ],
+  
+  cod_post: [
+    { value: "their soul became ${a:Colors} star due to their faithful service to ${FantasyGods}", weight: 1 },
+    { value: "their soul was reincarnated in the body of ${a:AnimalMain}", weight: 1 },
+    { value: "their spirit remains behind to aid all those who are loyal to ${urbn_cityname}", weight: 1 },
+  ],
+  
+  cod_ironic: [
+    { value: "was crushed under a heap of ${Jewels} after wishing to be as wealthy as ${who_is_buried} which a cruel djinn overheard", weight: 1 },
+    { value: "was beaten to death by their own ${MusicalInstrument} after offending the refined ears of ${monstertype} one too many times", weight: 1 },
+  ],
+  
+  cod_misc: [
+    { value: "was crushed by ${washups} near ${landmark}", weight: 1 },
+    { value: "fell into a bottomless pit, and is falling still", weight: 1 },
+    { value: "was devoured by ${a:idol_subject_human_pre_desc} ${AnimalMain}", weight: 1 },
+],
+
+cod_tree_type: [
+    { value: "golden ash", weight: 1 },
+    { value: "blue jacaranda", weight: 1 },
+    { value: "rough-barked apple", weight: 1 },
+	{ value: "silver lime", weight: 1 },
+	{ value: "scarlet oak", weight: 1 },
+  ],
+
+
+
 
     intro: [
 	    { value: "${I_herd}", weight: 1 }
