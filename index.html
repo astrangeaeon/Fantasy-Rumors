@@ -177,7 +177,7 @@ border: 1px solid black;
 
 <div class="container rumorbox" style="background-color:MediumSpringGreen;">
   <div class="row gx-5">
-  <p class="text-center"><b>Concerning Strange Customs from Foreign Lands</b></p>
+  <p class="text-center"><b>Concerning Strange Customs and Strange Peoples from Foreign Lands</b></p>
     <div class="col-md-4">
       <p id="custom"></p>
     </div>
@@ -2652,7 +2652,7 @@ const tables = {
     { value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} keeps ${secret} buried under ${buryingplace} in their yard", weight: 1 },
     { value: "${FantasyName}, ${a:QuickNPC}, knows more about ${localtopic} than they let on", weight: 1 },
     { value: "${FantasyName}, now ${a:QuickNPC}, used to be ${a:excitingpast} ${excitingemployer}", weight: 1 },
-	{ value: "${FantasyName}, ${a:QuickNPC}, had a vivid dream last night where ${heroes_and_villains} ${cause_of_death}", weight: 2 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, had a vivid dream last night where they watched as ${heroes_and_villains} ${cause_of_death}", weight: 2 },
   ],
 
   local_desire: [
@@ -4059,6 +4059,7 @@ const tables = {
 
   Strange_Custom: [
     { value: "in ${foreign_adj}${foreignland}${foreign_phrase}, there’s ${a:strange} ${habit} where ${strangecustom}", weight: 1 },
+	{ value: "the people of ${foreign_adj}${foreignland} ${inherited_traits}", weight: 1 },
   ],
 
   strange: [
@@ -6388,7 +6389,7 @@ trap_location: [
   
   cod_fire: [
     { value: "was engulfed by a living ${Colors} flame", weight: 1 },
-    { value: "perished in the flames when ${urbn_cityname}, City of ${urbn_citynickname}, was pillaged by ${ntc} or ${creepyvillain}, it's unclear which", weight: 1 },
+    { value: "perished in the flames when ${urbn_cityname}, City of ${urbn_citynickname}, was pillaged by the army of ${ntc} or ${creepyvillain}, it's unclear which", weight: 1 },
     { value: "was burnt to ash by the dragonflame of the great wyrm ${slumberplace}", weight: 1 },
 	{ value: "was roasted over a spit by ${trap_builder}", weight: 1 },
 	{ value: "spontaneously combusted after displeasing ${FantasyGods}", weight: 1 },
@@ -6445,8 +6446,41 @@ cod_tree_type: [
 	{ value: "scarlet oak", weight: 1 },
   ],
 
+inherited_traits: [
+    { value: "are known for having ${tail_type} tails that they rarely show to outsiders", weight: 2 },
+    { value: "are known for their ${duo_detail}", weight: 2 },
+    { value: "all share a birthmark of ${a:WeirdSymbol}", weight: 1 },
+	{ value: "are all born with a scar inherited from a legendary ancestor who was struck by ${FantasyGods}", weight: 1 },
+	{ value: "are known for having ${short_inherited_trait}", weight: 2 },
+	{ value: "can breathe underwater via subtle gills behind their ears", weight: 1 },
+    { value: "are known to shed a milky white blood", weight: 1 },
+    { value: "are known for having the taloned feet of a bird of prey", weight: 1 },
+	{ value: "are known for having vestigial ${wingtype} wings", weight: 1 },
+	{ value: "are all born with ${a:AnimalMain} familiar that accompanies them throughout their life", weight: 2 },
+	{ value: "are all born with an immunity to serpent venom", weight: 1 },
+    { value: "have body odor that smells like ${Smells}", weight: 2 },
+    { value: "are all born with an extra organ that allows the digestion of stones", weight: 1 },
+	{ value: "are protected by ${herdanimal}${herdwith} as a result of a long ago pact", weight: 2 },
+  ],
 
-
+tail_type: [
+    { value: "long prehensile", weight: 1 },
+    { value: "broad and furry fox-like", weight: 1 },
+    { value: "venomous scorpion-like", weight: 1 },
+	{ value: "self-amputating gecko-like", weight: 1 },
+	{ value: "curly hog-like", weight: 1 },
+	{ value: "feathery bird-like", weight: 1 },
+  ],
+  
+  short_inherited_trait: [
+    { value: "a set of small fuzzy antlers", weight: 1 },
+    { value: "a double row of teeth", weight: 1 },
+    { value: "slightly luminescent skin", weight: 1 },
+	{ value: "fragile bones", weight: 1 },
+	{ value: "bearlike hirsuteness", weight: 1 },
+	{ value: "pronounced upper canines", weight: 1 },
+	{ value: "sweat that attracts pollinating insects", weight: 1 },
+  ],
 
     intro: [
 	    { value: "${I_herd}", weight: 1 }
