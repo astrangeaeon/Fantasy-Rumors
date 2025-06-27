@@ -177,7 +177,7 @@ border: 1px solid black;
 
 <div class="container rumorbox" style="background-color:MediumSpringGreen;">
   <div class="row gx-5">
-  <p class="text-center"><b>Concerning Strange Customs and Strange Peoples from Foreign Lands</b></p>
+  <p class="text-center"><b>Concerning the Strange Customs and Rude Peoples of Foreign Lands</b></p>
     <div class="col-md-4">
       <p id="custom"></p>
     </div>
@@ -1170,6 +1170,8 @@ const tables = {
     { value: "Vengarl of Forossa", weight: 1 },
 	{ value: "Geoffrey of the Great Tooth", weight: 1 },
 	{ value: "Miriam of Nazara", weight: 1 },
+	{ value: "Zohran the Destroyer", weight: 1 },
+	{ value: "Moody Nolan", weight: 1 },
   ],
 
   deadadventurerloot: [
@@ -6378,6 +6380,7 @@ trap_location: [
 	{ value: "${cod_quiet} and ${cod_post}", weight: 1 },
 	{ value: "${cod_ironic}", weight: 1 },
 	{ value: "${cod_misc}", weight: 1 },
+	{ value: "${cod_ose}", weight: 1 },
   ],
   
   cod_water: [
@@ -6438,6 +6441,12 @@ trap_location: [
     { value: "was devoured by ${a:idol_subject_human_pre_desc} ${AnimalMain}", weight: 1 },
 ],
 
+cod_ose: [
+    { value: "was betrayed by a doppelgänger in the Caverns of Thracia", weight: 1 },
+    { value: "was crushed beneath the heavy limb of an undead treant", weight: 1 },
+	{ value: "drank a cup of poison after insulting a black hag", weight: 1 },
+  ],
+
 cod_tree_type: [
     { value: "golden ash", weight: 1 },
     { value: "blue jacaranda", weight: 1 },
@@ -6447,7 +6456,7 @@ cod_tree_type: [
   ],
 
 inherited_traits: [
-    { value: "are known for having ${tail_type} tails that they rarely show to outsiders", weight: 2 },
+    { value: "are known for having ${tail_type} tails ${tail_reaction}", weight: 2 },
     { value: "are known for their ${duo_detail}", weight: 2 },
     { value: "all share a birthmark of ${a:WeirdSymbol}", weight: 1 },
 	{ value: "are all born with a scar inherited from a legendary ancestor who was struck by ${FantasyGods}", weight: 1 },
@@ -6459,8 +6468,9 @@ inherited_traits: [
 	{ value: "are all born with ${a:AnimalMain} familiar that accompanies them throughout their life", weight: 2 },
 	{ value: "are all born with an immunity to serpent venom", weight: 1 },
     { value: "have body odor that smells like ${Smells}", weight: 2 },
-    { value: "are all born with an extra organ that allows the digestion of stones", weight: 1 },
+    { value: "are all born with an extra organ that allows the digestion of ${trait_digestion}", weight: 2 },
 	{ value: "are protected by ${herdanimal}${herdwith} as a result of a long ago pact", weight: 2 },
+	{ value: "can be burned by moonlight due to an ancestor's slight", weight: 1 },
   ],
 
 tail_type: [
@@ -6472,6 +6482,24 @@ tail_type: [
 	{ value: "feathery bird-like", weight: 1 },
   ],
   
+  tail_reaction: [
+    { value: "that they conceal from outsiders", weight: 1 },
+    { value: "that they love to show off", weight: 1 },
+    { value: "that are taboo for any but family and lovers to see", weight: 1 },
+	{ value: "but that's a lie", weight: 1 },
+	{ value: "that they lose as a rite of passage", weight: 1 },
+	{ value: "that they would die without", weight: 1 },
+  ],
+  
+  trait_digestion: [
+    { value: "stones and minerals", weight: 1 },
+    { value: "raw meat and offal", weight: 1 },
+    { value: "poisonous plants and fungi", weight: 1 },
+	{ value: "dirt, clay and sand", weight: 1 },
+	{ value: "hair and animal fur", weight: 1 },
+	{ value: "coins and other metals", weight: 1 },
+  ],
+  
   short_inherited_trait: [
     { value: "a set of small fuzzy antlers", weight: 1 },
     { value: "a double row of teeth", weight: 1 },
@@ -6480,6 +6508,10 @@ tail_type: [
 	{ value: "bearlike hirsuteness", weight: 1 },
 	{ value: "pronounced upper canines", weight: 1 },
 	{ value: "sweat that attracts pollinating insects", weight: 1 },
+	{ value: "booming powerful voices", weight: 1 },
+	{ value: "tri-forked serpentine tongues", weight: 1 },
+	{ value: "a third arm on the left side", weight: 1 },
+	{ value: "tiny sharp thorns that develop during puberty", weight: 1 },
   ],
 
     intro: [
