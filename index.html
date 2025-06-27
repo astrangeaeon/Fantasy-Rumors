@@ -5989,7 +5989,7 @@ trap_location: [
     { value: "software engineer", weight: 1 },
     { value: "barista", weight: 1 },
     { value: "project manager", weight: 1 },
-    { value: "nurse anesthetist ", weight: 1 },
+    { value: "nurse anesthetist", weight: 1 },
     { value: "budget analyst", weight: 1 },
     { value: "animator", weight: 1 },
     { value: "cartoonist", weight: 1 },
@@ -6471,6 +6471,11 @@ inherited_traits: [
     { value: "are all born with an extra organ that allows the digestion of ${trait_digestion}", weight: 2 },
 	{ value: "are protected by ${herdanimal}${herdwith} as a result of a long ago pact", weight: 2 },
 	{ value: "can be burned by moonlight due to an ancestor's slight", weight: 1 },
+	{ value: "are all born knowing the ancient tongue of the ${ancientpeople}", weight: 1 },
+	{ value: "can speak the tongue of ${AnimalMain}s as a result of a long ago treaty", weight: 1 },
+	{ value: "were blessed by Saint ${SaintName} ${saint_blessing}", weight: 2 },
+	{ value: "were cursed by Saint ${SaintName} ${saint_curse}", weight: 2 },
+	{ value: "are all born with star-shaped burns on their hands from when a legendary ancestor tried to steal ${tomb_loot} from ${FantasyGods}", weight: 2 },
   ],
 
 tail_type: [
@@ -6512,7 +6517,29 @@ tail_type: [
 	{ value: "tri-forked serpentine tongues", weight: 1 },
 	{ value: "a third arm on the left side", weight: 1 },
 	{ value: "tiny sharp thorns that develop during puberty", weight: 1 },
+	{ value: "weakly magnetic bones, some attracting, some repelling", weight: 1 },
+	{ value: "leporine fecundity", weight: 1 },
+	{ value: "the ears of ${a:AnimalMammal}", weight: 1 },
+	{ value: "feet as sensitive and dexterous as hands", weight: 1 },
   ],
+  
+  saint_blessing: [
+    { value: "to never want for ${duo_jewlery}", weight: 1 },
+    { value: "to always know the direction of ${landmark}", weight: 1 },
+    { value: "with the knowledge of ${knowledgething}", weight: 1 },
+	{ value: "to always be welcome in the House of ${housething}", weight: 1 },
+	{ value: "with a talent for playing the ${MusicalInstrument}", weight: 1 },
+  ],
+
+
+saint_curse: [
+    { value: "to have ${short_inherited_trait}", weight: 1 },
+    { value: "to weep for ${who_is_buried} before sunrise each day", weight: 1 },
+    { value: "with the knowledge of ${knowledgething}", weight: 1 },
+	{ value: "to have nightmares of ${idol}", weight: 1 },
+	{ value: "to seek out and collect ${collection}", weight: 1 },
+  ],
+
 
     intro: [
 	    { value: "${I_herd}", weight: 1 }
