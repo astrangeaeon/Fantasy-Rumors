@@ -6637,8 +6637,8 @@ saint_curse: [
   
    prophetic_subject: [
     { value: "an unknown ${prophetic_subject_unknown}", weight: 1 },
-    { value: "${uc:RoyalTitleFemale} ${FantasyNameFemale}", weight: 1 },
-	{ value: "${uc:RoyalTitleMale} ${FantasyNameMale}", weight: 1 },
+    { value: "${uc:RoyalTitleFemale} ${FantasyNameFemale} of ${foreignland}", weight: 1 },
+	{ value: "${uc:RoyalTitleMale} ${FantasyNameMale} of ${foreignland}", weight: 1 },
 	{ value: "Saint ${SaintName}", weight: 1 },
     { value: "${heroes_and_villains}", weight: 1 },
 	{ value: "${a:QuickNPCDescriptor} ${prophetic_subject_unknown}", weight: 1 },
@@ -6654,8 +6654,10 @@ saint_curse: [
   
   prophetic_vision: [
     { value: "${prophetic_subject} ${cause_of_death}", weight: 1 },
-    { value: "${a:pet} was born from ${a:monsterA}", weight: 1 },
-	{ value: "${prophetic_subject} ${prophetic_vision_verb} ${a:monsterA}", weight: 1 },
+    { value: "${a:pet} was born from ${a:idol_subject_human_pre_desc} ${monsterA}", weight: 1 },
+	{ value: "${prophetic_subject} ${prophetic_vision_verb} ${a:prophetic_vision_companion}", weight: 1 },
+	{ value: "${prophetic_subject} played a game of ${board_games} with ${board_game_opponent}", weight: 1 },
+	{ value: "${a:pet} was torn to pieces by ${a:idol_subject_human_pre_desc} ${monsterA}", weight: 1 },
   ],
   
   
@@ -6663,12 +6665,40 @@ saint_curse: [
     { value: "befriended", weight: 1 },
     { value: "fought", weight: 1 },
 	{ value: "ate", weight: 1 },
+	{ value: "played with", weight: 1 },
+    { value: "shared wine with", weight: 1 },
+	{ value: "feasted on ${FantasyMeal} with", weight: 1 },
   ],
   
   prophetic_vision_emotion: [
+    { value: "", weight: 5 },
     { value: ", horrified,", weight: 1 },
     { value: " in astonishment", weight: 1 },
 	{ value: " in holy awe", weight: 1 },
+  ],
+  
+   prophetic_vision_companion: [
+    { value: "${QuickNPCDescriptor} ${monsterA}", weight: 1 },
+    { value: "${QuickNPCDescriptor} ${AnimalMain}", weight: 1 },
+    { value: "${QuickNPCDescriptor} ${oldest}", weight: 1 },
+  ],
+  
+  board_games: [
+    { value: "checkers", weight: 3 },
+    { value: "chess", weight: 3 },
+    { value: "backgammon", weight: 3 },
+	{ value: "struggle", weight: 3 },
+	{ value: "Sorcerer's Cave", weight: 1 },
+    { value: "Tigris and Euphrates", weight: 1 },
+    { value: "Ambush!", weight: 1 },
+	{ value: "cards", weight: 3 },
+  ],
+  
+   board_game_opponent: [
+    { value: "${creepyvillain}", weight: 5 },
+    { value: "${a:QuickNPCDescriptor} ${monsterA}", weight: 1 },
+    { value: "${a:QuickNPCDescriptor} ${AnimalMain}", weight: 1 },
+	{ value: "${FantasyGods}", weight: 1 },
   ],
 
     intro: [
