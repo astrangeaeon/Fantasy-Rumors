@@ -1363,7 +1363,7 @@ const tables = {
     { value: "distinctive ${Colors} eyes", weight: 1 },
     { value: "shocking ${Colors} hair", weight: 1 },
     { value: "${duo_clothing_adj} ${Colors} ${duo_clothing}", weight: 1 },
-	{ value: "smell of ${Smells}", weight: 1 },
+	{ value: "stench of ${Smells}", weight: 1 },
 	{ value: "${duo_clothing_adj} ${Colors} ${duo_jewlery}", weight: 1 },
   ],
 
@@ -1904,7 +1904,7 @@ const tables = {
     { value: "lying to God", weight: 1 },
     { value: "stealing from ${monstertype}", weight: 1 },
     { value: "trespassing in sacred ${slumberplace}", weight: 1 },
-	{ value: "stealing ${idol}", weight: 1 },
+	{ value: "stealing ${a:idol}", weight: 1 },
   ],
 
   hero_fate: [
@@ -1915,7 +1915,7 @@ const tables = {
     { value: "was captured by a savage band of ${criminals}", weight: 1 },
     { value: "was defeated by a beast with a hundred legs", weight: 1 },
     { value: "was eaten by a grue", weight: 1 },
-	{ value: "now hangs in chains before ${idol}", weight: 1 },
+	{ value: "now hangs in chains before ${a:idol}", weight: 1 },
     { value: "his skull now houses a family of mice", weight: 1 },
   ],
 
@@ -2148,7 +2148,7 @@ const tables = {
   ],
   
   idol: [
-    { value: "${a:idol_size} ${idol_material} idol ${idol_of} ${a:idol_subject}", weight: 1 },
+    { value: "${idol_size} ${idol_material} idol ${idol_of} ${a:idol_subject}", weight: 1 },
   ],
   
   idol_size: [
@@ -2270,7 +2270,7 @@ const tables = {
     { value: "where the hero ${heroes_and_villains} was born holding a golden blade", weight: 1 },
     { value: "where the Jaguar Lady is propitiated by both the lighting of candles and grisly blood rituals", weight: 1 },
     { value: "where the lion-god Aker guards the Gate of the Dawn through which the sun passes", weight: 1 },
-	{ value: "where ${idol} rests atop a high hill", weight: 1 },
+	{ value: "where ${a:idol} rests atop a high hill", weight: 1 },
     { value: "where the towering pole which holds up the tent of the sky is found, protected by ${islandprotector},", weight: 1 },
     { value: "where the world’s ${AnimalInsect} population arrives every seventeen years to honor their obscure god,", weight: 1 },
   ],
@@ -2655,6 +2655,7 @@ const tables = {
     { value: "${FantasyName}, ${a:QuickNPC}, knows more about ${localtopic} than they let on", weight: 1 },
     { value: "${FantasyName}, now ${a:QuickNPC}, used to be ${a:excitingpast} ${excitingemployer}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, had a vivid dream last night where they watched as ${heroes_and_villains} ${cause_of_death}", weight: 2 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, was granted a wish from ${wish_granter}", weight: 2 },
   ],
 
   local_desire: [
@@ -2881,6 +2882,8 @@ const tables = {
     { value: "umbrella", weight: 1 },
     { value: "volleyball", weight: 1 },
     { value: "war bow", weight: 1 },
+	{ value: "${MusicalInstrument}", weight: 1 },
+    { value: "${HaftedWeapons}", weight: 1 },
   ],
 
   magictype: [
@@ -3069,7 +3072,7 @@ const tables = {
     { value: "A greedy ${monsterA} on the ${floors} floor can be bargained with if its desire for ${collection} to add to its collection is appeased", weight: 1 },
     { value: "${a:monsterA} on the ${floors} floor, pregnant for over a decade, offers to free ${urbn_subjectsingular} they hold captive if any can offer relief", weight: 1 },
     { value: "Here the ${huntingmonster} of ${foreign_adj}${foreignland}${foreign_phrase} dwell amid squalor and noise, bellowing and vomiting black gore", weight: 1 },
-	{ value: "${monstertype} prays to ${idol} in the ruins of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
+	{ value: "${monstertype} prays to ${a:idol} in the ruins of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
   ],
 
   monsterA: [
@@ -3210,6 +3213,9 @@ const tables = {
     { value: "serpent", weight: 1 },
     { value: "swan", weight: 1 },
     { value: "tree", weight: 1 },
+	{ value: "elf", weight: 1 },
+    { value: "dwarf", weight: 1 },
+    { value: "hobbit", weight: 1 },
     { value: "unicorn", weight: 1 },
     { value: "vampire", weight: 1 },
   ],
@@ -3641,7 +3647,7 @@ const tables = {
   ],
 
   punishment_custom: [
-    { value: "${criminals} are punished by ${punishment}", weight: 3 },
+    { value: "${criminals} are punished by ${punishment}", weight: 5 },
     { value: "any who mention the 12th Dynasty have their eyes and tongues plucked out and their home burned down", weight: 1 },
     { value: "bad poets are devoured by wolf-hounds", weight: 1 },
     { value: "breaking and entering is punished by being buried beneath the threshold of the victim’s building", weight: 1 },
@@ -3660,7 +3666,7 @@ const tables = {
     { value: "the angels banished here for falling in love with men are pelted with stones", weight: 1 },
     { value: "the murder of a writer of fables is punished by the circumstances of the crime becoming a fable", weight: 1 },
     { value: "the names of political enemies are posted on a public list, allowing any citizen to legally kill those named to earn a bounty", weight: 1 },
-    { value: "the tongues of unbelivers are fed to cats", weight: 1 },
+    { value: "the tongues of unbelievers are fed to cats", weight: 1 },
     { value: "thefts occurring during the day are punished by fines, but those occurring at night are punished by death", weight: 1 },
     { value: "those guilty of measuring the space between the stars are pulled apart by two ships", weight: 1 },
     { value: "those who speak the holy word have holes drilled into their teeth and cords laced through to bind them shut", weight: 1 },
@@ -4585,6 +4591,7 @@ trap_location: [
     { value: "in ${urbn_cityname}, they keep the wine-preserved ${body_part} of ${heroes_and_villains} on display in order to protect the city from ${creepyvillain}", weight: 1 },
     { value: "in order to join ${membership}, prospective members must ${mindaltering} and ${membership_initiation}", weight: 1 },
 	{ value: "everyone should visit the city of ${urbn_cityname}, where the gods misspent their youth, at least once in their life, as the numinous atmosphere is so suffused that ${numinous_sense} engenders a feeling of ${numinous_adj} ${numinous_feeling}", weight: 3 },
+	{ value: "in ${urbn_cityname}, City of ${urbn_citynickname}, ${punishment_custom} ", weight: 5 },
   ],
 
   urbn_cityname: [
@@ -4787,7 +4794,7 @@ trap_location: [
     { value: "thieving monkeys who break into homes and steal food", weight: 1 },
     { value: "water contaminated with infected water fleas", weight: 1 },
     { value: "widespread drought", weight: 1 },
-	{ value: "the theft of ${idol}", weight: 1 },
+	{ value: "the theft of ${a:idol}", weight: 1 },
   ],
 
   urbn_subjectplural: [
@@ -4860,7 +4867,7 @@ trap_location: [
     { value: "vicious halflings interbred with animals", weight: 1 },
     { value: "wild druids", weight: 1 },
 	{ value: "${duo}", weight: 2 },
-	{ value: "worshippers of ${idol}", weight: 2 },
+	{ value: "worshippers of ${a:idol}", weight: 2 },
     { value: "wise silver-beards addicted to ${addiction}", weight: 1 },
     { value: "youthful maidens in diaphanous dresses", weight: 1 },
   ],
@@ -5034,7 +5041,7 @@ trap_location: [
     { value: "violate their oaths in mockery of those who would control them", weight: 1 },
     { value: "wait patiently for a celestial sign", weight: 1 },
     { value: "with severed tongues are learning telepathy", weight: 1 },
-	{ value: "bow before ${idol}", weight: 1 },
+	{ value: "bow before ${a:idol}", weight: 1 },
     { value: "worship a terrible god without feet or hands", weight: 1 },
   ],
 
@@ -5128,7 +5135,7 @@ trap_location: [
     { value: "suspiciously fits the description of a trickster god", weight: 1 },
     { value: "teaches cantrips to the disenfranchised", weight: 1 },
     { value: "teaches the high art of hypocrisy", weight: 1 },
-	{ value: "tempts the foolish to touch ${idol}", weight: 1 },
+	{ value: "tempts the foolish to touch ${a:idol}", weight: 1 },
     { value: "tells lies about a dark red ocean and rainbows of only three colors", weight: 1 },
     { value: "trades wishes for wine", weight: 1 },
     { value: "trains hounds to smell and track ${huntingmonster}", weight: 1 },
@@ -5167,7 +5174,7 @@ trap_location: [
     { value: "a massive tooth, taller than a troll,", weight: 1 },
     { value: "a short-necked giraffe with liquid metal skin", weight: 1 },
     { value: "a vast mollusk", weight: 1 },
-	{ value: "${idol}", weight: 1 },
+	{ value: "${a:idol}", weight: 1 },
     { value: "a vast tangled silver thread", weight: 1 },
     { value: "an enormous dead crab", weight: 1 },
     { value: "an enormous jellyfish corpse", weight: 1 },
@@ -5337,7 +5344,7 @@ trap_location: [
     { value: "on a high, sombre hill there, 120 knights in silver armor sleep in a cave", weight: 1 },
     { value: "on warm summer nights, strains of elegant music drift from a fallen mansion", weight: 1 },
     { value: "the ancient lights of the Sealed City can be seen", weight: 1 },
-	{ value: "${idol} sits surrounded by scorched earth", weight: 1 },
+	{ value: "${a:idol} sits surrounded by scorched earth", weight: 1 },
     { value: "the massive mallet used to hammer out the sky at the dawn of time lies half-buried where it was cast", weight: 1 },
     { value: "there stands a shrine to Korvak, the Hunting Lord", weight: 1 },
     { value: "there’s a 10×10 patch of ground upon which it is impossible to die", weight: 1 },
@@ -6019,7 +6026,7 @@ trap_location: [
     { value: "the home of the ${prophecyartifact}", weight: 1 },
     { value: "deserted by men, a home for ${herdanimal} now ", weight: 1 },
 	{ value: "the last known location of ${relic}", weight: 1 },
-	{ value: "famous for producing ${idol}", weight: 1 },
+	{ value: "famous for producing ${a:idol}", weight: 1 },
   ],
 
   QuickNPC: [
@@ -6457,10 +6464,9 @@ cod_tree_type: [
 
 inherited_traits: [
     { value: "are known for having ${tail_type} tails ${tail_reaction}", weight: 2 },
-    { value: "are known for their ${duo_detail}", weight: 2 },
     { value: "all share a birthmark of ${a:WeirdSymbol}", weight: 1 },
 	{ value: "are all born with a scar inherited from a legendary ancestor who was struck by ${FantasyGods}", weight: 1 },
-	{ value: "are known for having ${short_inherited_trait}", weight: 2 },
+	{ value: "are known for having ${short_inherited_trait} and for their ${duo_detail}", weight: 2 },
 	{ value: "can breathe underwater via subtle gills behind their ears", weight: 1 },
     { value: "are known to shed a milky white blood", weight: 1 },
     { value: "are said to have the taloned feet of a bird of prey", weight: 1 },
@@ -6470,12 +6476,15 @@ inherited_traits: [
     { value: "are said to have body odor that smells like ${Smells}", weight: 2 },
     { value: "are all born with an extra organ that allows the digestion of ${trait_digestion}", weight: 2 },
 	{ value: "are protected by ${herdanimal}${herdwith} as a result of a long ago pact", weight: 2 },
-	{ value: "have sensitive skin that can be burned by the light of the moon due to an ancestor's slight", weight: 1 },
 	{ value: "are all born knowing the ancient tongue of the ${ancientpeople}", weight: 1 },
 	{ value: "can speak the tongue of ${AnimalMain}s as a result of a long ago treaty", weight: 1 },
 	{ value: "were supposedly blessed by Saint ${SaintName} ${saint_blessing}", weight: 2 },
 	{ value: "were cursed by Saint ${SaintName} ${saint_curse}", weight: 2 },
 	{ value: "are all born with star-shaped burns on their hands from when a legendary ancestor tried to steal ${tomb_loot} from ${FantasyGods}", weight: 2 },
+	{ value: "all transform involuntarily into ${a:AnimalMammal} once a year for the week of their birthday", weight: 1 },
+	{ value: "all share the missing finger that was bitten off their ancestor's hand by a primal ${AnimalMain}", weight: 1 },
+	{ value: "all cast the strange shadows of ${huntingmonster}", weight: 1 },
+	{ value: "have sensitive skin that ${light_impact} when exposed to ${light_type} due to an ancestor's slight", weight: 2 },
   ],
 
 tail_type: [
@@ -6521,6 +6530,7 @@ tail_type: [
 	{ value: "leporine fecundity", weight: 1 },
 	{ value: "the ears of ${a:AnimalMammal}", weight: 1 },
 	{ value: "feet as sensitive and dexterous as hands", weight: 1 },
+	{ value: "beaks like snapping turtles", weight: 1 },
   ],
   
   saint_blessing: [
@@ -6536,10 +6546,57 @@ saint_curse: [
     { value: "to have ${short_inherited_trait}", weight: 1 },
     { value: "to weep for ${who_is_buried} before sunrise each day", weight: 1 },
     { value: "with the knowledge of ${knowledgething}", weight: 1 },
-	{ value: "to have nightmares of ${idol}", weight: 1 },
+	{ value: "to have nightmares of ${a:idol}", weight: 1 },
 	{ value: "to seek out and collect ${collection}", weight: 1 },
   ],
+  
+  light_type: [
+    { value: "sunlight", weight: 1 },
+    { value: "moonlight", weight: 1 },
+    { value: "the light of stars", weight: 1 },
+	{ value: "torchlight", weight: 1 },
+	{ value: "magical light", weight: 1 },
+	{ value: "reflected light", weight: 1 },
+  ],
+  
+   light_impact: [
+    { value: "smolders", weight: 1 },
+    { value: "rots", weight: 1 },
+    { value: "ages rapidly", weight: 1 },
+	{ value: "blisters", weight: 1 },
+	{ value: "bloats", weight: 1 },
+	{ value: "painfully sheds", weight: 1 },
+	{ value: "turns grey until it sloughs off", weight: 1 },
+    { value: "begins to smell like ${Smells}", weight: 1 },
+	{ value: "disappears revealing the crimson muscle underneath", weight: 1 },
+	{ value: "disappears revealing the stark bone underneath", weight: 1 },
+  ],
+  
+  wish_granter: [
+    { value: "${wish_granter_living}", weight: 10 },
+    { value: "${wish_granter_nonliving}", weight: 1 },
+  ],
 
+  wish_granter_living: [
+    { value: "${a:QuickNPCDescriptor} ${Colors} djinn", weight: 1 },
+    { value: "their fairy godfather", weight: 1 },
+	{ value: "${a:QuickNPCDescriptor} ${magicusertype} with ${fd}", weight: 1 },
+    { value: "an avatar of ${FantasyGods}", weight: 1 },
+	{ value: "an enchanted ${AnimalMain} near ${landmark}", weight: 1 },
+    { value: "${a:wilds_adj} ${WeirdFantasyMonster}", weight: 1 },
+	{ value: "${monstertype} but won't say why", weight: 1 },
+    { value: "the spirit of ${heroes_and_villains} but for what, no one can say", weight: 1 },
+	{ value: "the ghost of ${urbn_subjectsingular}", weight: 1 },
+	{ value: "Saint ${SaintName} in answer to their prayers", weight: 1 },
+	{ value: "an animated ${magicalcommonobject} given sapience by the god ${RealGods}", weight: 1 },
+    { value: "a mysterious ${oldest} ${wilds_specific_locn}", weight: 1 },
+  ],
+  
+   wish_granter_nonliving: [
+    { value: "a talking ${cod_tree_type} tree", weight: 1 },
+    { value: "a voice at the bottom of a well ${wilds_specific_locn}", weight: 1 },
+	{ value: "interpreting the pages of an ancient book inked in the blood of ${prejudicetarget}", weight: 1 },
+  ],
 
     intro: [
 	    { value: "${I_herd}", weight: 1 }
