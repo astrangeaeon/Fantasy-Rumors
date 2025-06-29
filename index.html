@@ -2910,6 +2910,7 @@ const tables = {
     { value: "warlock", weight: 1 },
     { value: "witch", weight: 1 },
     { value: "wizard", weight: 1 },
+	{ value: "necromancer", weight: 1 },
   ],
 
   main: [
@@ -3483,6 +3484,7 @@ const tables = {
     { value: "The ${prophecysource} portend that ${timeframe}, ${catastrophe}, and that the ${AnimalMammal} shall inherit the earth", weight: 2 },
     { value: "The ${prophecysource} promise that ${oppressed_grp} will ${oppressverb} ${dominant_grp} ${timeframe}", weight: 1 },
     { value: "The ${prophecysource} promise that ${heroes_and_villains} will die by the ${AnimalInsect}, the ${AnimalReptile}, or the ${AnimalMammal}", weight: 1 },
+	{ value: "${a:prophetic_visionary} from ${propheticnearcity} ${urbn_cityname} shared a vision where they watched${prophetic_vision_emotion} as ${prophetic_vision}", weight: 10 },
   ],
 
   prophecy_age: [
@@ -4964,6 +4966,8 @@ trap_location: [
     { value: "the midwife to the Birth of Nine Diseases", weight: 1 },
     { value: "the pee-stained and pea-brained Prince of Idiots", weight: 1 },
     { value: "the wife of God", weight: 1 },
+	{ value: "the ${uc:prophetic_visionary} of ${urbn_cityname}", weight: 1 },
+	{ value: "${a:prophetic_visionary} from ${urbn_cityname}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6596,6 +6600,75 @@ saint_curse: [
     { value: "a talking ${cod_tree_type} tree", weight: 1 },
     { value: "a voice at the bottom of a well ${wilds_specific_locn}", weight: 1 },
 	{ value: "interpreting the pages of an ancient book inked in the blood of ${prejudicetarget}", weight: 1 },
+  ],
+  
+  
+  prophetic_visionary: [
+    { value: "seer", weight: 1 },
+    { value: "augur", weight: 1 },
+	{ value: "${magicusertype}", weight: 1 },
+    { value: "diviner", weight: 1 },
+	{ value: "soothsayer", weight: 1 },
+    { value: "prophet", weight: 1 },
+	{ value: "prophetess", weight: 1 },
+    { value: "fortune-teller", weight: 1 },
+	{ value: "oracle", weight: 1 },
+    { value: "sibyl", weight: 1 },
+	{ value: "mystic", weight: 1 },
+    { value: "crystal-gazer", weight: 1 },
+	{ value: "rune-caster", weight: 1 },
+	{ value: "haruspex", weight: 1 },
+    { value: "scryer", weight: 1 },
+	{ value: "star-watcher", weight: 1 },
+    { value: "${futurists}", weight: 1 },
+  ],
+  
+  futurists: [
+    { value: "aeromancer", weight: 1 },
+    { value: "alectromancer", weight: 1 },
+	{ value: "bibliomancer", weight: 1 },
+	{ value: "ceromancer", weight: 1 },
+    { value: "lithomancer", weight: 1 },
+	{ value: "molybdomancer", weight: 1 },
+	{ value: "nephomancer", weight: 1 },
+    { value: "oneiromancer", weight: 1 },
+	{ value: "pyromancer", weight: 1 },
+  ],
+  
+   prophetic_subject: [
+    { value: "an unknown ${prophetic_subject_unknown}", weight: 1 },
+    { value: "${uc:RoyalTitleFemale} ${FantasyNameFemale}", weight: 1 },
+	{ value: "${uc:RoyalTitleMale} ${FantasyNameMale}", weight: 1 },
+	{ value: "Saint ${SaintName}", weight: 1 },
+    { value: "${heroes_and_villains}", weight: 1 },
+	{ value: "${a:QuickNPCDescriptor} ${prophetic_subject_unknown}", weight: 1 },
+	{ value: "${a:QuickNPCDescriptor} ${QuickNPCJob}", weight: 1 },
+  ],
+  
+  
+  prophetic_subject_unknown: [
+    { value: "${RoyalTitleFemale}", weight: 1 },
+    { value: "${RoyalTitleFemale}", weight: 1 },
+	{ value: "${idol_subject_human_type}", weight: 1 },
+  ],
+  
+  prophetic_vision: [
+    { value: "${prophetic_subject} ${cause_of_death}", weight: 1 },
+    { value: "${a:pet} was born from ${a:monsterA}", weight: 1 },
+	{ value: "${prophetic_subject} ${prophetic_vision_verb} ${a:monsterA}", weight: 1 },
+  ],
+  
+  
+  prophetic_vision_verb: [
+    { value: "befriended", weight: 1 },
+    { value: "fought", weight: 1 },
+	{ value: "ate", weight: 1 },
+  ],
+  
+  prophetic_vision_emotion: [
+    { value: " ,horrified,", weight: 1 },
+    { value: " in astonishment", weight: 1 },
+	{ value: " in holy awe", weight: 1 },
   ],
 
     intro: [
