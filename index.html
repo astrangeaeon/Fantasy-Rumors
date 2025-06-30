@@ -2002,11 +2002,11 @@ const tables = {
   ],
 
   holiday: [
-    { value: "birthdays", weight: 1 },
+    { value: "Rainbow Day", weight: 1 },
     { value: "Black Lodge Day", weight: 1 },
     { value: "King\'s Day", weight: 1 },
     { value: "Mandatory Organized Joy Day", weight: 1 },
-    { value: "Seeking Day", weight: 1 },
+    { value: "the Day of Seeking", weight: 1 },
     { value: "the Abundance of Enlil", weight: 1 },
     { value: "the anniversary of the victory at ${urbn_cityname}", weight: 1 },
     { value: "the birth of ${heroes_and_villains}", weight: 1 },
@@ -2898,7 +2898,6 @@ const tables = {
   magicuserlandtype: [
     { value: "desert", weight: 1 },
     { value: "swamp", weight: 1 },
-    { value: "woods", weight: 1 },
   ],
 
   magicusertype: [
@@ -6658,6 +6657,9 @@ saint_curse: [
 	{ value: "${prophetic_subject} ${prophetic_vision_verb} ${a:prophetic_vision_companion}", weight: 1 },
 	{ value: "${prophetic_subject} played a game of ${board_games} with ${board_game_opponent}", weight: 1 },
 	{ value: "${a:pet} was torn to pieces by ${a:idol_subject_human_pre_desc} ${monsterA}", weight: 1 },
+	{ value: "${historicalbuilders} began to unearth ${landmark_manmade} buried beneath a sprawling ${magicuserlandtype}", weight: 1 },
+	{ value: "${huntingmonster} ${celebration_type} celebrated ${holiday}", weight: 1 },
+	{ value: "${prophetic_subject} ${prophetic_vision_location_verb} ${landmark_natural}", weight: 1 },
   ],
   
   
@@ -6665,9 +6667,19 @@ saint_curse: [
     { value: "befriended", weight: 1 },
     { value: "fought", weight: 1 },
 	{ value: "ate", weight: 1 },
-	{ value: "played with", weight: 1 },
+	{ value: "played ${board_games} with", weight: 1 },
     { value: "shared wine with", weight: 1 },
 	{ value: "feasted on ${FantasyMeal} with", weight: 1 },
+  ],
+  
+  prophetic_vision_location_verb: [
+    { value: "sanctified with ${cod_liquid}", weight: 1 },
+    { value: "laid claim in the ${po:RoyalTitleMale} name to", weight: 1 },
+	{ value: "sacrificed ${a:pet} to", weight: 1 },
+	{ value: "disrobed before disappearing into", weight: 1 },
+	{ value: "paced back and forth across", weight: 1 },
+    { value: "buried a treasure near", weight: 1 },
+	{ value: "released ${huntingmonster} into", weight: 1 },
   ],
   
   prophetic_vision_emotion: [
@@ -6700,6 +6712,19 @@ saint_curse: [
     { value: "${a:QuickNPCDescriptor} ${AnimalMain}", weight: 1 },
 	{ value: "${FantasyGods}", weight: 1 },
   ],
+
+celebration_type: [
+    { value: "somberly", weight: 1 },
+    { value: "boisterously", weight: 1 },
+	{ value: "raucously", weight: 1 },
+	{ value: "drunkenly", weight: 1 },
+    { value: "soberly", weight: 1 },
+	{ value: "reluctantly", weight: 1 },
+	{ value: "quietly", weight: 1 },
+    { value: "mockingly", weight: 1 },
+	{ value: "fearfully", weight: 1 },
+  ],
+
 
     intro: [
 	    { value: "${I_herd}", weight: 1 }
