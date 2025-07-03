@@ -153,7 +153,7 @@ border: 1px solid black;
 
 <div class="container rumorbox" style="background-color:Coral;">
   <div class="row gx-5">
-  <p class="text-center"><b>Concerning the Things To Come</b></p>
+  <p class="text-center"><b>Concerning Recondite Events of Old and the Things Yet To Come</b></p>
     <div class="col-md-4">
       <p id="prophecy"></p>
     </div>
@@ -4875,6 +4875,7 @@ trap_location: [
 	{ value: "worshippers of ${a:idol}", weight: 2 },
     { value: "wise silver-beards addicted to ${addiction}", weight: 1 },
     { value: "youthful maidens in diaphanous dresses", weight: 1 },
+	{ value: "scions of the Thousand Families", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -5652,6 +5653,15 @@ trap_location: [
     { value: "marble", weight: 1 },
     { value: "cinnabar", weight: 1 },
   ],
+
+  Metallic: [
+    { value: "silver", weight: 1 },
+    { value: "bronze", weight: 1 },
+    { value: "golden", weight: 1 },
+    { value: "steel", weight: 1 },
+    { value: "iron", weight: 1 },
+  ],
+
 
   DemonName: [
     { value: "Astaroth", weight: 1 },
@@ -6658,7 +6668,7 @@ saint_curse: [
   
   prophetic_vision: [
     { value: "${prophetic_subject} ${cause_of_death}", weight: 1 },
-    { value: "${a:pet} was born from ${a:idol_subject_human_pre_desc} ${monsterA}", weight: 1 },
+    { value: "${prophetic_vision_born_subject} was born from ${a:idol_subject_human_pre_desc} ${monsterA}", weight: 1 },
 	{ value: "${prophetic_subject} ${prophetic_vision_verb} ${a:prophetic_vision_companion}", weight: 1 },
 	{ value: "${prophetic_subject} played a game of ${board_games} with ${board_game_opponent}", weight: 1 },
 	{ value: "${a:pet} was torn to pieces by ${a:idol_subject_human_pre_desc} ${monsterA}", weight: 1 },
@@ -6666,6 +6676,24 @@ saint_curse: [
 	{ value: "${huntingmonster} ${celebration_type} celebrated ${holiday}", weight: 1 },
 	{ value: "${prophetic_subject} ${prophetic_vision_location_verb} ${landmark_natural}", weight: 1 },
 	{ value: "${prophetic_subject} sanctified ${landmark_natural} with ${cod_liquid}", weight: 1 },
+	{ value: "${uc:RoyalTitleFemale} ${FantasyNameFemale} of ${foreignland} gave birth to a swarm of ${AnimalInsect}s", weight: 1 },
+	{ value: "${FantasyGods}, departed from the City of ${uc:urbn_citynickname}", weight: 1 },
+	{ value: "${who_is_buried} sat indifferent on the ${prophetic_vision_thrones}, as ${a:oldest} ${facial_desc} bowed low before them", weight: 1 },
+	{ value: "${prophetic_subject} recoiled in disgust from what they saw in the mirror", weight: 1 },
+	{ value: "${prophetic_subject} devoured ${Jewels} off the filthy ground like ${a:AnimalMammal}", weight: 1 },
+	{ value: "${prophetic_subject} bartered for ${exchangething} in the markets of ${foreign_adj}${foreignland}", weight: 1 },
+  ],
+  
+  prophetic_vision_born_subject: [
+    { value: "${a:pet}", weight: 1 },
+    { value: "${prophetic_subject}", weight: 3 },
+  ],
+  
+  prophetic_vision_thrones: [
+    { value: "Throne of ${uc:Jewels}", weight: 1 },
+    { value: "${uc:Metallic} Throne", weight: 1 },
+	{ value: "Seat of Power", weight: 1 },
+    { value: "Chair of ${uc:elemntl_type}", weight: 1 },
   ],
   
   
