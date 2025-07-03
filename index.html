@@ -2658,6 +2658,28 @@ const tables = {
     { value: "${FantasyName}, now ${a:QuickNPC}, used to be ${a:excitingpast} ${excitingemployer}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, had a vivid dream last night where they watched as ${heroes_and_villains} ${cause_of_death}", weight: 2 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, was granted a wish from ${wish_granter}", weight: 2 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, ${local_obtain_art} ${a:art_visual_painting}", weight: 2 },
+  ],
+  
+  local_obtain_art: [
+    { value: "found something in their ${po:FamilyMember} attic:", weight: 1 },
+    { value: "inherited something from their ${FamilyMember}:", weight: 1 },
+    { value: "returned from the markets of ${urbn_cityname} with", weight: 1 },
+    { value: "is trying to sell", weight: 1 },
+    { value: "a tasteless ${local_philistine}, threw out", weight: 1 },
+    { value: "paid a fortune for", weight: 1 },
+    { value: "recently had something very valuable stolen:", weight: 1 },
+  ],
+  
+  
+  local_philistine: [
+    { value: "philistine", weight: 1 },
+    { value: "oaf", weight: 1 },
+    { value: "boor", weight: 1 },
+    { value: "clod", weight: 1 },
+    { value: "lout", weight: 1 },
+    { value: "barbarian", weight: 1 },
+    { value: "brute", weight: 1 },
   ],
 
   local_desire: [
@@ -6781,6 +6803,7 @@ saint_curse: [
     { value: "${a:QuickNPCDescriptor} ${AnimalMain}", weight: 1 },
 	{ value: "${FantasyGods}", weight: 1 },
   ],
+  
 
 celebration_type: [
     { value: "somberly", weight: 1 },
@@ -6793,7 +6816,109 @@ celebration_type: [
     { value: "mockingly", weight: 1 },
 	{ value: "fearfully", weight: 1 },
   ],
+  
+  
+    art: [
+    { value: "${art_visual}", weight: 1 },
+  ],
 
+
+    art_visual: [
+    { value: "${art_visual_painting}", weight: 1 },
+  ],
+  
+  art_visual_painting: [
+    { value: "${art_visual_painting_condition} ${art_visual_painting_style} ${art_visual_painting_type}", weight: 1 },
+  ],
+  
+  art_visual_painting_condition: [
+    { value: "dusty", weight: 10 },
+    { value: "damaged", weight: 5 },
+	{ value: "faded", weight: 5 },
+	{ value: "miraculously preserved", weight: 5 },
+	{ value: "still-wet", weight: 1 },
+  ],
+  
+  art_visual_painting_style: [
+    { value: "watercolor", weight: 1 },
+	{ value: "oil", weight: 1 },
+	{ value: "color ink", weight: 1 },
+	{ value: "encaustic", weight: 1 },
+	{ value: "gouache", weight: 1 },
+	{ value: "tempera", weight: 1 },
+  ],
+  
+  art_visual_painting_type: [
+    { value: "painting ${art_verb} ${painting_subject_matter}", weight: 1 },
+	{ value: "triptych painting ${art_verb} ${painting_subject_matter}", weight: 1 },
+	{ value: "portrait of ${portrait_subject} holding ${a:magicalcommonobject} ${portrait_location}", weight: 1 },
+	{ value: "${art_verb} the ${nude_type} nude curves of ${prophetic_subject}", weight: 1 },
+	{ value: "landscape ${art_verb} the ${landscape_types} of ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
+	{ value: "still life of ${still_life_subject}", weight: 1 },
+  ],
+  
+  nude_type: [
+    { value: "tasteful", weight: 1 },
+	{ value: "scandalous", weight: 1 },
+	{ value: "pedestrian", weight: 1 },
+	{ value: "salacious", weight: 1 },
+	{ value: "puerile", weight: 1 },
+  ],
+  
+   art_verb: [
+    { value: "depicting", weight: 1 },
+	{ value: "portraying", weight: 1 },
+	{ value: "limning", weight: 1 },
+	{ value: "illustrating", weight: 1 },
+  ],
+  
+  painting_subject_matter: [
+    { value: "a historical subject with the viewer a witness to the past, a voyeur as ${prophetic_vision}", weight: 1 },
+	{ value: "an allegorical subject, one that leaves the observer reeling with ${numinous_feeling} as though they had personally watched as ${prophetic_vision}", weight: 1 },
+  ],
+  
+  portrait_subject: [
+    { value: "${prophetic_subject}", weight: 1 },
+	{ value: "${creepyvillain}", weight: 1 },
+	{ value: "${a:magicusertype} ${facial_desc}", weight: 1 },
+  ],
+  
+  portrait_location: [
+    { value: "in a ${urbn_place_adj} ${urbn_place}", weight: 1 },
+	{ value: "${wilds_specific_locn}", weight: 1 },
+	{ value: "with ${landmark} in the background", weight: 1 },
+  ],
+  
+  landscape_types: [
+    { value: "mountains", weight: 1 },
+	{ value: "beaches", weight: 1 },
+	{ value: "forests", weight: 1 },
+	{ value: "hills", weight: 1 },
+	{ value: "cliffs", weight: 1 },
+	{ value: "rivers", weight: 1 },
+	{ value: "sands", weight: 1 },
+	{ value: "deserts", weight: 1 },
+	{ value: "swamps", weight: 1 },
+	{ value: "${Colors} trees", weight: 1 },
+	{ value: "vales", weight: 1 },
+	{ value: "jungles", weight: 1 },
+	{ value: "ice-fields", weight: 1 },
+	{ value: "${Colors} stones and boulders", weight: 1 },
+	{ value: "caverns", weight: 1 },
+  ],
+  
+  still_life_surface: [
+    { value: "a table draped with ${a:Colors} cloth", weight: 1 },
+	{ value: "a worn wooden desk", weight: 1 },
+	{ value: "the stone floor of ${a:urbn_place_adj} ${urbn_place}", weight: 1 },
+  ],
+  
+  still_life_subject: [
+    { value: "${a:po:QuickNPCJob} tools scattered across ${still_life_surface}", weight: 1 },
+	{ value: "${a:magicalcommonobject} resting on ${still_life_surface}", weight: 1 },
+	{ value: "${relic}", weight: 1 },
+	{ value: "${a:idol}", weight: 1 },
+  ],
 
     intro: [
 	    { value: "${I_herd}", weight: 1 }
