@@ -852,6 +852,7 @@ const tables = {
     { value: "the Philosopher of Wolves", weight: 1 },
     { value: "the Punisher of Lost Sheep", weight: 1 },
     { value: "the Queen of Rats, attended by ${onednine}${onedhundred} of her children", weight: 1 },
+	{ value: "the red spectre, Ithbal", weight: 1 },
     { value: "the Seven Hathors", weight: 1 },
     { value: "the Sisters of the Eagle", weight: 1 },
     { value: "the Slaughter-Horse", weight: 1 },
@@ -938,7 +939,7 @@ const tables = {
   ],
 
   dance: [
-    { value: "the Cockroach dance", weight: 1 },
+    { value: "the cockroach dance", weight: 1 },
     { value: "the dance of the black spiral", weight: 1 },
     { value: "the Karo Batak dance", weight: 1 },
     { value: "the Mirror Waltz", weight: 1 },
@@ -3484,9 +3485,9 @@ const tables = {
     { value: "The ${prophecysource} portend that ${timeframe}, ${catastrophe}, and that the ${AnimalMammal} shall inherit the earth", weight: 2 },
     { value: "The ${prophecysource} promise that ${oppressed_grp} will ${oppressverb} ${dominant_grp} ${timeframe}", weight: 1 },
     { value: "The ${prophecysource} promise that ${heroes_and_villains} will die by the ${AnimalInsect}, the ${AnimalReptile}, or the ${AnimalMammal}", weight: 1 },
-	{ value: "${a:prophetic_visionary} from ${propheticnearcity} ${urbn_cityname} shared a vision where they watched${prophetic_vision_emotion} as ${prophetic_vision}", weight: 10 },
-	{ value: "The ${uc:prophetic_visionary} of ${urbn_cityname} bore psychic witness as ${prophetic_vision}", weight: 10 },
-	{ value: "all the ${prophetic_visionary}s of ${urbn_cityname} have been dreaming of ${a:urbn_place} where ${urbn_subjectverb}", weight: 10 },
+	{ value: "${a:prophetic_visionary} from ${propheticnearcity} ${urbn_cityname} shared a vision where they watched${prophetic_vision_emotion} as ${prophetic_vision}", weight: 7 },
+	{ value: "The ${uc:prophetic_visionary} of ${urbn_cityname} bore psychic witness as ${prophetic_vision}", weight: 7 },
+	{ value: "all the ${prophetic_visionary}s of ${urbn_cityname} have been dreaming of ${a:urbn_place} where ${urbn_subjectverb}", weight: 7 },
 
   ],
 
@@ -5157,7 +5158,7 @@ trap_location: [
     { value: "weeps over a masterfully constructed sonnet", weight: 1 },
     { value: "whose body emits a strange noise that sounds like ${strangenoises} advertises the way to ${slumberplace}", weight: 1 },
     { value: "whose feet have never once touched the ground studies ${studysubject}", weight: 1 },
-    { value: "whose touch invokes a geas to ${geas}", weight: 1 },
+    { value: "whose touch invokes a geas to ${geas} shakes every hand in friendly greeting", weight: 1 },
     { value: "whose unhealing holy wounds bleed perfume-scented blood studies ${studysubject}", weight: 1 },
     { value: "wields a powerful weapon built with unknown technology", weight: 1 },
     { value: "will pay for news of their family", weight: 1 },
@@ -5887,7 +5888,7 @@ trap_location: [
   FantasyDomain: [
     { value: "faraway Storms", weight: 1 },
     { value: "childbirth", weight: 1 },
-    { value: "the Night", weight: 1 },
+    { value: "nighttime", weight: 1 },
     { value: "silence", weight: 1 },
     { value: "passionate Kisses", weight: 1 },
     { value: "blood", weight: 1 },
@@ -6654,7 +6655,7 @@ saint_curse: [
     { value: "${uc:RoyalTitleFemale} ${FantasyNameFemale} of ${foreignland}", weight: 1 },
 	{ value: "${uc:RoyalTitleMale} ${FantasyNameMale} of ${foreignland}", weight: 1 },
 	{ value: "Saint ${SaintName}", weight: 1 },
-    { value: "${heroes_and_villains}", weight: 1 },
+    { value: "${ntc}", weight: 1 },
 	{ value: "${a:QuickNPCDescriptor} ${prophetic_subject_unknown}", weight: 1 },
 	{ value: "${a:QuickNPCDescriptor} ${QuickNPCJob}", weight: 1 },
   ],
@@ -6682,11 +6683,45 @@ saint_curse: [
 	{ value: "${prophetic_subject} recoiled in disgust from what they saw in the mirror", weight: 1 },
 	{ value: "${prophetic_subject} devoured ${Jewels} off the filthy ground like ${a:AnimalMammal}", weight: 1 },
 	{ value: "${prophetic_subject} bartered for ${exchangething} in the markets of ${foreign_adj}${foreignland}", weight: 1 },
+	{ value: "${creepyvillain}, unnoticed by the other guests, attended the wedding of ${uc:RoyalTitleFemale} ${FantasyNameFemale} of ${foreignland} and ${uc:RoyalTitleMale} ${FantasyNameMale} of ${foreignland}", weight: 1 },
+	{ value: "${prophetic_subject} ${prophetic_mourning_verb} the ${prophetic_vision_mourning_place_adj} ${prophetic_vision_mourning_place} of ${prophetic_subject}", weight: 1 },
+	{ value: "${prophetic_subject} danced ${dance} with ${prophetic_vision_born_subject}", weight: 1 },
+	{ value: "${prophetic_subject} stole ${tomb_loot} from ${prophetic_vision_born_subject}", weight: 1 },
   ],
   
   prophetic_vision_born_subject: [
     { value: "${a:pet}", weight: 1 },
     { value: "${prophetic_subject}", weight: 3 },
+	{ value: "${FantasyGods}", weight: 1 },
+  ],
+  
+  prophetic_mourning_verb: [
+    { value: "wailed and lamented before", weight: 1 },
+    { value: "threw themselves to the ground before", weight: 1 },
+	{ value: "vowed black vengeance before", weight: 1 },
+    { value: "like an animal howled mournfully before", weight: 1 },
+	{ value: "guffawed loud and rude at", weight: 1 },
+    { value: "banged their fists in rage upon", weight: 1 },
+	{ value: "wept silently before", weight: 1 },
+    { value: "broken by grief, cackled in derangement at", weight: 1 },
+  ],
+  
+   prophetic_vision_mourning_place: [
+    { value: "gravesign", weight: 1 },
+    { value: "burying-place", weight: 1 },
+	{ value: "tomb", weight: 1 },
+    { value: "crypt", weight: 1 },
+	{ value: "sepulcher", weight: 1 },
+    { value: "casket", weight: 1 },
+  ],
+  
+  prophetic_vision_mourning_place_adj: [
+    { value: "humble", weight: 1 },
+    { value: "vandalized", weight: 1 },
+	{ value: "neglected", weight: 1 },
+    { value: "flooded", weight: 1 },
+	{ value: "defaced", weight: 1 },
+    { value: "gaudy", weight: 1 },
   ],
   
   prophetic_vision_thrones: [
