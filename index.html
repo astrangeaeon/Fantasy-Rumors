@@ -1546,7 +1546,7 @@ const tables = {
 
   facial_desc: [
     { value: "with ${fd}", weight: 10 },
-    { value: "who tells a tale of ${fd_tale}", weight: 8 },
+    { value: "who tells a tale of ${fd_tale}", weight: 3 },
     { value: "bearing mace and discus and conch", weight: 1 },
     { value: "bellowing and drunk", weight: 1 },
     { value: "bitten by ghosts", weight: 1 },
@@ -2666,7 +2666,7 @@ const tables = {
     { value: "inherited something from their ${FamilyMember}:", weight: 1 },
     { value: "returned from the markets of ${urbn_cityname} with", weight: 1 },
     { value: "is trying to sell", weight: 1 },
-    { value: "and a tasteless ${local_philistine}, threw out", weight: 1 },
+    { value: "and apparently a tasteless ${local_philistine}, threw out", weight: 1 },
     { value: "paid a fortune for", weight: 1 },
     { value: "recently had something very valuable stolen:", weight: 1 },
   ],
@@ -3365,7 +3365,7 @@ const tables = {
     { value: "cat", weight: 1 },
     { value: "dog", weight: 1 },
     { value: "dwarf", weight: 1 },
-    { value: "fish", weight: 1 },
+    { value: "kangaroo", weight: 1 },
     { value: "leopard", weight: 1 },
     { value: "lion", weight: 1 },
     { value: "monkey", weight: 1 },
@@ -5957,9 +5957,30 @@ trap_location: [
   ],
 
   FantasyMeal: [
-    { value: "Chicken McNuggets", weight: 1 },
-    { value: "roasted ${AnimalMammal}", weight: 1 },
-    { value: "seasoned ${AnimalInsect}", weight: 1 },
+    { value: "${FantasyMeal_Cooking} ${mysterymeat}", weight: 1 },
+    { value: "${FantasyMeal_Cooking} ${AnimalInsect}", weight: 1 },
+  ],
+  
+  FantasyMeal_Cooking: [
+    { value: "roasted", weight: 1 },
+    { value: "stewed", weight: 1 },
+    { value: "seasoned", weight: 1 },
+	{ value: "baked", weight: 1 },
+    { value: "boiled", weight: 1 },
+    { value: "raw", weight: 1 },
+	{ value: "salted", weight: 1 },
+  ],
+
+
+  FantasyMeal_Vegetable: [
+    { value: "broccoli", weight: 1 },
+    { value: "cauliflower", weight: 1 },
+    { value: "potato", weight: 1 },
+	{ value: "beet", weight: 1 },
+    { value: "rutabega", weight: 1 },
+    { value: "cabbage", weight: 1 },
+	{ value: "carrot", weight: 1 },
+	{ value: "beans", weight: 1 },
   ],
 
   HaftedWeapons: [
@@ -6296,7 +6317,7 @@ trap_location: [
     { value: "ogre", weight: 1 },
     { value: "golem", weight: 1 },
 	{ value: "beholder", weight: 1 },
-	{ value: "intelligent slime", weight: 1 },
+	{ value: "slime", weight: 1 },
 	{ value: "daemon", weight: 1 },
 	{ value: "dragon", weight: 1 },
   ],
@@ -6830,6 +6851,20 @@ celebration_type: [
     { value: "${art_visual}", weight: 1 },
   ],
 
+   art_title: [
+    { value: "${art_title_abstract}", weight: 1 },
+  ],
+  
+  art_title_abstract: [
+    { value: "the ${uc:numinous_feeling} of ${art_title_abstract_subject}", weight: 1 },
+  ],
+
+   art_title_abstract_subject: [
+    { value: "the Ancients", weight: 1 },
+	{ value: "the Gods", weight: 1 },
+	{ value: "${uc:AnimalMain}s", weight: 1 },
+	{ value: "the ${uc:AnimalMain}", weight: 1 },
+  ],
 
     art_visual: [
     { value: "${art_visual_painting}", weight: 1 },
@@ -6857,12 +6892,13 @@ celebration_type: [
   ],
   
   art_visual_painting_type: [
-    { value: "painting ${art_verb} ${painting_subject_matter}", weight: 1 },
+    { value: "painting ${art_verb} ${painting_subject_matter}", weight: 100 },
 	{ value: "triptych painting ${art_verb} ${painting_subject_matter}", weight: 1 },
 	{ value: "portrait of ${portrait_subject} holding ${a:magicalcommonobject} ${portrait_location}", weight: 1 },
 	{ value: "${art_verb} the ${nude_type} nude curves of ${prophetic_subject}", weight: 1 },
 	{ value: "landscape ${art_verb} the ${landscape_types} of ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
 	{ value: "still life of ${still_life_subject}", weight: 1 },
+	{ value: "painting enigmatically titled ${art_title_abstract}", weight: 1 },
   ],
   
   nude_type: [
@@ -6883,7 +6919,36 @@ celebration_type: [
   painting_subject_matter: [
     { value: "a historical subject with the viewer a witness to the past, a voyeur as ${prophetic_vision}", weight: 1 },
 	{ value: "an allegorical subject, one that leaves the observer reeling with ${numinous_feeling} as though they had personally watched as ${prophetic_vision}", weight: 1 },
+	{ value: "${a:prophetic_visionary} intepreting the dream of ${prophetic_subject} while a musician plays ${a:MusicalInstrument}", weight: 1 },
+	{ value: "${creepyvillain} causing the ${slumberplace} Tapestry to unravel", weight: 1 },
+	{ value: "${prophetic_subject} ${pet_behavior} their pet ${pet}, whose collar has Little ${uc:WeirdFantasyMonster} engraved on it", weight: 1 },
+	{ value: "${prophetic_subject} walking their pet ${pet}, whose collar has Little ${uc:WeirdFantasyMonster} engraved on it, on a leash around ${landmark}", weight: 1 },
+	{ value: "${prophetic_subject} eating a feast of ${FantasyMeal} and ${FantasyMeal_Cooking} ${FantasyMeal_Vegetable} with ${dining_companion}", weight: 1 },
   ],
+  
+  
+  
+  dining_companion: [
+    { value: "${prophetic_subject}", weight: 1 },
+	{ value: "${creepyvillain}", weight: 1 },
+	{ value: "${a:magicusertype} ${facial_desc}", weight: 1 },
+	{ value: "${urbn_subjectplural}", weight: 1 },
+	{ value: "${urbn_subjectsingular}", weight: 1 },
+	{ value: "${historicalbuilders}", weight: 1 },
+	{ value: "a pack of ${herd_adj} ${herdanimal}", weight: 1 },
+  ],
+  
+  
+  pet_behavior: [
+    { value: "playing fetch with", weight: 1 },
+	{ value: "petting and scratching", weight: 1 },
+	{ value: "kissing", weight: 1 },
+	{ value: "filling a food dish with ${AnimalInsect}s for", weight: 1 },
+	{ value: "filling a tub with ${Colors} liquid for", weight: 1 },
+	{ value: "sleeping nude in a comfortable-looking bed with", weight: 1 },
+	{ value: "opening a cage door for", weight: 1 },
+  ],
+  
   
   portrait_subject: [
     { value: "${prophetic_subject}", weight: 1 },
