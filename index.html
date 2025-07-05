@@ -645,7 +645,7 @@ const tables = {
     { value: "the Merrimen", weight: 1 },
     { value: "the Night", weight: 1 },
     { value: "the Red Eyebrow Gang", weight: 1 },
-    { value: "Thee Valkyries", weight: 1 },
+    { value: "the Valkyries", weight: 1 },
   ],
 
   buryingplace: [
@@ -1296,6 +1296,12 @@ const tables = {
     { value: "${origin}", weight: 1 },
     { value: "${treasure}", weight: 1 },
 	{ value: "${trap}", weight: 1 },
+	{ value: "${dungeon_art}", weight: 1 },
+  ],
+  
+  dungeon_art: [
+    { value: "${a:uc:art_visual_painting} hangs in ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
+	{ value: "${a:uc:art_visual_painting} hangs near ${a:DungeonObject} on the ${floors} floor", weight: 1 },
   ],
 
   floors: [
@@ -1954,6 +1960,7 @@ const tables = {
 	{ value: "back before ${relic} was lost", weight: 1 },
     { value: "back when ${AnimalOrdinary}s still spoke the tongues of man", weight: 1 },
 	{ value: "back before the ${huntingmonster} crawled forth from their caves", weight: 1 },
+	{ value: "back before Saint ${SaintName} exiled ${exiles} from ${urbn_cityname}", weight: 1 },
   ],
   
   historicalbuilders: [
@@ -1986,6 +1993,22 @@ const tables = {
     { value: "harbors", weight: 1 },
     { value: "lighthouses", weight: 1 },
     { value: "mausoleums", weight: 1 },
+  ],
+  
+   historicalinfrastructure_capitalized: [
+    { value: "Roads", weight: 1 },
+    { value: "Windmills", weight: 1 },
+	{ value: "Watchtowers", weight: 1 },
+    { value: "Bridges", weight: 1 },
+    { value: "Tunnels", weight: 1 },
+    { value: "Dams", weight: 1 },
+    { value: "Boundary Walls", weight: 1 },
+    { value: "Underground Dungeons", weight: 1 },
+    { value: "Wells", weight: 1 },
+    { value: "Temples", weight: 1 },
+    { value: "Harbors", weight: 1 },
+    { value: "Lighthouses", weight: 1 },
+    { value: "Mausoleums", weight: 1 },
   ],
 
   historicalperson: [
@@ -2120,7 +2143,7 @@ const tables = {
     { value: "${elemntl_type} spirits", weight: 1 },
     { value: "angels", weight: 1 },
     { value: "centaurs", weight: 1 },
-    { value: "dinosaurs", weight: 1 },
+    { value: "giant ${AnimalInsect}s", weight: 1 },
     { value: "djinni", weight: 1 },
     { value: "dryads", weight: 1 },
     { value: "hydras", weight: 1 },
@@ -3147,6 +3170,8 @@ const tables = {
     { value: "reason", weight: 1 },
     { value: "truth", weight: 1 },
     { value: "wisdom", weight: 1 },
+	{ value: "the ${body_part}", weight: 1 },
+	{ value: "power", weight: 1 },
   ],
 
   mysterymeat: [
@@ -4647,6 +4672,7 @@ trap_location: [
 	{ value: "Pinjarra", weight: 1 },
 	{ value: "Yarloop", weight: 1 },
 	{ value: "Rayy", weight: 1 },
+	{ value: "Bolintin Deal", weight: 1 },
   ],
 
   urbn_citynickname: [
@@ -6301,6 +6327,7 @@ trap_location: [
   RoyalTitleMale: [
     { value: "king", weight: 1 },
     { value: "duke", weight: 1 },
+	{ value: "arch-duke", weight: 1 },
     { value: "marquess", weight: 1 },
     { value: "earl", weight: 1 },
     { value: "viscount", weight: 1 },
@@ -6526,6 +6553,7 @@ trap_location: [
 	{ value: "was roasted over a spit by ${trap_builder}", weight: 1 },
 	{ value: "spontaneously combusted after displeasing ${FantasyGods}", weight: 1 },
 	{ value: "was burned at the stake, the typical punishment for ${criminals}", weight: 1 },
+	{ value: "was in the House of ${housething} when the house burned down", weight: 1 },
   ],
   
   cod_battle: [
@@ -6659,6 +6687,7 @@ tail_type: [
   saint_blessing: [
     { value: "to never want for ${duo_jewlery}", weight: 1 },
     { value: "to always know the direction of ${landmark}", weight: 1 },
+	{ value: "to always know the direction of the nearest ${magic_compass}", weight: 1 },
     { value: "with the knowledge of ${knowledgething}", weight: 1 },
 	{ value: "to always be welcome in the House of ${housething}", weight: 1 },
 	{ value: "with a talent for playing the ${MusicalInstrument}", weight: 1 },
@@ -6669,6 +6698,7 @@ saint_curse: [
     { value: "to have ${short_inherited_trait}", weight: 1 },
     { value: "to weep for ${who_is_buried} before sunrise each day", weight: 1 },
     { value: "with the knowledge of ${knowledgething}", weight: 1 },
+	{ value: "to always know the direction of the nearest ${magic_compass}", weight: 1 },
 	{ value: "to have nightmares of ${a:idol}", weight: 1 },
 	{ value: "to seek out and collect ${collection}", weight: 1 },
   ],
@@ -6917,14 +6947,23 @@ celebration_type: [
   ],
   
   art_title_abstract: [
-    { value: "the ${uc:numinous_feeling} of ${art_title_abstract_subject}", weight: 1 },
+    { value: "${art_title_abstract_first} ${art_title_abstract_subject}", weight: 1 },
+	{ value: "the ${historicalinfrastructure_capitalized} of ${foreignland}, though none are depicted", weight: 1 },
+  ],
+  
+  art_title_abstract_first: [
+    { value: "the ${uc:numinous_feeling} of", weight: 1 },
+	{ value: "At Peace with", weight: 1 },
   ],
 
    art_title_abstract_subject: [
     { value: "the Ancients", weight: 1 },
 	{ value: "the Gods", weight: 1 },
-	{ value: "${uc:AnimalMain}s", weight: 1 },
-	{ value: "the ${uc:AnimalMain}", weight: 1 },
+	{ value: "${uc:AnimalMain}s", weight: 2 },
+	{ value: "the ${uc:AnimalMain}", weight: 2 },
+	{ value: "the Dead", weight: 1 },
+	{ value: "the Unborn", weight: 1 },
+	{ value: "Saint ${SaintName}", weight: 2 },
   ],
 
     art_visual: [
@@ -6941,6 +6980,7 @@ celebration_type: [
 	{ value: "faded", weight: 5 },
 	{ value: "miraculously preserved", weight: 5 },
 	{ value: "still-wet", weight: 1 },
+	{ value: "vandalized", weight: 1 },
   ],
   
   art_visual_painting_style: [
@@ -6983,9 +7023,27 @@ celebration_type: [
 	{ value: "${a:prophetic_visionary} intepreting the dream of ${prophetic_subject} while a musician plays ${a:MusicalInstrument}", weight: 1 },
 	{ value: "${creepyvillain} causing the ${slumberplace} Tapestry to unravel", weight: 1 },
 	{ value: "${prophetic_subject} ${pet_behavior} their pet ${pet}, whose collar has the name ${pet_name} engraved on it", weight: 1 },
-	{ value: "${prophetic_subject} walking their pet ${pet}, whose collar has the name ${pet_name} engraved on it, on a leash around ${landmark}", weight: 1 },
+	{ value: "${prophetic_subject} walking their leashed pet ${pet}, whose collar has the name ${pet_name} engraved on it, around ${landmark}", weight: 1 },
 	{ value: "${prophetic_subject} eating a feast of ${FantasyMeal} and ${FantasyMeal_Cooking} ${FantasyMeal_Vegetable} with ${dining_companion}", weight: 1 },
+	{ value: "Saint ${SaintName} ${exile_verb} ${exiles} of ${urbn_cityname} to an island populated by ${islandpop}", weight: 1 },
+	{ value: "the ancient ${ancientpeople}, who valued ${monstervalue} above all else, forging the ${prophecyartifact}", weight: 1 },
+	{ value: "the ${FantasyLastName} Expedition, who sought exotic ${trait_digestion} ${when} ago, making camp near the ${Colors} waters of the ${RealGods} River", weight: 1 },
+	{ value: "${prophetic_subject} bathing with ${oppressed_grp} in ${body_of_water}", weight: 1 },
+	{ value: "${prophetic_subject} sitting with ${a:QuickNPCJob} and ${a:magicusertype} around a blindingly bright bonfire built from the scrolls and ${Jewels} of the House of ${housething} which smolders in the distance", weight: 1 },
   ],
+  
+  
+  body_of_water: [
+    { value: "the ${RealGods} River", weight: 1 },
+	{ value: "the Lake of Dreams", weight: 1 },
+	{ value: "the Lake of ${uc:urbn_citynickname}", weight: 1 },
+	{ value: "the River of ${uc:urbn_citynickname}", weight: 1 },
+	{ value: "${uc:AnimalMain} Lake", weight: 1 },
+	{ value: "${uc:urbn_citynickname} Lake", weight: 1 },
+	{ value: "the ${uc:AnimalMain} River", weight: 1 },
+	{ value: "the waters off the coast of ${coastal}", weight: 1 },
+  ],
+  
   
     pet_name: [
     { value: "Little ${uc:WeirdFantasyMonster}", weight: 1 },
@@ -6996,6 +7054,8 @@ celebration_type: [
 	{ value: "${uc:QuickNPCJob}", weight: 1 },
 	{ value: "${uc:RoyalTitleFemale}", weight: 1 },
 	{ value: "${uc:RoyalTitleMale}", weight: 1 },
+	{ value: "${uc:RoyalTitleMale} ${uc:FantasyMeal_Fruit}", weight: 1 },
+	{ value: "${uc:RoyalTitleFemale} ${uc:FantasyMeal_Fruit}", weight: 1 },
   ],
   
   dining_companion: [
@@ -7008,6 +7068,23 @@ celebration_type: [
 	{ value: "a pack of ${herd_adj} ${herdanimal}", weight: 1 },
   ],
   
+  exiles: [
+    { value: "the ${criminals}", weight: 1 },
+	{ value: "the ${huntingmonster}", weight: 1 },
+	{ value: "${oppressed_grp}", weight: 1 },
+	{ value: "${duo_name1} and ${duo_name2}", weight: 1 },
+	{ value: "the ${elemntl_type} princes", weight: 1 },
+	{ value: "the last ${magicusertype}", weight: 1 },
+	{ value: "the last member of ${membership}", weight: 1 },
+	{ value: "the last ${RoyalTitleMale}", weight: 1 },
+	{ value: "the last ${QuickNPCJob}", weight: 1 },
+  ],
+  
+    exile_verb: [
+    { value: "exiling", weight: 1 },
+	{ value: "leading", weight: 1 },
+	{ value: "following", weight: 1 },
+  ],
   
   pet_behavior: [
     { value: "playing fetch with", weight: 1 },
