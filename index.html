@@ -257,7 +257,9 @@ const tables = {
     { value: " with its lakes", weight: 1 },
     { value: " with its mountains", weight: 1 },
     { value: " with its snowfields", weight: 1 },
-	{ value: " where ${huntingmonster} haunt the ${historicalinfrastructure}", weight: 1 },
+	{ value: " where ${huntingmonster} haunt the ${historicalinfrastructure}", weight: 2 },
+	{ value: " with its ${historicalarchitecturestyles} ${historicalinfrastructure}", weight: 2 },
+	{ value: " with its ${landscape_types}", weight: 2 },
   ],
 
   herdwith: [
@@ -1300,7 +1302,7 @@ const tables = {
   ],
   
   dungeon_art: [
-    { value: "${a:uc:art_visual_painting} hangs in ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
+    { value: "${a:uc:art_visual_painting} lies face-down on the floor of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
 	{ value: "${a:uc:art_visual_painting} hangs near ${a:DungeonObject} on the ${floors} floor", weight: 1 },
   ],
 
@@ -1995,6 +1997,22 @@ const tables = {
     { value: "mausoleums", weight: 1 },
   ],
   
+   historicalarchitecturestyles: [
+    { value: "prehistoric", weight: 1 },
+    { value: "baroque", weight: 1 },
+	{ value: "gothic", weight: 1 },
+    { value: "fanciful", weight: 1 },
+    { value: "neoclassical", weight: 1 },
+    { value: "playful", weight: 1 },
+    { value: "industrial", weight: 1 },
+    { value: "avant-garde", weight: 1 },
+    { value: "colorful", weight: 1 },
+    { value: "plain but functional", weight: 1 },
+    { value: "brutalist", weight: 1 },
+    { value: "experimental", weight: 1 },
+    { value: "camouflaged", weight: 1 },
+  ],
+  
    historicalinfrastructure_capitalized: [
     { value: "Roads", weight: 1 },
     { value: "Windmills", weight: 1 },
@@ -2012,11 +2030,11 @@ const tables = {
   ],
 
   historicalperson: [
-    { value: "${uc:brigandnames}, a legendary gang of brigands,", weight: 1 },
-    { value: "${heroes_and_villains}", weight: 1 },
-    { value: "${FantasyName}, the legendary ${occupation},", weight: 1 },
-    { value: "Prince ${FantasyNameMale}", weight: 1 },
-    { value: "Princess ${FantasyNameFemale}", weight: 1 },
+    { value: "${uc:brigandnames}, a legendary gang of brigands,", weight: 2 },
+    { value: "${heroes_and_villains}", weight: 2 },
+    { value: "${FantasyName}, the legendary ${occupation},", weight: 2 },
+    { value: "Prince ${FantasyNameMale}", weight: 2 },
+    { value: "Princess ${FantasyNameFemale}", weight: 2 },
     { value: "The ${dwarfclanname} Clan elders", weight: 1 },
   ],
 
@@ -3276,6 +3294,10 @@ const tables = {
     { value: "slaves", weight: 1 },
     { value: "the lonely", weight: 1 },
     { value: "the poor", weight: 1 },
+	{ value: "the deaf", weight: 1 },
+    { value: "the blind", weight: 1 },
+    { value: "the dead", weight: 1 },
+    { value: "those with ${tail_type} tails and ${wingtype} wings", weight: 1 },
   ],
 
   oppressverb: [
@@ -3361,6 +3383,7 @@ const tables = {
     { value: "The dungeon was originally built by ${origin_builder} to keep the ${prophecyartifact} safe from ${urbn_subjectsingular} whom the prophecies say is fated to find it", weight: 1 },
     { value: "The dungeon was originally built by ${origin_builder} as a home for serious students of ${studysubject}", weight: 1 },
     { value: "The dungeon was originally built by devout worshippers of ${FantasyGods}", weight: 1 },
+	{ value: "The dungeon was originally built by ${origin_builder} as a school for ${oppressed_grp}", weight: 1 },
   ],
 
   origin_builder: [
@@ -4755,6 +4778,7 @@ trap_location: [
     { value: "garishly-painted", weight: 1 },
     { value: "giant-sized", weight: 1 },
     { value: "hard-to-find", weight: 1 },
+	{ value: "haunted", weight: 1 },
     { value: "immaculately clean", weight: 1 },
     { value: "members-only", weight: 1 },
     { value: "neglected", weight: 1 },
@@ -7030,6 +7054,8 @@ celebration_type: [
 	{ value: "the ${FantasyLastName} Expedition, who sought exotic ${trait_digestion} ${when} ago, making camp near the ${Colors} waters of the ${RealGods} River", weight: 1 },
 	{ value: "${prophetic_subject} bathing with ${oppressed_grp} in ${body_of_water}", weight: 1 },
 	{ value: "${prophetic_subject} sitting with ${a:QuickNPCJob} and ${a:magicusertype} around a blindingly bright bonfire built from the scrolls and ${Jewels} of the House of ${housething} which smolders in the distance", weight: 1 },
+	{ value: "${prophetic_subject} brokering peace between the ${AnimalMain}s and the ${AnimalMain}s", weight: 1 },
+	{ value: "elders of the ${dwarfclanname} Clan sending Skuld down from the mountain with ${deadadventurerloot} to follow in the footsteps of ${historicalperson}", weight: 1 },
   ],
   
   
@@ -7131,25 +7157,36 @@ celebration_type: [
 	{ value: "forests", weight: 1 },
 	{ value: "hills", weight: 1 },
 	{ value: "cliffs", weight: 1 },
-	{ value: "rivers", weight: 1 },
-	{ value: "sands", weight: 1 },
+	{ value: "${Colors} rivers", weight: 1 },
+	{ value: "${Colors} sands", weight: 1 },
 	{ value: "deserts", weight: 1 },
 	{ value: "swamps", weight: 1 },
 	{ value: "${Colors} trees", weight: 1 },
 	{ value: "vales", weight: 1 },
-	{ value: "jungles", weight: 1 },
+	{ value: "${Colors} jungles", weight: 1 },
 	{ value: "ice-fields", weight: 1 },
 	{ value: "${Colors} stones and boulders", weight: 1 },
 	{ value: "caverns", weight: 1 },
 	{ value: "triangular fenced pastures", weight: 1 },
 	{ value: "${FantasyMeal_Fruit} orchards", weight: 1 },
 	{ value: "unharvested ${FantasyMeal_Vegetable} fields", weight: 1 },
+	{ value: "rusted ${rusted}", weight: 1 },
   ],
   
   still_life_surface: [
     { value: "a table draped with ${a:Colors} cloth", weight: 1 },
 	{ value: "a worn wooden desk", weight: 1 },
 	{ value: "the stone floor of ${a:urbn_place_adj} ${urbn_place}", weight: 1 },
+  ],
+  
+  
+  rusted: [
+    { value: "metal trees", weight: 1 },
+	{ value: "machinery", weight: 1 },
+	{ value: "bunkers", weight: 1 },
+	{ value: "iron gates", weight: 1 },
+	{ value: "chains and anchors", weight: 1 },
+	{ value: "metal pyramids", weight: 1 },
   ],
   
   still_life_subject: [
