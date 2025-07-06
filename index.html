@@ -5597,6 +5597,24 @@ trap_location: [
     { value: "${AnimalMammal}", weight: 1 },
     { value: "${AnimalOrdinary}", weight: 1 },
     { value: "${AnimalReptile}", weight: 1 },
+	{ value: "${AnimalBird}", weight: 1 },
+  ],
+  
+  
+  AnimalBird: [
+    { value: "hawk", weight: 1 },
+    { value: "sparrow", weight: 1 },
+    { value: "eagle", weight: 1 },
+    { value: "nightingale", weight: 1 },
+    { value: "woodpecker", weight: 1 },
+    { value: "hummingbird", weight: 1 },
+    { value: "robin", weight: 1 },
+    { value: "dove", weight: 1 },
+    { value: "owl", weight: 1 },
+    { value: "falcon", weight: 1 },
+    { value: "vulture", weight: 1 },
+    { value: "crane", weight: 1 },
+    { value: "seagull", weight: 1 },
   ],
 
   AnimalInsect: [
@@ -6038,6 +6056,9 @@ trap_location: [
 	{ value: "canned", weight: 1 },
 	{ value: "regurgitated", weight: 1 },
 	{ value: "pickled", weight: 1 },
+	{ value: "candied", weight: 1 },
+	{ value: "spiced", weight: 1 },
+	{ value: "chocolate-coated", weight: 1 },
   ],
 
 
@@ -6064,6 +6085,7 @@ trap_location: [
 	{ value: "dandelion green", weight: 1 },
 	{ value: "leek", weight: 1 },
 	{ value: "onion", weight: 1 },
+	{ value: "${Colors} pumpkin", weight: 1 },
   ],
   
   FantasyMeal_Fruit: [
@@ -6391,9 +6413,12 @@ trap_location: [
   ],
 
   ShipNames: [
-    { value: "Long Weekend", weight: 1 },
+    { value: "${po:FantasyNameMale} ${uc:AnimalMain}", weight: 3 },
+	{ value: "${po:FantasyNameFemale} ${uc:AnimalMain}", weight: 3 },
     { value: "Neptune\'s Pride", weight: 1 },
-    { value: "the Peregrine", weight: 1 },
+    { value: "the Peregrine's Wing", weight: 1 },
+	{ value: "the Imperial ${uc:numinous_feeling}", weight: 3 },
+    { value: "the ${uc:Colors} ${uc:AnimalBird}", weight: 3 },
   ],
 
   Smells: [
@@ -7019,7 +7044,7 @@ celebration_type: [
   art_visual_painting_type: [
     { value: "painting ${art_verb} ${painting_subject_matter}", weight: 1 },
 	{ value: "triptych painting ${art_verb} ${painting_subject_matter}", weight: 1 },
-	{ value: "portrait of ${portrait_subject} ${portrait_detail}", weight: 1 },
+	{ value: "portrait of ${portrait_subject}", weight: 1 },
 	{ value: "${art_verb} the ${nude_type} nude curves and contours of ${prophetic_subject}", weight: 1 },
 	{ value: "landscape ${art_verb} the ${landscape_types} of ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
 	{ value: "still life of ${still_life_subject}", weight: 1 },
@@ -7124,9 +7149,10 @@ celebration_type: [
   
   
   portrait_subject: [
-    { value: "${prophetic_subject}", weight: 1 },
-	{ value: "${creepyvillain}", weight: 1 },
-	{ value: "${a:magicusertype} ${facial_desc}", weight: 1 },
+    { value: "${prophetic_subject} ${portrait_detail}", weight: 1 },
+	{ value: "${creepyvillain} ${portrait_detail}", weight: 1 },
+	{ value: "${a:magicusertype} ${facial_desc} ${portrait_detail}", weight: 1 },
+	{ value: "${FantasyName} the Narcoleptic sleeping peacefully ${narcoleptic_location}", weight: 1 },
   ],
   
   portrait_location: [
@@ -7150,6 +7176,13 @@ celebration_type: [
 	{ value: "choking on", weight: 1 },
   ],
   
+  
+  narcoleptic_location: [
+    { value: "in the tumult of the Battle of ${propheticbattle}", weight: 1 },
+	{ value: "in front of ${monstertype} who looks offended", weight: 1 },
+	{ value: "amid the chaos on deck as ${ShipNames} sank off the coast of ${coastal}", weight: 1 },
+	{ value: "in the midst of a crowded ${urbn_place}", weight: 1 },
+  ],
   
   landscape_types: [
     { value: "mountains", weight: 1 },
