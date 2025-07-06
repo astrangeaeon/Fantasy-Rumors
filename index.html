@@ -1302,8 +1302,8 @@ const tables = {
   ],
   
   dungeon_art: [
-    { value: "${a:uc:art_visual_painting} lies face-down on the floor of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
-	{ value: "${a:uc:art_visual_painting} hangs near ${a:DungeonObject} on the ${floors} floor", weight: 1 },
+    { value: "${a:uc:art_visual_painting}...lies face-down on the floor of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
+	{ value: "${a:uc:art_visual_painting}...hangs near ${a:DungeonObject} on the ${floors} floor", weight: 1 },
   ],
 
   floors: [
@@ -1714,7 +1714,7 @@ const tables = {
     { value: "repels followers of Law", weight: 1 },
     { value: "rests in the same room as a coffin which has a secret door at the bottom of it", weight: 1 },
     { value: "rests in the same room as a block of ice with a dragon faintly visible inside", weight: 1 },
-    { value: ", if properly used, can render even a god nameless, natureless, futureless", weight: 1 },
+    { value: "used properly can render even a god nameless, natureless, futureless", weight: 1 },
     { value: "casts a shadow which, if stood in, renders someone invisible to the gods", weight: 1 },
     { value: "traps the spirits of things that die in the dungeon", weight: 1 },
   ],
@@ -2783,6 +2783,7 @@ const tables = {
     { value: "dwarfs were formed from maggots in the rotting corpse of ${decaying_corpse}", weight: 1 },
     { value: "dwarfs worship a deity best likened to a living slot machine who rewards their greed with increased material returns", weight: 1 },
     { value: "female dwarfs have beards that rival the males’", weight: 1 },
+	{ value: "${humanoids}, well, you know, the bad ones, are to blame for these appalling times we find ourselves in", weight: 1 },
   ],
 
   local_racist_elf: [
@@ -2795,6 +2796,7 @@ const tables = {
     { value: "female elves must bewitch men in order to get pregnant—all male elves are sterile", weight: 1 },
     { value: "one should never accept an elf’s dinner invitation: they’ll serve non-elves their own sweet-smelling waste", weight: 1 },
     { value: "the great elf folk-hero Peri’el actually died during an epileptic fit among a herd of swine", weight: 1 },
+	{ value: "${humanoids}, well, you know, the bad ones, are to blame for these appalling times we find ourselves in", weight: 1 },
   ],
 
   local_racist_hobbit: [
@@ -2806,6 +2808,7 @@ const tables = {
     { value: "pixies and Pyms arise as a result of disgusting unnatural acts hobbits perform with the trees surrounding their homes", weight: 1 },
     { value: "hobbits steal luck from everyone they encounter, deliberately ruining the fortunes of their neighbors", weight: 1 },
     { value: "Titchy Gren, the great hobbit burglar who supposedly stole a dragon’s hoard, actually just snuck into the king’s treasury the day of the great castle fire like a common looter", weight: 1 },
+	{ value: "${humanoids}, well, you know, the bad ones, are to blame for these appalling times we find ourselves in", weight: 1 },
   ],
 
   local_racist_human: [
@@ -2819,6 +2822,7 @@ const tables = {
     { value: "Oswald of Carim, worshiped as a living saint, is a charlatan who uses cheap magic powders to impress his feeble-minded human followers", weight: 1 },
     { value: "that the philosophies of humans obscure the truth, like a torch which gives off smoke but no light", weight: 1 },
     { value: "when a human is talking, he’s lying, and when silent, he’s stealing", weight: 1 },
+	{ value: "${humanoids}, well, you know, the bad ones, are to blame for these appalling times we find ourselves in", weight: 1 },
   ],
 
   local_strange_thing: [
@@ -3144,7 +3148,7 @@ const tables = {
     { value: "beholder", weight: 1 },
     { value: "centaur", weight: 1 },
     { value: "chimera", weight: 1 },
-    { value: "ghost crocodile", weight: 1 },
+    { value: "wyrm", weight: 1 },
     { value: "harpy", weight: 1 },
     { value: "manticore", weight: 1 },
     { value: "${monsterdragontype} bear", weight: 1 },
@@ -3154,8 +3158,8 @@ const tables = {
     { value: "slug", weight: 1 },
     { value: "snail", weight: 1 },
     { value: "spider", weight: 1 },
-    { value: "spider wife", weight: 1 },
-    { value: "time ghost", weight: 1 },
+    { value: "spider-wife", weight: 1 },
+    { value: "ghost", weight: 1 },
     { value: "wasp queen", weight: 1 },
     { value: "witchowl", weight: 1 },
 	{ value: "dryad", weight: 1 },
@@ -5633,7 +5637,7 @@ trap_location: [
 
   AnimalMammal: [
     { value: "bear", weight: 1 },
-    { value: "wolf", weight: 1 },
+    { value: "coyote", weight: 1 },
     { value: "dog", weight: 1 },
     { value: "cat", weight: 1 },
     { value: "lion", weight: 1 },
@@ -5645,19 +5649,20 @@ trap_location: [
     { value: "jaguar", weight: 1 },
     { value: "jackal", weight: 1 },
     { value: "elephant", weight: 1 },
+	{ value: "skunk", weight: 1 },
   ],
 
   AnimalOrdinary: [
     { value: "rabbit", weight: 1 },
     { value: "duck", weight: 1 },
-    { value: "deer", weight: 1 },
+    { value: "elk", weight: 1 },
     { value: "squirrel", weight: 1 },
     { value: "raccoon", weight: 1 },
     { value: "swan", weight: 1 },
     { value: "bird", weight: 1 },
     { value: "cat", weight: 1 },
     { value: "dog", weight: 1 },
-    { value: "fish", weight: 1 },
+    { value: "rat", weight: 1 },
   ],
 
   AnimalReptile: [
@@ -5761,6 +5766,14 @@ trap_location: [
     { value: "Melchom", weight: 1 },
     { value: "Paimon", weight: 1 },
     { value: "Nickar", weight: 1 },
+	{ value: "${EgyptianNameMale}", weight: 1 },
+    { value: "${RealGods}", weight: 1 },
+	{ value: "Malphas", weight: 1 },
+    { value: "Scox", weight: 1 },
+    { value: "Wall", weight: 1 },
+    { value: "Volac", weight: 1 },
+    { value: "Berith", weight: 1 },
+    { value: "Zaebos", weight: 1 },
   ],
 
   DungeonAdjective: [
@@ -6253,13 +6266,13 @@ trap_location: [
     { value: "portly", weight: 1 },
     { value: "muscular", weight: 1 },
     { value: "tired", weight: 1 },
-    { value: "bubbly", weight: 1 },
+    { value: "gossipy", weight: 1 },
     { value: "old", weight: 1 },
     { value: "young", weight: 1 },
     { value: "teenage", weight: 1 },
     { value: "underage", weight: 1 },
     { value: "bruised", weight: 1 },
-    { value: "scarred ", weight: 1 },
+    { value: "scarred", weight: 1 },
     { value: "scared", weight: 1 },
     { value: "beautiful", weight: 1 },
     { value: "perfumed", weight: 1 },
@@ -6271,6 +6284,15 @@ trap_location: [
     { value: "quick", weight: 1 },
     { value: "cunning", weight: 1 },
     { value: "cruel", weight: 1 },
+	{ value: "secretive", weight: 1 },
+	{ value: "talented", weight: 1 },
+	{ value: "wise", weight: 1 },
+	{ value: "mischievous", weight: 1 },
+	{ value: "wisecracking", weight: 1 },
+	{ value: "cheerful", weight: 1 },
+	{ value: "graceful", weight: 1 },
+	{ value: "angry", weight: 1 },
+	{ value: "sad", weight: 1 },
   ],
 
   QuickNPCJob: [
@@ -7081,6 +7103,9 @@ celebration_type: [
 	{ value: "${prophetic_subject} sitting with ${a:QuickNPCJob} and ${a:magicusertype} around a blindingly bright bonfire built from the scrolls and ${Jewels} of the House of ${housething} which smolders in the distance", weight: 1 },
 	{ value: "${prophetic_subject} brokering peace between the ${AnimalMain}s and the ${AnimalMain}s", weight: 1 },
 	{ value: "elders of the ${dwarfclanname} Clan sending Skuld down from the mountain with ${deadadventurerloot} to follow in the footsteps of ${historicalperson}", weight: 1 },
+	{ value: "${prophetic_subject} seeking the wisdom of the oldest ${oldest} in the world ${wilds_specific_locn}", weight: 1 },
+	{ value: "${prophetic_subject} hunting ${huntingmonster} with a party of ${posse_quality} ${posse} amid the ${landscape_types} of ${foreignland}", weight: 1 },
+	{ value: "${prophetic_subject} pleading before ${monstertype} for ${pleading_thing}", weight: 1 },
   ],
   
   
@@ -7095,6 +7120,15 @@ celebration_type: [
 	{ value: "the waters off the coast of ${coastal}", weight: 1 },
   ],
   
+  pleading_thing: [
+    { value: "the location of the lost ${prophecyartifact}", weight: 1 },
+	{ value: "the life of a companion ${bizarrecompanion}", weight: 1 },
+	{ value: "the soul of their lover, ${ntc},", weight: 1 },
+	{ value: "a sip of ${FantasyMeal_Fruit} wine", weight: 1 },
+	{ value: "a morsel of ${FantasyMeal_Cooking} ${FantasyMeal_Vegetable}", weight: 1 },
+	{ value: "${beyondreward}", weight: 1 },
+	{ value: "a map to the ${wilds_adj} ${wilds_noun} that ${wilds_hook}", weight: 1 },
+  ],
   
     pet_name: [
     { value: "Little ${uc:WeirdFantasyMonster}", weight: 1 },
@@ -7153,10 +7187,12 @@ celebration_type: [
 	{ value: "${creepyvillain} ${portrait_detail}", weight: 1 },
 	{ value: "${a:magicusertype} ${facial_desc} ${portrait_detail}", weight: 1 },
 	{ value: "${FantasyName} the Narcoleptic sleeping peacefully ${narcoleptic_location}", weight: 1 },
+	{ value: "${monstertype} defecating in ${a:urbn_place} filled with ${AnimalMain}s", weight: 1 },
+	{ value: "${duo_name1} and ${duo_name2} ${portrait_detail}", weight: 1 },
   ],
   
   portrait_location: [
-    { value: "in a ${urbn_place_adj} ${urbn_place}", weight: 1 },
+    { value: "in ${a:urbn_place_adj} ${urbn_place}", weight: 1 },
 	{ value: "${wilds_specific_locn}", weight: 1 },
 	{ value: "with ${landmark} in the background", weight: 1 },
   ],
@@ -7248,6 +7284,16 @@ celebration_type: [
 	{ value: "${relic}", weight: 1 },
 	{ value: "${a:idol}", weight: 1 },
 	{ value: "a single ${FantasyMeal_Fruit} resting on ${still_life_surface}", weight: 1 },
+  ],
+  
+  
+  humanoids: [
+    { value: "humans", weight: 1 },
+	{ value: "elves", weight: 1 },
+	{ value: "dwarfs", weight: 1 },
+	{ value: "hobbits", weight: 1 },
+	{ value: "gnomes", weight: 1 },
+	{ value: "lizardfolk", weight: 1 },
   ],
 
     intro: [
