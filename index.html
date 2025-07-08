@@ -5468,6 +5468,7 @@ trap_location: [
     { value: "there’s a storm of distorted time, where slow lightning descends over minutes", weight: 1 },
     { value: "thick stranglevine conceals an entrance to a dungeon", weight: 1 },
     { value: "what appears to be an immaculate city of metal and glass is protected by a forcefield", weight: 1 },
+	{ value: "a ruined observatory holds curious instruments with which one can glimpse what remains of the constellation known as ${constellation}", weight: 1 },
   ],
 
   wilds_locn: [
@@ -5569,7 +5570,7 @@ trap_location: [
     { value: "there\'s an entrance to an abandoned dwarven mall ${wilds_specific_locn}", weight: 1 },
     { value: "there’s an overgrown hedge maze, created by a magician for the Royal Jubilee 25 years ago. The duke’s child wandered in and never came out, and several rescuers were lost as well, so the magician was executed and the maze abandoned, with the prize—said to be ${mazeprize}—still unclaimed at the center", weight: 1 },
     { value: "those traveling the road from ${landmark} to ${landmark} get old before they reach their destination", weight: 1 },
-	{ value: "there's a place ${wilds_specific_locn} where the forbidden constellation of ${constellation} can be seen", weight: 1 },
+	{ value: "there's a place ${wilds_specific_locn} where the forbidden constellation known as ${constellation} can be seen", weight: 1 },
   ],
 
   onedfive: [
@@ -7340,6 +7341,20 @@ celebration_type: [
 	{ value: "the ${uc:constellation_adj_person} ${uc:FamilyMember}", weight: 1 },
 	{ value: "the ${uc:daemontype} ${uc:huntingmonster_singular}", weight: 1 },
 	{ value: "${po:RealGods} Sarcophagus", weight: 1 },
+	{ value: "the ${uc:constellation_adj_person} ${uc:QuickNPCJob}", weight: 1 },
+	{ value: "the ${uc:po:magicusertype} ${uc:magicalcommonobject}", weight: 1 },
+	{ value: "${constellation_repeat} to most, but called ${constellation_repeat} by the ancient ${ancientpeople}", weight: 1 },
+  ],
+  
+  constellation_repeat: [
+    { value: "the ${uc:daemontype} ${uc:AnimalMain}", weight: 1 },
+	{ value: "the ${uc:onedfive} ${uc:FamilyMember}s", weight: 1 },
+	{ value: "the ${uc:constellation_adj_obj} ${uc:magicalcommonobject}", weight: 1 },
+	{ value: "the ${uc:ordinal} ${uc:FamilyMember}", weight: 1 },
+	{ value: "the ${uc:constellation_adj_person} ${uc:FamilyMember}", weight: 1 },
+	{ value: "the ${uc:daemontype} ${uc:huntingmonster_singular}", weight: 1 },
+	{ value: "${po:RealGods} Sarcophagus", weight: 1 },
+	{ value: "the ${uc:po:magicusertype} ${uc:magicalcommonobject}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_person} ${uc:QuickNPCJob}", weight: 1 },
   ],
   
