@@ -2168,6 +2168,7 @@ const tables = {
     { value: "hydras", weight: 1 },
     { value: "ghosts", weight: 1 },
     { value: "ghouls", weight: 1 },
+	{ value: "nagas", weight: 1 },
     { value: "human rats", weight: 1 },
     { value: "minotaurs", weight: 1 },
     { value: "pseudo-giants", weight: 1 },
@@ -2177,6 +2178,28 @@ const tables = {
     { value: "vampires", weight: 1 },
     { value: "werewolves", weight: 1 },
     { value: "witches", weight: 1 },
+  ],
+  
+  huntingmonster_singular: [
+    { value: "daemon", weight: 1 },
+    { value: "spirit", weight: 1 },
+    { value: "angel", weight: 1 },
+    { value: "centaur", weight: 1 },
+    { value: "djinn", weight: 1 },
+    { value: "dryad", weight: 1 },
+    { value: "hydra", weight: 1 },
+    { value: "ghost", weight: 1 },
+    { value: "ghoul", weight: 1 },
+	{ value: "naga", weight: 1 },
+    { value: "ratman", weight: 1 },
+    { value: "minotaur", weight: 1 },
+    { value: "pseudo-giant", weight: 1 },
+    { value: "serpent", weight: 1 },
+    { value: "elf", weight: 1 },
+    { value: "unicorn", weight: 1 },
+    { value: "vampire", weight: 1 },
+    { value: "werewolf", weight: 1 },
+    { value: "witch", weight: 1 },
   ],
 
   husband_adj: [
@@ -2955,6 +2978,8 @@ const tables = {
     { value: "umbrella", weight: 1 },
     { value: "volleyball", weight: 1 },
     { value: "war-bow", weight: 1 },
+	{ value: "key", weight: 1 },
+	{ value: "shovel", weight: 1 },
 	{ value: "${MusicalInstrument}", weight: 1 },
     { value: "${HaftedWeapons}", weight: 1 },
   ],
@@ -5625,6 +5650,9 @@ trap_location: [
     { value: "vulture", weight: 1 },
     { value: "crane", weight: 1 },
     { value: "seagull", weight: 1 },
+	{ value: "swan", weight: 1 },
+    { value: "crow", weight: 1 },
+    { value: "raven", weight: 1 },
   ],
 
   AnimalInsect: [
@@ -5637,7 +5665,7 @@ trap_location: [
     { value: "slug", weight: 1 },
     { value: "moth", weight: 1 },
     { value: "stinkbug", weight: 1 },
-    { value: "lightning bug", weight: 1 },
+    { value: "lightning-bug", weight: 1 },
     { value: "beetle", weight: 1 },
 	{ value: "caterpillar", weight: 1 },
   ],
@@ -6308,21 +6336,21 @@ trap_location: [
   ],
 
   QuickNPCJobPoor: [
-    { value: "${Crop} farmer", weight: 2 },
-    { value: "${AnimalOrdinary} hunter", weight: 2 },
+    { value: "${Crop} farmer", weight: 1 },
+    { value: "hunter", weight: 1 },
     { value: "sailor", weight: 1 },
     { value: "prostitute", weight: 1 },
     { value: "courier", weight: 1 },
-    { value: "day laborer", weight: 1 },
+    { value: "laborer", weight: 1 },
     { value: "woodcutter", weight: 1 },
     { value: "fisher", weight: 1 },
-    { value: "petty criminal", weight: 1 },
+    { value: "thief", weight: 1 },
     { value: "beggar", weight: 1 },
     { value: "ditchdigger", weight: 1 },
     { value: "slave", weight: 1 },
     { value: "servant", weight: 1 },
-    { value: "clothes mender", weight: 1 },
-    { value: "grave digger", weight: 1 },
+    { value: "clothes-mender", weight: 1 },
+    { value: "gravedigger", weight: 1 },
     { value: "orphan", weight: 1 },
     { value: "butcher", weight: 1 },
     { value: "trapper", weight: 1 },
@@ -6346,17 +6374,17 @@ trap_location: [
     { value: "painter", weight: 1 },
     { value: "poet", weight: 1 },
     { value: "chemist", weight: 1 },
-    { value: "${AnimalOrdinary} tamer", weight: 1 },
+    { value: "${AnimalOrdinary}-tamer", weight: 1 },
     { value: "smuggler", weight: 1 },
     { value: "wainwright", weight: 1 },
     { value: "beekeeper", weight: 1 },
     { value: "gambler", weight: 1 },
-    { value: "caravan guard", weight: 1 },
+    { value: "guard", weight: 1 },
     { value: "musician", weight: 1 },
   ],
 
   QuickNPCJobRich: [
-    { value: "${MerchantGoods} merchant", weight: 2 },
+    { value: "${MerchantGoods} merchant", weight: 1 },
     { value: "jeweler", weight: 1 },
     { value: "gambler", weight: 1 },
     { value: "scribe", weight: 1 },
@@ -6368,7 +6396,7 @@ trap_location: [
     { value: "scholar", weight: 1 },
     { value: "judge", weight: 1 },
     { value: "dancer", weight: 1 },
-    { value: "criminal mastermind", weight: 1 },
+    { value: "genius", weight: 1 },
   ],
 
   RealGods: [
@@ -7305,16 +7333,26 @@ celebration_type: [
   ],
   
   constellation: [
-    { value: "the ${uc:AnimalMain}", weight: 1 },
-	{ value: "the ${onedsix} ${uc:FamilyMember}s", weight: 1 },
-	{ value: "the ${uc:constellation_adj} ${uc:magicalcommonobject}", weight: 1 },
+    { value: "the ${uc:daemontype} ${uc:AnimalMain}", weight: 1 },
+	{ value: "the ${uc:onedfive} ${uc:FamilyMember}s", weight: 1 },
+	{ value: "the ${uc:constellation_adj_obj} ${uc:magicalcommonobject}", weight: 1 },
 	{ value: "the ${uc:ordinal} ${uc:FamilyMember}", weight: 1 },
+	{ value: "the ${uc:constellation_adj_person} ${uc:FamilyMember}", weight: 1 },
+	{ value: "the ${uc:daemontype} ${uc:huntingmonster_singular}", weight: 1 },
+	{ value: "${po:RealGods} Sarcophagus", weight: 1 },
+	{ value: "the ${uc:constellation_adj_person} ${uc:QuickNPCJob}", weight: 1 },
   ],
   
-  constellation_adj: [
+  constellation_adj_obj: [
     { value: "broken", weight: 1 },
 	{ value: "little", weight: 1 },
 	{ value: "big", weight: 1 },
+  ],
+  
+  constellation_adj_person: [
+    { value: "bald", weight: 1 },
+	{ value: "well-endowed", weight: 1 },
+	{ value: "winking", weight: 1 },
   ],
 
     intro: [
