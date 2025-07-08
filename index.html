@@ -923,8 +923,8 @@ const tables = {
     { value: "crane", weight: 1 },
     { value: "crying", weight: 1 },
     { value: "crystal", weight: 1 },
-    { value: "feather", weight: 1 },
-    { value: "fester", weight: 1 },
+    { value: "feathered", weight: 1 },
+    { value: "festering", weight: 1 },
     { value: "glass", weight: 1 },
     { value: "grass", weight: 1 },
     { value: "hunger", weight: 1 },
@@ -1980,6 +1980,7 @@ const tables = {
     { value: "the Malatesta of Rimini", weight: 1 },
     { value: "the Men of the Chain and Lance", weight: 1 },
 	{ value: "the Sons and Daughters of the Miracle", weight: 1 },
+	{ value: "the ${humanoids} of ${urbn_cityname}", weight: 3 },
   ],
   
   historicalinfrastructure: [
@@ -2956,7 +2957,7 @@ const tables = {
   ],
 
   magicalcommonobject: [
-    { value: "backpack", weight: 1 },
+    { value: "pouch", weight: 1 },
     { value: "breastplate", weight: 1 },
     { value: "broadsword", weight: 1 },
     { value: "candle", weight: 1 },
@@ -2973,10 +2974,12 @@ const tables = {
 	{ value: "dish", weight: 1 },
 	{ value: "plate", weight: 1 },
 	{ value: "torch", weight: 1 },
+	{ value: "horn", weight: 1 },
+	{ value: "bottle", weight: 1 },
     { value: "stick", weight: 1 },
     { value: "shield", weight: 1 },
     { value: "umbrella", weight: 1 },
-    { value: "volleyball", weight: 1 },
+    { value: "dagger", weight: 1 },
     { value: "war-bow", weight: 1 },
 	{ value: "key", weight: 1 },
 	{ value: "shovel", weight: 1 },
@@ -5570,7 +5573,7 @@ trap_location: [
     { value: "there\'s an entrance to an abandoned dwarven mall ${wilds_specific_locn}", weight: 1 },
     { value: "there’s an overgrown hedge maze, created by a magician for the Royal Jubilee 25 years ago. The duke’s child wandered in and never came out, and several rescuers were lost as well, so the magician was executed and the maze abandoned, with the prize—said to be ${mazeprize}—still unclaimed at the center", weight: 1 },
     { value: "those traveling the road from ${landmark} to ${landmark} get old before they reach their destination", weight: 1 },
-	{ value: "there's a place ${wilds_specific_locn} where the forbidden constellation known as ${constellation} can be seen", weight: 1 },
+	{ value: "there's a place ${wilds_specific_locn} where the forbidden constellation known as ${constellation} can be seen", weight: 2 },
   ],
 
   onedfive: [
@@ -6704,6 +6707,7 @@ trap_location: [
     { value: "fell into a bottomless pit, and is falling still", weight: 1 },
     { value: "was devoured by ${a:idol_subject_human_pre_desc} ${AnimalMain}", weight: 1 },
 	{ value: "was last seen sliding down the throat of a titanic ${AnimalMain}", weight: 1 },
+	{ value: "was killed after provoking the constellation known as ${constellation}", weight: 1 },
 ],
 
 cod_ose: [
@@ -6808,6 +6812,7 @@ saint_curse: [
 	{ value: "to always know the direction of the nearest ${magic_compass}", weight: 1 },
 	{ value: "to have nightmares of ${a:idol}", weight: 1 },
 	{ value: "to seek out and collect ${collection}", weight: 1 },
+	{ value: "to see the constellation known as ${constellation} even during the day", weight: 1 },
   ],
   
   light_type: [
@@ -7142,8 +7147,16 @@ celebration_type: [
 	{ value: "${prophetic_subject} seeking the wisdom of the oldest ${oldest} in the world ${wilds_specific_locn}", weight: 1 },
 	{ value: "${prophetic_subject} hunting ${huntingmonster} with a party of ${posse_quality} ${posse} amid the ${landscape_types} of ${foreignland}", weight: 1 },
 	{ value: "${prophetic_subject} pleading before ${monstertype} for ${pleading_thing}", weight: 1 },
+	{ value: "${prophetic_subject} at ${boundary_times} in the ${landscape_types} of ${foreignland}, the constellation known as ${constellation} shimmering unmistakably above", weight: 1 },
   ],
   
+  
+  boundary_times: [
+    { value: "dusk", weight: 1 },
+	{ value: "twilight", weight: 1 },
+	{ value: "midnight", weight: 1 },
+	{ value: "daybreak", weight: 1 },
+  ],
   
   body_of_water: [
     { value: "the ${RealGods} River", weight: 1 },
@@ -7343,6 +7356,8 @@ celebration_type: [
 	{ value: "${po:RealGods} Sarcophagus", weight: 1 },
 	{ value: "the ${uc:constellation_adj_person} ${uc:QuickNPCJob}", weight: 1 },
 	{ value: "the ${uc:po:magicusertype} ${uc:magicalcommonobject}", weight: 1 },
+	{ value: "the ${uc:constellation_adj_compass} ${constellation_adj_compass_stars}", weight: 1 },
+	{ value: "the ${uc:constellation_adj_person} ${uc:constellation_archetype}", weight: 1 },
 	{ value: "${constellation_repeat} to most, but called ${constellation_repeat} by the ancient ${ancientpeople}", weight: 1 },
   ],
   
@@ -7356,6 +7371,8 @@ celebration_type: [
 	{ value: "${po:RealGods} Sarcophagus", weight: 1 },
 	{ value: "the ${uc:po:magicusertype} ${uc:magicalcommonobject}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_person} ${uc:QuickNPCJob}", weight: 1 },
+	{ value: "the ${uc:constellation_adj_person} ${uc:constellation_archetype}", weight: 1 },
+	{ value: "the ${uc:constellation_adj_compass} ${constellation_adj_compass_stars}", weight: 1 },
   ],
   
   constellation_adj_obj: [
@@ -7368,6 +7385,35 @@ celebration_type: [
     { value: "bald", weight: 1 },
 	{ value: "well-endowed", weight: 1 },
 	{ value: "winking", weight: 1 },
+	{ value: "wounded", weight: 1 },
+	{ value: "kneeling", weight: 1 },
+  ],
+  
+  
+   constellation_adj_compass: [
+    { value: "northern", weight: 1 },
+	{ value: "southern", weight: 1 },
+	{ value: "eastern", weight: 1 },
+	{ value: "western", weight: 1 },
+  ],
+  
+  constellation_adj_compass_stars: [
+    { value: "${uc:AnimalMain}", weight: 2 },
+	{ value: "${uc:magicalcommonobject}", weight: 2 },
+	{ value: "${uc:huntingmonster_singular}", weight: 2 },
+	{ value: "Star", weight: 1 },
+  ],
+  
+   constellation_archetype: [
+    { value: "rogue", weight: 1 },
+	{ value: "lover", weight: 1 },
+	{ value: "princess", weight: 1 },
+	{ value: "warrior", weight: 1 },
+	{ value: "beggar", weight: 1 },
+	{ value: "knight", weight: 1 },
+	{ value: "child", weight: 1 },
+	{ value: "tyrant", weight: 1 },
+	{ value: "angel", weight: 1 },
   ],
 
     intro: [
