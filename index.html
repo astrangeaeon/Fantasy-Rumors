@@ -2939,19 +2939,22 @@ const tables = {
     { value: "candle", weight: 1 },
     { value: "chain", weight: 1 },
     { value: "crutch", weight: 1 },
-    { value: "feather pen", weight: 1 },
+    { value: "feather", weight: 1 },
     { value: "gauntlet", weight: 1 },
     { value: "hat", weight: 1 },
     { value: "helmet", weight: 1 },
-    { value: "paint brush", weight: 1 },
+    { value: "brush", weight: 1 },
     { value: "pole", weight: 1 },
-    { value: "pot and pan", weight: 1 },
+    { value: "pot", weight: 1 },
     { value: "rope", weight: 1 },
+	{ value: "dish", weight: 1 },
+	{ value: "plate", weight: 1 },
+	{ value: "torch", weight: 1 },
     { value: "stick", weight: 1 },
-    { value: "tower shield", weight: 1 },
+    { value: "shield", weight: 1 },
     { value: "umbrella", weight: 1 },
     { value: "volleyball", weight: 1 },
-    { value: "war bow", weight: 1 },
+    { value: "war-bow", weight: 1 },
 	{ value: "${MusicalInstrument}", weight: 1 },
     { value: "${HaftedWeapons}", weight: 1 },
   ],
@@ -5541,6 +5544,7 @@ trap_location: [
     { value: "there\'s an entrance to an abandoned dwarven mall ${wilds_specific_locn}", weight: 1 },
     { value: "there’s an overgrown hedge maze, created by a magician for the Royal Jubilee 25 years ago. The duke’s child wandered in and never came out, and several rescuers were lost as well, so the magician was executed and the maze abandoned, with the prize—said to be ${mazeprize}—still unclaimed at the center", weight: 1 },
     { value: "those traveling the road from ${landmark} to ${landmark} get old before they reach their destination", weight: 1 },
+	{ value: "there's a place ${wilds_specific_locn} where the forbidden constellation of ${constellation} can be seen", weight: 1 },
   ],
 
   onedfive: [
@@ -5938,8 +5942,6 @@ trap_location: [
     { value: "grandmother", weight: 1 },
     { value: "aunt", weight: 1 },
     { value: "uncle", weight: 1 },
-    { value: "great uncle", weight: 1 },
-    { value: "great aunt", weight: 1 },
   ],
 
   FantasyGods: [
@@ -7300,6 +7302,19 @@ celebration_type: [
 	{ value: "hobbits", weight: 1 },
 	{ value: "gnomes", weight: 1 },
 	{ value: "lizardfolk", weight: 1 },
+  ],
+  
+  constellation: [
+    { value: "the ${uc:AnimalMain}", weight: 1 },
+	{ value: "the ${onedsix} ${uc:FamilyMember}s", weight: 1 },
+	{ value: "the ${uc:constellation_adj} ${uc:magicalcommonobject}", weight: 1 },
+	{ value: "the ${uc:ordinal} ${uc:FamilyMember}", weight: 1 },
+  ],
+  
+  constellation_adj: [
+    { value: "broken", weight: 1 },
+	{ value: "little", weight: 1 },
+	{ value: "big", weight: 1 },
   ],
 
     intro: [
