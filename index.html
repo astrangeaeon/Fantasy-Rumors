@@ -899,6 +899,32 @@ const tables = {
     { value: "usurers", weight: 1 },
     { value: "vandals", weight: 1 },
     { value: "water squanderers", weight: 1 },
+	{ value: "${criminals_esoteric}", weight: 1 },
+  ],
+  
+  criminals_esoteric: [
+    { value: "rutterkins", weight: 1 },
+    { value: "wag-halters", weight: 1 },
+    { value: "yeggs", weight: 1 },
+    { value: "abactors", weight: 1 },
+    { value: "jackrollers", weight: 1 },
+    { value: "biblioklepts", weight: 1 },
+    { value: "bubbers", weight: 1 },
+    { value: "glimmerers", weight: 1 },
+    { value: "rufflers", weight: 1 },
+    { value: "poulterers", weight: 1 },
+    { value: "figure dancers", weight: 1 },
+    { value: "swaddlers", weight: 1 },
+    { value: "swig-men", weight: 1 },
+    { value: "strowlers", weight: 1 },
+    { value: "tatmongers", weight: 1 },
+    { value: "larcenists", weight: 1 },
+    { value: "defalcators", weight: 1 },
+    { value: "skyjackers", weight: 1 },
+    { value: "footpads", weight: 1 },
+    { value: "cutpurses", weight: 1 },
+    { value: "pennyweighters", weight: 1 },
+    { value: "bristlers", weight: 1 },
   ],
 
   culprit: [
@@ -7162,6 +7188,7 @@ celebration_type: [
 	{ value: "${prophetic_subject} hunting ${huntingmonster} with a party of ${posse_quality} ${posse} amid the ${landscape_types} of ${foreignland}", weight: 1 },
 	{ value: "${prophetic_subject} pleading before ${monstertype} for ${pleading_thing}", weight: 1 },
 	{ value: "${prophetic_subject} at ${boundary_times} in the ${landscape_types} of ${foreignland}, the constellation known as ${constellation} shimmering unmistakably above", weight: 1 },
+	{ value: "${prophetic_subject} in ${a:urbn_place_adj} ${urbn_place} among the ${criminals_esoteric} and ${criminals} so commonly found in ${urbn_cityname} the City of ${urbn_citynickname}", weight: 1 },
   ],
   
   
@@ -7253,18 +7280,21 @@ celebration_type: [
 	{ value: "${FantasyName} the Narcoleptic sleeping peacefully ${narcoleptic_location}", weight: 1 },
 	{ value: "${monstertype} defecating in ${a:urbn_place} filled with ${AnimalMain}s", weight: 1 },
 	{ value: "${duo_name1} and ${duo_name2} ${portrait_detail}", weight: 1 },
+	{ value: "${prophetic_subject} weeping as they behold the newborn child who would become ${ntc}", weight: 1 },
   ],
   
   portrait_location: [
     { value: "in ${a:urbn_place_adj} ${urbn_place}", weight: 1 },
 	{ value: "${wilds_specific_locn}", weight: 1 },
 	{ value: "with ${landmark} in the background", weight: 1 },
+	{ value: "at the wedding of ${uc:RoyalTitleFemale} ${FantasyNameFemale} of ${foreignland} and ${uc:RoyalTitleMale} ${FantasyNameMale} of ${foreignland}", weight: 1 },
   ],
   
   portrait_detail: [
     { value: "holding ${a:magicalcommonobject} ${portrait_location}", weight: 1 },
 	{ value: "${portrait_detail_drinking_style} ${FantasyMeal_Fruit} juice from a glass goblet ${portrait_location}", weight: 1 },
 	{ value: "in the style of clothing they wore ${historicalage}", weight: 1 },
+	{ value: "${portrait_detail_celebration_style} ${portrait_location} ", weight: 1 },
   ],
   
   portrait_detail_drinking_style: [
@@ -7274,6 +7304,15 @@ celebration_type: [
 	{ value: "spilling", weight: 1 },
 	{ value: "pouring", weight: 1 },
 	{ value: "choking on", weight: 1 },
+  ],
+  
+  portrait_detail_celebration_style: [
+    { value: "clapping with amusement", weight: 1 },
+	{ value: "cheering in triumph", weight: 1 },
+	{ value: "laughing with delight", weight: 1 },
+	{ value: "dancing ${dance} gracefully", weight: 1 },
+	{ value: "${portrait_detail_drinking_style} ${Colors} wine", weight: 1 },
+	{ value: "flirting with ${prophetic_subject}", weight: 1 },
   ],
   
   
@@ -7347,7 +7386,7 @@ celebration_type: [
 	{ value: "${a:magicalcommonobject} resting on ${still_life_surface}", weight: 1 },
 	{ value: "${relic}", weight: 1 },
 	{ value: "${a:idol}", weight: 1 },
-	{ value: "a single ${FantasyMeal_Fruit} resting on ${still_life_surface}", weight: 1 },
+	{ value: "a single ripe ${FantasyMeal_Fruit} resting on ${still_life_surface}", weight: 1 },
   ],
   
   
@@ -7428,6 +7467,18 @@ celebration_type: [
 	{ value: "child", weight: 1 },
 	{ value: "tyrant", weight: 1 },
 	{ value: "angel", weight: 1 },
+  ],
+  
+   artists: [
+    { value: "Apollodorus", weight: 1 },
+	{ value: "Cimon of Cleonae", weight: 1 },
+	{ value: "Echion", weight: 1 },
+	{ value: "Pausias", weight: 1 },
+	{ value: "Zeuxis", weight: 1 },
+	{ value: "Eupompus", weight: 1 },
+	{ value: "Pythis", weight: 1 },
+	{ value: "Masaccio", weight: 1 },
+	{ value: "Uccello", weight: 1 },
   ],
 
     intro: [
