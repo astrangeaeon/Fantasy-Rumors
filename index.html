@@ -1901,6 +1901,9 @@ const tables = {
     { value: "salamanders", weight: 1 },
     { value: "unicorns", weight: 1 },
     { value: "wolves", weight: 1 },
+	{ value: "rams", weight: 1 },
+    { value: "bulls", weight: 1 },
+    { value: "goats", weight: 1 },
   ],
 
   hero: [
@@ -1987,6 +1990,7 @@ const tables = {
     { value: "roads", weight: 1 },
     { value: "windmills", weight: 1 },
 	{ value: "watchtowers", weight: 1 },
+	{ value: "aqueducts", weight: 1 },
     { value: "bridges", weight: 1 },
     { value: "tunnels", weight: 1 },
     { value: "dams", weight: 1 },
@@ -2599,6 +2603,7 @@ const tables = {
     { value: "the old tournament grounds", weight: 1 },
     { value: "the Orectic Enclave", weight: 1 },
     { value: "the Parakku Sanctuary", weight: 1 },
+	{ value: "the Boulevard of Martyrs", weight: 1 },
     { value: "the Porcelain City", weight: 1 },
     { value: "the Rainbow Gardens of the Lady", weight: 1 },
     { value: "the Sin Gate and the Holy Gate", weight: 1 },
@@ -2639,6 +2644,7 @@ const tables = {
     { value: "the Casawary Islands", weight: 1 },
     { value: "the Chessboard Rapids", weight: 1 },
     { value: "the corpse of the river", weight: 1 },
+	{ value: "the seven mouths of the river Po", weight: 1 },
     { value: "the Cradle-land of Zazamanc", weight: 1 },
     { value: "the Desert of Ro", weight: 1 },
     { value: "the Eagle’s Nest", weight: 1 },
@@ -2706,6 +2712,7 @@ const tables = {
     { value: "the high beams of a pristine 1954 cherry red Cadillac Eldorado", weight: 1 },
     { value: "the Queen of Northgales and the Queen of Wastelands", weight: 1 },
     { value: "white, star-like ants", weight: 1 },
+	{ value: "the siphoned light of the constellation known as ${constellation} which blazes in the night sky no longer", weight: 1 },
   ],
 
   Local: [
@@ -5556,7 +5563,7 @@ trap_location: [
     { value: "the deep elves, homesick for lands they would never see again, built an artificial sun and stars underground", weight: 1 },
     { value: "the ever-growing Great ${weapon_land_type} is all that remains of ${ancientthing} left behind by ${culprit}", weight: 1 },
     { value: "the faint smell of ${Smells} often means there’s ${a:WeirdFantasyMonster} nearby, or so it is said", weight: 1 },
-    { value: "the King of Dust rules without mercy under the ${Colors} light of a strange sun", weight: 1 },
+    { value: "if you travel far enough ${CompassDirectionPrimary}, you'll come across the ${landscape_types} where the King of Dust ruled without mercy under the unhealthy ${Colors} light of a strange sun and exotic constellations like ${constellation} blaze above", weight: 1 },
     { value: "the Ocean of Tears, a great desert littered with ancient ships and the bones of marine life, formed when ${heroes_and_villains} ate the sacred fish of ${RealGods} instead of throwing it back", weight: 1 },
     { value: "the River of Ghosts is so named because on quiet mornings, you can see ${ghostriver}", weight: 1 },
     { value: "the River of Rubble is actually a trail of ants that have been carrying away crumbs of marble and stone from the fallen city Combia for over a thousand years in order to furnish their ant-mound in the splendor of antiquity", weight: 1 },
@@ -5743,6 +5750,13 @@ trap_location: [
     { value: "southeast", weight: 1 },
     { value: "northwest", weight: 1 },
     { value: "southwest", weight: 1 },
+  ],
+  
+  CompassDirectionPrimary: [
+    { value: "north", weight: 1 },
+    { value: "south", weight: 1 },
+    { value: "east", weight: 1 },
+    { value: "west", weight: 1 },
   ],
 
   CompoundWordNames: [
