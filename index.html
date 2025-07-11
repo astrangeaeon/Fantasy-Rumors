@@ -410,6 +410,7 @@ const tables = {
 	{ value: " who ate lice and fleas, naked but for a pair of animal horns,", weight: 1 },
 	{ value: " who thirsted for the blood of saints,", weight: 1 },
 	{ value: " who used many tongues to build peace,", weight: 1 },
+	{ value: " who eliminated desire from his heart,", weight: 1 },
   ],
 
   hundred_words: [
@@ -4590,7 +4591,7 @@ const tables = {
   
   
    trap: [
-    { value: "${trap_builder} have been ${trap_setup} ${trap_quality} ${trap_type} traps ${trap_location} ${trap_reason}", weight: 1 },
+    { value: "${trap_builder} ${trap_builder_origin} have been spotted ${trap_setup} ${trap_quality} ${trap_type} traps ${trap_location} ${trap_reason}", weight: 1 },
   ],
   
   trap_builder: [
@@ -4600,6 +4601,25 @@ const tables = {
     { value: "blue dwarfs", weight: 1 },
     { value: "crawling folk", weight: 1 },
 	{ value: "skeletal deserters", weight: 1 },
+  ],
+  
+  trap_builder_origin: [
+    { value: "from the ${uc:CompassDirectionPrimary}", weight: 1 },
+    { value: "whose ancestors were banished here by Saint ${SaintName} ${when} ago", weight: 1 },
+    { value: "driven from a larger group due to having ${short_inherited_trait}", weight: 1 },
+    { value: "and their ${trap_builder_servant_adj} servants", weight: 1 },
+    { value: "with the reputation of being ${criminals}", weight: 1 },
+	{ value: "who keep herds of ${herdanimal} deeper down", weight: 1 },
+  ],
+  
+  
+  trap_builder_servant_adj: [
+    { value: "tongueless", weight: 1 },
+    { value: "well-cared-for", weight: 1 },
+    { value: "beautiful", weight: 1 },
+    { value: "captured", weight: 1 },
+    { value: "leashed", weight: 1 },
+	{ value: "grotesque", weight: 1 },
   ],
   
   trap_setup: [
@@ -7208,6 +7228,7 @@ celebration_type: [
 	{ value: "${uc:urbn_citynickname} Lake", weight: 1 },
 	{ value: "the ${uc:AnimalMain} River", weight: 1 },
 	{ value: "the waters off the coast of ${coastal}", weight: 1 },
+	{ value: "the Estuary of Saint ${SaintName}", weight: 1 },
   ],
   
   pleading_thing: [
@@ -7476,9 +7497,10 @@ celebration_type: [
 	{ value: "Pausias", weight: 1 },
 	{ value: "Zeuxis", weight: 1 },
 	{ value: "Eupompus", weight: 1 },
-	{ value: "Pythis", weight: 1 },
+	{ value: "Lucatiel of Mirrah", weight: 1 },
 	{ value: "Masaccio", weight: 1 },
 	{ value: "Uccello", weight: 1 },
+	{ value: "Pythis", weight: 1 },
   ],
 
     intro: [
