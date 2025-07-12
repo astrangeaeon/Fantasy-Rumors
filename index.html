@@ -896,7 +896,7 @@ const tables = {
     { value: "swindlers", weight: 1 },
     { value: "tomb raiders", weight: 1 },
     { value: "traitors", weight: 1 },
-    { value: "undocumented foreigners", weight: 1 },
+    { value: "slavers", weight: 1 },
     { value: "usurers", weight: 1 },
     { value: "vandals", weight: 1 },
     { value: "water squanderers", weight: 1 },
@@ -4870,7 +4870,7 @@ trap_location: [
     { value: "hard-to-find", weight: 1 },
 	{ value: "haunted", weight: 1 },
     { value: "immaculately clean", weight: 1 },
-    { value: "members-only", weight: 1 },
+    { value: "exclusive", weight: 1 },
     { value: "neglected", weight: 1 },
     { value: "noisy", weight: 1 },
     { value: "normal-looking", weight: 1 },
@@ -5692,6 +5692,17 @@ trap_location: [
 	{ value: "${AnimalBird}", weight: 1 },
   ],
   
+  AnimalBigCat: [
+    { value: "lion", weight: 1 },
+    { value: "tiger", weight: 1 },
+    { value: "leopard", weight: 1 },
+    { value: "puma", weight: 1 },
+    { value: "panther", weight: 1 },
+    { value: "cheetah", weight: 1 },
+    { value: "jaguar", weight: 1 },
+    { value: "lynx", weight: 1 },
+    { value: "cougar", weight: 1 },
+  ],
   
   AnimalBird: [
     { value: "hawk", weight: 1 },
@@ -5742,6 +5753,36 @@ trap_location: [
     { value: "jackal", weight: 1 },
     { value: "elephant", weight: 1 },
 	{ value: "skunk", weight: 1 },
+  ],
+  
+  AnimalMount: [
+    { value: "${AnimalBigCat}", weight: 1 },
+    { value: "horse", weight: 1 },
+    { value: "camel", weight: 1 },
+    { value: "elephant", weight: 1 },
+    { value: "donkey", weight: 1 },
+    { value: "mule", weight: 1 },
+    { value: "${AnimalMagicMount}", weight: 1 },
+    { value: "zebra", weight: 1 },
+    { value: "bear", weight: 1 },
+	{ value: "elk", weight: 1 },
+	{ value: "moose", weight: 1 },
+  ],
+
+
+  AnimalMagicMount: [
+    { value: "unicorn", weight: 1 },
+    { value: "winged horse", weight: 1 },
+    { value: "chimera", weight: 1 },
+    { value: "dragon", weight: 1 },
+    { value: "hydra", weight: 1 },
+    { value: "wyrm", weight: 1 },
+    { value: "wyvern", weight: 1 },
+    { value: "peryton", weight: 1 },
+    { value: "centaur", weight: 1 },
+	{ value: "giant ${AnimalInsect}", weight: 1 },
+    { value: "crawling giant", weight: 1 },
+	{ value: "battle ${AnimalBigCat}", weight: 1 },
   ],
 
   AnimalOrdinary: [
@@ -7019,6 +7060,7 @@ saint_curse: [
     { value: "crypt", weight: 1 },
 	{ value: "sepulcher", weight: 1 },
     { value: "casket", weight: 1 },
+	{ value: "sarcophagus", weight: 1 },
   ],
   
   prophetic_vision_mourning_place_adj: [
@@ -7170,6 +7212,7 @@ celebration_type: [
 	{ value: "portrait of ${portrait_subject}", weight: 1 },
 	{ value: "${art_verb} the ${nude_type} nude curves and contours of ${prophetic_subject}", weight: 1 },
 	{ value: "landscape ${art_verb} the ${landscape_types} of ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
+	{ value: "landscape ${art_verb} the ${landscape_types} of ${foreign_adj}${foreignland} at ${boundary_times}", weight: 1 },
 	{ value: "still life of ${still_life_subject}", weight: 1 },
 	{ value: "painting enigmatically titled ${art_title_abstract}", weight: 1 },
   ],
@@ -7209,6 +7252,8 @@ celebration_type: [
 	{ value: "${prophetic_subject} pleading before ${monstertype} for ${pleading_thing}", weight: 1 },
 	{ value: "${prophetic_subject} at ${boundary_times} in the ${landscape_types} of ${foreignland}, the constellation known as ${constellation} shimmering unmistakably above", weight: 1 },
 	{ value: "${prophetic_subject} in ${a:urbn_place_adj} ${urbn_place} among the ${criminals_esoteric} and ${criminals} so commonly found in ${urbn_cityname} the City of ${urbn_citynickname}", weight: 1 },
+	{ value: "${prophetic_subject} having their portrait painted by the great artist ${artists} with the ${landscape_types} of ${foreignland} in the background", weight: 1 },
+	{ value: "${heroes_and_villains} departing from the lands of the ${humanoids} on the back of their saddled ${AnimalMount} named ${HorseNames}", weight: 1 },
   ],
   
   
@@ -7217,6 +7262,8 @@ celebration_type: [
 	{ value: "twilight", weight: 1 },
 	{ value: "midnight", weight: 1 },
 	{ value: "daybreak", weight: 1 },
+	{ value: "sunset", weight: 1 },
+	{ value: "midday", weight: 1 },
   ],
   
   body_of_water: [
@@ -7334,6 +7381,7 @@ celebration_type: [
 	{ value: "dancing ${dance} gracefully", weight: 1 },
 	{ value: "${portrait_detail_drinking_style} ${Colors} wine", weight: 1 },
 	{ value: "flirting with ${prophetic_subject}", weight: 1 },
+	{ value: "crying softly with joy", weight: 1 },
   ],
   
   
