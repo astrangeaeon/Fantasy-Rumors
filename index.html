@@ -1518,7 +1518,7 @@ const tables = {
     { value: "loaves of bread with stones baked into them", weight: 1 },
     { value: "luminous plants", weight: 1 },
     { value: "news of faraway places", weight: 1 },
-    { value: "old bones", weight: 1 },
+    { value: "old bones of the dead pets of childhood friends", weight: 1 },
     { value: "painful secrets", weight: 1 },
     { value: "petrified blood", weight: 1 },
     { value: "pieces of mummified bodies used for medicine", weight: 1 },
@@ -1534,7 +1534,7 @@ const tables = {
     { value: "subterranean perfumes", weight: 1 },
     { value: "sweet honey from a virgin swarm", weight: 1 },
     { value: "tales of sad adventures", weight: 1 },
-    { value: "tattered scrolls", weight: 1 },
+    { value: "tattered scrolls from the House of ${housething}", weight: 1 },
     { value: "the birthslime of Reshupu", weight: 1 },
     { value: "the dark oily meat of gryphons", weight: 1 },
     { value: "the dust of disintegrated vampires", weight: 1 },
@@ -1550,6 +1550,8 @@ const tables = {
 	{ value: "the black tears of yellow toads", weight: 1 },
 	{ value: "pillows particularly good or bad dreams were dreamt on", weight: 1 },
 	{ value: "things found in the pockets of suicides", weight: 1 },
+	{ value: "the skulls of gulls and other seabirds", weight: 1 },
+	{ value: "jewels from the House of ${housething}", weight: 1 },
   ],
 
   excitingemployer: [
@@ -1647,6 +1649,7 @@ const tables = {
     { value: "the reek of holiness", weight: 1 },
     { value: "the uncommon ability to turn into a toad", weight: 1 },
     { value: "wine-stained lips", weight: 1 },
+	{ value: "pierced nipples", weight: 1 },
   ],
 
   fd_tale: [
@@ -1687,6 +1690,8 @@ const tables = {
     { value: "winged rabbits and the hounds which hunt them in the skies", weight: 1 },
     { value: "wizards who can hear anything the wind catches, so secrets are whispered through brazen tubes", weight: 1 },
     { value: "worshippers of ${RealGods} from whose heads ${AnimalBird}s rise when slain in battle", weight: 1 },
+	{ value: "a queen from the ${CompassDirectionPrimary} who could not speak, only produce the defeaning roar of the ${AnimalBigCat}", weight: 1 },
+	{ value: "${a:Colors} pool where fish with scales of gold and silver swim", weight: 1 },
   ],
 
   feature: [
@@ -2446,6 +2451,7 @@ const tables = {
     { value: "an elephant known as Cloud-Mountain", weight: 1 },
     { value: "an infant born with a piece of colored jade in its mouth", weight: 1 },
 	{ value: "an apple", weight: 1 },
+	{ value: "an order of vampire knights on skeletal horses, wearing black plate armor and wielding bastard swords", weight: 1 },
 	{ value: "the mirror cat", weight: 1 },
     { value: "ancient magical wards", weight: 1 },
     { value: "angels mounted on steeds of fire", weight: 1 },
@@ -2461,7 +2467,7 @@ const tables = {
     { value: "hostile vegetation", weight: 1 },
     { value: "huge red hippopotami", weight: 1 },
     { value: "impenetrable thorns", weight: 1 },
-    { value: "innocuous lizards that devour magic ", weight: 1 },
+    { value: "innocuous lizards that devour magic", weight: 1 },
     { value: "jellyfish that move on currents of air", weight: 1 },
     { value: "long bridges as sharp and narrow as razors", weight: 1 },
     { value: "manslaying robins", weight: 1 },
@@ -5774,6 +5780,7 @@ trap_location: [
     { value: "bear", weight: 1 },
 	{ value: "elk", weight: 1 },
 	{ value: "moose", weight: 1 },
+	{ value: "rhinoceres", weight: 1 },
   ],
 
 
@@ -5790,6 +5797,8 @@ trap_location: [
 	{ value: "giant ${AnimalInsect}", weight: 1 },
     { value: "crawling giant", weight: 1 },
 	{ value: "battle ${AnimalBigCat}", weight: 1 },
+	{ value: "gryphon", weight: 1 },
+	{ value: "dinosaur", weight: 1 },
   ],
 
   AnimalOrdinary: [
