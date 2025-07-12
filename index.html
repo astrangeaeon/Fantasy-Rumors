@@ -2652,6 +2652,7 @@ const tables = {
 
   landmark_natural: [
     { value: "a field of black flowers", weight: 1 },
+	{ value: "a ${cod_tree_type} tree with the sigil of ${heroes_and_villains} carved into it", weight: 1 },
     { value: "a mountain carved into a boar by an ancient god", weight: 1 },
     { value: "Bakhau and Manu, the mountains of sunrise and sunset", weight: 1 },
     { value: "Black Hair Mountain", weight: 1 },
@@ -2678,6 +2679,7 @@ const tables = {
     { value: "the Fangs of Ushnish", weight: 1 },
     { value: "the Greater Fist of Heaven", weight: 1 },
     { value: "the Grinderwald", weight: 1 },
+	{ value: "the Glimmerdrift Reaches", weight: 1 },
     { value: "the haunt of jackals", weight: 1 },
     { value: "the high pass", weight: 1 },
     { value: "the Hollow Chasm", weight: 1 },
@@ -4787,6 +4789,10 @@ trap_location: [
 	{ value: "Yarloop", weight: 1 },
 	{ value: "Rayy", weight: 1 },
 	{ value: "Bolintin Deal", weight: 1 },
+	{ value: "Lei Tabor", weight: 1 },
+	{ value: "Lightelf", weight: 1 },
+	{ value: "Torsh", weight: 1 },
+	{ value: "Verbosh", weight: 1 },
   ],
 
   urbn_citynickname: [
@@ -7227,7 +7233,7 @@ celebration_type: [
   ],
   
   art_visual_painting_type: [
-    { value: "painting ${art_verb} ${painting_subject_matter}", weight: 1 },
+    { value: "painting ${art_verb} ${painting_subject_matter}", weight: 2 },
 	{ value: "triptych painting ${art_verb} ${painting_subject_matter}", weight: 1 },
 	{ value: "portrait of ${portrait_subject}", weight: 1 },
 	{ value: "${art_verb} the ${nude_type} nude curves and contours of ${prophetic_subject}", weight: 1 },
@@ -7275,6 +7281,9 @@ celebration_type: [
 	{ value: "${prophetic_subject} having their portrait painted by the great artist ${artists} with the ${landscape_types} of ${foreignland} in the background", weight: 1 },
 	{ value: "${heroes_and_villains} departing from the lands of the ${humanoids} on the back of their saddled ${AnimalMount} named ${HorseNames}", weight: 1 },
 	{ value: "the people of ${urbn_cityname} reacting with ${numinous_feeling} to another ${severe_weather} brought on by their ${RoyalTitleMale} as a punishment for ${hero_curse_reason}", weight: 1 },
+	{ value: "${prophetic_subject} studying an ancient map with ${a:QuickNPCDescriptor} antiquarian to chart a course to ${classic_dungeons}", weight: 1 },
+	{ value: "${heroes_and_villains} pulling their ${AnimalMount} ${HorseNames} across the Bridge of ${urbn_citynickname} on their way to ${classic_dungeons}", weight: 1 },
+	{ value: "${prophetic_subject} ${celebration_type} carving their sigil into a great ${cod_tree_type} tree ${wilds_specific_locn}", weight: 1 },
   ],
   
   
@@ -7585,6 +7594,33 @@ celebration_type: [
 	{ value: "wildfire", weight: 1 },
 	{ value: "duststorm", weight: 1 },
 	{ value: "sandstorm", weight: 1 },
+  ],
+  
+  classic_dungeons: [
+    { value: "the Nightmare Maze of Jigresh", weight: 1 },
+	{ value: "the Caverns of Thracia", weight: 1 },
+	{ value: "the Citadel of Fire", weight: 1 },
+	{ value: "Astigar's Lair", weight: 1 },
+	{ value: "F'Dech Fo's Tomb", weight: 1 },
+	{ value: "Tegel Manor", weight: 1 },
+	{ value: "Fortress Badabaskor", weight: 1 },
+	{ value: "the Tower of Ulission", weight: 1 },
+	{ value: "the Treasure Vaults of Lindoran", weight: 1 },
+	{ value: "the Mines of Custalcon", weight: 1 },
+	{ value: "the Hellpits of Nightfang", weight: 1 },
+	{ value: "Tegel Manor", weight: 1 },
+	{ value: "the Aerie of the Slave Lords", weight: 1 },
+	{ value: "the Palace of the Silver Princess", weight: 1 },
+	{ value: "the Hidden Shrine of Tamoachan", weight: 1 },
+	{ value: "the Temple of the Frog", weight: 1 },
+	{ value: "the Merchant House of Amketch", weight: 1 },
+	{ value: "the Oasis of the White Palm", weight: 1 },
+	{ value: "the Lost Tomb of Martek", weight: 1 },
+	{ value: "the Maze of the Riddling Minotaur", weight: 1 },
+	{ value: "the Lost Caverns of Tsojcanth", weight: 1 },
+	{ value: "the Forgotten Temple of Tharizdun", weight: 1 },
+	{ value: "the Crypt of Lyzandred the Mad", weight: 1 },
+	{ value: "the Palace of the Vampire Queen", weight: 1 },
   ],
 
     intro: [
