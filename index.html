@@ -1938,7 +1938,7 @@ const tables = {
   ],
 
   hero_curse_reason: [
-    { value: "eating unicorn meat", weight: 1 },
+    { value: "eating taboo ${huntingmonster_singular} meat", weight: 1 },
     { value: "insulting ${ntc}", weight: 1 },
     { value: "laughing at the lama\'s pyre", weight: 1 },
     { value: "lying to God", weight: 1 },
@@ -3112,6 +3112,7 @@ const tables = {
     { value: "the Book of the White Cat", weight: 1 },
     { value: "the deed to Sen’s Fortress", weight: 1 },
     { value: "the Libation Table of Wennofie", weight: 1 },
+	{ value: "the Sword with the Strange Straps", weight: 1 },
     { value: "the \'\'Red and White Ladies of Paviland\'\'", weight: 1 },
     { value: "the one thousand and twenty four volumes of Diagoras of Melos’ \'\'Political, Social and Military History of the Ants\'\'", weight: 1 },
   ],
@@ -4606,10 +4607,10 @@ const tables = {
   trap_builder_origin: [
     { value: "from the ${uc:CompassDirectionPrimary}", weight: 1 },
     { value: "whose ancestors were banished here by Saint ${SaintName} ${when} ago", weight: 1 },
-    { value: "driven from a larger group due to having ${short_inherited_trait}", weight: 1 },
-    { value: "and their ${trap_builder_servant_adj} servants", weight: 1 },
-    { value: "with the reputation of being ${criminals}", weight: 1 },
-	{ value: "who keep herds of ${herdanimal} deeper down", weight: 1 },
+    { value: "driven from a larger group due to having ${short_inherited_trait}", weight: 2 },
+    { value: "and their ${trap_builder_servant_adj} servants", weight: 2 },
+    { value: "with the reputation of being ${criminals}", weight: 2 },
+	{ value: "who keep herds of ${herdanimal} deeper down", weight: 2 },
   ],
   
   
@@ -6287,6 +6288,21 @@ trap_location: [
     { value: "Regret", weight: 1 },
     { value: "Thunderer", weight: 1 },
     { value: "Merciful Swiftness", weight: 1 },
+	{ value: "Lazzarus", weight: 1 },
+    { value: "Bucephalus", weight: 1 },
+    { value: "Comanche", weight: 1 },
+	{ value: "Traveller", weight: 1 },
+    { value: "Sergeant Reckless", weight: 1 },
+    { value: "Blueskin", weight: 1 },
+	{ value: "Chetak", weight: 1 },
+    { value: "Passecerf", weight: 1 },
+    { value: "Red Hare", weight: 1 },
+	{ value: "Autumn Dew", weight: 1 },
+    { value: "Babieca", weight: 1 },
+    { value: "Shadowless", weight: 1 },
+	{ value: "Tencendur", weight: 1 },
+    { value: "Swallow", weight: 1 },
+    { value: "Lorigal", weight: 1 },
   ],
 
   Jewels: [
@@ -6529,6 +6545,7 @@ trap_location: [
     { value: "countess", weight: 1 },
     { value: "viscountess", weight: 1 },
     { value: "baroness", weight: 1 },
+	{ value: "princess", weight: 1 },
   ],
 
   RoyalTitleMale: [
@@ -6539,6 +6556,9 @@ trap_location: [
     { value: "earl", weight: 1 },
     { value: "viscount", weight: 1 },
     { value: "baron", weight: 1 },
+	{ value: "prince", weight: 1 },
+	{ value: "count", weight: 1 },
+	{ value: "bishop", weight: 1 },
   ],
 
   SaintName: [
@@ -7251,9 +7271,10 @@ celebration_type: [
 	{ value: "${prophetic_subject} hunting ${huntingmonster} with a party of ${posse_quality} ${posse} amid the ${landscape_types} of ${foreignland}", weight: 1 },
 	{ value: "${prophetic_subject} pleading before ${monstertype} for ${pleading_thing}", weight: 1 },
 	{ value: "${prophetic_subject} at ${boundary_times} in the ${landscape_types} of ${foreignland}, the constellation known as ${constellation} shimmering unmistakably above", weight: 1 },
-	{ value: "${prophetic_subject} in ${a:urbn_place_adj} ${urbn_place} among the ${criminals_esoteric} and ${criminals} so commonly found in ${urbn_cityname} the City of ${urbn_citynickname}", weight: 1 },
+	{ value: "${prophetic_subject} in ${a:urbn_place_adj} ${urbn_place} among the ${criminals_esoteric} and ${criminals} so commonly found in ${urbn_cityname}, the City of ${urbn_citynickname}", weight: 1 },
 	{ value: "${prophetic_subject} having their portrait painted by the great artist ${artists} with the ${landscape_types} of ${foreignland} in the background", weight: 1 },
 	{ value: "${heroes_and_villains} departing from the lands of the ${humanoids} on the back of their saddled ${AnimalMount} named ${HorseNames}", weight: 1 },
+	{ value: "the people of ${urbn_cityname} reacting with ${numinous_feeling} to another ${severe_weather} brought on by their ${RoyalTitleMale} as a punishment for ${hero_curse_reason}", weight: 1 },
   ],
   
   
@@ -7549,6 +7570,21 @@ celebration_type: [
 	{ value: "Masaccio", weight: 1 },
 	{ value: "Uccello", weight: 1 },
 	{ value: "Pythis", weight: 1 },
+  ],
+  
+   severe_weather: [
+    { value: "windstorm", weight: 1 },
+	{ value: "rainstorm", weight: 1 },
+	{ value: "thunderstorm", weight: 1 },
+	{ value: "hurricane", weight: 1 },
+	{ value: "tornado", weight: 1 },
+	{ value: "earthquake", weight: 1 },
+	{ value: "blizzard", weight: 1 },
+	{ value: "hailstorm", weight: 1 },
+	{ value: "flood", weight: 1 },
+	{ value: "wildfire", weight: 1 },
+	{ value: "duststorm", weight: 1 },
+	{ value: "sandstorm", weight: 1 },
   ],
 
     intro: [
