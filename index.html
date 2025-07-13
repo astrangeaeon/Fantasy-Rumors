@@ -411,6 +411,7 @@ const tables = {
 	{ value: " who thirsted for the blood of saints,", weight: 1 },
 	{ value: " who used many tongues to build peace,", weight: 1 },
 	{ value: " who eliminated desire from his heart,", weight: 1 },
+	{ value: " who against all advice opened the Door in the Ceiling,", weight: 1 },
   ],
 
   hundred_words: [
@@ -649,6 +650,7 @@ const tables = {
     { value: "the Night", weight: 1 },
     { value: "the Red Eyebrow Gang", weight: 1 },
     { value: "the Valkyries", weight: 1 },
+	{ value: "the Soldiers of Misfortune", weight: 1 },
   ],
 
   buryingplace: [
@@ -965,6 +967,7 @@ const tables = {
     { value: "water", weight: 1 },
     { value: "weeping", weight: 1 },
     { value: "wood", weight: 1 },
+	{ value: "rhyming", weight: 1 },
   ],
 
   dance: [
@@ -992,7 +995,6 @@ const tables = {
     { value: "Biorr, of the Twin Fangs", weight: 1 },
     { value: "Boldwin, the Dirty Colossus", weight: 1 },
     { value: "Cerah, the Old Explorer", weight: 1 },
-    { value: "daKlurker, the Smelter Daemon", weight: 1 },
     { value: "Eingyi, Lord of the Forge-City", weight: 1 },
     { value: "Elana, the Squalid Queen", weight: 1 },
     { value: "Hagar, the Flexile Sentry", weight: 1 },
@@ -1052,7 +1054,7 @@ const tables = {
     { value: "Domhnall of Zena", weight: 1 },
     { value: "Dragonfang Villard", weight: 1 },
     { value: "Drifter Swordsman Aidel", weight: 1 },
-    { value: "Dusk of Oolacile", weight: 1 },
+    { value: "Gentle Simon", weight: 1 },
     { value: "Elf-Queen Morganae", weight: 1 },
     { value: "Elisabeth the Pursuer", weight: 1 },
     { value: "Empress Moliko the Balance", weight: 1 },
@@ -1266,6 +1268,7 @@ const tables = {
     { value: "the ruby tribute from the hill tribes", weight: 1 },
     { value: "the sacred rod of Velstadt, the Royal Aegis", weight: 1 },
     { value: "the warbow of Chief Sarkhhl", weight: 1 },
+	{ value: "a signet ring bearing the sign of ${a:SignetSymbol} on it, the seal of ${uc:RoyalTitleMale} ${FantasyNameMale} of ${foreignland},", weight: 1 },
     { value: "the wolf\'s tooth", weight: 1 },
     { value: "two dice which always roll ${onedsix} and ${onedsix}", weight: 1 },
   ],
@@ -1604,6 +1607,7 @@ const tables = {
     { value: "wearing a costume, gaudy and sinister", weight: 1 },
     { value: "wearing a flaming glory coat", weight: 1 },
     { value: "wearing a suit of coin mail", weight: 1 },
+	{ value: "wearing a ring with the seal of ${a:SignetSymbol} on it", weight: 1 },
     { value: "wearing a threadbare cloak stitched together from field mouse pelts", weight: 1 },
     { value: "who casts a golden shadow", weight: 1 },
     { value: "who kills children by smiling at them", weight: 1 },
@@ -3123,6 +3127,7 @@ const tables = {
 	{ value: "the Sword with the Strange Straps", weight: 1 },
     { value: "the \'\'Red and White Ladies of Paviland\'\'", weight: 1 },
     { value: "the one thousand and twenty four volumes of Diagoras of Melos’ \'\'Political, Social and Military History of the Ants\'\'", weight: 1 },
+	{ value: "a signet ring with the seal of ${a:SignetSymbol} on it, able to open every door in the city of ${urbn_cityname}", weight: 1 },
   ],
 
   membership: [
@@ -4289,6 +4294,7 @@ const tables = {
     { value: "an unhatched wind stone", weight: 1 },
     { value: "the silver tongue of Tjorn the Rhymer, with which he could persuade sickness to leave a body, and spirits to leave a haunting place", weight: 1 },
     { value: "the skeleton of a mermaid", weight: 1 },
+	{ value: "an ancient signet ring with the seal of ${a:SignetSymbol} on it", weight: 1 },
   ],
 
   strangecustom: [
@@ -4449,6 +4455,7 @@ const tables = {
     { value: "jewel", weight: 1 },
     { value: "pig", weight: 1 },
     { value: "water", weight: 1 },
+	{ value: "${FantasyMeal_Fruit}", weight: 2 },
   ],
 
   thingbeyond: [
@@ -5750,6 +5757,26 @@ trap_location: [
     { value: "beetle", weight: 1 },
 	{ value: "caterpillar", weight: 1 },
   ],
+  
+  AnimalInsectStinging: [
+    { value: "wasp", weight: 1 },
+    { value: "yellow jacket", weight: 1 },
+    { value: "hornet", weight: 1 },
+    { value: "bee", weight: 1 },
+    { value: "fire ant", weight: 1 },
+    { value: "scorpion", weight: 1 },
+  ],
+  
+  AnimalInsectBiting: [
+    { value: "mosquito", weight: 1 },
+    { value: "horse fly", weight: 1 },
+    { value: "black fly", weight: 1 },
+    { value: "biting midge", weight: 1 },
+    { value: "flea", weight: 1 },
+    { value: "tick", weight: 1 },
+	{ value: "chigger", weight: 1 },
+	{ value: "spider", weight: 1 },
+  ],
 
   AnimalMammal: [
     { value: "bear", weight: 1 },
@@ -6321,10 +6348,14 @@ trap_location: [
   ],
 
   Jewels: [
-    { value: "rubies", weight: 1 },
-    { value: "diamonds", weight: 1 },
-    { value: "emeralds", weight: 1 },
-    { value: "sapphires", weight: 1 },
+    { value: "rubies", weight: 2 },
+    { value: "diamonds", weight: 2 },
+    { value: "emeralds", weight: 2 },
+    { value: "sapphires", weight: 2 },
+	{ value: "topazes", weight: 1 },
+	{ value: "peridots", weight: 1 },
+	{ value: "pearls", weight: 1 },
+	{ value: "opals", weight: 1 },
   ],
 
   Letters: [
@@ -6658,9 +6689,11 @@ trap_location: [
   WeirdSymbol: [
     { value: "${AnimalMain}", weight: 5 },
 	{ value: "${WeirdFantasyMonster}", weight: 5 },
-    { value: "octopus", weight: 1 },
-    { value: "snail", weight: 1 },
-    { value: "mallard", weight: 1 },
+  ],
+  
+  SignetSymbol: [
+    { value: "${WeirdSymbol}", weight: 1 },
+	{ value: "${MiscSymbol}", weight: 1 },
   ],
   
   
