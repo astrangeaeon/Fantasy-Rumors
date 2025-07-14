@@ -1555,6 +1555,7 @@ const tables = {
 	{ value: "things found in the pockets of suicides", weight: 1 },
 	{ value: "the skulls of gulls and other seabirds", weight: 1 },
 	{ value: "jewels from the House of ${housething}", weight: 1 },
+	{ value: "${MusicalInstrument}s from ${foreignland}", weight: 1 },
   ],
 
   excitingemployer: [
@@ -1741,7 +1742,7 @@ const tables = {
     { value: "is made of fool’s gold", weight: 1 },
     { value: "is made of hard light", weight: 1 },
     { value: "is made of solid gold", weight: 1 },
-    { value: "is only visible to elves", weight: 1 },
+    { value: "is only visible to ${humanoids}", weight: 1 },
     { value: "is sacred to ${RealGods}", weight: 1 },
     { value: "is worshiped by ${urbn_subjectplural}", weight: 1 },
     { value: "points the way to a secret passage", weight: 1 },
@@ -3029,8 +3030,8 @@ const tables = {
     { value: "war-bow", weight: 1 },
 	{ value: "key", weight: 1 },
 	{ value: "shovel", weight: 1 },
-	{ value: "${MusicalInstrument}", weight: 1 },
-    { value: "${HaftedWeapons}", weight: 1 },
+	{ value: "${MusicalInstrument}", weight: 2 },
+    { value: "${HaftedWeapons}", weight: 2 },
   ],
 
   magictype: [
@@ -3128,6 +3129,7 @@ const tables = {
     { value: "the \'\'Red and White Ladies of Paviland\'\'", weight: 1 },
     { value: "the one thousand and twenty four volumes of Diagoras of Melos’ \'\'Political, Social and Military History of the Ants\'\'", weight: 1 },
 	{ value: "a signet ring with the seal of ${a:SignetSymbol} on it, able to open every door in the city of ${urbn_cityname}", weight: 1 },
+	{ value: "${a:MusicalInstrument} from ${foreignland}", weight: 1 },
   ],
 
   membership: [
@@ -3933,7 +3935,7 @@ const tables = {
   
   
   relic_remains: [
-    { value: "mellified ${body_part}", weight: 5 },
+    { value: "mellified ${body_part}", weight: 2 },
 	{ value: "fragrant ashes", weight: 1 },
 	{ value: "aromatic blood", weight: 1 },
 	{ value: "sugary tears", weight: 1 },
@@ -6389,6 +6391,7 @@ trap_location: [
     { value: "livestock", weight: 1 },
     { value: "lumber", weight: 1 },
     { value: "rare book", weight: 1 },
+	{ value: "${MusicalInstrument}", weight: 1 },
   ],
 
   MiscSymbol: [
@@ -6427,6 +6430,28 @@ trap_location: [
     { value: "bassoon", weight: 1 },
     { value: "whistle", weight: 1 },
     { value: "drum machine", weight: 1 },
+	{ value: "guitar", weight: 1 },
+    { value: "drum", weight: 1 },
+    { value: "bell", weight: 1 },
+	{ value: "cymbal", weight: 1 },
+    { value: "singing bowl", weight: 1 },
+	{ value: "triangle", weight: 1 },
+    { value: "juice harp", weight: 1 },
+	{ value: "alphorn", weight: 1 },
+	{ value: "${foreignland} death whistle", weight: 1 },
+    { value: "bagpipe", weight: 1 },
+	{ value: "bombard", weight: 1 },
+    { value: "bugle", weight: 1 },
+    { value: "bullroarer", weight: 1 },
+	{ value: "crumhorn", weight: 1 },
+    { value: "dulcimer", weight: 1 },
+	{ value: "kazoo", weight: 1 },
+    { value: "ocarina", weight: 1 },
+	{ value: "shofar", weight: 1 },
+    { value: "banjo", weight: 1 },
+    { value: "cello", weight: 1 },
+	{ value: "lute", weight: 1 },
+	{ value: "lyre", weight: 1 },
   ],
 
   OutlandishCityRumors: [
@@ -6795,6 +6820,7 @@ trap_location: [
 	{ value: "kissers", weight: 1 },
 	{ value: "dancers", weight: 1 },
 	{ value: "dressers", weight: 1 },
+	{ value: "${MusicalInstrument} players", weight: 5 },
   ],
   
   triad_person_scope: [
