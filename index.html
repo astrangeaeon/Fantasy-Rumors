@@ -288,6 +288,8 @@ const tables = {
     { value: "", weight: 5 },
     { value: " with a sign of ${a:WeirdSymbol} hanging outside of it", weight: 1 },
     { value: " with a sign of ${a:MiscSymbol} hanging outside of it", weight: 1 },
+	{ value: " with a sign shaped like ${a:MiscSymbol} hanging outside of it", weight: 1 },
+	{ value: " with ${a:WeirdSymbol} painted above the entrance", weight: 1 },
   ],
 
   smellslike: [
@@ -1426,6 +1428,14 @@ const tables = {
     { value: "jackets", weight: 1 },
 	{ value: "uniforms", weight: 1 },
 	{ value: "undergarments", weight: 1 },
+	{ value: "turbans", weight: 1 },
+    { value: "scarves", weight: 1 },
+	{ value: "boots", weight: 1 },
+	{ value: "gloves", weight: 1 },
+	{ value: "bandannas", weight: 1 },
+    { value: "gowns", weight: 1 },
+	{ value: "pajamas", weight: 1 },
+	{ value: "blindfolds", weight: 1 },
   ],
   
   duo_jewlery: [
@@ -4776,6 +4786,7 @@ trap_location: [
     { value: "in order to join ${membership}, prospective members must ${mindaltering} and ${membership_initiation}", weight: 1 },
 	{ value: "everyone should visit the city of ${urbn_cityname}, where the gods misspent their youth, at least once in their life, as the numinous atmosphere is so suffused that ${numinous_sense} engenders a feeling of ${numinous_adj} ${numinous_feeling}", weight: 3 },
 	{ value: "in ${urbn_cityname}, City of ${urbn_citynickname}, ${punishment_custom} ", weight: 5 },
+	{ value: "storied ${urbn_cityname}, home of ${landmark_manmade} and known for its Guild of the ${uc:QuickNPCJob}, whose members all wear ${Colors} ${duo_clothing}, is actually a paper city, existing only on maps and in the tales of dishonest travelers", weight: 3 },
   ],
 
   urbn_cityname: [
@@ -5649,6 +5660,7 @@ trap_location: [
     { value: "there’s an overgrown hedge maze, created by a magician for the Royal Jubilee 25 years ago. The duke’s child wandered in and never came out, and several rescuers were lost as well, so the magician was executed and the maze abandoned, with the prize—said to be ${mazeprize}—still unclaimed at the center", weight: 1 },
     { value: "those traveling the road from ${landmark} to ${landmark} get old before they reach their destination", weight: 1 },
 	{ value: "there's a place ${wilds_specific_locn} where the forbidden constellation known as ${constellation} can be glimpsed with the naked eye", weight: 2 },
+	{ value: "there’s a cavern where stalagmites grow through the bones of the ancient cave-dwelling ${ancientpeople}", weight: 1 },
   ],
 
   onedfive: [
@@ -6393,12 +6405,28 @@ trap_location: [
     { value: "rare book", weight: 1 },
 	{ value: "${MusicalInstrument}", weight: 1 },
   ],
+  
+  Tools: [
+    { value: "hammer", weight: 1 },
+    { value: "saw", weight: 1 },
+    { value: "pick", weight: 1 },
+    { value: "shovel", weight: 1 },
+    { value: "rake", weight: 1 },
+    { value: "plow", weight: 1 },
+    { value: "ladder", weight: 1 },
+    { value: "scythe", weight: 1 },
+    { value: "pitchfork", weight: 1 },
+    { value: "blade", weight: 1 },
+	{ value: "chisel", weight: 1 },
+	{ value: "lantern", weight: 1 },
+	{ value: "torch", weight: 1 },
+  ],
 
   MiscSymbol: [
     { value: "${HaftedWeapons}", weight: 5 },
 	{ value: "${MusicalInstrument}", weight: 5 },
 	{ value: "${magicalcommonobject}", weight: 5 },
-    { value: "lantern", weight: 1 },
+	{ value: "${Tools}", weight: 5 },
     { value: "open book", weight: 1 },
     { value: "eye", weight: 1 },
   ],
