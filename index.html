@@ -2187,6 +2187,7 @@ const tables = {
     { value: "the Pyramidion", weight: 1 },
     { value: "Wasps", weight: 1 },
 	{ value: "the ${uc:huntingmonster_singular}", weight: 1 },
+	{ value: "the ${uc:QuickNPCJobPoor}", weight: 1 },
   ],
 
   howitwaslost: [
@@ -4786,8 +4787,9 @@ trap_location: [
     { value: "in ${urbn_cityname}, they keep the wine-preserved ${body_part} of ${heroes_and_villains} on display in order to protect the city from ${creepyvillain}", weight: 1 },
     { value: "in order to join ${membership}, prospective members must ${mindaltering} and ${membership_initiation}", weight: 1 },
 	{ value: "everyone should visit the city of ${urbn_cityname}, where the gods misspent their youth, at least once in their life, as the numinous atmosphere is so suffused that ${numinous_sense} engenders a feeling of ${numinous_adj} ${numinous_feeling}", weight: 3 },
-	{ value: "in ${urbn_cityname}, City of ${urbn_citynickname}, ${punishment_custom} ", weight: 5 },
+	{ value: "in ${urbn_cityname}, City of ${urbn_citynickname}, ${punishment_custom}", weight: 5 },
 	{ value: "storied ${urbn_cityname}, home of ${landmark_manmade} and known for its Guild of the ${uc:QuickNPCJob}, whose members all wear ${Colors} ${duo_clothing}, is actually a paper city, existing only on maps and in the tales of dishonest travelers", weight: 3 },
+	{ value: "The peddlers who flock to ${urbn_street_names} in ${urbn_cityname} trade in all manner of goods, from ${MerchantGoods} and ${Tools}s to ${exchangething} and ${collection}", weight: 3 },
   ],
 
   urbn_cityname: [
@@ -6397,13 +6399,12 @@ trap_location: [
     { value: "cloth", weight: 1 },
     { value: "leather", weight: 1 },
     { value: "wine", weight: 1 },
-    { value: "jewel", weight: 1 },
-    { value: "weapon", weight: 1 },
+    { value: "jewelery", weight: 1 },
+    { value: "weaponry", weight: 1 },
     { value: "armor", weight: 1 },
     { value: "water", weight: 1 },
     { value: "livestock", weight: 1 },
     { value: "lumber", weight: 1 },
-    { value: "rare book", weight: 1 },
 	{ value: "${MusicalInstrument}", weight: 1 },
   ],
   
@@ -6420,7 +6421,7 @@ trap_location: [
     { value: "blade", weight: 1 },
 	{ value: "chisel", weight: 1 },
 	{ value: "lantern", weight: 1 },
-	{ value: "torch", weight: 1 },
+	{ value: "candle", weight: 1 },
   ],
 
   MiscSymbol: [
@@ -6548,6 +6549,10 @@ trap_location: [
 	{ value: "graceful", weight: 1 },
 	{ value: "angry", weight: 1 },
 	{ value: "sad", weight: 1 },
+	{ value: "suspicious", weight: 1 },
+	{ value: "paranoid", weight: 1 },
+	{ value: "bald", weight: 1 },
+	{ value: "long-haired", weight: 1 },
   ],
 
   QuickNPCJob: [
@@ -6557,7 +6562,7 @@ trap_location: [
   ],
 
   QuickNPCJobPoor: [
-    { value: "${Crop} farmer", weight: 1 },
+    { value: "farmer", weight: 1 },
     { value: "hunter", weight: 1 },
     { value: "sailor", weight: 1 },
     { value: "prostitute", weight: 1 },
@@ -7695,6 +7700,8 @@ celebration_type: [
 	{ value: "wildfire", weight: 1 },
 	{ value: "duststorm", weight: 1 },
 	{ value: "sandstorm", weight: 1 },
+	{ value: "typhoon", weight: 1 },
+	{ value: "cyclone", weight: 1 },
   ],
   
   classic_dungeons: [
@@ -7722,6 +7729,17 @@ celebration_type: [
 	{ value: "the Forgotten Temple of Tharizdun", weight: 1 },
 	{ value: "the Crypt of Lyzandred the Mad", weight: 1 },
 	{ value: "the Palace of the Vampire Queen", weight: 1 },
+  ],
+  
+  
+  urbn_street_names: [
+    { value: "the Avenue of the ${uc:AnimalMain}", weight: 1 },
+	{ value: "${uc:magicalcommonobject} Street", weight: 1 },
+	{ value: "${uc:huntingmonster_singular} Crossing", weight: 1 },
+	{ value: "the Boulevard of the ${uc:AnimalMain}", weight: 1 },
+	{ value: "the Boulevard of ${uc:Jewels}", weight: 1 },
+	{ value: "${uc:huntingmonster_singular} Plaza", weight: 1 },
+	{ value: "${uc:FantasyMeal_Fruit} Lane", weight: 1 },
   ],
 
     intro: [
