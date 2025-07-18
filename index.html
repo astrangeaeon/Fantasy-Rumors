@@ -1436,6 +1436,7 @@ const tables = {
     { value: "gowns", weight: 1 },
 	{ value: "pajamas", weight: 1 },
 	{ value: "blindfolds", weight: 1 },
+	{ value: "cloaks", weight: 1 },
   ],
   
   duo_jewlery: [
@@ -4310,6 +4311,7 @@ const tables = {
     { value: "the skeleton of a mermaid", weight: 1 },
 	{ value: "an ancient signet ring with the seal of ${a:SignetSymbol} on it", weight: 1 },
 	{ value: "a jar filled with dozens of identical iron rings", weight: 1 },
+	{ value: "${a:flag}", weight: 1 },
   ],
 
   strangecustom: [
@@ -5665,6 +5667,7 @@ trap_location: [
     { value: "those traveling the road from ${landmark} to ${landmark} get old before they reach their destination", weight: 1 },
 	{ value: "there's a place ${wilds_specific_locn} where the forbidden constellation known as ${constellation} can be glimpsed with the naked eye", weight: 2 },
 	{ value: "there’s a cavern where stalagmites grow through the bones of the ancient cave-dwelling ${ancientpeople}", weight: 1 },
+	{ value: "someone has planted the ${flag} ${wilds_specific_locn}", weight: 1 },
   ],
 
   onedfive: [
@@ -7750,6 +7753,133 @@ celebration_type: [
 	{ value: "the Boulevard of ${uc:Jewels}", weight: 1 },
 	{ value: "${uc:huntingmonster_singular} Plaza", weight: 1 },
 	{ value: "${uc:FantasyMeal_Fruit} Lane", weight: 1 },
+  ],
+  
+   flag: [
+    { value: "${flag_condition} ${flag_color} ${flag_type} of the ${flag_provenance}${flag_extra}", weight: 1 },
+	{ value: "${flag_condition} ${flag_type} of the ${flag_provenance}${flag_extra}", weight: 1 },
+	{ value: "${flag_condition} ${flag_type} colored imperial ${flag_imperial_color} used by the ${flag_provenance}${flag_extra}", weight: 1 },
+  ],
+  
+  flag_condition: [
+    { value: "", weight: 5 },
+	{ value: "tattered", weight: 1 },
+	{ value: "half-burnt", weight: 1 },
+	{ value: "stained", weight: 1 },
+	{ value: "pristine", weight: 1 },
+  ],
+  
+  flag_color: [
+    { value: "monochrome ${flag_basic_color}", weight: 1 },
+	{ value: "two-tone ${flag_basic_color} and ${flag_imperial_color}", weight: 1 },
+	{ value: "${flag_pattern} ${flag_basic_color} and ${flag_imperial_color}", weight: 1 },
+  ],
+  
+    flag_type: [
+    { value: "flag", weight: 5 },
+	{ value: "banner", weight: 5 },
+	{ value: "pennant", weight: 3 },
+	{ value: "standard", weight: 3 },
+	{ value: "banderole", weight: 1 },
+	{ value: "guidon", weight: 1 },
+  ],
+  
+  flag_pattern: [
+    { value: "striped", weight: 1 },
+	{ value: "checkered", weight: 1 },
+  ],
+  
+  flag_basic_color: [
+    { value: "yellow", weight: 1 },
+	{ value: "red", weight: 1 },
+	{ value: "blue", weight: 1 },
+	{ value: "green", weight: 1 },
+	{ value: "violet", weight: 1 },
+	{ value: "black", weight: 1 },
+	{ value: "white", weight: 1 },
+  ],
+  
+  flag_imperial_color: [
+    { value: "azure", weight: 1 },
+	{ value: "crimson", weight: 1 },
+	{ value: "burgundy", weight: 1 },
+	{ value: "violet", weight: 1 },
+	{ value: "salmon", weight: 1 },
+	{ value: "coral", weight: 1 },
+	{ value: "periwinkle blue", weight: 1 },
+	{ value: "cerulean", weight: 1 },
+	{ value: "chartreuse", weight: 1 },
+	{ value: "phlox", weight: 1 },
+	{ value: "lavender", weight: 1 },
+	{ value: "mauve", weight: 1 },
+	{ value: "magenta", weight: 1 },
+	{ value: "lavender", weight: 1 },
+	{ value: "purple", weight: 1 },
+	{ value: "harlequin green", weight: 1 },
+	{ value: "olive", weight: 1 },
+	{ value: "malachite", weight: 1 },
+	{ value: "celadon", weight: 1 },
+	{ value: "xanthous", weight: 1 },
+	{ value: "saffron", weight: 1 },
+  ],
+  
+  
+  flag_provenance: [
+    { value: "${dwarfclanname} Clan", weight: 1 },
+	{ value: "${uc:political_org} of ${foreignland}", weight: 1 },
+	{ value: "${FantasyLastName} Family", weight: 1 },
+	{ value: "city of ${urbn_cityname}", weight: 1 },
+	{ value: "${uc:political_org_league_format}", weight: 1 },
+	{ value: "Free Imperial City of ${urbn_cityname}", weight: 1 },
+	{ value: "House of ${housething}", weight: 1 },
+  ],
+  
+  flag_extra: [
+    { value: "", weight: 10 },
+    { value: ", with its ${onedten} ${flag_basic_color} stripes,", weight: 1 },
+	{ value: ", with its ${flag_basic_color} silhouette of ${a:SignetSymbol},", weight: 1 },
+  ],
+  
+  political_org: [
+    { value: "kingdom", weight: 1 },
+	{ value: "city-state", weight: 1 },
+	{ value: "free City", weight: 1 },
+	{ value: "${political_org_republic_type} Republic", weight: 1 },
+	{ value: "commonwealth", weight: 1 },
+	{ value: "commune", weight: 1 },
+	{ value: "confederacy", weight: 1 },
+	{ value: "federation", weight: 1 },
+	{ value: "${political_org_republic_type} Republic", weight: 1 },
+  ],
+  
+  political_org_republic_type: [
+    { value: "merchant", weight: 1 },
+	{ value: "vampire", weight: 1 },
+	{ value: "democratic", weight: 1 },
+	{ value: "people's", weight: 1 },
+	{ value: "daemon", weight: 1 },
+	{ value: "dragon", weight: 1 },
+	{ value: "centaur", weight: 1 },
+	{ value: "djinni", weight: 1 },
+	{ value: "dryad", weight: 1 },
+	{ value: "oligarchic", weight: 1 },
+	{ value: "constitutional", weight: 1 },
+	{ value: "sister", weight: 1 },
+	{ value: "neutral", weight: 1 },
+	{ value: "cooperative", weight: 1 },
+	{ value: "crowned", weight: 1 },
+  ],
+  
+  political_org_league_type: [
+    { value: "${magicalcommonobject}", weight: 1 },
+	{ value: "${FantasyMeal_Fruit}", weight: 1 },
+	{ value: "${AnimalMain}", weight: 1 },
+  ],
+  
+   political_org_league_format: [
+    { value: "League of ${uc:political_org_league_type}s", weight: 1 },
+	{ value: "${political_org_league_type} League", weight: 1 },
+	{ value: "League of the ${uc:political_org_league_type}", weight: 1 },
   ],
 
     intro: [
