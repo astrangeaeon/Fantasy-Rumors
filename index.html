@@ -4271,7 +4271,7 @@ const tables = {
 
   strange_fish: [
     { value: "${relic}", weight: 3 },
-    { value: "a disturbing story carved into a stone titled the Tale of the Magician", weight: 1 },
+    { value: "a disturbing story carved into a stone titled the Tale of the ${uc:magicusertype}", weight: 1 },
     { value: "a dog-tag with the name ${heroes_and_villains} inscribed on it", weight: 1 },
     { value: "a fine saddle that summons an invisible horse", weight: 1 },
     { value: "a footpan made of gold", weight: 1 },
@@ -4309,6 +4309,7 @@ const tables = {
     { value: "the silver tongue of Tjorn the Rhymer, with which he could persuade sickness to leave a body, and spirits to leave a haunting place", weight: 1 },
     { value: "the skeleton of a mermaid", weight: 1 },
 	{ value: "an ancient signet ring with the seal of ${a:SignetSymbol} on it", weight: 1 },
+	{ value: "a jar filled with dozens of identical iron rings", weight: 1 },
   ],
 
   strangecustom: [
@@ -4780,7 +4781,7 @@ trap_location: [
     { value: "the city of ${urbn_cityname}, once a bright haven for ${prejudicetarget}, now boasts little more than ${a:urbn_place} and ${a:urbn_place} since the gods allowed ${urbn_strife} to ruin the city", weight: 1 },
     { value: "the great city of ${urbn_cityname} has walls so wide, they race chariots on top of them", weight: 1 },
     { value: "the great city of ${urbn_cityname} took the gods a year and twenty days to build", weight: 1 },
-    { value: "the Queen of ${foreign_adj}${foreignland}${foreign_phrase} has claimed all the gold wedding bands of her people, melting them down to swell the treasury and providing in return identical iron bands", weight: 1 },
+    { value: "the Queen of ${foreign_adj}${foreignland}${foreign_phrase} has claimed all the gold wedding bands of her people, melting them down to swell the treasury and providing in return identical iron rings", weight: 1 },
     { value: "the twin cities of ${urbn_cityname} and ${urbn_cityname} are controlled by brothers who hate each other. They have a different answer for any question asked except “Do you hate your brother?”", weight: 1 },
     { value: "in ${urbn_cityname}, the farmers are so wealthy they adorn their cows with diamond earrings", weight: 1 },
     { value: "in ${urbn_cityname}, the rich live in great houses with the gates nailed shut, only venturing out once a year to the markets for supplies", weight: 1 },
@@ -5806,10 +5807,11 @@ trap_location: [
     { value: "cow", weight: 1 },
     { value: "hyena", weight: 1 },
     { value: "horse", weight: 1 },
-    { value: "jaguar", weight: 1 },
     { value: "jackal", weight: 1 },
     { value: "elephant", weight: 1 },
 	{ value: "skunk", weight: 1 },
+	{ value: "raccoon", weight: 1 },
+	{ value: "beaver", weight: 1 },
   ],
   
   AnimalMount: [
@@ -5856,6 +5858,7 @@ trap_location: [
     { value: "cat", weight: 1 },
     { value: "dog", weight: 1 },
     { value: "rat", weight: 1 },
+	{ value: "skunk", weight: 1 },
   ],
 
   AnimalReptile: [
@@ -6838,7 +6841,14 @@ trap_location: [
     { value: " ${triad_person},", weight: 1 },
     { value: " who discovered ${a:wilds_adj} ${wilds_noun} ${wilds_locn} that ${wilds_hook},", weight: 1 },
 	{ value: " who used to run with ${criminals} but is now reformed,", weight: 1 },
-	{ value: " who keeps a pet ${AnimalMain},", weight: 1 },
+	{ value: " who has been furtively caring for and feeding ${a:pet_adj} ${AnimalMammal},", weight: 1 },
+  ],
+  
+  pet_adj: [
+    { value: "injured", weight: 1 },
+	{ value: "pregnant", weight: 1 },
+	{ value: "baby", weight: 1 },
+	{ value: "diseased", weight: 1 },
   ],
   
   triad_person: [
