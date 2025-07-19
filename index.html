@@ -632,11 +632,8 @@ const tables = {
   ],
 
   brigandnames: [
-    { value: "Kiblini", weight: 1 },
+    { value: "the Kiblini", weight: 1 },
     { value: "Caxton’s Crew", weight: 1 },
-    { value: "Fyran Steel", weight: 1 },
-    { value: "Panther Black", weight: 1 },
-    { value: "Sacre-Bleu", weight: 1 },
     { value: "the Baglioni of Perugia", weight: 1 },
     { value: "the Bluejackets of Iddah", weight: 1 },
     { value: "the Companions of the Rass", weight: 1 },
@@ -4169,10 +4166,15 @@ const tables = {
   shapes: [
     { value: "diamonds", weight: 1 },
     { value: "inverted stars", weight: 1 },
-    { value: "Ls", weight: 1 },
+    { value: "${Letters}s", weight: 1 },
     { value: "triangles", weight: 1 },
-    { value: "Ws", weight: 1 },
-    { value: "Xs", weight: 1 },
+	{ value: "stars", weight: 1 },
+    { value: "circles", weight: 1 },
+	{ value: "glyphs", weight: 1 },
+    { value: "mouths", weight: 1 },
+	{ value: "eyes", weight: 1 },
+	{ value: "squares", weight: 1 },
+    { value: "hands", weight: 1 },
   ],
 
   shipwreck: [
@@ -5700,16 +5702,15 @@ trap_location: [
   ],
 
   onedten: [
-    { value: "1", weight: 1 },
-    { value: "2", weight: 1 },
-    { value: "3", weight: 1 },
-    { value: "4", weight: 1 },
-    { value: "5", weight: 1 },
-    { value: "6", weight: 1 },
-    { value: "7", weight: 1 },
-    { value: "8", weight: 1 },
-    { value: "9", weight: 1 },
-    { value: "10", weight: 1 },
+    { value: "two", weight: 1 },
+    { value: "three", weight: 1 },
+    { value: "four", weight: 1 },
+    { value: "five", weight: 1 },
+    { value: "six", weight: 1 },
+    { value: "seven", weight: 1 },
+    { value: "eight", weight: 1 },
+    { value: "nine", weight: 1 },
+    { value: "ten", weight: 1 },
   ],
 
   onedhundred: [
@@ -6527,7 +6528,7 @@ trap_location: [
     { value: "rude", weight: 1 },
     { value: "portly", weight: 1 },
     { value: "muscular", weight: 1 },
-    { value: "tired", weight: 1 },
+    { value: "sleepy", weight: 1 },
     { value: "gossipy", weight: 1 },
     { value: "old", weight: 1 },
     { value: "young", weight: 1 },
@@ -6588,6 +6589,7 @@ trap_location: [
     { value: "trapper", weight: 1 },
     { value: "ostler", weight: 1 },
     { value: "miner", weight: 1 },
+	{ value: "shepherd", weight: 1 },
   ],
 
   QuickNPCJobMid: [
@@ -7803,7 +7805,6 @@ celebration_type: [
     { value: "azure", weight: 1 },
 	{ value: "crimson", weight: 1 },
 	{ value: "burgundy", weight: 1 },
-	{ value: "violet", weight: 1 },
 	{ value: "salmon", weight: 1 },
 	{ value: "coral", weight: 1 },
 	{ value: "periwinkle blue", weight: 1 },
@@ -7832,12 +7833,15 @@ celebration_type: [
 	{ value: "${uc:political_org_league_format}", weight: 1 },
 	{ value: "Free Imperial City of ${urbn_cityname}", weight: 1 },
 	{ value: "House of ${housething}", weight: 1 },
+	{ value: "${uc:ordinal} Legion", weight: 1 },
+	{ value: "mercenary company ${brigandnames}", weight: 1 },
   ],
   
   flag_extra: [
     { value: "", weight: 10 },
     { value: ", with its ${onedten} ${flag_basic_color} stripes,", weight: 1 },
 	{ value: ", with its ${flag_basic_color} silhouette of ${a:SignetSymbol},", weight: 1 },
+	{ value: ", with its ${onedten} ${flag_basic_color} ${shapes} in the canton,", weight: 1 },
   ],
   
   political_org: [
