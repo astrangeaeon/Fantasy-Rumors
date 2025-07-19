@@ -7760,7 +7760,9 @@ celebration_type: [
    flag: [
     { value: "${flag_condition} ${flag_color} ${flag_type} of the ${flag_provenance}${flag_extra}", weight: 1 },
 	{ value: "${flag_condition} ${flag_type} of the ${flag_provenance}${flag_extra}", weight: 1 },
-	{ value: "${flag_condition} ${flag_type} colored imperial ${flag_imperial_color} used by the ${flag_provenance}${flag_extra}", weight: 1 },
+	{ value: "${flag_condition} ${flag_type} colored ${a:flag_imperial_color_adj} ${flag_imperial_color} used by the ${flag_provenance}${flag_extra}", weight: 0 },
+	{ value: "${flag_condition} ${flag_shape} ${flag_type} of the ${flag_provenance}${flag_extra}", weight: 1 },
+	{ value: "${flag_imperial_color_adj} ${flag_imperial_color} ${flag_type} used by the ${flag_provenance}${flag_extra}", weight: 1 },
   ],
   
   flag_condition: [
@@ -7769,6 +7771,13 @@ celebration_type: [
 	{ value: "half-burnt", weight: 1 },
 	{ value: "stained", weight: 1 },
 	{ value: "pristine", weight: 1 },
+  ],
+  
+  flag_shape: [
+    { value: "circular", weight: 1 },
+	{ value: "triangular", weight: 1 },
+	{ value: "irregularly shaped", weight: 1 },
+	{ value: "square", weight: 1 },
   ],
   
   flag_color: [
@@ -7824,6 +7833,21 @@ celebration_type: [
 	{ value: "saffron", weight: 1 },
   ],
   
+  flag_imperial_color_adj: [
+    { value: "imperial", weight: 1 },
+	{ value: "vibrant", weight: 1 },
+	{ value: "lustrous", weight: 1 },
+	{ value: "garish", weight: 1 },
+	{ value: "muddy", weight: 1 },
+	{ value: "brilliant", weight: 1 },
+	{ value: "bright", weight: 1 },
+	{ value: "splendid", weight: 1 },
+	{ value: "candescent", weight: 1 },
+	{ value: "somber", weight: 1 },
+	{ value: "dull", weight: 1 },
+	{ value: "gloomy", weight: 1 },
+	{ value: "dim", weight: 1 },
+  ],
   
   flag_provenance: [
     { value: "${dwarfclanname} Clan", weight: 1 },
