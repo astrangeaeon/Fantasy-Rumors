@@ -3042,6 +3042,7 @@ const tables = {
 	{ value: "shovel", weight: 1 },
 	{ value: "${MusicalInstrument}", weight: 2 },
     { value: "${HaftedWeapons}", weight: 2 },
+	{ value: "${Tools}", weight: 2 },
   ],
 
   magictype: [
@@ -5843,6 +5844,7 @@ trap_location: [
     { value: "tick", weight: 1 },
 	{ value: "chigger", weight: 1 },
 	{ value: "spider", weight: 1 },
+	{ value: "leech", weight: 1 },
   ],
 
   AnimalMammal: [
@@ -5875,7 +5877,7 @@ trap_location: [
     { value: "bear", weight: 1 },
 	{ value: "elk", weight: 1 },
 	{ value: "moose", weight: 1 },
-	{ value: "rhinoceres", weight: 1 },
+	{ value: "rhinoceros", weight: 1 },
   ],
 
 
@@ -6483,6 +6485,7 @@ trap_location: [
 	{ value: "${Tools}", weight: 5 },
     { value: "open book", weight: 1 },
     { value: "eye", weight: 1 },
+	{ value: "ship", weight: 1 },
   ],
 
   ModernOccupation: [
@@ -7665,6 +7668,16 @@ celebration_type: [
 	{ value: "lizardfolk", weight: 1 },
   ],
   
+  humanoid: [
+    { value: "man", weight: 1 },
+	{ value: "woman", weight: 1 },
+	{ value: "elf", weight: 1 },
+	{ value: "hobbit", weight: 1 },
+	{ value: "gnome", weight: 1 },
+	{ value: "lizardman", weight: 1 },
+	{ value: "dwarf", weight: 1 },
+  ],
+  
   constellation: [
     { value: "the ${uc:daemontype} ${uc:AnimalMain}", weight: 1 },
 	{ value: "the ${uc:onedfive} ${uc:FamilyMember}s", weight: 1 },
@@ -7908,7 +7921,7 @@ celebration_type: [
   ],
   
   flag_extra: [
-    { value: "", weight: 10 },
+    { value: "", weight: 5 },
     { value: ", with its ${onedten} ${flag_basic_color} stripes,", weight: 1 },
 	{ value: ", with its ${flag_basic_color} silhouette of ${a:SignetSymbol},", weight: 1 },
 	{ value: ", with its ${onedten} ${flag_basic_color} ${shapes} in the canton,", weight: 1 },
@@ -7916,13 +7929,26 @@ celebration_type: [
 	{ value: ", with its ${flag_extra_style} design of ${a:flag_extra_animal_adj} ${AnimalPrey},", weight: 1 },
 	{ value: ", with its pattern of ${constellation_repeat} constellation in ${flag_imperial_color_adj} ${flag_imperial_color},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of two ${humanoids} ${flag_extra_humanoids_verb},", weight: 1 },
+	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb3},", weight: 1 },
+	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb2} ${a:flag_extra_humanoids_verb2_object},", weight: 1 },
   ],
   
   flag_extra_style: [
-    { value: "distinctive", weight: 1 },
-	{ value: "cartoonish", weight: 1 },
+    { value: "sinister", weight: 1 },
+	{ value: "ancient", weight: 1 },
 	{ value: "menacing", weight: 1 },
 	{ value: "simple", weight: 1 },
+	{ value: "elegiac", weight: 1 },
+	{ value: "cryptic", weight: 1 },
+	{ value: "archaic", weight: 1 },
+	{ value: "traditional", weight: 1 },
+	{ value: "time-honored", weight: 1 },
+	{ value: "mysterious", weight: 1 },
+	{ value: "esoteric", weight: 1 },
+	{ value: "enigmatic", weight: 1 },
+	{ value: "time-shrouded", weight: 1 },
+	{ value: "symbolic", weight: 1 },
+	{ value: "historic", weight: 1 },
   ],
   
   flag_extra_animal_adj: [
@@ -7947,6 +7973,54 @@ celebration_type: [
 	{ value: "sleeping", weight: 1 },
 	{ value: "crying", weight: 1 },
 	{ value: "shaking hands", weight: 1 },
+	{ value: "praying", weight: 1 },
+	{ value: "riding ${AnimalMagicMount}s", weight: 1 },
+  ],
+  
+  flag_extra_humanoids_verb2_object: [
+    { value: "${AnimalInsect}", weight: 1 },
+	{ value: "${AnimalBird}", weight: 1 },
+	{ value: "${flag_extra_animal_adj} ${huntingmonster_singular}", weight: 1 },
+	{ value: "${cod_tree_type} tree", weight: 1 },
+  ],
+  
+  flag_extra_humanoids_verb2: [
+    { value: "punching", weight: 1 },
+	{ value: "kicking", weight: 1 },
+	{ value: "embracing", weight: 1 },
+	{ value: "kissing", weight: 1 },
+	{ value: "kneeling before", weight: 1 },
+	{ value: "making love to", weight: 1 },
+	{ value: "decapitating", weight: 1 },
+	{ value: "stabbing", weight: 1 },
+  ],
+  
+  flag_extra_humanoids_verb3: [
+    { value: "masturbating", weight: 1 },
+	{ value: "praying", weight: 1 },
+	{ value: "stabbing themself", weight: 1 },
+	{ value: "holding ${a:HaftedWeapons}", weight: 1 },
+	{ value: "playing ${a:MusicalInstrument}", weight: 1 },
+	{ value: "holding ${a:Tools}", weight: 1 },
+	{ value: "dancing ${dance}", weight: 1 },
+	{ value: "enthroned", weight: 1 },
+	{ value: "mounted upon ${a:AnimalMount}", weight: 1 },
+  ],
+  
+  flag_extra_humanoids_adj: [
+    { value: "a buck-toothed", weight: 1 },
+	{ value: "a scowling", weight: 1 },
+	{ value: "a serene", weight: 1 },
+	{ value: "a defiant", weight: 1 },
+	{ value: "a grim", weight: 1 },
+	{ value: "a long-haired", weight: 1 },
+	{ value: "a three-eyed", weight: 1 },
+	{ value: "an elderly", weight: 1 },
+	{ value: "a one-eyed", weight: 1 },
+	{ value: "${a:flag_extra_animal_adj}", weight: 1 },
+	{ value: "${a:idol_subject_human_pre_desc}", weight: 1 },
+	{ value: "a blindfolded", weight: 1 },
+	{ value: "a naked", weight: 1 },
   ],
   
   political_org: [
