@@ -5773,17 +5773,22 @@ trap_location: [
   ],
   
   AnimalPrey: [
-    { value: "hog", weight: 1 },
-    { value: "rabbit", weight: 1 },
-    { value: "buffalo", weight: 1 },
-    { value: "goat", weight: 1 },
-    { value: "sheep", weight: 1 },
-    { value: "deer", weight: 1 },
-    { value: "horse", weight: 1 },
-    { value: "cow", weight: 1 },
-    { value: "zebra", weight: 1 },
-	{ value: "gazelle", weight: 1 },
-    { value: "mouse", weight: 1 },
+    { value: "hog", weight: 2 },
+    { value: "rabbit", weight: 2 },
+    { value: "buffalo", weight: 2 },
+    { value: "goat", weight: 2 },
+    { value: "sheep", weight: 2 },
+    { value: "deer", weight: 2 },
+    { value: "horse", weight: 2 },
+    { value: "cow", weight: 2 },
+    { value: "zebra", weight: 2 },
+	{ value: "gazelle", weight: 2 },
+    { value: "man", weight: 1 },
+	{ value: "woman", weight: 1 },
+    { value: "elf", weight: 1 },
+    { value: "dwarf", weight: 1 },
+	{ value: "gnome", weight: 1 },
+    { value: "hobbit", weight: 1 },
   ],
   
   AnimalBird: [
@@ -6796,6 +6801,7 @@ trap_location: [
   WeirdSymbol: [
     { value: "${AnimalMain}", weight: 5 },
 	{ value: "${WeirdFantasyMonster}", weight: 5 },
+	{ value: "wingless ${AnimalBird}", weight: 2 },
   ],
   
   SignetSymbol: [
@@ -7908,12 +7914,15 @@ celebration_type: [
 	{ value: ", with its ${onedten} ${flag_basic_color} ${shapes} in the canton,", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${a:AnimalPredator} ${flag_extra_animal_verb} ${a:AnimalPrey},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${a:flag_extra_animal_adj} ${AnimalPrey},", weight: 1 },
+	{ value: ", with its pattern of ${constellation_repeat} constellation in ${flag_imperial_color_adj} ${flag_imperial_color},", weight: 1 },
+	{ value: ", with its ${flag_extra_style} design of two ${humanoids} ${flag_extra_humanoids_verb},", weight: 1 },
   ],
   
   flag_extra_style: [
     { value: "distinctive", weight: 1 },
 	{ value: "cartoonish", weight: 1 },
 	{ value: "menacing", weight: 1 },
+	{ value: "simple", weight: 1 },
   ],
   
   flag_extra_animal_adj: [
@@ -7927,6 +7936,17 @@ celebration_type: [
 	{ value: "laying down with", weight: 1 },
 	{ value: "embracing", weight: 1 },
 	{ value: "standing on top of", weight: 1 },
+  ],
+  
+  flag_extra_humanoids_verb: [
+    { value: "arm wrestling", weight: 1 },
+	{ value: "embracing", weight: 1 },
+	{ value: "kissing", weight: 1 },
+	{ value: "making love", weight: 1 },
+	{ value: "swordfighting", weight: 1 },
+	{ value: "sleeping", weight: 1 },
+	{ value: "crying", weight: 1 },
+	{ value: "shaking hands", weight: 1 },
   ],
   
   political_org: [
@@ -7956,6 +7976,7 @@ celebration_type: [
 	{ value: "neutral", weight: 1 },
 	{ value: "cooperative", weight: 1 },
 	{ value: "crowned", weight: 1 },
+	{ value: "pirate", weight: 1 },
   ],
   
   political_org_league_type: [
