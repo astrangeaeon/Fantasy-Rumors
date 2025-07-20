@@ -5746,6 +5746,46 @@ trap_location: [
     { value: "cougar", weight: 1 },
   ],
   
+  AnimalSnake: [
+    { value: "cobra", weight: 1 },
+    { value: "asp", weight: 1 },
+    { value: "adder", weight: 1 },
+    { value: "boa constrictor", weight: 1 },
+    { value: "python", weight: 1 },
+    { value: "rattlesnake", weight: 1 },
+    { value: "viper", weight: 1 },
+    { value: "anaconda", weight: 1 },
+    { value: "cottonmouth", weight: 1 },
+	{ value: "copperhead", weight: 1 },
+    { value: "boomslang", weight: 1 },
+  ],
+  
+  AnimalPredator: [
+    { value: "${AnimalBigCat}", weight: 1 },
+    { value: "bear", weight: 1 },
+    { value: "wolf", weight: 1 },
+    { value: "shark", weight: 1 },
+    { value: "${AnimalSnake}", weight: 1 },
+    { value: "falcon", weight: 1 },
+    { value: "hawk", weight: 1 },
+    { value: "eagle", weight: 1 },
+    { value: "jellyfish", weight: 1 },
+  ],
+  
+  AnimalPrey: [
+    { value: "hog", weight: 1 },
+    { value: "rabbit", weight: 1 },
+    { value: "buffalo", weight: 1 },
+    { value: "goat", weight: 1 },
+    { value: "sheep", weight: 1 },
+    { value: "deer", weight: 1 },
+    { value: "horse", weight: 1 },
+    { value: "cow", weight: 1 },
+    { value: "zebra", weight: 1 },
+	{ value: "gazelle", weight: 1 },
+    { value: "mouse", weight: 1 },
+  ],
+  
   AnimalBird: [
     { value: "hawk", weight: 1 },
     { value: "sparrow", weight: 1 },
@@ -7866,18 +7906,38 @@ celebration_type: [
     { value: ", with its ${onedten} ${flag_basic_color} stripes,", weight: 1 },
 	{ value: ", with its ${flag_basic_color} silhouette of ${a:SignetSymbol},", weight: 1 },
 	{ value: ", with its ${onedten} ${flag_basic_color} ${shapes} in the canton,", weight: 1 },
+	{ value: ", with its ${flag_extra_style} design of ${a:AnimalPredator} ${flag_extra_animal_verb} ${a:AnimalPrey},", weight: 1 },
+	{ value: ", with its ${flag_extra_style} design of ${a:flag_extra_animal_adj} ${AnimalPrey},", weight: 1 },
+  ],
+  
+  flag_extra_style: [
+    { value: "distinctive", weight: 1 },
+	{ value: "cartoonish", weight: 1 },
+	{ value: "menacing", weight: 1 },
+  ],
+  
+  flag_extra_animal_adj: [
+    { value: "two-headed", weight: 1 },
+	{ value: "winged", weight: 1 },
+	{ value: "crowned", weight: 1 },
+  ],
+  
+  flag_extra_animal_verb: [
+    { value: "devouring", weight: 1 },
+	{ value: "laying down with", weight: 1 },
+	{ value: "embracing", weight: 1 },
+	{ value: "standing on top of", weight: 1 },
   ],
   
   political_org: [
     { value: "kingdom", weight: 1 },
 	{ value: "city-state", weight: 1 },
 	{ value: "free City", weight: 1 },
-	{ value: "${political_org_republic_type} Republic", weight: 1 },
+	{ value: "${political_org_republic_type} Republic", weight: 2 },
 	{ value: "commonwealth", weight: 1 },
 	{ value: "commune", weight: 1 },
 	{ value: "confederacy", weight: 1 },
 	{ value: "federation", weight: 1 },
-	{ value: "${political_org_republic_type} Republic", weight: 1 },
   ],
   
   political_org_republic_type: [
