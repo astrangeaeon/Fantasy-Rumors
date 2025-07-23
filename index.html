@@ -2848,6 +2848,7 @@ const tables = {
     { value: "unchain the dragon from the mountain", weight: 1 },
     { value: "visit ${foreign_adj}${foreignland}${foreign_phrase} when the grapes begin to change color", weight: 1 },
     { value: "write a law that stands the test of time", weight: 1 },
+	{ value: "seek ${expeditions}", weight: 3 },
   ],
 
   local_racist: [
@@ -4834,6 +4835,7 @@ trap_location: [
 	{ value: "Lightelf", weight: 1 },
 	{ value: "Torsh", weight: 1 },
 	{ value: "Verbosh", weight: 1 },
+	{ value: "Cintra", weight: 1 },
   ],
 
   urbn_citynickname: [
@@ -4988,6 +4990,7 @@ trap_location: [
     { value: "warehouse", weight: 1 },
     { value: "zoo", weight: 1 },
 	{ value: "thieves' kitchen", weight: 1 },
+	{ value: "locksmithery", weight: 1 },
   ],
 
   urbn_strife: [
@@ -5574,6 +5577,7 @@ trap_location: [
     { value: "thick stranglevine conceals an entrance to a dungeon", weight: 1 },
     { value: "what appears to be an immaculate city of metal and glass is protected by a forcefield", weight: 1 },
 	{ value: "a ruined observatory holds curious instruments with which one can glimpse what remains of the constellation known as ${constellation}", weight: 1 },
+	{ value: "a grove of trees bears living ${Jewels}", weight: 1 },
   ],
 
   wilds_locn: [
@@ -5797,6 +5801,8 @@ trap_location: [
     { value: "dwarf", weight: 1 },
 	{ value: "gnome", weight: 1 },
     { value: "hobbit", weight: 1 },
+	{ value: "lamb", weight: 1 },
+    { value: "bull", weight: 1 },
   ],
   
   AnimalBird: [
@@ -6423,6 +6429,7 @@ trap_location: [
 	{ value: "Tencendur", weight: 1 },
     { value: "Swallow", weight: 1 },
     { value: "Lorigal", weight: 1 },
+	{ value: "${uc:boundary_times}", weight: 1 },
   ],
 
   Jewels: [
@@ -7445,7 +7452,7 @@ celebration_type: [
 	{ value: "${prophetic_subject} eating a feast of ${FantasyMeal} and ${FantasyMeal_Cooking} ${FantasyMeal_Vegetable} with ${dining_companion}", weight: 1 },
 	{ value: "Saint ${SaintName} ${exile_verb} ${exiles} of ${urbn_cityname} to an island populated by ${islandpop}", weight: 1 },
 	{ value: "the ancient ${ancientpeople}, who valued ${monstervalue} above all else, forging the ${prophecyartifact}", weight: 1 },
-	{ value: "the ${FantasyLastName} Expedition, who sought exotic ${trait_digestion} ${when} ago, making camp near the ${Colors} waters of the ${RealGods} River", weight: 1 },
+	{ value: "the ${FantasyLastName} Expedition, who sought ${expeditions} ${when} ago, making camp near the ${Colors} waters of the ${RealGods} River", weight: 1 },
 	{ value: "${prophetic_subject} bathing with ${oppressed_grp} in ${body_of_water}", weight: 1 },
 	{ value: "${prophetic_subject} sitting with ${a:QuickNPCJob} and ${a:magicusertype} around a blindingly bright bonfire built from the scrolls and ${Jewels} of the House of ${housething} which smolders in the distance", weight: 1 },
 	{ value: "${prophetic_subject} brokering peace between the ${AnimalMain}s and the ${AnimalMain}s", weight: 1 },
@@ -7471,6 +7478,13 @@ celebration_type: [
 	{ value: "daybreak", weight: 1 },
 	{ value: "sunset", weight: 1 },
 	{ value: "midday", weight: 1 },
+  ],
+  
+  expeditions: [
+    { value: "exotic ${trait_digestion}", weight: 1 },
+	{ value: "out new species of ${AnimalInsect}", weight: 1 },
+	{ value: "out a legendary grove of trees that bear ${Jewels}", weight: 1 },
+	{ value: "the final resting place of ${heroes_and_villains}", weight: 1 },
   ],
   
   body_of_water: [
@@ -7962,6 +7976,8 @@ celebration_type: [
     { value: "two-headed", weight: 1 },
 	{ value: "winged", weight: 1 },
 	{ value: "crowned", weight: 1 },
+	{ value: "skeletal", weight: 1 },
+	{ value: "eyeless", weight: 1 },
   ],
   
   flag_extra_animal_verb: [
