@@ -276,6 +276,7 @@ const tables = {
     { value: " with eyes strange and full of power", weight: 1 },
     { value: " with high operatic calls", weight: 1 },
     { value: " with human voices", weight: 1 },
+	{ value: " with human faces", weight: 1 },
     { value: " with manes of fire", weight: 1 },
     { value: " with mechanical parts", weight: 1 },
     { value: " with mouths full of holes", weight: 1 },
@@ -558,6 +559,7 @@ const tables = {
     { value: "no face", weight: 1 },
     { value: "slavers’ brands", weight: 1 },
     { value: "the northern face of God", weight: 1 },
+	{ value: "the face of ${a:AnimalMain}", weight: 1 },
     { value: "utter darkness", weight: 1 },
     { value: "vistas of the sky at night", weight: 1 },
   ],
@@ -577,6 +579,7 @@ const tables = {
     { value: "the answer to any question", weight: 1 },
     { value: "the boon of choosing your own death", weight: 1 },
     { value: "the other horn of the unicorn", weight: 1 },
+	{ value: "an invitation to the ${otherworld_names}", weight: 1 },
   ],
 
   bizarrecompanion: [
@@ -2515,6 +2518,7 @@ const tables = {
     { value: "violent and monstrous sea gods", weight: 1 },
     { value: "waves large as castles", weight: 1 },
     { value: "white fire and a living red wind", weight: 1 },
+	{ value: "a monster who dwells underwater feeding off of fish and ${AnimalWater} blood", weight: 1 },
   ],
 
   island_riches: [
@@ -2644,7 +2648,7 @@ const tables = {
     { value: "the Golden Ossuary", weight: 1 },
     { value: "the grave mound of Lerga", weight: 1 },
     { value: "the Graveyard of Empires", weight: 1 },
-    { value: "the Ice Fort", weight: 1 },
+    { value: "the Palace of Ice", weight: 1 },
     { value: "the Imitation Zone", weight: 1 },
     { value: "the Kingsmen’s Lodge", weight: 1 },
     { value: "the Lantern Forest", weight: 1 },
@@ -3708,6 +3712,7 @@ const tables = {
     { value: "Trismegistos Stone", weight: 1 },
     { value: "War Chariot of Hannibal the Golden", weight: 1 },
     { value: "Winter Orb", weight: 1 },
+	{ value: "Crown of ${uc:AnimalBigCat}s", weight: 1 },
   ],
 
   prophecyfate: [
@@ -4636,7 +4641,7 @@ const tables = {
     { value: "the two million tiny gods of sand", weight: 1 },
     { value: "thousands of skull beetles", weight: 1 },
     { value: "war spirits, numerous of shape", weight: 1 },
-	{ value: "${a:magicusertype} that rides a dragon and brings ${severe_weather}s", weight: 1 },
+	{ value: "${a:magicusertype} that rides a dragon and summons ${severe_weather}s", weight: 1 },
   ],
   
   
@@ -4809,7 +4814,20 @@ trap_location: [
 	{ value: "everyone should visit the city of ${urbn_cityname}, where the gods misspent their youth, at least once in their life, as the numinous atmosphere is so suffused that ${numinous_sense} engenders a feeling of ${numinous_adj} ${numinous_feeling}", weight: 3 },
 	{ value: "in ${urbn_cityname}, City of ${urbn_citynickname}, ${punishment_custom}", weight: 5 },
 	{ value: "storied ${urbn_cityname}, home of ${landmark_manmade} and known for its Guild of the ${uc:QuickNPCJob}, whose members all wear ${Colors} ${duo_clothing}, is actually a paper city, existing only on maps and in the tales of dishonest travelers", weight: 3 },
-	{ value: "The peddlers who flock to ${urbn_street_names} in ${urbn_cityname} trade in all manner of goods, from ${MerchantGoods} and ${Tools}s to ${exchangething} and ${collection}", weight: 3 },
+	{ value: "The ${urbn_traders} who flock to ${urbn_street_names} in ${urbn_cityname} trade in all manner of goods, from ${MerchantGoods} and ${Tools}s to ${exchangething} and ${collection}", weight: 3 },
+  ],
+
+
+   urbn_traders: [
+    { value: "peddlers", weight: 1 },
+    { value: "hucksters", weight: 1 },
+    { value: "traders", weight: 1 },
+    { value: "dealers", weight: 1 },
+    { value: "junk dealers", weight: 1 },
+    { value: "hawkers", weight: 1 },
+    { value: "vendors", weight: 1 },
+	{ value: "sellers", weight: 1 },
+	{ value: "merchants", weight: 1 },
   ],
 
   urbn_cityname: [
@@ -5514,6 +5532,7 @@ trap_location: [
     { value: "promises great power to those who sleep near it", weight: 1 },
     { value: "protects one of the eight pieces of the Boddhi’s body enshrined in a nearby stupa", weight: 1 },
     { value: "rings with echoes from long ago", weight: 1 },
+	{ value: "marks the location of an entrance to the enchanted ${otherworld_names}", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -5689,7 +5708,8 @@ trap_location: [
     { value: "those traveling the road from ${landmark} to ${landmark} get old before they reach their destination", weight: 1 },
 	{ value: "there's a place ${wilds_specific_locn} where the forbidden constellation known as ${constellation} can be glimpsed with the naked eye", weight: 2 },
 	{ value: "there’s a cavern where stalagmites grow through the bones of the ancient cave-dwelling ${ancientpeople}", weight: 1 },
-	{ value: "someone has planted the ${flag} ${wilds_specific_locn}", weight: 1 },
+	{ value: "someone has planted the ${flag} ${wilds_specific_locn}", weight: 2 },
+	{ value: "travelers venturing ${CompassDirectionPrimary} of ${landmark} should bring ${a:FantasyMeal_Fruit} and ${a:magicalcommonobject} with them, in case they cross paths with ${fairy_folk_named}", weight: 2 },
   ],
 
   onedfive: [
@@ -5752,6 +5772,8 @@ trap_location: [
     { value: "${AnimalOrdinary}", weight: 1 },
     { value: "${AnimalReptile}", weight: 1 },
 	{ value: "${AnimalBird}", weight: 1 },
+	{ value: "${AnimalBigCat}", weight: 1 },
+	{ value: "${AnimalSnake}", weight: 1 },
   ],
   
   AnimalBigCat: [
@@ -5813,6 +5835,36 @@ trap_location: [
     { value: "bull", weight: 1 },
   ],
   
+  AnimalBaby: [
+    { value: "puppy", weight: 1 },
+    { value: "kitten", weight: 1 },
+    { value: "${AnimalBigCat} cub", weight: 1 },
+    { value: "bear cub", weight: 1 },
+    { value: "wolf cub", weight: 1 },
+    { value: "fox cub", weight: 1 },
+    { value: "baby ${AnimalBird}", weight: 1 },
+    { value: "lamb", weight: 1 },
+    { value: "pony", weight: 1 },
+    { value: "kid", weight: 1 },
+    { value: "just-hatched ${AnimalSnake}", weight: 1 },
+    { value: "baby ${AnimalPest}", weight: 1 },
+    { value: "duckling", weight: 1 },
+	{ value: "baby bunny", weight: 1 },
+	{ value: "little piggy", weight: 1 },
+  ],
+  
+  AnimalPest: [
+    { value: "raccoon", weight: 1 },
+    { value: "skunk", weight: 1 },
+    { value: "rabbit", weight: 1 },
+    { value: "groundhog", weight: 1 },
+    { value: "rat", weight: 1 },
+    { value: "mouse", weight: 1 },
+	{ value: "chipmunk", weight: 1 },
+	{ value: "bat", weight: 1 },
+	{ value: "squirrel", weight: 1 },
+  ],
+  
   AnimalBird: [
     { value: "hawk", weight: 1 },
     { value: "sparrow", weight: 1 },
@@ -5830,6 +5882,9 @@ trap_location: [
 	{ value: "swan", weight: 1 },
     { value: "crow", weight: 1 },
     { value: "raven", weight: 1 },
+	{ value: "peacock", weight: 1 },
+    { value: "chicken", weight: 1 },
+    { value: "turkey", weight: 1 },
   ],
 
   AnimalInsect: [
@@ -5942,9 +5997,28 @@ trap_location: [
     { value: "asp", weight: 1 },
     { value: "cobra", weight: 1 },
     { value: "skink", weight: 1 },
-    { value: "turtle", weight: 1 },
+    { value: "tortoise", weight: 1 },
     { value: "serpent", weight: 1 },
     { value: "crocodile", weight: 1 },
+	{ value: "toad", weight: 1 },
+    { value: "frog", weight: 1 },
+  ],
+  
+  AnimalWater: [
+    { value: "shark", weight: 1 },
+    { value: "dolphin", weight: 1 },
+    { value: "turtle", weight: 1 },
+    { value: "jellyfish", weight: 1 },
+    { value: "squid", weight: 1 },
+    { value: "octopus", weight: 1 },
+    { value: "crab", weight: 1 },
+    { value: "lobster", weight: 1 },
+    { value: "sea serpent", weight: 1 },
+    { value: "alligator", weight: 1 },
+	{ value: "seahorse", weight: 1 },
+    { value: "oyster", weight: 1 },
+    { value: "clam", weight: 1 },
+    { value: "eel", weight: 1 },
   ],
 
   Colors: [
@@ -6475,7 +6549,7 @@ trap_location: [
     { value: "cloth", weight: 1 },
     { value: "leather", weight: 1 },
     { value: "wine", weight: 1 },
-    { value: "jewelery", weight: 1 },
+    { value: "jewelry", weight: 1 },
     { value: "weaponry", weight: 1 },
     { value: "armor", weight: 1 },
     { value: "water", weight: 1 },
@@ -6685,6 +6759,7 @@ trap_location: [
     { value: "gambler", weight: 1 },
     { value: "guard", weight: 1 },
     { value: "musician", weight: 1 },
+	{ value: "barber", weight: 1 },
   ],
 
   QuickNPCJobRich: [
@@ -7853,6 +7928,7 @@ celebration_type: [
 	{ value: "${flag_condition} ${flag_type} colored ${a:flag_imperial_color_adj} ${flag_imperial_color} used by the ${flag_provenance}${flag_extra}", weight: 0 },
 	{ value: "${flag_condition} ${flag_shape} ${flag_type} of the ${flag_provenance}${flag_extra}", weight: 1 },
 	{ value: "${flag_imperial_color_adj} ${flag_imperial_color} ${flag_type} used by the ${flag_provenance}${flag_extra}", weight: 1 },
+	{ value: "fatally compromised double-sided flag used by the ${flag_provenance}, one side ${flag_basic_color} emblazoned with ${flag_extra_humanoids_adj} ${fairy_folk}, the other side ${flag_imperial_color_adj} ${flag_imperial_color}${flag_extra}", weight: 1 },
   ],
   
   flag_condition: [
@@ -7962,6 +8038,9 @@ celebration_type: [
 	{ value: ", with its ${flag_extra_style} design of two ${humanoids} ${flag_extra_humanoids_verb},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb3},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb2} ${a:flag_extra_humanoids_verb2_object},", weight: 1 },
+	{ value: ", with its ${flag_extra_style} design of ${a:flag_extra_animal_adj} ${AnimalMain} ${flag_extra_animal_verb} ${a:AnimalBaby},", weight: 1 },
+	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${fairy_folk},", weight: 1 },
+	{ value: ", with its ${flag_extra_style} design of a muzzled ${AnimalPredator},", weight: 1 },
   ],
   
   flag_extra_style: [
@@ -7988,6 +8067,7 @@ celebration_type: [
 	{ value: "crowned", weight: 1 },
 	{ value: "skeletal", weight: 1 },
 	{ value: "eyeless", weight: 1 },
+	{ value: "wounded", weight: 1 },
   ],
   
   flag_extra_animal_verb: [
