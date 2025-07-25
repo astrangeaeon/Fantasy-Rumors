@@ -866,6 +866,7 @@ const tables = {
     { value: "Those Who Wait", weight: 1 },
     { value: "Yog-Sothoth", weight: 1 },
 	{ value: "Patollo the Gardener", weight: 1 },
+	{ value: "${fairy_folk_named}", weight: 1 },
   ],
 
   criminals: [
@@ -968,6 +969,7 @@ const tables = {
     { value: "weeping", weight: 1 },
     { value: "wood", weight: 1 },
 	{ value: "rhyming", weight: 1 },
+	{ value: "noon", weight: 1 },
   ],
 
   dance: [
@@ -1023,7 +1025,7 @@ const tables = {
     { value: "Apollonius Molon", weight: 1 },
     { value: "Arcus the ${uc:Colors}", weight: 1 },
     { value: "Arhat the Fire-Lion", weight: 1 },
-    { value: "Ashen Knight Boyd", weight: 1 },
+    { value: "Tugarin Dragon-son", weight: 1 },
     { value: "Aslatiel of Mirrah", weight: 1 },
     { value: "Basmus the Mermaid", weight: 1 },
     { value: "Benhart of Jugo", weight: 1 },
@@ -2671,6 +2673,7 @@ const tables = {
     { value: "the Xyloid Spires", weight: 1 },
     { value: "the Zaulfung Stones", weight: 1 },
 	{ value: "the Jade Gate", weight: 1 },
+	{ value: "the Hot Metal Bridge", weight: 1 },
   ],
 
   landmark_natural: [
@@ -3164,6 +3167,7 @@ const tables = {
     { value: "the Order of the Silver Beard", weight: 1 },
     { value: "the Pythagorean Cult", weight: 1 },
     { value: "the Seekers of the Perfect Thought", weight: 1 },
+	{ value: "the Companions of Saint ${SaintName}", weight: 1 },
   ],
 
   membership_initiation: [
@@ -3261,7 +3265,7 @@ const tables = {
     { value: "spider-wife", weight: 1 },
     { value: "ghost", weight: 1 },
     { value: "wasp queen", weight: 1 },
-    { value: "witchowl", weight: 1 },
+    { value: "noonwraith", weight: 1 },
 	{ value: "dryad", weight: 1 },
   ],
 
@@ -4630,6 +4634,7 @@ const tables = {
     { value: "the two million tiny gods of sand", weight: 1 },
     { value: "thousands of skull beetles", weight: 1 },
     { value: "war spirits, numerous of shape", weight: 1 },
+	{ value: "${a:magicusertype} that rides a dragon and brings ${severe_weather}s", weight: 1 },
   ],
   
   
@@ -5379,6 +5384,7 @@ trap_location: [
     { value: "will trade 14 years of prosperity for a mysterious favor", weight: 1 },
     { value: "yearns for a release from all their suffering", weight: 1 },
     { value: "zealously guards the innocent from the wicked", weight: 1 },
+	{ value: "has fallen miserably in love with ${a:fairy_folk}", weight: 1 },
   ],
 
   washups: [
@@ -7797,6 +7803,7 @@ celebration_type: [
 	{ value: "sandstorm", weight: 1 },
 	{ value: "typhoon", weight: 1 },
 	{ value: "cyclone", weight: 1 },
+	{ value: "drought", weight: 1 },
   ],
   
   classic_dungeons: [
@@ -8087,6 +8094,65 @@ celebration_type: [
 	{ value: "${political_org_league_type} League", weight: 1 },
 	{ value: "League of the ${uc:political_org_league_type}", weight: 1 },
   ],
+
+
+  fairy_folk: [
+    { value: "white fairy", weight: 1 },
+	{ value: "black fairy", weight: 1 },
+	{ value: "green fairy", weight: 1 },
+	{ value: "hobgoblin", weight: 1 },
+	{ value: "leprechaun", weight: 1 },
+	{ value: "banshee", weight: 1 },
+	{ value: "brownie", weight: 1 },
+	{ value: "lake maiden", weight: 1 },
+	{ value: "river maiden", weight: 1 },
+	{ value: "pixie", weight: 1 },
+	{ value: "troll", weight: 1 },
+	{ value: "selkie", weight: 1 },
+	{ value: "kelpie", weight: 1 },
+	{ value: "boggart", weight: 1 },
+	{ value: "kobold", weight: 1 },
+	{ value: "nine-tailed fox", weight: 1 },
+	{ value: "${elemntl_type} sprite", weight: 1 },
+	{ value: "joint-eater", weight: 1 },
+	{ value: "goblin", weight: 1 },
+	{ value: "giant", weight: 1 },
+  ],
+  
+  fairy_folk_named: [
+    { value: "Granny Squannit", weight: 1 },
+	{ value: "Yallery Brown", weight: 1 },
+	{ value: "Queen Titania", weight: 1 },
+	{ value: "Tiddy Mun", weight: 1 },
+	{ value: "Saci", weight: 1 },
+	{ value: "Lob Lie-By-The-Fire", weight: 1 },
+	{ value: "Lazy Laurence", weight: 1 },
+	{ value: "Pine Tree Mary", weight: 1 },
+	{ value: "Little Hat", weight: 1 },
+	{ value: "the Hedley Kow", weight: 1 },
+	{ value: "the Erlking", weight: 1 },
+	{ value: "the Picktree Brag", weight: 1 },
+	{ value: "the Sack Man", weight: 1 },
+	{ value: "Old Red Eyes", weight: 1 },
+	{ value: "the Deep-voiced Man", weight: 1 },
+	{ value: "the Man With Burnt Leg", weight: 1 },
+	{ value: "Lady Midday", weight: 1 },
+	{ value: "Awd Goggie", weight: 1 },
+	{ value: "the Great Black Bird", weight: 1 },
+	{ value: "Spring-Heeled Jack", weight: 1 },
+	{ value: "the Gooseberry Wife", weight: 1 },
+	{ value: "Churnmilk Peg", weight: 1 },
+	{ value: "Melsh Dick", weight: 1 },
+	{ value: "Tom Dockin", weight: 1 },
+	{ value: "Black Annis", weight: 1 },
+	{ value: "Jenny Greenteeth", weight: 1 },
+	{ value: "the Copperpenis Owl", weight: 1 },
+	{ value: "Grandmother Tiger", weight: 1 },
+	{ value: "Bloody Bones", weight: 1 },
+	{ value: "Tommy Rawhead", weight: 1 },
+	{ value: "Flying Robert", weight: 1 },
+  ],
+
 
     intro: [
 	    { value: "${I_herd}", weight: 1 }
