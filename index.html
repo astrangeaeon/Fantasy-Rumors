@@ -2238,6 +2238,7 @@ const tables = {
     { value: "vampires", weight: 1 },
     { value: "werewolves", weight: 1 },
     { value: "witches", weight: 1 },
+	{ value: "harpies", weight: 1 },
   ],
   
   huntingmonster_singular: [
@@ -2251,7 +2252,7 @@ const tables = {
     { value: "ghost", weight: 1 },
     { value: "ghoul", weight: 1 },
 	{ value: "naga", weight: 1 },
-    { value: "ratman", weight: 1 },
+    { value: "rat", weight: 1 },
     { value: "minotaur", weight: 1 },
     { value: "pseudo-giant", weight: 1 },
     { value: "serpent", weight: 1 },
@@ -2260,6 +2261,7 @@ const tables = {
     { value: "vampire", weight: 1 },
     { value: "werewolf", weight: 1 },
     { value: "witch", weight: 1 },
+	{ value: "harpy", weight: 1 },
   ],
 
   husband_adj: [
@@ -5710,6 +5712,7 @@ trap_location: [
 	{ value: "there’s a cavern where stalagmites grow through the bones of the ancient cave-dwelling ${ancientpeople}", weight: 1 },
 	{ value: "someone has planted the ${flag} ${wilds_specific_locn}", weight: 2 },
 	{ value: "travelers venturing ${CompassDirectionPrimary} of ${landmark} should bring ${a:FantasyMeal_Fruit} and ${a:magicalcommonobject} with them, in case they cross paths with ${fairy_folk_named}", weight: 2 },
+	{ value: "when travelers find themselves in the enchanted ${otherworld_names}, they ${taboo}, when they return to the lands of men, ${taboo_consequence}", weight: 4 },
   ],
 
   onedfive: [
@@ -5885,6 +5888,7 @@ trap_location: [
 	{ value: "peacock", weight: 1 },
     { value: "chicken", weight: 1 },
     { value: "turkey", weight: 1 },
+	{ value: "albatross", weight: 1 },
   ],
 
   AnimalInsect: [
@@ -6019,6 +6023,7 @@ trap_location: [
     { value: "oyster", weight: 1 },
     { value: "clam", weight: 1 },
     { value: "eel", weight: 1 },
+	{ value: "manta ray", weight: 1 },
   ],
 
   Colors: [
@@ -6383,6 +6388,7 @@ trap_location: [
     { value: "the ${uc:QuickNPCJob}", weight: 1 },
 	{ value: "the Next Ten Minutes", weight: 1 },
     { value: "rain", weight: 1 },
+	{ value: "the Hour Badly Spent", weight: 1 },
   ],
 
   FantasyMeal: [
@@ -6704,6 +6710,9 @@ trap_location: [
 	{ value: "paranoid", weight: 1 },
 	{ value: "bald", weight: 1 },
 	{ value: "long-haired", weight: 1 },
+	{ value: "childish", weight: 1 },
+	{ value: "childlike", weight: 1 },
+	{ value: "childless", weight: 1 },
   ],
 
   QuickNPCJob: [
@@ -7928,7 +7937,7 @@ celebration_type: [
 	{ value: "${flag_condition} ${flag_type} colored ${a:flag_imperial_color_adj} ${flag_imperial_color} used by the ${flag_provenance}${flag_extra}", weight: 0 },
 	{ value: "${flag_condition} ${flag_shape} ${flag_type} of the ${flag_provenance}${flag_extra}", weight: 1 },
 	{ value: "${flag_imperial_color_adj} ${flag_imperial_color} ${flag_type} used by the ${flag_provenance}${flag_extra}", weight: 1 },
-	{ value: "fatally compromised double-sided flag used by the ${flag_provenance}, one side ${flag_basic_color} emblazoned with ${flag_extra_humanoids_adj} ${fairy_folk}, the other side ${flag_imperial_color_adj} ${flag_imperial_color}${flag_extra}", weight: 1 },
+	{ value: "fatally compromised double-sided flag used by the ${flag_provenance}, one side emblazoned ${flag_basic_color} with ${flag_extra_humanoids_adj} ${fairy_folk}, the other side ${flag_imperial_color_adj} ${flag_imperial_color}${flag_extra}", weight: 1 },
   ],
   
   flag_condition: [
@@ -8241,9 +8250,9 @@ celebration_type: [
 	{ value: "Land Under the Wave", weight: 1 },
 	{ value: "Land of Promise", weight: 1 },
 	{ value: "Plain of Delight", weight: 1 },
-	{ value: "Isle of Apples", weight: 1 },
+	{ value: "Valley of Apples", weight: 1 },
 	{ value: "Silver-Cloud Plain", weight: 1 },
-	{ value: "Island of Hy-Brasil", weight: 1 },
+	{ value: "Land of Hy-Brasil", weight: 1 },
 	{ value: "Land of Fairy", weight: 1 },
 	{ value: "${landscape_types_artificial}", weight: 1 },
 	{ value: "Gardens of ${RealGods}", weight: 1 },
@@ -8252,6 +8261,99 @@ celebration_type: [
 	{ value: "Heaven of Sunshine and Rain", weight: 1 },
 	{ value: "Summerlands", weight: 1 },
 	{ value: "Fields of ${uc:boundary_times}", weight: 1 },
+  ],
+  
+    taboo: [
+    { value: "${taboo_donot}, for if they do", weight: 2 },
+	{ value: "${taboo_do}, for if they do not", weight: 1 },
+  ],
+  
+  taboo_donot: [
+    { value: "must not wear the color ${Colors}", weight: 1 },
+	{ value: "must not wear ${Colors} ${duo_clothing}", weight: 1 },
+	{ value: "must not stray from the path of ${taboo_path_type} ", weight: 1 },
+	{ value: "must never ask about another's ${FamilyMember}", weight: 1 },
+	{ value: "must not drink any liquid exposed to ${light_type}", weight: 1 },
+	{ value: "must not touch ${a:AnimalMount} with their bare hand", weight: 1 },
+	{ value: "must not say the name of ${RealGods}", weight: 1 },
+	{ value: "must utter no word of the ${ancientpeople} tongue", weight: 1 },
+	{ value: "must not kindle a fire with branches from the ${cod_tree_type} tree", weight: 1 },
+	{ value: "must eat no fish not caught with bare hands", weight: 1 },
+	{ value: "must not touch another's ${AnimalMount}", weight: 1 },
+	{ value: "must never count stars, steps, coins or birds", weight: 1 },
+	{ value: "must never dream about ${a:AnimalMain}, ${a:magicalcommonobject} or ${flag_extra_humanoids_verb2} ${a:fairy_folk}", weight: 1 },
+	{ value: "must cause no harm to befall ${a:AnimalMain}", weight: 1 },
+	{ value: "must never step on another's shadow", weight: 1 },
+	{ value: "must never see another's reflection without permission", weight: 1 },
+	{ value: "must not slay more than ${onedfive} people in a day", weight: 1 },
+	{ value: "must not make love more than ${onedfive} times in a day", weight: 1 },
+	{ value: "must not eat food while bathing", weight: 1 },
+	{ value: "must never throw bones in a lake or river", weight: 1 },
+	{ value: "must tell no lies to ${a:fairy_folk} for they smell truth", weight: 1 },
+	{ value: "must not eat ${AnimalMain} meat", weight: 1 },
+	{ value: "must not swat ${a:AnimalInsectBiting}", weight: 1 },
+	{ value: "must not spill blood", weight: 1 },
+	{ value: "must never dance ${dance}", weight: 1 },
+	{ value: "must never kneel in prayer", weight: 1 },
+	{ value: "must not wear garments of iron or leather", weight: 1 },
+	{ value: "must never gaze upon the constellation called ${constellation_repeat}", weight: 1 },
+	{ value: "must eat nothing after ${boundary_times}", weight: 1 },
+  ],
+  
+  taboo_path_type: [
+    { value: "${Jewels}", weight: 1 },
+	{ value: "${cod_tree_type} leaves", weight: 1 },
+	{ value: "${DecorativeStone}", weight: 1 },
+  ],
+  
+  taboo_do: [
+    { value: "must eat any ${FantasyMeal_Fruit} that's offered", weight: 1 },
+	{ value: "must reject any gift offered by ${a:fairy_folk}", weight: 1 },
+	{ value: "must pause for prayer at ${boundary_times}", weight: 1 },
+	{ value: "must thank ${RealGods} before eating, drinking or making love", weight: 1 },
+	{ value: "must remove any ${duo_jewlery} when entering another's home", weight: 1 },
+	{ value: "must leave a building by the same entrance it was entered through", weight: 1 },
+	{ value: "must always knock upon a door or table of wood ${onedfive} times", weight: 1 },
+	{ value: "must offer marriage to any maid they have kissed", weight: 1 },
+	{ value: "must lay with their head facing ${CompassDirection}", weight: 1 },
+	{ value: "must dismount after crossing the threshold", weight: 1 },
+	{ value: "must spit out the first bite of every meal", weight: 1 },
+  ],
+  
+  taboo_consequence: [
+    { value: "their head will be replaced with the head of ${a:AnimalMain}", weight: 1 },
+	{ value: "they will be forced to toil for ${onedten} decades in the Black Palace", weight: 1 },
+	{ value: "their favorite meals will taste like ash; they will only gain sustenance from swallowing ${trait_digestion}", weight: 1 },
+	{ value: "they will be stalked and harrassed by a big ${AnimalPest} only they can see", weight: 1 },
+	{ value: "their feet will be turned backwards", weight: 1 },
+	{ value: "they will grow a ${tail_type} tail", weight: 1 },
+	{ value: "their children will have ${short_inherited_trait}", weight: 1 },
+	{ value: "${fairy_folk_named} will be waiting for them and their companions", weight: 1 },
+	{ value: "their nose will transform into the snout of a hog", weight: 1 },
+	{ value: "their ears will change into the ears of an ass", weight: 1 },
+	{ value: "a puckish imp will whisper damning lies into the ear of a queen of ${huntingmonster}, blaming them and their companions for a recent reversal", weight: 1 },
+	{ value: "the Knight of Flowers will bar their way at every bridge and river-crossing", weight: 1 },
+	{ value: "${when} will have passed", weight: 1 },
+	{ value: "they will be refashioned into ${a:fairy_folk} with the memories of their former life kept in a stone jar in the Fortress of Glass", weight: 1 },
+	{ value: "they will be unable to touch iron without burning pain", weight: 1 },
+	{ value: "they will no longer hear music, except for the sounds ${a:MusicalInstrument} makes", weight: 1 },
+	{ value: "they will fall miserably in love with ${a:AnimalMain}", weight: 1 },
+	{ value: "their speech will sound like ${taboo_consequence_speech}", weight: 1 },
+	{ value: "they will be despised by every ${AnimalBaby} in the world", weight: 1 },
+	{ value: "their most precious possession will end up in the nest of ${a:AnimalBird}", weight: 1 },
+	{ value: "anytime someone uses ${a:Tools} near them, it will fall apart", weight: 1 },
+	{ value: "they will never win at cards or ${board_games}", weight: 1 },
+	{ value: "their dreams will all be of ${creepyvillain}", weight: 1 },
+	{ value: "they must obey a geas to ${geas}", weight: 1 },
+	{ value: "a foul-smelling and foul-tasting ${FantasyMeal_Vegetable} will grow from their body every morning", weight: 1 },
+	{ value: "they will be cursed ${saint_curse}", weight: 1 },
+	
+  ],
+  
+  taboo_consequence_speech: [
+    { value: "the barking of many dogs", weight: 1 },
+	{ value: "the roaring of ${a:AnimalBigCat}", weight: 1 },
+	{ value: "the squawking of ${a:AnimalBird}", weight: 1 },
   ],
 
 
