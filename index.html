@@ -415,6 +415,7 @@ const tables = {
 	{ value: " who used many tongues to build peace,", weight: 1 },
 	{ value: " who eliminated desire from his heart,", weight: 1 },
 	{ value: " who against all advice opened the Door in the Ceiling,", weight: 1 },
+	{ value: " who vanquished ${onedten} assassins while drunk and blindfolded in the upper chambers of the ${uc:AnimalMain} Brothel in ${urbn_cityname},", weight: 1 },
   ],
 
   hundred_words: [
@@ -933,6 +934,40 @@ const tables = {
     { value: "pennyweighters", weight: 1 },
     { value: "bristlers", weight: 1 },
   ],
+  
+   criminal_singular: [
+    { value: "actor", weight: 1 },
+    { value: "arsonist", weight: 1 },
+    { value: "cheat", weight: 1 },
+    { value: "con-artist", weight: 1 },
+    { value: "counterfeiter", weight: 1 },
+    { value: "deserter", weight: 1 },
+    { value: "drunkard", weight: 1 },
+    { value: "charlatan", weight: 1 },
+    { value: "hoarder", weight: 1 },
+    { value: "fornicator", weight: 1 },
+    { value: "robber", weight: 1 },
+    { value: "heretic", weight: 1 },
+    { value: "idolater", weight: 1 },
+    { value: "kidnapper", weight: 1 },
+    { value: "truthstretcher", weight: 1 },
+    { value: "loiterer", weight: 1 },
+    { value: "necromancer", weight: 1 },
+    { value: "masturbator", weight: 1 },
+    { value: "murderer", weight: 1 },
+    { value: "mutineer", weight: 1 },
+    { value: "poacher", weight: 1 },
+    { value: "whore", weight: 1 },
+    { value: "seditionist", weight: 1 },
+    { value: "slanderer", weight: 1 },
+    { value: "swindler", weight: 1 },
+    { value: "raider", weight: 1 },
+    { value: "traitor", weight: 1 },
+    { value: "slaver", weight: 1 },
+    { value: "usurer", weight: 1 },
+    { value: "vandal", weight: 1 },
+    { value: "squanderer", weight: 1 },
+  ],
 
   culprit: [
     { value: "a species of sentient light", weight: 1 },
@@ -1016,7 +1051,7 @@ const tables = {
     { value: "Velstadt, the Royal Aegis", weight: 1 },
     { value: "Vendrick, the Throne Watcher", weight: 1 },
     { value: "Yurt, the Silent Chief", weight: 1 },
-    { value: "Zallen, the Burnt Ivory King", weight: 1 },
+    { value: "Zallen, the ${uc:AnimalMain} of ${urbn_cityname}", weight: 1 },
   ],
 
   ntc: [
@@ -1442,6 +1477,8 @@ const tables = {
 	{ value: "pajamas", weight: 1 },
 	{ value: "blindfolds", weight: 1 },
 	{ value: "cloaks", weight: 1 },
+	{ value: "girdles", weight: 1 },
+    { value: "sashes", weight: 1 },
   ],
   
   duo_jewlery: [
@@ -1572,6 +1609,8 @@ const tables = {
 	{ value: "the skulls of gulls and other seabirds", weight: 1 },
 	{ value: "jewels from the House of ${housething}", weight: 1 },
 	{ value: "${MusicalInstrument}s from ${foreignland}", weight: 1 },
+	{ value: "the tails and whiskers of ${AnimalBigCat}s", weight: 1 },
+	{ value: "the wooden bones of dryads", weight: 1 },
   ],
 
   excitingemployer: [
@@ -4209,8 +4248,8 @@ const tables = {
   ],
 
   slander: [
-    { value: "is addicted to ${addiction}", weight: 5 },
-    { value: "is notoriously prejudiced against ${prejudicetarget}", weight: 3 },
+    { value: "is addicted to ${addiction}", weight: 2 },
+    { value: "is notoriously prejudiced against ${prejudicetarget}", weight: 2 },
     { value: "abandoned their spouse and children to move here", weight: 1 },
     { value: "always smells like ${Smells}", weight: 1 },
     { value: "beats their pet ${pet}", weight: 1 },
@@ -4219,7 +4258,7 @@ const tables = {
     { value: "grows black carrots", weight: 1 },
     { value: "grows dream lotos in the basement", weight: 1 },
     { value: "had a child out of wedlock", weight: 1 },
-    { value: "had a child who grew up to be a criminal", weight: 1 },
+    { value: "had a child who grew up to be ${a:criminal_singular}", weight: 2 },
     { value: "had a child whose head burst into flames while sleeping, a terrible omen", weight: 1 },
     { value: "has a disgusting ${fetishtype} fetish", weight: 1 },
     { value: "has a house full of hoarded junk", weight: 1 },
@@ -4244,6 +4283,7 @@ const tables = {
     { value: "would sell out their own mother for a few silver", weight: 1 },
     { value: "writes fantasy stories starring great adventurers", weight: 1 },
     { value: "writes really bad erotic poetry", weight: 1 },
+	{ value: "raises ${AnimalFarm}s that all have blackleg", weight: 1 },
   ],
 
   sleepwalkers: [
@@ -4906,6 +4946,7 @@ trap_location: [
     { value: "Xenium", weight: 1 },
     { value: "Youth", weight: 1 },
     { value: "Zodiac", weight: 1 },
+	{ value: "${uc:QuickNPCJobMid}s", weight: 1 },
   ],
 
   urbn_danger: [
@@ -5018,6 +5059,8 @@ trap_location: [
     { value: "zoo", weight: 1 },
 	{ value: "thieves' kitchen", weight: 1 },
 	{ value: "locksmithery", weight: 1 },
+	{ value: "alehouse", weight: 1 },
+	{ value: "wine-shop", weight: 1 },
   ],
 
   urbn_strife: [
@@ -5890,6 +5933,21 @@ trap_location: [
     { value: "turkey", weight: 1 },
 	{ value: "albatross", weight: 1 },
   ],
+  
+  AnimalFarm: [
+    { value: "ewe", weight: 1 },
+	{ value: "ram", weight: 1 },
+	{ value: "lamb", weight: 1 },
+    { value: "goat", weight: 1 },
+    { value: "cow", weight: 1 },
+    { value: "chicken", weight: 1 },
+	{ value: "hen", weight: 1 },
+	{ value: "rooster", weight: 1 },
+    { value: "pig", weight: 1 },
+	{ value: "hog", weight: 1 },
+    { value: "turkey", weight: 1 },
+	{ value: "horse", weight: 1 },
+  ],
 
   AnimalInsect: [
     { value: "spider", weight: 1 },
@@ -6578,6 +6636,8 @@ trap_location: [
 	{ value: "chisel", weight: 1 },
 	{ value: "lantern", weight: 1 },
 	{ value: "candle", weight: 1 },
+	{ value: "broom", weight: 1 },
+    { value: "loom", weight: 1 },
   ],
 
   MiscSymbol: [
@@ -6785,6 +6845,8 @@ trap_location: [
     { value: "judge", weight: 1 },
     { value: "dancer", weight: 1 },
     { value: "genius", weight: 1 },
+	{ value: "goldsmith", weight: 1 },
+    { value: "silversmith", weight: 1 },
   ],
 
   RealGods: [
@@ -7794,7 +7856,7 @@ celebration_type: [
   
   constellation: [
     { value: "the ${uc:daemontype} ${uc:AnimalMain}", weight: 1 },
-	{ value: "the ${uc:onedfive} ${uc:FamilyMember}s", weight: 1 },
+	{ value: "the ${uc:onedten} ${uc:FamilyMember}s", weight: 1 },
 	{ value: "the ${uc:constellation_adj_obj} ${uc:magicalcommonobject}", weight: 1 },
 	{ value: "the ${uc:ordinal} ${uc:FamilyMember}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_person} ${uc:FamilyMember}", weight: 1 },
@@ -7804,6 +7866,7 @@ celebration_type: [
 	{ value: "the ${uc:po:magicusertype} ${uc:magicalcommonobject}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_compass} ${constellation_adj_compass_stars}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_person} ${uc:constellation_archetype}", weight: 1 },
+	{ value: "the ${uc:criminal_singular}", weight: 1 },
 	{ value: "${constellation_repeat} to most, but called ${constellation_repeat} by the ancient ${ancientpeople}", weight: 1 },
   ],
   
@@ -7819,6 +7882,7 @@ celebration_type: [
 	{ value: "the ${uc:constellation_adj_person} ${uc:QuickNPCJob}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_person} ${uc:constellation_archetype}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_compass} ${constellation_adj_compass_stars}", weight: 1 },
+	{ value: "the ${uc:criminal_singular}", weight: 1 },
   ],
   
   constellation_adj_obj: [
@@ -8284,7 +8348,7 @@ celebration_type: [
 	{ value: "must never dream about ${a:AnimalMain}, ${a:magicalcommonobject} or ${flag_extra_humanoids_verb2} ${a:fairy_folk}", weight: 1 },
 	{ value: "must cause no harm to befall ${a:AnimalMain}", weight: 1 },
 	{ value: "must never step on another's shadow", weight: 1 },
-	{ value: "must never see another's reflection without permission", weight: 1 },
+	{ value: "must never look upon another's reflection without permission", weight: 1 },
 	{ value: "must not slay more than ${onedfive} people in a day", weight: 1 },
 	{ value: "must not make love more than ${onedfive} times in a day", weight: 1 },
 	{ value: "must not eat food while bathing", weight: 1 },
@@ -8298,6 +8362,7 @@ celebration_type: [
 	{ value: "must not wear garments of iron or leather", weight: 1 },
 	{ value: "must never gaze upon the constellation called ${constellation_repeat}", weight: 1 },
 	{ value: "must eat nothing after ${boundary_times}", weight: 1 },
+	{ value: "must never answer honestly the question of ${a:fairy_folk}", weight: 1 },
   ],
   
   taboo_path_type: [
@@ -8309,7 +8374,7 @@ celebration_type: [
   taboo_do: [
     { value: "must eat any ${FantasyMeal_Fruit} that's offered", weight: 1 },
 	{ value: "must reject any gift offered by ${a:fairy_folk}", weight: 1 },
-	{ value: "must pause for prayer at ${boundary_times}", weight: 1 },
+	{ value: "must pause for prayers at ${boundary_times}", weight: 1 },
 	{ value: "must thank ${RealGods} before eating, drinking or making love", weight: 1 },
 	{ value: "must remove any ${duo_jewlery} when entering another's home", weight: 1 },
 	{ value: "must leave a building by the same entrance it was entered through", weight: 1 },
@@ -8324,7 +8389,7 @@ celebration_type: [
     { value: "their head will be replaced with the head of ${a:AnimalMain}", weight: 1 },
 	{ value: "they will be forced to toil for ${onedten} decades in the Black Palace", weight: 1 },
 	{ value: "their favorite meals will taste like ash; they will only gain sustenance from swallowing ${trait_digestion}", weight: 1 },
-	{ value: "they will be stalked and harrassed by a big ${AnimalPest} only they can see", weight: 1 },
+	{ value: "they will be stalked and harrassed by a big ${AnimalPest} that only they can see", weight: 1 },
 	{ value: "their feet will be turned backwards", weight: 1 },
 	{ value: "they will grow a ${tail_type} tail", weight: 1 },
 	{ value: "their children will have ${short_inherited_trait}", weight: 1 },
@@ -8341,7 +8406,7 @@ celebration_type: [
 	{ value: "their speech will sound like ${taboo_consequence_speech}", weight: 1 },
 	{ value: "they will be despised by every ${AnimalBaby} in the world", weight: 1 },
 	{ value: "their most precious possession will end up in the nest of ${a:AnimalBird}", weight: 1 },
-	{ value: "anytime someone uses ${a:Tools} near them, it will fall apart", weight: 1 },
+	{ value: "anytime they approach ${a:Tools}, it will transform into ${a:AnimalSnake}", weight: 1 },
 	{ value: "they will never win at cards or ${board_games}", weight: 1 },
 	{ value: "their dreams will all be of ${creepyvillain}", weight: 1 },
 	{ value: "they must obey a geas to ${geas}", weight: 1 },
