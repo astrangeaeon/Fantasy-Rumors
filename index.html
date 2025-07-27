@@ -3101,6 +3101,43 @@ const tables = {
 	{ value: "jar", weight: 1 },
 	{ value: "pipe", weight: 1 },
   ],
+  
+  magicalcommonobject_plural: [
+    { value: "pouches", weight: 1 },
+    { value: "breastplates", weight: 1 },
+    { value: "broadswords", weight: 1 },
+    { value: "candles", weight: 1 },
+    { value: "chains", weight: 1 },
+    { value: "crutches", weight: 1 },
+    { value: "feathers", weight: 1 },
+    { value: "gauntlets", weight: 1 },
+    { value: "hats", weight: 1 },
+    { value: "helmets", weight: 1 },
+    { value: "brushes", weight: 1 },
+    { value: "poles", weight: 1 },
+    { value: "pots", weight: 1 },
+    { value: "ropes", weight: 1 },
+	{ value: "dishes", weight: 1 },
+	{ value: "bowls", weight: 1 },
+	{ value: "torches", weight: 1 },
+	{ value: "horns", weight: 1 },
+	{ value: "bottles", weight: 1 },
+    { value: "sticks", weight: 1 },
+    { value: "shields", weight: 1 },
+    { value: "umbrellas", weight: 1 },
+    { value: "daggers", weight: 1 },
+    { value: "war-bows", weight: 1 },
+	{ value: "keys", weight: 1 },
+	{ value: "shovels", weight: 1 },
+	{ value: "${MusicalInstrument}s", weight: 2 },
+    { value: "${HaftedWeapons}s", weight: 2 },
+	{ value: "${Tools}s", weight: 2 },
+	{ value: "nails", weight: 1 },
+	{ value: "mirrors", weight: 1 },
+	{ value: "jars", weight: 1 },
+	{ value: "pipes", weight: 1 },
+	{ value: "${duo_clothing}", weight: 2 },
+  ],
 
   magictype: [
     { value: "blood magic", weight: 1 },
@@ -5257,6 +5294,7 @@ trap_location: [
 	{ value: "the ${uc:prophetic_visionary} of ${urbn_cityname}", weight: 1 },
 	{ value: "${a:prophetic_visionary} from ${urbn_cityname}", weight: 1 },
 	{ value: "a multi-armed bandit", weight: 1 },
+	{ value: "an assassin who took their face from the Tree of Masks", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -5750,16 +5788,34 @@ trap_location: [
     { value: "there’s a tent on the mountain where God lives, which is the source of all pure water", weight: 1 },
     { value: "there\'s an entrance to an abandoned dwarven mall ${wilds_specific_locn}", weight: 1 },
     { value: "there’s an overgrown hedge maze, created by a magician for the Royal Jubilee 25 years ago. The duke’s child wandered in and never came out, and several rescuers were lost as well, so the magician was executed and the maze abandoned, with the prize—said to be ${mazeprize}—still unclaimed at the center", weight: 1 },
-    { value: "those traveling the road from ${landmark} to ${landmark} get old before they reach their destination", weight: 1 },
+    { value: "those traveling the road from ${landmark} to ${landmark} ${between_landmarks} before reaching their destination", weight: 2 },
 	{ value: "there's a place ${wilds_specific_locn} where the forbidden constellation known as ${constellation} can be glimpsed with the naked eye", weight: 2 },
 	{ value: "there’s a cavern where stalagmites grow through the bones of the ancient cave-dwelling ${ancientpeople}", weight: 1 },
 	{ value: "someone has planted the ${flag} ${wilds_specific_locn}", weight: 2 },
 	{ value: "travelers venturing ${CompassDirectionPrimary} of ${landmark} should bring ${a:FantasyMeal_Fruit} and ${a:magicalcommonobject} with them, in case they cross paths with ${fairy_folk_named}", weight: 2 },
 	{ value: "when travelers find themselves in the enchanted ${otherworld_names}, they ${taboo}, when they return to the lands of men, ${taboo_consequence}", weight: 4 },
   ],
+  
+  
+  between_landmarks: [
+    { value: "go mad", weight: 1 },
+    { value: "grow old", weight: 1 },
+    { value: "must pass through the ${landscape_types_artificial} where ${huntingmonster} ${between_landmarks_monster_verb}", weight: 20 },
+  ],
+  
+  between_landmarks_monster_verb: [
+    { value: "build their primitive huts", weight: 1 },
+    { value: "dwell in squalor and darkness", weight: 1 },
+    { value: "mourn their fallen loved ones", weight: 1 },
+	{ value: "bury the bones of their victims", weight: 1 },
+    { value: "create their eerie sculptures of creatures that resemble ${a:AnimalWater} and ${a:humanoid} combined", weight: 1 },
+    { value: "gather together ${decade_event}", weight: 1 },
+	{ value: "dance and sing the ${numinous_adj} music of their race", weight: 1 },
+    { value: "inexplicably pile the ${magicalcommonobject_plural} they've acquired into mounds", weight: 1 },
+	{ value: "${FantasyGodFollowers} to honor their horrible ${flag_extra_animal_adj} deity", weight: 1 },
+  ],
 
   onedfive: [
-    { value: "one", weight: 1 },
     { value: "two", weight: 1 },
     { value: "three", weight: 1 },
     { value: "four", weight: 1 },
@@ -6374,8 +6430,8 @@ trap_location: [
 	
 	
  FantasyGodFollowers: [
-    { value: "don ${Colors} garments", weight: 1 },
-    { value: "abstain from ${addiction}", weight: 1 },
+    { value: "don ${Colors} ${duo_clothing}", weight: 1 },
+    { value: "abstain from ${addiction}", weight: 0 },
     { value: "seek to convert ${criminals} and ${criminals}", weight: 1 },
 	{ value: "brand the letter ${Letters} somewhere on their body", weight: 1 },
   ],	
@@ -6619,6 +6675,7 @@ trap_location: [
     { value: "water", weight: 1 },
     { value: "livestock", weight: 1 },
     { value: "lumber", weight: 1 },
+	{ value: "cosmetics", weight: 1 },
 	{ value: "${MusicalInstrument}", weight: 1 },
   ],
   
@@ -6773,6 +6830,7 @@ trap_location: [
 	{ value: "childish", weight: 1 },
 	{ value: "childlike", weight: 1 },
 	{ value: "childless", weight: 1 },
+	{ value: "unmarried", weight: 1 },
   ],
 
   QuickNPCJob: [
@@ -8141,6 +8199,8 @@ celebration_type: [
 	{ value: "skeletal", weight: 1 },
 	{ value: "eyeless", weight: 1 },
 	{ value: "wounded", weight: 1 },
+	{ value: "horned", weight: 1 },
+	{ value: "flaming", weight: 1 },
   ],
   
   flag_extra_animal_verb: [
@@ -8328,14 +8388,14 @@ celebration_type: [
   ],
   
     taboo: [
-    { value: "${taboo_donot}, for if they do", weight: 2 },
-	{ value: "${taboo_do}, for if they do not", weight: 1 },
+    { value: "${taboo_donot}, or else", weight: 2 },
+	{ value: "${taboo_do}, or else", weight: 1 },
   ],
   
   taboo_donot: [
     { value: "must not wear the color ${Colors}", weight: 1 },
 	{ value: "must not wear ${Colors} ${duo_clothing}", weight: 1 },
-	{ value: "must not stray from the path of ${taboo_path_type} ", weight: 1 },
+	{ value: "must not stray from the path of ${taboo_path_type}", weight: 1 },
 	{ value: "must never ask about another's ${FamilyMember}", weight: 1 },
 	{ value: "must not drink any liquid exposed to ${light_type}", weight: 1 },
 	{ value: "must not touch ${a:AnimalMount} with their bare hand", weight: 1 },
@@ -8353,7 +8413,7 @@ celebration_type: [
 	{ value: "must not make love more than ${onedfive} times in a day", weight: 1 },
 	{ value: "must not eat food while bathing", weight: 1 },
 	{ value: "must never throw bones in a lake or river", weight: 1 },
-	{ value: "must tell no lies to ${a:fairy_folk} for they smell truth", weight: 1 },
+	{ value: "must tell no lies to ${a:fairy_folk}", weight: 1 },
 	{ value: "must not eat ${AnimalMain} meat", weight: 1 },
 	{ value: "must not swat ${a:AnimalInsectBiting}", weight: 1 },
 	{ value: "must not spill blood", weight: 1 },
@@ -8388,7 +8448,7 @@ celebration_type: [
   taboo_consequence: [
     { value: "their head will be replaced with the head of ${a:AnimalMain}", weight: 1 },
 	{ value: "they will be forced to toil for ${onedten} decades in the Black Palace", weight: 1 },
-	{ value: "their favorite meals will taste like ash; they will only gain sustenance from swallowing ${trait_digestion}", weight: 1 },
+	{ value: "honey and sugar, salt and fat will taste like ash; they will only gain sustenance from swallowing ${trait_digestion}", weight: 1 },
 	{ value: "they will be stalked and harrassed by a big ${AnimalPest} that only they can see", weight: 1 },
 	{ value: "their feet will be turned backwards", weight: 1 },
 	{ value: "they will grow a ${tail_type} tail", weight: 1 },
@@ -8397,7 +8457,7 @@ celebration_type: [
 	{ value: "their nose will transform into the snout of a hog", weight: 1 },
 	{ value: "their ears will change into the ears of an ass", weight: 1 },
 	{ value: "a puckish imp will whisper damning lies into the ear of a queen of ${huntingmonster}, blaming them and their companions for a recent reversal", weight: 1 },
-	{ value: "the Knight of Flowers will bar their way at every bridge and river-crossing", weight: 1 },
+	{ value: "the Knight ${taboo_consequence_knight} will bar their way at every bridge and river-crossing", weight: 1 },
 	{ value: "${when} will have passed", weight: 1 },
 	{ value: "they will be refashioned into ${a:fairy_folk} with the memories of their former life kept in a stone jar in the Fortress of Glass", weight: 1 },
 	{ value: "they will be unable to touch iron without burning pain", weight: 1 },
@@ -8409,9 +8469,12 @@ celebration_type: [
 	{ value: "anytime they approach ${a:Tools}, it will transform into ${a:AnimalSnake}", weight: 1 },
 	{ value: "they will never win at cards or ${board_games}", weight: 1 },
 	{ value: "their dreams will all be of ${creepyvillain}", weight: 1 },
-	{ value: "they must obey a geas to ${geas}", weight: 1 },
+	{ value: "they will be under a geas to ${geas}", weight: 1 },
 	{ value: "a foul-smelling and foul-tasting ${FantasyMeal_Vegetable} will grow from their body every morning", weight: 1 },
 	{ value: "they will be cursed ${saint_curse}", weight: 1 },
+	{ value: "ale will taste of piss and wine like vinegar", weight: 1 },
+	{ value: "dying animals will crawl to their tent", weight: 1 },
+	{ value: "they will be offended by the stench of ${taboo_consequence_stench}", weight: 1 },
 	
   ],
   
@@ -8419,6 +8482,19 @@ celebration_type: [
     { value: "the barking of many dogs", weight: 1 },
 	{ value: "the roaring of ${a:AnimalBigCat}", weight: 1 },
 	{ value: "the squawking of ${a:AnimalBird}", weight: 1 },
+  ],
+  
+  taboo_consequence_knight: [
+    { value: "of Flowers", weight: 1 },
+	{ value: "of ${uc:boundary_times}", weight: 2 },
+	{ value: "in ${uc:Colors}", weight: 2 },
+  ],
+
+   taboo_consequence_stench: [
+    { value: "magic", weight: 1 },
+	{ value: "coin", weight: 1 },
+	{ value: "prayer", weight: 1 },
+	{ value: "${Jewels}", weight: 1 },
   ],
 
 
