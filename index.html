@@ -1611,6 +1611,7 @@ const tables = {
 	{ value: "${MusicalInstrument}s from ${foreignland}", weight: 1 },
 	{ value: "the tails and whiskers of ${AnimalBigCat}s", weight: 1 },
 	{ value: "the wooden bones of dryads", weight: 1 },
+	{ value: "knife money", weight: 1 },
   ],
 
   excitingemployer: [
@@ -3477,6 +3478,8 @@ const tables = {
     { value: "hobbit", weight: 1 },
     { value: "unicorn", weight: 1 },
     { value: "vampire", weight: 1 },
+	{ value: "dryad", weight: 1 },
+	{ value: "fairy", weight: 1 },
   ],
 
   oppressed_grp: [
@@ -7229,6 +7232,7 @@ trap_location: [
     { value: "was devoured by ${a:idol_subject_human_pre_desc} ${AnimalMain}", weight: 1 },
 	{ value: "was last seen sliding down the throat of a titanic ${AnimalMain}", weight: 1 },
 	{ value: "was killed after provoking the constellation known as ${constellation}", weight: 1 },
+	{ value: "was killed by bandits in a random encounter on their way to ${classic_dungeons}", weight: 1 },
 ],
 
 cod_ose: [
@@ -7783,6 +7787,7 @@ celebration_type: [
 	{ value: "${monstertype} defecating in ${a:urbn_place} filled with ${AnimalMain}s", weight: 1 },
 	{ value: "${duo_name1} and ${duo_name2} ${portrait_detail}", weight: 1 },
 	{ value: "${prophetic_subject} weeping as they behold the newborn child who would become ${ntc}", weight: 1 },
+	{ value: "King ${FantasyNameMale} wearing a crown of ${crowns}", weight: 1 },
   ],
   
   portrait_location: [
@@ -8468,7 +8473,7 @@ celebration_type: [
 	{ value: "their most precious possession will end up in the nest of ${a:AnimalBird}", weight: 1 },
 	{ value: "anytime they approach ${a:Tools}, it will transform into ${a:AnimalSnake}", weight: 1 },
 	{ value: "they will never win at cards or ${board_games}", weight: 1 },
-	{ value: "their dreams will all be of ${creepyvillain}", weight: 1 },
+	{ value: "${creepyvillain} will be given access to their dreams", weight: 1 },
 	{ value: "they will be under a geas to ${geas}", weight: 1 },
 	{ value: "a foul-smelling and foul-tasting ${FantasyMeal_Vegetable} will grow from their body every morning", weight: 1 },
 	{ value: "they will be cursed ${saint_curse}", weight: 1 },
@@ -8495,6 +8500,63 @@ celebration_type: [
 	{ value: "coin", weight: 1 },
 	{ value: "prayer", weight: 1 },
 	{ value: "${Jewels}", weight: 1 },
+  ],
+  
+  crowns: [
+    { value: "${Colors} flame", weight: 1 },
+	{ value: "unmelting ice", weight: 1 },
+	{ value: "coins with the portraiture of defeated rivals", weight: 1 },
+	{ value: "${Jewels}", weight: 1 },
+	{ value: "${flag_basic_color} flowers", weight: 1 },
+	{ value: "${crowns_feather_type} feathers", weight: 1 },
+	{ value: "heavy stone inscribed with the dwarf rune for power", weight: 1 },
+	{ value: "wired glass", weight: 1 },
+	{ value: "jagged ${crowns_metal_type}", weight: 1 },
+	{ value: "${cod_tree_type} wood", weight: 1 },
+	{ value: "paper torn from the spellbooks of ${FantasyName} the ${uc:magicusertype}", weight: 1 },
+	{ value: "${huntingmonster_singular} bone", weight: 1 },
+	{ value: "viscera replenished daily", weight: 1 },
+	{ value: "heavy unremovable chain", weight: 1 },
+	{ value: "rustic straw", weight: 1 },
+	{ value: "rusted iron", weight: 1 },
+	{ value: "thorns and poison ivy", weight: 1 },
+	{ value: "braided ${humanoid} hair", weight: 1 },
+	{ value: "${AnimalPest} skulls", weight: 1 },
+	{ value: "airy nothing, seen only by the eyes of ${sleepwalkers}", weight: 1 },
+	{ value: "cheap ${flag_basic_color} plastic", weight: 1 },
+	{ value: "shaped pleasant-smelling smoke", weight: 1 },
+	{ value: "${AnimalBigCat} tails braided together", weight: 1 },
+	{ value: "${AnimalPredator} teeth", weight: 1 },
+	{ value: "simple shroud-laid rope", weight: 1 },
+	{ value: "${a:AnimalSnake} eating itself", weight: 1 },
+	{ value: "time-trapped blue lightning", weight: 1 },
+	{ value: "wet seaweed and driftwood", weight: 1 },
+	{ value: "glowing star metal", weight: 1 },
+	{ value: "simple shroud-laid rope", weight: 1 },
+	{ value: "${a:AnimalSnake} eating itself", weight: 1 },
+	{ value: "time-trapped blue lightning", weight: 1 },
+	{ value: "wet seaweed and driftwood", weight: 1 },
+	{ value: "fresh bread baked anew every morning, yesterday's crown thrown to the poor", weight: 1 },
+	{ value: "clay gathered at ${boundary_times} from the ${EgyptianNameMale} River", weight: 1 },
+  ],
+  
+  crowns_feather_type: [
+    { value: "${AnimalBird}", weight: 1 },
+	{ value: "harpy", weight: 1 },
+	{ value: "wyvern", weight: 1 },
+	{ value: "griffon", weight: 1 },
+	{ value: "daemon", weight: 1 },
+	{ value: "sky elf", weight: 1 },
+  ],
+
+
+ crowns_metal_type: [
+    { value: "iron", weight: 1 },
+	{ value: "tin", weight: 1 },
+	{ value: "copper", weight: 1 },
+	{ value: "lead", weight: 1 },
+	{ value: "gold", weight: 1 },
+	{ value: "silver", weight: 1 },
   ],
 
 
