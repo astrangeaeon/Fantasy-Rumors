@@ -4344,8 +4344,9 @@ const tables = {
   ],
 
   Strange_Custom: [
-    { value: "in ${foreign_adj}${foreignland}${foreign_phrase}, there’s ${a:strange} ${habit} where ${strangecustom}", weight: 1 },
-	{ value: "the people of ${foreign_adj}${foreignland} ${inherited_traits}", weight: 1 },
+    { value: "in ${foreign_adj}${foreignland}${foreign_phrase}, there’s ${a:strange} ${habit} where ${strangecustom}", weight: 2 },
+	{ value: "the people of ${foreign_adj}${foreignland} ${inherited_traits}", weight: 2 },
+	{ value: "the ${QuickNPCJobElite}s of ${foreign_adj}${foreignland} are said to race around in ${vehicle_adj} ${vehicle}s drawn by ${AnimalMount}s", weight: 1 },
   ],
 
   strange: [
@@ -5691,6 +5692,7 @@ trap_location: [
     { value: "what appears to be an immaculate city of metal and glass is protected by a forcefield", weight: 1 },
 	{ value: "a ruined observatory holds curious instruments with which one can glimpse what remains of the constellation known as ${constellation}", weight: 1 },
 	{ value: "a grove of trees bears living ${Jewels}", weight: 1 },
+	{ value: "a dusty plain half-conceals a graveyard of wrecked ${vehicle}s and the skeletons of ${AnimalMount}s", weight: 1 },
   ],
 
   wilds_locn: [
@@ -5889,7 +5891,6 @@ trap_location: [
     { value: "panther", weight: 1 },
     { value: "cheetah", weight: 1 },
     { value: "jaguar", weight: 1 },
-    { value: "lynx", weight: 1 },
     { value: "cougar", weight: 1 },
   ],
   
@@ -6074,8 +6075,8 @@ trap_location: [
     { value: "zebra", weight: 1 },
     { value: "bear", weight: 1 },
 	{ value: "elk", weight: 1 },
-	{ value: "moose", weight: 1 },
-	{ value: "rhinoceros", weight: 1 },
+	{ value: "bull", weight: 1 },
+	{ value: "buffalo", weight: 1 },
   ],
 
 
@@ -6906,9 +6907,25 @@ trap_location: [
     { value: "scholar", weight: 1 },
     { value: "judge", weight: 1 },
     { value: "dancer", weight: 1 },
-    { value: "genius", weight: 1 },
+    { value: "general", weight: 1 },
 	{ value: "goldsmith", weight: 1 },
     { value: "silversmith", weight: 1 },
+	{ value: "knight", weight: 1 },
+  ],
+  
+  QuickNPCJobElite: [
+    { value: "${MerchantGoods} merchant", weight: 1 },
+    { value: "jeweler", weight: 1 },
+    { value: "priest", weight: 1 },
+    { value: "landowner", weight: 1 },
+    { value: "moneylender", weight: 1 },
+    { value: "scholar", weight: 1 },
+    { value: "judge", weight: 1 },
+	{ value: "goldsmith", weight: 1 },
+    { value: "silversmith", weight: 1 },
+	{ value: "knight", weight: 1 },
+	{ value: "chancellor", weight: 1 },
+	{ value: "diplomat", weight: 1 },
   ],
 
   RealGods: [
@@ -8060,11 +8077,11 @@ celebration_type: [
   ],
   
    flag: [
-    { value: "${flag_condition} ${flag_color} ${flag_type} of the ${flag_provenance}${flag_extra}", weight: 1 },
-	{ value: "${flag_condition} ${flag_type} of the ${flag_provenance}${flag_extra}", weight: 1 },
+    { value: "${flag_condition} ${flag_color} ${flag_type} of the ${flag_provenance}${flag_extra}", weight: 2 },
+	{ value: "${flag_condition} ${flag_type} of the ${flag_provenance}${flag_extra}", weight: 2 },
 	{ value: "${flag_condition} ${flag_type} colored ${a:flag_imperial_color_adj} ${flag_imperial_color} used by the ${flag_provenance}${flag_extra}", weight: 0 },
-	{ value: "${flag_condition} ${flag_shape} ${flag_type} of the ${flag_provenance}${flag_extra}", weight: 1 },
-	{ value: "${flag_imperial_color_adj} ${flag_imperial_color} ${flag_type} used by the ${flag_provenance}${flag_extra}", weight: 1 },
+	{ value: "${flag_condition} ${flag_shape} ${flag_type} of the ${flag_provenance}${flag_extra}", weight: 2 },
+	{ value: "${flag_imperial_color_adj} ${flag_imperial_color} ${flag_type} used by the ${flag_provenance}${flag_extra}", weight: 2 },
 	{ value: "fatally compromised double-sided flag used by the ${flag_provenance}, one side emblazoned ${flag_basic_color} with ${flag_extra_humanoids_adj} ${fairy_folk}, the other side ${flag_imperial_color_adj} ${flag_imperial_color}${flag_extra}", weight: 1 },
   ],
   
@@ -8559,6 +8576,29 @@ celebration_type: [
 	{ value: "gold", weight: 1 },
 	{ value: "silver", weight: 1 },
   ],
+
+
+vehicle: [
+    { value: "wagon", weight: 1 },
+	{ value: "carriage", weight: 1 },
+	{ value: "cart", weight: 1 },
+	{ value: "chariot", weight: 1 },
+	{ value: "pageant wagon", weight: 1 },
+	{ value: "sleigh", weight: 1 },
+	{ value: "sledge", weight: 1 },
+  ],
+  
+  vehicle_adj: [
+    { value: "${crowns_metal_type}", weight: 1 },
+	{ value: "brightly colored", weight: 1 },
+	{ value: "mysterious", weight: 1 },
+	{ value: "ancient", weight: 1 },
+	{ value: "dangerous", weight: 1 },
+	{ value: "expensive", weight: 1 },
+	{ value: "military", weight: 1 },
+	{ value: "two-tiered", weight: 1 },
+  ],
+  
 
 
     intro: [
