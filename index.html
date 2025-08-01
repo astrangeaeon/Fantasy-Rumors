@@ -4346,7 +4346,7 @@ const tables = {
   Strange_Custom: [
     { value: "in ${foreign_adj}${foreignland}${foreign_phrase}, there’s ${a:strange} ${habit} where ${strangecustom}", weight: 2 },
 	{ value: "the people of ${foreign_adj}${foreignland} ${inherited_traits}", weight: 2 },
-	{ value: "the ${QuickNPCJobElite}s of ${foreign_adj}${foreignland} are said to race around in ${vehicle_adj} ${vehicle}s drawn by ${AnimalMount}s", weight: 1 },
+	{ value: "the sons and daughters of the ${QuickNPCJobElite}s of ${foreign_adj}${foreignland} are said to race around in ${vehicle_adj} ${vehicle}s drawn by ${AnimalMount}s", weight: 1 },
   ],
 
   strange: [
@@ -5378,6 +5378,7 @@ trap_location: [
     { value: "with severed tongues are learning telepathy", weight: 1 },
 	{ value: "bow before ${a:idol}", weight: 1 },
     { value: "worship a terrible god without feet or hands", weight: 1 },
+	{ value: "share wild tales and a bottle of ${alcohol_wine} ${alcohol_vintage}", weight: 2 },
   ],
 
   urbn_verbsingular: [
@@ -5492,6 +5493,7 @@ trap_location: [
     { value: "yearns for a release from all their suffering", weight: 1 },
     { value: "zealously guards the innocent from the wicked", weight: 1 },
 	{ value: "has fallen miserably in love with ${a:fairy_folk}", weight: 2 },
+	{ value: "nurses a bottle of ${alcohol_wine} ${alcohol_vintage}", weight: 2 },
   ],
 
   washups: [
@@ -6397,6 +6399,7 @@ trap_location: [
     { value: "Ginner", weight: 1 },
     { value: "Blaxter", weight: 1 },
     { value: "${CompoundWordNames}", weight: 1 },
+	{ value: "Ashkettle", weight: 1 },
   ],
 
   FamilyMember: [
@@ -8599,6 +8602,57 @@ vehicle: [
 	{ value: "two-tiered", weight: 1 },
   ],
   
+  alcohol: [
+    { value: "${alcohol_beer}", weight: 1 },
+	{ value: "${alcohol_wine}", weight: 1 },
+	{ value: "${alcohol_liquor}", weight: 1 },
+  ],
+  
+  alcohol_beer: [
+    { value: "beer", weight: 1 },
+	{ value: "ale", weight: 1 },
+	{ value: "stout", weight: 1 },
+	{ value: "lager", weight: 1 },
+	{ value: "mead", weight: 1 },
+	{ value: "porter", weight: 1 },
+	{ value: "pilsner", weight: 1 },
+	{ value: "cider", weight: 1 },
+  ],
+  
+  alcohol_beer_adj: [
+    { value: "watery", weight: 1 },
+	{ value: "thick", weight: 1 },
+	{ value: "black", weight: 1 },
+	{ value: "light", weight: 1 },
+	{ value: "pungent", weight: 1 },
+	{ value: "bitter", weight: 1 },
+	{ value: "tasteless", weight: 1 },
+	{ value: "nutritious", weight: 1 },
+	{ value: "hearty", weight: 1 },
+  ],
+  
+  alcohol_wine: [
+    { value: "red wine", weight: 1 },
+	{ value: "white wine", weight: 1 },
+	{ value: "green wine", weight: 1 },
+	{ value: "black wine", weight: 1 },
+	{ value: "${FantasyMeal_Fruit} wine", weight: 1 },
+  ],
+  
+  alcohol_vintage: [
+    { value: "from the Year of the ${uc:AnimalMain}", weight: 10 },
+	{ value: "from the Spring of ${onednine}${onednine}${onednine}", weight: 1 },
+  ],
+  
+  alcohol_liquor: [
+    { value: "vodka", weight: 1 },
+	{ value: "whiskey", weight: 1 },
+	{ value: "rum", weight: 1 },
+	{ value: "gin", weight: 1 },
+	{ value: "tequila", weight: 1 },
+	{ value: "brandy", weight: 1 },
+	{ value: "${FantasyMeal_Fruit}-flavored schnapps", weight: 1 },
+  ],
 
 
     intro: [
