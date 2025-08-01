@@ -2094,6 +2094,7 @@ const tables = {
     { value: "harbors", weight: 1 },
     { value: "lighthouses", weight: 1 },
     { value: "mausoleums", weight: 1 },
+	{ value: "bell towers", weight: 1 },
   ],
   
    historicalarchitecturestyles: [
@@ -2126,6 +2127,7 @@ const tables = {
     { value: "Harbors", weight: 1 },
     { value: "Lighthouses", weight: 1 },
     { value: "Mausoleums", weight: 1 },
+	{ value: "Bell Towers", weight: 1 },
   ],
 
   historicalperson: [
@@ -3753,6 +3755,7 @@ const tables = {
 	{ value: "${a:prophetic_visionary} from ${propheticnearcity} ${urbn_cityname} shared a vision where they watched${prophetic_vision_emotion} as ${prophetic_vision}", weight: 7 },
 	{ value: "The ${uc:prophetic_visionary} of ${urbn_cityname} bore psychic witness as ${prophetic_vision}", weight: 7 },
 	{ value: "all the ${prophetic_visionary}s of ${urbn_cityname} have been dreaming of ${a:urbn_place} where ${urbn_subjectverb}", weight: 7 },
+	{ value: "The shaman of the ${uc:AnimalMain} Tribe sacrificed ${a:AnimalSacrifice_adj} ${AnimalSacrifice} to their nameless and numberless gods and saw in the swirling smoke as ${prophetic_vision}", weight: 3 },
 
   ],
 
@@ -3982,6 +3985,7 @@ const tables = {
     { value: "sterilization", weight: 1 },
     { value: "the creative use of 300 nails", weight: 1 },
     { value: "vivisection", weight: 1 },
+	{ value: "bound to the Shame Pole", weight: 1 },
   ],
 
   rm: [
@@ -4285,6 +4289,7 @@ const tables = {
     { value: "ship that was blown off course, now crewed by the Father of Fish and his children", weight: 1 },
     { value: "ship that was lost carrying a mated pair of mimic birds descended from the mimic bird who heard the Prophet’s voice and passed the sound down through generations of other birds", weight: 1 },
     { value: "ship that was part of the treasure fleet of ${who_is_buried} which delivered precious gifts to foreign dignitaries and sank", weight: 1 },
+	{ value: "ship that sank carrying ${liquid_containers_large}s of potent ${alcohol} from ${foreignland} that's made all the fish, mermaids and even ${a:AnimalWater} blind-drunk", weight: 1 },
   ],
 
   slander: [
@@ -4344,8 +4349,9 @@ const tables = {
   ],
 
   Strange_Custom: [
-    { value: "in ${foreign_adj}${foreignland}${foreign_phrase}, there’s ${a:strange} ${habit} where ${strangecustom}", weight: 2 },
+    { value: "in ${foreign_adj}${foreignland}${foreign_phrase}, there’s ${a:strange} ${habit} where ${strangecustom}", weight: 3 },
 	{ value: "the people of ${foreign_adj}${foreignland} ${inherited_traits}", weight: 2 },
+	{ value: "the ${humanoids} of ${foreignland}${foreign_phrase} favor ${a:alcohol_beer_adj} ${alcohol_beer} served in ${a:liquid_containers_personal}", weight: 1 },
 	{ value: "the sons and daughters of the ${QuickNPCJobElite}s of ${foreign_adj}${foreignland} are said to race around in ${vehicle_adj} ${vehicle}s drawn by ${AnimalMount}s", weight: 1 },
   ],
 
@@ -4514,6 +4520,7 @@ const tables = {
     { value: "women become pregnant by eating a seed bud from a special tree. The babies are always girls and can speak as soon as they are born", weight: 1 },
     { value: "women breastfeed the sacred calves", weight: 1 },
 	{ value: "the ill will breathe three times into the mouth of a live fish, then throw it back into the water, to confuse Death", weight: 1 },
+	{ value: "there are no cemeteries because upon death, the corpse is divided up and given to the poor to eat", weight: 1 },
   ],
 
   strangenoises: [
@@ -5299,6 +5306,7 @@ trap_location: [
 	{ value: "${a:prophetic_visionary} from ${urbn_cityname}", weight: 1 },
 	{ value: "a multi-armed bandit", weight: 1 },
 	{ value: "an assassin who took their face from the Tree of Masks", weight: 1 },
+	{ value: "${a:pet_adj} ${pet} named ${pet_name}, one of only ten animals allowed to enter the ${otherworld_names} as a reward for their great deeds,", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6127,6 +6135,22 @@ trap_location: [
     { value: "crocodile", weight: 1 },
 	{ value: "toad", weight: 1 },
     { value: "frog", weight: 1 },
+  ],
+  
+  AnimalSacrifice: [
+    { value: "${AnimalFarm}", weight: 1 },
+    { value: "${AnimalBird}", weight: 1 },
+    { value: "${AnimalOrdinary}", weight: 1 },
+  ],
+  
+  AnimalSacrifice_adj: [
+    { value: "black", weight: 1 },
+    { value: "white", weight: 1 },
+    { value: "newborn", weight: 1 },
+	{ value: "elderly", weight: 1 },
+    { value: "fat", weight: 1 },
+    { value: "diseased", weight: 1 },
+	{ value: "healthy", weight: 1 },
   ],
   
   AnimalWater: [
@@ -8640,8 +8664,10 @@ vehicle: [
   ],
   
   alcohol_vintage: [
-    { value: "from the Year of the ${uc:AnimalMain}", weight: 10 },
+    { value: "from the Year of the ${uc:AnimalMain}", weight: 1 },
 	{ value: "from the Spring of ${onednine}${onednine}${onednine}", weight: 1 },
+	{ value: "from the reign of King ${FantasyNameMale} the ${uc:QuickNPCDescriptor}", weight: 1 },
+	{ value: "from the reign of Queen ${FantasyNameFemale} the ${uc:QuickNPCDescriptor}", weight: 1 },
   ],
   
   alcohol_liquor: [
@@ -8652,6 +8678,37 @@ vehicle: [
 	{ value: "tequila", weight: 1 },
 	{ value: "brandy", weight: 1 },
 	{ value: "${FantasyMeal_Fruit}-flavored schnapps", weight: 1 },
+  ],
+  
+  
+  liquid_containers_personal: [
+	{ value: "bottle", weight: 1 },
+	{ value: "jar", weight: 1 },
+	{ value: "jug", weight: 1 },
+	{ value: "wineskin", weight: 1 },
+	{ value: "canteen", weight: 1 },
+	{ value: "tankard", weight: 1 },
+	{ value: "goblet", weight: 1 },
+	{ value: "glass", weight: 1 },
+	{ value: "drinking horn", weight: 1 },
+	{ value: "flask", weight: 1 },
+	{ value: "kettle", weight: 1 },
+	{ value: "mug", weight: 1 },
+  ],
+  
+  liquid_containers_large: [
+    { value: "barrel", weight: 1 },
+	{ value: "keg", weight: 1 },
+	{ value: "coffin", weight: 1 },
+	{ value: "casket", weight: 1 },
+	{ value: "coffer", weight: 1 },
+	{ value: "trunk", weight: 1 },
+	{ value: "cauldron", weight: 1 },
+	{ value: "cask", weight: 1 },
+	{ value: "vat", weight: 1 },
+	{ value: "tub", weight: 1 },
+	{ value: "bucket", weight: 1 },
+	{ value: "drum", weight: 1 },
   ],
 
 
