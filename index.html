@@ -5588,6 +5588,7 @@ trap_location: [
 	{ value: "Daimyo Gekido, whose unflinching gaze turned back the Great Tsunami,${tomb_anecdote}", weight: 1 },
 	{ value: "Archon Rabindranath, whose laughter thundered the Jade Pavilion,${tomb_anecdote}", weight: 1 },
     { value: "the King of Dust, in glorious bandages arrayed,${tomb_anecdote}", weight: 1 },
+	{ value: "Lady Sophia, beautiful as the moon and terrible as an army with banners,${tomb_anecdote}", weight: 1 },
   ],
 
   wilds_adj: [
@@ -6089,6 +6090,8 @@ trap_location: [
 	{ value: "skunk", weight: 1 },
 	{ value: "raccoon", weight: 1 },
 	{ value: "beaver", weight: 1 },
+	{ value: "camel", weight: 1 },
+	{ value: "goat", weight: 1 },
   ],
   
   AnimalMount: [
@@ -8548,6 +8551,7 @@ celebration_type: [
 	{ value: "dying animals will crawl to their tent", weight: 1 },
 	{ value: "they will be offended by the stench of ${taboo_consequence_stench}", weight: 1 },
 	{ value: "the moon and stars will be hidden from them", weight: 1 },
+	{ value: "the water in their waterskin will be replaced with ${liquid_cargo}", weight: 1 },
 	
   ],
   
@@ -8606,6 +8610,7 @@ celebration_type: [
 	{ value: "wet seaweed and driftwood", weight: 1 },
 	{ value: "fresh bread baked anew every morning, yesterday's crown thrown to the poor", weight: 1 },
 	{ value: "clay gathered at ${boundary_times} from the ${EgyptianNameMale} River", weight: 1 },
+	{ value: "coiled serpents, venomous but kept docile through sorcery", weight: 1 },
   ],
   
   crowns_feather_type: [
@@ -8732,6 +8737,17 @@ vehicle: [
 	{ value: "tub", weight: 1 },
 	{ value: "bucket", weight: 1 },
 	{ value: "drum", weight: 1 },
+  ],
+  
+  liquid_cargo: [
+    { value: "${cod_liquid}", weight: 1 },
+	{ value: "${alcohol}", weight: 1 },
+	{ value: "${AnimalMammal} milk", weight: 1 },
+	{ value: "${AnimalPrey} blood", weight: 1 },
+	{ value: "serpent venom", weight: 1 },
+	{ value: "${Colors} sand from ${placebeyond}", weight: 1 },
+	{ value: "small ${crowns_metal_type} from ${urbn_cityname}, the City of ${urbn_citynickname}", weight: 1 },
+	{ value: "dormant ${AnimalInsect}s from the ${landscape_types_artificial} of ${foreignland}", weight: 1 },
   ],
 
 
