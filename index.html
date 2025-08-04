@@ -531,7 +531,7 @@ const tables = {
   bad_thing: [
     { value: "${creepyvillain} enter through the north gate", weight: 1 },
     { value: "${heroes_and_villains} return", weight: 1 },
-    { value: "a ${Colors} tornado sweep away all evidence of civilization", weight: 1 },
+    { value: "${a:Colors} tornado sweep away all evidence of civilization", weight: 1 },
     { value: "all the women of the region become barren", weight: 1 },
     { value: "control of the city return to its pre-human rulers", weight: 1 },
     { value: "dolphins feed in the forests of Erymanthus", weight: 1 },
@@ -5402,6 +5402,7 @@ trap_location: [
     { value: "worship a terrible god without feet or hands", weight: 1 },
 	{ value: "share wild tales and a bottle of ${alcohol_wine} ${alcohol_vintage}", weight: 2 },
 	{ value: "offer hard coin for directions to ${landmark}", weight: 1 },
+	{ value: "cheerfully offer sips from ${a:liquid_containers_large} containing ${exotic_water_types}", weight: 1 },
   ],
 
   urbn_verbsingular: [
@@ -5519,6 +5520,7 @@ trap_location: [
 	{ value: "nurses a bottle of ${alcohol_wine} ${alcohol_vintage}", weight: 2 },
 	{ value: "seeks a way back to the Garden of the Law", weight: 1 },
 	{ value: "needs an escort to ${landmark}", weight: 1 },
+	{ value: "drinks ${a:liquid_containers_personal} of water they claim is ${exotic_water_provenance}", weight: 1 },
   ],
 
   washups: [
@@ -8717,7 +8719,7 @@ vehicle: [
 	{ value: "canteen", weight: 1 },
 	{ value: "tankard", weight: 1 },
 	{ value: "goblet", weight: 1 },
-	{ value: "glass", weight: 1 },
+	{ value: "cup", weight: 1 },
 	{ value: "drinking horn", weight: 1 },
 	{ value: "flask", weight: 1 },
 	{ value: "kettle", weight: 1 },
@@ -8753,7 +8755,7 @@ vehicle: [
   
   exotic_water_provenance: [
     { value: "from the scrying pool in ${slumberplace}", weight: 1 },
-	{ value: "from the ${AnimalBigCat} Fountain in ${urbn_cityname}", weight: 1 },
+	{ value: "from the Fountain of the ${uc:AnimalBigCat} in ${urbn_cityname}", weight: 1 },
 	{ value: "from ${body_of_water}", weight: 1 },
 	{ value: "from the healing baths in ${foreignland}", weight: 1 },
 	{ value: "from the hot springs of ${coastal}", weight: 1 },
@@ -8772,9 +8774,9 @@ vehicle: [
   exotic_water_types: [
     { value: "the voluminous corpse of a water prince", weight: 1 },
 	{ value: "melted ice and snow from the peak of Mount Katla", weight: 1 },
-	{ value: "blood from a dryad", weight: 1 },
+	{ value: "the blood of a dryad", weight: 1 },
 	{ value: "water blessed by Saint ${SaintName}", weight: 1 },
-	{ value: "tears of ${a:fairy_folk}", weight: 1 },
+	{ value: "the tears of ${a:fairy_folk}", weight: 1 },
 	{ value: "water cursed by the daemon ${DemonName}", weight: 1 },
 	{ value: "water in which ${heroes_and_villains} performed their ablutions", weight: 1 },
 	{ value: "water in which nymphs have bathed", weight: 1 },
