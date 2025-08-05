@@ -1457,6 +1457,9 @@ const tables = {
     { value: "outlandish", weight: 1 },
 	{ value: "immodest", weight: 1 },
 	{ value: "edible", weight: 1 },
+	{ value: "light-reflecting", weight: 1 },
+	{ value: "luminescent", weight: 1 },
+	{ value: "scented", weight: 1 },
   ],
 
   duo_clothing: [
@@ -2283,6 +2286,7 @@ const tables = {
     { value: "werewolves", weight: 1 },
     { value: "witches", weight: 1 },
 	{ value: "harpies", weight: 1 },
+	{ value: "mermaids", weight: 1 },
   ],
   
   huntingmonster_singular: [
@@ -2306,6 +2310,7 @@ const tables = {
     { value: "werewolf", weight: 1 },
     { value: "witch", weight: 1 },
 	{ value: "harpy", weight: 1 },
+	{ value: "mermaid", weight: 1 },
   ],
 
   husband_adj: [
@@ -3182,7 +3187,8 @@ const tables = {
 
   Maritime: [
     // { value: "somewhere ${maritime_locn} is ${maritime_branch} (this is a great idea to vary the syntax, but it plays havoc with commas. I\'ll revisit the phrasing so either way looks good at some point--I was getting several \",.\"s)", weight: 0 },
-    { value: "there’s ${maritime_branch} somewhere ${maritime_locn}", weight: 1 },
+    { value: "there’s ${maritime_branch} somewhere ${maritime_locn}", weight: 3 },
+	{ value: "${a:ship_type_merchant} from ${foreignland} ${ship_extra} pulled into the harbor in ${urbn_cityname} with a cargo of ${duo_clothing_adj} ${flag_imperial_color} ${duo_clothing}, ${onedhundred} ${liquid_containers_large}s filled with ${liquid_cargo} and ${ship_cargo_container} of exotic ${magicalcommonobject_plural} and ${magicalcommonobject_plural} ${ship_manufacturing_place}", weight: 1 },
   ],
 
   maritime_locn: [
@@ -3485,6 +3491,7 @@ const tables = {
     { value: "vampire", weight: 1 },
 	{ value: "dryad", weight: 1 },
 	{ value: "fairy", weight: 1 },
+	{ value: "mermaid", weight: 1 },
   ],
 
   oppressed_grp: [
@@ -5891,15 +5898,24 @@ trap_location: [
   ],
 
   onedhundred: [
-    { value: "7", weight: 1 },
-    { value: "14", weight: 1 },
-    { value: "35", weight: 1 },
-    { value: "49", weight: 1 },
-    { value: "53", weight: 1 },
-    { value: "68", weight: 1 },
-    { value: "70", weight: 1 },
-    { value: "85", weight: 1 },
-    { value: "99", weight: 1 },
+    { value: "seven", weight: 1 },
+    { value: "fourteen", weight: 1 },
+    { value: "thirty-five", weight: 1 },
+    { value: "forty-nine", weight: 1 },
+    { value: "fifty-three", weight: 1 },
+    { value: "sixty-eight", weight: 1 },
+    { value: "seventy", weight: 1 },
+    { value: "eighty-five", weight: 1 },
+    { value: "ninety-nine", weight: 1 },
+	{ value: "nine", weight: 1 },
+    { value: "twenty-two", weight: 1 },
+    { value: "thirty-seven", weight: 1 },
+    { value: "forty", weight: 1 },
+    { value: "fifty", weight: 1 },
+    { value: "sixty", weight: 1 },
+    { value: "seventy-one", weight: 1 },
+    { value: "eighty", weight: 1 },
+    { value: "ninety", weight: 1 },
   ],
   
   
@@ -7988,6 +8004,13 @@ celebration_type: [
 	{ value: "dwarf", weight: 1 },
   ],
   
+  humanoid_adj: [
+    { value: "elvish", weight: 1 },
+	{ value: "dwarven", weight: 1 },
+	{ value: "gnomish", weight: 1 },
+	{ value: "hobbit-touched", weight: 1 },
+  ],
+  
   constellation: [
     { value: "the ${uc:daemontype} ${uc:AnimalMain}", weight: 1 },
 	{ value: "the ${uc:onedten} ${uc:FamilyMember}s", weight: 1 },
@@ -8724,6 +8747,8 @@ vehicle: [
 	{ value: "flask", weight: 1 },
 	{ value: "kettle", weight: 1 },
 	{ value: "mug", weight: 1 },
+	{ value: "amphora", weight: 1 },
+	{ value: "carafe", weight: 1 },
   ],
   
   liquid_containers_large: [
@@ -8743,14 +8768,16 @@ vehicle: [
   
   liquid_cargo: [
     { value: "${cod_liquid}", weight: 1 },
-	{ value: "${alcohol}", weight: 1 },
+	{ value: "${humanoid_adj} ${alcohol}", weight: 1 },
 	{ value: "${AnimalMammal} milk", weight: 1 },
 	{ value: "${AnimalPrey} blood", weight: 1 },
 	{ value: "serpent venom", weight: 1 },
 	{ value: "${Colors} sand from ${placebeyond}", weight: 1 },
-	{ value: "small ${crowns_metal_type} from ${urbn_cityname}, the City of ${urbn_citynickname}", weight: 1 },
+	{ value: "small ${crowns_metal_type} coins from ${urbn_cityname}, the City of ${urbn_citynickname}", weight: 1 },
 	{ value: "dormant ${AnimalInsect}s from the ${landscape_types_artificial} of ${foreignland}", weight: 1 },
 	{ value: "${AnimalPrey} urine", weight: 1 },
+	{ value: "water ${exotic_water_provenance}", weight: 1 },
+	{ value: "${alcohol_beer_adj} ${humanoid_adj} ${alcohol_beer}", weight: 1 },
   ],
   
   exotic_water_provenance: [
@@ -8808,6 +8835,95 @@ vehicle: [
   ],
 
 
+
+ship_type: [
+	{ value: "${ship_type_merchant}", weight: 1 },
+	{ value: "${ship_type_pleasure}", weight: 1 },
+	{ value: "${ship_type_small}", weight: 1 },
+	{ value: "${ship_type_war}", weight: 1 },
+  ],
+
+  ship_type_merchant: [
+	{ value: "cog", weight: 1 },
+	{ value: "merchant hulk", weight: 1 },
+	{ value: "caravel", weight: 1 },
+	{ value: "carrack", weight: 1 },
+	{ value: "galley", weight: 1 },
+	{ value: "barge", weight: 1 },
+	{ value: "schooner", weight: 1 },
+	{ value: "cargo ship", weight: 1 },
+  ],
+
+
+  ship_type_war: [
+	{ value: "sloop", weight: 1 },
+	{ value: "trireme", weight: 1 },
+	{ value: "bireme", weight: 1 },
+	{ value: "frigate", weight: 1 },
+	{ value: "man-of-war", weight: 1 },
+	{ value: "corvette", weight: 1 },
+  ],
+  
+  ship_type_small: [
+	{ value: "barque", weight: 1 },
+	{ value: "sailboat", weight: 1 },
+	{ value: "rowboat", weight: 1 },
+	{ value: "cutter", weight: 1 },
+	{ value: "caravel", weight: 1 },
+	{ value: "kayak", weight: 1 },
+	{ value: "canoe", weight: 1 },
+	{ value: "raft", weight: 1 },
+	{ value: "catamaran", weight: 1 },
+	{ value: "dinghy", weight: 1 },
+	{ value: "coracle", weight: 1 },
+  ],
+  
+  ship_type_pleasure: [
+	{ value: "yacht", weight: 1 },
+	{ value: "pleasure barge", weight: 1 },
+	{ value: "pleg-scip", weight: 1 },
+  ],
+  
+  ship_extra: [
+	{ value: "flying the colors of ancient ${slumberplace}", weight: 1 },
+	{ value: "flying the ${flag}", weight: 1 },
+	{ value: "with a figurehead of ${a:huntingmonster_singular}", weight: 1 },
+	{ value: "crewed by ${trap_builder_servant_adj} ${humanoids}", weight: 1 },
+	{ value: "with a crew of ensorcelled ${huntingmonster}", weight: 1 },
+	{ value: "commanded by Captain ${FantasyLastName}", weight: 1 },
+	{ value: "with no visible crew", weight: 1 },
+	{ value: "named ${ShipNames}", weight: 1 },
+	{ value: "which keeps ${a:AnimalSnake} on board for luck", weight: 1 },
+  ],
+  
+  
+  ship_manufacturing_place: [
+	{ value: "from the ${ship_manufacturing_place_building} of distant ${urbn_cityname}", weight: 1 },
+	{ value: "made by ${ship_manufacturing_place_laborer} in distant ${urbn_cityname}", weight: 1 },
+  ],
+  
+  ship_manufacturing_place_building: [
+	{ value: "workshops", weight: 1 },
+	{ value: "factories", weight: 1 },
+	{ value: "warehouses", weight: 1 },
+  ],
+  
+  ship_manufacturing_place_laborer: [
+	{ value: "proud artisans", weight: 1 },
+	{ value: "slaves", weight: 1 },
+	{ value: "children", weight: 1 },
+	{ value: "prisoners", weight: 1 },
+  ],
+  
+  ship_cargo_container: [
+	{ value: "crates", weight: 1 },
+	{ value: "containers", weight: 1 },
+	{ value: "boxes", weight: 1 },
+	{ value: "chests", weight: 1 },
+	{ value: "coffers", weight: 1 },
+	{ value: "bundles", weight: 1 },
+	{ value: "bins", weight: 1 },
+  ],
 
     intro: [
 	    { value: "${I_herd}", weight: 1 }
