@@ -417,6 +417,8 @@ const tables = {
 	{ value: " who against all advice opened the Door in the Ceiling,", weight: 1 },
 	{ value: " who vanquished ${onedten} assassins while drunk and blindfolded in the upper chambers of the ${uc:AnimalMain} Brothel in ${urbn_cityname},", weight: 1 },
 	{ value: " whose mirror only reflected their nemesis, ${creepyvillain},", weight: 1 },
+	{ value: " who shrank not from friends in the hour of danger,", weight: 1 },
+	{ value: " whose naked form dazzled and provoked,", weight: 1 },
   ],
 
   hundred_words: [
@@ -775,6 +777,7 @@ const tables = {
     { value: "wedding rings that are no longer in use", weight: 1 },
     { value: "wine from fallen cultures", weight: 1 },
     { value: "wood from the Holy Woods, where to break one twig is a sin", weight: 1 },
+	{ value: "polyphallic wind chimes", weight: 1 },
   ],
 
   construction_help: [
@@ -3250,6 +3253,7 @@ const tables = {
     { value: "the one thousand and twenty four volumes of Diagoras of Melos’ \'\'Political, Social and Military History of the Ants\'\'", weight: 1 },
 	{ value: "a signet ring with the seal of ${a:SignetSymbol} on it, able to open every door in the city of ${urbn_cityname}", weight: 1 },
 	{ value: "${a:MusicalInstrument} from ${foreignland}", weight: 1 },
+	{ value: "an adder stone that forces spirits to state their business and name", weight: 1 },
   ],
 
   membership: [
@@ -4000,6 +4004,7 @@ const tables = {
     { value: "the creative use of 300 nails", weight: 1 },
     { value: "vivisection", weight: 1 },
 	{ value: "bound to the Shame Pole", weight: 1 },
+	{ value: "death by whip", weight: 1 },
   ],
 
   rm: [
@@ -4360,6 +4365,8 @@ const tables = {
     { value: "Pharros", weight: 1 },
     { value: "Tantamounou", weight: 1 },
     { value: "Tartessos", weight: 1 },
+	{ value: "Makassar", weight: 1 },
+	{ value: "Kartasura", weight: 1 },
   ],
 
   Strange_Custom: [
@@ -5532,6 +5539,7 @@ trap_location: [
 	{ value: "seeks a way back to the Garden of the Law", weight: 1 },
 	{ value: "needs an escort to ${landmark}", weight: 1 },
 	{ value: "drinks ${a:liquid_containers_personal} of water they claim is ${exotic_water_provenance}", weight: 1 },
+	{ value: "swaps false brilliants for real stones of price", weight: 1 },
   ],
 
   washups: [
@@ -8043,6 +8051,19 @@ celebration_type: [
 	{ value: "hobbit-touched", weight: 1 },
   ],
   
+   humanoid_young: [
+    { value: "hobbit girls", weight: 1 },
+	{ value: "gnome lads", weight: 1 },
+	{ value: "elf girls", weight: 1 },
+	{ value: "young dwarfs", weight: 1 },
+	{ value: "elf lads", weight: 1 },
+	{ value: "teenage hobbits", weight: 1 },
+	{ value: "teenage elves", weight: 1 },
+	{ value: "teenage dwarfs", weight: 1 },
+	{ value: "teenage boys", weight: 1 },
+	{ value: "teenage girls", weight: 1 },
+  ],
+  
   constellation: [
     { value: "the ${uc:daemontype} ${uc:AnimalMain}", weight: 1 },
 	{ value: "the ${uc:onedten} ${uc:FamilyMember}s", weight: 1 },
@@ -8938,6 +8959,8 @@ ship_type: [
 	{ value: "workshops", weight: 1 },
 	{ value: "factories", weight: 1 },
 	{ value: "warehouses", weight: 1 },
+	{ value: "storied guilds", weight: 1 },
+	{ value: "workers' communes", weight: 1 },
   ],
   
   ship_manufacturing_place_laborer: [
@@ -8962,7 +8985,9 @@ ship_type: [
   ship_cargo: [
 	{ value: "with a cargo of ${duo_clothing_adj} ${flag_imperial_color} ${duo_clothing}, ${onedhundred} ${liquid_containers_large}s filled with ${liquid_cargo} and ${onedfive} dozen ${ship_cargo_container} of ${ship_merchandise_adj} ${magicalcommonobject_plural} ${ship_manufacturing_place}", weight: 1 },
 	{ value: "bearing ${onedfive} dozen ${ship_cargo_animal_type}s and a ${flag_condition} tapestry depicting ${painting_subject_matter}", weight: 1 },
-	{ value: "and eager ${ship_cargo_dockworker} are already unloading ${ship_cargo_container} of ${ship_merchandise_adj} ${Tools}s and dried ${FantasyMeal_Fruit_plural} from the ${dwarfclanname} Clan orchards", weight: 1 },
+	{ value: "and eager ${ship_cargo_dockworker} are already unloading ${ship_cargo_container} of ${ship_merchandise_adj} ${Tools}s and ${ship_merchandise_fruit_adj} ${FantasyMeal_Fruit_plural} from the ${dwarfclanname} Clan orchards", weight: 1 },
+	{ value: "carrying a hundred ${ship_cargo_container} of ${ship_merchandise_adj} toy ${ship_cargo_toy_type}s, popular with local ${humanoid_young}, and a few dozen ${ship_cargo_novelty_type} and ${liquid_containers_large}s of ${alcohol_liquor} for the parents", weight: 1 },
+	{ value: "with neat ${ship_cargo_container} of meticulously labeled ${ship_cargo_expedition_type} from the successful ${FantasyLastName} Expedition to ${foreignland}${foreign_phrase} along with ${ship_cargo_wizard_type} that was found there as well", weight: 1 },
   ],
   
   ship_merchandise_adj: [
@@ -8973,6 +8998,16 @@ ship_type: [
 	{ value: "ornamental", weight: 1 },
 	{ value: "second-and-thirdhand", weight: 1 },
 	{ value: "luxurious", weight: 1 },
+  ],
+  
+  ship_merchandise_fruit_adj: [
+	{ value: "dried", weight: 1 },
+	{ value: "enormous", weight: 1 },
+	{ value: "fresh", weight: 1 },
+	{ value: "unusually colored", weight: 1 },
+	{ value: "miniature", weight: 1 },
+	{ value: "misshapen", weight: 1 },
+	{ value: "artificial", weight: 1 },
   ],
   
   ship_cargo_animal_type: [
@@ -8986,6 +9021,37 @@ ship_type: [
 	{ value: "stevedores", weight: 1 },
 	{ value: "longshoremen", weight: 1 },
 	{ value: "day laborers", weight: 1 },
+  ],
+  
+   ship_cargo_toy_type: [
+	{ value: "${vehicle}", weight: 1 },
+	{ value: "${ship_type}", weight: 1 },
+	{ value: "${huntingmonster_singular} doll", weight: 1 },
+	{ value: "${huntingmonster_singular} doll", weight: 1 },
+  ],
+  
+  ship_cargo_wizard_type: [
+	{ value: "an enchanted ${Tools}", weight: 1 },
+	{ value: "a flaming ${HaftedWeapons}s", weight: 1 },
+	{ value: "a cauldron of dubious potion", weight: 1 },
+	{ value: "a cast off magic wand", weight: 1 },
+	{ value: "a black sphere", weight: 1 },
+	{ value: "a flying carpet", weight: 1 },
+	{ value: "a talking ${ship_cargo_animal_type}", weight: 1 },
+	{ value: "a ghost trapped in ${a:liquid_containers_personal}", weight: 1 },
+  ],
+  
+  ship_cargo_novelty_type: [
+	{ value: "taxidermied ${AnimalBigCat}s", weight: 1 },
+	{ value: "${Colors} daemon masks", weight: 1 },
+	{ value: "leather balls filled with ${humanoid} hair", weight: 1 },
+  ],
+  
+  ship_cargo_expedition_type: [
+	{ value: "fossils", weight: 1 },
+	{ value: "artifacts", weight: 1 },
+	{ value: "plant samples", weight: 1 },
+	{ value: "mineral samples", weight: 1 },
   ],
 
     intro: [
