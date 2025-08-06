@@ -416,6 +416,7 @@ const tables = {
 	{ value: " who eliminated desire from his heart,", weight: 1 },
 	{ value: " who against all advice opened the Door in the Ceiling,", weight: 1 },
 	{ value: " who vanquished ${onedten} assassins while drunk and blindfolded in the upper chambers of the ${uc:AnimalMain} Brothel in ${urbn_cityname},", weight: 1 },
+	{ value: " whose mirror only reflected their nemesis, ${creepyvillain},", weight: 1 },
   ],
 
   hundred_words: [
@@ -872,6 +873,7 @@ const tables = {
     { value: "Yog-Sothoth", weight: 1 },
 	{ value: "Patollo the Gardener", weight: 1 },
 	{ value: "${fairy_folk_named}", weight: 1 },
+	{ value: "a terrible fish", weight: 1 },
   ],
 
   criminals: [
@@ -1460,6 +1462,8 @@ const tables = {
 	{ value: "light-reflecting", weight: 1 },
 	{ value: "luminescent", weight: 1 },
 	{ value: "scented", weight: 1 },
+	{ value: "stained", weight: 1 },
+	{ value: "ragged", weight: 1 },
   ],
 
   duo_clothing: [
@@ -3188,7 +3192,7 @@ const tables = {
   Maritime: [
     // { value: "somewhere ${maritime_locn} is ${maritime_branch} (this is a great idea to vary the syntax, but it plays havoc with commas. I\'ll revisit the phrasing so either way looks good at some point--I was getting several \",.\"s)", weight: 0 },
     { value: "there’s ${maritime_branch} somewhere ${maritime_locn}", weight: 3 },
-	{ value: "${a:ship_type_merchant} from ${foreignland} ${ship_extra} pulled into the harbor in ${urbn_cityname} with a cargo of ${duo_clothing_adj} ${flag_imperial_color} ${duo_clothing}, ${onedhundred} ${liquid_containers_large}s filled with ${liquid_cargo} and ${ship_cargo_container} of exotic ${magicalcommonobject_plural} and ${magicalcommonobject_plural} ${ship_manufacturing_place}", weight: 1 },
+	{ value: "${a:ship_type_merchant} from ${foreignland} ${ship_extra} pulled into the harbor in ${urbn_cityname} ${ship_cargo}", weight: 1 },
   ],
 
   maritime_locn: [
@@ -6670,6 +6674,34 @@ trap_location: [
 	{ value: "cranberry", weight: 1 },
 	{ value: "grape", weight: 1 },
   ],
+  
+  FantasyMeal_Fruit_plural: [
+    { value: "apples", weight: 1 },
+    { value: "pears", weight: 1 },
+    { value: "mangos", weight: 1 },
+	{ value: "bananas", weight: 1 },
+    { value: "kiwis", weight: 1 },
+    { value: "oranges", weight: 1 },
+	{ value: "melons", weight: 1 },
+	{ value: "dragonfruits", weight: 1 },
+	{ value: "lemons", weight: 1 },
+    { value: "limes", weight: 1 },
+    { value: "peaches", weight: 1 },
+	{ value: "raspberries", weight: 1 },
+	{ value: "strawberries", weight: 1 },
+	{ value: "blackberries", weight: 1 },
+    { value: "cherries", weight: 1 },
+	{ value: "passionfruits", weight: 1 },
+	{ value: "persimmons", weight: 1 },
+	{ value: "pomegranates", weight: 1 },
+	{ value: "pawpaws", weight: 1 },
+	{ value: "plums", weight: 1 },
+	{ value: "dates", weight: 1 },
+	{ value: "figs", weight: 1 },
+	{ value: "apricots", weight: 1 },
+	{ value: "cranberries", weight: 1 },
+	{ value: "grapes", weight: 1 },
+  ],
 
   HaftedWeapons: [
     { value: "battle axe", weight: 1 },
@@ -8899,7 +8931,7 @@ ship_type: [
   
   ship_manufacturing_place: [
 	{ value: "from the ${ship_manufacturing_place_building} of distant ${urbn_cityname}", weight: 1 },
-	{ value: "made by ${ship_manufacturing_place_laborer} in distant ${urbn_cityname}", weight: 1 },
+	{ value: "made by ${ship_manufacturing_place_laborer} in faraway ${urbn_cityname}", weight: 1 },
   ],
   
   ship_manufacturing_place_building: [
@@ -8923,6 +8955,37 @@ ship_type: [
 	{ value: "coffers", weight: 1 },
 	{ value: "bundles", weight: 1 },
 	{ value: "bins", weight: 1 },
+	{ value: "baskets", weight: 1 },
+  ],
+  
+  
+  ship_cargo: [
+	{ value: "with a cargo of ${duo_clothing_adj} ${flag_imperial_color} ${duo_clothing}, ${onedhundred} ${liquid_containers_large}s filled with ${liquid_cargo} and ${onedfive} dozen ${ship_cargo_container} of ${ship_merchandise_adj} ${magicalcommonobject_plural} ${ship_manufacturing_place}", weight: 1 },
+	{ value: "bearing ${onedfive} dozen ${ship_cargo_animal_type}s and a ${flag_condition} tapestry depicting ${painting_subject_matter}", weight: 1 },
+	{ value: "and eager ${ship_cargo_dockworker} are already unloading ${ship_cargo_container} of ${ship_merchandise_adj} ${Tools}s and dried ${FantasyMeal_Fruit_plural} from the ${dwarfclanname} Clan orchards", weight: 1 },
+  ],
+  
+  ship_merchandise_adj: [
+	{ value: "exotic", weight: 1 },
+	{ value: "shoddy", weight: 1 },
+	{ value: "cheap", weight: 1 },
+	{ value: "damaged", weight: 1 },
+	{ value: "ornamental", weight: 1 },
+	{ value: "second-and-thirdhand", weight: 1 },
+	{ value: "luxurious", weight: 1 },
+  ],
+  
+  ship_cargo_animal_type: [
+	{ value: "${AnimalFarm}", weight: 3 },
+	{ value: "${AnimalMount}", weight: 1 },
+	{ value: "${AnimalBird}", weight: 1 },
+  ],
+  
+  ship_cargo_dockworker: [
+	{ value: "dockworkers", weight: 1 },
+	{ value: "stevedores", weight: 1 },
+	{ value: "longshoremen", weight: 1 },
+	{ value: "day laborers", weight: 1 },
   ],
 
     intro: [
