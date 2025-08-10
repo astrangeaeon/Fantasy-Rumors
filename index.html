@@ -6203,6 +6203,22 @@ trap_location: [
 	{ value: "healthy", weight: 1 },
   ],
   
+  AnimalVenomous: [
+    { value: "scorpion", weight: 1 },
+    { value: "adder", weight: 1 },
+    { value: "cobra", weight: 1 },
+	{ value: "viper", weight: 1 },
+    { value: "asp", weight: 1 },
+    { value: "krait", weight: 1 },
+	{ value: "tarantula", weight: 1 },
+	{ value: "tropical widow", weight: 1 },
+    { value: "jellyfish", weight: 1 },
+	{ value: "stingray", weight: 1 },
+    { value: "toadfish", weight: 1 },
+    { value: "hydra", weight: 1 },
+	{ value: "blue octopus", weight: 1 },
+  ],
+  
   AnimalWater: [
     { value: "shark", weight: 1 },
     { value: "dolphin", weight: 1 },
@@ -8824,7 +8840,7 @@ vehicle: [
 	{ value: "${humanoid_adj} ${alcohol}", weight: 1 },
 	{ value: "${AnimalMammal} milk", weight: 1 },
 	{ value: "${AnimalPrey} blood", weight: 1 },
-	{ value: "serpent venom", weight: 1 },
+	{ value: "${AnimalVenomous} venom", weight: 1 },
 	{ value: "${Colors} sand from ${placebeyond}", weight: 1 },
 	{ value: "small ${crowns_metal_type} coins from ${urbn_cityname}, the City of ${urbn_citynickname}", weight: 1 },
 	{ value: "dormant ${AnimalInsect}s from the ${landscape_types_artificial} of ${foreignland}", weight: 1 },
@@ -8986,7 +9002,7 @@ ship_type: [
 	{ value: "with a cargo of ${duo_clothing_adj} ${flag_imperial_color} ${duo_clothing}, ${onedhundred} ${liquid_containers_large}s filled with ${liquid_cargo} and ${onedfive} dozen ${ship_cargo_container} of ${ship_merchandise_adj} ${magicalcommonobject_plural} ${ship_manufacturing_place}", weight: 1 },
 	{ value: "bearing ${onedfive} dozen ${ship_cargo_animal_type}s and a ${flag_condition} tapestry depicting ${painting_subject_matter}", weight: 1 },
 	{ value: "and eager ${ship_cargo_dockworker} are already unloading ${ship_cargo_container} of ${ship_merchandise_adj} ${Tools}s and ${ship_merchandise_fruit_adj} ${FantasyMeal_Fruit_plural} from the ${dwarfclanname} Clan orchards", weight: 1 },
-	{ value: "carrying a hundred ${ship_cargo_container} of ${ship_merchandise_adj} toy ${ship_cargo_toy_type}s, popular with local ${humanoid_young}, and a few dozen ${ship_cargo_novelty_type} and ${liquid_containers_large}s of ${alcohol_liquor} for the parents", weight: 1 },
+	{ value: "carrying a hundred ${ship_cargo_container} of ${ship_merchandise_adj} ${ship_cargo_toy_type}s, popular with local ${humanoid_young}, a few dozen ${ship_cargo_novelty_type} and ${liquid_containers_large}s of ${alcohol_liquor} for the parents", weight: 1 },
 	{ value: "with neat ${ship_cargo_container} of meticulously labeled ${ship_cargo_expedition_type} from the successful ${FantasyLastName} Expedition to ${foreignland}${foreign_phrase} along with ${ship_cargo_wizard_type} that was found there as well", weight: 1 },
   ],
   
@@ -9024,15 +9040,15 @@ ship_type: [
   ],
   
    ship_cargo_toy_type: [
-	{ value: "${vehicle}", weight: 1 },
-	{ value: "${ship_type}", weight: 1 },
+	{ value: "model ${vehicle}", weight: 1 },
+	{ value: "toy ${ship_type}", weight: 1 },
 	{ value: "${huntingmonster_singular} doll", weight: 1 },
-	{ value: "${huntingmonster_singular} doll", weight: 1 },
+	{ value: "wooden practice ${HaftedWeapons}", weight: 1 },
   ],
   
   ship_cargo_wizard_type: [
 	{ value: "an enchanted ${Tools}", weight: 1 },
-	{ value: "a flaming ${HaftedWeapons}s", weight: 1 },
+	{ value: "a flaming ${HaftedWeapons}", weight: 1 },
 	{ value: "a cauldron of dubious potion", weight: 1 },
 	{ value: "a cast off magic wand", weight: 1 },
 	{ value: "a black sphere", weight: 1 },
