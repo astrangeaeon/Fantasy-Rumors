@@ -5886,6 +5886,7 @@ trap_location: [
 	{ value: "someone has planted the ${flag} ${wilds_specific_locn}", weight: 2 },
 	{ value: "travelers venturing ${CompassDirectionPrimary} of ${landmark} should bring ${a:FantasyMeal_Fruit} and ${a:magicalcommonobject} with them, in case they cross paths with ${fairy_folk_named}", weight: 2 },
 	{ value: "when travelers find themselves in the enchanted ${otherworld_names}, they ${taboo}, when they return to the lands of men, ${taboo_consequence}", weight: 4 },
+	{ value: "there's a soft clearing where the breeze whistles the melody of '${ballad_titles}'", weight: 2 },
   ],
   
   
@@ -6784,6 +6785,48 @@ trap_location: [
     { value: "club", weight: 1 },
     { value: "flail", weight: 1 },
   ],
+  
+  BladedWeapons_Dagger: [
+    { value: "dagger", weight: 1 },
+    { value: "knife", weight: 1 },
+    { value: "knightly dagger", weight: 1 },
+    { value: "ear dagger", weight: 1 },
+    { value: "poignard", weight: 1 },
+    { value: "misericorde", weight: 1 },
+    { value: "stiletto", weight: 1 },
+    { value: "dirk", weight: 1 },
+    { value: "katar", weight: 1 },
+    { value: "kris", weight: 1 },
+    { value: "karambit", weight: 1 },
+    { value: "sai", weight: 1 },
+	],
+	
+	BladedWeapons_Sword: [
+    { value: "khopesh", weight: 1 },
+    { value: "nimsha", weight: 1 },
+    { value: "shotel", weight: 1 },
+    { value: "sabre", weight: 1 },
+    { value: "butterfly sword", weight: 1 },
+    { value: "katana", weight: 1 },
+    { value: "gauntlet-sword", weight: 1 },
+    { value: "scimitar", weight: 1 },
+    { value: "gladius", weight: 1 },
+    { value: "shortsword", weight: 1 },
+    { value: "broadsword", weight: 1 },
+    { value: "longsword", weight: 1 },
+	{ value: "ring-sword", weight: 1 },
+    { value: "crab sword", weight: 1 },
+    { value: "cinquedea", weight: 1 },
+    { value: "claymore", weight: 1 },
+    { value: "estoc", weight: 1 },
+    { value: "falchion", weight: 1 },
+	{ value: "flamberge", weight: 1 },
+    { value: "bastard sword", weight: 1 },
+    { value: "cutlass", weight: 1 },
+    { value: "rapier", weight: 1 },
+    { value: "hunting sword", weight: 1 },
+    { value: "greatsword", weight: 1 },
+  ],
 
   HorseNames: [
     { value: "Regret", weight: 1 },
@@ -7097,15 +7140,15 @@ trap_location: [
   ],
   
   QuickNPCJobExotic: [
-    { value: "sand architect", weight: 1 },
-    { value: "maze builder", weight: 1 },
-    { value: "dragon butcher", weight: 1 },
-    { value: "mermaid gutter", weight: 1 },
-    { value: "cloud hunter", weight: 1 },
-    { value: "charm breaker", weight: 1 },
-    { value: "${AnimalMagicMount} saddler", weight: 1 },
-	{ value: "bell founder", weight: 1 },
-    { value: "grave filler", weight: 1 },
+    { value: "sand-architect", weight: 1 },
+    { value: "maze-builder", weight: 1 },
+    { value: "dragon-butcher", weight: 1 },
+    { value: "mermaid-gutter", weight: 1 },
+    { value: "cloud-hunter", weight: 1 },
+    { value: "charm-breaker", weight: 1 },
+    { value: "${AnimalMagicMount}-saddler", weight: 1 },
+	{ value: "bell-founder", weight: 1 },
+    { value: "grave-filler", weight: 1 },
   ],
 
   RealGods: [
@@ -8070,6 +8113,19 @@ celebration_type: [
 	{ value: "ice-fields", weight: 1 },
 	{ value: "${Colors} stones and boulders", weight: 1 },
 	{ value: "caverns", weight: 1 },
+  ],
+  
+  landscape_types_basic: [
+    { value: "mountains", weight: 1 },
+	{ value: "forests", weight: 1 },
+	{ value: "valleys", weight: 1 },
+	{ value: "caves", weight: 1 },
+	{ value: "sands", weight: 1 },
+	{ value: "marshes", weight: 1 },
+	{ value: "jungles", weight: 1 },
+	{ value: "ice-fields", weight: 1 },
+	{ value: "caverns", weight: 1 },
+	{ value: "canyons", weight: 1 },
   ],
   
   still_life_surface: [
@@ -9061,7 +9117,7 @@ ship_type: [
   ship_cargo: [
 	{ value: "with a cargo of ${duo_clothing_adj} ${flag_imperial_color} ${duo_clothing}, ${onedhundred} ${liquid_containers_large}s filled with ${liquid_cargo} and ${onedfive} dozen ${ship_cargo_container} of ${ship_merchandise_adj} ${magicalcommonobject_plural} ${ship_manufacturing_place}", weight: 1 },
 	{ value: "bearing ${onedfive} dozen ${ship_cargo_animal_type}s and a ${flag_condition} tapestry depicting ${painting_subject_matter}", weight: 1 },
-	{ value: "and eager ${ship_cargo_dockworker} are already unloading ${ship_cargo_container} of ${ship_merchandise_adj} ${Tools}s and ${ship_merchandise_fruit_adj} ${FantasyMeal_Fruit_plural} from the ${dwarfclanname} Clan orchards", weight: 1 },
+	{ value: "and eager ${ship_cargo_dockworker} are already unloading ${ship_cargo_container} of ${ship_merchandise_adj} ${Tools}s and ${MusicalInstrument}s ${ship_manufacturing_place} as well as ${ship_merchandise_fruit_adj} ${FantasyMeal_Fruit_plural} from the ${dwarfclanname} Clan orchards", weight: 1 },
 	{ value: "carrying a hundred ${ship_cargo_container} of ${ship_merchandise_adj} ${ship_cargo_toy_type}s, popular with local ${humanoid_young}, a few dozen ${ship_cargo_novelty_type} and ${liquid_containers_large}s of ${alcohol_liquor} for the parents", weight: 1 },
 	{ value: "with neat ${ship_cargo_container} of meticulously labeled ${ship_cargo_expedition_type} from the successful ${FantasyLastName} Expedition to ${foreignland}${foreign_phrase} along with ${ship_cargo_wizard_type} that was found there as well", weight: 1 },
 	{ value: "with a hold full of ${ship_cargo_furniture_adj} ${ship_cargo_furniture_type} ${ship_manufacturing_place} and ${ship_cargo_container} of ${Jewels} and scrolls from the House of ${housething}", weight: 1 },
@@ -9154,6 +9210,27 @@ ship_type: [
 	{ value: "bone", weight: 1 },
 	{ value: "${crowns_metal_type}", weight: 1 },
   ],
+  
+  ballad_titles: [
+	{ value: "${po:ntc} Last Ride", weight: 1 },
+	{ value: "the Voyage of ${ShipNames}", weight: 1 },
+	{ value: "the Princess and the ${uc:AnimalMain}", weight: 1 },
+	{ value: "${uc:onedten} ${uc:Colors} ${uc:AnimalFarm}s", weight: 1 },
+	{ value: "For Lack of ${uc:a:magicalcommonobject}", weight: 1 },
+	{ value: "${uc:FantasyMeal_Fruit_plural} and ${uc:huntingmonster}", weight: 1 },
+	{ value: "the Martyrdom of Saint ${SaintName}", weight: 1 },
+	{ value: "the ${uc:numinous_adj} Thirst of ${DemonName} the ${uc:QuickNPCDescriptor}", weight: 1 },
+	{ value: "Alone in the ${uc:landscape_types_basic} of ${foreignland}", weight: 1 },
+	{ value: "the Ballad of ${FantasyName} the ${uc:QuickNPCDescriptor}", weight: 1 },
+	{ value: "the Day ${urbn_cityname} Needed ${uc:a:QuickNPCJobExotic}", weight: 1 },
+	{ value: "${uc:FantasyMeal_Fruit_plural} from ${slumberplace}", weight: 1 },
+	{ value: "the ${uc:po:QuickNPCJob} Lament", weight: 1 },
+	{ value: "the Ballad of ${fairy_folk_named}", weight: 1 },
+	{ value: "What Can You Do With a Broken ${uc:Tools}?", weight: 1 },
+	{ value: "Pulling the ${uc:po:AnimalBigCat} Tail", weight: 1 },
+  ],
+  
+  
 
     intro: [
 	    { value: "${I_herd}", weight: 1 }
