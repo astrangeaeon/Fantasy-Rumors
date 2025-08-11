@@ -4565,6 +4565,7 @@ const tables = {
     { value: "women breastfeed the sacred calves", weight: 1 },
 	{ value: "the ill will breathe three times into the mouth of a live fish, then throw it back into the water, to confuse Death", weight: 1 },
 	{ value: "there are no cemeteries because upon death, the corpse is divided up and given to the poor to eat", weight: 1 },
+	{ value: "public figures must add a verse of their own to the traditional tune '${ballad_titles}'", weight: 1 },
   ],
 
   strangenoises: [
@@ -4584,6 +4585,7 @@ const tables = {
     { value: "the crackle of a bonfire", weight: 1 },
     { value: "the low rumble of continuous thunder", weight: 1 },
     { value: "the screech of two subterranean dragons fighting", weight: 1 },
+	{ value: "the distinct melody of '${ballad_titles}'", weight: 1 },
   ],
 
   studysubject: [
@@ -5441,7 +5443,7 @@ trap_location: [
     { value: "seek others to help them explore the pleasures of evil", weight: 1 },
     { value: "seek to slake a dark thirst", weight: 1 },
     { value: "sell the love and mercy from ${foreign_adj}${foreignland}${foreign_phrase}, sunk beneath the waves, as that town no longer needs it", weight: 1 },
-    { value: "sing songs popular over a thousand years ago", weight: 1 },
+    { value: "sing '${ballad_titles}' and other songs popular over a thousand years ago", weight: 2 },
     { value: "speak only in echoes of words they spoke in youth", weight: 1 },
     { value: "speak the holy word and slip between worlds", weight: 1 },
     { value: "study the future by gazing through a magical spyglass", weight: 1 },
@@ -5578,6 +5580,7 @@ trap_location: [
 	{ value: "needs an escort to ${landmark}", weight: 1 },
 	{ value: "drinks ${a:liquid_containers_personal} of water they claim is ${exotic_water_provenance}", weight: 1 },
 	{ value: "swaps false brilliants for real stones of price", weight: 1 },
+	{ value: "sings '${ballad_titles}' quietly to themselves", weight: 1 },
   ],
 
   washups: [
@@ -7367,6 +7370,7 @@ trap_location: [
     { value: " who discovered ${a:wilds_adj} ${wilds_noun} ${wilds_locn} that ${wilds_hook},", weight: 1 },
 	{ value: " who used to run with ${criminals} but is now reformed,", weight: 1 },
 	{ value: " who has been furtively caring for and feeding ${a:pet_adj} ${AnimalMammal},", weight: 1 },
+	{ value: " who composed the popular tune '${ballad_titles}',", weight: 1 },
   ],
   
   pet_adj: [
@@ -7797,6 +7801,7 @@ saint_curse: [
     { value: "Tigris and Euphrates", weight: 1 },
     { value: "Ambush!", weight: 1 },
 	{ value: "cards", weight: 3 },
+	{ value: "dice", weight: 3 },
   ],
   
    board_game_opponent: [
@@ -9214,22 +9219,51 @@ ship_type: [
   ballad_titles: [
 	{ value: "${po:ntc} Last Ride", weight: 1 },
 	{ value: "the Voyage of ${ShipNames}", weight: 1 },
-	{ value: "the Princess and the ${uc:AnimalMain}", weight: 1 },
+	{ value: "the Princess and the ${tc:AnimalMain}", weight: 1 },
 	{ value: "${uc:onedten} ${uc:Colors} ${uc:AnimalFarm}s", weight: 1 },
-	{ value: "For Lack of ${uc:a:magicalcommonobject}", weight: 1 },
-	{ value: "${uc:FantasyMeal_Fruit_plural} and ${uc:huntingmonster}", weight: 1 },
+	{ value: "For Lack of ${tc:a:magicalcommonobject}", weight: 1 },
+	{ value: "${uc:FantasyMeal_Fruit_plural} and ${tc:huntingmonster}", weight: 1 },
 	{ value: "the Martyrdom of Saint ${SaintName}", weight: 1 },
 	{ value: "the ${uc:numinous_adj} Thirst of ${DemonName} the ${uc:QuickNPCDescriptor}", weight: 1 },
 	{ value: "Alone in the ${uc:landscape_types_basic} of ${foreignland}", weight: 1 },
 	{ value: "the Ballad of ${FantasyName} the ${uc:QuickNPCDescriptor}", weight: 1 },
-	{ value: "the Day ${urbn_cityname} Needed ${uc:a:QuickNPCJobExotic}", weight: 1 },
+	{ value: "the Day ${urbn_cityname} Needed ${tc:a:QuickNPCJobExotic}", weight: 1 },
 	{ value: "${uc:FantasyMeal_Fruit_plural} from ${slumberplace}", weight: 1 },
 	{ value: "the ${uc:po:QuickNPCJob} Lament", weight: 1 },
 	{ value: "the Ballad of ${fairy_folk_named}", weight: 1 },
 	{ value: "What Can You Do With a Broken ${uc:Tools}?", weight: 1 },
 	{ value: "Pulling the ${uc:po:AnimalBigCat} Tail", weight: 1 },
+	{ value: "Who Built the ${historicalinfrastructure_capitalized}?", weight: 1 },
+	{ value: "the ${tc:po:fairy_folk} Prank", weight: 1 },
+	{ value: "${uc:a:exotic_water_body} in ${foreignland}", weight: 1 },
+	{ value: "the Last ${tc:QuickNPCJob} of ${urbn_cityname}", weight: 1 },
+	{ value: "Queen ${po:FantasyNameFemale} Lips", weight: 1 },
+	{ value: "the Ballad of the ${uc:ballad_subject_adj} ${tc:ballad_subject}", weight: 1 },
+	{ value: "the Ballad of ${ntc}", weight: 1 },
+	{ value: "the Ballad of ${FantasyNameFemale} and ${FantasyNameFemale}", weight: 1 },
+	{ value: "${tc:a:urbn_place} in ${urbn_cityname}", weight: 1 },
+	{ value: "${artists} and the Great ${tc:severe_weather}", weight: 1 },
+	{ value: "the ${tc:WeirdFantasyMonster} of ${RealGods} Castle", weight: 1 },
+	{ value: "Drinking ${tc:alcohol} with ${tc:huntingmonster}", weight: 1 },
   ],
   
+  ballad_subject_adj: [
+	{ value: "naked", weight: 1 },
+	{ value: "hungry", weight: 1 },
+	{ value: "thirsty", weight: 1 },
+	{ value: "lustful", weight: 1 },
+	{ value: "bladdered", weight: 1 },
+	{ value: "clever", weight: 1 },
+  ],
+  
+   ballad_subject: [
+	{ value: "centaur", weight: 1 },
+	{ value: "vampire", weight: 1 },
+	{ value: "druid", weight: 1 },
+	{ value: "cleric", weight: 1 },
+	{ value: "princeling", weight: 1 },
+	{ value: "${QuickNPCJob}", weight: 1 },
+  ],
   
 
     intro: [
@@ -9333,6 +9367,9 @@ function resolve(template) {
                     case "po":
                         resolved = resolved.endsWith("s") ? `${resolved}'` : `${resolved}'s`;
                         break;
+					case "tc":
+						resolved = resolved.replace(/\b\w/g, char => char.toUpperCase());
+						break;	
                 }
             }
 
