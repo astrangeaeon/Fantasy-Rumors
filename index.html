@@ -596,6 +596,8 @@ const tables = {
     { value: "the boon of choosing your own death", weight: 1 },
     { value: "the other horn of the unicorn", weight: 1 },
 	{ value: "an invitation to the ${otherworld_names}", weight: 1 },
+	{ value: "a magic cake that protects against lions", weight: 1 },
+	{ value: "a map to ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
   ],
 
   bizarrecompanion: [
@@ -4735,6 +4737,7 @@ const tables = {
 	{ value: "the prayer of the Salamanders", weight: 1 },
 	{ value: "the Convincer, an ancient stone weapon with a clenched fist macehead", weight: 1 },
 	{ value: "the Great Toe of King Pyrrus that survived his funeral fire undamaged by the flames", weight: 1 },
+	{ value: "${a:Weapons} kissed by a mermaid that's always slightly wet", weight: 1 },
   ],
 
   tombprotection: [
@@ -6066,12 +6069,10 @@ trap_location: [
     { value: "raccoon", weight: 1 },
     { value: "skunk", weight: 1 },
     { value: "rabbit", weight: 1 },
-    { value: "groundhog", weight: 1 },
     { value: "rat", weight: 1 },
-    { value: "mouse", weight: 1 },
+    { value: "rodent", weight: 1 },
 	{ value: "chipmunk", weight: 1 },
 	{ value: "bat", weight: 1 },
-	{ value: "squirrel", weight: 1 },
   ],
   
   AnimalBird: [
@@ -6203,6 +6204,7 @@ trap_location: [
 	{ value: "battle ${AnimalBigCat}", weight: 1 },
 	{ value: "gryphon", weight: 1 },
 	{ value: "dinosaur", weight: 1 },
+	{ value: "sphinx", weight: 1 },
   ],
 
   AnimalOrdinary: [
@@ -6283,6 +6285,7 @@ trap_location: [
     { value: "clam", weight: 1 },
     { value: "eel", weight: 1 },
 	{ value: "manta ray", weight: 1 },
+	{ value: "mermaid", weight: 1 },
   ],
 
   Colors: [
@@ -6481,6 +6484,7 @@ trap_location: [
     { value: "Zachris", weight: 1 },
 	{ value: "Pepin", weight: 1 },
     { value: "Karloman", weight: 1 },
+	{ value: "Caradoc", weight: 1 },
   ],
 
   FantasyNameFemale: [
@@ -6775,6 +6779,13 @@ trap_location: [
 	{ value: "apricots", weight: 1 },
 	{ value: "cranberries", weight: 1 },
 	{ value: "grapes", weight: 1 },
+  ],
+  
+  
+   Weapons: [
+    { value: "${HaftedWeapons}", weight: 1 },
+    { value: "${BladedWeapons_Dagger}", weight: 1 },
+    { value: "${BladedWeapons_Sword}", weight: 1 },
   ],
 
   HaftedWeapons: [
@@ -8655,6 +8666,7 @@ celebration_type: [
 	{ value: "Bloody Bones", weight: 1 },
 	{ value: "Tommy Rawhead", weight: 1 },
 	{ value: "Flying Robert", weight: 1 },
+	{ value: "the Fairy of the Desert", weight: 1 },
   ],
   
   otherworld_names: [
@@ -9249,6 +9261,10 @@ ship_type: [
 	{ value: "${artists} and the Great ${tc:severe_weather}", weight: 1 },
 	{ value: "the ${tc:WeirdFantasyMonster} of ${RealGods} Castle", weight: 1 },
 	{ value: "Drinking ${tc:alcohol} with ${tc:huntingmonster}", weight: 1 },
+	{ value: "${bespoke_ballad_titles}", weight: 1 },
+	{ value: "Sharpening the ${tc:BladedWeapons_Sword}", weight: 1 },
+	{ value: "${uc:AnimalPest}s in the Kitchen", weight: 1 },
+	{ value: "the ${uc:magicusertype} and the Tower of ${uc:elemntl_type}", weight: 1 },
   ],
   
   ballad_subject_adj: [
@@ -9267,6 +9283,15 @@ ship_type: [
 	{ value: "cleric", weight: 1 },
 	{ value: "princeling", weight: 1 },
 	{ value: "${QuickNPCJob}", weight: 1 },
+  ],
+  
+  bespoke_ballad_titles: [
+	{ value: "the Door in the Ceiling", weight: 1 },
+	{ value: "Widowbirch Mead", weight: 1 },
+	{ value: "the Counts of Elz", weight: 1 },
+	{ value: "the Devil's Ladder", weight: 1 },
+	{ value: "a Gown of Vair and Miniver", weight: 1 },
+	{ value: "Mansions of Light", weight: 1 },
   ],
   
 
