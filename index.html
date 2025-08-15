@@ -2143,6 +2143,25 @@ const tables = {
 	{ value: "bell towers", weight: 1 },
   ],
   
+  historicalinfrastructure_modern_singular: [
+    { value: "water treatment plant", weight: 1 },
+    { value: "airport", weight: 1 },
+	{ value: "bus station", weight: 1 },
+	{ value: "railroad depot", weight: 1 },
+    { value: "recycling plant", weight: 1 },
+    { value: "nuclear power plant", weight: 1 },
+    { value: "broadcast antenna", weight: 1 },
+    { value: "petroleum refinery", weight: 1 },
+    { value: "chemical shed", weight: 1 },
+    { value: "meat processing facility", weight: 1 },
+    { value: "blast furnace", weight: 1 },
+    { value: "data center", weight: 1 },
+    { value: "strip mall", weight: 1 },
+	{ value: "freeway overpass", weight: 1 },
+	{ value: "glass manufacturing facility", weight: 1 },
+	{ value: "rubber factory", weight: 1 },
+  ],
+  
    historicalarchitecturestyles: [
     { value: "prehistoric", weight: 1 },
     { value: "baroque", weight: 1 },
@@ -2775,6 +2794,7 @@ const tables = {
 	{ value: "the Jade Gate", weight: 1 },
 	{ value: "the Hot Metal Bridge", weight: 1 },
 	{ value: "the Glass Fortress", weight: 1 },
+	{ value: "the ${historicalinfrastructure_modern_singular}", weight: 1 },
   ],
 
   landmark_natural: [
@@ -4753,6 +4773,7 @@ const tables = {
 	{ value: "the Convincer, an ancient stone weapon with a clenched fist macehead", weight: 1 },
 	{ value: "the Great Toe of King Pyrrus that survived his funeral fire undamaged by the flames", weight: 1 },
 	{ value: "${a:Weapons} kissed by a mermaid that's always slightly wet", weight: 1 },
+	{ value: "the Sommersword", weight: 1 },
   ],
 
   tombprotection: [
@@ -5915,7 +5936,7 @@ trap_location: [
 	{ value: "travelers venturing ${CompassDirectionPrimary} of ${landmark} should bring ${a:FantasyMeal_Fruit} and ${a:magicalcommonobject} with them, in case they cross paths with ${fairy_folk_named}", weight: 2 },
 	{ value: "when travelers find themselves in the enchanted ${otherworld_names}, they ${taboo}, when they return to the lands of men, ${taboo_consequence}", weight: 4 },
 	{ value: "there's a soft clearing where the breeze whistles the melody of '${ballad_titles}'", weight: 2 },
-	{ value: "there's an obelisk outside a gloomy cavern entrance with the ${rune_origin} runes for ${rune_concept} and ${rune_structure} carved into it", weight: 2 },
+	{ value: "there's an obelisk near an ancient false door cut into the naked rock with ${rune} carved into it", weight: 2 },
   ],
   
   
@@ -7967,6 +7988,7 @@ celebration_type: [
 	{ value: "${heroes_and_villains} pulling their ${AnimalMount} ${HorseNames} across the Bridge of ${urbn_citynickname} on their way to ${classic_dungeons}", weight: 1 },
 	{ value: "${prophetic_subject} ${celebration_type} carving their sigil into a great ${cod_tree_type} tree ${wilds_specific_locn}", weight: 1 },
 	{ value: "${prophetic_subject} being guided by ${a:fairy_folk} through the enchanted ${otherworld_names}", weight: 1 },
+	{ value: "${prophetic_subject} carving ${rune} onto an obelisk by ${a:Colors} door-shaped portal in the naked rock ${wilds_specific_locn}", weight: 1 },
   ],
   
   
@@ -7984,6 +8006,7 @@ celebration_type: [
 	{ value: "out new species of ${AnimalInsect}", weight: 1 },
 	{ value: "out a legendary grove of trees that bear ${Jewels}", weight: 1 },
 	{ value: "the final resting place of ${heroes_and_villains}", weight: 1 },
+	{ value: "out new species of ${AnimalWater} in ${body_of_water}", weight: 1 },
   ],
   
   body_of_water: [
@@ -8491,7 +8514,7 @@ celebration_type: [
 	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb2} ${a:flag_extra_humanoids_verb2_object},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${a:flag_extra_animal_adj} ${AnimalMain} ${flag_extra_animal_verb} ${a:AnimalBaby},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${fairy_folk},", weight: 1 },
-	{ value: ", with its ${flag_extra_style} design of a muzzled ${AnimalPredator},", weight: 1 },
+	{ value: ", with ${rune} sewn on it,", weight: 1 },
   ],
   
   flag_extra_style: [
@@ -8707,6 +8730,7 @@ celebration_type: [
 	{ value: "Summerlands", weight: 1 },
 	{ value: "Fields of ${uc:boundary_times}", weight: 1 },
 	{ value: "Dream Country", weight: 1 },
+	{ value: "Fields of Gold", weight: 1 },
   ],
   
     taboo: [
@@ -9316,6 +9340,15 @@ ship_type: [
 	{ value: "Mansions of Light", weight: 1 },
   ],
   
+  
+  rune: [
+	{ value: "the ${rune_origin} runes for ${rune_concept} and ${rune_structure}", weight: 1 },
+	{ value: "the ${rune_origin} warning runes for ${rune_concept} and ${rune_being}", weight: 1 },
+	{ value: "the ${rune_origin} travel runes for ${rune_concept} and ${rune_nature}", weight: 1 },
+  ],
+  
+  
+  
   rune_origin: [
 	{ value: "dwarven", weight: 1 },
 	{ value: "elvish", weight: 1 },
@@ -9347,6 +9380,7 @@ ship_type: [
 	{ value: "city", weight: 1 },
 	{ value: "garden", weight: 1 },
 	{ value: "door", weight: 1 },
+	{ value: "tower", weight: 1 },
 	{ value: "graveyard", weight: 1 },
 	{ value: "prison or castle", weight: 1 },
 	{ value: "prison or maze", weight: 1 },
@@ -9357,6 +9391,35 @@ ship_type: [
 	{ value: "city or possibly graveyard", weight: 1 },
   ],
   
+  rune_being: [
+	{ value: "spirit", weight: 1 },
+	{ value: "animal", weight: 1 },
+	{ value: "skeleton", weight: 1 },
+	{ value: "daemon", weight: 1 },
+	{ value: "serpent", weight: 1 },
+	{ value: "insect", weight: 1 },
+	{ value: "lizard", weight: 1 },
+	{ value: "fish", weight: 1 },
+	{ value: "bird", weight: 1 },
+	{ value: "monster", weight: 1 },
+	{ value: "man", weight: 1 },
+	{ value: "woman", weight: 1 },
+	{ value: "elf", weight: 1 },
+	{ value: "dwarf", weight: 1 },
+	{ value: "tree", weight: 1 },
+	{ value: "fairy", weight: 1 },
+  ],
+  
+  rune_nature: [
+	{ value: "ocean", weight: 1 },
+	{ value: "mountain", weight: 1 },
+	{ value: "storm", weight: 1 },
+	{ value: "forest", weight: 1 },
+	{ value: "desert", weight: 1 },
+	{ value: "river", weight: 1 },
+	{ value: "cave", weight: 1 },
+	{ value: "swamp", weight: 1 },
+  ],
 
     intro: [
 	    { value: "${I_herd}", weight: 1 }
