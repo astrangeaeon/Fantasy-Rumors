@@ -1706,6 +1706,7 @@ const tables = {
     { value: "wearing a costume, gaudy and sinister", weight: 1 },
     { value: "wearing a flaming glory coat", weight: 1 },
     { value: "wearing a suit of coin mail", weight: 1 },
+	{ value: "wearing sinister black chainmail", weight: 1 },
 	{ value: "wearing anachronistic blue jeans and a leather jacket", weight: 1 },
 	{ value: "wearing a ring with the seal of ${a:SignetSymbol} on it", weight: 1 },
     { value: "wearing a threadbare cloak stitched together from field mouse pelts", weight: 1 },
@@ -5000,6 +5001,7 @@ trap_location: [
 	{ value: "storied ${urbn_cityname}, home of ${landmark_manmade} and known for its Guild of the ${uc:QuickNPCJob}, whose members all wear ${Colors} ${duo_clothing}, is actually a paper city, existing only on maps and in the tales of dishonest travelers", weight: 3 },
 	{ value: "The ${urbn_traders} who flock to ${urbn_street_names} in ${urbn_cityname} trade in all manner of goods, from ${MerchantGoods} and ${Tools}s to ${exchangething} and ${collection}", weight: 3 },
 	{ value: "the city of ${urbn_cityname} was founded by ${criminals_esoteric} and ${criminals} and is governed today by the same", weight: 2 },
+	{ value: "the ${art_visual_painting} that once hung in the ${aristocratic_home} of an eccentric ${humanoid}, rumored ${aristocratic_quirk}, who made their fortune ${aristocratic_new_money}, recently surfaced in a vendor's tent on ${urbn_street_names}", weight: 5 },
   ],
 
 
@@ -9382,6 +9384,7 @@ ship_type: [
 	{ value: "door", weight: 1 },
 	{ value: "tower", weight: 1 },
 	{ value: "graveyard", weight: 1 },
+	{ value: "ladder", weight: 1 },
 	{ value: "prison or castle", weight: 1 },
 	{ value: "prison or maze", weight: 1 },
 	{ value: "garden or feasting hall", weight: 1 },
@@ -9408,6 +9411,7 @@ ship_type: [
 	{ value: "dwarf", weight: 1 },
 	{ value: "tree", weight: 1 },
 	{ value: "fairy", weight: 1 },
+	{ value: "wolf", weight: 1 },
   ],
   
   rune_nature: [
@@ -9419,6 +9423,82 @@ ship_type: [
 	{ value: "river", weight: 1 },
 	{ value: "cave", weight: 1 },
 	{ value: "swamp", weight: 1 },
+  ],
+  
+  aristocratic_home: [
+	{ value: "mansion", weight: 1 },
+	{ value: "villa", weight: 1 },
+	{ value: "palace", weight: 1 },
+	{ value: "manor house", weight: 1 },
+	{ value: "estate", weight: 1 },
+	{ value: "castle", weight: 1 },
+	{ value: "tower", weight: 1 },
+	{ value: "chateau", weight: 1 },
+  ],
+  
+  // rumored to be or to have
+  aristocratic_quirk: [
+	{ value: "to be a former adventurer who betrayed their companions", weight: 1 },
+	{ value: "to be ${a:aristocratic_villain}", weight: 1 },
+	{ value: "to fund the activities of ${criminal}", weight: 1 },
+	{ value: "to have drunk from the Lake of Dreams", weight: 1 },
+	{ value: "to have a fine collection of ${collection}", weight: 1 },
+	{ value: "to have a menagerie of ${AnimalBird}s, ${AnimalBigCat}s and ${huntingmonster}", weight: 1 },
+	{ value: "to keep ${relic} in a secret room", weight: 1 },
+	{ value: "to have a dungeon full of rivals", weight: 1 },
+  ],
+  
+  aristocratic_villain: [
+	{ value: "vampire", weight: 1 },
+	{ value: "lich", weight: 1 },
+	{ value: "cannibal", weight: 1 },
+	{ value: "dark cleric", weight: 1 },
+	{ value: "immortal sorcerer", weight: 1 },
+	{ value: "daemon in disguise", weight: 1 },
+  ],
+  
+  // who made their fortune
+   aristocratic_new_money: [
+	{ value: "by robbing ${aristocratic_robbed_place} in distant ${urbn_cityname}", weight: 1 },
+	{ value: "by selling their collection of ${collection} to ${monstertype}", weight: 1 },
+	{ value: "through a wish granted to them by ${wish_granter}", weight: 1 },
+	{ value: "in a high stakes game of ${board_games} with ${ntc}", weight: 1 },
+	{ value: "by virtue of being an exceptionally talented ${QuickNPCJob}", weight: 1 },
+	{ value: "by trading their soul to a devil for temporal riches", weight: 1 },
+	{ value: "one sack of gold at a time in exchange for a single hair to a smiling and silent yellow dwarf", weight: 1 },
+	{ value: "by inventing the sword", weight: 1 },
+  ],
+  
+   aristocratic_robbed_place: [
+	{ value: "the ${RealGods} Temple", weight: 1 },
+	{ value: "the ${uc:aristocratic_robbed_place_religious} of Saint ${SaintName}", weight: 1 },
+	{ value: "a shrine to ${FantasyGods}", weight: 1 },
+	{ value: "the ${FantasyLastName} Bank", weight: 1 },
+	{ value: "the ${aristocratic_home} of ${FantasyName}, a wealthy ${QuickNPCJobElite}", weight: 1 },
+	{ value: "the Tower of ${EgyptianNameMale} the ${tc:magicusertype}", weight: 1 },
+	{ value: "a ${foreignland}-bound merchant caravan", weight: 1 },
+	{ value: "the ${aristocratic_robbed_place_coffins}", weight: 1 },
+  ],
+  
+  aristocratic_robbed_place_religious: [
+	{ value: "church", weight: 1 },
+	{ value: "chapel", weight: 1 },
+	{ value: "cathedral", weight: 1 },
+	{ value: "abbey", weight: 1 },
+	{ value: "tabernacle", weight: 1 },
+	{ value: "monastery", weight: 1 },
+	{ value: "sanctuary", weight: 1 },
+	{ value: "mosque", weight: 1 },
+  ],
+  
+  aristocratic_robbed_place_coffins: [
+	{ value: "tombs", weight: 1 },
+    { value: "crypts", weight: 1 },
+    { value: "sepulchers", weight: 1 },
+    { value: "caskets", weight: 1 },
+	{ value: "coffins", weight: 1 },
+	{ value: "sarcophagi", weight: 1 },
+	{ value: "the living and the dead", weight: 1 },
   ],
 
     intro: [
