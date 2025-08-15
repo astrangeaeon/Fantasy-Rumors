@@ -510,6 +510,17 @@ const tables = {
     { value: "Samothracians", weight: 1 },
     { value: "Ungannians", weight: 1 },
   ],
+  
+  ancientpeople_singular: [
+    { value: "Assyrian", weight: 1 },
+    { value: "Chaldean", weight: 1 },
+    { value: "Durdzuk", weight: 1 },
+    { value: "Hagrite", weight: 1 },
+    { value: "Mazdakite", weight: 1 },
+    { value: "Phoenician", weight: 1 },
+    { value: "Samothracian", weight: 1 },
+    { value: "Ungannian", weight: 1 },
+  ],
 
   ancientthing: [
     { value: "a distant planet", weight: 1 },
@@ -1528,6 +1539,8 @@ const tables = {
     { value: "time", weight: 1 },
     { value: "water", weight: 1 },
     { value: "wind", weight: 1 },
+	{ value: "shadow", weight: 1 },
+	{ value: "light", weight: 1 },
   ],
 
   eucatastrophe: [
@@ -3375,6 +3388,7 @@ const tables = {
     { value: "${a:monsterA} on the ${floors} floor, pregnant for over a decade, offers to free ${urbn_subjectsingular} they hold captive if any can offer relief", weight: 1 },
     { value: "Here the ${huntingmonster} of ${foreign_adj}${foreignland}${foreign_phrase} dwell amid squalor and noise, bellowing and vomiting black gore", weight: 1 },
 	{ value: "${monstertype} prays to ${a:idol} in the ruins of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
+	{ value: "${monstertype} will grant sanctuary for three days in its castle if given a gift of ${Jewels}", weight: 1 },
   ],
 
   monsterA: [
@@ -3396,6 +3410,7 @@ const tables = {
     { value: "wasp queen", weight: 1 },
     { value: "noonwraith", weight: 1 },
 	{ value: "dryad", weight: 1 },
+	{ value: "sphinx", weight: 1 },
   ],
 
   monsterdragontype: [
@@ -5900,6 +5915,7 @@ trap_location: [
 	{ value: "travelers venturing ${CompassDirectionPrimary} of ${landmark} should bring ${a:FantasyMeal_Fruit} and ${a:magicalcommonobject} with them, in case they cross paths with ${fairy_folk_named}", weight: 2 },
 	{ value: "when travelers find themselves in the enchanted ${otherworld_names}, they ${taboo}, when they return to the lands of men, ${taboo_consequence}", weight: 4 },
 	{ value: "there's a soft clearing where the breeze whistles the melody of '${ballad_titles}'", weight: 2 },
+	{ value: "there's an obelisk outside a gloomy cavern entrance with the ${rune_origin} runes for ${rune_concept} and ${rune_structure} carved into it", weight: 2 },
   ],
   
   
@@ -6932,6 +6948,7 @@ trap_location: [
 	{ value: "candle", weight: 1 },
 	{ value: "broom", weight: 1 },
     { value: "loom", weight: 1 },
+	{ value: "fishing rod", weight: 1 },
   ],
 
   MiscSymbol: [
@@ -8864,6 +8881,7 @@ celebration_type: [
 	{ value: "lead", weight: 1 },
 	{ value: "gold", weight: 1 },
 	{ value: "silver", weight: 1 },
+	{ value: "bronze", weight: 1 },
   ],
 
 
@@ -9296,6 +9314,47 @@ ship_type: [
 	{ value: "the Devil's Ladder", weight: 1 },
 	{ value: "a Gown of Vair and Miniver", weight: 1 },
 	{ value: "Mansions of Light", weight: 1 },
+  ],
+  
+  rune_origin: [
+	{ value: "dwarven", weight: 1 },
+	{ value: "elvish", weight: 1 },
+	{ value: "dragon", weight: 1 },
+	{ value: "${ancientpeople_singular}", weight: 1 },
+	{ value: "primitive", weight: 1 },
+	{ value: "wizard", weight: 1 },
+	{ value: "daemonic", weight: 1 },
+  ],
+  
+  rune_concept: [
+	{ value: "${elemntl_type}", weight: 1 },
+	{ value: "${crowns_metal_type}", weight: 1 },
+	{ value: "blood", weight: 1 },
+	{ value: "power", weight: 1 },
+  ],
+  
+  rune_structure: [
+	{ value: "prison", weight: 1 },
+	{ value: "castle", weight: 1 },
+	{ value: "treasure vault", weight: 1 },
+	{ value: "bedchamber", weight: 1 },
+	{ value: "paradise", weight: 1 },
+	{ value: "bridge", weight: 1 },
+	{ value: "maze", weight: 1 },
+	{ value: "feasting hall", weight: 1 },
+	{ value: "gateway", weight: 1 },
+	{ value: "ship", weight: 1 },
+	{ value: "city", weight: 1 },
+	{ value: "garden", weight: 1 },
+	{ value: "door", weight: 1 },
+	{ value: "graveyard", weight: 1 },
+	{ value: "prison or castle", weight: 1 },
+	{ value: "prison or maze", weight: 1 },
+	{ value: "garden or feasting hall", weight: 1 },
+	{ value: "treasure vault or bedchamber", weight: 1 },
+	{ value: "gateway or bridge", weight: 1 },
+	{ value: "prison or city", weight: 1 },
+	{ value: "city or possibly graveyard", weight: 1 },
   ],
   
 
