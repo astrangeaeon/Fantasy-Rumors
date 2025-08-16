@@ -427,7 +427,8 @@ const tables = {
 	{ value: " who offended ${FantasyGods},", weight: 1 },
 	{ value: " who ruled from a great pipe filled with dozens of serpents who licked his body gently with their tongues like little dogs,", weight: 1 },
 	{ value: " lord of the ${humanoids},", weight: 1 },
-	{ value: " who rode to the wars with two hundred white-bearded companions, the youngest of which was a hundred years old,", weight: 1 },
+	{ value: " who rode to the wars with two dozen white-bearded companions, the youngest of which was a hundred years old,", weight: 1 },
+	{ value: " whose fingers fell off and transformed into snakes,", weight: 1 },
   ],
 
   hundred_words: [
@@ -804,6 +805,7 @@ const tables = {
     { value: "wood from the Holy Woods, where to break one twig is a sin", weight: 1 },
 	{ value: "polyphallic wind chimes", weight: 1 },
 	{ value: "the hair of a nixie, golden and always wet", weight: 1 },
+	{ value: "strangely designed implements of torture or agriculture", weight: 1 },
   ],
 
   construction_help: [
@@ -891,7 +893,7 @@ const tables = {
     { value: "the Phallic Saints", weight: 1 },
     { value: "the Philosopher of Wolves", weight: 1 },
     { value: "the Punisher of Lost Sheep", weight: 1 },
-    { value: "the Queen of Rats, attended by ${onednine}${onedhundred} of her children", weight: 1 },
+    { value: "the Queen of Rats, attended by ${onedhundred} of her children", weight: 1 },
 	{ value: "the red spectre, Ithbal", weight: 1 },
     { value: "the Seven Hathors", weight: 1 },
     { value: "the Sisters of the Eagle", weight: 1 },
@@ -1160,7 +1162,7 @@ const tables = {
     { value: "Khonsu, Expeller of Daemons", weight: 1 },
     { value: "Kingseeker Frampt", weight: 1 },
     { value: "Kinnara the Bird", weight: 1 },
-    { value: "Knight Lautrec of Carim", weight: 1 },
+    { value: "Martin Tenbones", weight: 1 },
     { value: "Labra the Mariner", weight: 1 },
     { value: "Laddersmith Gilligan", weight: 1 },
     { value: "Lanival the Redeemer", weight: 1 },
@@ -4506,6 +4508,7 @@ const tables = {
 	{ value: "an ancient signet ring with the seal of ${a:SignetSymbol} on it", weight: 1 },
 	{ value: "a jar filled with dozens of identical iron rings", weight: 1 },
 	{ value: "${a:flag}", weight: 1 },
+	{ value: "a medallion of the ram-headed criosphinx Subbiluliuma", weight: 1 },
   ],
 
   strangecustom: [
@@ -4827,6 +4830,7 @@ const tables = {
     { value: "war spirits, numerous of shape", weight: 1 },
 	{ value: "${a:magicusertype} that rides a dragon and summons ${severe_weather}s", weight: 1 },
 	{ value: "${Colors} flames that can only be extinguished by water ${exotic_water_provenance}", weight: 1 },
+	{ value: "a cobra-headed knight wielding black steel", weight: 1 },
   ],
   
   
@@ -5758,6 +5762,7 @@ trap_location: [
     { value: "protects one of the eight pieces of the Boddhi’s body enshrined in a nearby stupa", weight: 1 },
     { value: "rings with echoes from long ago", weight: 1 },
 	{ value: "marks the location of an entrance to the enchanted ${otherworld_names}", weight: 1 },
+	{ value: "attracts vicious hogs that bite the legs off horses", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -5832,6 +5837,7 @@ trap_location: [
 	{ value: "a grove of trees bears living ${Jewels}", weight: 1 },
 	{ value: "a dusty plain half-conceals a graveyard of wrecked ${vehicle}s and the skeletons of ${AnimalMount}s", weight: 1 },
 	{ value: "there\'s five and twenty ascending steps of porphyry and serpentine", weight: 1 },
+	{ value: "${a:aristocratic_home} molders slowly, home to ${urbn_subjectsingular} who argues loudly with ${a:undead_intangible}", weight: 3 },
   ],
 
   wilds_locn: [
@@ -5957,7 +5963,7 @@ trap_location: [
     { value: "create their eerie sculptures of creatures that resemble ${a:AnimalWater} and ${a:humanoid} combined", weight: 1 },
     { value: "gather together ${decade_event}", weight: 1 },
 	{ value: "dance and sing the ${numinous_adj} music of their race", weight: 1 },
-    { value: "inexplicably pile the ${magicalcommonobject_plural} they've acquired into mounds", weight: 1 },
+    { value: "inexplicably pile the ${magicalcommonobject_plural} they've acquired from their victims into mounds", weight: 1 },
 	{ value: "${FantasyGodFollowers} to honor their horrible ${flag_extra_animal_adj} deity", weight: 1 },
   ],
 
@@ -7624,6 +7630,7 @@ tail_type: [
 	{ value: "the ears of ${a:AnimalMammal}", weight: 1 },
 	{ value: "feet as sensitive and dexterous as hands", weight: 1 },
 	{ value: "beaks like snapping turtles", weight: 1 },
+	{ value: "long bifurcated fingernails", weight: 1 },
   ],
   
   saint_blessing: [
@@ -8229,8 +8236,7 @@ celebration_type: [
   ],
   
   humanoid: [
-    { value: "man", weight: 1 },
-	{ value: "woman", weight: 1 },
+    { value: "human", weight: 1 },
 	{ value: "elf", weight: 1 },
 	{ value: "hobbit", weight: 1 },
 	{ value: "gnome", weight: 1 },
@@ -9517,6 +9523,47 @@ ship_type: [
 	{ value: "the +1 sword", weight: 1 },
     { value: "the healing potion", weight: 1 },
     { value: "the 11-foot pole", weight: 1 },
+  ],
+  
+  undead: [
+	{ value: "${undead_corporeal}", weight: 1 },
+    { value: "${undead_intangible}", weight: 1 },
+    { value: "${undead_thinking}", weight: 1 },
+  ],
+  
+  undead_corporeal: [
+	{ value: "ghoul", weight: 1 },
+    { value: "skeleton", weight: 1 },
+    { value: "zombie", weight: 1 },
+	{ value: "${AnimalBigCat} skeleton", weight: 1 },
+    { value: "${huntingmonster_singular} skeleton", weight: 1 },
+    { value: "vampire", weight: 1 },
+	{ value: "mummy", weight: 1 },
+    { value: "wight", weight: 1 },
+    { value: "helghast", weight: 1 },
+	{ value: "lich", weight: 1 },
+	{ value: "risen ${huntingmonster_singular}", weight: 1 },
+  ],
+  
+  undead_intangible: [
+	{ value: "spirit", weight: 1 },
+    { value: "ghost", weight: 1 },
+    { value: "spectre", weight: 1 },
+	{ value: "phantom", weight: 1 },
+    { value: "wraith", weight: 1 },
+    { value: "shadow", weight: 1 },
+	{ value: "poltergeist", weight: 1 },
+	{ value: "shade", weight: 1 },
+    { value: "phantasm", weight: 1 },
+    { value: "apparition", weight: 1 },
+  ],
+  
+  undead_thinking: [
+	{ value: "vampire", weight: 1 },
+    { value: "lich", weight: 1 },
+    { value: "mummy", weight: 1 },
+	{ value: "helghast", weight: 1 },
+    { value: "shadowqueen", weight: 1 },
   ],
 
     intro: [
