@@ -4204,8 +4204,8 @@ const tables = {
   ],
 
   royals: [
-    { value: "${RoyalTitleFemale}", weight: 3 },
-    { value: "${RoyalTitleMale}", weight: 3 },
+    { value: "${tc:RoyalTitleFemale}", weight: 3 },
+    { value: "${tc:RoyalTitleMale}", weight: 3 },
     { value: "Grand Carver", weight: 1 },
     { value: "Hand of the King", weight: 1 },
     { value: "Hereditary Falconer", weight: 1 },
@@ -4681,7 +4681,7 @@ const tables = {
     { value: "soil", weight: 1 },
     { value: "water", weight: 1 },
 	{ value: "a leaf", weight: 1 },
-	{ value: "flower petals", weight: 1 },
+	{ value: "a flower petal", weight: 1 },
     { value: "pollen", weight: 1 },
 	{ value: "a seashell", weight: 1 },
   ],
@@ -4918,6 +4918,7 @@ trap_location: [
   treasure: [
     { value: "${monstertype} guards a treasure hoard valuable to the ${ancientpeople} who used ${exchangething} as currency", weight: 1 },
     { value: "${historicalperson} hid ${treasure_adj} ${treasureA} ${obj_or_room} on the ${floors} floor", weight: 2 },
+	{ value: "a perfect map of the ${aristocratic_home} of ${royals} ${FantasyLastName}, ${aristocratic_extra}, is drawn in blood on the wall of ${a:DungeonRoom} on the ${floors} floor", weight: 2 },
   ],
 
   treasureA: [
@@ -5001,7 +5002,7 @@ trap_location: [
 	{ value: "storied ${urbn_cityname}, home of ${landmark_manmade} and known for its Guild of the ${uc:QuickNPCJob}, whose members all wear ${Colors} ${duo_clothing}, is actually a paper city, existing only on maps and in the tales of dishonest travelers", weight: 3 },
 	{ value: "The ${urbn_traders} who flock to ${urbn_street_names} in ${urbn_cityname} trade in all manner of goods, from ${MerchantGoods} and ${Tools}s to ${exchangething} and ${collection}", weight: 3 },
 	{ value: "the city of ${urbn_cityname} was founded by ${criminals_esoteric} and ${criminals} and is governed today by the same", weight: 2 },
-	{ value: "the ${art_visual_painting} that once hung in the ${aristocratic_home} of an eccentric ${humanoid}, rumored ${aristocratic_quirk}, who made their fortune ${aristocratic_new_money}, recently surfaced in a vendor's tent on ${urbn_street_names}", weight: 5 },
+	{ value: "the ${art_visual_painting} that once hung in the ${aristocratic_home} of an eccentric ${humanoid}, ${aristocratic_extra}, recently surfaced in a vendor's tent on ${urbn_street_names}", weight: 5 },
   ],
 
 
@@ -8389,13 +8390,13 @@ celebration_type: [
   
   
   urbn_street_names: [
-    { value: "the Avenue of the ${uc:AnimalMain}", weight: 1 },
-	{ value: "${uc:magicalcommonobject} Street", weight: 1 },
-	{ value: "${uc:huntingmonster_singular} Crossing", weight: 1 },
-	{ value: "the Boulevard of the ${uc:AnimalMain}", weight: 1 },
+    { value: "the Avenue of the ${tc:AnimalMain}", weight: 1 },
+	{ value: "${tc:magicalcommonobject} Street", weight: 1 },
+	{ value: "${tc:huntingmonster_singular} Crossing", weight: 1 },
+	{ value: "the Boulevard of the ${tc:AnimalMain}", weight: 1 },
 	{ value: "the Boulevard of ${uc:Jewels}", weight: 1 },
-	{ value: "${uc:huntingmonster_singular} Plaza", weight: 1 },
-	{ value: "${uc:FantasyMeal_Fruit} Lane", weight: 1 },
+	{ value: "${tc:huntingmonster_singular} Plaza", weight: 1 },
+	{ value: "${tc:FantasyMeal_Fruit} Lane", weight: 1 },
   ],
   
    flag: [
@@ -8678,6 +8679,7 @@ celebration_type: [
 	{ value: "joint-eater", weight: 1 },
 	{ value: "goblin", weight: 1 },
 	{ value: "giant", weight: 1 },
+	{ value: "gremlin", weight: 1 },
   ],
   
   fairy_folk_named: [
@@ -9425,6 +9427,11 @@ ship_type: [
 	{ value: "swamp", weight: 1 },
   ],
   
+  aristocratic_extra: [
+	{ value: "rumored ${aristocratic_quirk}", weight: 1 },
+	{ value: "who made their fortune ${aristocratic_new_money}", weight: 1 },
+  ],
+  
   aristocratic_home: [
 	{ value: "mansion", weight: 1 },
 	{ value: "villa", weight: 1 },
@@ -9441,11 +9448,15 @@ ship_type: [
 	{ value: "to be a former adventurer who betrayed their companions", weight: 1 },
 	{ value: "to be ${a:aristocratic_villain}", weight: 1 },
 	{ value: "to fund the activities of ${criminal}", weight: 1 },
-	{ value: "to have drunk from the Lake of Dreams", weight: 1 },
+	{ value: "to have drunk deep from the Lake of Dreams", weight: 1 },
 	{ value: "to have a fine collection of ${collection}", weight: 1 },
 	{ value: "to have a menagerie of ${AnimalBird}s, ${AnimalBigCat}s and ${huntingmonster}", weight: 1 },
 	{ value: "to keep ${relic} in a secret room", weight: 1 },
-	{ value: "to have a dungeon full of rivals", weight: 1 },
+	{ value: "to have a garden filled with marvels protected by ${tombprotection}", weight: 1 },
+	{ value: "to have struck some bargain with ${fairy_folk_named}", weight: 1 },
+	{ value: "to have the angel ${DemonName} bound to a dungeon wall with ${metallic} chains", weight: 1 },
+	{ value: "to host strange parties with monstrous ${criminals} where they dance ${dance} and drink ${alcohol_wine} ${alcohol_vintage}", weight: 1 },
+	{ value: "to resemble their ancestors who had ${short_inherited_trait}", weight: 1 },
   ],
   
   aristocratic_villain: [
@@ -9464,9 +9475,10 @@ ship_type: [
 	{ value: "through a wish granted to them by ${wish_granter}", weight: 1 },
 	{ value: "in a high stakes game of ${board_games} with ${ntc}", weight: 1 },
 	{ value: "by virtue of being an exceptionally talented ${QuickNPCJob}", weight: 1 },
-	{ value: "by trading their soul to a devil for temporal riches", weight: 1 },
+	{ value: "by trading their soul to the devil ${DemonName} in exchange for temporal riches", weight: 1 },
 	{ value: "one sack of gold at a time in exchange for a single hair to a smiling and silent yellow dwarf", weight: 1 },
-	{ value: "by inventing the sword", weight: 1 },
+	{ value: "by inventing ${aristocratic_new_money_invention}", weight: 1 },
+	{ value: "by discovering and exploiting the gold and silver mines of ${slumberplace}", weight: 1 },
   ],
   
    aristocratic_robbed_place: [
@@ -9499,6 +9511,12 @@ ship_type: [
 	{ value: "coffins", weight: 1 },
 	{ value: "sarcophagi", weight: 1 },
 	{ value: "the living and the dead", weight: 1 },
+  ],
+  
+  aristocratic_new_money_invention: [
+	{ value: "the +1 sword", weight: 1 },
+    { value: "the healing potion", weight: 1 },
+    { value: "the 11-foot pole", weight: 1 },
   ],
 
     intro: [
