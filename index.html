@@ -464,6 +464,7 @@ const tables = {
     { value: "turns to silver under a full moon", weight: 1 },
 	{ value: "should only be carried with heavy metal gauntlets", weight: 1 },
 	{ value: "always has willing buyers in ${urbn_cityname} the Red City", weight: 1 },
+	{ value: "can open a door in ${classic_dungeons}", weight: 1 },
   ],
 
   addiction: [
@@ -5850,6 +5851,7 @@ trap_location: [
 	{ value: "a dusty plain half-conceals a graveyard of wrecked ${vehicle}s and the skeletons of ${AnimalMount}s", weight: 1 },
 	{ value: "there\'s five and twenty ascending steps of porphyry and serpentine", weight: 1 },
 	{ value: "${a:aristocratic_home} molders slowly, home to ${urbn_subjectsingular} who argues loudly with ${a:undead_intangible}", weight: 3 },
+	{ value: "two old knights guard a massive mussel shell, said to cure the disease of any who lay down inside", weight: 1 },
   ],
 
   wilds_locn: [
@@ -8391,7 +8393,7 @@ celebration_type: [
 	{ value: "the Treasure Vaults of Lindoran", weight: 1 },
 	{ value: "the Mines of Custalcon", weight: 1 },
 	{ value: "the Hellpits of Nightfang", weight: 1 },
-	{ value: "Tegel Manor", weight: 1 },
+	{ value: "Castle Death", weight: 1 },
 	{ value: "the Aerie of the Slave Lords", weight: 1 },
 	{ value: "the Palace of the Silver Princess", weight: 1 },
 	{ value: "the Hidden Shrine of Tamoachan", weight: 1 },
@@ -9155,6 +9157,8 @@ ship_type: [
 	{ value: "catamaran", weight: 1 },
 	{ value: "dinghy", weight: 1 },
 	{ value: "coracle", weight: 1 },
+	{ value: "ferry", weight: 1 },
+	{ value: "skiff", weight: 1 },
   ],
   
   ship_type_pleasure: [
@@ -9339,6 +9343,7 @@ ship_type: [
 	{ value: "Sharpening the ${tc:BladedWeapons_Sword}", weight: 1 },
 	{ value: "${uc:AnimalPest}s in the Kitchen", weight: 1 },
 	{ value: "the ${uc:magicusertype} and the Tower of ${uc:elemntl_type}", weight: 1 },
+	{ value: "When My ${tc:ship_type_small} Arrives", weight: 1 },
   ],
   
   ballad_subject_adj: [
@@ -9379,13 +9384,13 @@ ship_type: [
   
   
   rune_origin: [
-	{ value: "dwarven", weight: 1 },
-	{ value: "elvish", weight: 1 },
-	{ value: "dragon", weight: 1 },
-	{ value: "${ancientpeople_singular}", weight: 1 },
+	{ value: "dwarven", weight: 3 },
+	{ value: "elvish", weight: 3 },
+	{ value: "dragon", weight: 2 },
+	{ value: "${ancientpeople_singular}", weight: 2 },
 	{ value: "primitive", weight: 1 },
-	{ value: "wizard", weight: 1 },
-	{ value: "daemonic", weight: 1 },
+	{ value: "wizard", weight: 2 },
+	{ value: "daemonic", weight: 3 },
   ],
   
   rune_concept: [
@@ -9552,10 +9557,10 @@ ship_type: [
   
   undead_corporeal: [
 	{ value: "ghoul", weight: 1 },
-    { value: "skeleton", weight: 1 },
+    { value: "living skeleton", weight: 1 },
     { value: "zombie", weight: 1 },
-	{ value: "${AnimalBigCat} skeleton", weight: 1 },
-    { value: "${huntingmonster_singular} skeleton", weight: 1 },
+	{ value: "animated ${AnimalBigCat} skeleton", weight: 1 },
+    { value: "living ${huntingmonster_singular} skeleton", weight: 1 },
     { value: "vampire", weight: 1 },
 	{ value: "mummy", weight: 1 },
     { value: "wight", weight: 1 },
@@ -9575,6 +9580,7 @@ ship_type: [
 	{ value: "shade", weight: 1 },
     { value: "phantasm", weight: 1 },
     { value: "apparition", weight: 1 },
+	{ value: "banshee", weight: 1 },
   ],
   
   undead_thinking: [
@@ -9583,6 +9589,27 @@ ship_type: [
     { value: "mummy", weight: 1 },
 	{ value: "helghast", weight: 1 },
   ],
+  
+  door_opened: [
+	{ value: "by spilling water ${exotic_water_provenance} in front of it", weight: 1 },
+    { value: "by slaying ${a:humanoid} in front of it", weight: 1 },
+    { value: "by reciting the first verse of ${ballad_titles} in front of it", weight: 1 },
+	{ value: "by tracing the ${rune_origin} rune for ${rune_nature} in blood upon it", weight: 1 },
+	{ value: "by chanting a hymn from the Book of ${tc:DemonName} before it", weight: 1 },
+    { value: "by praising and making obesiance to King ${FantasyLastName} who ruled ${when} ago", weight: 1 },
+    { value: "for those without souls, like ${a:fairy_folk} or ${a:undead_intangible}", weight: 1 },
+	{ value: "by placing ${thingbeyond} from ${placebeyond} on the ground before it", weight: 1 },
+	{ value: "by tickling it with ${a:AnimalBird} feather", weight: 1 },
+    { value: "by passionately kissing each of three pairs of fleshy ${humanoid} lips that pucker and flirt along the central mullion", weight: 1 },
+    { value: "by reaching into a dark hole shaped like the mouth of ${a:AnimalBigCat} to press a button", weight: 1 },
+	{ value: "by filling the ${crowns_metal_type} cup extending opposite the knob with ${alcohol_wine} ${alcohol_vintage}", weight: 1 },
+	{ value: "by playing ${ballad_titles} on ${a:MusicalInstrument}", weight: 1 },
+	{ value: "by carving your name and quest into the crowded ${cod_tree_type} wood panels", weight: 1 },
+    { value: "by passionately kissing each of three pairs of fleshy ${humanoid} lips that pucker and flirt along the central mullion", weight: 1 },
+    { value: "by reaching into a dark hole shaped like the mouth of ${a:AnimalBigCat} to press a button", weight: 1 },
+	{ value: "by filling the ${crowns_metal_type} cup extending opposite the knob with ${alcohol_wine} ${alcohol_vintage}", weight: 1 },
+  ],
+
 
     intro: [
 	    { value: "${I_herd}", weight: 1 }
