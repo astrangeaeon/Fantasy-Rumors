@@ -909,6 +909,7 @@ const tables = {
 	{ value: "${fairy_folk_named}", weight: 1 },
 	{ value: "a terrible fish", weight: 1 },
 	{ value: "the Nightsoil Queen", weight: 1 },
+	{ value: "${DemonName} the Gardener", weight: 1 },
   ],
 
   criminals: [
@@ -2927,6 +2928,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC}, had a vivid dream last night where they watched as ${heroes_and_villains} ${cause_of_death}", weight: 2 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, was granted a wish from ${wish_granter}", weight: 2 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, ${local_obtain_art} ${a:art_visual_painting}", weight: 2 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, believes a draught of water from their well is better than all the ${alcohol} in ${urbn_cityname}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -4946,8 +4948,8 @@ trap_location: [
 
   treasure: [
     { value: "${monstertype} guards a treasure hoard valuable to the ${ancientpeople} who used ${exchangething} as currency", weight: 1 },
-    { value: "${historicalperson} hid ${treasure_adj} ${treasureA} ${obj_or_room} on the ${floors} floor", weight: 2 },
-	{ value: "a perfect map of the ${aristocratic_home} of ${royals} ${FantasyLastName}, ${aristocratic_extra}, is drawn in blood on the wall of ${a:DungeonRoom} on the ${floors} floor", weight: 2 },
+    { value: "${historicalperson} hid ${treasure_adj} ${treasureA} ${obj_or_room} on the ${floors} floor", weight: 1 },
+	{ value: "a perfect map of the ${aristocratic_home} of ${royals} ${FantasyLastName}, ${aristocratic_extra}, is drawn in blood on the wall of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
   ],
 
   treasureA: [
@@ -5031,7 +5033,8 @@ trap_location: [
 	{ value: "storied ${urbn_cityname}, home of ${landmark_manmade} and known for its Guild of the ${uc:QuickNPCJob}, whose members all wear ${Colors} ${duo_clothing}, is actually a paper city, existing only on maps and in the tales of dishonest travelers", weight: 3 },
 	{ value: "The ${urbn_traders} who flock to ${urbn_street_names} in ${urbn_cityname} trade in all manner of goods, from ${MerchantGoods} and ${Tools}s to ${exchangething} and ${collection}", weight: 3 },
 	{ value: "the city of ${urbn_cityname} was founded by ${criminals_esoteric} and ${criminals} and is governed today by the same", weight: 2 },
-	{ value: "the ${art_visual_painting} that once hung in the ${aristocratic_home} of an eccentric ${humanoid}, ${aristocratic_extra}, recently surfaced in a vendor's tent on ${urbn_street_names}", weight: 5 },
+	{ value: "the ${art_visual_painting} that once hung in the ${aristocratic_home} of an eccentric ${humanoid}, ${aristocratic_extra}, recently surfaced in a vendor's tent on ${urbn_street_names}", weight: 3 },
+	{ value: "an unpopular embargo on imported ${Tools}s, ${MusicalInstrument}s and ${FantasyMeal_Fruit_plural} has driven the desperate into the arms of the venal black market ${urbn_traders} of ${urbn_street_names}", weight: 2 },
   ],
 
 
@@ -5462,6 +5465,7 @@ trap_location: [
 	{ value: "a young boy with hair on his body like a man", weight: 1 },
 	{ value: "${a:humanoid} supremacist", weight: 1 },
 	{ value: "a lizardman wearing a ridiculous wig", weight: 1 },
+	{ value: "a famous matador ${facial_desc}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -5663,7 +5667,8 @@ trap_location: [
 	{ value: "needs an escort to ${landmark}", weight: 1 },
 	{ value: "drinks ${a:liquid_containers_personal} of water they claim is ${exotic_water_provenance}", weight: 1 },
 	{ value: "swaps false brilliants for real stones of price", weight: 1 },
-	{ value: "sings '${ballad_titles}' quietly to themselves", weight: 1 },
+	{ value: "sings '${ballad_titles}' quietly to themselves", weight: 2 },
+	{ value: "demonstrates the stern heroic virtues of the ancient ${ancientpeople}", weight: 1 },
   ],
 
   washups: [
@@ -6197,6 +6202,7 @@ trap_location: [
 	{ value: "hog", weight: 1 },
     { value: "turkey", weight: 1 },
 	{ value: "horse", weight: 1 },
+	{ value: "bull", weight: 1 },
   ],
 
   AnimalInsect: [
@@ -7382,6 +7388,10 @@ trap_location: [
     { value: "${WeirdSymbol}", weight: 1 },
 	{ value: "${MiscSymbol}", weight: 1 },
 	{ value: "stylized letter ${Letters}", weight: 1 },
+	{ value: "${WeirdSymbol} and a stylized letter ${Letters}", weight: 1 },
+	{ value: "${MiscSymbol} and a stylized letter ${Letters}", weight: 1 },
+	{ value: "${WeirdSymbol} and ${a:MiscSymbol}", weight: 1 },
+	{ value: "stylized letter ${Letters} and the ${rune_origin} rune for ${rune_concept}", weight: 1 },
   ],
   
   
@@ -8564,7 +8574,7 @@ celebration_type: [
 	{ value: "ancient", weight: 1 },
 	{ value: "menacing", weight: 1 },
 	{ value: "simple", weight: 1 },
-	{ value: "elegiac", weight: 1 },
+	{ value: "nostalgic", weight: 1 },
 	{ value: "cryptic", weight: 1 },
 	{ value: "archaic", weight: 1 },
 	{ value: "traditional", weight: 1 },
@@ -8586,6 +8596,8 @@ celebration_type: [
 	{ value: "wounded", weight: 1 },
 	{ value: "horned", weight: 1 },
 	{ value: "flaming", weight: 1 },
+	{ value: "${Colors}", weight: 1 },
+	{ value: "muzzled", weight: 1 },
   ],
   
   flag_extra_animal_verb: [
@@ -9362,6 +9374,7 @@ ship_type: [
 	{ value: "${uc:AnimalPest}s in the Kitchen", weight: 1 },
 	{ value: "the ${uc:magicusertype} and the Tower of ${uc:elemntl_type}", weight: 1 },
 	{ value: "When My ${tc:ship_type_small} Arrives", weight: 1 },
+	{ value: "Ten Unlucky ${tc:violent_profession_plural}", weight: 1 },
   ],
   
   ballad_subject_adj: [
@@ -9655,6 +9668,29 @@ door_type: [
 	{ value: "a neglected shrine to ${FantasyGods}", weight: 1 },
     { value: "${relic}", weight: 1 },
 	{ value: "the source of the strange noises that sound like ${strangenoises} heard throughout the dungeon", weight: 1 },
+  ],
+  
+  
+  violent_profession_plural: [
+	{ value: "soldiers", weight: 1 },
+    { value: "pirates", weight: 1 },
+    { value: "corsairs", weight: 1 },
+	{ value: "privateers", weight: 1 },
+	{ value: "buccaneers", weight: 1 },
+    { value: "fighting-men", weight: 1 },
+	{ value: "mercenaries", weight: 1 },
+    { value: "veterans", weight: 1 },
+    { value: "legionnaires", weight: 1 },
+	{ value: "musketeers", weight: 1 },
+	{ value: "crossbowmen", weight: 1 },
+    { value: "cavaliers", weight: 1 },
+	{ value: "raiding-men", weight: 1 },
+    { value: "bombardiers", weight: 1 },
+	{ value: "musketeers", weight: 1 },
+	{ value: "cannoneers", weight: 1 },
+    { value: "men-at-arms", weight: 1 },
+	{ value: "highwaymen", weight: 1 },
+    { value: "bodyguards", weight: 1 },
   ],
 
   intro: [
