@@ -1420,6 +1420,7 @@ const tables = {
 
   dungeon_door: [
 	{ value: "${a:door_type} door on the ${floors} floor can only be passed through ${door_opened}", weight: 1 },
+	{ value: "${a:door_type} door on the ${floors} floor hasn't been opened for at least a century; it supposedly leads to ${door_destination}", weight: 1 },
   ],
 
 
@@ -6509,7 +6510,7 @@ trap_location: [
     { value: "zoo", weight: 1 },
     { value: "burial chamber", weight: 1 },
     { value: "latrine", weight: 1 },
-    { value: "treasure chamber ", weight: 1 },
+    { value: "treasure chamber", weight: 1 },
     { value: "vault", weight: 1 },
     { value: "great hall", weight: 1 },
     { value: "armory", weight: 1 },
@@ -9634,6 +9635,16 @@ door_type: [
     { value: "exotic", weight: 1 },
   ],
 
+
+  door_destination: [
+	{ value: "the enchanted ${otherworld_names}", weight: 1 },
+    { value: "${a:urbn_place} in ${urbn_cityname}", weight: 1 },
+    { value: "the old lair of ${monstertype} whose whereabouts are unknown", weight: 1 },
+	{ value: "the vault where ${a:QuickNPCJobElite} who made their fortune ${aristocratic_new_money} concealed a large portion of their wealth", weight: 1 },
+	{ value: "a neglected shrine to ${FantasyGods}", weight: 1 },
+    { value: "${relic}", weight: 1 },
+	{ value: "the source of the strange noises that sound like ${strangenoises} heard throughout the dungeon", weight: 1 },
+  ],
 
   intro: [
 	    { value: "${I_herd}", weight: 1 }
