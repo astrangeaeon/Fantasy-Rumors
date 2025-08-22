@@ -908,6 +908,7 @@ const tables = {
 	{ value: "Patollo the Gardener", weight: 1 },
 	{ value: "${fairy_folk_named}", weight: 1 },
 	{ value: "a terrible fish", weight: 1 },
+	{ value: "the Nightsoil Queen", weight: 1 },
   ],
 
   criminals: [
@@ -1162,7 +1163,7 @@ const tables = {
     { value: "Jester Thomas", weight: 1 },
     { value: "Jurgen the Witch", weight: 1 },
     { value: "Khonsu, Expeller of Daemons", weight: 1 },
-    { value: "Kingseeker Frampt", weight: 1 },
+    { value: "Hector the Pest", weight: 1 },
     { value: "Kinnara the Bird", weight: 1 },
     { value: "Martin Tenbones", weight: 1 },
     { value: "Labra the Mariner", weight: 1 },
@@ -1421,6 +1422,7 @@ const tables = {
   dungeon_door: [
 	{ value: "${a:door_type} door on the ${floors} floor can only be passed through ${door_opened}", weight: 1 },
 	{ value: "${a:door_type} door on the ${floors} floor hasn't been opened for at least a century; it supposedly leads to ${door_destination}", weight: 1 },
+	{ value: "${a:door_type} trapdoor in an abandoned ${DungeonRoom} on the ${floors} floor is concealed beneath piles of broken ${ship_cargo_furniture_adj} ${ship_cargo_furniture_type}", weight: 1 },
   ],
 
 
@@ -3425,6 +3427,15 @@ const tables = {
     { value: "Here the ${huntingmonster} of ${foreign_adj}${foreignland}${foreign_phrase} dwell amid squalor and noise, bellowing and vomiting black gore", weight: 1 },
 	{ value: "${monstertype} prays to ${a:idol} in the ruins of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
 	{ value: "${monstertype} will grant sanctuary for three days in its castle if given a gift of ${Jewels}", weight: 1 },
+	{ value: "in a desolate ${DungeonRoom}, with only ${a:DungeonObject} and a dead ${magicusertype} for company, one of the ${monster_hybrid} abominations created by Hector the Pest for the Nightsoil Queen roars in anguish and confusion", weight: 1 },
+  ],
+  
+  monster_hybrid: [
+    { value: "half-${AnimalPredator}, half-${AnimalBird}", weight: 1 },
+    { value: "half-${AnimalPrey}, half-${AnimalInsect}", weight: 1 },
+    { value: "half-${AnimalBigCat}, half-${AnimalReptile}", weight: 1 },
+    { value: "half-${AnimalFarm}, half-${AnimalWater}", weight: 1 },
+    { value: "half-${AnimalMain}, half-${humanoid}", weight: 1 },
   ],
 
   monsterA: [
@@ -3460,7 +3471,7 @@ const tables = {
 
   monstertype: [
     { value: "${DemonName} the ${uc:QuickNPCDescriptor}, a lesser daemon,", weight: 1 },
-    { value: "${DemonName}, ${a:elemntl_type} prince,", weight: 1 },
+    { value: "${DemonName}, ${a:elemntl_type} ${RoyalTitleMale},", weight: 1 },
     { value: "${DemonName}, a great serpent,", weight: 1 },
     { value: "${DemonName}, a ${monsterdragontype} dragon,", weight: 1 },
     { value: "${DemonName}, an apple-sweet murmurer,", weight: 1 },
@@ -7270,15 +7281,15 @@ trap_location: [
 
   RoyalTitleMale: [
     { value: "king", weight: 1 },
-    { value: "duke", weight: 1 },
+    { value: "duke", weight: 3 },
 	{ value: "arch-duke", weight: 1 },
     { value: "marquess", weight: 1 },
     { value: "earl", weight: 1 },
     { value: "viscount", weight: 1 },
-    { value: "baron", weight: 1 },
-	{ value: "prince", weight: 1 },
+    { value: "baron", weight: 3 },
+	{ value: "prince", weight: 3 },
 	{ value: "count", weight: 1 },
-	{ value: "bishop", weight: 1 },
+	{ value: "bishop", weight: 3 },
   ],
 
   SaintName: [
