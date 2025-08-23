@@ -262,6 +262,8 @@ const tables = {
 	{ value: " with its ${landscape_types}", weight: 2 },
 	{ value: " where neither lightning nor tempest strikes", weight: 1 },
 	{ value: " where no toad or serpent dwells", weight: 1 },
+	{ value: " where ${criminals} and ${criminals} wander about at liberty", weight: 2 },
+	{ value: " with its fields of hateful ${weed_one} ${weed_two}", weight: 1 },
   ],
 
   herdwith: [
@@ -430,6 +432,8 @@ const tables = {
 	{ value: " who rode to the wars with two dozen white-bearded companions, the youngest of which was a hundred years old,", weight: 1 },
 	{ value: " whose fingers fell off and transformed into snakes,", weight: 1 },
 	{ value: " who died unblessed, unabsolved, and unrepentant,", weight: 1 },
+	{ value: " who believed what befell their body and soul was scribed in a book a thousand years before the foundation of the world,", weight: 1 },
+	{ value: " who could speak but four words of the ancient ${ancientpeople_singular} tongue of power and it was enough,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1771,6 +1775,7 @@ const tables = {
     { value: "the uncommon ability to turn into a toad", weight: 1 },
     { value: "wine-stained lips", weight: 1 },
 	{ value: "pierced nipples", weight: 1 },
+	{ value: "a withered arm", weight: 1 },
   ],
 
   fd_tale: [
@@ -2358,7 +2363,7 @@ const tables = {
     { value: "human rats", weight: 1 },
     { value: "minotaurs", weight: 1 },
     { value: "pseudo-giants", weight: 1 },
-    { value: "sea serpents", weight: 1 },
+    { value: "serpents", weight: 1 },
     { value: "sky elves", weight: 1 },
     { value: "unicorns", weight: 1 },
     { value: "vampires", weight: 1 },
@@ -2813,6 +2818,13 @@ const tables = {
 	{ value: "the Hot Metal Bridge", weight: 1 },
 	{ value: "the Glass Fortress", weight: 1 },
 	{ value: "the ${historicalinfrastructure_modern_singular}", weight: 1 },
+	{ value: "the Inn of the Three ${tc:inn_name_subjects}", weight: 1 },
+  ],
+  
+  inn_name_subjects: [
+    { value: "${AnimalMain}s", weight: 1 },
+    { value: "${magicalcommonobject_plural}", weight: 1 },
+    { value: "${humanoids}", weight: 1 },
   ],
 
   landmark_natural: [
@@ -3454,7 +3466,6 @@ const tables = {
     { value: "slug", weight: 1 },
     { value: "snail", weight: 1 },
     { value: "spider", weight: 1 },
-    { value: "spider-wife", weight: 1 },
     { value: "ghost", weight: 1 },
     { value: "wasp queen", weight: 1 },
     { value: "noonwraith", weight: 1 },
@@ -3469,6 +3480,7 @@ const tables = {
     { value: "spider", weight: 1 },
     { value: "weeping", weight: 1 },
 	{ value: "perfumed", weight: 1 },
+	{ value: "unwed", weight: 1 },
   ],
 
   monstertype: [
@@ -6492,6 +6504,8 @@ trap_location: [
     { value: "celibate", weight: 1 },
     { value: "blind", weight: 1 },
     { value: "pious", weight: 1 },
+	{ value: "unmarried", weight: 1 },
+	{ value: "childless", weight: 1 },
   ],
 
   DungeonObject: [
@@ -7255,6 +7269,7 @@ trap_location: [
     { value: "${AnimalMagicMount}-saddler", weight: 1 },
 	{ value: "bell-founder", weight: 1 },
     { value: "grave-filler", weight: 1 },
+	{ value: "talismonger", weight: 1 },
   ],
 
   RealGods: [
@@ -9302,7 +9317,7 @@ ship_type: [
 	{ value: "a black sphere", weight: 1 },
 	{ value: "a flying carpet", weight: 1 },
 	{ value: "a talking ${ship_cargo_animal_type}", weight: 1 },
-	{ value: "a ghost trapped in ${a:liquid_containers_personal}", weight: 1 },
+	{ value: "${a:undead_intangible} trapped in ${a:liquid_containers_personal}", weight: 1 },
   ],
   
   ship_cargo_novelty_type: [
@@ -9310,7 +9325,8 @@ ship_type: [
 	{ value: "${Colors} daemon masks", weight: 1 },
 	{ value: "leather balls filled with ${humanoid} hair", weight: 1 },
 	{ value: "impressive forgeries of paintings by ${artists}", weight: 1 },
-	{ value: "bottled ${Colors} light from a star named Dilgan or Cetus", weight: 1 },
+	{ value: "${liquid_containers_personal}s of bottled ${Colors} light from a star named Dilgan or Cetus", weight: 1 },
+	{ value: "${ship_cargo_container} of potent cosmetics from the enchanted ${otherworld_names}", weight: 1 },
   ],
   
   ship_cargo_expedition_type: [
@@ -9538,7 +9554,7 @@ ship_type: [
 	{ value: "by virtue of being an exceptionally talented ${QuickNPCJob}", weight: 1 },
 	{ value: "by trading their soul to the devil ${DemonName} in exchange for temporal riches", weight: 1 },
 	{ value: "one sack of gold at a time in exchange for a single hair to a smiling and silent yellow dwarf", weight: 1 },
-	{ value: "by inventing ${aristocratic_new_money_invention}", weight: 1 },
+	{ value: "by inventing and marketing ${aristocratic_new_money_invention}", weight: 1 },
 	{ value: "by discovering and exploiting the gold and silver mines of ${slumberplace}", weight: 1 },
   ],
   
@@ -9578,6 +9594,7 @@ ship_type: [
 	{ value: "the +1 sword", weight: 1 },
     { value: "the healing potion", weight: 1 },
     { value: "the 11-foot pole", weight: 1 },
+	{ value: "potent cosmetics", weight: 1 },
   ],
   
   undead: [
@@ -9691,6 +9708,18 @@ door_type: [
     { value: "men-at-arms", weight: 1 },
 	{ value: "highwaymen", weight: 1 },
     { value: "bodyguards", weight: 1 },
+  ],
+  
+  
+  weed_one: [
+	{ value: "scorpion", weight: 1 },
+	{ value: "manticore", weight: 1 },
+  ],
+  
+  weed_two: [
+	{ value: "weed", weight: 1 },
+    { value: "briar", weight: 1 },
+    { value: "grass", weight: 1 },
   ],
 
   intro: [
