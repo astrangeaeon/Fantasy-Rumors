@@ -1294,12 +1294,13 @@ const tables = {
   ],
 
   deadadventurerloot: [
-    { value: "${deadlootmisc}", weight: 1 },
+    { value: "${deadlootmisc}", weight: 2 },
     { value: "a band of ${posse_quality} ${posse} from the ${CompassDirection}", weight: 1 },
     { value: "a bizarre companion ${bizarrecompanion}", weight: 1 },
     { value: "the enchanted ${magicalcommonobject} of ${heroes_and_villains}", weight: 1 },
     { value: "the famous ${HaftedWeapons} called the ${CompoundWordNames}", weight: 1 },
     { value: "the ${prophecyartifact}", weight: 1 },
+	{ value: "the living sword Star-Striker, an ancient ${BladedWeapons_Sword} that ${sword_desire},", weight: 1 },
   ],
 
   deadlootmisc: [
@@ -5717,6 +5718,7 @@ trap_location: [
     { value: "the fires of Bel, which burn underwater and can never be extinguished,", weight: 1 },
     { value: "the Prince of the Sea, in a stupor,", weight: 1 },
     { value: "thousands upon thousands of severed noses and ears", weight: 1 },
+	{ value: "the living sword ${uc:CompoundA}${CompoundB}, an elven ${BladedWeapons_Sword} that ${sword_desire},", weight: 1 },
   ],
 
   weapon_land_type: [
@@ -5821,6 +5823,7 @@ trap_location: [
     { value: "rings with echoes from long ago", weight: 1 },
 	{ value: "marks the location of an entrance to the enchanted ${otherworld_names}", weight: 1 },
 	{ value: "attracts vicious hogs that bite the legs off horses", weight: 1 },
+	{ value: "marks the spot where the living sword Jaquays, ${a:Colors} ${BladedWeapons_Sword} that ${sword_desire}, waits impatiently for its next owner", weight: 4 },
   ],
 
   wilds_hook2: [
@@ -9337,7 +9340,7 @@ ship_type: [
 	{ value: "impressive forgeries of paintings by ${artists}", weight: 1 },
 	{ value: "${liquid_containers_personal}s of bottled ${Colors} light from a star named Dilgan or Cetus", weight: 1 },
 	{ value: "${ship_cargo_container} of potent cosmetics from the enchanted ${otherworld_names}", weight: 1 },
-	{ value: "${ship_cargo_container} of decorative ivory ${Tools}", weight: 1 },
+	{ value: "${ship_cargo_container} of decorative ivory ${Tools}s", weight: 1 },
   ],
   
   ship_cargo_expedition_type: [
@@ -9749,10 +9752,13 @@ door_type: [
   
   
   sword_desire: [
-	{ value: "yearns to slay ${humanoids}", weight: 1 },
+	{ value: "thirsts for the souls of slain ${humanoids}", weight: 1 },
     { value: "yearns to be reunited with its matching scabbard, rumored to be found in ${classic_dungeons}", weight: 1 },
-    { value: "yearns to slay ${undead_intangible}s", weight: 1 },
-	{ value: "yearns to be washed in the blood of ${huntingmonster}", weight: 1 },
+    { value: "yearns to send ${undead_intangible}s to oblivion", weight: 1 },
+	{ value: "craves to be washed in the blood of ${huntingmonster}", weight: 1 },
+	{ value: "longs to be dipped in ${exotic_water_types}", weight: 1 },
+	{ value: "hungers to pierce the eye of ${a:fairy_folk}", weight: 1 },
+	{ value: "itches to face the wielder of ${uc:CompoundA}${CompoundB}, its twin brother, in a duel", weight: 1 },
   ],
 
   intro: [
