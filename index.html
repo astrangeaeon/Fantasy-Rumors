@@ -1300,7 +1300,7 @@ const tables = {
     { value: "the enchanted ${magicalcommonobject} of ${heroes_and_villains}", weight: 1 },
     { value: "the famous ${HaftedWeapons} called the ${CompoundWordNames}", weight: 1 },
     { value: "the ${prophecyartifact}", weight: 1 },
-	{ value: "the living sword Star-Striker, an ancient ${BladedWeapons_Sword} that ${sword_desire},", weight: 1 },
+	{ value: "the living sword named ${sword_names}, an ancient ${BladedWeapons_Sword} that ${sword_desire},", weight: 1 },
   ],
 
   deadlootmisc: [
@@ -2401,6 +2401,10 @@ const tables = {
     { value: "witch", weight: 1 },
 	{ value: "harpy", weight: 1 },
 	{ value: "mermaid", weight: 1 },
+	{ value: "dwarf", weight: 1 },
+	{ value: "hobbit", weight: 1 },
+	{ value: "fairy", weight: 1 },
+	{ value: "wolf", weight: 1 },
   ],
 
   husband_adj: [
@@ -5055,6 +5059,7 @@ trap_location: [
 	{ value: "the city of ${urbn_cityname} was founded by ${criminals_esoteric} and ${criminals} and is governed today by the same", weight: 2 },
 	{ value: "the ${art_visual_painting} that once hung in the ${aristocratic_home} of an eccentric ${humanoid}, ${aristocratic_extra}, recently surfaced in a vendor's tent on ${urbn_street_names}", weight: 3 },
 	{ value: "an unpopular embargo on imported ${Tools}s, ${MusicalInstrument}s and ${FantasyMeal_Fruit_plural} has driven the desperate into the arms of the venal black market ${urbn_traders} of ${urbn_street_names}", weight: 2 },
+	{ value: "the city of ${urbn_cityname} is the home of a living weapon named ${sword_names}, ${a:BladedWeapons_Sword} that ${sword_desire}", weight: 2 },
   ],
 
 
@@ -5718,7 +5723,7 @@ trap_location: [
     { value: "the fires of Bel, which burn underwater and can never be extinguished,", weight: 1 },
     { value: "the Prince of the Sea, in a stupor,", weight: 1 },
     { value: "thousands upon thousands of severed noses and ears", weight: 1 },
-	{ value: "the living sword ${uc:CompoundA}${CompoundB}, an elven ${BladedWeapons_Sword} that ${sword_desire},", weight: 1 },
+	{ value: "the living sword ${sword_names}, an elven ${BladedWeapons_Sword} that ${sword_desire},", weight: 1 },
   ],
 
   weapon_land_type: [
@@ -8914,6 +8919,7 @@ celebration_type: [
 	{ value: "must go unclothed until they have dressed a hundred and sixty-nine paupers in new garments", weight: 1 },
 	{ value: "whenever they bathe, the water will congeal into a foul and fetid grey sludge", weight: 1 },
 	{ value: "their wounds will not heal for thirteen days", weight: 1 },
+	{ value: "their reflection will go missing", weight: 1 },
 	
   ],
   
@@ -9759,6 +9765,25 @@ door_type: [
 	{ value: "longs to be dipped in ${exotic_water_types}", weight: 1 },
 	{ value: "hungers to pierce the eye of ${a:fairy_folk}", weight: 1 },
 	{ value: "itches to face the wielder of ${uc:CompoundA}${CompoundB}, its twin brother, in a duel", weight: 1 },
+	{ value: "sings '${ballad_titles}' in ${a:vocal_range} voice after slaying a foe", weight: 1 },
+	{ value: "emits regular forlorn sighs and pines for its lost homeland of ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
+  ],
+  
+  vocal_range: [
+	{ value: "angelic soprano", weight: 1 },
+	{ value: "sparkling contralto", weight: 1 },
+    { value: "rich baritone", weight: 1 },
+    { value: "rumbling bass", weight: 1 },
+  ],
+  
+   sword_names: [
+	{ value: "${tc:huntingmonster_singular}-Slayer", weight: 2 },
+	{ value: "Borges, the ancient ${ancientpeople_singular} word for ${numinous_feeling}", weight: 1 },
+    { value: "${uc:po:FantasyGodNameFemale} Roaring Laughter", weight: 1 },
+    { value: "${tc:severe_weather}", weight: 2 },
+	{ value: "${tc:boundary_times}", weight: 2 },
+	{ value: "${tc:po:AnimalBigCat} Claw", weight: 2 },
+	{ value: "the ${tc:AnimalVenomous} Blade", weight: 2 },
   ],
 
   intro: [
