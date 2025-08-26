@@ -4887,6 +4887,7 @@ const tables = {
   
    trap: [
     { value: "${trap_builder} ${trap_builder_origin} have been spotted ${trap_setup} ${trap_quality} ${trap_type} traps ${trap_location} ${trap_reason}", weight: 1 },
+	{ value: "${a:defeated_adj} ${classic_classes} told everyone at the bar who would listen about ${trap_specific} ${trap_location}", weight: 1 },
   ],
   
   trap_builder: [
@@ -4896,6 +4897,47 @@ const tables = {
     { value: "blue dwarfs", weight: 1 },
     { value: "crawling folk", weight: 1 },
 	{ value: "skeletal deserters", weight: 1 },
+  ],
+  
+  trap_specific: [
+    { value: "${trap_magic}", weight: 10 },
+    { value: "${trap_pit}", weight: 1 },
+    { value: "${trap_cage}", weight: 1 },
+    { value: "${trap_prank}", weight: 1 },
+  ],
+  
+  trap_magic: [
+    { value: "a fiendish teleportation trap that whisks away its victims to ${teleport_destination}", weight: 1 },
+    { value: "an alarm that summons ${trap_summon}", weight: 1 },
+    { value: "${a:Colors} light that transforms men into ${AnimalBird}s and ${AnimalMount}s", weight: 1 },
+  ],
+  
+   trap_summon: [
+    { value: "${a:undead_corporeal}", weight: 1 },
+    { value: "hostile ${AnimalMain}s", weight: 1 },
+    { value: "${fairy_folk_named}", weight: 1 },
+    { value: "the daemon ${DemonName} the ${tc:QuickNPCDescriptor}", weight: 1 },
+  ],
+  
+  teleport_destination: [
+    { value: "the lair of ${a:huntingmonster_singular}", weight: 1 },
+    { value: "${a:urbn_locn} in ${urbn_cityname}", weight: 1 },
+    { value: "${foreign_adj}${foreignland}{$foreign_phrase}", weight: 1 },
+    { value: "the enchanted ${otherworld_names}", weight: 1 },
+    { value: "${body_of_water}", weight: 1 },
+	{ value: "a desolate plain dotted with rusted ${rusted}", weight: 1 },
+  ],
+  
+  trap_pit: [
+    { value: "a pit trap", weight: 1 },
+  ],
+  
+  trap_cage: [
+    { value: "a cage trap", weight: 1 },
+  ],
+  
+  trap_prank: [
+    { value: "a prank trap", weight: 1 },
   ],
   
   trap_builder_origin: [
@@ -9730,6 +9772,34 @@ door_type: [
     { value: "bodyguards", weight: 1 },
   ],
   
+  classic_classes: [
+	{ value: "cleric", weight: 1 },
+    { value: "magic-user", weight: 1 },
+    { value: "fighting man", weight: 1 },
+	{ value: "thief", weight: 1 },
+	{ value: "paladin", weight: 1 },
+    { value: "monk", weight: 1 },
+	{ value: "druid", weight: 1 },
+    { value: "bard", weight: 1 },
+    { value: "ranger", weight: 1 },
+	{ value: "illusionist", weight: 1 },
+	{ value: "knight", weight: 1 },
+    { value: "barbarian", weight: 1 },
+	{ value: "thief-acrobat", weight: 1 },
+    { value: "assassin", weight: 1 },
+	{ value: "psionicist", weight: 1 },
+	{ value: "anti-paladin", weight: 1 },
+    { value: "Scourge Aasimar multiclassed paladin / sorcerer / warlock", weight: 1 },
+  ],
+  
+  defeated_adj: [
+	{ value: "battered", weight: 1 },
+	{ value: "bruised", weight: 1 },
+	{ value: "broken", weight: 1 },
+	{ value: "injured", weight: 1 },
+	{ value: "one-armed", weight: 1 },
+	{ value: "one-eyed", weight: 1 },
+  ],
   
   weed_one: [
 	{ value: "scorpion", weight: 1 },
