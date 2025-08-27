@@ -4888,7 +4888,7 @@ const tables = {
   
    trap: [
     { value: "${trap_builder} ${trap_builder_origin} have been spotted ${trap_setup} ${trap_quality} ${trap_type} traps ${trap_location} ${trap_reason}", weight: 1 },
-	{ value: "${a:defeated_adj} ${classic_classes} told everyone at the bar who would listen about ${trap_specific} ${trap_location}", weight: 1 },
+	{ value: "${a:defeated_adj} ${classic_classes} told everyone at the bar who would listen about ${trap_specific}", weight: 1 },
   ],
   
   trap_builder: [
@@ -4902,15 +4902,15 @@ const tables = {
   
   trap_specific: [
     { value: "${trap_magic}", weight: 10 },
-    { value: "${trap_pit}", weight: 1 },
+    { value: "${trap_pit}", weight: 10 },
     { value: "${trap_cage}", weight: 1 },
     { value: "${trap_prank}", weight: 1 },
   ],
   
   trap_magic: [
-    { value: "a fiendish teleportation trap that whisks away its victims to ${teleport_destination}", weight: 1 },
-    { value: "an alarm that summons ${trap_summon}", weight: 1 },
-    { value: "${a:Colors} light that transforms men into ${AnimalBird}s and ${AnimalMount}s", weight: 1 },
+    { value: "a fiendish teleportation trap ${trap_location} that whisks away its victims to ${teleport_destination}", weight: 1 },
+    { value: "an alarm ${trap_location} that summons ${trap_summon}", weight: 1 },
+    { value: "${a:Colors} light ${trap_location} that transforms humans into ${AnimalBird}s and demihumans into ${AnimalMount}s", weight: 1 },
   ],
   
    trap_summon: [
@@ -4923,7 +4923,7 @@ const tables = {
   
   teleport_destination: [
     { value: "the lair of ${a:huntingmonster_singular}", weight: 1 },
-    { value: "${a:urbn_locn} in ${urbn_cityname}", weight: 1 },
+    { value: "${a:urbn_place_adj} ${urbn_place} in ${urbn_cityname}", weight: 1 },
     { value: "${foreign_adj}${foreignland}{$foreign_phrase}", weight: 1 },
     { value: "the enchanted ${otherworld_names}", weight: 1 },
     { value: "${body_of_water}", weight: 1 },
@@ -4931,7 +4931,35 @@ const tables = {
   ],
   
   trap_pit: [
-    { value: "a pit trap", weight: 1 },
+    { value: "${a:trap_pit_floor} ${trap_location} that ${trap_pit_verb} ${trap_pit_victim} into ${trap_pit_destination}", weight: 1 },
+  ],
+  
+   trap_pit_floor: [
+    { value: "illusory floor", weight: 1 },
+	{ value: "stretch of corridor", weight: 1 },
+	{ value: "false bridge", weight: 1 },
+  ],
+  
+   trap_pit_destination: [
+    { value: "a rapidly flowing subterranean river", weight: 1 },
+	{ value: "a cage with a half-dozen hungry ${AnimalBigCat}s", weight: 1 },
+	{ value: "the web of a family of giant spiders", weight: 1 },
+	{ value: "${a:DungeonRoom} full of angry and suspicious ${trap_builder}", weight: 1 },
+  ],
+  
+  trap_pit_verb: [
+    { value: "dumps", weight: 1 },
+	{ value: "deposits", weight: 1 },
+	{ value: "drops", weight: 1 },
+	{ value: "plunges", weight: 1 },
+	{ value: "plummets", weight: 1 },
+  ],
+  
+  trap_pit_victim: [
+    { value: "the unwary", weight: 1 },
+	{ value: "the reckless", weight: 1 },
+	{ value: "even the most cautious", weight: 1 },
+	{ value: "the foolish", weight: 1 },
   ],
   
   trap_cage: [
@@ -4988,8 +5016,8 @@ trap_type: [
 
 
 trap_location: [
-    { value: "on the ${floors} floor", weight: 1 },
-    { value: "around ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
+    { value: "on the ${floors} floor", weight: 5 },
+    { value: "near ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
   ],
   
   trap_reason: [
@@ -8964,7 +8992,7 @@ celebration_type: [
 	{ value: "whenever they bathe, the water will congeal into a foul and fetid grey sludge", weight: 1 },
 	{ value: "their wounds will not heal for thirteen days", weight: 1 },
 	{ value: "their reflection will go missing", weight: 1 },
-	{ value: "their gold will be copper", weight: 1 },
+	{ value: "their gold will have transformed into copper", weight: 1 },
 	
   ],
   
