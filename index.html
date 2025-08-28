@@ -4897,14 +4897,13 @@ const tables = {
     { value: "ratmen", weight: 1 },
     { value: "blue dwarfs", weight: 1 },
     { value: "crawling folk", weight: 1 },
-	{ value: "skeletal deserters", weight: 1 },
   ],
   
   trap_specific: [
     { value: "${trap_magic}", weight: 10 },
     { value: "${trap_pit}", weight: 10 },
     { value: "${trap_cage}", weight: 1 },
-    { value: "${trap_prank}", weight: 1 },
+    { value: "${trap_prank}", weight: 10 },
   ],
   
   trap_magic: [
@@ -4924,7 +4923,7 @@ const tables = {
   teleport_destination: [
     { value: "the lair of ${a:huntingmonster_singular}", weight: 1 },
     { value: "${a:urbn_place_adj} ${urbn_place} in ${urbn_cityname}", weight: 1 },
-    { value: "${foreign_adj}${foreignland}{$foreign_phrase}", weight: 1 },
+    { value: "${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
     { value: "the enchanted ${otherworld_names}", weight: 1 },
     { value: "${body_of_water}", weight: 1 },
 	{ value: "a desolate plain dotted with rusted ${rusted}", weight: 1 },
@@ -4938,6 +4937,7 @@ const tables = {
     { value: "illusory floor", weight: 1 },
 	{ value: "stretch of corridor", weight: 1 },
 	{ value: "false bridge", weight: 1 },
+	{ value: "trap door", weight: 1 },
   ],
   
    trap_pit_destination: [
@@ -4945,6 +4945,9 @@ const tables = {
 	{ value: "a cage with a half-dozen hungry ${AnimalBigCat}s", weight: 1 },
 	{ value: "the web of a family of giant spiders", weight: 1 },
 	{ value: "${a:DungeonRoom} full of angry and suspicious ${trap_builder}", weight: 1 },
+	{ value: "the yawning maw of a colossal ${AnimalReptile}", weight: 1 },
+	{ value: "a nauseating heap of rotting ${FantasyMeal_Vegetable_plural}, offal and other wet foodscraps all smeared with a mysterious black grease", weight: 1 },
+	{ value: "a massive black cauldron kept by the terrifying twelve-foot tall witch Grandmother Hunger", weight: 1 },
   ],
   
   trap_pit_verb: [
@@ -4967,7 +4970,23 @@ const tables = {
   ],
   
   trap_prank: [
-    { value: "a prank trap", weight: 1 },
+    { value: "an innocuous-looking ${DungeonObject} ${trap_location} which disguises ${a:trap_quality} trap that ${trap_prank_effect}", weight: 1 },
+  ],
+  
+  trap_prank_effect: [
+    { value: "splashes the party with skin-and-garment-staining ${Colors} dye", weight: 1 },
+	{ value: "drenches the party in ${trap_prank_liquid}", weight: 1 },
+	{ value: "bursts in a great spray of reeking musk that attracts ${trap_builder} and other dungeon vermin", weight: 1 },
+	{ value: "painlessly brands the party's souls with the ownership mark of ${fairy_folk_named}", weight: 1 },
+  ],
+  
+  trap_prank_liquid: [
+    { value: "${AnimalMain} blood", weight: 2 },
+	{ value: "${AnimalMammal} milk", weight: 2 },
+	{ value: "${AnimalBigCat} urine", weight: 2 },
+	{ value: "foul rotgut ${alcohol_liquor}", weight: 2 },
+	{ value: "mysterious black grease", weight: 1 },
+	{ value: "sticky red sap", weight: 1 },
   ],
   
   trap_builder_origin: [
@@ -5002,7 +5021,7 @@ const tables = {
     { value: "crude", weight: 1 },
     { value: "sophisticated", weight: 1 },
     { value: "irritating", weight: 1 },
-    { value: "deadly", weight: 1 },
+    { value: "dangerous", weight: 1 },
     { value: "hard to spot", weight: 1 },
 	{ value: "noisy", weight: 1 },
   ],
@@ -6417,8 +6436,6 @@ trap_location: [
     { value: "chameleon", weight: 1 },
     { value: "newt", weight: 1 },
     { value: "lizard", weight: 1 },
-    { value: "asp", weight: 1 },
-    { value: "cobra", weight: 1 },
     { value: "skink", weight: 1 },
     { value: "tortoise", weight: 1 },
     { value: "serpent", weight: 1 },
@@ -6915,6 +6932,32 @@ trap_location: [
 	{ value: "leek", weight: 1 },
 	{ value: "onion", weight: 1 },
 	{ value: "${Colors} pumpkin", weight: 1 },
+  ],
+  
+  FantasyMeal_Vegetable_plural: [
+    { value: "broccoli", weight: 1 },
+    { value: "cauliflower", weight: 1 },
+    { value: "potatoes", weight: 1 },
+	{ value: "beets", weight: 1 },
+    { value: "rutabega", weight: 1 },
+    { value: "cabbage", weight: 1 },
+	{ value: "${Colors} carrots", weight: 1 },
+	{ value: "beans", weight: 1 },
+	{ value: "celery", weight: 1 },
+    { value: "${Colors} peppers", weight: 1 },
+    { value: "radishes", weight: 1 },
+	{ value: "corn", weight: 1 },
+	{ value: "eggplant", weight: 1 },
+	{ value: "${Colors} zucchini", weight: 1 },
+    { value: "cucumbers", weight: 1 },
+	{ value: "tomatoes", weight: 1 },
+	{ value: "mushrooms", weight: 1 },
+	{ value: "spinach", weight: 1 },
+	{ value: "lettuce", weight: 1 },
+	{ value: "dandelion greens", weight: 1 },
+	{ value: "leeks", weight: 1 },
+	{ value: "onions", weight: 1 },
+	{ value: "${Colors} pumpkins", weight: 1 },
   ],
   
   FantasyMeal_Fruit: [
@@ -7663,7 +7706,7 @@ trap_location: [
   cod_liquid: [
     { value: "${mysterymeat} blood", weight: 2 },
     { value: "sacred oil", weight: 1 },
-    { value: "sea water", weight: 1 },
+    { value: "cold sea water", weight: 1 },
 	{ value: "${oldest} tears", weight: 2 },
   ],
   
@@ -8993,6 +9036,8 @@ celebration_type: [
 	{ value: "their wounds will not heal for thirteen days", weight: 1 },
 	{ value: "their reflection will go missing", weight: 1 },
 	{ value: "their gold will have transformed into copper", weight: 1 },
+	{ value: "they will be blinded by ${light_type}", weight: 1 },
+	{ value: "their past and future destiny will have been rewritten with the only change being their name is now Odor the Filthy", weight: 1 },
 	
   ],
   
@@ -9828,8 +9873,10 @@ door_type: [
 	{ value: "bruised", weight: 1 },
 	{ value: "broken", weight: 1 },
 	{ value: "injured", weight: 1 },
-	{ value: "one-armed", weight: 1 },
-	{ value: "one-eyed", weight: 1 },
+	{ value: "armless", weight: 1 },
+	{ value: "blind", weight: 1 },
+	{ value: "defeated", weight: 1 },
+	{ value: "hideously scarred", weight: 1 },
   ],
   
   weed_one: [
