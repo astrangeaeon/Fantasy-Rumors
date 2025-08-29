@@ -5094,6 +5094,7 @@ trap_location: [
     { value: "${monstertype} guards a treasure hoard valuable to the ${ancientpeople} who used ${exchangething} as currency", weight: 1 },
     { value: "${historicalperson} hid ${treasure_adj} ${treasureA} ${obj_or_room} on the ${floors} floor", weight: 1 },
 	{ value: "a perfect map of the ${aristocratic_home} of ${royals} ${FantasyLastName}, ${aristocratic_extra}, is drawn in blood on the wall of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
+	{ value: "${historicalperson} hid ${a:ship_cargo_container_singular} with thousands of ${ancientpeople_singular} ${crowns_metal_type} ${coins} ${obj_or_room} on the ${floors} floor", weight: 1 },
   ],
 
   treasureA: [
@@ -5949,6 +5950,7 @@ trap_location: [
 	{ value: "marks the location of an entrance to the enchanted ${otherworld_names}", weight: 1 },
 	{ value: "attracts vicious hogs that bite the legs off horses", weight: 1 },
 	{ value: "marks the spot where the living sword Jaquays, ${a:Colors} ${BladedWeapons_Sword} that ${sword_desire}, waits impatiently for its next owner", weight: 4 },
+	{ value: "marks a crack in the earth where fumes from the eternally decaying corpse of ${decaying_corpse} escape the underworld and inspire prophetic nightmares", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -6025,6 +6027,7 @@ trap_location: [
 	{ value: "there\'s five and twenty ascending steps of porphyry and serpentine", weight: 1 },
 	{ value: "${a:aristocratic_home} molders slowly, home to ${urbn_subjectsingular} who argues loudly with ${a:undead_intangible}", weight: 3 },
 	{ value: "two old knights guard a massive mussel shell, said to cure the disease of any who lay down inside", weight: 1 },
+	{ value: "millions of ${AnimalReptile}s have begun their centenary migration to ${landmark} in the ${CompassDirectionPrimary}", weight: 3 },
   ],
 
   wilds_locn: [
@@ -6724,6 +6727,7 @@ trap_location: [
 	{ value: "Pepin", weight: 1 },
     { value: "Karloman", weight: 1 },
 	{ value: "Caradoc", weight: 1 },
+	{ value: "Erbil", weight: 1 },
   ],
 
   FantasyNameFemale: [
@@ -6748,6 +6752,7 @@ trap_location: [
     { value: "Orsola", weight: 1 },
     { value: "Sibyl", weight: 1 },
     { value: "Zandra", weight: 1 },
+	{ value: "Veena", weight: 1 },
   ],
 
   FantasyLastName: [
@@ -6783,6 +6788,7 @@ trap_location: [
     { value: "Blaxter", weight: 1 },
     { value: "${CompoundWordNames}", weight: 1 },
 	{ value: "Ashkettle", weight: 1 },
+	{ value: "Kashgar", weight: 1 },
   ],
 
   FamilyMember: [
@@ -6801,6 +6807,8 @@ trap_location: [
     { value: "${FantasyGodNameMale}, ${FantasyGodAdjective} High Lord of ${uc:FantasyDomain} and ${uc:FantasyDomain}", weight: 1 },
 	{ value: "${FantasyGodNameMale}, ${FantasyGodAdjective} Guardian of ${uc:FantasyDomain}${FantasyGodExtra}", weight: 1 },
 	{ value: "${FantasyGodNameFemale}, ${FantasyGodAdjective} Queen of ${uc:FantasyDomain}${FantasyGodExtra}", weight: 1 },
+	{ value: "${FantasyGodNameMale}, ${FantasyGodAdjective} Despiser of ${uc:FantasyDomain}${FantasyGodExtra}", weight: 1 },
+	{ value: "${FantasyGodNameFemale}, ${FantasyGodAdjective} Eternal Foe of ${uc:FantasyDomain}${FantasyGodExtra}", weight: 1 },
   ],
   
   FantasyGodAdjective: [
@@ -6817,15 +6825,33 @@ trap_location: [
 	{ value: ", whose followers ${FantasyGodFollowers}", weight: 1 },
 	{ value: ", whose sign is the ${MiscSymbol}", weight: 1 },
 	{ value: ", the ${FamilyMember} of ${ntc}", weight: 1 },
+	{ value: ", who taught men ${FantasyGodExtraTaught} and later regretted it", weight: 1 },
+  ],
+  
+   FantasyGodExtraTaught: [
+	{ value: "mathematics", weight: 1 },
+	{ value: "music", weight: 1 },
+	{ value: "the art of war", weight: 1 },
+	{ value: "how to build a fire", weight: 1 },
+	{ value: "agriculture", weight: 1 },
   ],
 	
 	
  FantasyGodFollowers: [
     { value: "don ${Colors} ${duo_clothing}", weight: 1 },
-    { value: "abstain from ${addiction}", weight: 0 },
+    { value: "abstain from ${FantasyGodFollowersAbstain}", weight: 1 },
     { value: "seek to convert ${criminals} and ${criminals}", weight: 1 },
 	{ value: "brand the letter ${Letters} somewhere on their body", weight: 1 },
+	{ value: "often play sacred hymns on ${a:MusicalInstrument}", weight: 1 },
   ],	
+  
+  FantasyGodFollowersAbstain: [
+    { value: "sex", weight: 1 },
+    { value: "magic", weight: 1 },
+    { value: "using bladed weapons", weight: 1 },
+	{ value: "eating meat", weight: 1 },
+	{ value: "wearing armor or shield", weight: 1 },
+  ],
 
   FantasyGodNameFemale: [
     { value: "Trixie", weight: 1 },
@@ -9423,6 +9449,17 @@ ship_type: [
 	{ value: "baskets", weight: 1 },
   ],
   
+  ship_cargo_container_singular: [
+	{ value: "crate", weight: 1 },
+	{ value: "container", weight: 1 },
+	{ value: "box", weight: 1 },
+	{ value: "chest", weight: 1 },
+	{ value: "coffer", weight: 1 },
+	{ value: "bundle", weight: 1 },
+	{ value: "bin", weight: 1 },
+	{ value: "basket", weight: 1 },
+  ],
+  
   
   ship_cargo: [
 	{ value: "with a cargo of ${duo_clothing_adj} ${flag_imperial_color} ${duo_clothing}, ${onedhundred} ${liquid_containers_large}s filled with ${liquid_cargo} and ${onedfive} dozen ${ship_cargo_container} of ${ship_merchandise_adj} ${magicalcommonobject_plural} ${ship_manufacturing_place}", weight: 1 },
@@ -9502,6 +9539,7 @@ ship_type: [
 	{ value: "artifacts", weight: 1 },
 	{ value: "plant samples", weight: 1 },
 	{ value: "mineral samples", weight: 1 },
+	{ value: "${crowns_metal_type} ${coins_exotic} used as currency", weight: 1 },
   ],
   
   ship_cargo_furniture_type: [
@@ -9783,6 +9821,7 @@ ship_type: [
     { value: "helghast", weight: 1 },
 	{ value: "lich", weight: 1 },
 	{ value: "risen ${huntingmonster_singular}", weight: 1 },
+	{ value: "revenant", weight: 1 },
   ],
   
   undead_intangible: [
@@ -9963,6 +10002,43 @@ door_type: [
 	{ value: "${tc:boundary_times}", weight: 2 },
 	{ value: "${tc:po:AnimalBigCat} Claw", weight: 2 },
 	{ value: "the ${tc:AnimalVenomous} Blade", weight: 2 },
+  ],
+  
+  humanoid_monsters: [
+	{ value: "ogre", weight: 1 },
+	{ value: "troll", weight: 1 },
+    { value: "giant", weight: 1 },
+    { value: "serpentman", weight: 1 },
+	{ value: "minotaur", weight: 1 },
+	{ value: "rakshasa", weight: 1 },
+	{ value: "cyclops", weight: 1 },
+  ],
+  
+  coins: [
+	{ value: "obols", weight: 1 },
+	{ value: "pennies", weight: 1 },
+    { value: "centimes", weight: 1 },
+    { value: "groats", weight: 1 },
+	{ value: "florins", weight: 1 },
+	{ value: "tanners", weight: 1 },
+	{ value: "drachmas", weight: 1 },
+	{ value: "shekels", weight: 1 },
+	{ value: "staters", weight: 1 },
+	{ value: "trites", weight: 1 },
+	{ value: "litras", weight: 1 },
+	{ value: "rupees", weight: 1 },
+	{ value: "crowns", weight: 1 },
+  ],
+  
+  coins_exotic: [
+	{ value: "knife money", weight: 1 },
+	{ value: "animal money", weight: 1 },
+    { value: "barter rings", weight: 1 },
+    { value: "rai stones", weight: 1 },
+	{ value: "axe money", weight: 1 },
+	{ value: "spade money", weight: 1 },
+	{ value: "bullet coins", weight: 1 },
+	{ value: "${MusicalInstrument}s", weight: 1 },
   ],
 
   intro: [
