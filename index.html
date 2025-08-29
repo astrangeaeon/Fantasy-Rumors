@@ -4918,6 +4918,7 @@ const tables = {
     { value: "${fairy_folk_named}", weight: 1 },
     { value: "the daemon ${DemonName} the ${tc:QuickNPCDescriptor}", weight: 1 },
 	{ value: "a terribly swift dancing ${Weapons}", weight: 1 },
+	{ value: "a grim and relentless ${elemntl_type} ${RoyalTitleMale} ", weight: 1 },
   ],
   
   teleport_destination: [
@@ -4934,7 +4935,7 @@ const tables = {
   ],
   
    trap_pit_floor: [
-    { value: "illusory floor", weight: 1 },
+    { value: "illusory surface", weight: 1 },
 	{ value: "stretch of corridor", weight: 1 },
 	{ value: "false bridge", weight: 1 },
 	{ value: "trap door", weight: 1 },
@@ -4978,15 +4979,24 @@ const tables = {
 	{ value: "drenches the party in ${trap_prank_liquid}", weight: 1 },
 	{ value: "bursts in a great spray of reeking musk that attracts ${trap_builder} and other dungeon vermin", weight: 1 },
 	{ value: "painlessly brands the party's souls with the ownership mark of ${fairy_folk_named}", weight: 1 },
+	{ value: "fills the area with ${trap_prank_gas}", weight: 1 },
   ],
   
   trap_prank_liquid: [
-    { value: "${AnimalMain} blood", weight: 2 },
-	{ value: "${AnimalMammal} milk", weight: 2 },
-	{ value: "${AnimalBigCat} urine", weight: 2 },
+    { value: "blistering hot ${AnimalMain} blood", weight: 2 },
+	{ value: "putrid ${AnimalMammal} milk", weight: 2 },
+	{ value: "caustic ${AnimalBigCat} urine", weight: 2 },
 	{ value: "foul rotgut ${alcohol_liquor}", weight: 2 },
 	{ value: "mysterious black grease", weight: 1 },
 	{ value: "sticky red sap", weight: 1 },
+  ],
+  
+  trap_prank_gas: [
+    { value: "sweet-smelling sleeping gas", weight: 1 },
+	{ value: "harsh smoke that deepens every voice by an octave", weight: 1 },
+	{ value: "unnatural darkness and silence", weight: 1 },
+	{ value: "corrupting steam that spoils rations and befouls water", weight: 1 },
+	{ value: "a localized ${severe_weather}", weight: 2 },
   ],
   
   trap_builder_origin: [
@@ -6428,6 +6438,7 @@ trap_location: [
     { value: "dog", weight: 1 },
     { value: "rat", weight: 1 },
 	{ value: "skunk", weight: 1 },
+	{ value: "snake", weight: 1 },
   ],
 
   AnimalReptile: [
@@ -9877,6 +9888,7 @@ door_type: [
 	{ value: "blind", weight: 1 },
 	{ value: "defeated", weight: 1 },
 	{ value: "hideously scarred", weight: 1 },
+	{ value: "badly burned", weight: 1 },
   ],
   
   weed_one: [
