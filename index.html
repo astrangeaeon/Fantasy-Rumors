@@ -4900,10 +4900,10 @@ const tables = {
   ],
   
   trap_specific: [
-    { value: "${trap_magic}", weight: 10 },
-    { value: "${trap_pit}", weight: 10 },
+    { value: "${trap_magic}", weight: 1 },
+    { value: "${trap_pit}", weight: 1 },
     { value: "${trap_cage}", weight: 1 },
-    { value: "${trap_prank}", weight: 10 },
+    { value: "${trap_prank}", weight: 1 },
   ],
   
   trap_magic: [
@@ -4967,7 +4967,26 @@ const tables = {
   ],
   
   trap_cage: [
-    { value: "a cage trap", weight: 1 },
+    { value: "a cage with ${trap_cage_bars} ${trap_location} that can imprison ${trap_pit_victim}", weight: 2 },
+	{ value: "skulking ankle-high gorgons that stalk the ${floors} floor, spewing petrifying gas, turning feet into stone", weight: 1 },
+	{ value: "${a:DungeonRoom} where the exits seal and a shoulder-mounted ${AnimalMount} trophy high on the wall vomits forth ${trap_cage_fill}", weight: 2 },
+  ],
+  
+  trap_cage_bars: [
+    { value: "frigid bars of soul-freezing hoarfrost", weight: 1 },
+	{ value: "walls of eerie ${flag_imperial_color} flame", weight: 1 },
+	{ value: "black bars of daemon bones, nigh unbreakable", weight: 1 },
+	{ value: "bars of razor-sharp vibrating filament", weight: 1 },
+	{ value: "bars of flinty jagged stone", weight: 1 },
+  ],
+  
+  trap_cage_fill: [
+    { value: "${trap_prank_liquid}", weight: 1 },
+	{ value: "an endless stream of ${Colors} sand", weight: 1 },
+	{ value: "a host of ${AnimalInsect}s", weight: 1 },
+	{ value: "a storm of howling ${undead_intangible}s", weight: 1 },
+	{ value: "${a:AnimalSnake}, miles long, with skin that twinkles like ${Jewels} and shrugs off cutting blows", weight: 1 },
+	{ value: "seawater until the area is filled and then panels open to release warlike ${AnimalWater}s", weight: 1 },
   ],
   
   trap_prank: [
