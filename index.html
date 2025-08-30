@@ -485,9 +485,7 @@ const tables = {
     { value: "magical healing", weight: 1 },
     { value: "near death experiences", weight: 1 },
     { value: "opium", weight: 1 },
-    { value: "Peepum’s nasty gum", weight: 1 },
-    { value: "violence", weight: 1 },
-    { value: "weird sex", weight: 1 },
+    { value: "spilling blood", weight: 1 },
   ],
 
   allergy: [
@@ -557,6 +555,7 @@ const tables = {
     { value: "spelling bee", weight: 1 },
     { value: "swamp toad hunting contest", weight: 1 },
     { value: "ugliness pageant", weight: 1 },
+	{ value: "coin-swallowing competition", weight: 1 },
   ],
 
   bad_thing: [
@@ -5182,6 +5181,7 @@ trap_location: [
 	{ value: "the ${art_visual_painting} that once hung in the ${aristocratic_home} of an eccentric ${humanoid}, ${aristocratic_extra}, recently surfaced in a vendor's tent on ${urbn_street_names}", weight: 3 },
 	{ value: "an unpopular embargo on imported ${Tools}s, ${MusicalInstrument}s and ${FantasyMeal_Fruit_plural} has driven the desperate into the arms of the venal black market ${urbn_traders} of ${urbn_street_names}", weight: 2 },
 	{ value: "the city of ${urbn_cityname} is the home of a living weapon named ${sword_names}, ${a:BladedWeapons_Sword} that ${sword_desire}", weight: 2 },
+	{ value: "the most prosperous ${QuickNPCJobRich} in the city of ${urbn_cityname} is actually ${a:humanoid_exotic} with a colorful past", weight: 2 },
   ],
 
 
@@ -6229,6 +6229,17 @@ trap_location: [
 	{ value: "${AnimalBird}", weight: 1 },
 	{ value: "${AnimalBigCat}", weight: 1 },
 	{ value: "${AnimalSnake}", weight: 1 },
+  ],
+  
+  AnimalSimian: [
+    { value: "ape", weight: 1 },
+    { value: "gorilla", weight: 1 },
+    { value: "monkey", weight: 1 },
+    { value: "orangutan", weight: 1 },
+    { value: "baboon", weight: 1 },
+    { value: "chimpanzee", weight: 1 },
+    { value: "mandrill", weight: 1 },
+    { value: "macaque", weight: 1 },
   ],
   
   AnimalBigCat: [
@@ -7358,6 +7369,7 @@ trap_location: [
 	{ value: "childlike", weight: 1 },
 	{ value: "childless", weight: 1 },
 	{ value: "unmarried", weight: 1 },
+	{ value: "sleepless", weight: 1 },
   ],
 
   QuickNPCJob: [
@@ -7388,6 +7400,12 @@ trap_location: [
     { value: "ostler", weight: 1 },
     { value: "miner", weight: 1 },
 	{ value: "shepherd", weight: 1 },
+	{ value: "drover", weight: 1 },
+	{ value: "free sewer", weight: 1 },
+	{ value: "porter", weight: 1 },
+	{ value: "roper", weight: 1 },
+	{ value: "bricklayer", weight: 1 },
+	{ value: "waterbearer", weight: 1 },
   ],
 
   QuickNPCJobMid: [
@@ -7414,22 +7432,33 @@ trap_location: [
     { value: "guard", weight: 1 },
     { value: "musician", weight: 1 },
 	{ value: "barber", weight: 1 },
+	{ value: "spicer", weight: 1 },
+    { value: "armourer", weight: 1 },
+    { value: "arrowsmith", weight: 1 },
+    { value: "bargeman", weight: 1 },
+	{ value: "bowyer", weight: 1 },
+	{ value: "fletcher", weight: 1 },
+    { value: "bottlemaker", weight: 1 },
+    { value: "breechgirdler", weight: 1 },
+    { value: "farrier", weight: 1 },
+	{ value: "lanternmaker", weight: 1 },
+	{ value: "silk weaver", weight: 1 },
   ],
 
   QuickNPCJobRich: [
     { value: "${MerchantGoods} merchant", weight: 1 },
     { value: "jeweler", weight: 1 },
     { value: "gambler", weight: 1 },
-    { value: "scribe", weight: 1 },
-    { value: "priest", weight: 1 },
-    { value: "beadle", weight: 1 },
-    { value: "landowner", weight: 1 },
-    { value: "singer", weight: 1 },
+    { value: "shopkeeper", weight: 1 },
+    { value: "artist", weight: 1 },
+    { value: "barber-surgeon", weight: 1 },
+    { value: "rent-collector", weight: 1 },
+    { value: "entertainer", weight: 1 },
     { value: "moneylender", weight: 1 },
     { value: "scholar", weight: 1 },
     { value: "judge", weight: 1 },
-    { value: "dancer", weight: 1 },
-    { value: "general", weight: 1 },
+    { value: "entertainer", weight: 1 },
+    { value: "athlete", weight: 1 },
 	{ value: "goldsmith", weight: 1 },
     { value: "silversmith", weight: 1 },
 	{ value: "knight", weight: 1 },
@@ -8510,6 +8539,20 @@ celebration_type: [
 	{ value: "teenage dwarfs", weight: 1 },
 	{ value: "teenage boys", weight: 1 },
 	{ value: "teenage girls", weight: 1 },
+  ],
+  
+   humanoid_exotic: [
+    { value: "tiger centaur", weight: 1 },
+	{ value: "vampire", weight: 1 },
+	{ value: "mermaid", weight: 1 },
+	{ value: "undead skeleton", weight: 1 },
+	{ value: "vegetarian minotaur", weight: 1 },
+	{ value: "satyr", weight: 1 },
+	{ value: "ogre", weight: 1 },
+	{ value: "dryad", weight: 1 },
+	{ value: "troll", weight: 1 },
+	{ value: "${daemontype} daemon", weight: 3 },
+	{ value: "superintelligent ${AnimalSimian}", weight: 3 },
   ],
   
   constellation: [
