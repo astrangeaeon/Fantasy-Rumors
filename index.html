@@ -6301,6 +6301,27 @@ trap_location: [
     { value: "bull", weight: 1 },
   ],
   
+    AnimalTrophy: [
+    { value: "stag", weight: 1 },
+    { value: "elk", weight: 1 },
+    { value: "hind", weight: 1 },
+    { value: "deer", weight: 1 },
+    { value: "boar", weight: 1 },
+    { value: "bear", weight: 1 },
+    { value: "${AnimalBigCat}", weight: 1 },
+    { value: "ram", weight: 1 },
+    { value: "zebra", weight: 1 },
+	{ value: "gazelle", weight: 1 },
+    { value: "giraffe", weight: 1 },
+	{ value: "elephant", weight: 1 },
+    { value: "rhino", weight: 1 },
+    { value: "crocodile", weight: 1 },
+	{ value: "moose", weight: 1 },
+	{ value: "eagle", weight: 1 },
+    { value: "bull", weight: 1 },
+	{ value: "shark", weight: 1 },
+  ],
+  
   AnimalBaby: [
     { value: "puppy", weight: 1 },
     { value: "kitten", weight: 1 },
@@ -9820,6 +9841,7 @@ ship_type: [
   aristocratic_extra: [
 	{ value: "rumored ${aristocratic_quirk}", weight: 1 },
 	{ value: "who made their fortune ${aristocratic_new_money}", weight: 1 },
+	{ value: "who is said to display hunting trophies in their great hall: the shoulder-mount of ${a:AnimalTrophy}, the skins of ${AnimalSnake}s, the preserved body of ${a:AnimalSimian}, and, shown only to special guests, ${aristocratic_head}", weight: 1 },
   ],
   
   aristocratic_home: [
@@ -9831,6 +9853,25 @@ ship_type: [
 	{ value: "castle", weight: 1 },
 	{ value: "tower", weight: 1 },
 	{ value: "chateau", weight: 1 },
+  ],
+  
+  aristocratic_home_rooms: [
+	{ value: "master bedchamber", weight: 1 },
+	{ value: "chapel", weight: 1 },
+	{ value: "kitchen", weight: 1 },
+	{ value: "gatehouse", weight: 1 },
+	{ value: "great hall", weight: 1 },
+	{ value: "dungeon", weight: 1 },
+	{ value: "wine cellar", weight: 1 },
+	{ value: "buttery", weight: 1 },
+	{ value: "guest chamber", weight: 1 },
+	{ value: "dovecote", weight: 1 },
+	{ value: "parlour", weight: 1 },
+	{ value: "pantry", weight: 1 },
+	{ value: "undercroft", weight: 1 },
+	{ value: "high room", weight: 1 },
+	{ value: "ballroom", weight: 1 },
+	{ value: "treasure vault", weight: 1 },
   ],
   
   // rumored to be or to have
@@ -9856,6 +9897,13 @@ ship_type: [
 	{ value: "dark cleric", weight: 1 },
 	{ value: "immortal sorcerer", weight: 1 },
 	{ value: "daemon in disguise", weight: 1 },
+  ],
+  
+  aristocratic_head: [
+	{ value: "the head of ${ntc}", weight: 1 },
+	{ value: "the head of ${a:humanoid}", weight: 1 },
+	{ value: "the head of ${a:huntingmonster_singular}", weight: 1 },
+	{ value: "the head of ${a:AnimalMagicMount}", weight: 1 },
   ],
   
   // who made their fortune
