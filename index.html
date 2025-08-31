@@ -5181,7 +5181,7 @@ trap_location: [
 	{ value: "the ${art_visual_painting} that once hung in the ${aristocratic_home} of an eccentric ${humanoid}, ${aristocratic_extra}, recently surfaced in a vendor's tent on ${urbn_street_names}", weight: 3 },
 	{ value: "an unpopular embargo on imported ${Tools}s, ${MusicalInstrument}s and ${FantasyMeal_Fruit_plural} has driven the desperate into the arms of the venal black market ${urbn_traders} of ${urbn_street_names}", weight: 2 },
 	{ value: "the city of ${urbn_cityname} is the home of a living weapon named ${sword_names}, ${a:BladedWeapons_Sword} that ${sword_desire}", weight: 2 },
-	{ value: "the most prosperous ${QuickNPCJobRich} in the city of ${urbn_cityname} is actually ${a:humanoid_exotic} with a colorful past", weight: 2 },
+	{ value: "the most prosperous ${QuickNPCJobRich} in the city of ${urbn_cityname} is actually ${a:humanoid_exotic} ${prosperous_extra}", weight: 2 },
   ],
 
 
@@ -7587,8 +7587,12 @@ trap_location: [
 	{ value: "burning logs", weight: 1 },
     { value: "mustard", weight: 1 },
     { value: "raw potato", weight: 1 },
-    { value: "cat urine", weight: 1 },
+    { value: "urine", weight: 1 },
 	{ value: "fragrant anointing oil", weight: 1 },
+	{ value: "smoke", weight: 1 },
+	{ value: "sweat", weight: 1 },
+	{ value: "fish", weight: 1 },
+	{ value: "saltwater", weight: 1 },
   ],
 
   TradeGoods: [
@@ -8543,16 +8547,17 @@ celebration_type: [
   
    humanoid_exotic: [
     { value: "tiger centaur", weight: 1 },
-	{ value: "vampire", weight: 1 },
-	{ value: "mermaid", weight: 1 },
+	{ value: "flippant vampire", weight: 1 },
+	{ value: "grave mermaid", weight: 1 },
 	{ value: "undead skeleton", weight: 1 },
 	{ value: "vegetarian minotaur", weight: 1 },
-	{ value: "satyr", weight: 1 },
-	{ value: "ogre", weight: 1 },
-	{ value: "dryad", weight: 1 },
-	{ value: "troll", weight: 1 },
-	{ value: "${daemontype} daemon", weight: 3 },
-	{ value: "superintelligent ${AnimalSimian}", weight: 3 },
+	{ value: "grim satyr", weight: 1 },
+	{ value: "flirtatious ogre", weight: 1 },
+	{ value: "tree-riven dryad", weight: 1 },
+	{ value: "charismatic troll", weight: 1 },
+	{ value: "${daemontype} daemon", weight: 2 },
+	{ value: "superintelligent ${AnimalSimian}", weight: 2 },
+	{ value: "${humanoid} that entered life as ${a:AnimalMain}", weight: 2 },
   ],
   
   constellation: [
@@ -10140,6 +10145,27 @@ door_type: [
 	{ value: "spade money", weight: 1 },
 	{ value: "bullet coins", weight: 1 },
 	{ value: "${MusicalInstrument}s", weight: 1 },
+  ],
+  
+  prosperous_extra: [
+	{ value: "who pays for everything with old ${ancientpeople_singular} ${coins}", weight: 1 },
+	{ value: "who has ${shield} mounted in the parlor of their ${aristocratic_home}", weight: 1 },
+    { value: "whose breath reeks of ${alcohol_liquor}", weight: 1 },
+    { value: "whose clothes smell like smoke and sweat and ${violent_profession_plural}", weight: 1 },
+	{ value: "who keeps a broken ${broken_objects} on display", weight: 1 },
+	{ value: "who drinks ${alcohol_wine} with ${a:fairy_folk} after dark", weight: 1 },
+	{ value: "who has been known to sing '${ballad_titles}' in ${a:vocal_range}", weight: 1 },
+	{ value: "who attends prayers at the ${aristocratic_robbed_place_religious} on every holy day", weight: 1 },
+  ],
+  
+   broken_objects: [
+	{ value: "${Tools}", weight: 1 },
+	{ value: "${MusicalInstrument}", weight: 1 },
+    { value: "${Weapons}", weight: 1 },
+    { value: "toy ${ship_type}", weight: 1 },
+	{ value: "model ${vehicle}", weight: 1 },
+	{ value: "effigy of ${ntc}", weight: 1 },
+	{ value: "${classic_classes} doll", weight: 1 },
   ],
 
   intro: [
