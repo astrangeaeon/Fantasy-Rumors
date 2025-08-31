@@ -2952,6 +2952,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC}, was granted a wish from ${wish_granter}", weight: 2 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, ${local_obtain_art} ${a:art_visual_painting}", weight: 2 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, believes a draught of water from their well is better than all the ${alcohol} in ${urbn_cityname}", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, may not look like much now, but in their youth, they wore the ${athletic_crowns} for ${athletic_events} at the ${athletic_games} Games", weight: 2 },
   ],
   
   local_obtain_art: [
@@ -10167,6 +10168,37 @@ door_type: [
 	{ value: "effigy of ${ntc}", weight: 1 },
 	{ value: "${classic_classes} doll", weight: 1 },
   ],
+  
+  athletic_events: [
+	{ value: "chariot racing", weight: 1 },
+	{ value: "bull-leaping", weight: 1 },
+    { value: "wrestling", weight: 1 },
+    { value: "boxing", weight: 1 },
+	{ value: "archery", weight: 1 },
+	{ value: "spear throwing", weight: 1 },
+	{ value: "foot racing", weight: 1 },
+	{ value: "hoplite racing", weight: 1 },
+  ],
+
+  athletic_games: [
+	{ value: "Pythian", weight: 1 },
+	{ value: "Nemean", weight: 1 },
+    { value: "Minoan", weight: 1 },
+    { value: "Isthmian", weight: 1 },
+	{ value: "Eleusinian", weight: 1 },
+	{ value: "Mycenean", weight: 1 },
+	{ value: "Friendship", weight: 1 },
+  ],
+  
+   athletic_crowns: [
+	{ value: "laurel crown", weight: 1 },
+	{ value: "lotus crown", weight: 1 },
+    { value: "olive leaf crown", weight: 1 },
+    { value: "wildflower crown", weight: 1 },
+	{ value: "myrtle leaf crown", weight: 1 },
+	{ value: "grapevine crown", weight: 1 },
+  ],
+
 
   intro: [
 	    { value: "${I_herd}", weight: 1 }
