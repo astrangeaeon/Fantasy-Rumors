@@ -1201,7 +1201,7 @@ const tables = {
     { value: "Oswald of Carim", weight: 1 },
     { value: "Paladin Leeroy", weight: 1 },
     { value: "Pandafilando of the Sour Face", weight: 1 },
-    { value: "Patches the Hyena", weight: 1 },
+    { value: "Bat-keeper Jon", weight: 1 },
     { value: "Peculiar Kindalur", weight: 1 },
     { value: "Pepi the First", weight: 1 },
     { value: "Petrus of Thorolund", weight: 1 },
@@ -1428,6 +1428,7 @@ const tables = {
 	{ value: "${a:door_type} door on the ${floors} floor can only be passed through ${door_opened}", weight: 1 },
 	{ value: "${a:door_type} door on the ${floors} floor hasn't been opened for at least a century; it supposedly leads to ${door_destination}", weight: 1 },
 	{ value: "${a:door_type} trapdoor in an abandoned ${DungeonRoom} on the ${floors} floor is concealed beneath piles of broken ${ship_cargo_furniture_adj} ${ship_cargo_furniture_type}", weight: 1 },
+	{ value: "${a:Colors} curtain on the ${floors} floor conceals ${a:door_type} door that can only be passed through ${door_opened}", weight: 1 },
   ],
 
 
@@ -2666,6 +2667,7 @@ const tables = {
 	{ value: "a monster who dwells underwater feeding off of fish and ${AnimalWater} blood", weight: 1 },
 	{ value: "a beachcombing hermit who throws crabs at strangers", weight: 1 },
 	{ value: "a wild and rude gnome who punctuates his insults with a loud malodorous petarade", weight: 1 },
+	{ value: "the jungle treants of ${foreignland}", weight: 1 },
   ],
 
   island_riches: [
@@ -3374,6 +3376,7 @@ const tables = {
     { value: "the Pythagorean Cult", weight: 1 },
     { value: "the Seekers of the Perfect Thought", weight: 1 },
 	{ value: "the Companions of Saint ${SaintName}", weight: 1 },
+	{ value: "the Friends of Basilisks", weight: 1 },
   ],
 
   membership_initiation: [
@@ -4120,6 +4123,7 @@ const tables = {
     { value: "vivisection", weight: 1 },
 	{ value: "bound to the Shame Pole", weight: 1 },
 	{ value: "death by whip", weight: 1 },
+	{ value: "being lacerated by shards of a broken mirror", weight: 1 },
   ],
 
   rm: [
@@ -4344,7 +4348,7 @@ const tables = {
     { value: "jade", weight: 1 },
     { value: "sea clay", weight: 1 },
     { value: "silver", weight: 1 },
-    { value: "stone", weight: 1 },
+    { value: "black stone", weight: 1 },
     { value: "wood", weight: 1 },
   ],
 
@@ -4560,6 +4564,7 @@ const tables = {
 	{ value: "a jar filled with dozens of identical iron rings", weight: 1 },
 	{ value: "${a:flag}", weight: 1 },
 	{ value: "a medallion of the ram-headed criosphinx Subbiluliuma", weight: 1 },
+	{ value: "a simple ${crowns_metal_type} whistle that makes no sound, no matter how hard they blew it", weight: 1 },
   ],
 
   strangecustom: [
@@ -5183,6 +5188,8 @@ trap_location: [
 	{ value: "an unpopular embargo on imported ${Tools}s, ${MusicalInstrument}s and ${FantasyMeal_Fruit_plural} has driven the desperate into the arms of the venal black market ${urbn_traders} of ${urbn_street_names}", weight: 2 },
 	{ value: "the city of ${urbn_cityname} is the home of a living weapon named ${sword_names}, ${a:BladedWeapons_Sword} that ${sword_desire}", weight: 2 },
 	{ value: "the most prosperous ${QuickNPCJobRich} in the city of ${urbn_cityname} is actually ${a:humanoid_exotic} ${prosperous_extra}", weight: 2 },
+	{ value: "the small group of ${AnimalPest}s that linger outside the city walls are supposedly a group of nobles, among them an influential ${QuickNPCJobElite}, who were transformed by ${a:magicusertype} as punishment for their ${sins}", weight: 2 },
+	{ value: "the city of ${urbn_cityname} is said to be shaped like a massive ${MusicalInstrument}", weight: 1 },
   ],
 
 
@@ -5618,6 +5625,7 @@ trap_location: [
 	{ value: "a famous matador ${facial_desc}", weight: 1 },
 	{ value: "a daughter of the ${uc:CompassDirectionPrimary} Wind", weight: 1 },
 	{ value: "a destitute ${humanoid}, two ${crowns_metal_type} ${coins} in their pocket,", weight: 1 },
+	{ value: "an assassin who kills exclusively by stabbing victims with stained glass shards from the ruined Cathedral of Saint ${SaintName}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -7360,8 +7368,8 @@ trap_location: [
     { value: "gossipy", weight: 1 },
     { value: "old", weight: 1 },
     { value: "young", weight: 1 },
-    { value: "teenage", weight: 1 },
-    { value: "underage", weight: 1 },
+    { value: "teenaged", weight: 1 },
+    { value: "underaged", weight: 1 },
     { value: "bruised", weight: 1 },
     { value: "scarred", weight: 1 },
     { value: "scared", weight: 1 },
@@ -10246,6 +10254,17 @@ door_type: [
     { value: "wildflower crown", weight: 1 },
 	{ value: "myrtle leaf crown", weight: 1 },
 	{ value: "grapevine crown", weight: 1 },
+  ],
+  
+  sins: [
+	{ value: "cruelty", weight: 1 },
+	{ value: "rapacity", weight: 1 },
+    { value: "gluttony", weight: 1 },
+    { value: "wickedness", weight: 1 },
+	{ value: "perversions", weight: 1 },
+	{ value: "iniquities", weight: 1 },
+	{ value: "scurrility", weight: 1 },
+	{ value: "licentiousness", weight: 1 },
   ],
 
 
