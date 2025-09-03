@@ -3801,6 +3801,7 @@ const tables = {
     { value: "samurai", weight: 1 },
     { value: "townsfolk", weight: 1 },
 	{ value: "knights", weight: 1 },
+	{ value: "${violent_profession_plural}", weight: 1 },
   ],
 
   prejudicetarget: [
@@ -6278,6 +6279,15 @@ trap_location: [
     { value: "cougar", weight: 1 },
   ],
   
+  AnimalCanine: [
+    { value: "jackal", weight: 1 },
+    { value: "hyena", weight: 1 },
+    { value: "wolf", weight: 1 },
+    { value: "coyote", weight: 1 },
+    { value: "wild dog", weight: 1 },
+	{ value: "fox", weight: 1 },
+  ],
+  
   AnimalSnake: [
     { value: "cobra", weight: 1 },
     { value: "asp", weight: 1 },
@@ -6301,7 +6311,9 @@ trap_location: [
     { value: "falcon", weight: 1 },
     { value: "hawk", weight: 1 },
     { value: "eagle", weight: 1 },
-    { value: "jellyfish", weight: 1 },
+    { value: "crocodile", weight: 1 },
+	{ value: "${AnimalCanine}", weight: 1 },
+	{ value: "wolverine", weight: 1 },
   ],
   
   AnimalPrey: [
@@ -10090,11 +10102,12 @@ door_type: [
     { value: "cavaliers", weight: 1 },
 	{ value: "raiding-men", weight: 1 },
     { value: "bombardiers", weight: 1 },
-	{ value: "musketeers", weight: 1 },
+	{ value: "warriors", weight: 1 },
 	{ value: "cannoneers", weight: 1 },
     { value: "men-at-arms", weight: 1 },
 	{ value: "highwaymen", weight: 1 },
     { value: "bodyguards", weight: 1 },
+	{ value: "assassins", weight: 1 },
   ],
   
   classic_classes: [
@@ -10300,6 +10313,22 @@ door_type: [
 	{ value: "dithyramb", weight: 1 },
   ],
 
+   miracles: [
+	{ value: "changing the savage ${AnimalPredator} into a gentle ${AnimalPrey}", weight: 1 },
+	{ value: "transmuting the rocks and stones into ${Jewels}", weight: 1 },
+    { value: "transforming the pursuing ${violent_profession_plural} into ${cod_tree_type} trees", weight: 1 },
+    { value: "turning water into ${alcohol}", weight: 1 },
+	{ value: "feeding ${FantasyMeal_Fruit_plural} to the multitude of ${travelers}", weight: 1 },
+	{ value: "strangling the daemon ${DemonName} disguised in the form of a beautiful woman, with her own hair", weight: 1 },
+	{ value: "cutting the wings off of Aten the Sky-eel", weight: 1 },
+	{ value: "sealing the portal into the dangerous ${otherworld_names} by marking it with the ${rune_origin} warning runes for ${rune_concept} and ${rune_being}", weight: 1 },
+	{ value: "quelling the ${severe_weather} with a holy word", weight: 1 },
+	{ value: "clothing the naked ${cod_tree_type} tree with leaves of bronze and silver", weight: 1 },
+	{ value: "chastising the ${huntingmonster_singular}", weight: 1 },
+	{ value: "compelling ${a:fairy_folk} to quit the realms of men", weight: 1 },
+	{ value: "", weight: 1 },
+	{ value: "", weight: 1 },
+  ],
 
   intro: [
 	    { value: "${I_herd}", weight: 1 }
