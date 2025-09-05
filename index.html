@@ -443,6 +443,7 @@ const tables = {
     { value: "sea-ice", weight: 1 },
     { value: "sex", weight: 1 },
     { value: "stone", weight: 1 },
+	{ value: "gold", weight: 1 },
   ],
 
   actionbeyond: [
@@ -1560,6 +1561,7 @@ const tables = {
     { value: "wind", weight: 1 },
 	{ value: "shadow", weight: 1 },
 	{ value: "light", weight: 1 },
+	{ value: "gold", weight: 1 },
   ],
 
   eucatastrophe: [
@@ -6164,6 +6166,7 @@ trap_location: [
 	{ value: "when travelers find themselves in the enchanted ${otherworld_names}, they ${taboo}, when they return to the lands of men, ${taboo_consequence}", weight: 4 },
 	{ value: "there's a soft clearing where the breeze whistles the melody of '${ballad_titles}'", weight: 2 },
 	{ value: "there's an obelisk near an ancient false door cut into the naked rock with ${rune} carved into it", weight: 2 },
+	{ value: "there's a stone that marks the site of the ${uc:floors} Miracle of Saint ${SaintName}: ${miracles}", weight: 2 },
   ],
   
   
@@ -7532,7 +7535,7 @@ trap_location: [
     { value: "judge", weight: 1 },
 	{ value: "goldsmith", weight: 1 },
     { value: "silversmith", weight: 1 },
-	{ value: "knight", weight: 1 },
+	{ value: "noble", weight: 1 },
 	{ value: "chancellor", weight: 1 },
 	{ value: "diplomat", weight: 1 },
   ],
@@ -10165,6 +10168,8 @@ door_type: [
     { value: "drifter", weight: 1 },
 	{ value: "vagabond", weight: 1 },
 	{ value: "vagrant", weight: 1 },
+	{ value: "stranger", weight: 1 },
+	{ value: "beggar", weight: 1 },
   ],
   
   
@@ -10317,8 +10322,8 @@ door_type: [
 	{ value: "changing the savage ${AnimalPredator} into a gentle ${AnimalPrey}", weight: 1 },
 	{ value: "transmuting the rocks and stones into ${Jewels}", weight: 1 },
     { value: "transforming the pursuing ${violent_profession_plural} into ${cod_tree_type} trees", weight: 1 },
-    { value: "turning water into ${alcohol}", weight: 1 },
-	{ value: "feeding ${FantasyMeal_Fruit_plural} to the multitude of ${travelers}", weight: 1 },
+    { value: "turning the ${exotic_water_body} water into ${alcohol}", weight: 1 },
+	{ value: "feeding ${FantasyMeal_Fruit_plural} to the multitude of ${travelers}s", weight: 1 },
 	{ value: "strangling the daemon ${DemonName} disguised in the form of a beautiful woman, with her own hair", weight: 1 },
 	{ value: "cutting the wings off of Aten the Sky-eel", weight: 1 },
 	{ value: "sealing the portal into the dangerous ${otherworld_names} by marking it with the ${rune_origin} warning runes for ${rune_concept} and ${rune_being}", weight: 1 },
@@ -10326,9 +10331,34 @@ door_type: [
 	{ value: "clothing the naked ${cod_tree_type} tree with leaves of bronze and silver", weight: 1 },
 	{ value: "chastising the ${huntingmonster_singular}", weight: 1 },
 	{ value: "compelling ${a:fairy_folk} to quit the realms of men", weight: 1 },
-	{ value: "", weight: 1 },
-	{ value: "", weight: 1 },
+	{ value: "dreaming the Dream of ${uc:elemntl_type}", weight: 1 },
+	{ value: "wrestling with the messenger of divine ${RealGods}", weight: 1 },
+	{ value: "curing ${oppressed_grp} of ${tc:diseases} Disease", weight: 1 },
+	{ value: "resurrecting the slain ${po:QuickNPCJobPoor} son", weight: 1 },
+	{ value: "taming the ${AnimalCanine} with a gentle whisper", weight: 1 },
+	{ value: "teaching the ${AnimalSimian} to stand and speak like a man", weight: 1 },
+	{ value: "cutting the legs off the ${AnimalSnake}", weight: 1 },
+	{ value: "breaking the power of the ${idol_material} idol of ${a:idol_subject}", weight: 1 },
+	{ value: "trapping the ${WeirdFantasyMonster} in a prison of ${elemntl_type}", weight: 1 },
+	{ value: "expelling the ${QuickNPCJobElite}s from their ${aristocratic_home}s and ushering in the weary ${travelers}s", weight: 1 },
+	{ value: "making the young barren widow big with child", weight: 1 },
+	{ value: "summoning snarling ${AnimalCanine}s to silence the mocking children", weight: 1 },
+	{ value: "aging the wailing infant into an old man", weight: 1 },
+	{ value: "growing ${a:AnimalBird} to enormous size and flying it up to Paradise", weight: 1 },
+	{ value: "creating a double out of cloud to fool the spouse of ${ntc}", weight: 1 },
   ],
+  
+  diseases: [
+	{ value: "split-eye", weight: 1 },
+	{ value: "blackleg", weight: 1 },
+    { value: "limbsleep", weight: 1 },
+    { value: "thorn-throat", weight: 1 },
+	{ value: "swine-tusk", weight: 1 },
+	{ value: "euryale hair", weight: 1 },
+	{ value: "python rash", weight: 1 },
+	{ value: "barking lung", weight: 1 },
+  ],
+  
 
   intro: [
 	    { value: "${I_herd}", weight: 1 }
