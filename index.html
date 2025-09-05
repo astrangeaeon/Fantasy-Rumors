@@ -434,6 +434,7 @@ const tables = {
 	{ value: " who died unblessed, unabsolved, and unrepentant,", weight: 1 },
 	{ value: " who believed what befell their body and soul was scribed in a book a thousand years before the foundation of the world,", weight: 1 },
 	{ value: " who could speak but four words of the ancient ${ancientpeople_singular} tongue of power and it was enough,", weight: 1 },
+	{ value: " who broke the wings of the western wind daemons,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1177,7 +1178,7 @@ const tables = {
     { value: "Larry the Triumphant", weight: 1 },
     { value: "Laurentius of the Great Swamp", weight: 1 },
     { value: "Len of the Many Hammers", weight: 1 },
-    { value: "Licia of Lindeldt", weight: 1 },
+    { value: "The Blue-Throated ${ancientpeople_singular}", weight: 1 },
     { value: "Little Jube the Caretaker", weight: 1 },
     { value: "Little Stooping Lugh", weight: 1 },
     { value: "Lone Hunter Schmidt", weight: 1 },
@@ -1237,7 +1238,7 @@ const tables = {
     { value: "Shiva of the East", weight: 1 },
     { value: "Silph the Uncanny", weight: 1 },
     { value: "Sir Alonne", weight: 1 },
-    { value: "Solaire of Astora", weight: 1 },
+    { value: "Nikon of the Black Mountain", weight: 1 },
     { value: "Solemn Veiled Orual", weight: 1 },
     { value: "Steady Hand McDuff", weight: 1 },
     { value: "Steel-willed Lorrie", weight: 1 },
@@ -1251,7 +1252,7 @@ const tables = {
     { value: "The Dark Madonna", weight: 1 },
     { value: "The Duke’s Dear Freja", weight: 1 },
     { value: "Osric the Lion", weight: 1 },
-    { value: "The Great Grey Wolf Sif", weight: 1 },
+    { value: "Chief Eunuch Samson Rowlie", weight: 1 },
     { value: "The Great Orm", weight: 1 },
     { value: "The Great Teacher Jikaku", weight: 1 },
     { value: "The Hound of Rutilor", weight: 1 },
@@ -1358,6 +1359,8 @@ const tables = {
 	{ value: "a signet ring bearing the sign of ${a:SignetSymbol} on it, the seal of ${uc:RoyalTitleMale} ${FantasyNameMale} of ${foreignland},", weight: 1 },
     { value: "the wolf\'s tooth", weight: 1 },
     { value: "two dice which always roll ${onedsix} and ${onedsix}", weight: 1 },
+	{ value: "a jug of sticky black honey mixed with ink and blood", weight: 1 },
+	{ value: "a curious green stone", weight: 1 },
   ],
 
   decade_event: [
@@ -1680,6 +1683,7 @@ const tables = {
 	{ value: "braided beards of dwarfs", weight: 1 },
 	{ value: "pointed ears of elves", weight: 1 },
 	{ value: "hairy toes of hobbits", weight: 1 },
+	{ value: "${AnimalMammal} eggs", weight: 1 },
   ],
 
   excitingemployer: [
@@ -3460,6 +3464,7 @@ const tables = {
 	{ value: "${monstertype} prays to ${a:idol} in the ruins of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
 	{ value: "${monstertype} will grant sanctuary for three days in its castle if given a gift of ${Jewels}", weight: 1 },
 	{ value: "in a desolate ${DungeonRoom}, with only ${a:DungeonObject} and a dead ${magicusertype} for company, one of the ${monster_hybrid} abominations created by Hector the Pest for the Nightsoil Queen roars in anguish and confusion", weight: 1 },
+	{ value: "a sphinx looms at the top of every staircase", weight: 1 },
   ],
   
   monster_hybrid: [
@@ -3509,6 +3514,7 @@ const tables = {
     { value: "${DemonName}, an apple-sweet murmurer,", weight: 1 },
     { value: "${a:DungeonAdjective} ${monsterA}", weight: 1 },
     { value: "${a:WeirdFantasyMonster}", weight: 1 },
+	{ value: "${DemonName}, cow-repelling, antelope-footed and bull-toothed,", weight: 1 },
   ],
 
   monstervalue: [
@@ -4570,6 +4576,7 @@ const tables = {
 	{ value: "${a:flag}", weight: 1 },
 	{ value: "a medallion of the ram-headed criosphinx Subbiluliuma", weight: 1 },
 	{ value: "a simple ${crowns_metal_type} whistle that makes no sound, no matter how hard they blew it", weight: 1 },
+	{ value: "a golden ${AnimalMain}", weight: 1 },
   ],
 
   strangecustom: [
@@ -4670,6 +4677,7 @@ const tables = {
 	{ value: "the ill will breathe three times into the mouth of a live fish, then throw it back into the water, to confuse Death", weight: 1 },
 	{ value: "there are no cemeteries because upon death, the corpse is divided up and given to the poor to eat", weight: 1 },
 	{ value: "public figures must add a verse of their own to the traditional tune '${ballad_titles}'", weight: 1 },
+	{ value: "people wear animal masks and bury the mirrors that have seen their true face", weight: 1 },
   ],
 
   strangenoises: [
@@ -5035,6 +5043,7 @@ const tables = {
     { value: "and their ${trap_builder_servant_adj} servants", weight: 2 },
     { value: "with the reputation of being ${criminals}", weight: 2 },
 	{ value: "who keep herds of ${herdanimal} deeper down", weight: 2 },
+	{ value: "who are known to eat the food in peoples' dreams", weight: 1 },
   ],
   
   
@@ -5836,6 +5845,7 @@ trap_location: [
 	{ value: "swaps false brilliants for real stones of price", weight: 1 },
 	{ value: "sings '${ballad_titles}' quietly to themselves", weight: 2 },
 	{ value: "demonstrates the stern heroic virtues of the ancient ${ancientpeople}", weight: 1 },
+	{ value: "will remove arrows from peoples' bodies using a lodestone", weight: 1 },
   ],
 
   washups: [
@@ -6123,7 +6133,7 @@ trap_location: [
     // { value: "Ex: “There’s a rumor that in a shady grove …”", weight: 0 },
     { value: "${who_is_buried} was buried in a hidden tomb with ${tomb_loot}. The tomb is protected by ${tombprotection}", weight: 4 },
     { value: "${thingbeyond} from ${placebeyond} ${actionbeyond}", weight: 4 },
-    { value: "${wilds_specific_locn} ${wilds_hook2}", weight: 4 },
+    { value: "${wilds_specific_locn} ${wilds_hook2}", weight: 8 },
     { value: "there’s ${a:wilds_adj} ${wilds_noun} ${wilds_locn} that ${wilds_hook}", weight: 4 },
     { value: "a pack of ${herd_adj} ${herdanimal} ${herdwith} have made their home ${wilds_specific_locn}", weight: 2 },
     { value: "${huntingmonster}, not seen since they were exiled below the earth by ${heroes_and_villains} centuries ago, have been reported near ${landmark}", weight: 1 },
@@ -10133,6 +10143,18 @@ door_type: [
     { value: "Scourge Aasimar multiclassed paladin / sorcerer / warlock", weight: 1 },
   ],
   
+  bard_titles: [
+	{ value: "ryymer", weight: 1 },
+    { value: "sonnateer", weight: 1 },
+    { value: "joungleur", weight: 1 },
+	{ value: "troubadour", weight: 1 },
+	{ value: "minstrel", weight: 1 },
+    { value: "lyrist", weight: 1 },
+	{ value: "skald", weight: 1 },
+    { value: "minnesinger", weight: 1 },
+    { value: "riddle crafter", weight: 1 },
+  ],
+  
   defeated_adj: [
 	{ value: "battered", weight: 1 },
 	{ value: "bruised", weight: 1 },
@@ -10341,7 +10363,7 @@ door_type: [
 	{ value: "breaking the power of the ${idol_material} idol of ${a:idol_subject}", weight: 1 },
 	{ value: "trapping the ${WeirdFantasyMonster} in a prison of ${elemntl_type}", weight: 1 },
 	{ value: "expelling the ${QuickNPCJobElite}s from their ${aristocratic_home}s and ushering in the weary ${travelers}s", weight: 1 },
-	{ value: "making the young barren widow big with child", weight: 1 },
+	{ value: "making the barren young widow big with child", weight: 1 },
 	{ value: "summoning snarling ${AnimalCanine}s to silence the mocking children", weight: 1 },
 	{ value: "aging the wailing infant into an old man", weight: 1 },
 	{ value: "growing ${a:AnimalBird} to enormous size and flying it up to Paradise", weight: 1 },
@@ -10359,6 +10381,17 @@ door_type: [
 	{ value: "barking lung", weight: 1 },
   ],
   
+  agreement: [
+	{ value: "pact", weight: 1 },
+	{ value: "agreement", weight: 1 },
+    { value: "contract", weight: 1 },
+    { value: "treaty", weight: 1 },
+	{ value: "deal", weight: 1 },
+	{ value: "bargain", weight: 1 },
+	{ value: "accord", weight: 1 },
+	{ value: "pledge", weight: 1 },
+	{ value: "covenant", weight: 1 },
+  ],
 
   intro: [
 	    { value: "${I_herd}", weight: 1 }
