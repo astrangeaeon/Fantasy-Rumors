@@ -6185,6 +6185,7 @@ trap_location: [
 	{ value: "there's a soft clearing where the breeze whistles the melody of '${ballad_titles}'", weight: 2 },
 	{ value: "there's an obelisk near an ancient false door cut into the naked rock with ${rune} carved into it", weight: 2 },
 	{ value: "there's a stone that marks the site of the ${uc:floors} Miracle of Saint ${SaintName}: ${miracles}", weight: 2 },
+	{ value: "the castle of ${ntc}, sometimes called the Castle of ${castle_name}, is said ${castle_extra}", weight: 2 },
   ],
   
   
@@ -9215,6 +9216,7 @@ celebration_type: [
 	{ value: "must never gaze upon the constellation called ${constellation_repeat}", weight: 1 },
 	{ value: "must eat nothing after ${boundary_times}", weight: 1 },
 	{ value: "must never answer honestly the question of ${a:fairy_folk}", weight: 1 },
+	{ value: "must never allow the shadow of a bird to merge with their own shadow", weight: 1 },
   ],
   
   taboo_path_type: [
@@ -10457,6 +10459,8 @@ door_type: [
 	{ value: "of the ${tc:AnimalBird}", weight: 3 },
 	{ value: "of the ${tc:QuickNPCJob}", weight: 3 },
 	{ value: "of the ${uc:WeirdFantasyMonster}", weight: 2 },
+	{ value: "of ${uc:numinous_feeling}", weight: 2 },
+	{ value: "of Victory", weight: 1 },
   ],
   
   gates_prefix: [
@@ -10482,6 +10486,63 @@ door_type: [
 	{ value: "the Beautiful", weight: 1 },
 	{ value: "the Marble", weight: 1 },
 	{ value: "the ${uc:humanoid}", weight: 2 },
+	{ value: "Gloom", weight: 1 },
+	{ value: "Victory", weight: 1 },
+  ],
+  
+  //the castle of ntc, sometimes called the castle of castle_name, is said to have castle_extra
+  castle_name: [
+	{ value: "Clashing Swords", weight: 1 },
+	{ value: "Tiny Doors", weight: 1 },
+    { value: "Eerie Gloom", weight: 1 },
+    { value: "the Knave", weight: 1 },
+	{ value: "Second Chances", weight: 1 },
+	{ value: "${uc:Jewels}", weight: 2 },
+	{ value: "the Chained ${tc:huntingmonster_singular}", weight: 3 },
+	{ value: "the Masked ${tc:huntingmonster_singular}", weight: 3 },
+	{ value: "the Wounded ${tc:huntingmonster_singular}", weight: 3 },
+	{ value: "the Bound ${tc:fairy_folk}", weight: 3 },
+	{ value: "Mirrors", weight: 1 },
+  ],
+  
+  castle_extra: [
+	{ value: "to have a moat ${castle_moat}", weight: 1 },
+	{ value: "to have ${castle_walls}", weight: 1 },
+    { value: "to have ${a:huntingmonster_singular} for a castellan", weight: 1 },
+    { value: "to have ${relic} in its chapel", weight: 1 },
+	{ value: "to have ${a:undead_intangible} that haunts the ${aristocratic_home_rooms}", weight: 1 },
+	{ value: "to have a court of talking ${AnimalFarm}s", weight: 1 },
+	{ value: "to be ${castle_protector}", weight: 1 },
+  ],
+  
+  castle_moat: [
+	{ value: "of searing hot water", weight: 1 },
+	{ value: "of molten gold", weight: 1 },
+    { value: "of ${Colors} flame", weight: 1 },
+    { value: "filled with offal and wet rubbish", weight: 1 },
+	{ value: "of ${AnimalVenomous} venom", weight: 1 },
+	{ value: "filled with dead knights and horses", weight: 1 },
+	{ value: "that contains the night sky", weight: 1 },
+	{ value: "where seven sacred swans swim", weight: 1 },
+	{ value: "of frenzied swarming rats", weight: 1 },
+  ],
+  
+  castle_walls: [
+	{ value: "walls made from ancient tombstones", weight: 1 },
+	{ value: "blazing walls too bright to look upon", weight: 1 },
+    { value: "walls of unbreakable ${ancientpeople_singular} glass", weight: 1 },
+    { value: "walls of cyclopean black stone", weight: 1 },
+	{ value: "high walls that scrape the sky to tickle the clouds", weight: 1 },
+	{ value: "masterfully painted walls that tell the saga of ${larger_than_life}", weight: 1 },
+	{ value: "walls of delicate paper", weight: 1 },
+	{ value: "strong walls of ironbark timber", weight: 1 },
+	{ value: "invisible walls", weight: 1 },
+  ],
+  
+  castle_protector: [
+	{ value: "protected by ${tombprotection}", weight: 1 },
+	{ value: "protected by ${islandprotector}", weight: 1 },
+    { value: "protected by a squad of elite ${violent_profession_plural}, the best in the land", weight: 1 },
   ],
 
   intro: [
