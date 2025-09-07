@@ -813,6 +813,7 @@ const tables = {
 	{ value: "polyphallic wind chimes", weight: 1 },
 	{ value: "the hair of a nixie, golden and always wet", weight: 1 },
 	{ value: "strangely designed implements of torture or agriculture", weight: 1 },
+	{ value: "the souls of flowers", weight: 1 },
   ],
 
   construction_help: [
@@ -2104,6 +2105,7 @@ const tables = {
     { value: "was eaten by a grue", weight: 1 },
 	{ value: "now hangs in chains before ${a:idol}", weight: 1 },
     { value: "his skull now houses a family of mice", weight: 1 },
+	{ value: "was captured in a reverse aquarium at the bottom of the Lake of Dreams", weight: 1 },
   ],
 
   hero_goal: [
@@ -2962,6 +2964,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC}, ${local_obtain_art} ${a:art_visual_painting}", weight: 2 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, believes a draught of water from their well is better than all the ${alcohol} in ${urbn_cityname}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, may not look like much now, but in their youth, they wore the ${athletic_crowns} for ${athletic_events} at the ${athletic_games} Games", weight: 2 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, just got a tattoo of ${tattoos}", weight: 2 },
   ],
   
   local_obtain_art: [
@@ -3464,7 +3467,8 @@ const tables = {
 	{ value: "${monstertype} prays to ${a:idol} in the ruins of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
 	{ value: "${monstertype} will grant sanctuary for three days in its castle if given a gift of ${Jewels}", weight: 1 },
 	{ value: "in a desolate ${DungeonRoom}, with only ${a:DungeonObject} and a dead ${magicusertype} for company, one of the ${monster_hybrid} abominations created by Hector the Pest for the Nightsoil Queen roars in anguish and confusion", weight: 1 },
-	{ value: "a sphinx looms at the top of every staircase", weight: 1 },
+	{ value: "a sphinx looms at the top of every staircase, each requiring an answer to a different question", weight: 1 },
+	{ value: "Here the ${huntingmonster}, by dint of ancient ${agreement}, cannot be harmed by weapons forged or held by ${humanoids}", weight: 1 },
   ],
   
   monster_hybrid: [
@@ -4988,6 +4992,7 @@ const tables = {
     { value: "a cage with ${trap_cage_bars} ${trap_location} that can imprison ${trap_pit_victim}", weight: 2 },
 	{ value: "skulking ankle-high gorgons that stalk the ${floors} floor, spewing petrifying gas, turning feet into stone", weight: 1 },
 	{ value: "${a:DungeonRoom} where the exits seal and a shoulder-mounted ${AnimalMount} trophy high on the wall vomits forth ${trap_cage_fill}", weight: 2 },
+	{ value: "${a:DungeonRoom} where the exits seal and ${flag_shape}-shaped holes on the wall pour out silver ${AnimalInsectStinging}s", weight: 2 },
   ],
   
   trap_cage_bars: [
@@ -5115,6 +5120,7 @@ trap_location: [
 	{ value: "a perfect map of the ${aristocratic_home} of ${royals} ${FantasyLastName}, ${aristocratic_extra}, is drawn in blood on the wall of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
 	{ value: "${historicalperson} hid ${a:ship_cargo_container_singular} with thousands of ${ancientpeople_singular} ${crowns_metal_type} ${coins} ${obj_or_room} on the ${floors} floor", weight: 1 },
 	{ value: "on the wall of ${a:DungeonRoom} hangs ${shield} that no one has been brave enough to claim for their own", weight: 1 },
+	{ value: "${a:undead_corporeal} protects ${a:weapon_prefix} ${Weapons} in ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
   ],
 
   treasureA: [
@@ -9592,6 +9598,7 @@ ship_type: [
 	{ value: "with no visible crew", weight: 1 },
 	{ value: "named ${ShipNames}", weight: 1 },
 	{ value: "which keeps ${a:AnimalSnake} on board for luck", weight: 1 },
+	{ value: "whose crew all bear tattoos of ${tattoos}", weight: 1 },
   ],
   
   
@@ -10391,6 +10398,38 @@ door_type: [
 	{ value: "accord", weight: 1 },
 	{ value: "pledge", weight: 1 },
 	{ value: "covenant", weight: 1 },
+  ],
+  
+  tattoos: [
+	{ value: "${a:MiscSymbol}", weight: 1 },
+	{ value: "${a:AnimalSnake}", weight: 1 },
+    { value: "${a:humanoid} suffering from ${tc:diseases} Disease", weight: 1 },
+    { value: "${a:BladedWeapons_Sword} piercing a heart", weight: 1 },
+	{ value: "${a:AnimalMain}", weight: 1 },
+	{ value: "${a:AnimalWater}", weight: 1 },
+	{ value: "${a:huntingmonster_singular}", weight: 1 },
+	{ value: "${larger_than_life}", weight: 1 },
+	{ value: "${a:SignetSymbol}", weight: 1 },
+	{ value: "${a:AnimalPredator} ${flag_extra_animal_verb} ${a:AnimalPrey}", weight: 2 },
+    { value: "${a:flag_extra_animal_adj} ${AnimalPrey}", weight: 2 },
+    { value: "the pattern of ${constellation_repeat} constellation in ${flag_imperial_color_adj} ${flag_imperial_color}", weight: 2 },
+    { value: "two ${humanoids} ${flag_extra_humanoids_verb}", weight: 2 },
+    { value: "${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb3}", weight: 2 },
+    { value: "${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb2} ${a:flag_extra_humanoids_verb2_object}", weight: 2 },
+    { value: "${a:flag_extra_animal_adj} ${AnimalMain} ${flag_extra_animal_verb} ${a:AnimalBaby}", weight: 2 },
+    { value: "${flag_extra_humanoids_adj} ${fairy_folk}", weight: 2 },
+  ],
+  
+   weapon_prefix: [
+	{ value: "holy", weight: 1 },
+	{ value: "flaming", weight: 1 },
+    { value: "${humanoid}-slaying", weight: 1 },
+    { value: "${huntingmonster_singular}-slaying", weight: 1 },
+	{ value: "sparking", weight: 1 },
+	{ value: "venomous", weight: 1 },
+	{ value: "daemonic", weight: 1 },
+	{ value: "dancing", weight: 1 },
+	{ value: "cursed", weight: 1 },
   ],
 
   intro: [
