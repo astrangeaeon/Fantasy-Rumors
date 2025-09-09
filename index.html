@@ -2142,6 +2142,7 @@ const tables = {
     { value: "back when ${AnimalOrdinary}s still spoke the tongues of man", weight: 1 },
 	{ value: "back before the ${huntingmonster} crawled forth from their caves", weight: 1 },
 	{ value: "back before Saint ${SaintName} exiled ${exiles} from ${urbn_cityname}", weight: 1 },
+	{ value: "back when tigers used to smoke", weight: 1 },
   ],
   
   historicalbuilders: [
@@ -5210,10 +5211,10 @@ trap_location: [
 	{ value: "the most prosperous ${QuickNPCJobRich} in the city of ${urbn_cityname} is actually ${a:humanoid_exotic} ${prosperous_extra}", weight: 2 },
 	{ value: "the small group of ${AnimalPest}s that linger outside the city walls are supposedly a group of nobles, among them an influential ${QuickNPCJobElite}, who were transformed by ${a:magicusertype} as punishment for their ${sins}", weight: 2 },
 	{ value: "the city of ${urbn_cityname} is said to be shaped like a massive ${MusicalInstrument}", weight: 1 },
-	{ value: "the walls of the city of ${urbn_cityname} are said to be repaired with tombstones from the ${humanoid} cemetary", weight: 1 },
+	{ value: "the walls of the city of ${urbn_cityname} are said to be repaired with tombstones from the old ${humanoid} cemetary", weight: 1 },
 	{ value: "in ${urbn_cityname}, strangers must enter through ${gates_prefix} Gate or risk the wrath of the local ${violent_profession_plural}", weight: 1 },
+	{ value: "when ${FantasyGodNameMale}, ${FantasyGodAdjective} High Lord of ${uc:FantasyDomain} and ${uc:FantasyDomain} died, his followers were filled with ${numinous_feeling} as they carried his ${god_funeral_size} ${god_funeral_body} out of town through ${gates_prefix} Gate and ${god_funeral_extra}", weight: 2 },
   ],
-
 
    urbn_traders: [
     { value: "peddlers", weight: 1 },
@@ -10544,6 +10545,45 @@ door_type: [
 	{ value: "protected by ${islandprotector}", weight: 1 },
     { value: "protected by a squad of elite ${violent_profession_plural}, the best in the land", weight: 1 },
   ],
+  
+  god_funeral_body: [
+	{ value: "body", weight: 1 },
+	{ value: "corpse", weight: 1 },
+    { value: "carcass", weight: 1 },
+  ],
+  
+  god_funeral_size: [
+	{ value: "mammoth", weight: 1 },
+	{ value: "giant", weight: 1 },
+    { value: "bloated", weight: 1 },
+	{ value: "huge but unexplainably light", weight: 1 },
+    { value: "still bleeding", weight: 1 },
+  ],
+  
+  god_funeral_extra: [
+	{ value: "the scent of ${Smells} still lingers there", weight: 1 },
+	{ value: "already the remains had begun to transform into ${god_funeral_transform}", weight: 1 },
+    { value: "the animals of the city ${god_funeral_animal_behavior}", weight: 1 },
+  ],
+  
+  god_funeral_animal_behavior: [
+	{ value: "all gathered to weep", weight: 1 },
+	{ value: "sang '${ballad_titles}' in a mighty chorus", weight: 1 },
+    { value: "bowed low and murmurred prayers in unison", weight: 1 },
+  ],
+  
+  god_funeral_transform: [
+	{ value: "stone", weight: 1 },
+	{ value: "wood", weight: 1 },
+    { value: "glass", weight: 1 },
+	{ value: "sand", weight: 1 },
+    { value: "ash", weight: 1 },
+	{ value: "iron", weight: 1 },
+	{ value: "snow", weight: 1 },
+  ],
+  
+  // when fantasygodmale died, his followers filled with numinous_feeling carried his god_funeral_size god_funeral_body (body/corpse/carcass) out of town through gate_prefix Gate and 
+  // god_funeral_extra, already the remains had begun to turning into x, smelled like Smell, the animals wept/sang/murmurred prayers 
 
   intro: [
 	    { value: "${I_herd}", weight: 1 }
