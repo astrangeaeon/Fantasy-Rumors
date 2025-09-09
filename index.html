@@ -8642,15 +8642,15 @@ celebration_type: [
   ],
   
   constellation: [
-    { value: "the ${uc:daemontype} ${uc:AnimalMain}", weight: 1 },
+    { value: "the ${uc:daemontype} ${tc:AnimalMain}", weight: 1 },
 	{ value: "the ${uc:onedten} ${uc:FamilyMember}s", weight: 1 },
-	{ value: "the ${uc:constellation_adj_obj} ${uc:magicalcommonobject}", weight: 1 },
+	{ value: "the ${uc:constellation_adj_obj} ${tc:magicalcommonobject}", weight: 1 },
 	{ value: "the ${uc:ordinal} ${uc:FamilyMember}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_person} ${uc:FamilyMember}", weight: 1 },
-	{ value: "the ${uc:daemontype} ${uc:huntingmonster_singular}", weight: 1 },
+	{ value: "the ${uc:daemontype} ${tc:huntingmonster_singular}", weight: 1 },
 	{ value: "the Sarcophagus of ${RealGods}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_person} ${uc:QuickNPCJob}", weight: 1 },
-	{ value: "the ${uc:po:magicusertype} ${uc:magicalcommonobject}", weight: 1 },
+	{ value: "the ${uc:po:magicusertype} ${tc:magicalcommonobject}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_compass} ${constellation_adj_compass_stars}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_person} ${uc:constellation_archetype}", weight: 1 },
 	{ value: "the ${uc:criminal_singular}", weight: 1 },
@@ -8658,14 +8658,14 @@ celebration_type: [
   ],
   
   constellation_repeat: [
-    { value: "the ${uc:daemontype} ${uc:AnimalMain}", weight: 1 },
+    { value: "the ${uc:daemontype} ${tc:AnimalMain}", weight: 1 },
 	{ value: "the ${uc:onedfive} ${uc:FamilyMember}s", weight: 1 },
-	{ value: "the ${uc:constellation_adj_obj} ${uc:magicalcommonobject}", weight: 1 },
+	{ value: "the ${uc:constellation_adj_obj} ${tc:magicalcommonobject}", weight: 1 },
 	{ value: "the ${uc:ordinal} ${uc:FamilyMember}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_person} ${uc:FamilyMember}", weight: 1 },
-	{ value: "the ${uc:daemontype} ${uc:huntingmonster_singular}", weight: 1 },
+	{ value: "the ${uc:daemontype} ${tc:huntingmonster_singular}", weight: 1 },
 	{ value: "the Sarcophagus of ${RealGods}", weight: 1 },
-	{ value: "the ${uc:po:magicusertype} ${uc:magicalcommonobject}", weight: 1 },
+	{ value: "the ${uc:po:magicusertype} ${tc:magicalcommonobject}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_person} ${uc:QuickNPCJob}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_person} ${uc:constellation_archetype}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_compass} ${constellation_adj_compass_stars}", weight: 1 },
@@ -9179,6 +9179,7 @@ celebration_type: [
 	{ value: "Fields of ${uc:boundary_times}", weight: 1 },
 	{ value: "Dream Country", weight: 1 },
 	{ value: "Fields of Gold", weight: 1 },
+	{ value: "Land of Youth", weight: 1 },
   ],
   
     taboo: [
@@ -9194,7 +9195,7 @@ celebration_type: [
 	{ value: "must not drink any liquid exposed to ${light_type}", weight: 1 },
 	{ value: "must not touch ${a:AnimalMount} with their bare hand", weight: 1 },
 	{ value: "must not say the name of ${RealGods}", weight: 1 },
-	{ value: "must utter no word of the ${ancientpeople} tongue", weight: 1 },
+	{ value: "must utter no word of the ${ancientpeople_singular} tongue", weight: 1 },
 	{ value: "must not kindle a fire with branches from the ${cod_tree_type} tree", weight: 1 },
 	{ value: "must eat no fish not caught with bare hands", weight: 1 },
 	{ value: "must not touch another's ${AnimalMount}", weight: 1 },
@@ -9902,7 +9903,7 @@ ship_type: [
   aristocratic_extra: [
 	{ value: "rumored ${aristocratic_quirk}", weight: 1 },
 	{ value: "who made their fortune ${aristocratic_new_money}", weight: 1 },
-	{ value: "who is said to display hunting trophies in their great hall: the shoulder-mount of ${a:AnimalTrophy}, the skins of ${AnimalSnake}s, the preserved body of ${a:AnimalSimian}, and, shown only to special guests, ${aristocratic_head}", weight: 1 },
+	{ value: "who is said to display hunting trophies in their great hall: the skeleton of ${a:AnimalTrophy}, the skins of ${AnimalSnake}s, the preserved body of ${a:AnimalSimian}, and, shown only to special guests, ${aristocratic_head}", weight: 1 },
   ],
   
   aristocratic_home: [
