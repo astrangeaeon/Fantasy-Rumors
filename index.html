@@ -264,6 +264,7 @@ const tables = {
 	{ value: " where no toad or serpent dwells", weight: 1 },
 	{ value: " where ${criminals} and ${criminals} wander about at liberty", weight: 2 },
 	{ value: " with its fields of hateful ${weed_one} ${weed_two}", weight: 1 },
+	{ value: " where they call fire the red flower", weight: 1 },
   ],
 
   herdwith: [
@@ -2556,6 +2557,7 @@ const tables = {
 	{ value: "where ${a:idol} rests atop a high hill", weight: 1 },
     { value: "where the towering pole which holds up the tent of the sky is found, protected by ${islandprotector},", weight: 1 },
     { value: "where the world’s ${AnimalInsect} population arrives every seventeen years to honor their obscure god,", weight: 1 },
+	{ value: "where ${urbn_subjectsingular} whose ${missing_thing} is trapped in ${missing_thing_place} waits disconsolate, without hope or expectation of aid,", weight: 2 },
   ],
 
   island_bound: [
@@ -2947,7 +2949,7 @@ const tables = {
   ],
 
   Local: [
-    { value: "${po:FantasyName} secret desire is to ${local_desire}", weight: 2 },
+    { value: "${po:FantasyName} secret desire is to ${local_desire}", weight: 4 },
     { value: "${FantasyName} fished up something really strange from the Lake of Dreams: ${strange_fish}", weight: 2 },
     { value: "${FantasyName}, ${a:QuickNPC} and a racist, believes ${local_racist}", weight: 2 },
     { value: "There are strange things happening every day. For instance, ${local_strange_thing}", weight: 2 },
@@ -3031,6 +3033,7 @@ const tables = {
     { value: "visit ${foreign_adj}${foreignland}${foreign_phrase} when the grapes begin to change color", weight: 1 },
     { value: "write a law that stands the test of time", weight: 1 },
 	{ value: "seek ${expeditions}", weight: 3 },
+	{ value: "teach ${a:AnimalFarm} to dance ${dance}", weight: 2 },
   ],
 
   local_racist: [
@@ -3076,6 +3079,7 @@ const tables = {
     { value: "hobbits steal luck from everyone they encounter, deliberately ruining the fortunes of their neighbors", weight: 1 },
     { value: "Titchy Gren, the great hobbit burglar who supposedly stole a dragon’s hoard, actually just snuck into the king’s treasury the day of the great castle fire like a common looter", weight: 1 },
 	{ value: "${humanoids}, well, you know, the bad ones, are to blame for these appalling times we find ourselves in", weight: 1 },
+	{ value: "hobbits were given a divine revelation from their god but wrote it down on cabbage leaves and let a donkey eat it...explains a lot, don't it?", weight: 1 },
   ],
 
   local_racist_human: [
@@ -5214,6 +5218,9 @@ trap_location: [
 	{ value: "the walls of the city of ${urbn_cityname} are said to be repaired with tombstones from the old ${humanoid} cemetary", weight: 1 },
 	{ value: "in ${urbn_cityname}, strangers must enter through ${gates_prefix} Gate or risk the wrath of the local ${violent_profession_plural}", weight: 1 },
 	{ value: "when ${FantasyGodNameMale}, ${FantasyGodAdjective} High Lord of ${uc:FantasyDomain} and ${uc:FantasyDomain} died, his followers were filled with ${numinous_feeling} as they carried his ${god_funeral_size} ${god_funeral_body} out of town through ${gates_prefix} Gate and ${god_funeral_extra}", weight: 2 },
+	{ value: "a new attraction in ${urbn_cityname} had its grand opening recently: ${a:theme_tavern}", weight: 1 },
+	{ value: "${urbn_cityname}, the City of ${urbn_citynickname}, is known for its famous ${huntingmonster_singular} penitentiary", weight: 1 },
+	{ value: "in ${urbn_cityname}, the City of ${urbn_citynickname}, there's a marvellous ${urbn_place} that only appears for a single night every ${fairy_number} years", weight: 1 },
   ],
 
    urbn_traders: [
@@ -5536,6 +5543,7 @@ trap_location: [
 	{ value: "cursed fishers whose nets catch nothing, whose kreels are empty", weight: 1 },
 	{ value: "${travelers}s from ${urbn_cityname}, the City of ${tc:urbn_citynickname}", weight: 1 },
 	{ value: "a trio of ${violent_profession_plural}", weight: 1 },
+	{ value: "knights in ${Colors} armor", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -5651,6 +5659,8 @@ trap_location: [
 	{ value: "a destitute ${humanoid}, two ${crowns_metal_type} ${coins} in their pocket,", weight: 1 },
 	{ value: "an assassin who kills exclusively by stabbing victims with stained glass shards from the ruined Cathedral of Saint ${SaintName}", weight: 1 },
 	{ value: "a sunburnt and nauseous ${classic_classes}", weight: 1 },
+	{ value: "a knight in ${Colors} armor", weight: 1 },
+	{ value: "an eater of crab meat and crab apples", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -5855,6 +5865,7 @@ trap_location: [
 	{ value: "sings '${ballad_titles}' quietly to themselves", weight: 2 },
 	{ value: "demonstrates the stern heroic virtues of the ancient ${ancientpeople}", weight: 1 },
 	{ value: "will remove arrows from peoples' bodies using a lodestone", weight: 1 },
+	{ value: "christens strangers with awful sobriquets in a novel practice called violent naming, or naiming", weight: 1 },
   ],
 
   washups: [
@@ -6267,6 +6278,12 @@ trap_location: [
     { value: "seventy-one", weight: 1 },
     { value: "eighty", weight: 1 },
     { value: "ninety", weight: 1 },
+  ],
+  
+  fairy_number: [
+    { value: "three", weight: 1 },
+    { value: "seven", weight: 1 },
+    { value: "thirteen", weight: 1 },
   ],
   
   
@@ -9159,6 +9176,7 @@ celebration_type: [
 	{ value: "the Fairy of the Desert", weight: 1 },
 	{ value: "the Wind's Bride", weight: 1 },
 	{ value: "the Rye Mother", weight: 1 },
+	{ value: "the Cornflower Wraith", weight: 1 },
   ],
   
   otherworld_names: [
@@ -9815,6 +9833,8 @@ ship_type: [
 	{ value: "a Gown of Vair and Miniver", weight: 1 },
 	{ value: "Mansions of Light", weight: 1 },
 	{ value: "the Gongfarmer's Daughter", weight: 1 },
+	{ value: "Gambols in the Brine", weight: 1 },
+	{ value: "Urny Scolds the Merlin Hawk", weight: 1 },
   ],
   
   
@@ -10582,6 +10602,38 @@ door_type: [
 	{ value: "iron", weight: 1 },
 	{ value: "snow", weight: 1 },
   ],
+  
+  theme_tavern: [
+	{ value: "minotaur-themed tavern laid out like a labyrinth of stone", weight: 1 },
+	{ value: "hobbit-themed alehouse where the doors and tables are small and the human waitstaff hobble about on their knees", weight: 1 },
+    { value: "dryad-themed cafe where the waitresses are beautiful nymphs and sounds of birdsong match the sylvan decor", weight: 1 },
+	{ value: "vampire-themed pub with trick mirrors that don't reflect people and lots of blood-punned drink names", weight: 1 },
+  ],
+  
+  missing_thing_place: [
+	{ value: "${a:po:magicusertype} mirror", weight: 1 },
+	{ value: "${a:art_visual_painting_type}", weight: 1 },
+    { value: "a mountain called the Tooth of God", weight: 1 },
+	{ value: "a forest of silent ${cod_tree_type} trees", weight: 1 },
+    { value: "a blazing desert of ${Colors} sand", weight: 1 },
+	{ value: "a suit of armor in the ${aristocratic_home} of ${ntc}", weight: 1 },
+	{ value: "the ${tc:AnimalInsectBiting} Bogs", weight: 1 },
+	{ value: "a distant ${exotic_water_body}", weight: 1 },
+	{ value: "${a:po:humanoid_monsters} treasure sack", weight: 1 },
+  ],
+  
+  missing_thing: [
+	{ value: "soul", weight: 1 },
+	{ value: "true love", weight: 2 },
+    { value: "voice", weight: 1 },
+	{ value: "childhood", weight: 1 },
+    { value: "blood-brother", weight: 2 },
+	{ value: "blood-sister", weight: 2 },
+	{ value: "sense of humor", weight: 1 },
+	{ value: "courage", weight: 1 },
+  ],
+  
+  //urbn subject single whose missingthing is trapped in missingthing place
   
   // when fantasygodmale died, his followers filled with numinous_feeling carried his god_funeral_size god_funeral_body (body/corpse/carcass) out of town through gate_prefix Gate and 
   // god_funeral_extra, already the remains had begun to turning into x, smelled like Smell, the animals wept/sang/murmurred prayers 
