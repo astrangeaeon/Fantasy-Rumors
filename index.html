@@ -2557,7 +2557,7 @@ const tables = {
 	{ value: "where ${a:idol} rests atop a high hill", weight: 1 },
     { value: "where the towering pole which holds up the tent of the sky is found, protected by ${islandprotector},", weight: 1 },
     { value: "where the world’s ${AnimalInsect} population arrives every seventeen years to honor their obscure god,", weight: 1 },
-	{ value: "where ${urbn_subjectsingular} whose ${missing_thing} is trapped in ${missing_thing_place} waits disconsolate, without hope or expectation of aid,", weight: 2 },
+	{ value: "where ${urbn_subjectsingular} whose ${missing_thing} is trapped in ${missing_thing_place} waits disconsolate, without hope or expectation of aid,", weight: 4 },
   ],
 
   island_bound: [
@@ -4586,6 +4586,7 @@ const tables = {
 	{ value: "a medallion of the ram-headed criosphinx Subbiluliuma", weight: 1 },
 	{ value: "a simple ${crowns_metal_type} whistle that makes no sound, no matter how hard they blew it", weight: 1 },
 	{ value: "a golden ${AnimalMain}", weight: 1 },
+	{ value: "an old ${crowns_metal_type} ${coins} with the ancient King ${FantasyNameMale} on the obverse and ${a:magicalcommonobject} on the reverse", weight: 1 },
   ],
 
   strangecustom: [
@@ -5217,7 +5218,7 @@ trap_location: [
 	{ value: "the city of ${urbn_cityname} is said to be shaped like a massive ${MusicalInstrument}", weight: 1 },
 	{ value: "the walls of the city of ${urbn_cityname} are said to be repaired with tombstones from the old ${humanoid} cemetary", weight: 1 },
 	{ value: "in ${urbn_cityname}, strangers must enter through ${gates_prefix} Gate or risk the wrath of the local ${violent_profession_plural}", weight: 1 },
-	{ value: "when ${FantasyGodNameMale}, ${FantasyGodAdjective} High Lord of ${uc:FantasyDomain} and ${uc:FantasyDomain} died, his followers were filled with ${numinous_feeling} as they carried his ${god_funeral_size} ${god_funeral_body} out of town through ${gates_prefix} Gate and ${god_funeral_extra}", weight: 2 },
+	{ value: "when ${FantasyGodNameMale}, ${FantasyGodAdjective} High Lord of ${uc:FantasyDomain} and ${uc:FantasyDomain} died, his followers were filled with ${numinous_feeling} as they drew his ${god_funeral_size} ${god_funeral_body} on a black ${vehicle} down ${urbn_street_names}, departing ${urbn_cityname} through ${gates_prefix} Gate ${god_funeral_extra}", weight: 2 },
 	{ value: "a new attraction in ${urbn_cityname} had its grand opening recently: ${a:theme_tavern}", weight: 1 },
 	{ value: "${urbn_cityname}, the City of ${urbn_citynickname}, is known for its famous ${huntingmonster_singular} penitentiary", weight: 1 },
 	{ value: "in ${urbn_cityname}, the City of ${urbn_citynickname}, there's a marvellous ${urbn_place} that only appears for a single night every ${fairy_number} years", weight: 1 },
@@ -10582,9 +10583,12 @@ door_type: [
   ],
   
   god_funeral_extra: [
-	{ value: "the scent of ${Smells} still lingers there", weight: 1 },
-	{ value: "already the remains had begun to transform into ${god_funeral_transform}", weight: 1 },
-    { value: "the animals of the city ${god_funeral_animal_behavior}", weight: 1 },
+	{ value: "and the scent of ${Smells} still lingers there", weight: 2 },
+	{ value: "and already the remains had begun to transform into ${god_funeral_transform}", weight: 2 },
+    { value: "while the animals of the city ${god_funeral_animal_behavior}", weight: 2 },
+	{ value: "where three birds passing overhead froze in mid-flight to screech 'hasten thee now to thy couch underground'", weight: 1 },
+	{ value: "and already his corse was sinking below the earth", weight: 1 },
+	{ value: "and already his corse was floating up into the firmament", weight: 1 },
   ],
   
   god_funeral_animal_behavior: [
