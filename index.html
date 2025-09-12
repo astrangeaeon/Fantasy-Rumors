@@ -2970,6 +2970,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC}, believes a draught of water from their well is better than all the ${alcohol} in ${urbn_cityname}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, may not look like much now, but in their youth, they wore the ${athletic_crowns} for ${athletic_events} at the ${athletic_games} Games", weight: 2 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, just got a tattoo of ${tattoos}", weight: 2 },
+	{ value: "the ${FantasyLastName} clan's feud with the ${FantasyLastName} folks all started on account of ${a:feud_reason}", weight: 2 },
   ],
   
   local_obtain_art: [
@@ -6920,6 +6921,8 @@ trap_location: [
     { value: "${CompoundWordNames}", weight: 1 },
 	{ value: "Ashkettle", weight: 1 },
 	{ value: "Kashgar", weight: 1 },
+	{ value: "Geg", weight: 1 },
+	{ value: "Tosk", weight: 1 },
   ],
 
   FamilyMember: [
@@ -7698,7 +7701,7 @@ trap_location: [
     { value: "lavendar", weight: 1 },
     { value: "fresh bread", weight: 1 },
     { value: "blood", weight: 1 },
-	{ value: "wet fur", weight: 1 },
+	{ value: "wet dog", weight: 1 },
     { value: "cheap perfume", weight: 1 },
     { value: "sulphur", weight: 1 },
     { value: "high-end cologne", weight: 1 },
@@ -7711,6 +7714,9 @@ trap_location: [
 	{ value: "sweat", weight: 1 },
 	{ value: "fish", weight: 1 },
 	{ value: "saltwater", weight: 1 },
+	{ value: "decaying horseshoe crab", weight: 1 },
+	{ value: "putrid milk", weight: 1 },
+	{ value: "vanilla", weight: 1 },
   ],
 
   TradeGoods: [
@@ -7835,6 +7841,7 @@ trap_location: [
 	{ value: " who used to run with ${criminals} but is now reformed,", weight: 1 },
 	{ value: " who has been furtively caring for and feeding ${a:pet_adj} ${AnimalMammal},", weight: 1 },
 	{ value: " who composed the popular tune '${ballad_titles}',", weight: 1 },
+	{ value: " who can recite the ${poem_types} '${ballad_titles}',", weight: 1 },
   ],
   
   pet_adj: [
@@ -8171,6 +8178,7 @@ saint_curse: [
 	{ value: "${prophetic_subject} danced ${dance} with ${prophetic_vision_born_subject}", weight: 1 },
 	{ value: "${prophetic_subject} stole ${tomb_loot} from ${prophetic_vision_born_subject}", weight: 1 },
 	{ value: "${prophetic_subject} ate ${FantasyMeal} with the corpse of ${ntc}", weight: 1 },
+	{ value: "${prophetic_subject} scooped fistfuls of ${crowns_metal_type} ${coins} from a river of blood", weight: 1 },
   ],
   
   prophetic_vision_born_subject: [
@@ -10654,6 +10662,19 @@ door_type: [
 	{ value: "blood-sister", weight: 2 },
 	{ value: "sense of humor", weight: 1 },
 	{ value: "courage", weight: 1 },
+  ],
+  
+  feud_reason: [
+	{ value: "fine-looking woman, new in town", weight: 1 },
+	{ value: "fine-looking man, new in town", weight: 1 },
+    { value: "${humanoid}", weight: 2 },
+	{ value: "${AnimalFarm} that went missing", weight: 2 },
+    { value: "broken ${Tools}", weight: 2 },
+	{ value: "borrowed ${magicalcommonobject}", weight: 2 },
+	{ value: "jar of ${FantasyMeal_Fruit} jam", weight: 2 },
+	{ value: "${cod_tree_type} tree", weight: 2 },
+	{ value: "ill-fated trip to ${urbn_cityname}, the City of ${urbn_citynickname}", weight: 2 },
+	{ value: "pouch of ${crowns_metal_type} ${coins} that went missing", weight: 2 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
