@@ -266,6 +266,7 @@ const tables = {
 	{ value: " with its fields of hateful ${weed_one} ${weed_two}", weight: 1 },
 	{ value: " where they call fire the red flower", weight: 1 },
 	{ value: " where worms the size of tigers roil", weight: 1 },
+	{ value: " where the vampires live in trees", weight: 1 },
   ],
 
   herdwith: [
@@ -437,6 +438,7 @@ const tables = {
 	{ value: " who believed what befell their body and soul was scribed in a book a thousand years before the foundation of the world,", weight: 1 },
 	{ value: " who could speak but four words of the ancient ${ancientpeople_singular} tongue of power and it was enough,", weight: 1 },
 	{ value: " who broke the wings of the western wind daemons,", weight: 1 },
+	{ value: " who sat upon the floor and told sad stories of the deaths of kings,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1491,6 +1493,7 @@ const tables = {
 	{ value: "Rygar", weight: 1 },
     { value: "Leesa", weight: 1 },
     { value: "Stav", weight: 1 },
+	{ value: "Kimball", weight: 1 },
   ],
   
   duo_name2: [
@@ -1500,6 +1503,7 @@ const tables = {
 	{ value: "the Dangler", weight: 1 },
     { value: "the Goober", weight: 1 },
     { value: "the Golfgolf Kid", weight: 1 },
+	{ value: "Err", weight: 1 },
   ],
   
    duo_detail: [
@@ -2123,6 +2127,7 @@ const tables = {
     { value: "to rescue ${urbn_subjectsingular} trapped in ${a:urbn_place} on the ${floors} floor", weight: 1 },
     { value: "to seek their family members who were transformed into ${herdanimal} by ${creepyvillain}", weight: 1 },
 	{ value: "to honor ${historybuild}", weight: 1 },
+	{ value: "to claim their true inheritance", weight: 1 },
   ],
 
   heroname: [
@@ -2133,6 +2138,7 @@ const tables = {
   historybuild: [
     { value: "${historicalbuilders}, who were known for building ${historicalinfrastructure} ${historicalage},", weight: 1 },
 	{ value: "${historicalbuilders}, who were known for burying caches of ${exchangething} ${historicalage},", weight: 1 },
+	{ value: "${historicalbuilders}, who were known for their devout faith in ${RealGods} until ${creepyvillain} claimed their hearts,", weight: 1 },
   ],
   
    historicalage: [
@@ -2846,6 +2852,8 @@ const tables = {
 	{ value: "the ${historicalinfrastructure_modern_singular}", weight: 1 },
 	{ value: "the Inn of the Three ${tc:inn_name_subjects}", weight: 1 },
 	{ value: "the Columns of ${EgyptianNameMale}", weight: 1 },
+	{ value: "the Old Summer Palace", weight: 1 },
+	{ value: "the Stele of the Vulture", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -2912,6 +2920,7 @@ const tables = {
 	{ value: "the Caves of Ellora", weight: 1 },
 	{ value: "the Taklamakan Desert", weight: 1 },
 	{ value: "the place where Minna was drowned", weight: 1 },
+	{ value: "the island of Kharg in the gulf", weight: 1 },
   ],
 
   lawnornament: [
@@ -3037,6 +3046,8 @@ const tables = {
     { value: "write a law that stands the test of time", weight: 1 },
 	{ value: "seek ${expeditions}", weight: 3 },
 	{ value: "teach ${a:AnimalFarm} to dance ${dance}", weight: 2 },
+	{ value: "breed a cat that eats books", weight: 1 },
+	{ value: "teach the ${criminals} of the world a lesson in blood", weight: 1 },
   ],
 
   local_racist: [
@@ -4148,6 +4159,7 @@ const tables = {
 	{ value: "death by whip", weight: 1 },
 	{ value: "being lacerated by shards of a broken mirror", weight: 1 },
 	{ value: "being exposed to sharp water and hot needles", weight: 1 },
+	{ value: "being forced to stand before a statue of ${RealGods} and be bitten by a cobra", weight: 1 },
   ],
 
   rm: [
@@ -4323,6 +4335,7 @@ const tables = {
     { value: "whose walls are made of thick glass cubes", weight: 1 },
     { value: "whose window looks out on another time", weight: 1 },
 	{ value: "that's home to yellow birds with the voices of goats", weight: 1 },
+	{ value: "where ${duo_name1} and ${duo_name2} have been hiding out after looting the Old Summer Palace", weight: 1 },
   ],
 
   I_herd: [
@@ -4387,6 +4400,7 @@ const tables = {
     { value: "the Maelstrom", weight: 1 },
     { value: "the ruins of the demon settlement", weight: 1 },
     { value: "the western waters of Mert", weight: 1 },
+	{ value: "the island of Kharg in the gulf", weight: 1 },
   ],
 
   seaterror: [
@@ -4915,6 +4929,7 @@ const tables = {
 	{ value: "${a:magicusertype} that rides a dragon and summons ${severe_weather}s", weight: 1 },
 	{ value: "${Colors} flames that can only be extinguished by water ${exotic_water_provenance}", weight: 1 },
 	{ value: "a cobra-headed knight wielding black steel", weight: 1 },
+	{ value: "invisible serpents", weight: 1 },
   ],
   
   
@@ -5463,6 +5478,7 @@ trap_location: [
     { value: "water contaminated with infected water fleas", weight: 1 },
     { value: "widespread drought", weight: 1 },
 	{ value: "the theft of ${a:idol}", weight: 1 },
+	{ value: "the escalating antics of two rival ${occupation}s named ${duo_name1} and ${duo_name2} ", weight: 1 },
   ],
 
   urbn_subjectplural: [
@@ -6024,7 +6040,7 @@ trap_location: [
     { value: "a ${kinganimal} sits, enthroned, at a court of animals, wearing a crown of flowers", weight: 3 },
     { value: "a geyser sprays out ${geyserspray} like clockwork at dawn on the 17th day of each year", weight: 3 },
     { value: "a tree older than the world itself grows, which bears ${treebears}", weight: 3 },
-    { value: "there stands a ruined tower ${ruinedtower}", weight: 3 },
+    { value: "there stands a ruined tower ${ruinedtower}", weight: 6 },
     { value: "${a:WeirdFantasyMonster} lies entombed in ice", weight: 1 },
     { value: "/ there’s a lady who’s sure / all that glitters is ${bizarrecompanion} / and she’s buying ${beyondreward}", weight: 1 },
     { value: "a bed has been carved from the massive stump of a tree, still rooted to the ground", weight: 1 },
@@ -9865,6 +9881,7 @@ ship_type: [
 	{ value: "the ${uc:magicusertype} and the Tower of ${uc:elemntl_type}", weight: 1 },
 	{ value: "When My ${tc:ship_type_small} Arrives", weight: 1 },
 	{ value: "Ten Unlucky ${tc:violent_profession_plural}", weight: 1 },
+	{ value: "The Theft of the ${tc:FantasyMeal_Fruit_Berry} ${tc:FantasyMeal_Fruit_Berry_Uses}", weight: 1 },
 	
   ],
   
@@ -10711,6 +10728,7 @@ door_type: [
 	{ value: "${cod_tree_type} tree", weight: 2 },
 	{ value: "ill-fated trip to ${urbn_cityname}, the City of ${urbn_citynickname}", weight: 2 },
 	{ value: "pouch of ${crowns_metal_type} ${coins} that went missing", weight: 2 },
+	{ value: "${FantasyMeal_Fruit_Berry} ${FantasyMeal_Fruit_Berry_Uses}", weight: 2 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
