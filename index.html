@@ -559,17 +559,18 @@ const tables = {
   ],
 
   annualcontest: [
-    { value: "archery contest", weight: 1 },
+    { value: "archery competition", weight: 1 },
     { value: "belching contest", weight: 1 },
     { value: "demigod lookalike contest", weight: 1 },
-    { value: "feign death festival", weight: 1 },
+    { value: "feigning death festival", weight: 1 },
     { value: "fire chess tournament", weight: 1 },
     { value: "hot dog eating contest", weight: 1 },
     { value: "kite-flying festival", weight: 1 },
     { value: "spelling bee", weight: 1 },
-    { value: "swamp toad hunting contest", weight: 1 },
+    { value: "swamp toad hunt", weight: 1 },
     { value: "ugliness pageant", weight: 1 },
 	{ value: "coin-swallowing competition", weight: 1 },
+	{ value: "${magicalcommonobject}-hurling tournament", weight: 1 },
   ],
 
   bad_thing: [
@@ -4166,7 +4167,7 @@ const tables = {
     { value: "gruesome scalp-to-chin lacerations", weight: 1 },
     { value: "hanging", weight: 1 },
     { value: "hanging and then dissection", weight: 1 },
-    { value: "having their ${body_part} removed and ${body_part_fate}", weight: 1 },
+    { value: "having their ${body_part} ${body_part_fate}", weight: 1 },
     { value: "having their veins replaced by wires in horrendous experiments", weight: 1 },
     { value: "public humiliation", weight: 1 },
     { value: "public starvation", weight: 1 },
@@ -7660,7 +7661,7 @@ trap_location: [
   ],
 
   QuickNPCJobRich: [
-    { value: "${MerchantGoods} merchant", weight: 1 },
+    { value: "${MerchantGoods}-merchant", weight: 1 },
     { value: "jeweler", weight: 1 },
     { value: "gambler", weight: 1 },
     { value: "shopkeeper", weight: 1 },
@@ -7679,7 +7680,7 @@ trap_location: [
   ],
   
   QuickNPCJobElite: [
-    { value: "${MerchantGoods} merchant", weight: 1 },
+    { value: "${MerchantGoods}-merchant", weight: 1 },
     { value: "jeweler", weight: 1 },
     { value: "priest", weight: 1 },
     { value: "landowner", weight: 1 },
@@ -8504,6 +8505,9 @@ celebration_type: [
 	{ value: "${prophetic_subject} carving ${rune} onto an obelisk by ${a:Colors} door-shaped portal in the naked rock ${wilds_specific_locn}", weight: 1 },
 	{ value: "${prophetic_subject} bringing water and bread to the ${travelers}s outside the Gate ${gates_suffix}", weight: 1 },
 	{ value: "${prophetic_subject} entering ${a:Colors} portal in the naked rock ${wilds_specific_locn}", weight: 1 },
+	{ value: "${prophetic_subject} attending ${a:annualcontest} in the ${landscape_types_basic} of ${foreignland}", weight: 1 },
+	{ value: "${prophetic_subject} participating in the ${athletic_events} event at the ${athletic_games} Games in the ${landscape_types_basic} of ${foreignland}", weight: 1 },
+	{ value: "${prophetic_subject} looking on as a trio of ${criminals} are punished by ${punishment}", weight: 1 },
   ],
   
   
