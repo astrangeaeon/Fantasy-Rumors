@@ -2701,6 +2701,7 @@ const tables = {
 	{ value: "a beachcombing hermit who throws crabs at strangers", weight: 1 },
 	{ value: "a wild and rude gnome who punctuates his insults with a loud malodorous petarade", weight: 1 },
 	{ value: "the jungle treants of ${foreignland}", weight: 1 },
+	{ value: "a vomitous goose", weight: 1 },
   ],
 
   island_riches: [
@@ -2868,6 +2869,7 @@ const tables = {
 	{ value: "the Columns of ${EgyptianNameMale}", weight: 1 },
 	{ value: "the Old Summer Palace", weight: 1 },
 	{ value: "the Stele of the Vulture", weight: 1 },
+	{ value: "the ${uc:Colors} Hall of the ${uc:CompassDirectionPrimary} Star", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -2995,6 +2997,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC}, just got a tattoo of ${tattoos}", weight: 2 },
 	{ value: "the ${FantasyLastName} clan's feud with the ${FantasyLastName} folks all started on account of ${a:feud_reason}", weight: 2 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, has been hearing noises in their cellar that originate from that gloomy place the ${ancientpeople} called the ${underworld_names}", weight: 1 },
+	{ value: "in the village of ${village_names}, young lovers court each other by playing songs on the ${MusicalInstrument} and exchanging ${flowers_singular} seeds", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -4631,6 +4634,7 @@ const tables = {
 	{ value: "a golden ${AnimalMain}", weight: 1 },
 	{ value: "an old ${crowns_metal_type} ${coins} with the ancient King ${FantasyNameMale} on the obverse and ${a:magicalcommonobject} on the reverse", weight: 1 },
 	{ value: "a magic ring that can transport the wearer to the nearest Burger King", weight: 1 },
+	{ value: "a manual for ${monster_manual_verb} ${huntingmonster}", weight: 1 },
   ],
 
   strangecustom: [
@@ -5924,6 +5928,7 @@ trap_location: [
 	{ value: "will remove arrows from peoples' bodies using a lodestone", weight: 1 },
 	{ value: "christens strangers with awful sobriquets in a novel practice called violent naming, or naiming", weight: 1 },
 	{ value: "claims to have escaped from that gloomy place the ${ancientpeople} called the ${underworld_names}", weight: 1 },
+	{ value: "is selling a manual explaining the secrets of ${monster_manual_verb} ${huntingmonster}", weight: 1 },
   ],
 
   washups: [
@@ -10852,6 +10857,58 @@ door_type: [
 	{ value: "ill-fated trip to ${urbn_cityname}, the City of ${urbn_citynickname}", weight: 2 },
 	{ value: "pouch of ${crowns_metal_type} ${coins} that went missing", weight: 2 },
 	{ value: "${FantasyMeal_Fruit_Berry} ${FantasyMeal_Fruit_Berry_Uses}", weight: 2 },
+  ],
+  
+  village_names: [
+	{ value: "Dallinghoo", weight: 1 },
+	{ value: "Dagnall", weight: 1 },
+    { value: "Datchet", weight: 1 },
+	{ value: "Culverthorpe", weight: 1 },
+    { value: "Crowfield", weight: 1 },
+	{ value: "Crostwight", weight: 1 },
+	{ value: "Crowthorne", weight: 1 },
+	{ value: "Burstwick", weight: 1 },
+	{ value: "Burmarsh", weight: 1 },
+	{ value: "Little Broom", weight: 1 },
+	{ value: "Huffleberry Patch", weight: 1 },
+  ],
+  
+   flowers_singular: [
+	{ value: "gardenia", weight: 1 },
+	{ value: "hyacinth", weight: 1 },
+    { value: "sunflower", weight: 1 },
+	{ value: "orchid", weight: 1 },
+    { value: "rose", weight: 1 },
+	{ value: "lilac", weight: 1 },
+	{ value: "lily", weight: 1 },
+	{ value: "moonflower", weight: 1 },
+	{ value: "zinnia", weight: 1 },
+	{ value: "hibiscus", weight: 1 },
+	{ value: "tulip", weight: 1 },
+	{ value: "marigold", weight: 1 },
+	{ value: "daffodil", weight: 1 },
+	{ value: "lavender", weight: 1 },
+	{ value: "morning glory", weight: 1 },
+	{ value: "daisy", weight: 1 },
+  ],
+  
+  monster_manual_verb: [
+	{ value: "controlling", weight: 1 },
+	{ value: "torturing", weight: 1 },
+    { value: "entertaining", weight: 1 },
+	{ value: "living with", weight: 1 },
+    { value: "serving", weight: 1 },
+	{ value: "butchering", weight: 1 },
+	{ value: "manipulating", weight: 1 },
+	{ value: "fighting", weight: 1 },
+	{ value: "courting", weight: 1 },
+	{ value: "grooming", weight: 1 },
+	{ value: "dressing", weight: 1 },
+	{ value: "burying", weight: 1 },
+	{ value: "midwiving", weight: 1 },
+	{ value: "wrestling", weight: 1 },
+	{ value: "dancing with", weight: 1 },
+	{ value: "trapping", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
