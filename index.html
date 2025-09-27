@@ -1569,6 +1569,14 @@ const tables = {
 	{ value: "finger-rings", weight: 1 },
 	{ value: "crowns", weight: 1 },
   ],
+  
+  duo_jewlery_singular: [
+    { value: "bracelet", weight: 1 },
+    { value: "necklace", weight: 1 },
+    { value: "earring", weight: 1 },
+	{ value: "finger-ring", weight: 1 },
+	{ value: "crown", weight: 1 },
+  ],
 
   elemntl_type: [
     { value: "earth", weight: 1 },
@@ -1733,8 +1741,9 @@ const tables = {
 
   facial_desc: [
     { value: "with ${fd}", weight: 10 },
-    { value: "who tells a tale of ${fd_tale}", weight: 3 },
-    { value: "bearing mace and discus and conch", weight: 1 },
+    { value: "who tells a tale of ${fd_tale}", weight: 5 },
+    { value: "flashing around ${a:former_object} matching the description of the one belonging to ${former_owner}", weight: 3 },
+	{ value: "bearing mace and discus and conch", weight: 1 },
     { value: "bellowing and drunk", weight: 1 },
     { value: "bitten by ghosts", weight: 1 },
     { value: "clad in yellow robes", weight: 1 },
@@ -2978,7 +2987,7 @@ const tables = {
 
   Local: [
     { value: "${po:FantasyName} secret desire is to ${local_desire}", weight: 4 },
-    { value: "${FantasyName} fished up something really strange from the Lake of Dreams: ${strange_fish}", weight: 2 },
+    { value: "${FantasyName} fished up something really strange from the Lake of Dreams: ${strange_fish}", weight: 4 },
     { value: "${FantasyName}, ${a:QuickNPC} and a racist, believes ${local_racist}", weight: 2 },
     { value: "There are strange things happening every day. For instance, ${local_strange_thing}", weight: 2 },
     { value: "${FantasyName} wanted to be ${a:QuickNPCJobRich} but ended up ${a:QuickNPCJobPoor}", weight: 1 },
@@ -4637,6 +4646,7 @@ const tables = {
 	{ value: "an old ${crowns_metal_type} ${coins} with the ancient King ${FantasyNameMale} on the obverse and ${a:magicalcommonobject} on the reverse", weight: 1 },
 	{ value: "a magic ring that can transport the wearer to the nearest Burger King", weight: 1 },
 	{ value: "a manual for ${monster_manual_verb} ${huntingmonster}", weight: 1 },
+	{ value: "${a:former_object} matching the description of the one belonging to ${former_owner}${former_owner_extra}", weight: 5 },
   ],
 
   strangecustom: [
@@ -5181,6 +5191,7 @@ trap_location: [
 	{ value: "${historicalperson} hid ${a:ship_cargo_container_singular} with thousands of ${ancientpeople_singular} ${crowns_metal_type} ${coins} ${obj_or_room} on the ${floors} floor", weight: 1 },
 	{ value: "on the wall of ${a:DungeonRoom} hangs ${shield} that no one has been brave enough to claim for their own", weight: 1 },
 	{ value: "${a:undead_corporeal} protects ${a:weapon_prefix} ${Weapons} in ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
+	{ value: "in ${a:DungeonRoom} amidst a pile of neglected rubbish waits ${a:former_object} matching the description of the one belonging to ${former_owner}${former_owner_extra}", weight: 1 },
   ],
 
   treasureA: [
@@ -7410,6 +7421,17 @@ trap_location: [
 	{ value: "pearls", weight: 1 },
 	{ value: "opals", weight: 1 },
   ],
+  
+  Jewel_singular: [
+    { value: "ruby", weight: 2 },
+    { value: "diamond", weight: 2 },
+    { value: "emerald", weight: 2 },
+    { value: "sapphire", weight: 2 },
+	{ value: "topaz", weight: 1 },
+	{ value: "peridot", weight: 1 },
+	{ value: "pearl", weight: 1 },
+	{ value: "opal", weight: 1 },
+  ],
 
   Letters: [
     { value: "A", weight: 1 },
@@ -8066,6 +8088,7 @@ cod_ose: [
     { value: "was crushed beneath the heavy limb of an undead treant", weight: 1 },
 	{ value: "drank a cup of poison after insulting a black hag", weight: 1 },
 	{ value: "was incinerated by a point blank fireball cast by an insane wizard", weight: 1 },
+	{ value: "was poisoned by a ladder while chasing after a master thief in her lair", weight: 1 },
 	
   ],
 
@@ -9829,6 +9852,21 @@ ship_type: [
 	{ value: "named ${ShipNames}", weight: 1 },
 	{ value: "which keeps ${a:AnimalSnake} on board for luck", weight: 1 },
 	{ value: "whose crew all bear tattoos of ${tattoos}", weight: 1 },
+	{ value: "whose ${ship_crew_rank} has been seen flashing around ${a:former_object} matching the description of the one belonging to ${former_owner}", weight: 1 },
+  ],
+  
+  ship_crew_rank: [
+	{ value: "captain", weight: 1 },
+	{ value: "first mate", weight: 1 },
+	{ value: "second mate", weight: 1 },
+	{ value: "boatswain", weight: 1 },
+	{ value: "steward", weight: 1 },
+	{ value: "cook", weight: 1 },
+	{ value: "purser", weight: 1 },
+	{ value: "surgeon", weight: 1 },
+	{ value: "chaplain", weight: 1 },
+	{ value: "carpenter", weight: 1 },
+	{ value: "master-at-arms", weight: 1 },
   ],
   
   
@@ -10942,6 +10980,30 @@ door_type: [
 	{ value: "weighted clothing", weight: 1 },
 	{ value: "wooden swords", weight: 1 },
 	{ value: "ripe ${FantasyMeal_Fruit_plural}", weight: 1 },
+  ],
+  
+  former_owner: [
+    { value: "${ntc}", weight: 1 },
+	{ value: "Saint ${SaintName}", weight: 1 },
+	{ value: "the Queen of ${foreignland}", weight: 1 },
+	{ value: "the King of ${foreignland}", weight: 1 },
+	{ value: "${larger_than_life}", weight: 1 },
+  ],
+  
+  former_owner_extra: [
+    { value: "", weight: 5 },
+    { value: "; it probably belongs in a museum", weight: 1 },
+	{ value: "; they or their followers most likely want it back", weight: 1 },
+	{ value: "; it would be worth a fortune to a member of ${membership}", weight: 1 },
+	{ value: "; it should probably be buried with them", weight: 1 },
+	{ value: "; any ${huntingmonster_singular} who sees it will probably want it destroyed", weight: 1 },
+  ],
+  
+  former_object: [
+    { value: "${Jewel_singular}", weight: 1 },
+	{ value: "${duo_jewlery_singular}", weight: 2 },
+	{ value: "${Weapons}", weight: 2 },
+	{ value: "${MusicalInstrument}", weight: 2 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
