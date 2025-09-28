@@ -967,6 +967,7 @@ const tables = {
     { value: "vandals", weight: 1 },
     { value: "water squanderers", weight: 1 },
 	{ value: "${criminals_esoteric}", weight: 1 },
+	{ value: "plagiarists", weight: 1 },
   ],
   
   criminals_esoteric: [
@@ -1026,6 +1027,7 @@ const tables = {
     { value: "usurer", weight: 1 },
     { value: "vandal", weight: 1 },
     { value: "squanderer", weight: 1 },
+	{ value: "plagiarist", weight: 1 },
   ],
 
   culprit: [
@@ -1710,6 +1712,7 @@ const tables = {
 	{ value: "pointed ears of elves", weight: 1 },
 	{ value: "hairy toes of hobbits", weight: 1 },
 	{ value: "${AnimalMammal} eggs", weight: 1 },
+	{ value: "${crowns_metal_type} horns of ${daemontype} daemons", weight: 1 },
   ],
 
   excitingemployer: [
@@ -2119,7 +2122,7 @@ const tables = {
     { value: "insulting ${ntc}", weight: 1 },
     { value: "laughing at the lama\'s pyre", weight: 1 },
     { value: "lying to God", weight: 1 },
-    { value: "stealing from ${monstertype}", weight: 1 },
+    { value: "stealing from ${monstertype_ntc}", weight: 1 },
     { value: "trespassing in sacred ${slumberplace}", weight: 1 },
 	{ value: "stealing ${a:idol}", weight: 1 },
   ],
@@ -2148,9 +2151,10 @@ const tables = {
 	{ value: "to recover ${relic}", weight: 1 },
     { value: "to rescue ${urbn_subjectsingular} trapped in ${a:urbn_place} on the ${floors} floor", weight: 1 },
     { value: "to seek their family members who were transformed into ${herdanimal} by ${creepyvillain}", weight: 1 },
-	{ value: "to honor ${historybuild}", weight: 1 },
+	{ value: "to honor ${historybuild_ntc}", weight: 1 },
 	{ value: "to claim their true inheritance", weight: 1 },
 	{ value: "to send ${creepyvillain} back to the deserts on the moon", weight: 1 },
+	{ value: "to retrieve ${a:former_object} that matches the description of one that belonged to ${former_owner}", weight: 1 },
   ],
 
   heroname: [
@@ -2162,6 +2166,12 @@ const tables = {
     { value: "${historicalbuilders}, who were known for building ${historicalinfrastructure} ${historicalage},", weight: 1 },
 	{ value: "${historicalbuilders}, who were known for burying caches of ${exchangething} ${historicalage},", weight: 1 },
 	{ value: "${historicalbuilders}, who were known for their devout faith in ${RealGods} until ${creepyvillain} claimed their hearts,", weight: 1 },
+  ],
+  
+  historybuild_ntc: [
+    { value: "${historicalbuilders}, who were known for building ${historicalinfrastructure} ${historicalage}", weight: 1 },
+	{ value: "${historicalbuilders}, who were known for burying caches of ${exchangething} ${historicalage}", weight: 1 },
+	{ value: "${historicalbuilders}, who were known for their devout faith in ${RealGods} until ${creepyvillain} claimed their hearts", weight: 1 },
   ],
   
    historicalage: [
@@ -3569,6 +3579,17 @@ const tables = {
     { value: "${a:DungeonAdjective} ${monsterA}", weight: 1 },
     { value: "${a:WeirdFantasyMonster}", weight: 1 },
 	{ value: "${DemonName}, cow-repelling, antelope-footed and bull-toothed,", weight: 1 },
+  ],
+  
+  monstertype_ntc: [
+    { value: "${DemonName} the ${uc:QuickNPCDescriptor}, a lesser daemon", weight: 1 },
+    { value: "${DemonName}, ${a:elemntl_type} ${RoyalTitleMale}", weight: 1 },
+    { value: "${DemonName}, a great serpent", weight: 1 },
+    { value: "${DemonName}, a ${monsterdragontype} dragon", weight: 1 },
+    { value: "${DemonName}, an apple-sweet murmurer", weight: 1 },
+    { value: "${a:DungeonAdjective} ${monsterA}", weight: 1 },
+    { value: "${a:WeirdFantasyMonster}", weight: 1 },
+	{ value: "${DemonName}, cow-repelling, antelope-footed and bull-toothed", weight: 1 },
   ],
 
   monstervalue: [
@@ -5289,6 +5310,7 @@ trap_location: [
 	{ value: "in ${urbn_cityname}, the City of ${urbn_citynickname}, there's a marvellous ${urbn_place} that only appears for a single night every ${fairy_number} years", weight: 1 },
 	{ value: "when the raiders from ${coastal} left the city of ${urbn_cityname} and returned to their plunder-boats, not ${a:FantasyMeal_Fruit} remained; if a leaf had been left on a branch, one of the marauders would have taken it", weight: 1 },
 	{ value: "when ${FantasyGods} approached ${urbn_cityname}, the City of ${urbn_citynickname}, their massive bulk blocked out the sun", weight: 1 },
+	{ value: "${a:classic_classes} is seeking companions in arms to ${quest_hook} in order ${hero_goal}", weight: 1 },
   ],
 
    urbn_traders: [
@@ -7531,7 +7553,7 @@ trap_location: [
 	{ value: "triangle", weight: 1 },
     { value: "juice harp", weight: 1 },
 	{ value: "alphorn", weight: 1 },
-	{ value: "${foreignland} death whistle", weight: 1 },
+	{ value: "${foreignland} death-whistle", weight: 1 },
     { value: "bagpipe", weight: 1 },
 	{ value: "bombard", weight: 1 },
     { value: "bugle", weight: 1 },
@@ -11004,6 +11026,12 @@ door_type: [
 	{ value: "${duo_jewlery_singular}", weight: 2 },
 	{ value: "${Weapons}", weight: 2 },
 	{ value: "${MusicalInstrument}", weight: 2 },
+  ],
+  
+  quest_hook: [
+    { value: "venture through the ${landscape_types} of ${foreign_adj}${foreignland} and brave the dungeons below the Castle of ${castle_name}", weight: 1 },
+	{ value: "journey across ${body_of_water} to an island fortress populated by ${islandpop} and protected by ${islandprotector}", weight: 1 },
+	{ value: "tread on secret paths through the enchanted ${otherworld_names} to get to ${classic_dungeons}", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
