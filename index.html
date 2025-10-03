@@ -654,6 +654,7 @@ const tables = {
     { value: "with sapphires for teeth", weight: 1 },
     { value: "with skin made from the metal of lost coins", weight: 1 },
     { value: "with the skin of a wolf", weight: 1 },
+	{ value: "formed of ${MarbleTypes} marble", weight: 1 },
   ],
 
   body_part_fate: [
@@ -2493,6 +2494,7 @@ const tables = {
 	{ value: "gold", weight: 1 },
 	{ value: "silver", weight: 1 },
 	{ value: "bronze", weight: 1 },
+	{ value: "${MarbleTypes} marble", weight: 1 },
   ],
   
   idol_of: [
@@ -3981,6 +3983,7 @@ const tables = {
 	{ value: "The ${uc:prophetic_visionary} of ${urbn_cityname} bore psychic witness as ${prophetic_vision}", weight: 7 },
 	{ value: "all the ${prophetic_visionary}s of ${urbn_cityname} have been dreaming of ${a:urbn_place} where ${urbn_subjectverb}", weight: 7 },
 	{ value: "The shaman of the ${uc:AnimalMain} Tribe sacrificed ${a:AnimalSacrifice_adj} ${AnimalSacrifice} to their nameless and numberless gods and saw in the swirling smoke as ${prophetic_vision}", weight: 3 },
+	{ value: "The ${uc:prophetic_visionary} of ${urbn_cityname} revealed that the ${prophecyartifact}, a powerful artifact, is being held in a sinister dungeon called ${random_dungeons}", weight: 2 },
 
   ],
 
@@ -8122,6 +8125,7 @@ trap_location: [
 	{ value: "was last seen sliding down the throat of a titanic ${AnimalMain}", weight: 1 },
 	{ value: "was killed after provoking the constellation known as ${constellation}", weight: 1 },
 	{ value: "was killed by bandits in a random encounter on their way to ${classic_dungeons}", weight: 1 },
+	{ value: "died, struck blind by unicorns", weight: 1 },
 ],
 
 cod_ose: [
@@ -10224,6 +10228,7 @@ ship_type: [
 	{ value: "castle", weight: 1 },
 	{ value: "tower", weight: 1 },
 	{ value: "chateau", weight: 1 },
+	{ value: "spire", weight: 1 },
   ],
   
   aristocratic_home_rooms: [
@@ -10311,6 +10316,7 @@ ship_type: [
 	{ value: "monastery", weight: 1 },
 	{ value: "sanctuary", weight: 1 },
 	{ value: "mosque", weight: 1 },
+	{ value: "synagogue", weight: 1 },
   ],
   
   aristocratic_robbed_place_coffins: [
@@ -10773,6 +10779,7 @@ door_type: [
 	{ value: "of the ${uc:WeirdFantasyMonster}", weight: 2 },
 	{ value: "of ${uc:numinous_feeling}", weight: 2 },
 	{ value: "of Victory", weight: 1 },
+	{ value: "of ${uc:sins}", weight: 1 },
   ],
   
   gates_prefix: [
@@ -11014,7 +11021,7 @@ door_type: [
   
   sport_obj: [
     { value: "heavy balls", weight: 1 },
-	{ value: "fancy sticks", weight: 1 },
+	{ value: "pointed sticks", weight: 1 },
 	{ value: "special boots", weight: 1 },
 	{ value: "leather gloves", weight: 1 },
 	{ value: "colorful helmets", weight: 1 },
@@ -11083,6 +11090,41 @@ door_type: [
 	{ value: "magister", weight: 1 },
 	{ value: "cleric", weight: 1 },
 	{ value: "vicar", weight: 1 },
+  ],
+  
+  random_dungeons: [
+    { value: "Laboratory ${onednine}${onednine}${onednine}", weight: 1 },
+	{ value: "the ${uc:aristocratic_robbed_place_religious} of ${tc:random_dungeons_theme}", weight: 2 },
+	{ value: "the ${tc:Weapons} Garden of the ${uc:god_funeral_transform} ${uc:religious_ranks}", weight: 2 },
+	{ value: "the Castle of ${castle_name}", weight: 2 },
+	{ value: "the ${tc:aristocratic_home} of ${tc:random_dungeons_theme}", weight: 2 },
+	{ value: "the ${tc:huntingmonster_singular} Factory", weight: 2 },
+  ],
+  
+  random_dungeons_theme: [
+    { value: "blood", weight: 1 },
+	{ value: "flame", weight: 1 },
+	{ value: "frost", weight: 1 },
+	{ value: "moonlight", weight: 1 },
+	{ value: "the broken ${BladedWeapons_Sword}", weight: 1 },
+	{ value: "${pain_synonyms}", weight: 1 },
+	{ value: "blazing light", weight: 1 },
+	{ value: "gloom", weight: 1 },
+	{ value: "shadow", weight: 1 },
+	{ value: "mist", weight: 1 },
+	{ value: "fear", weight: 1 },
+	{ value: "horror", weight: 1 },
+	{ value: "terror", weight: 1 },
+	{ value: "fear", weight: 1 },
+  ],
+  
+  pain_synonyms: [
+    { value: "agony", weight: 1 },
+	{ value: "torment", weight: 1 },
+	{ value: "misery", weight: 1 },
+	{ value: "pain", weight: 1 },
+	{ value: "anguish", weight: 1 },
+	{ value: "affliction", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
