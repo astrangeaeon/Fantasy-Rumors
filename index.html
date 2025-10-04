@@ -269,6 +269,7 @@ const tables = {
 	{ value: " where worms the size of tigers roil", weight: 1 },
 	{ value: " where the vampires live in trees", weight: 1 },
 	{ value: " where the fruits have skeletons", weight: 1 },
+	{ value: " where the flowers are kept in cages", weight: 1 },
   ],
 
   herdwith: [
@@ -292,6 +293,7 @@ const tables = {
     { value: " with swords for teeth", weight: 1 },
     { value: " with the feet of humans", weight: 1 },
     { value: " with the hair of maidens", weight: 1 },
+	{ value: " stamped with a brand of ${tattoos}", weight: 1 },
   ],
 
   sign: [
@@ -448,6 +450,9 @@ const tables = {
 	{ value: " who was not afraid to call the baby ugly,", weight: 1 },
 	{ value: " who created a complex magic ritual for making buckwheat pancakes,", weight: 1 },
 	{ value: " whose great spirit wore many suits of flesh, discarding spent bodies like an old boot,", weight: 1 },
+	{ value: " whose works were locked away in a stout casket,", weight: 1 },
+	{ value: " who only appeared in public on holy days clothed in ${Colors},", weight: 1 },
+	{ value: " who had the soul of ${a:flowers_singular},", weight: 1 },
   ],
 
   hundred_words: [
@@ -1074,6 +1079,7 @@ const tables = {
 	{ value: "noon", weight: 1 },
 	{ value: "rainbow", weight: 1 },
 	{ value: "nibbling", weight: 1 },
+	{ value: "shouting", weight: 1 },
   ],
 
   dance: [
@@ -1637,7 +1643,7 @@ const tables = {
   ],
 
   exchangething: [
-    { value: "addictive spiced jerky", weight: 1 },
+    { value: "heavily spiced ${AnimalPrey} jerky", weight: 1 },
     { value: "amulets from pillaged tombs", weight: 1 },
 	{ value: "artifacts of ${historybuild}", weight: 1 },
     { value: "baby skunks", weight: 1 },
@@ -1783,6 +1789,7 @@ const tables = {
     { value: "whose fleas have fleas", weight: 1 },
     { value: "whose only pleasure is the flame", weight: 1 },
 	{ value: "wearing robes of silk embroidered with golden dragons", weight: 1 },
+	{ value: "wielding ${a:sword_property} ${Weapons}", weight: 2 },
   ],
 
   fd: [
@@ -3206,6 +3213,7 @@ const tables = {
     { value: "thousands of spiders have been seen migrating to their summer webs", weight: 1 },
     { value: "throat-parasites from the river water have deepened all voices", weight: 1 },
     { value: "vicious wasps have made a nest from a discarded volume of the poet Domhnall’s bitter verses", weight: 1 },
+	{ value: "${a:AnimalOrdinary} has been heard quoting passages from the Prophets", weight: 1 },
   ],
 
   localtopic: [
@@ -6200,6 +6208,7 @@ trap_location: [
 	{ value: "two old knights guard a massive mussel shell, said to cure the disease of any who lay down inside", weight: 1 },
 	{ value: "millions of ${AnimalReptile}s have begun their centenary migration to ${landmark} in the ${CompassDirectionPrimary}", weight: 3 },
 	{ value: "there’s three grand statues of kings whose faces have been removed with hammer and chisel", weight: 1 },
+	{ value: "grotesque monsters pray to the god who made them in its image", weight: 1 },
   ],
 
   wilds_locn: [
@@ -10563,6 +10572,16 @@ door_type: [
 	{ value: "the ${tc:AnimalVenomous} Blade", weight: 2 },
   ],
   
+  sword_property: [
+	{ value: "flaming", weight: 1 },
+	{ value: "holy", weight: 1 },
+    { value: "chaotic", weight: 1 },
+    { value: "daemonic", weight: 1 },
+	{ value: "${humanoid}-slaying", weight: 1 },
+	{ value: "${huntingmonster_singular}-slaying", weight: 1 },
+	{ value: "eerie ${Colors}", weight: 1 },
+  ],
+  
   humanoid_monsters: [
 	{ value: "ogre", weight: 1 },
 	{ value: "troll", weight: 1 },
@@ -11162,6 +11181,24 @@ door_type: [
 	{ value: "sky crypt", weight: 1 },
 	{ value: "sky tomb", weight: 1 },
 	{ value: "sky vault", weight: 1 },
+  ],
+  
+  book_titles: [
+    { value: "Book of the Dealer in Spices", weight: 1 },
+	{ value: "Book of Wheels", weight: 1 },
+	{ value: "Book of the Strong Hand", weight: 1 },
+	{ value: "Miracles of Saint ${SaintName}", weight: 1 },
+	{ value: "${tc:AnimalMain} Tales", weight: 1 },
+	{ value: "Book of the ${Weapons}", weight: 1 },
+	{ value: "Book of the ${tc:classic_classes}", weight: 1 },
+	{ value: "Book of ${DemonName}", weight: 1 },
+	{ value: "Book of ${uc:crowns_metal_type}", weight: 1 },
+  ],
+  
+  book_synonyms: [
+    { value: "book", weight: 1 },
+	{ value: "tome", weight: 1 },
+	{ value: "manual", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
