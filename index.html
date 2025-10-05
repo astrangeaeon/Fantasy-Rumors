@@ -270,6 +270,8 @@ const tables = {
 	{ value: " where the vampires live in trees", weight: 1 },
 	{ value: " where the fruits have skeletons", weight: 1 },
 	{ value: " where the flowers are kept in cages", weight: 1 },
+	{ value: " with its despised shrieking birds", weight: 1 },
+	{ value: " with its ${QuickNPCDescriptor} ${QuickNPCJob}s", weight: 3 },
   ],
 
   herdwith: [
@@ -454,6 +456,7 @@ const tables = {
 	{ value: " who only appeared in public on holy days clothed in ${Colors},", weight: 1 },
 	{ value: " who had the soul of ${a:flowers_singular},", weight: 1 },
 	{ value: " whose songs came armed and clad in armour,", weight: 1 },
+	{ value: " who used their brother's gravestone as a shield,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1832,6 +1835,7 @@ const tables = {
 	{ value: "pierced nipples", weight: 1 },
 	{ value: "a withered arm", weight: 1 },
 	{ value: "blood-covered hands", weight: 1 },
+	{ value: "${crowns_metal_type} ${coins} in their hair", weight: 1 },
   ],
 
   fd_tale: [
@@ -1875,6 +1879,7 @@ const tables = {
 	{ value: "a queen from the ${CompassDirectionPrimary} who could not speak, only produce the defeaning roar of the ${AnimalBigCat}", weight: 1 },
 	{ value: "${a:Colors} pool where fish with scales of gold and silver swim", weight: 1 },
 	{ value: "the fish that swim in the shifting sands of a waterless sea", weight: 1 },
+	{ value: "${a:classic_classes} who entered ${classic_dungeons} armed only with a candle", weight: 1 },
   ],
 
   feature: [
@@ -2904,6 +2909,7 @@ const tables = {
 	{ value: "the ${uc:Colors} Hall of the ${uc:CompassDirectionPrimary} Star", weight: 1 },
 	{ value: "the Forest of Spears", weight: 1 },
 	{ value: "the Temple of Throp", weight: 1 },
+	{ value: "the ancient ${AnimalMain} cut into the cliff-face", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -2972,6 +2978,7 @@ const tables = {
 	{ value: "the place where Minna was drowned", weight: 1 },
 	{ value: "the island of Kharg in the gulf", weight: 1 },
 	{ value: "the Tree of Crime", weight: 1 },
+	{ value: "the ${AnimalMain}-shaped boulder", weight: 1 },
   ],
 
   lawnornament: [
@@ -3033,6 +3040,7 @@ const tables = {
 	{ value: "the ${FantasyLastName} clan's feud with the ${FantasyLastName} folks all started on account of ${a:feud_reason}", weight: 2 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, has been hearing noises in their cellar that originate from that gloomy place the ${ancientpeople} called the ${underworld_names}", weight: 1 },
 	{ value: "in the village of ${village_names}, young lovers court each other by playing songs on the ${MusicalInstrument} and exchanging ${flowers_singular} seeds", weight: 1 },
+	{ value: "an old tradition in the village of ${village_names} requires young maidens to wear ${duo_clothing_adj} ${Colors} ${duo_clothing} and ${crowns_metal_type} ${coins} in their hair", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -4381,6 +4389,8 @@ const tables = {
     { value: "Master of Horse", weight: 1 },
     { value: "Queen’s Swan Marker", weight: 1 },
     { value: "Royal Remembrancer", weight: 1 },
+	{ value: "First Butcher", weight: 1 },
+    { value: "First Gardener", weight: 1 },
   ],
 
   ruinedtower: [
@@ -4788,6 +4798,7 @@ const tables = {
 	{ value: "public figures must add a verse of their own to the traditional tune '${ballad_titles}'", weight: 1 },
 	{ value: "people wear animal masks and bury the mirrors that have seen their true face", weight: 1 },
 	{ value: "women reproduce by exposing themselves to the full force of the south wind", weight: 1 },
+	{ value: "the people have two hearts, one to pump blood and one to beat ceaselessly for the homeland", weight: 1 },
   ],
 
   strangenoises: [
@@ -5330,6 +5341,7 @@ trap_location: [
 	{ value: "when ${FantasyGods} approached ${urbn_cityname}, the City of ${urbn_citynickname}, their massive bulk blocked out the sun", weight: 1 },
 	{ value: "${a:classic_classes} is seeking companions in arms to ${quest_hook} in order ${hero_goal}", weight: 2 },
 	{ value: "in ${urbn_cityname}, 'scarcely a day passes without a murder, or an hour without a quarrel, or a moment without tears'", weight: 1 },
+	{ value: "the city of ${urbn_cityname} is known for its enlightened views on animals, as exemplified by its famous ${pet} ${urbn_place_animal}", weight: 1 },
   ],
 
    urbn_traders: [
@@ -5391,6 +5403,7 @@ trap_location: [
 	{ value: "Port Sunlight", weight: 1 },
 	{ value: "Cephalonia", weight: 1 },
 	{ value: "Bad Seckinga", weight: 1 },
+	{ value: "Zerzura", weight: 1 },
   ],
 
   urbn_citynickname: [
@@ -5551,6 +5564,28 @@ trap_location: [
 	{ value: "locksmithery", weight: 1 },
 	{ value: "alehouse", weight: 1 },
 	{ value: "wine-shop", weight: 1 },
+	{ value: "swimming pool", weight: 1 },
+  ],
+  
+  urbn_place_animal: [
+    { value: "academy", weight: 1 },
+    { value: "asylum", weight: 1 },
+    { value: "bakery", weight: 1 },
+    { value: "barber shop", weight: 1 },
+    { value: "bathhouse", weight: 1 },
+    { value: "brothel", weight: 1 },
+    { value: "cathedral", weight: 1 },
+    { value: "church", weight: 1 },
+    { value: "court of law", weight: 1 },
+    { value: "fighting pit", weight: 1 },
+    { value: "graveyard", weight: 1 },
+    { value: "orphanage", weight: 1 },
+    { value: "park", weight: 1 },
+    { value: "prison", weight: 1 },
+    { value: "shelter", weight: 1 },
+    { value: "tavern", weight: 1 },
+    { value: "temple", weight: 1 },
+	{ value: "swimming pool", weight: 1 },
   ],
 
   urbn_strife: [
@@ -6905,6 +6940,7 @@ trap_location: [
     { value: "Mephibosheth", weight: 1 },
     { value: "Asbeel", weight: 1 },
 	{ value: "Maalik", weight: 1 },
+	{ value: "Hobbomock", weight: 1 },
   ],
   
   LowerRankedDemonName: [
@@ -7684,7 +7720,7 @@ trap_location: [
 	{ value: "cheerful", weight: 1 },
 	{ value: "graceful", weight: 1 },
 	{ value: "angry", weight: 1 },
-	{ value: "sad", weight: 1 },
+	{ value: "sorrowful", weight: 1 },
 	{ value: "suspicious", weight: 1 },
 	{ value: "paranoid", weight: 1 },
 	{ value: "bald", weight: 1 },
@@ -7694,6 +7730,9 @@ trap_location: [
 	{ value: "childless", weight: 1 },
 	{ value: "unmarried", weight: 1 },
 	{ value: "sleepless", weight: 1 },
+	{ value: "ugly", weight: 1 },
+	{ value: "secretive", weight: 1 },
+	{ value: "surly", weight: 1 },
   ],
 
   QuickNPCJob: [
@@ -7920,6 +7959,7 @@ trap_location: [
 	{ value: "decaying horseshoe crab", weight: 1 },
 	{ value: "putrid milk", weight: 1 },
 	{ value: "vanilla", weight: 1 },
+	{ value: "skunkberry", weight: 1 },
   ],
 
   TradeGoods: [
@@ -10862,6 +10902,7 @@ door_type: [
 	{ value: "the Bound ${tc:fairy_folk}", weight: 3 },
 	{ value: "Mirrors", weight: 1 },
 	{ value: "Oblivion", weight: 1 },
+	{ value: "Light", weight: 1 },
   ],
   
   castle_extra: [
