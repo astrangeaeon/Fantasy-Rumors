@@ -2005,6 +2005,7 @@ const tables = {
     { value: "Zena", weight: 1 },
 	{ value: "Eshnar", weight: 1 },
 	{ value: "Delsen", weight: 1 },
+	{ value: "Palmella", weight: 1 },
   ],
 
   funeralcustom: [
@@ -4698,6 +4699,7 @@ const tables = {
 	{ value: "a magic ring that can transport the wearer to the nearest Burger King", weight: 1 },
 	{ value: "a manual for ${monster_manual_verb} ${huntingmonster}", weight: 1 },
 	{ value: "${a:former_object} matching the description of the one belonging to ${former_owner}${former_owner_extra}", weight: 5 },
+	{ value: "a small box of hand-painted clay santons, including one of Saint ${SaintName}", weight: 1 },
   ],
 
   strangecustom: [
@@ -5816,6 +5818,8 @@ trap_location: [
 	{ value: "a knight in ${Colors} armor", weight: 1 },
 	{ value: "an eater of crab meat and crab apples", weight: 1 },
 	{ value: "a clown who juggles large false ${Jewels}", weight: 1 },
+	{ value: "the brother of Sabocha", weight: 1 },
+	{ value: "a wild lad, barefooted,", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6360,6 +6364,7 @@ trap_location: [
 	{ value: "there's an obelisk near an ancient false door cut into the naked rock with ${rune} carved into it", weight: 2 },
 	{ value: "there's a stone that marks the site of the ${uc:floors} Miracle of Saint ${SaintName}: ${miracles}", weight: 2 },
 	{ value: "the ${aristocratic_home} of ${ntc}, sometimes called the Castle of ${castle_name}, is said ${castle_extra}", weight: 2 },
+	{ value: "the lost city of ${urbn_cityname}, with its legendary ${city_features}, appeared in the clouds above the desolate ${landscape_types} of ${foreign_adj}${foreignland}, witnessed by ${a:QuickNPCJobPoor} known for their sobriety", weight: 1 },
   ],
   
   
@@ -8523,7 +8528,7 @@ saint_curse: [
 	{ value: "Sorcerer's Cave", weight: 1 },
     { value: "Tigris and Euphrates", weight: 1 },
     { value: "Ambush!", weight: 1 },
-	{ value: "cards", weight: 3 },
+	{ value: "hearts", weight: 3 },
 	{ value: "dice", weight: 3 },
   ],
   
@@ -9395,9 +9400,9 @@ celebration_type: [
   ],
   
    political_org_league_format: [
-    { value: "League of ${uc:political_org_league_type}s", weight: 1 },
-	{ value: "${political_org_league_type} League", weight: 1 },
-	{ value: "League of the ${uc:political_org_league_type}", weight: 1 },
+    { value: "League of ${tc:political_org_league_type}s", weight: 1 },
+	{ value: "${tc:political_org_league_type} League", weight: 1 },
+	{ value: "League of the ${tc:political_org_league_type}", weight: 1 },
   ],
 
 
@@ -11252,6 +11257,13 @@ door_type: [
     { value: "book", weight: 1 },
 	{ value: "tome", weight: 1 },
 	{ value: "manual", weight: 1 },
+  ],
+  
+  city_features: [
+    { value: "domes and turrets", weight: 1 },
+	{ value: "gateways and bell towers", weight: 1 },
+	{ value: "bridges and waterfalls", weight: 1 },
+	{ value: "lighthouses and corpse-towers", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
