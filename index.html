@@ -4094,6 +4094,7 @@ const tables = {
     { value: "the Camel", weight: 1 },
     { value: "Potato Valley", weight: 1 },
     { value: "the Gorge of Laments", weight: 1 },
+	{ value: "${village_names}", weight: 3 },
   ],
 
   propheticbook: [
@@ -6365,6 +6366,7 @@ trap_location: [
 	{ value: "there's a stone that marks the site of the ${uc:floors} Miracle of Saint ${SaintName}: ${miracles}", weight: 2 },
 	{ value: "the ${aristocratic_home} of ${ntc}, sometimes called the Castle of ${castle_name}, is said ${castle_extra}", weight: 2 },
 	{ value: "the lost city of ${urbn_cityname}, with its legendary ${city_features}, appeared in the clouds above the desolate ${landscape_types} of ${foreign_adj}${foreignland}, witnessed by ${a:QuickNPCJobPoor} known for their sobriety", weight: 1 },
+	{ value: "there's a small shrine that marks where ${shrine}", weight: 3 },
   ],
   
   
@@ -10781,7 +10783,7 @@ door_type: [
 	{ value: "making the barren young widow big with child", weight: 1 },
 	{ value: "summoning snarling ${AnimalCanine}s to silence the mocking children", weight: 1 },
 	{ value: "aging the wailing infant into an old man", weight: 1 },
-	{ value: "growing ${a:AnimalBird} to enormous size and flying it up to Paradise", weight: 1 },
+	{ value: "growing ${a:AnimalBird} to enormous size and flying upon it up to Paradise", weight: 1 },
 	{ value: "creating a double out of cloud to fool the spouse of ${ntc}", weight: 1 },
   ],
   
@@ -10838,6 +10840,8 @@ door_type: [
 	{ value: "daemonic", weight: 1 },
 	{ value: "dancing", weight: 1 },
 	{ value: "cursed", weight: 1 },
+	{ value: "eerie ${Colors}", weight: 1 },
+	{ value: "chaotic", weight: 1 },
   ],
   
    gates_suffix: [
@@ -11264,6 +11268,28 @@ door_type: [
 	{ value: "gateways and bell towers", weight: 1 },
 	{ value: "bridges and waterfalls", weight: 1 },
 	{ value: "lighthouses and corpse-towers", weight: 1 },
+  ],
+  
+  //a small shrine marking the place where 
+  shrine: [
+    { value: "${heroes_and_villains} found the discarded ${magicalcommonobject} that always brought them good fortune", weight: 1 },
+	{ value: "${heroes_and_villains} slew ${creepyvillain}", weight: 1 },
+	{ value: "${heroes_and_villains} discovered the ${prophecyartifact}", weight: 1 },
+	{ value: "${heroes_and_villains} beheaded the ${daemontype} daemon ${DemonName}", weight: 1 },
+	{ value: "${heroes_and_villains} was given ${a:weapon_prefix} ${Weapons} by ${wish_granter_living}", weight: 1 },
+	{ value: "${heroes_and_villains} was touched by the divine hand of ${FantasyGods}", weight: 1 },
+	{ value: "${heroes_and_villains} performed a great miracle: ${miracles}", weight: 1 },
+	{ value: "${heroes_and_villains} first met their beloved companion, the ${AnimalMain} called ${pet_name}", weight: 1 },
+	{ value: "${heroes_and_villains} shed their physical body and climbed the invisible stairs up to Paradise", weight: 1 },
+	{ value: "${heroes_and_villains} married their great love, ${FantasyGodNameFemale}", weight: 1 },
+	{ value: "${heroes_and_villains} married their great love, ${FantasyGodNameMale}", weight: 1 },
+	{ value: "${heroes_and_villains} was betrayed and treacherously slain by their boon companion ${ntc}", weight: 1 },
+	{ value: "${heroes_and_villains} was imprisoned in a cage of ${crowns_metal_type} for ${fairy_number} years by ${creepyvillain}", weight: 1 },
+	{ value: "${heroes_and_villains} spent their last night under the free stars before the fateful Battle of ${village_names}", weight: 1 },
+	{ value: "${ntc}, overcome by ${numinous_feeling}, cast away a magic ${duo_jewlery_singular}", weight: 1 },
+	{ value: "${heroes_and_villains} was bitten by ${a:AnimalInsectBiting} that gorged itself on the powerful blood", weight: 1 },
+	{ value: "${heroes_and_villains} slaughtered a squad of desperate ${violent_profession_plural} when they refused to make way", weight: 1 },
+	{ value: "${heroes_and_villains} strangled a vicious ${AnimalCanine} and made a cloak from its pelt", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
