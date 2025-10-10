@@ -272,6 +272,7 @@ const tables = {
 	{ value: " where the flowers are kept in cages", weight: 1 },
 	{ value: " with its despised shrieking birds", weight: 1 },
 	{ value: " with its ${QuickNPCDescriptor} ${QuickNPCJob}s", weight: 3 },
+	{ value: " where herds of ${herdanimal} move like slow rivers", weight: 1 },
   ],
 
   herdwith: [
@@ -942,6 +943,8 @@ const tables = {
 	{ value: "the Nightsoil Queen", weight: 1 },
 	{ value: "${DemonName} the Gardener", weight: 1 },
 	{ value: "the elephant worm, Tiero", weight: 1 },
+	{ value: "the Lord of the Locusts", weight: 1 },
+	{ value: "Mim, Queen of the Hydras", weight: 1 },
   ],
 
   criminals: [
@@ -1257,7 +1260,7 @@ const tables = {
     { value: "Rosabeth of Melfia", weight: 1 },
     { value: "Royal Sorcerer Navlaan", weight: 1 },
     { value: "Ruined Aflis", weight: 1 },
-    { value: "Sage Freke the Visionary", weight: 1 },
+    { value: "Uncomely Linth", weight: 1 },
     { value: "Sarah Threeneedles", weight: 1 },
     { value: "Sargon of Akkad", weight: 1 },
     { value: "Saxo Grammaticus", weight: 1 },
@@ -1725,7 +1728,7 @@ const tables = {
 	{ value: "pointed ears of elves", weight: 1 },
 	{ value: "hairy toes of hobbits", weight: 1 },
 	{ value: "${AnimalMammal} eggs", weight: 1 },
-	{ value: "${crowns_metal_type} horns of ${daemontype} daemons", weight: 1 },
+	{ value: "the ${crowns_metal_type} horns of ${daemontype} daemons", weight: 1 },
   ],
 
   excitingemployer: [
@@ -1794,6 +1797,8 @@ const tables = {
     { value: "whose only pleasure is the flame", weight: 1 },
 	{ value: "wearing robes of silk embroidered with golden dragons", weight: 1 },
 	{ value: "wielding ${a:sword_property} ${Weapons}", weight: 2 },
+	{ value: "wearing fur-robes from the pelt of a flame-proof rat, sea-green when cured", weight: 1 },
+	{ value: "covered in ${AnimalInsect}s", weight: 1 },
   ],
 
   fd: [
@@ -1836,6 +1841,7 @@ const tables = {
 	{ value: "a withered arm", weight: 1 },
 	{ value: "blood-covered hands", weight: 1 },
 	{ value: "${crowns_metal_type} ${coins} in their hair", weight: 1 },
+	{ value: "an unusually large and intelligent ${AnimalFamiliar} familiar", weight: 1 },
   ],
 
   fd_tale: [
@@ -2049,6 +2055,7 @@ const tables = {
     { value: "travel ${CompassDirection} until the blood grows tired", weight: 1 },
 	{ value: "walk in the steps of ${historybuild}", weight: 2 },
 	{ value: "pluck a swamp rose from the swamp garden of the Witch of ${coastal}", weight: 1 },
+	{ value: "go to the Lazaret of ${slumberplace} and kiss each leper there on the mouth", weight: 1 },
   ],
 
   geyserspray: [
@@ -3111,6 +3118,7 @@ const tables = {
 	{ value: "breed a cat that eats books", weight: 1 },
 	{ value: "teach the ${criminals} of the world a lesson in blood", weight: 1 },
 	{ value: "lead a caravan of 800 camels", weight: 1 },
+	{ value: "bury the gods in gold and ${Jewels}", weight: 1 },
   ],
 
   local_racist: [
@@ -3455,6 +3463,7 @@ const tables = {
 	{ value: "${a:MusicalInstrument} from ${foreignland}", weight: 1 },
 	{ value: "an adder stone that forces spirits to state their business and name", weight: 1 },
 	{ value: "a sack of mirthapples", weight: 1 },
+	{ value: "an emerald table engraved with alchemical wisdom", weight: 1 },
   ],
 
   membership: [
@@ -3492,6 +3501,7 @@ const tables = {
     { value: "ingest hallucinogenic spiders", weight: 1 },
     { value: "ingest mind-altering fungi", weight: 1 },
     { value: "lick psychedelic jungle toads", weight: 1 },
+	{ value: "pierce their neck with the stinger of ${a:Jewel_singular} scorpion", weight: 1 },
   ],
 
   minename: [
@@ -6602,6 +6612,21 @@ trap_location: [
     { value: "rodent", weight: 1 },
 	{ value: "chipmunk", weight: 1 },
 	{ value: "bat", weight: 1 },
+  ],
+  
+  AnimalFamiliar: [
+    { value: "cat", weight: 1 },
+    { value: "rat", weight: 1 },
+    { value: "dog", weight: 1 },
+    { value: "ferret", weight: 1 },
+    { value: "bird", weight: 1 },
+	{ value: "toad", weight: 1 },
+	{ value: "rabbit", weight: 1 },
+	{ value: "wasp", weight: 1 },
+	{ value: "butterfly", weight: 1 },
+	{ value: "pig", weight: 1 },
+	{ value: "snake", weight: 1 },
+	{ value: "lizard", weight: 1 },
   ],
   
   AnimalBird: [
@@ -11310,6 +11335,7 @@ door_type: [
 	{ value: "${heroes_and_villains} was born to ${a:QuickNPCJobPoor} and ${a:QuickNPCJobMid}", weight: 1 },
 	{ value: "${heroes_and_villains} was found as an infant by ${a:QuickNPCJobPoor} who raised the child as their own", weight: 1 },
 	{ value: "${heroes_and_villains} was hatched out of ${a:MarbleTypes} ${DecorativeStone} egg, fully formed in the prime of life", weight: 1 },
+	{ value: "${ntc}, bewigged and wearing kohl and painted lips, snuck past the border sentinels when the land was still called ${foreignland}", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
