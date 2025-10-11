@@ -4711,6 +4711,7 @@ const tables = {
 	{ value: "a manual for ${monster_manual_verb} ${huntingmonster}", weight: 1 },
 	{ value: "${a:former_object} matching the description of the one belonging to ${former_owner}${former_owner_extra}", weight: 5 },
 	{ value: "a small box of hand-painted clay santons, including one of Saint ${SaintName}", weight: 1 },
+	{ value: "a crystal time capsule buried ${historicalage}", weight: 1 },
   ],
 
   strangecustom: [
@@ -5477,6 +5478,7 @@ trap_location: [
     { value: "a pack of ${herd_adj} ${herdanimal} ${herdwith}", weight: 1 },
     { value: "an immortal ${profession} ${facial_desc}", weight: 1 },
 	{ value: "${fairy_folk_named}", weight: 1 },
+	{ value: "monstrous ${huntingmonster} that eat horses in two bites", weight: 1 },
   ],
 
   urbn_locn: [
@@ -6068,6 +6070,7 @@ trap_location: [
     { value: "thousands upon thousands of severed noses and ears", weight: 1 },
 	{ value: "the living sword ${sword_names}, an elven ${BladedWeapons_Sword} that ${sword_desire},", weight: 1 },
 	{ value: "an indestructible statue of ${a:AnimalFarm},", weight: 1 },
+	{ value: "a slab of ${MarbleTypes} marble carved with hieroglyphics of ${hieroglyphics}", weight: 1 },
   ],
 
   weapon_land_type: [
@@ -8694,6 +8697,7 @@ celebration_type: [
 	{ value: "${prophetic_subject} participating in the ${athletic_events} event at the ${athletic_games} Games in the ${landscape_types_basic} of ${foreignland}", weight: 1 },
 	{ value: "${prophetic_subject} looking on as a trio of ${criminals} are punished by ${punishment}", weight: 1 },
 	{ value: "${prophetic_subject} weeping as two ${violent_profession_plural} execute a kneeling ${humanoid}", weight: 1 },
+	{ value: "${prophetic_subject} ringing the Bells of Kwalish to bring their companion back from the ${underworld_names}", weight: 1 },
   ],
   
   
@@ -11336,6 +11340,21 @@ door_type: [
 	{ value: "${heroes_and_villains} was found as an infant by ${a:QuickNPCJobPoor} who raised the child as their own", weight: 1 },
 	{ value: "${heroes_and_villains} was hatched out of ${a:MarbleTypes} ${DecorativeStone} egg, fully formed in the prime of life", weight: 1 },
 	{ value: "${ntc}, bewigged and wearing kohl and painted lips, snuck past the border sentinels when the land was still called ${foreignland}", weight: 1 },
+	{ value: "${heroes_and_villains} rang the Bells of Kwalish to bring their companion back from the ${underworld_names}", weight: 1 },
+  ],
+  
+  hieroglyphics: [
+    { value: "${hiero_a} fighting ${hiero_b}", weight: 1 },
+  ],
+  
+  hiero_a: [
+    { value: "a somber ${magicusertype} wearing ${Colors} robes", weight: 1 },
+	{ value: "warriors armed with ${HaftedWeapons} and ${BladedWeapons_Sword}", weight: 1 },
+  ],
+  
+  hiero_b: [
+    { value: "a horde of ${huntingmonster}", weight: 1 },
+	{ value: "a towering ${humanoid_monsters}", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
