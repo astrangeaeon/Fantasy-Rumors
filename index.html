@@ -5713,6 +5713,7 @@ trap_location: [
 	{ value: "${travelers}s from ${urbn_cityname}, the City of ${tc:urbn_citynickname}", weight: 1 },
 	{ value: "a trio of ${violent_profession_plural}", weight: 1 },
 	{ value: "knights in ${Colors} armor", weight: 1 },
+	{ value: "the highborn of ${urbn_cityname}", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -5833,6 +5834,7 @@ trap_location: [
 	{ value: "a clown who juggles large false ${Jewels}", weight: 1 },
 	{ value: "the brother of Sabocha", weight: 1 },
 	{ value: "a wild lad, barefooted,", weight: 1 },
+	{ value: "${a:daemontype} daemon born from the womb of night called ${LowerRankedDemonName}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6268,6 +6270,7 @@ trap_location: [
 	{ value: "millions of ${AnimalReptile}s have begun their centenary migration to ${landmark} in the ${CompassDirectionPrimary}", weight: 3 },
 	{ value: "there’s three grand statues of kings whose faces have been removed with hammer and chisel", weight: 1 },
 	{ value: "grotesque monsters pray to the god who made them in its image", weight: 1 },
+	{ value: "a ruined ${aristocratic_robbed_place_religious} where the ancient ${ancientpeople} sacrificed ${humanoids} to placate ${fairy_folk_named} slowly sinks into the earth", weight: 3 },
   ],
 
   wilds_locn: [
@@ -6333,7 +6336,7 @@ trap_location: [
     // { value: "Ex: “There’s a rumor that in a shady grove …”", weight: 0 },
     { value: "${who_is_buried} was buried in a hidden tomb with ${tomb_loot}. The tomb is protected by ${tombprotection}", weight: 4 },
     { value: "${thingbeyond} from ${placebeyond} ${actionbeyond}", weight: 4 },
-    { value: "${wilds_specific_locn} ${wilds_hook2}", weight: 8 },
+    { value: "${wilds_specific_locn} ${wilds_hook2}", weight: 10 },
     { value: "there’s ${a:wilds_adj} ${wilds_noun} ${wilds_locn} that ${wilds_hook}", weight: 4 },
     { value: "a pack of ${herd_adj} ${herdanimal} ${herdwith} have made their home ${wilds_specific_locn}", weight: 2 },
     { value: "${huntingmonster}, not seen since they were exiled below the earth by ${heroes_and_villains} centuries ago, have been reported near ${landmark}", weight: 1 },
@@ -10425,6 +10428,7 @@ ship_type: [
 	{ value: "sanctuary", weight: 1 },
 	{ value: "mosque", weight: 1 },
 	{ value: "synagogue", weight: 1 },
+	{ value: "temple", weight: 1 },
   ],
   
   aristocratic_robbed_place_coffins: [
