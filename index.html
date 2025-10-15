@@ -6401,7 +6401,7 @@ trap_location: [
 	{ value: "there's a stone that marks the site of the ${uc:floors} Miracle of Saint ${SaintName}: ${miracles}", weight: 2 },
 	{ value: "the ${aristocratic_home} of ${ntc}, sometimes called the Castle of ${castle_name}, is said ${castle_extra}", weight: 2 },
 	{ value: "the lost city of ${urbn_cityname}, with its legendary ${city_features}, appeared in the clouds above the desolate ${landscape_types} of ${foreign_adj}${foreignland}, witnessed by ${a:QuickNPCJobPoor} known for their sobriety", weight: 1 },
-	{ value: "there's a small shrine that marks where ${shrine}", weight: 3 },
+	{ value: "there's ${a:shrine_adj} ${shrine_type} that marks where ${shrine}; someone has left an offering of ${shrine_offering}", weight: 3 },
 	{ value: "there's an ancient temple wall made of ${MarbleTypes} marble carved with hieroglyphics of ${hieroglyphics}", weight: 2 },
   ],
   
@@ -6410,6 +6410,7 @@ trap_location: [
     { value: "go mad", weight: 1 },
     { value: "grow old", weight: 1 },
     { value: "must pass through the ${landscape_types_artificial} where ${huntingmonster} ${between_landmarks_monster_verb}", weight: 20 },
+	{ value: "will pass ${a:shrine_adj} ${shrine_type} that marks where ${shrine}", weight: 10 },
   ],
   
   between_landmarks_monster_verb: [
@@ -11373,6 +11374,34 @@ door_type: [
 	{ value: "${heroes_and_villains} was hatched out of ${a:MarbleTypes} ${DecorativeStone} egg, fully formed in the prime of life", weight: 1 },
 	{ value: "${ntc}, bewigged and wearing kohl and painted lips, snuck past the border sentinels when the land was still called ${foreignland}", weight: 1 },
 	{ value: "${heroes_and_villains} rang the Bells of Kwalish to bring their companion back from the ${underworld_names}", weight: 1 },
+  ],
+  
+  shrine_type: [
+    { value: "shrine", weight: 1 },
+	{ value: "stele", weight: 1 },
+	{ value: "column", weight: 1 },
+	{ value: "pillar", weight: 1 },
+	{ value: "monument", weight: 1 },
+	{ value: "statue", weight: 1 },
+	{ value: "obelisk", weight: 1 },
+  ],
+  
+  shrine_adj: [
+    { value: "modest", weight: 1 },
+	{ value: "neglected", weight: 1 },
+	{ value: "worn down", weight: 1 },
+	{ value: "recently cleaned", weight: 1 },
+	{ value: "well cared for", weight: 1 },
+	{ value: "old", weight: 1 },
+	{ value: "beautiful", weight: 1 },
+  ],
+  
+  shrine_offering: [
+    { value: "a leashed ${AnimalFarm}", weight: 1 },
+	{ value: "a basket full of ${FantasyMeal_Vegetable_plural}", weight: 1 },
+	{ value: "${fairy_number} ${crowns_metal_type} ${coins}", weight: 1 },
+	{ value: "${fairy_number} ${Colors} candles", weight: 1 },
+	{ value: "a single ${flowers_singular}", weight: 1 },
   ],
   
   hieroglyphics: [
