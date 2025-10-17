@@ -922,7 +922,7 @@ const tables = {
     { value: "the Father of Diamonds", weight: 1 },
     { value: "the Hooded Judges", weight: 1 },
     { value: "the Imp of Crows", weight: 1 },
-    { value: "the lich of frost", weight: 1 },
+    { value: "the Lich of Frost", weight: 1 },
     { value: "the Light Devourer", weight: 1 },
     { value: "the Limmungerran", weight: 1 },
     { value: "the Lion Daemon Bes", weight: 1 },
@@ -943,7 +943,7 @@ const tables = {
     { value: "the Wood-Daemon Barbatos", weight: 1 },
     { value: "Those Who Wait", weight: 1 },
     { value: "Yog-Sothoth", weight: 1 },
-	{ value: "Patollo the Gardener", weight: 1 },
+	{ value: "Patollo the ${tc:Weapons}", weight: 1 },
 	{ value: "${fairy_folk_named}", weight: 1 },
 	{ value: "a terrible fish", weight: 1 },
 	{ value: "the Nightsoil Queen", weight: 1 },
@@ -3547,6 +3547,7 @@ const tables = {
 	{ value: "the cavernous entrance to the ${underworld_names}", weight: 1 },
 	{ value: "a chamber where ${who_is_buried} sits in stasis on a futuristic throne", weight: 1 },
 	{ value: "the river of elf blood that runs beneath the world", weight: 1 },
+	{ value: "${a:lair_synonyms} of eyeless subterranean vampires", weight: 1 },
   ],
 
   mirage: [
@@ -11121,6 +11122,7 @@ door_type: [
 	{ value: "Burmarsh", weight: 1 },
 	{ value: "Little Broom", weight: 1 },
 	{ value: "Huffleberry Patch", weight: 1 },
+	{ value: "Malice", weight: 1 },
   ],
   
    flowers_singular: [
@@ -11417,6 +11419,8 @@ door_type: [
 	{ value: "workers with primitive tools unearthing ${mineobject}", weight: 1 },
 	{ value: "${a:flag_extra_animal_adj} deity painting the constellation called ${constellation_repeat} onto the night sky", weight: 1 },
 	{ value: "${humanoids} bringing a tribute of ${Jewels} to the Queen of the ${tc:huntingmonster}", weight: 1 },
+	{ value: "chained ${humanoids} having their spirits offered up in sacrifice to ${creepyvillain}", weight: 1 },
+	{ value: "the legendary city of ${urbn_cityname} being overrun by ${flag_extra_animal_adj} ${herdanimal} and bearded ${violent_profession_plural} clad in archaic armor", weight: 1 },
   ],
   
   hiero_a: [
@@ -11427,6 +11431,15 @@ door_type: [
   hiero_b: [
     { value: "a horde of ${huntingmonster}", weight: 1 },
 	{ value: "a towering ${humanoid_monsters}", weight: 1 },
+  ],
+  
+   lair_synonyms: [
+    { value: "lair", weight: 1 },
+	{ value: "nest", weight: 1 },
+	{ value: "warren", weight: 1 },
+	{ value: "den", weight: 1 },
+	{ value: "hive", weight: 1 },
+	{ value: "burrow", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
