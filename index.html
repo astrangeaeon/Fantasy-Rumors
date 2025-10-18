@@ -273,6 +273,7 @@ const tables = {
 	{ value: " with its despised shrieking birds", weight: 1 },
 	{ value: " with its ${QuickNPCDescriptor} ${QuickNPCJob}s", weight: 3 },
 	{ value: " where herds of ${herdanimal} move like slow rivers", weight: 1 },
+	{ value: " with its trees of stone", weight: 1 },
   ],
 
   herdwith: [
@@ -463,6 +464,7 @@ const tables = {
 	{ value: " whose children were all hero saviors or world-annihilating demons,", weight: 1 },
 	{ value: " whose garden attracted the phoenix and dragon and unicorn,", weight: 1 },
 	{ value: " who pulled the child from the breast of the nursing mother,", weight: 1 },
+	{ value: " who sowed stones to grow mountains,", weight: 1 },
   ],
 
   hundred_words: [
@@ -953,6 +955,7 @@ const tables = {
 	{ value: "Mim, Queen of the Hydras", weight: 1 },
 	{ value: "the Daughter of Troubled Sleep", weight: 1 },
 	{ value: "Makroprosopos the Great Face", weight: 1 },
+	{ value: "the wolf-basilisk, Chatel Hayk", weight: 1 },
   ],
 
   criminals: [
@@ -1404,6 +1407,7 @@ const tables = {
 	{ value: "a jug of sticky black honey mixed with ink and blood", weight: 1 },
 	{ value: "a curious green stone", weight: 1 },
 	{ value: "an amulet depicting a demon licking the feet of a sleeping couple", weight: 1 },
+	{ value: "${a:MusicalInstrument} only old men and unborn children in the womb can hear", weight: 1 },
   ],
 
   decade_event: [
@@ -1808,6 +1812,7 @@ const tables = {
 	{ value: "wielding ${a:sword_property} ${Weapons}", weight: 2 },
 	{ value: "wearing fur-robes from the pelt of a flame-proof rat, sea-green when cured", weight: 1 },
 	{ value: "covered in ${AnimalInsect}s", weight: 1 },
+	{ value: "holding a bullwhip made from ${AnimalLeather} leather and studded with hard ${Jewels}", weight: 1 },
   ],
 
   fd: [
@@ -1895,6 +1900,7 @@ const tables = {
 	{ value: "${a:Colors} pool where fish with scales of gold and silver swim", weight: 1 },
 	{ value: "the fish that swim in the shifting sands of a waterless sea", weight: 1 },
 	{ value: "${a:classic_classes} who entered ${classic_dungeons} armed only with a candle", weight: 1 },
+	{ value: "a cursed mirror that creates a violent double, that if defeated, means forever losing your reflection", weight: 1 },
   ],
 
   feature: [
@@ -2130,6 +2136,7 @@ const tables = {
     { value: "two-headed", weight: 1 },
     { value: "undead", weight: 1 },
     { value: "winged", weight: 1 },
+	{ value: "three-eyed", weight: 1 },
   ],
 
   herdanimal: [
@@ -2759,6 +2766,7 @@ const tables = {
 	{ value: "the jungle treants of ${foreignland}", weight: 1 },
 	{ value: "a vomitous goose", weight: 1 },
 	{ value: "${a:AnimalBird} whose song can conjure up the storm", weight: 1 },
+	{ value: "stunted ${humanoids} whose touch causes shields to splinter and armor to fall apart", weight: 1 },
   ],
 
   island_riches: [
@@ -5277,6 +5285,7 @@ trap_location: [
 	{ value: "on the wall of ${a:DungeonRoom} hangs ${shield} that no one has been brave enough to claim for their own", weight: 1 },
 	{ value: "${a:undead_corporeal} protects ${a:weapon_prefix} ${Weapons} in ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
 	{ value: "in ${a:DungeonRoom} amidst a pile of neglected rubbish waits ${a:former_object} matching the description of the one belonging to ${former_owner}${former_owner_extra}", weight: 1 },
+	{ value: "in ${a:DungeonRoom} on the ${floors} floor the living sword named ${sword_names}, an ancient ${BladedWeapons_Sword} that ${sword_desire} waits surrounded by a circle of ${Colors} flame", weight: 1 },
   ],
 
   treasureA: [
@@ -5733,6 +5742,7 @@ trap_location: [
 	{ value: "a trio of ${violent_profession_plural}", weight: 1 },
 	{ value: "knights in ${Colors} armor", weight: 1 },
 	{ value: "the highborn of ${urbn_cityname}", weight: 1 },
+	{ value: "the sullen, proud and rarely courteous lords of the city", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -5856,6 +5866,7 @@ trap_location: [
 	{ value: "${a:daemontype} daemon born from the womb of night called ${LowerRankedDemonName}", weight: 1 },
 	{ value: "a beautiful woman with the head of ${a:AnimalCanine}", weight: 1 },
 	{ value: "a beautiful man with the head of ${a:AnimalBigCat}", weight: 1 },
+	{ value: "a mad knight, unhorsed and naked but for his bared ${BladedWeapons_Sword},", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -8155,6 +8166,7 @@ trap_location: [
 	{ value: " who has been furtively caring for and feeding ${a:pet_adj} ${AnimalMammal},", weight: 1 },
 	{ value: " who composed the popular tune '${ballad_titles}',", weight: 1 },
 	{ value: " who can recite the ${poem_types} '${ballad_titles}',", weight: 1 },
+	{ value: " who has friends in every village from ${landmark} to ${landmark},", weight: 1 },
   ],
   
   pet_adj: [
@@ -9712,7 +9724,7 @@ celebration_type: [
 	{ value: "must go unclothed until they have dressed a hundred and sixty-nine paupers in new garments", weight: 1 },
 	{ value: "whenever they bathe, the water will congeal into a foul and fetid grey sludge", weight: 1 },
 	{ value: "their wounds will not heal for thirteen days", weight: 1 },
-	{ value: "their reflection will go missing", weight: 1 },
+	{ value: "their reflection will be replaced with that of ${a:fairy_folk}", weight: 1 },
 	{ value: "their gold will have transformed into copper", weight: 1 },
 	{ value: "they will be blinded by ${light_type}", weight: 1 },
 	{ value: "their past and future destiny will have been rewritten with the only change being their name is now Odor the Filthy", weight: 1 },
@@ -10991,6 +11003,7 @@ door_type: [
 	{ value: "to have ${a:undead_intangible} that haunts the ${aristocratic_home_rooms}", weight: 1 },
 	{ value: "to have a court of talking ${AnimalFarm}s", weight: 1 },
 	{ value: "to be ${castle_protector}", weight: 1 },
+	{ value: "to have been built to safeguard the living sword named ${sword_names}, an ancient ${BladedWeapons_Sword} that ${sword_desire}", weight: 1 },
   ],
   
   castle_moat: [
