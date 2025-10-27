@@ -4912,6 +4912,7 @@ const tables = {
     { value: "${propheticscriptures} Scriptures", weight: 1 },
     { value: "Scrolls of ${propheticbook}", weight: 1 },
     { value: "Sifl Tablets", weight: 1 },
+	{ value: "sealed letters written in the ${handwriting} of ${vancian_wizards}", weight: 1 },
   ],
 
   thief_type: [
@@ -5030,6 +5031,7 @@ const tables = {
 	{ value: "a living ${BladedWeapons_Sword} that ${sword_desire}", weight: 1 },
 	{ value: "${a:magicalcommonobject} that can impregnate the living and resurrect the dead", weight: 1 },
 	{ value: "${a:crowns_metal_type} ring once worn by the deity ${FantasyGods}", weight: 1 },
+	{ value: "a magical scroll written in the ${handwriting} of ${vancian_wizards}", weight: 1 },
   ],
 
   tombprotection: [
@@ -8523,6 +8525,7 @@ saint_curse: [
     { value: "${ntc}", weight: 1 },
 	{ value: "${a:QuickNPCDescriptor} ${prophetic_subject_unknown}", weight: 1 },
 	{ value: "${a:QuickNPCDescriptor} ${QuickNPCJob}", weight: 1 },
+	{ value: "${vancian_wizards}", weight: 1 },
   ],
   
   
@@ -11510,7 +11513,7 @@ door_type: [
 	{ value: "Amberlin II", weight: 1 },
 	{ value: "Ao of the Opals", weight: 1 },
 	{ value: "Rhialto the Marvellous", weight: 1 },
-	{ value: "Barbanikos", weight: 1 },
+	{ value: "Barbanikos the ${tc:futurists}", weight: 1 },
 	{ value: "Basile Blackweb", weight: 1 },
 	{ value: "Byzant the Necrope", weight: 1 },
 	{ value: "Calanctus the Calm", weight: 1 },
@@ -11520,9 +11523,9 @@ door_type: [
 	{ value: "Darvilk the Miaanther", weight: 1 },
 	{ value: "Dibarcas Maior", weight: 1 },
 	{ value: "Moncrief the Mage", weight: 1 },
-	{ value: "Dulce-Lolo", weight: 1 },
+	{ value: "Dulce-Lolo the ${tc:futurists}", weight: 1 },
 	{ value: "Florejin the Dream-builder", weight: 1 },
-	{ value: "the half-black, half-white Eshmiel", weight: 1 },
+	{ value: "the half-black, half-white wizard Eshmiel", weight: 1 },
 	{ value: "the mad wizard Follinense", weight: 1 },
 	{ value: "Rose-Red Gilgad", weight: 1 },
 	{ value: "Head Jinxman Grimes", weight: 1 },
@@ -11541,10 +11544,10 @@ door_type: [
 	{ value: "Mazirian the Magician", weight: 1 },
 	{ value: "Miraldra the Enchantress", weight: 1 },
 	{ value: "the four-wived Mune the Mage", weight: 1 },
-	{ value: "Myolander", weight: 1 },
+	{ value: "Myolander the ${tc:futurists}", weight: 1 },
 	{ value: "Nahourezzin, the Striped Sadwan", weight: 1 },
 	{ value: "Panderleou the Collector", weight: 1 },
-	{ value: "the secretive Perdustin", weight: 1 },
+	{ value: "the secretive mage Perdustin", weight: 1 },
 	{ value: "Phunurus the Orfo", weight: 1 },
 	{ value: "the half-insect Pikarkas", weight: 1 },
 	{ value: "Qualmes of Mildenberry", weight: 1 },
@@ -11561,6 +11564,16 @@ door_type: [
 	{ value: "Teutch of the Private Infinity", weight: 1 },
 	{ value: "Turjan of Miir", weight: 1 },
 	{ value: "Ticely Twitten", weight: 1 },
+	{ value: "Vermoulian of Almery", weight: 1 },
+  ],
+  
+  handwriting: [
+    { value: "unmistakable calligraphy", weight: 1 },
+	{ value: "faint script", weight: 1 },
+	{ value: "diminutive lettering", weight: 1 },
+	{ value: "elegant handwriting", weight: 1 },
+	{ value: "obscure scrawl", weight: 1 },
+	{ value: "complicated cypher", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
