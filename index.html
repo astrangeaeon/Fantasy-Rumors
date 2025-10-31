@@ -2204,6 +2204,7 @@ const tables = {
 	{ value: "to send ${creepyvillain} back to the deserts on the moon", weight: 1 },
 	{ value: "to retrieve ${a:former_object} that matches the description of one that belonged to ${former_owner}", weight: 1 },
 	{ value: "to seek advice from the patriarchs and celestial serpents said to dwell within", weight: 1 },
+	{ value: "to seek ${wizard_things}", weight: 1 },
   ],
 
   heroname: [
@@ -5091,6 +5092,7 @@ const tables = {
 	{ value: "${a:humanoid} ${bard_titles} whose song erases the years and turns grown men into children", weight: 1 },
 	{ value: "a black swan that sings death spells", weight: 1 },
 	{ value: "a claw-footed, fox-faced witch", weight: 1 },
+	{ value: "a golem made of ${golem_types}", weight: 1 },
   ],
   
   
@@ -5126,7 +5128,8 @@ const tables = {
     { value: "${fairy_folk_named}", weight: 1 },
     { value: "the daemon ${DemonName} the ${tc:QuickNPCDescriptor}", weight: 1 },
 	{ value: "a terribly swift dancing ${Weapons}", weight: 1 },
-	{ value: "a grim and relentless ${elemntl_type} ${RoyalTitleMale} ", weight: 1 },
+	{ value: "a grim and relentless ${elemntl_type} ${RoyalTitleMale}", weight: 1 },
+	{ value: "a golem made of ${golem_types}", weight: 1 },
   ],
   
   teleport_destination: [
@@ -5771,6 +5774,7 @@ trap_location: [
 	{ value: "the sullen, proud and rarely courteous lords of the city", weight: 1 },
 	{ value: "sister lumberjacks who make their living by chopping down evil trees with enchanted axes", weight: 1 },
 	{ value: "the rival paladins, Shing and Shang", weight: 1 },
+	{ value: "a pair of ${humanoids} wearing the enchanted ${Colors} ${duo_clothing} worn by the ${trap_builder_servant_adj} servants of ${vancian_wizards}", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -5899,6 +5903,7 @@ trap_location: [
 	{ value: "a king driven from throne and country by ${huntingmonster}", weight: 1 },
 	{ value: "'a bald old harridan in a red fright-wig'", weight: 1 },
 	{ value: "a weather-beaten old ${criminal_singular}", weight: 1 },
+	{ value: "one of the ${fairy_number} known clones of ${vancian_wizards} that make mischief in the world", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6110,6 +6115,7 @@ trap_location: [
 	{ value: "is selling a manual explaining the secrets of ${monster_manual_verb} ${huntingmonster}", weight: 1 },
 	{ value: "sings a mighty thunder-hymn", weight: 1 },
 	{ value: "is seeking ${wizard_things}", weight: 1 },
+	{ value: "a golem made of ${golem_types}", weight: 1 },
   ],
 
   washups: [
@@ -6139,6 +6145,7 @@ trap_location: [
 	{ value: "the living sword ${sword_names}, an elven ${BladedWeapons_Sword} that ${sword_desire},", weight: 1 },
 	{ value: "an indestructible statue of ${a:AnimalFarm},", weight: 1 },
 	{ value: "a slab of ${MarbleTypes} marble carved with hieroglyphics of ${hieroglyphics}", weight: 1 },
+	{ value: "an inert golem made of ${golem_types}", weight: 1 },
   ],
 
   weapon_land_type: [
@@ -11594,6 +11601,21 @@ door_type: [
 	{ value: "the private star of ${vancian_wizards}", weight: 1 },
 	{ value: "a strange ${Colors} egg from the ${aristocratic_home} of ${vancian_wizards}", weight: 1 },
 	{ value: "the enchanted ${MusicalInstrument} played by ${vancian_wizards}", weight: 1 },
+  ],
+  
+  golem_types: [
+    { value: "keys", weight: 1 },
+	{ value: "feathers", weight: 1 },
+	{ value: "rags", weight: 1 },
+	{ value: "crowns", weight: 1 },
+	{ value: "flowers", weight: 1 },
+	{ value: "sand", weight: 1 },
+	{ value: "teeth", weight: 1 },
+	{ value: "eyeballs", weight: 1 },
+	{ value: "swords", weight: 1 },
+	{ value: "shields", weight: 1 },
+	{ value: "starlight", weight: 1 },
+	{ value: "moonlight", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
