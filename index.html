@@ -3093,6 +3093,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC}, has been hearing noises in their cellar that originate from that gloomy place the ${ancientpeople} called the ${underworld_names}", weight: 1 },
 	{ value: "in the village of ${village_names}, young lovers court each other by playing songs on the ${MusicalInstrument} and exchanging ${flowers_singular} seeds", weight: 1 },
 	{ value: "an old tradition in the village of ${village_names} requires young maidens to wear ${duo_clothing_adj} ${Colors} ${duo_clothing} and ${crowns_metal_type} ${coins} in their hair", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, is terrified of ${fear_types} and hates ${fear_types}", weight: 2 },
   ],
   
   local_obtain_art: [
@@ -4872,6 +4873,7 @@ const tables = {
 	{ value: "women reproduce by exposing themselves to the full force of the south wind", weight: 1 },
 	{ value: "the people have two hearts, one to pump blood and one to beat ceaselessly for the homeland", weight: 1 },
 	{ value: "the people cultivate a pernicious mold that grows on mirrors and other reflective surfaces", weight: 1 },
+	{ value: "the man with the longest beard and the woman with the longest hair rule jointly", weight: 1 },
   ],
 
   strangenoises: [
@@ -6003,6 +6005,7 @@ trap_location: [
 	{ value: "cheerfully offer sips from ${a:liquid_containers_large} containing ${exotic_water_types}", weight: 1 },
 	{ value: "seek a memory-erasing beer that will erase their former lives", weight: 1 },
 	{ value: "won't stop spitting on the floor", weight: 1 },
+	{ value: "known for worshipping gold and strangling the weak", weight: 1 },
   ],
 
   urbn_verbsingular: [
@@ -11631,6 +11634,22 @@ door_type: [
 	{ value: "shields", weight: 1 },
 	{ value: "starlight", weight: 1 },
 	{ value: "moonlight", weight: 1 },
+  ],
+  
+  fear_types: [
+    { value: "${humanoids}", weight: 1 },
+	{ value: "${huntingmonster}", weight: 1 },
+	{ value: "${landscape_types_basic}", weight: 1 },
+	{ value: "${violent_profession_plural}", weight: 1 },
+	{ value: "${numinous_sense}", weight: 1 },
+	{ value: "${boundary_times}", weight: 1 },
+	{ value: "${FantasyMeal_Fruit_plural}", weight: 1 },
+	{ value: "${FantasyMeal_Vegetable_plural}", weight: 1 },
+	{ value: "the color ${Colors}", weight: 1 },
+	{ value: "${pet}s", weight: 1 },
+	{ value: "${historicalinfrastructure}", weight: 1 },
+	{ value: "${exotic_water_body}s", weight: 1 },
+	{ value: "${golem_types}", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
