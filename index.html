@@ -1420,6 +1420,7 @@ const tables = {
 	{ value: "a curious green stone", weight: 1 },
 	{ value: "an amulet depicting a demon licking the feet of a sleeping couple", weight: 1 },
 	{ value: "${a:MusicalInstrument} only old men and unborn children in the womb can hear", weight: 1 },
+	{ value: "a spyglass that can peep into the enchanted ${otherworld_names} or the ${underworld_names}", weight: 1 },
   ],
 
   decade_event: [
@@ -1444,6 +1445,7 @@ const tables = {
     { value: "to swap faces", weight: 1 },
     { value: "to honor and give relief to one of the four dwarfs who hold up the corners of the sky", weight: 1 },
 	{ value: "to venerate ${relic}", weight: 5 },
+	{ value: "to mutter incantations and perform starlit rituals", weight: 1 },
   ],
 
   decaying_corpse: [
@@ -1919,6 +1921,9 @@ const tables = {
 	{ value: "an oracle who gave displeasing counsel and now lives in a jar on the outer wall", weight: 1 },
 	{ value: "a royal family who traveled quite comfortably in the mouth of a defanged giant serpent", weight: 1 },
 	{ value: "a prankster demigod who changes the labels on potions in unattended backpacks for his sport", weight: 1 },
+	{ value: "a notorious poacher who scoffed upon the Baron's game-laws", weight: 1 },
+	{ value: "a castle 'where fiends nightly revel and guilty ghosts shriek'", weight: 1 },
+	{ value: "a mighty dragon that, irritated by its light, flew into the sky and swallowed the offending star", weight: 1 },
   ],
 
   feature: [
@@ -2358,8 +2363,8 @@ const tables = {
     { value: "the Day of Seeking", weight: 1 },
     { value: "the Abundance of Enlil", weight: 1 },
     { value: "the anniversary of the victory at ${urbn_cityname}", weight: 1 },
-    { value: "the birth of ${heroes_and_villains}", weight: 1 },
-    { value: "the defeat of ${heroes_and_villains}", weight: 1 },
+    { value: "the birth of ${ntc}", weight: 1 },
+    { value: "the defeat of ${ntc}", weight: 1 },
     { value: "the Dragon-Boat Festival", weight: 1 },
     { value: "the end of winter", weight: 1 },
     { value: "the Feast of Lamps", weight: 1 },
@@ -2891,6 +2896,7 @@ const tables = {
     { value: "the others", weight: 1 },
     { value: "the paintings, poems, and architecture—in short, the culture—of daemons", weight: 1 },
     { value: "the Turnings and Windings", weight: 1 },
+	{ value: "the Nymph of Tartaros and her light-shunning brood", weight: 1 },
   ],
 
   landmark: [
@@ -3097,6 +3103,7 @@ const tables = {
 	{ value: "in the village of ${village_names}, young lovers court each other by playing songs on the ${MusicalInstrument} and exchanging ${flowers_singular} seeds", weight: 1 },
 	{ value: "an old tradition in the village of ${village_names} requires young maidens to wear ${duo_clothing_adj} ${Colors} ${duo_clothing} and ${crowns_metal_type} ${coins} in their hair", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, is terrified of ${fear_types} and hates ${fear_types}", weight: 2 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, has been working at night on ${a:poem_types} about ${fd_tale}", weight: 2 },
   ],
   
   local_obtain_art: [
@@ -3751,6 +3758,7 @@ const tables = {
     { value: "augurs", weight: 1 },
     { value: "Oracles at Delphi", weight: 1 },
     { value: "star signs", weight: 1 },
+	{ value: "feathered priests of ancient ${slumberplace}", weight: 1 },
   ],
 
   npctonpc: [
@@ -6505,6 +6513,7 @@ trap_location: [
     { value: "inexplicably pile the ${magicalcommonobject_plural} they've acquired from their victims into mounds", weight: 1 },
 	{ value: "${FantasyGodFollowers} to honor their horrible ${flag_extra_animal_adj} deity", weight: 1 },
 	{ value: "carve their totem poles with figures of ${AnimalMammal} and ${AnimalBird}", weight: 1 },
+	{ value: "light their eerie ${Colors} balefires", weight: 1 },
   ],
 
   onedfive: [
@@ -7417,6 +7426,9 @@ trap_location: [
 	{ value: "vegetables", weight: 1 },
 	{ value: "${tc:FantasyMeal_Vegetable_plural}", weight: 1 },
 	{ value: "second Marriages", weight: 1 },
+	{ value: "first Kiss", weight: 1 },
+	{ value: "last Breath", weight: 1 },
+	{ value: "balefires", weight: 1 },
   ],
 
   FantasyMeal: [
@@ -7734,6 +7746,11 @@ trap_location: [
     { value: "lumber", weight: 1 },
 	{ value: "cosmetics", weight: 1 },
 	{ value: "${MusicalInstrument}", weight: 1 },
+	{ value: "sand", weight: 1 },
+    { value: "feathers", weight: 1 },
+    { value: "snow", weight: 1 },
+	{ value: "wind", weight: 1 },
+	{ value: "rain", weight: 1 },
   ],
   
   Tools: [
