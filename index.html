@@ -278,6 +278,7 @@ const tables = {
 	{ value: " where a Wizard arose among the horses", weight: 1 },
 	{ value: " where the wolf and the dagger hold the day", weight: 1 },
 	{ value: " with its living ${vehicle}s that sweat and bleed", weight: 1 },
+	{ value: " where the vultures and crows feast", weight: 1 },
   ],
 
   herdwith: [
@@ -473,6 +474,7 @@ const tables = {
 	{ value: " who ate but a berry and a nut each day,", weight: 1 },
 	{ value: " whose coronation was their last day of happiness,", weight: 1 },
 	{ value: " who took the sunshine away,", weight: 1 },
+	{ value: " who could not be harmed by anyone standing on or wearing the color ${Colors},", weight: 1 },
   ],
 
   hundred_words: [
@@ -2188,6 +2190,7 @@ const tables = {
     { value: "stealing from ${monstertype_ntc}", weight: 1 },
     { value: "trespassing in sacred ${slumberplace}", weight: 1 },
 	{ value: "stealing ${a:idol}", weight: 1 },
+	{ value: "for killing a unicorn", weight: 1 },
   ],
 
   hero_fate: [
@@ -2201,6 +2204,7 @@ const tables = {
 	{ value: "now hangs in chains before ${a:idol}", weight: 1 },
     { value: "his skull now houses a family of mice", weight: 1 },
 	{ value: "now dwells in a reverse aquarium at the bottom of the Lake of Dreams", weight: 1 },
+	{ value: "his talking skull now sits upon a pike", weight: 1 },
   ],
 
   hero_goal: [
@@ -5933,6 +5937,8 @@ trap_location: [
 	{ value: "'a bald old harridan in a red fright-wig'", weight: 1 },
 	{ value: "a weather-beaten old ${criminal_singular}", weight: 1 },
 	{ value: "one of the ${fairy_number} known clones of ${vancian_wizards} that make mischief in the world", weight: 1 },
+	{ value: "a golem made of ${golem_types}", weight: 1 },
+	{ value: "an outcast member of a silent order known for wearing ${Colors} robes and wearing amulets with ${a:AnimalLeather} on them", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6146,7 +6152,8 @@ trap_location: [
 	{ value: "is selling a manual explaining the secrets of ${monster_manual_verb} ${huntingmonster}", weight: 1 },
 	{ value: "sings a mighty thunder-hymn", weight: 1 },
 	{ value: "is seeking ${wizard_things}", weight: 1 },
-	{ value: "a golem made of ${golem_types}", weight: 1 },
+	{ value: "seeks a buyer for a miniature ${AnimalMagicMount} kept confined in a glass bottle", weight: 1 },
+	
   ],
 
   washups: [
@@ -6378,6 +6385,7 @@ trap_location: [
 	{ value: "there’s three grand statues of kings whose faces have been removed with hammer and chisel", weight: 1 },
 	{ value: "grotesque monsters pray to the god who made them in its image", weight: 1 },
 	{ value: "a ruined ${aristocratic_robbed_place_religious} where the ancient ${ancientpeople} sacrificed ${humanoids} to placate ${fairy_folk_named} slowly sinks into the earth", weight: 3 },
+	{ value: "the head of the giant Harpin offers wisdom and advice but can speak only once a day", weight: 1 },
   ],
 
   wilds_locn: [
@@ -6392,6 +6400,7 @@ trap_location: [
     { value: "to the ${CompassDirection}", weight: 2 },
     { value: "only visible by starlight", weight: 1 },
     { value: "that you must say a holy word to see", weight: 1 },
+	{ value: "on a high hill", weight: 2 },
   ],
 
   wilds_noun: [
@@ -6878,6 +6887,7 @@ trap_location: [
 	{ value: "gryphon", weight: 1 },
 	{ value: "dinosaur", weight: 1 },
 	{ value: "sphinx", weight: 1 },
+	{ value: "manticore", weight: 1 },
   ],
   
   AnimalLeather: [
@@ -10279,6 +10289,7 @@ ship_type: [
 	{ value: "a flying carpet", weight: 1 },
 	{ value: "a talking ${ship_cargo_animal_type}", weight: 1 },
 	{ value: "${a:undead_intangible} trapped in ${a:liquid_containers_personal}", weight: 1 },
+	{ value: "a miniature ${AnimalMagicMount} in a glass bottle from the collection of ${vancian_wizards}", weight: 1 },
   ],
   
   ship_cargo_novelty_type: [
@@ -11006,7 +11017,7 @@ door_type: [
 	{ value: "${a:SignetSymbol}", weight: 1 },
 	{ value: "${a:AnimalPredator} ${flag_extra_animal_verb} ${a:AnimalPrey}", weight: 2 },
     { value: "${a:flag_extra_animal_adj} ${AnimalPrey}", weight: 2 },
-    { value: "the pattern of ${constellation_repeat} constellation in ${flag_imperial_color_adj} ${flag_imperial_color}", weight: 2 },
+    { value: "the pattern of ${constellation_repeat} constellation in ${flag_imperial_color_adj} ${flag_imperial_color} ink", weight: 2 },
     { value: "two ${humanoids} ${flag_extra_humanoids_verb}", weight: 2 },
     { value: "${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb3}", weight: 2 },
     { value: "${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb2} ${a:flag_extra_humanoids_verb2_object}", weight: 2 },
