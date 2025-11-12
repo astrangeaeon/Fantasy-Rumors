@@ -1345,7 +1345,7 @@ const tables = {
     { value: "Wounded Peri’el", weight: 1 },
     { value: "Forgall the Wily", weight: 1 },
     { value: "Grave Warden Agdayne", weight: 1 },
-    { value: "Vengarl of Forossa", weight: 1 },
+    { value: "Vengarl the Calligrapher", weight: 1 },
 	{ value: "Geoffrey of the Great Tooth", weight: 1 },
 	{ value: "Miriam of Nazara", weight: 1 },
 	{ value: "Zohran the Destroyer", weight: 1 },
@@ -3108,6 +3108,7 @@ const tables = {
 	{ value: "an old tradition in the village of ${village_names} requires young maidens to wear ${duo_clothing_adj} ${Colors} ${duo_clothing} and ${crowns_metal_type} ${coins} in their hair", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, is terrified of ${fear_types} and hates ${fear_types}", weight: 2 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, has been working at night on ${a:poem_types} about ${fd_tale}", weight: 2 },
+	{ value: "${FantasyName}, ${a:QuickNPCDescriptor} ${humanoid}, has apparently been breeding thousands of ${AnimalInsect}s in their ${local_domestic_spaces}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -11686,6 +11687,19 @@ door_type: [
 	{ value: "${historicalinfrastructure}", weight: 1 },
 	{ value: "${exotic_water_body}s", weight: 1 },
 	{ value: "${golem_types}", weight: 1 },
+  ],
+  
+   local_domestic_spaces: [
+    { value: "garden", weight: 1 },
+	{ value: "backyard", weight: 1 },
+	{ value: "basement", weight: 1 },
+	{ value: "attic", weight: 1 },
+	{ value: "bedroom", weight: 1 },
+	{ value: "cellar", weight: 1 },
+	{ value: "kitchen", weight: 1 },
+	{ value: "crawlspace", weight: 1 },
+	{ value: "outhouse", weight: 1 },
+	{ value: "shed", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
