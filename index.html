@@ -3109,6 +3109,8 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC}, is terrified of ${fear_types} and hates ${fear_types}", weight: 2 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, has been working at night on ${a:poem_types} about ${fd_tale}", weight: 2 },
 	{ value: "${FantasyName}, ${a:QuickNPCDescriptor} ${humanoid}, has apparently been breeding thousands of ${AnimalInsect}s in their ${local_domestic_spaces}", weight: 1 },
+	{ value: "${a:undead_intangible} haunts the ${local_domestic_spaces} of ${FantasyName} the ${QuickNPCJobPoor}", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPCDescriptor} ${humanoid}, has ${treasure_adj} ${treasureA} hidden in their ${local_domestic_spaces}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -7922,6 +7924,7 @@ trap_location: [
 	{ value: "ugly", weight: 1 },
 	{ value: "secretive", weight: 1 },
 	{ value: "surly", weight: 1 },
+	{ value: "sleazy", weight: 1 },
   ],
 
   QuickNPCJob: [
