@@ -1457,7 +1457,7 @@ const tables = {
     { value: "a minor godling", weight: 1 },
     { value: "a sentient star", weight: 1 },
     { value: "a whale spider", weight: 1 },
-    { value: "Baal, Lord of Murder,", weight: 1 },
+    { value: "Baal, Lord of Murder", weight: 1 },
     { value: "the deceased giant Antero Vipunan", weight: 1 },
     { value: "the first cyclops", weight: 1 },
     { value: "the great serpent ${DemonName}", weight: 1 },
@@ -3111,6 +3111,14 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPCDescriptor} ${humanoid}, has apparently been breeding thousands of ${AnimalInsect}s in their ${local_domestic_spaces}", weight: 1 },
 	{ value: "${a:undead_intangible} haunts the ${local_domestic_spaces} of ${FantasyName} the ${QuickNPCJobPoor}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPCDescriptor} ${humanoid}, has ${treasure_adj} ${treasureA} hidden in their ${local_domestic_spaces}", weight: 1 },
+	{ value: "${a:AnimalBird} has made a nest in the ${local_domestic_spaces} of the home where ${FantasyName} the ${QuickNPCJobPoor} used to live", weight: 1 },
+	{ value: "an eidolon of ${vancian_wizards} appeared one day in the ${local_domestic_spaces} of ${FantasyName} the ${QuickNPCJobPoor}, muttering to itself and pacing back and forth, seemingly unable to leave", weight: 1 },
+	{ value: "the mysterious smell of ${Smells} has been coming from ${po:FantasyName} ${local_domestic_spaces}", weight: 1 },
+	{ value: "a noise that sounds like ${strangenoises} has been heard coming from ${po:FantasyName} ${local_domestic_spaces} late at night", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, prays to ${a:idol} in their ${local_domestic_spaces}", weight: 1 },
+	{ value: "${a:fairy_folk} has sought refuge in the ${local_domestic_spaces} of the ${FantasyLastName} household", weight: 1 },
+	{ value: "an invisible ${humanoid} has been living secretly in the ${local_domestic_spaces} of ${FantasyName}, ${a:QuickNPC}", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPCJob}, lost their spouse last ${season} but continues to hold conversations with them in their ${local_domestic_spaces} at ${boundary_times}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -11703,6 +11711,13 @@ door_type: [
 	{ value: "crawlspace", weight: 1 },
 	{ value: "outhouse", weight: 1 },
 	{ value: "shed", weight: 1 },
+  ],
+  
+  season: [
+    { value: "spring", weight: 1 },
+	{ value: "autumn", weight: 1 },
+	{ value: "winter", weight: 1 },
+	{ value: "summer", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
