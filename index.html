@@ -476,6 +476,7 @@ const tables = {
 	{ value: " who took the sunshine away,", weight: 1 },
 	{ value: " who could not be harmed by anyone standing on or wearing the color ${Colors},", weight: 1 },
 	{ value: " who sang '${ballad_titles}' so sweetly it made the Goddess of Luck weep,", weight: 1 },
+	{ value: " who sold their crown for a bottle of golden wine from ${slumberplace},", weight: 1 },
   ],
 
   hundred_words: [
@@ -2053,6 +2054,8 @@ const tables = {
 	{ value: "Eshnar", weight: 1 },
 	{ value: "Delsen", weight: 1 },
 	{ value: "Palmella", weight: 1 },
+	{ value: "Erp", weight: 1 },
+	{ value: "Thann", weight: 1 },
   ],
 
   funeralcustom: [
@@ -5358,6 +5361,7 @@ trap_location: [
 	{ value: "${a:undead_corporeal} protects ${a:weapon_prefix} ${Weapons} in ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
 	{ value: "in ${a:DungeonRoom} amidst a pile of neglected rubbish waits ${a:former_object} matching the description of the one belonging to ${former_owner}${former_owner_extra}", weight: 1 },
 	{ value: "in ${a:DungeonRoom} on the ${floors} floor the living sword named ${sword_names}, an ancient ${BladedWeapons_Sword} that ${sword_desire} waits surrounded by a circle of ${Colors} flame", weight: 1 },
+	{ value: "there's ${a:necklace_type} ${obj_or_room} on the ${floors} floor that if torn from the neck and dashed to the ground will summon ${summon_item}", weight: 1 },
   ],
 
   treasureA: [
@@ -5524,6 +5528,8 @@ trap_location: [
 	{ value: "Zerzura", weight: 1 },
 	{ value: "Lanteen", weight: 1 },
 	{ value: "Jubilith", weight: 1 },
+	{ value: "Swemmelin", weight: 1 },
+	{ value: "Bechlarn", weight: 1 },
   ],
 
   urbn_citynickname: [
@@ -11735,6 +11741,14 @@ door_type: [
 	{ value: "${urbn_subjectsingular}", weight: 1 },
 	{ value: "${a:AnimalMain}", weight: 1 },
 	{ value: "${a:severe_weather}", weight: 1 },
+  ],
+  
+  necklace_type: [
+    { value: "amulet", weight: 1 },
+	{ value: "locket", weight: 1 },
+	{ value: "pendant", weight: 1 },
+	{ value: "string of beads", weight: 1 },
+	{ value: "necklace", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
