@@ -477,6 +477,8 @@ const tables = {
 	{ value: " who could not be harmed by anyone standing on or wearing the color ${Colors},", weight: 1 },
 	{ value: " who sang '${ballad_titles}' so sweetly it made the Goddess of Luck weep,", weight: 1 },
 	{ value: " who sold their crown for a bottle of golden wine from ${slumberplace},", weight: 1 },
+	{ value: " who could find ${Jewels} in the dung-piles of elephants,", weight: 1 },
+	{ value: " whose eyes glowed with stolen fire,", weight: 1 },
   ],
 
   hundred_words: [
@@ -795,6 +797,7 @@ const tables = {
     { value: "war-boats sail into White Harbor", weight: 1 },
 	{ value: "the man-slaying giant ${FantasyGodNameMale} shall sound his great horn and ready his hunting-steeds", weight: 1 },
 	{ value: "the Father of the Forests and all things that inhabit them and that are constructed of wood will lose his patience with man at last", weight: 1 },
+	{ value: "the Great Toad will emerge from the bogs", weight: 1 },
   ],
 
   coastal: [
@@ -1114,6 +1117,7 @@ const tables = {
 	{ value: "rainbow", weight: 1 },
 	{ value: "nibbling", weight: 1 },
 	{ value: "shouting", weight: 1 },
+	{ value: "hissing", weight: 1 },
   ],
 
   dance: [
@@ -1761,6 +1765,7 @@ const tables = {
 	{ value: "${AnimalMammal} eggs", weight: 1 },
 	{ value: "the ${crowns_metal_type} horns of ${daemontype} daemons", weight: 1 },
 	{ value: "the ${Colors} sand from underground oceans", weight: 1 },
+	{ value: "the blood of the sick", weight: 1 },
   ],
 
   excitingemployer: [
@@ -5469,6 +5474,8 @@ trap_location: [
 	{ value: "the city of ${urbn_cityname} is known for its enlightened views on animals, as exemplified by its famous ${pet} ${urbn_place_animal}", weight: 1 },
 	{ value: "the harbor-spies who line the docks of the port city of ${urbn_cityname}, eager to note the cargoes and crews of the ${ship_type_merchant}s that arrive and depart to inform the customs office and other interested parties are all in the pay of ${a:humanoid} ${facial_desc}", weight: 1 },
 	{ value: "in ${urbn_cityname}, there are two types of crime; those who commit the Crimes of the ${tc:AnimalPredator} are punished by ${punishment} while those who commit the Crimes of the ${tc:AnimalPest} are punished by ${punishment}", weight: 1 },
+	{ value: "the queen of ${urbn_cityname} has given birth to a baby girl with ${AnimalBigCat} claws for feet that speaks all the tongues of men and ${humanoids_nonhuman}", weight: 1 },
+	{ value: "a herald in the ${flag_color} of House ${FantasyLastName} has announced a gathering for bards and ${bard_titles}s of any school to compete in song for glory, gold, and the grand prize, ${mazeprize}", weight: 2 },
   ],
 
    urbn_traders: [
@@ -9139,6 +9146,14 @@ celebration_type: [
 	{ value: "lizardfolk", weight: 1 },
   ],
   
+  humanoids_nonhuman: [
+	{ value: "elves", weight: 1 },
+	{ value: "dwarfs", weight: 1 },
+	{ value: "hobbits", weight: 1 },
+	{ value: "gnomes", weight: 1 },
+	{ value: "lizardfolk", weight: 1 },
+  ],
+  
   humanoid: [
     { value: "human", weight: 1 },
 	{ value: "elf", weight: 1 },
@@ -9726,6 +9741,7 @@ celebration_type: [
 	{ value: "Land of Youth", weight: 1 },
 	{ value: "Realm of Unending Springtime", weight: 1 },
 	{ value: "Mead-hall of the Slain", weight: 1 },
+	{ value: "lamplit vaults below Mount ${slumberplace}", weight: 1 },
   ],
   // a place of the dead the ancientpeople named the underworld_names
   underworld_names: [
@@ -10803,6 +10819,7 @@ door_type: [
 	{ value: "skald", weight: 1 },
     { value: "minnesinger", weight: 1 },
     { value: "riddle crafter", weight: 1 },
+	{ value: "balladeer", weight: 1 },
   ],
   
   defeated_adj: [
