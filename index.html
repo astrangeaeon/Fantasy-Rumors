@@ -3796,10 +3796,14 @@ const tables = {
   ],
 
   obj_or_room: [
-    { value: "${preposition} ${a:DungeonObject}", weight: 5 },
-    { value: "in ${a:DungeonRoom} lit by ${light_source}", weight: 5 },
+    { value: "${preposition} ${a:DungeonObject}", weight: 2 },
+    { value: "in ${a:DungeonRoom} lit by ${light_source}", weight: 2 },
     { value: "${preposition} ${a:DungeonObject} in ${a:DungeonRoom}", weight: 1 },
     { value: "in ${a:DungeonRoom} that smells like ${room_smell}", weight: 1 },
+	{ value: "in ${a:DungeonRoom} with ${a:AnimalTrophy} hide rug", weight: 1 },
+	{ value: "in ${a:DungeonRoom} that ${trap_builder} have been using as a latrine", weight: 1 },
+	{ value: "in ${a:DungeonRoom} with two ${humanoid} skeletons", weight: 1 },
+	{ value: "in ${a:DungeonRoom} littered with ${dungeon_litter}", weight: 2 },
   ],
 
   occupation: [
@@ -5530,6 +5534,9 @@ trap_location: [
 	{ value: "Jubilith", weight: 1 },
 	{ value: "Swemmelin", weight: 1 },
 	{ value: "Bechlarn", weight: 1 },
+	{ value: "Jakalla", weight: 1 },
+	{ value: "Hinmeet", weight: 1 },
+	{ value: "Sateeka", weight: 1 },
   ],
 
   urbn_citynickname: [
@@ -6760,6 +6767,7 @@ trap_location: [
     { value: "rodent", weight: 1 },
 	{ value: "chipmunk", weight: 1 },
 	{ value: "bat", weight: 1 },
+	{ value: "snake", weight: 1 },
   ],
   
   AnimalFamiliar: [
@@ -11749,6 +11757,16 @@ door_type: [
 	{ value: "pendant", weight: 1 },
 	{ value: "string of beads", weight: 1 },
 	{ value: "necklace", weight: 1 },
+  ],
+  
+   dungeon_litter: [
+    { value: "broken arrows", weight: 1 },
+	{ value: "broken crossbow bolts", weight: 1 },
+	{ value: "dead ${AnimalPest}s", weight: 1 },
+	{ value: "shattered ${ship_cargo_container}", weight: 1 },
+	{ value: "smashed ${ship_cargo_furniture_type}", weight: 1 },
+	{ value: "spoiled rations", weight: 1 },
+	{ value: "bits of cracked leather and a pair of scorched iron boots fused to the floor", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
