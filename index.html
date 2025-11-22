@@ -479,6 +479,7 @@ const tables = {
 	{ value: " who sold their crown for a bottle of golden wine from ${slumberplace},", weight: 1 },
 	{ value: " who could find ${Jewels} in the dung-piles of elephants,", weight: 1 },
 	{ value: " whose eyes glowed with stolen fire,", weight: 1 },
+	{ value: " whose long golden hair was used for bowstrings,", weight: 1 },
   ],
 
   hundred_words: [
@@ -5474,8 +5475,9 @@ trap_location: [
 	{ value: "the city of ${urbn_cityname} is known for its enlightened views on animals, as exemplified by its famous ${pet} ${urbn_place_animal}", weight: 1 },
 	{ value: "the harbor-spies who line the docks of the port city of ${urbn_cityname}, eager to note the cargoes and crews of the ${ship_type_merchant}s that arrive and depart to inform the customs office and other interested parties are all in the pay of ${a:humanoid} ${facial_desc}", weight: 1 },
 	{ value: "in ${urbn_cityname}, there are two types of crime; those who commit the Crimes of the ${tc:AnimalPredator} are punished by ${punishment} while those who commit the Crimes of the ${tc:AnimalPest} are punished by ${punishment}", weight: 1 },
-	{ value: "the queen of ${urbn_cityname} has given birth to a baby girl with ${AnimalBigCat} claws for feet that speaks all the tongues of men and ${humanoids_nonhuman}", weight: 1 },
+	{ value: "the queen of ${urbn_cityname} has given birth to a baby girl with ${AnimalBigCat} claws for feet that speaks all the tongues of man and daemon", weight: 1 },
 	{ value: "a herald in the ${flag_color} of House ${FantasyLastName} has announced a gathering for bards and ${bard_titles}s of any school to compete in song for glory, gold, and the grand prize, ${mazeprize}", weight: 2 },
+	{ value: "a herald in the ${flag_color} of House ${FantasyLastName} has announced that their liege lord seeks the return of ${fetch_quest_object}, offering as a reward ${fetch_quest_reward}", weight: 2 },
   ],
 
    urbn_traders: [
@@ -9742,6 +9744,7 @@ celebration_type: [
 	{ value: "Realm of Unending Springtime", weight: 1 },
 	{ value: "Mead-hall of the Slain", weight: 1 },
 	{ value: "lamplit vaults below Mount ${slumberplace}", weight: 1 },
+	{ value: "Nangiyala, land of campfires and sagas", weight: 1 },
   ],
   // a place of the dead the ancientpeople named the underworld_names
   underworld_names: [
@@ -10925,6 +10928,7 @@ door_type: [
 	{ value: "litras", weight: 1 },
 	{ value: "rupees", weight: 1 },
 	{ value: "crowns", weight: 1 },
+	{ value: "bezants", weight: 1 },
   ],
   
   coins_exotic: [
@@ -11801,6 +11805,31 @@ door_type: [
 	{ value: "smashed ${ship_cargo_furniture_type}", weight: 1 },
 	{ value: "spoiled rations", weight: 1 },
 	{ value: "bits of cracked leather and a pair of scorched iron boots fused to the floor", weight: 1 },
+  ],
+  
+  fetch_quest_object: [
+    { value: "a missing ${Metallic} ${duo_jewlery_singular}", weight: 1 },
+	{ value: "a stolen ${magicalcommonobject} of great sentimental value", weight: 1 },
+	{ value: "a runaway ${AnimalFarm} who answers to the name of ${pet_name}", weight: 1 },
+	{ value: "a loved one captured by ${a:humanoid_monsters}", weight: 1 },
+  ],
+  
+  fetch_quest_reward: [
+    { value: "fifteen white horses", weight: 1 },
+	{ value: "100 platinum ${coins}", weight: 1 },
+	{ value: "1000 golden ${coins}", weight: 1 },
+	{ value: "excellent seats at the upcoming ${athletic_games} Games", weight: 1 },
+	{ value: "a tattoo of ${tattoos}", weight: 1 },
+	{ value: "a month of free dinners at the Inn of the Three ${tc:inn_name_subjects}", weight: 1 },
+	{ value: "a scroll reputedly from the collection of ${vancian_wizards}", weight: 1 },
+	{ value: "${shield}", weight: 1 },
+	{ value: "a writ of safe passage through the ${uc:political_org_republic_type} Republic of ${foreignland} ", weight: 1 },
+	{ value: "${a:fairy_folk} bound in cold iron chains", weight: 1 },
+	{ value: "${a:ship_type_war} fitted to specifications", weight: 1 },
+	{ value: "${a:ship_cargo_container_singular} of ${Jewels}", weight: 1 },
+    { value: "an enchanted ${MusicalInstrument}", weight: 1 },
+	{ value: "deed and title to ${a:aristocratic_home} in the countryside", weight: 1 },
+	{ value: "the ${po:RoyalTitleMale} gratitude", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
