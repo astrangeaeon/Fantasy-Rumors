@@ -5451,9 +5451,9 @@ trap_location: [
     { value: "in ${urbn_cityname}, the rich live in great houses with the gates nailed shut, only venturing out once a year to the markets for supplies", weight: 1 },
     { value: "in ${urbn_cityname}, they keep the wine-preserved ${body_part} of ${heroes_and_villains} on display in order to protect the city from ${creepyvillain}", weight: 1 },
     { value: "in order to join ${membership}, prospective members must ${mindaltering} and ${membership_initiation}", weight: 1 },
-	{ value: "everyone should visit the city of ${urbn_cityname}, where the gods misspent their youth, at least once in their life, as the numinous atmosphere is so suffused that ${numinous_sense} engenders a feeling of ${numinous_adj} ${numinous_feeling}", weight: 3 },
+	{ value: "everyone should visit the city of ${urbn_cityname}, where the gods misspent their youth, at least once in their life, as the numinous atmosphere is so suffused that ${numinous_sense} engenders a feeling of ${numinous_adj} ${numinous_feeling}", weight: 2 },
 	{ value: "in ${urbn_cityname}, City of ${urbn_citynickname}, ${punishment_custom}", weight: 5 },
-	{ value: "storied ${urbn_cityname}, home of ${landmark_manmade} and known for its Guild of the ${uc:QuickNPCJob}, whose members all wear ${Colors} ${duo_clothing}, is actually a paper city, existing only on maps and in the tales of dishonest travelers", weight: 3 },
+	{ value: "storied ${urbn_cityname}, home of ${landmark_manmade} and known for its Guild of the ${uc:QuickNPCJob}, whose members all wear ${Colors} ${duo_clothing}, is actually a paper city, existing only on maps and in the tales of dishonest travelers", weight: 2 },
 	{ value: "The ${urbn_traders} who flock to ${urbn_street_names} in ${urbn_cityname} trade in all manner of goods, from ${MerchantGoods} and ${Tools}s to ${exchangething} and ${collection}", weight: 3 },
 	{ value: "the city of ${urbn_cityname} was founded by ${criminals_esoteric} and ${criminals} and is governed today by the same", weight: 2 },
 	{ value: "the ${art_visual_painting} that once hung in the ${aristocratic_home} of an eccentric ${humanoid}, ${aristocratic_extra}, recently surfaced in a vendor's tent on ${urbn_street_names}", weight: 3 },
@@ -5477,7 +5477,7 @@ trap_location: [
 	{ value: "in ${urbn_cityname}, there are two types of crime; those who commit the Crimes of the ${tc:AnimalPredator} are punished by ${punishment} while those who commit the Crimes of the ${tc:AnimalPest} are punished by ${punishment}", weight: 1 },
 	{ value: "the queen of ${urbn_cityname} has given birth to a baby girl with ${AnimalBigCat} claws for feet that speaks all the tongues of man and daemon", weight: 1 },
 	{ value: "a herald in the ${flag_color} of House ${FantasyLastName} has announced a gathering for bards and ${bard_titles}s of any school to compete in song for glory, gold, and the grand prize, ${mazeprize}", weight: 2 },
-	{ value: "a herald in the ${flag_color} of House ${FantasyLastName} has announced that their liege lord seeks the return of ${fetch_quest_object}, offering as a reward ${fetch_quest_reward}", weight: 2 },
+	{ value: "a herald in the ${flag_color} of House ${FantasyLastName} has announced that their liege lord seeks the return of ${fetch_quest_object}, offering as a reward ${fetch_quest_reward}", weight: 3 },
   ],
 
    urbn_traders: [
@@ -9615,6 +9615,7 @@ celebration_type: [
 	{ value: "${a:idol_subject_human_pre_desc}", weight: 1 },
 	{ value: "a blindfolded", weight: 1 },
 	{ value: "a naked", weight: 1 },
+	{ value: "a drunk", weight: 1 },
   ],
   
   political_org: [
@@ -11812,6 +11813,11 @@ door_type: [
 	{ value: "a stolen ${magicalcommonobject} of great sentimental value", weight: 1 },
 	{ value: "a runaway ${AnimalFarm} who answers to the name of ${pet_name}", weight: 1 },
 	{ value: "a loved one captured by ${a:humanoid_monsters}", weight: 1 },
+	{ value: "the personal clone of ${vancian_wizards} that has wandered off", weight: 1 },
+	{ value: "the tome titled 'the ${book_titles}', whose guard was found transformed into ${a:AnimalBaby}", weight: 1 },
+	{ value: "${a:religious_ranks} last seen being carried off by ${huntingmonster}", weight: 1 },
+	{ value: "the village of ${village_names} which ${vancian_wizards} made vanish", weight: 1 },
+	{ value: "the Gate ${gates_suffix} torn up and carried away by ${flag_extra_humanoids_adj} giant", weight: 1 },
   ],
   
   fetch_quest_reward: [
