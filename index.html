@@ -1205,7 +1205,7 @@ const tables = {
     { value: "Diagoras of Melos", weight: 1 },
     { value: "Domhnall of Zena", weight: 1 },
     { value: "Detestable Kurt", weight: 1 },
-    { value: "Drifter Swordsman Aidel", weight: 1 },
+    { value: "Sweet Jane", weight: 1 },
     { value: "Gentle Simon", weight: 1 },
     { value: "Elf-Queen Morganae", weight: 1 },
     { value: "Elisabeth the Pursuer", weight: 1 },
@@ -2983,12 +2983,14 @@ const tables = {
 	{ value: "the ancient ${AnimalMain} cut into the cliff-face", weight: 1 },
 	{ value: "the Maze of Prisms", weight: 1 },
 	{ value: "the old tower of Belem", weight: 1 },
+	{ value: "the village of ${village_names}", weight: 1 },
   ],
   
   inn_name_subjects: [
     { value: "${AnimalMain}s", weight: 1 },
     { value: "${magicalcommonobject_plural}", weight: 1 },
     { value: "${humanoids}", weight: 1 },
+	{ value: "${HaftedWeapons}s", weight: 1 },
   ],
 
   landmark_natural: [
@@ -3131,6 +3133,7 @@ const tables = {
 	{ value: "an invisible ${humanoid} has been living secretly in the ${local_domestic_spaces} of ${FantasyName}, ${a:QuickNPC}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPCJob}, lost their spouse last ${season} but continues to hold conversations with them in their ${local_domestic_spaces} at ${boundary_times}", weight: 1 },
 	{ value: "while the band of hungry ${violent_profession_plural} who came through demanding to be fed fought the visiting ${classic_classes} and his companions, ${FantasyName}, ${a:QuickNPC}, was in their ${local_domestic_spaces}, completely oblivious!", weight: 1 },
+	{ value: "${FantasyName}, following a failed career as ${a:QuickNPCJob}, has been keeping company with ${criminals} of late", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -6424,6 +6427,7 @@ trap_location: [
 	{ value: "grotesque monsters pray to the god who made them in its image", weight: 1 },
 	{ value: "a ruined ${aristocratic_robbed_place_religious} where the ancient ${ancientpeople} sacrificed ${humanoids} to placate ${fairy_folk_named} slowly sinks into the earth", weight: 3 },
 	{ value: "the head of the giant Harpin offers wisdom and advice but can speak only once a day", weight: 1 },
+	{ value: "lives a family of ${humanoids} who can transform into ${AnimalPest}s", weight: 1 },
   ],
 
   wilds_locn: [
@@ -6485,6 +6489,7 @@ trap_location: [
     { value: "somewhere within the innumerable gorges", weight: 1 },
     { value: "three leagues from ${landmark}", weight: 1 },
 	{ value: "beyond the Jade Gate", weight: 1 },
+	{ value: "among the ${landscape_types} near the village of ${village_names}", weight: 1 },
   ],
 
   Wilds: [
@@ -7397,6 +7402,8 @@ trap_location: [
     { value: "seek to convert ${criminals} and ${criminals}", weight: 1 },
 	{ value: "brand the letter ${Letters} somewhere on their body", weight: 1 },
 	{ value: "often play sacred hymns on ${a:MusicalInstrument}", weight: 1 },
+	{ value: "dye their hair ${Colors}", weight: 1 },
+	{ value: "bear tattoos of ${tattoos}", weight: 1 },
   ],	
   
   FantasyGodFollowersAbstain: [
@@ -11809,7 +11816,7 @@ door_type: [
   ],
   
   fetch_quest_object: [
-    { value: "a missing ${Metallic} ${duo_jewlery_singular}", weight: 1 },
+    { value: "a missing ${Metallic} ${duo_jewlery_singular} of antique ${ancientpeople_singular} design", weight: 1 },
 	{ value: "a stolen ${magicalcommonobject} of great sentimental value", weight: 1 },
 	{ value: "a runaway ${AnimalFarm} who answers to the name of ${pet_name}", weight: 1 },
 	{ value: "a loved one captured by ${a:humanoid_monsters}", weight: 1 },
