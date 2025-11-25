@@ -480,6 +480,7 @@ const tables = {
 	{ value: " who could find ${Jewels} in the dung-piles of elephants,", weight: 1 },
 	{ value: " whose eyes glowed with stolen fire,", weight: 1 },
 	{ value: " whose long golden hair was used for bowstrings,", weight: 1 },
+	{ value: " whose ${BladedWeapons_Sword} cut the moon and made it bleed,", weight: 1 },
   ],
 
   hundred_words: [
@@ -2395,6 +2396,8 @@ const tables = {
 	{ value: "the Hunt of the White Stag", weight: 1 },
 	{ value: "the Joust for the Sparrow-Hawk", weight: 1 },
 	{ value: "the ${tc:FantasyMeal_Fruit} Harvest Festival", weight: 1 },
+	{ value: "the Ecstasy of Saint ${SaintName}", weight: 1 },
+	{ value: "the Feast of ${constellation}", weight: 1 },
   ],
 
   holiday_celebration: [
@@ -3099,7 +3102,7 @@ const tables = {
     { value: "${po:FantasyName} secret desire is to ${local_desire}", weight: 4 },
     { value: "${FantasyName} fished up something really strange from the Lake of Dreams: ${strange_fish}", weight: 4 },
     { value: "${FantasyName}, ${a:QuickNPC} and a racist, believes ${local_racist}", weight: 2 },
-    { value: "There are strange things happening every day. For instance, ${local_strange_thing}", weight: 2 },
+    { value: "There are strange things happening every day. For instance, ${local_strange_thing}", weight: 4 },
     { value: "${FantasyName} wanted to be ${a:QuickNPCJobRich} but ended up ${a:QuickNPCJobPoor}", weight: 1 },
     { value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} recently inherited ${a:urbn_place} in ${urbn_cityname} from their ${FamilyMember}, a notorious ${lucrativecareer}", weight: 1 },
     { value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} ${npctonpc} ${FantasyName}, ${a:QuickNPC}", weight: 1 },
@@ -3134,6 +3137,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPCJob}, lost their spouse last ${season} but continues to hold conversations with them in their ${local_domestic_spaces} at ${boundary_times}", weight: 1 },
 	{ value: "while the band of hungry ${violent_profession_plural} who came through demanding to be fed fought the visiting ${classic_classes} and his companions, ${FantasyName}, ${a:QuickNPC}, was in their ${local_domestic_spaces}, completely oblivious!", weight: 1 },
 	{ value: "${FantasyName}, following a failed career as ${a:QuickNPCJob}, has been keeping company with ${criminals} of late", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPCJob}, will never ${mindaltering} again after having had a hallucination of ${hallucination} in their ${local_domestic_spaces}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -3317,6 +3321,7 @@ const tables = {
     { value: "throat-parasites from the river water have deepened all voices", weight: 1 },
     { value: "vicious wasps have made a nest from a discarded volume of the poet Domhnall’s bitter verses", weight: 1 },
 	{ value: "${a:AnimalOrdinary} has been heard quoting passages from the Prophets", weight: 1 },
+	{ value: "all the ${AnimalFarm}s have left, travelling ${CompassDirectionPrimary} to the city of ${urbn_cityname} to seek ${ntc}", weight: 2 },
   ],
 
   localtopic: [
@@ -11825,6 +11830,7 @@ door_type: [
 	{ value: "${a:religious_ranks} last seen being carried off by ${huntingmonster}", weight: 1 },
 	{ value: "the village of ${village_names} which ${vancian_wizards} made vanish", weight: 1 },
 	{ value: "the Gate ${gates_suffix} torn up and carried away by ${flag_extra_humanoids_adj} giant", weight: 1 },
+	{ value: "a half-dozen ${AnimalSimian}s that escaped from the Royal Laboratory with the help of a radical druid", weight: 1 },
   ],
   
   fetch_quest_reward: [
@@ -11843,6 +11849,16 @@ door_type: [
     { value: "an enchanted ${MusicalInstrument}", weight: 1 },
 	{ value: "deed and title to ${a:aristocratic_home} in the countryside", weight: 1 },
 	{ value: "the ${po:RoyalTitleMale} gratitude", weight: 1 },
+  ],
+  
+  hallucination: [
+    { value: "${a:AnimalPredator} ${flag_extra_animal_verb} ${a:AnimalPrey}", weight: 1 },
+	{ value: "${a:flag_extra_animal_adj} ${AnimalPrey}", weight: 1 },
+	{ value: "two ${humanoids} ${flag_extra_humanoids_verb}", weight: 1 },
+	{ value: "${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb3}", weight: 1 },
+	{ value: "${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb2} ${a:flag_extra_humanoids_verb2_object}", weight: 1 },
+	{ value: "${a:flag_extra_animal_adj} ${AnimalMain} ${flag_extra_animal_verb} ${a:AnimalBaby}", weight: 1 },
+	{ value: "${flag_extra_humanoids_adj} ${fairy_folk}", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
