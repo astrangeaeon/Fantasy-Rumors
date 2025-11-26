@@ -2987,6 +2987,7 @@ const tables = {
 	{ value: "the Maze of Prisms", weight: 1 },
 	{ value: "the old tower of Belem", weight: 1 },
 	{ value: "the village of ${village_names}", weight: 1 },
+	{ value: "the statue of the ${uc:statue_adj} ${statue_subject}", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -3208,6 +3209,7 @@ const tables = {
 	{ value: "teach the ${criminals} of the world a lesson in blood", weight: 1 },
 	{ value: "lead a caravan of 800 camels", weight: 1 },
 	{ value: "bury the gods in gold and ${Jewels}", weight: 1 },
+	{ value: "touch the ${MarbleTypes} marble statue of the ${uc:statue_adj} ${statue_subject} in distant ${urbn_cityname}", weight: 1 },
   ],
 
   local_racist: [
@@ -5486,6 +5488,7 @@ trap_location: [
 	{ value: "the queen of ${urbn_cityname} has given birth to a baby girl with ${AnimalBigCat} claws for feet that speaks all the tongues of man and daemon", weight: 1 },
 	{ value: "a herald in the ${flag_color} of House ${FantasyLastName} has announced a gathering for bards and ${bard_titles}s of any school to compete in song for glory, gold, and the grand prize, ${mazeprize}", weight: 2 },
 	{ value: "a herald in the ${flag_color} of House ${FantasyLastName} has announced that their liege lord seeks the return of ${fetch_quest_object}, offering as a reward ${fetch_quest_reward}", weight: 3 },
+	{ value: "the statue of the ${uc:statue_adj} ${statue_subject} in ${uc:CompassDirectionPrimary} Square near ${urbn_street_names} has been vandalized, supposedly as part of an initiation by ${humanoid_young} seeking to join the ${tc:AnimalVenomous} Gang", weight: 2 },
   ],
 
    urbn_traders: [
@@ -11717,6 +11720,7 @@ door_type: [
 	{ value: "Yasbane the Obviator", weight: 1 },
 	{ value: "Zanzel Melancthones", weight: 1 },
 	{ value: "Zilifant", weight: 1 },
+	{ value: "Sesphra of the Dreams", weight: 1 },
   ],
   
   handwriting: [
@@ -11800,6 +11804,11 @@ door_type: [
 	{ value: "${urbn_subjectsingular}", weight: 1 },
 	{ value: "${a:AnimalMain}", weight: 1 },
 	{ value: "${a:severe_weather}", weight: 1 },
+	{ value: "a golem made of ${golem_types}", weight: 1 },
+	{ value: "an eidolon of ${vancian_wizards}", weight: 1 },
+	{ value: "${a:classic_classes} ${facial_desc}", weight: 1 },
+	{ value: "${a:bard_titles} of old with ${a:MusicalInstrument}", weight: 1 },
+	{ value: "a sorrowful ${undead_intangible}", weight: 1 },
   ],
   
   necklace_type: [
@@ -11860,6 +11869,28 @@ door_type: [
 	{ value: "${a:flag_extra_animal_adj} ${AnimalMain} ${flag_extra_animal_verb} ${a:AnimalBaby}", weight: 1 },
 	{ value: "${flag_extra_humanoids_adj} ${fairy_folk}", weight: 1 },
   ],
+  
+  
+  statue_subject: [
+    { value: "${tc:QuickNPCJobPoor}", weight: 1 },
+	{ value: "${tc:humanoid_monsters}", weight: 1 },
+	{ value: "${tc:huntingmonster_singular}", weight: 1 },
+	{ value: "${tc:classic_classes}", weight: 1 },
+	{ value: "${tc:travelers}", weight: 1 },
+	{ value: "${tc:religious_ranks}", weight: 1 },
+	{ value: "${tc:QuickNPCJobExotic}", weight: 1 },
+  ],
+  
+  statue_adj: [
+    { value: "weeping", weight: 1 },
+	{ value: "dreaming", weight: 1 },
+	{ value: "naked", weight: 1 },
+	{ value: "drunken", weight: 1 },
+	{ value: "mischievous", weight: 1 },
+	{ value: "laughing", weight: 1 },
+	{ value: "dying", weight: 1 },
+  ],
+  
   
   //urbn subject single whose missingthing is trapped in missingthing place
   
