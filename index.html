@@ -2176,6 +2176,7 @@ const tables = {
     { value: "undead", weight: 1 },
     { value: "winged", weight: 1 },
 	{ value: "three-eyed", weight: 1 },
+	{ value: "miniature", weight: 1 },
   ],
 
   herdanimal: [
@@ -2689,6 +2690,7 @@ const tables = {
     { value: "where the world’s ${AnimalInsect} population arrives every seventeen years to honor their obscure god,", weight: 1 },
 	{ value: "where ${urbn_subjectsingular} whose ${missing_thing} is trapped in ${missing_thing_place} waits disconsolate, without hope or expectation of aid,", weight: 4 },
 	{ value: "with a watery course where people place wagers on ${AnimalWater} races", weight: 1 },
+	{ value: "with an old tower of ${po:vancian_wizards} who kept ${wizard_servant} as servants", weight: 2 },
   ],
 
   island_bound: [
@@ -11772,6 +11774,7 @@ door_type: [
 	{ value: "shields", weight: 1 },
 	{ value: "starlight", weight: 1 },
 	{ value: "moonlight", weight: 1 },
+	{ value: "mushrooms", weight: 1 },
   ],
   
   fear_types: [
@@ -11905,6 +11908,13 @@ door_type: [
 	{ value: "mischievous", weight: 1 },
 	{ value: "laughing", weight: 1 },
 	{ value: "dying", weight: 1 },
+  ],
+  
+  wizard_servant: [
+    { value: "${trap_builder_servant_adj} ${trap_builder}", weight: 1 },
+	{ value: "talking ${AnimalSimian}s", weight: 1 },
+	{ value: "golems made from ${golem_types}", weight: 1 },
+	{ value: "${huntingmonster}", weight: 1 },
   ],
   
   
