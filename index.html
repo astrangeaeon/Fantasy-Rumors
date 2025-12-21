@@ -1000,6 +1000,7 @@ const tables = {
 	{ value: "the elephant children of Abraxxas", weight: 1 },
 	{ value: "Dirrig the Skull-Maker", weight: 1 },
 	{ value: "Urmank the Ghost-Killer", weight: 1 },
+	{ value: "Lord Tengil and his Tengilmen", weight: 1 },
   ],
 
   criminals: [
@@ -1385,13 +1386,14 @@ const tables = {
   ],
 
   deadadventurerloot: [
-    { value: "${deadlootmisc}", weight: 2 },
+    { value: "${deadlootmisc}", weight: 3 },
     { value: "a band of ${posse_quality} ${posse} from the ${CompassDirection}", weight: 1 },
     { value: "a bizarre companion ${bizarrecompanion}", weight: 1 },
     { value: "the enchanted ${magicalcommonobject} of ${heroes_and_villains}", weight: 1 },
     { value: "the famous ${HaftedWeapons} called the ${CompoundWordNames}", weight: 1 },
     { value: "the ${prophecyartifact}", weight: 1 },
 	{ value: "the living sword named ${sword_names}, an ancient ${BladedWeapons_Sword} that ${sword_desire},", weight: 1 },
+	{ value: "a map leading to ${treasure_map}", weight: 1 },
   ],
 
   deadlootmisc: [
@@ -3174,6 +3176,7 @@ const tables = {
 	{ value: "while the band of hungry ${violent_profession_plural} who came through demanding to be fed fought the visiting ${classic_classes} and his companions, ${FantasyName}, ${a:QuickNPC}, was in their ${local_domestic_spaces}, completely oblivious!", weight: 1 },
 	{ value: "${FantasyName}, following a failed career as ${a:QuickNPCJob}, has been keeping company with ${criminals} of late", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPCJob}, will never ${mindaltering} again after having had a hallucination of ${hallucination} in their ${local_domestic_spaces}", weight: 1 },
+	{ value: "${ntc} was working as ${a:QuickNPCJob} in the village of ${village_names} before they found their destiny", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -9844,6 +9847,7 @@ celebration_type: [
 	{ value: "the Wind's Bride", weight: 1 },
 	{ value: "the Rye Mother", weight: 1 },
 	{ value: "the Cornflower Wraith", weight: 1 },
+	{ value: "the Iron-nose Midwife", weight: 1 },
   ],
   
   otherworld_names: [
@@ -10033,6 +10037,7 @@ celebration_type: [
 	{ value: "their gold will have transformed into copper", weight: 1 },
 	{ value: "they will be blinded by ${light_type}", weight: 1 },
 	{ value: "their past and future destiny will have been rewritten with the only change being their name is now Odor the Filthy", weight: 1 },
+	{ value: "their hair will be tangled into hundreds of knots and if cut will grow back an unruly mop of riotous green", weight: 1 },
 	
   ],
   
@@ -10085,10 +10090,6 @@ celebration_type: [
 	{ value: "time-trapped blue lightning", weight: 1 },
 	{ value: "wet seaweed and driftwood", weight: 1 },
 	{ value: "glowing star metal", weight: 1 },
-	{ value: "simple shroud-laid rope", weight: 1 },
-	{ value: "${a:AnimalSnake} eating itself", weight: 1 },
-	{ value: "time-trapped blue lightning", weight: 1 },
-	{ value: "wet seaweed and driftwood", weight: 1 },
 	{ value: "fresh bread baked anew every morning, yesterday's crown thrown to the poor", weight: 1 },
 	{ value: "clay gathered at ${boundary_times} from the ${EgyptianNameMale} River", weight: 1 },
 	{ value: "coiled serpents, venomous but kept docile through sorcery", weight: 1 },
@@ -12034,6 +12035,18 @@ door_type: [
 	{ value: "Rozbityblad", weight: 1 },
 	{ value: "Sortagyar", weight: 1 },
   ],
+  
+  treasure_map: [
+    { value: "a buried mimic", weight: 1 },
+	{ value: "a buried stone", weight: 1 },
+	{ value: "${classic_dungeons}", weight: 1 },
+	{ value: "the lost city of ${urbn_cityname}", weight: 1 },
+	{ value: "the tomb of ${ntc}", weight: 1 },
+	{ value: "the ${aristocratic_home} of ${vancian_wizards}", weight: 1 },
+	{ value: "the best brothel in the City of Pleasure", weight: 1 },
+	{ value: "the ${lair_synonyms} of ${dragon_name}", weight: 1 },
+  ],
+  
   
   
   //urbn subject single whose missingthing is trapped in missingthing place
