@@ -3546,6 +3546,7 @@ const tables = {
     // { value: "somewhere ${maritime_locn} is ${maritime_branch} (this is a great idea to vary the syntax, but it plays havoc with commas. I\'ll revisit the phrasing so either way looks good at some point--I was getting several \",.\"s)", weight: 0 },
     { value: "there’s ${maritime_branch} somewhere ${maritime_locn}", weight: 3 },
 	{ value: "${a:ship_type_merchant} from ${foreignland} ${ship_extra} pulled into the harbor in ${urbn_cityname} ${ship_cargo}", weight: 1 },
+	{ value: "${underwater_structure_branch}", weight: 1 },
   ],
 
   maritime_locn: [
@@ -3557,6 +3558,27 @@ const tables = {
   maritime_branch: [
     { value: "${island}", weight: 3 },
     { value: "a ${shipwreck}", weight: 1 },
+  ],
+  
+  underwater_structure_branch: [
+    { value: "${tc} is being held captive in a comfortable submerged ${aristocratic_home} until they agree to marry ${a:RoyalTitleFemale} in a neighboring underwater city of ${undersea_dwellers}", weight: 2 },
+    { value: "the ${prophecyartifact} is said to be found in a submerged ${aristocratic_robbed_place_religious} frequented by ${undersea_dwellers} who worship ${FantasyGods}", weight: 2 },
+    { value: "a flooded tunnel near an underwater village of ${undersea_dwellers} conceals a hidden entrance into ${classic_dungeons}", weight: 2 },
+	{ value: "a sunken ${aristocratic_robbed_place_religious} holds ${a:idol} jealously protected by a giant ${AnimalWater}", weight: 2 },
+	{ value: "${vancian_wizards} is said to dwell in ${a:aristocratic_home} under the ${tc:Colors} Sea, attended by ${undersea_dwellers} and ${wizard_servant}", weight: 2 },
+	{ value: "there's a stretch of water in the ${tc:Colors} Sea where the ${undersea_dwellers} who live far below float their dead, bringing joy to the ocean vultures", weight: 1 },
+  ],
+  
+  undersea_dwellers: [
+    { value: "${humanoid_watertype} ${humanoids}", weight: 1 },
+    { value: "intelligent ${AnimalWater} people", weight: 1 },
+  ],
+  
+  humanoid_watertype: [
+    { value: "saltwater", weight: 1 },
+    { value: "deep-sea", weight: 1 },
+	{ value: "amphibious", weight: 1 },
+	{ value: "gilled", weight: 1 },
   ],
 
   marriage_devotion: [
@@ -7161,7 +7183,7 @@ trap_location: [
     { value: "clam", weight: 1 },
     { value: "eel", weight: 1 },
 	{ value: "manta ray", weight: 1 },
-	{ value: "mermaid", weight: 1 },
+	{ value: "frog", weight: 1 },
   ],
   
    AnimalCategory: [
