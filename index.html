@@ -2282,6 +2282,7 @@ const tables = {
 	{ value: "now dwells in a reverse aquarium at the bottom of the Lake of Dreams", weight: 1 },
 	{ value: "his talking skull now sits upon a pike", weight: 1 },
 	{ value: "now wears midnight green in fealty to the Counts of Elz", weight: 1 },
+	{ value: "their spirit now haunts ${haunted_place}", weight: 1 },
   ],
 
   hero_goal: [
@@ -12164,6 +12165,15 @@ door_type: [
 	{ value: "the number of letters in a name", weight: 1 },
 	{ value: "every ${liquid_containers_personal} of ${alcohol_liquor}", weight: 1 },
 	{ value: "the number of raindrops that fall on the property", weight: 1 },
+  ],
+  //cursed by a cursegiver and doomed to haunt haunted_place
+   haunted_place: [
+    { value: "places where money changes hands", weight: 1 },
+	{ value: "places where the laughter of children is heard", weight: 1 },
+	{ value: "a field where ${cod_tree_type} trees used to grow", weight: 1 },
+	{ value: "a grove where a single ${flowers_singular} grows", weight: 1 },
+	{ value: "places where vows were spoken", weight: 1 },
+	{ value: "${a:urbn_place} in ${urbn_cityname}", weight: 3 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
