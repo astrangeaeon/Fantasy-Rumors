@@ -2283,6 +2283,7 @@ const tables = {
 	{ value: "his talking skull now sits upon a pike", weight: 1 },
 	{ value: "now wears midnight green in fealty to the Counts of Elz", weight: 1 },
 	{ value: "their spirit now haunts ${haunted_place}", weight: 1 },
+	{ value: "their remains now reside at the bottom of ${a:liquid_containers_large} filled with ${alcohol_liquor}", weight: 1 },
   ],
 
   hero_goal: [
@@ -12173,7 +12174,10 @@ door_type: [
 	{ value: "a field where ${cod_tree_type} trees used to grow", weight: 1 },
 	{ value: "a grove where a single ${flowers_singular} grows", weight: 1 },
 	{ value: "places where vows were spoken", weight: 1 },
-	{ value: "${a:urbn_place} in ${urbn_cityname}", weight: 3 },
+	{ value: "${a:urbn_place} in the city of ${urbn_cityname}", weight: 2 },
+	{ value: "the ${landscape_types_artificial} of ${foreignland}", weight: 2 },
+	{ value: "${a:magicalcommonobject} in the possession of ${a:huntingmonster_singular}", weight: 2 },
+	{ value: "${a:local_domestic_spaces} in the village of ${village_names}", weight: 2 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
