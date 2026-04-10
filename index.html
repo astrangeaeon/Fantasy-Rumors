@@ -6761,6 +6761,7 @@ trap_location: [
 	{ value: "the ancient ${humanoids_nonhuman} speak of ${landscape_types} where ${AnimalInsect}s with human faces dwell", weight: 1 },
 	{ value: "there's a lonesome plateau where two women dressed in antique but regal attire have been playing a game of ${board_games} for centuries beneath ${a:Colors} pavilion", weight: 1 },
 	{ value: "there's a grim plateau where Saint ${SaintName} crucified a dozen immortal vampires on ${Metallic} crosses; they suffer in the light all day, then regenerate at night in time for their torment to begin anew at sunrise", weight: 1 },
+	{ value: "in the eerie wilderness beyond the patrols of ${urbn_cityname}, ${a:leader_minion} ${leader_control} serve ${a:leader_adj} ${leader_power_adj} ${AnimalOrdinary}", weight: 5 },
   ],
   
   
@@ -7180,6 +7181,8 @@ trap_location: [
     { value: "rat", weight: 1 },
 	{ value: "skunk", weight: 1 },
 	{ value: "snake", weight: 1 },
+	{ value: "horse", weight: 1 },
+	{ value: "hog", weight: 1 },
   ],
 
   AnimalReptile: [
@@ -12184,6 +12187,46 @@ door_type: [
 	{ value: "the ${landscape_types_artificial} of ${foreignland}", weight: 2 },
 	{ value: "${a:magicalcommonobject} in the possession of ${a:huntingmonster_singular}", weight: 2 },
 	{ value: "${a:local_domestic_spaces} in the village of ${village_names}", weight: 2 },
+  ],
+  
+  leader_power_adj: [
+    { value: "telepathic", weight: 1 },
+	{ value: "telekinetic", weight: 1 },
+	{ value: "pyrokinetic", weight: 1 },
+	{ value: "oracular", weight: 1 },
+	{ value: "wish-granting", weight: 1 },
+	{ value: "psionic", weight: 1 },
+	{ value: "undead", weight: 1 },
+  ],
+  
+  leader_minion: [
+    { value: "order of knights", weight: 1 },
+	{ value: "coven of witches", weight: 1 },
+	{ value: "sect of cultists", weight: 1 },
+	{ value: "group of ${trap_builder}", weight: 1 },
+	{ value: "band of thieves", weight: 1 },
+	{ value: "party of adventurers", weight: 1 },
+	{ value: "company of ${violent_profession_plural}", weight: 1 },
+  ],
+  
+  leader_control: [
+    { value: "reluctantly", weight: 1 },
+	{ value: "enthusiastically", weight: 1 },
+	{ value: "mindlessly", weight: 1 },
+	{ value: "joyfully", weight: 1 },
+	{ value: "sorrowfully", weight: 1 },
+	{ value: "voluntarily", weight: 1 },
+	{ value: "involuntarily", weight: 1 },
+  ],
+  
+  leader_adj: [
+    { value: "wicked", weight: 1 },
+	{ value: "benevolent", weight: 1 },
+	{ value: "saintly", weight: 1 },
+	{ value: "devilish", weight: 1 },
+	{ value: "ambitious", weight: 1 },
+	{ value: "monstrous", weight: 1 },
+	{ value: "undying", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
