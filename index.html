@@ -502,6 +502,7 @@ const tables = {
 	{ value: " who sent the emperor the coffins of his enemies instead of tribute,", weight: 1 },
 	{ value: " who persisted from a time when the world was not quite finished,", weight: 1 },
 	{ value: " who plunged the kingdoms into war to assert the superiority of the tea-plant over the juice of the grape,", weight: 1 },
+	{ value: " who stole the Lake of the Gazelle from the ancient ${ancientpeople} by freezing it into blocks of ice and transporting it to ${foreignland},", weight: 1 },
 	
   ],
 
@@ -1028,6 +1029,7 @@ const tables = {
 	{ value: "the Beggar Who Asks for Nothing", weight: 1 },
 	{ value: "Malagate the Woe", weight: 1 },
 	{ value: "the Great Assassin Time", weight: 1 },
+	{ value: "the God with Broken Feet", weight: 1 },
   ],
 
   criminals: [
@@ -1487,6 +1489,7 @@ const tables = {
 	{ value: "${a:MusicalInstrument} only old men and unborn children in the womb can hear", weight: 1 },
 	{ value: "a spyglass that can peep into the enchanted ${otherworld_names} or the ${underworld_names}", weight: 1 },
 	{ value: "a flail studded with sharp rigid seashells", weight: 1 },
+	{ value: "${a:magicalcommonobject} from the city of ${urbn_cityname} where the master craftsmen make only 4 or 5 in a lifetime", weight: 2 },
   ],
 
   decade_event: [
@@ -1671,6 +1674,36 @@ const tables = {
 	{ value: "cloaks", weight: 1 },
 	{ value: "girdles", weight: 1 },
     { value: "sashes", weight: 1 },
+	{ value: "dresses", weight: 1 },
+	{ value: "tunics", weight: 1 },
+	{ value: "togas", weight: 1 },
+  ],
+  
+  duo_clothing_singular: [
+    { value: "robe", weight: 1 },
+    { value: "sandal", weight: 1 },
+    { value: "hat", weight: 1 },
+	{ value: "belt", weight: 1 },
+	{ value: "pair of pants", weight: 1 },
+	{ value: "cape", weight: 1 },
+    { value: "shirt", weight: 1 },
+    { value: "jacket", weight: 1 },
+	{ value: "uniform", weight: 1 },
+	{ value: "undergarment", weight: 1 },
+	{ value: "turban", weight: 1 },
+    { value: "scarf", weight: 1 },
+	{ value: "boot", weight: 1 },
+	{ value: "glove", weight: 1 },
+	{ value: "bandanna", weight: 1 },
+    { value: "gown", weight: 1 },
+	{ value: "pair of pajamas", weight: 1 },
+	{ value: "blindfold", weight: 1 },
+	{ value: "cloak", weight: 1 },
+	{ value: "girdle", weight: 1 },
+    { value: "sash", weight: 1 },
+	{ value: "dress", weight: 1 },
+	{ value: "tunic", weight: 1 },
+	{ value: "toga", weight: 1 },
   ],
   
   duo_jewlery: [
@@ -2130,6 +2163,7 @@ const tables = {
 	{ value: "Palmella", weight: 1 },
 	{ value: "Erp", weight: 1 },
 	{ value: "Thann", weight: 1 },
+	{ value: "Upper Morven", weight: 1 },
   ],
 
   funeralcustom: [
@@ -2892,6 +2926,7 @@ const tables = {
 	{ value: "a shrub so venomous the touch of its shadow can kill", weight: 1 },
 	{ value: "a knight using a chessboard for a shield", weight: 1 },
 	{ value: "sharks who weep ${Jewel_singular} tears", weight: 1 },
+	{ value: "creatures with unreassuring teeth and claws", weight: 1 },
   ],
 
   island_riches: [
@@ -2929,6 +2964,7 @@ const tables = {
     { value: "the Table of the Sun", weight: 1 },
     { value: "vast fields of ${Jewels}", weight: 1 },
 	{ value: "a herd of zebra whose striped coats are a map of ${random_dungeons}", weight: 1 },
+	{ value: "a ten-colored stone", weight: 1 },
   ],
 
   island_sacred: [
@@ -2998,6 +3034,7 @@ const tables = {
 	{ value: "the Nymph of Tartaros and her light-shunning brood", weight: 1 },
 	{ value: "diseases that infect the dead", weight: 1 },
 	{ value: "the knowledge of good trees and bad trees", weight: 1 },
+	{ value: "the Red Island of Sargyll", weight: 1 },
   ],
 
   landmark: [
@@ -3300,6 +3337,7 @@ const tables = {
 	{ value: "lead a caravan of 800 camels", weight: 1 },
 	{ value: "bury the gods in gold and ${Jewels}", weight: 1 },
 	{ value: "touch the ${MarbleTypes} marble statue of the ${uc:statue_adj} ${statue_subject} in distant ${urbn_cityname}", weight: 1 },
+	{ value: "become a wolf and have the understanding of a wolf", weight: 1 },
   ],
 
   local_racist: [
@@ -3507,6 +3545,8 @@ const tables = {
 	{ value: "mirror", weight: 1 },
 	{ value: "jar", weight: 1 },
 	{ value: "pipe", weight: 1 },
+	{ value: "${duo_clothing_singular}", weight: 2 },
+	{ value: "${duo_jewlery_singular}", weight: 1 },
   ],
   
   magicalcommonobject_plural: [
@@ -4946,6 +4986,7 @@ const tables = {
 	{ value: "a small box of hand-painted clay santons, including one of Saint ${SaintName}", weight: 1 },
 	{ value: "a crystal time capsule buried ${historicalage}", weight: 1 },
 	{ value: "the arms and hands of Old King Half which communicate in signs and gestures", weight: 1 },
+	{ value: "a bejeweled collar and leash", weight: 1 },
   ],
 
   strangecustom: [
@@ -6414,6 +6455,7 @@ trap_location: [
 	{ value: "bathes in the blood of ${a:AnimalBigCat} for strength before battle", weight: 1 },
 	{ value: "seeks others interested in ${order_secret}", weight: 1 },
 	{ value: "no longer prays for rain, nor gathers medicines on sacred mountains", weight: 1 },
+	{ value: "makes arrows in preparation for the battle of the last day", weight: 1 },
 	
   ],
 
