@@ -504,6 +504,7 @@ const tables = {
 	{ value: " who persisted from a time when the world was not quite finished,", weight: 1 },
 	{ value: " who plunged the kingdoms into war to assert the superiority of the tea-plant over the juice of the grape,", weight: 1 },
 	{ value: " who stole the Lake of the Gazelle from the ancient ${ancientpeople} by freezing it into blocks of ice and transporting it to ${foreignland},", weight: 1 },
+	{ value: " who whenever they burned heretics, fetched and piled up the wood themselves,", weight: 1 },
 	
   ],
 
@@ -914,6 +915,7 @@ const tables = {
 	{ value: "strangely designed implements of torture or agriculture", weight: 1 },
 	{ value: "the souls of flowers", weight: 1 },
 	{ value: "the teeth of saints and heroes", weight: 1 },
+	{ value: "the sigils of ancient discrowned gods", weight: 1 },
   ],
 
   construction_help: [
@@ -1033,6 +1035,8 @@ const tables = {
 	{ value: "the God with Broken Feet", weight: 1 },
 	{ value: "the Queen of Perversions", weight: 1 },
 	{ value: "the Scarecrow God", weight: 1 },
+	{ value: "the One-Inch Priests", weight: 1 },
+	{ value: "Baku, the Eater of Dreams", weight: 1 },
   ],
 
   criminals: [
@@ -1560,6 +1564,7 @@ const tables = {
     { value: "${a:uc:art_visual_painting}...lies face-down on the floor of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
 	{ value: "${a:uc:art_visual_painting}...hangs near ${a:DungeonObject} on the ${floors} floor", weight: 1 },
 	{ value: "A gallery curated by ${fire_tender} on the ${floors} floor contains dozens of paintings of ${AnimalMain}s, including one by ${artists}, the famous ${huntingmonster_singular} painter ", weight: 1 },
+	{ value: "an ancient mural depicting ${dungeon_mural} conceals a mysterious passage", weight: 1 },
   ],
 
   dungeon_door: [
@@ -2335,6 +2340,8 @@ const tables = {
 	{ value: "now wears midnight green in fealty to the Counts of Elz", weight: 1 },
 	{ value: "their spirit now haunts ${haunted_place}", weight: 1 },
 	{ value: "their remains now reside at the bottom of ${a:liquid_containers_large} filled with ${alcohol_liquor}", weight: 1 },
+	{ value: "succeeded; but later they ate a cursed sandwich that transformed them into a drawing of ${a:huntingmonster_singular}", weight: 1 },
+	{ value: "their face now lives in a globe of fire upon a distant island", weight: 1 },
   ],
 
   hero_goal: [
@@ -2807,6 +2814,7 @@ const tables = {
 	{ value: "where ${urbn_subjectsingular} whose ${missing_thing} is trapped in ${missing_thing_place} waits disconsolate, without hope or expectation of aid,", weight: 4 },
 	{ value: "with a watery course where people place wagers on ${AnimalWater} races", weight: 1 },
 	{ value: "with an old tower of ${po:vancian_wizards} who kept ${wizard_servant} as servants", weight: 2 },
+	{ value: "where all share the same evil dream of two serpents intertwined, ${a:AnimalPest} with the voice of a man, a blood-stained ${duo_clothing_singular} and a talking ${magicalcommonobject}", weight: 1 },
   ],
 
   island_bound: [
@@ -2977,6 +2985,7 @@ const tables = {
     { value: "vast fields of ${Jewels}", weight: 1 },
 	{ value: "a herd of zebra whose striped coats are a map of ${random_dungeons}", weight: 1 },
 	{ value: "a ten-colored stone", weight: 1 },
+	{ value: "a globe of fire with a human face within it", weight: 1 },
   ],
 
   island_sacred: [
@@ -3354,6 +3363,7 @@ const tables = {
 	{ value: "touch the ${MarbleTypes} marble statue of the ${uc:statue_adj} ${statue_subject} in distant ${urbn_cityname}", weight: 1 },
 	{ value: "become a wolf and have the understanding of a wolf", weight: 1 },
 	{ value: "breed the thin black worms beloved by the citizens of ${urbn_cityname}", weight: 1 },
+	{ value: "feed on the poisonous flesh of mermaids and centaurs", weight: 1 },
   ],
 
   local_racist: [
@@ -6842,6 +6852,7 @@ trap_location: [
 	{ value: "there's a lonesome plateau where two women dressed in antique but regal attire have been playing a game of ${board_games} for centuries beneath ${a:Colors} pavilion", weight: 1 },
 	{ value: "there's a grim plateau where Saint ${SaintName} crucified a dozen immortal vampires on ${Metallic} crosses; they suffer in the light all day, then regenerate at night in time for their torment to begin anew at sunrise", weight: 1 },
 	{ value: "in the eerie wilderness beyond the patrols of ${urbn_cityname}, ${a:leader_minion} ${leader_control} serve ${a:leader_adj} ${leader_power_adj} ${AnimalOrdinary}", weight: 5 },
+	{ value: "the spirit of ${po:vancian_wizards} second familiar, ${a:AnimalFamiliar}, haunts the ${local_domestic_spaces} of their first tower, long abandoned", weight: 1 },
   ],
   
   
@@ -7343,6 +7354,7 @@ trap_location: [
 	{ value: "rats", weight: 1 },
 	{ value: "burrowers", weight: 1 },
 	{ value: "horned creatures", weight: 1 },
+	{ value: "horses", weight: 1 },
   ],
 
   Colors: [
@@ -7687,6 +7699,7 @@ trap_location: [
 	{ value: ", whose sign is the ${MiscSymbol}", weight: 1 },
 	{ value: ", the ${FamilyMember} of ${ntc}", weight: 1 },
 	{ value: ", who taught men ${FantasyGodExtraTaught} and later regretted it", weight: 1 },
+	{ value: ", depicted as ${a:AnimalTrophy} in religious art for obscure reasons", weight: 1 },
   ],
   
    FantasyGodExtraTaught: [
@@ -12313,6 +12326,14 @@ door_type: [
 	{ value: "ambitious", weight: 1 },
 	{ value: "monstrous", weight: 1 },
 	{ value: "undying", weight: 1 },
+  ],
+  
+  dungeon_mural: [
+    { value: "Chokoro releasing his magic horse from a gigantic gourd", weight: 1 },
+	{ value: "Gama with his wizard toad", weight: 1 },
+	{ value: "Tekkai blowing his soul into space", weight: 1 },
+	{ value: "Roko balancing on a flying tortoise", weight: 1 },
+	{ value: "Kume falling from his chariot of cloud", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
