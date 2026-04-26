@@ -1037,6 +1037,7 @@ const tables = {
 	{ value: "the Scarecrow God", weight: 1 },
 	{ value: "the One-Inch Priests", weight: 1 },
 	{ value: "Baku, the Eater of Dreams", weight: 1 },
+	{ value: "the Child in the River", weight: 1 },
   ],
 
   criminals: [
@@ -1498,6 +1499,7 @@ const tables = {
 	{ value: "a flail studded with sharp rigid seashells", weight: 1 },
 	{ value: "${a:magicalcommonobject} from the city of ${urbn_cityname} where the master craftsmen make only 4 or 5 in a lifetime", weight: 2 },
 	{ value: "a groach imprisoned in a leather bottle", weight: 1 },
+	{ value: "the shining ${Colors} feather of the Zhar-Ptitza Bird", weight: 1 },
   ],
 
   decade_event: [
@@ -1564,7 +1566,7 @@ const tables = {
     { value: "${a:uc:art_visual_painting}...lies face-down on the floor of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
 	{ value: "${a:uc:art_visual_painting}...hangs near ${a:DungeonObject} on the ${floors} floor", weight: 1 },
 	{ value: "A gallery curated by ${fire_tender} on the ${floors} floor contains dozens of paintings of ${AnimalMain}s, including one by ${artists}, the famous ${huntingmonster_singular} painter ", weight: 1 },
-	{ value: "an ancient mural depicting ${dungeon_mural} conceals a mysterious passage", weight: 1 },
+	{ value: "an ancient mural depicting ${dungeon_mural} ${dungeon_mural_conceals}", weight: 1 },
   ],
 
   dungeon_door: [
@@ -3133,6 +3135,7 @@ const tables = {
 	{ value: "the War-Hall of ${ntc}", weight: 1 },
 	{ value: "the Tower of Owls", weight: 1 },
 	{ value: "the Court of Birds", weight: 1 },
+	{ value: "the Inn of Holidays", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -3247,6 +3250,12 @@ const tables = {
 	{ value: "the siphoned light of the constellation known as ${constellation} which blazes in the night sky no longer", weight: 1 },
 	{ value: "bottled ${Colors} light from a star named Dilgan or Cetus", weight: 1 },
 	{ value: "Thrakkar rays", weight: 1 },
+	{ value: "ghost-fire", weight: 1 },
+	{ value: "demon-light", weight: 1 },
+	{ value: "fox-flame", weight: 1 },
+	{ value: "flash pillars", weight: 1 },
+	{ value: "dragon torches", weight: 1 },
+	{ value: "the lamp of Boddhi", weight: 1 },
   ],
 
   Local: [
@@ -3902,6 +3911,7 @@ const tables = {
     { value: "${a:DungeonAdjective} ${monsterA}", weight: 1 },
     { value: "${a:WeirdFantasyMonster}", weight: 1 },
 	{ value: "${DemonName}, cow-repelling, antelope-footed and bull-toothed,", weight: 1 },
+	{ value: "Lord ${DemonName} the Polite, ${a:undead_thinking} obsessed with the etiquette of the ancient ${ancientpeople},", weight: 1 },
   ],
   
   monstertype_ntc: [
@@ -3913,6 +3923,7 @@ const tables = {
     { value: "${a:DungeonAdjective} ${monsterA}", weight: 1 },
     { value: "${a:WeirdFantasyMonster}", weight: 1 },
 	{ value: "${DemonName}, cow-repelling, antelope-footed and bull-toothed", weight: 1 },
+	{ value: "Lord ${DemonName} the Polite, ${a:undead_thinking} obsessed with the etiquette of the ancient ${ancientpeople}", weight: 1 },
   ],
 
   monstervalue: [
@@ -5122,6 +5133,7 @@ const tables = {
 	{ value: "the people cultivate a pernicious mold that grows on mirrors and other reflective surfaces", weight: 1 },
 	{ value: "the man with the longest beard and the woman with the longest hair rule jointly", weight: 1 },
 	{ value: "a tree is planted the same moment a man is born; thereafter, tree and man share the same soul", weight: 1 },
+	{ value: "children with the ${ancientpeople_singular} word for ${AnimalBaby} written on their forehead are protected from nightmares", weight: 1 },
   ],
 
   strangenoises: [
@@ -6569,6 +6581,7 @@ trap_location: [
 	{ value: "Kamar al-Zaman, Lord of the Islands and the Seas and the Seven Palaces,${tomb_anecdote}", weight: 1 },
 	{ value: "Killer Mike, whose count of slain men is second only to the great assassin Time,${tomb_anecdote}", weight: 1 },
 	{ value: "Sweet Jane, who knew every future but her own,${tomb_anecdote}", weight: 1 },
+	{ value: "Agon the Proud, who knelt to no emperor, tzar, sultan, prince, pope, or pharaoh,${tomb_anecdote}", weight: 1 },
   ],
   
   larger_than_life: [
@@ -6583,6 +6596,7 @@ trap_location: [
 	{ value: "Kamar al-Zaman, Lord of the Islands and the Seas and the Seven Palaces", weight: 1 },
 	{ value: "Killer Mike, whose count of slain men is second only to the great assassin Time", weight: 1 },
 	{ value: "Sweet Jane, who knew every future but her own", weight: 1 },
+	{ value: "Agon the Proud, who knelt to no emperor, tzar, sultan, prince, pope, or pharaoh", weight: 1 },
   ],
 
   wilds_adj: [
@@ -12150,6 +12164,7 @@ door_type: [
 	{ value: "smashed ${ship_cargo_furniture_type}", weight: 1 },
 	{ value: "spoiled rations", weight: 1 },
 	{ value: "bits of cracked leather and a pair of scorched iron boots fused to the floor", weight: 1 },
+	{ value: "the scattered bones of ${a:AnimalPredator}", weight: 1 },
   ],
   
   fetch_quest_object: [
@@ -12334,6 +12349,14 @@ door_type: [
 	{ value: "Tekkai blowing his soul into space", weight: 1 },
 	{ value: "Roko balancing on a flying tortoise", weight: 1 },
 	{ value: "Kume falling from his chariot of cloud", weight: 1 },
+  ],
+  
+  dungeon_mural_conceals: [
+    { value: "conceals a mysterious passage", weight: 1 },
+	{ value: "alerts the wary of a nearby trap", weight: 1 },
+	{ value: "conveys the answer to a riddle", weight: 1 },
+	{ value: "means the ${lair_synonyms} of ${monstertype} is near", weight: 2 },
+	{ value: "reveals a heretical truth", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
