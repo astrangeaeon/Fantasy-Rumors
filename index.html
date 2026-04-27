@@ -3906,7 +3906,7 @@ const tables = {
     { value: "${DemonName} the ${uc:QuickNPCDescriptor}, a lesser daemon,", weight: 1 },
     { value: "${DemonName}, ${a:elemntl_type} ${RoyalTitleMale},", weight: 1 },
     { value: "${DemonName}, a great serpent,", weight: 1 },
-    { value: "${DemonName}, a ${monsterdragontype} dragon,", weight: 1 },
+    { value: "${DemonName}, ${a:monsterdragontype} dragon,", weight: 1 },
     { value: "${DemonName}, an apple-sweet murmurer,", weight: 1 },
     { value: "${a:DungeonAdjective} ${monsterA}", weight: 1 },
     { value: "${a:WeirdFantasyMonster}", weight: 1 },
@@ -12349,6 +12349,7 @@ door_type: [
 	{ value: "Tekkai blowing his soul into space", weight: 1 },
 	{ value: "Roko balancing on a flying tortoise", weight: 1 },
 	{ value: "Kume falling from his chariot of cloud", weight: 1 },
+	{ value: "${a:dungeon_mural_human} ${dungeon_mural_human_dress} ${dungeon_mural_human_act}", weight: 10 },
   ],
   
   dungeon_mural_conceals: [
@@ -12356,7 +12357,39 @@ door_type: [
 	{ value: "alerts the wary of a nearby trap", weight: 1 },
 	{ value: "conveys the answer to a riddle", weight: 1 },
 	{ value: "means the ${lair_synonyms} of ${monstertype} is near", weight: 2 },
-	{ value: "reveals a heretical truth", weight: 1 },
+	{ value: "contradicts the teachings of the Church", weight: 1 },
+  ],
+  
+  dungeon_mural_human: [
+    { value: "high priest", weight: 1 },
+	{ value: "high priestess", weight: 1 },
+	{ value: "great chieftain", weight: 1 },
+	{ value: "shaman", weight: 1 },
+	{ value: "white-haired crone", weight: 1 },
+  ],
+  
+  dungeon_mural_divine: [
+    { value: "a towering figure with the head of ${a:AnimalReptile}", weight: 1 },
+	{ value: "a huge cruel-looking ${AnimalInsect}", weight: 1 },
+	{ value: "${a:flag_extra_animal_adj} ${AnimalPredator}", weight: 1 },
+	{ value: "${FantasyGods}", weight: 1 },
+	{ value: "a being of pure light", weight: 1 },
+	{ value: "a being of pure darkness", weight: 1 },
+	{ value: "${a:severe_weather} given form", weight: 1 },
+  ],
+  
+   dungeon_mural_human_dress: [
+    { value: "adorned with ${Colors} feathers", weight: 1 },
+	{ value: "pierced with ${Jewels}", weight: 1 },
+	{ value: "draped in primiitve furs", weight: 1 },
+	{ value: "wearing a ${Colors} goblin mask", weight: 1 },
+	{ value: "wearing only ${a:necklace_type}", weight: 1 },
+	{ value: "wearing only ${a:Colors} ${duo_clothing_singular}", weight: 1 },
+  ],
+  
+  dungeon_mural_human_act: [
+    { value: "stabbing ${a:AnimalSacrifice} with a ritual dagger in front of ${dungeon_mural_divine}", weight: 1 },
+	{ value: "playing ${a:MusicalInstrument} before ${dungeon_mural_divine}", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
