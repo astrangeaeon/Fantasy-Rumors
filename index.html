@@ -12350,6 +12350,21 @@ door_type: [
 	{ value: "Roko balancing on a flying tortoise", weight: 1 },
 	{ value: "Kume falling from his chariot of cloud", weight: 1 },
 	{ value: "${a:dungeon_mural_human} ${dungeon_mural_human_dress} ${dungeon_mural_human_act}", weight: 10 },
+	{ value: "${dungeon_mural_divine} draping fur over the skeleton of ${a:AnimalBigCat}", weight: 1 },
+	{ value: "${dungeon_mural_divine} giving bloody birth to ${huntingmonster} through its open mouth", weight: 1 },
+  ],
+  
+  dungeon_mural_monster_primal: [
+    { value: "great drake", weight: 1 },
+	{ value: "wyvern", weight: 1 },
+	{ value: "loathsome wyrm", weight: 1 },
+	{ value: "dryad", weight: 1 },
+	{ value: "naga", weight: 1 },
+	{ value: "sphinx", weight: 1 },
+	{ value: "gorgon", weight: 1 },
+	{ value: "fairy", weight: 1 },
+	{ value: "giant", weight: 1 },
+	{ value: "daemon", weight: 1 },
   ],
   
   dungeon_mural_conceals: [
@@ -12371,7 +12386,7 @@ door_type: [
   dungeon_mural_divine: [
     { value: "a towering figure with the head of ${a:AnimalReptile}", weight: 1 },
 	{ value: "a huge cruel-looking ${AnimalInsect}", weight: 1 },
-	{ value: "${a:flag_extra_animal_adj} ${AnimalPredator}", weight: 1 },
+	{ value: "a looming ${monster_hybrid} figure", weight: 1 },
 	{ value: "${FantasyGods}", weight: 1 },
 	{ value: "a being of pure light", weight: 1 },
 	{ value: "a being of pure darkness", weight: 1 },
@@ -12390,6 +12405,7 @@ door_type: [
   dungeon_mural_human_act: [
     { value: "stabbing ${a:AnimalSacrifice} with a ritual dagger in front of ${dungeon_mural_divine}", weight: 1 },
 	{ value: "playing ${a:MusicalInstrument} before ${dungeon_mural_divine}", weight: 1 },
+	{ value: "slaying ${a:dungeon_mural_monster_primal} with ${a:HaftedWeapons}", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
