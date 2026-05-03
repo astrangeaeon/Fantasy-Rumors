@@ -9902,6 +9902,7 @@ celebration_type: [
 	{ value: "flaming", weight: 1 },
 	{ value: "${Colors}", weight: 1 },
 	{ value: "muzzled", weight: 1 },
+	{ value: "bound", weight: 1 },
   ],
   
   flag_extra_animal_verb: [
@@ -12368,6 +12369,10 @@ door_type: [
 	{ value: "${dungeon_mural_divine} placidly being eaten by a small group of ${humanoids} wearing distinctive ${duo_clothing}", weight: 1 },
 	{ value: "${a:dungeon_mural_monster_primal} crashing down from the stars and making its ${lair_synonyms} beneath ${a:landscape_types_basic_singular}", weight: 1 },
 	{ value: "primitive ${humanoids} leaving ${ship_cargo_container} of ${FantasyMeal_Fruit_plural} and carrion before ${dungeon_mural_divine}", weight: 1 },
+	{ value: "${a:flag_extra_animal_adj} ${dungeon_mural_monster_primal} sowing mischief by instructing the first ${humanoids} how to forge weapons from meteoric iron", weight: 1 },
+	{ value: "${a:dungeon_mural_monster_primal} accepting a crown and scepter from ${dungeon_mural_divine}", weight: 1 },
+	{ value: "a single ${dungeon_mural_monster_primal} entering a radiant ${Colors} pool and two identical ones emerging", weight: 1 },
+	{ value: "${a:dungeon_mural_monster_primal} ${dungeon_mural_racial_myth} by command of ${dungeon_mural_divine}", weight: 1 },
   ],
   
   dungeon_mural_monster_primal: [
@@ -12379,7 +12384,7 @@ door_type: [
 	{ value: "sphinx", weight: 1 },
 	{ value: "gorgon", weight: 1 },
 	{ value: "fairy", weight: 1 },
-	{ value: "giant", weight: 1 },
+	{ value: "cyclops", weight: 1 },
 	{ value: "daemon", weight: 1 },
   ],
   
@@ -12413,9 +12418,16 @@ door_type: [
     { value: "adorned with ${Colors} feathers", weight: 1 },
 	{ value: "pierced with ${Jewels}", weight: 1 },
 	{ value: "draped in primiitve furs", weight: 1 },
-	{ value: "wearing a ${Colors} goblin mask", weight: 1 },
+	{ value: "wearing ${a:Colors} goblin mask", weight: 1 },
 	{ value: "wearing only ${a:necklace_type}", weight: 1 },
 	{ value: "wearing only ${a:Colors} ${duo_clothing_singular}", weight: 1 },
+  ],
+  
+  dungeon_mural_racial_myth: [
+    { value: "cutting the ${wingtype} wings off of an elf", weight: 1 },
+	{ value: "cutting ${a:tail_type} tail from a hobbit", weight: 1 },
+	{ value: "sawing off the ${daemontype} daemon horns from a dwarf", weight: 1 },
+	{ value: "digging out the third eye of a human", weight: 1 },
   ],
   
   dungeon_mural_human_act: [
@@ -12424,6 +12436,7 @@ door_type: [
 	{ value: "slaying ${a:dungeon_mural_monster_primal} with ${a:HaftedWeapons}", weight: 1 },
 	{ value: "removing and storing the internal organs of ${dungeon_mural_divine} into stoppered jugs", weight: 1 },
 	{ value: "draining the blood of ${dungeon_mural_divine} into decorated stone ${liquid_containers_large}s", weight: 1 },
+	{ value: "building ${landmark_manmade} with ${construction_help} at the behest of ${dungeon_mural_divine}", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
