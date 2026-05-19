@@ -1566,7 +1566,24 @@ const tables = {
     { value: "${a:uc:art_visual_painting}...lies face-down on the floor of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
 	{ value: "${a:uc:art_visual_painting}...hangs near ${a:DungeonObject} on the ${floors} floor", weight: 1 },
 	{ value: "A gallery curated by ${fire_tender} on the ${floors} floor contains dozens of paintings of ${AnimalMain}s, including one by ${artists}, the famous ${huntingmonster_singular} painter ", weight: 1 },
-	{ value: "an ancient mural depicting ${dungeon_mural} ${dungeon_mural_conceals}", weight: 1 },
+	{ value: "${dungeon_mural_type} depicting ${dungeon_mural} ${dungeon_mural_conceals}", weight: 1 },
+  ],
+  
+  dungeon_mural_type: [
+    { value: "${a:dungeon_mural_type_adj} mural", weight: 2 },
+	{ value: "${a:dungeon_mural_type_adj} relief", weight: 2 },
+	{ value: "a low relief ornamented with ${Jewels}", weight: 1 },
+  ],
+  
+  dungeon_mural_type_adj: [
+    { value: "ancient", weight: 1 },
+	{ value: "damaged", weight: 1 },
+	{ value: "defaced", weight: 1 },
+	{ value: "faded", weight: 1 },
+	{ value: "well-cared-for", weight: 1 },
+	{ value: "sun-bleached", weight: 1 },
+	{ value: "soot-stained", weight: 1 },
+	{ value: "brightly-painted", weight: 1 },
   ],
 
   dungeon_door: [
@@ -5465,7 +5482,7 @@ const tables = {
     { value: "a cage with ${trap_cage_bars} ${trap_location} that can imprison ${trap_pit_victim}", weight: 2 },
 	{ value: "skulking ankle-high gorgons that stalk the ${floors} floor, spewing petrifying gas, turning feet into stone", weight: 1 },
 	{ value: "${a:DungeonRoom} where the exits seal and a shoulder-mounted ${AnimalMount} trophy high on the wall vomits forth ${trap_cage_fill}", weight: 2 },
-	{ value: "${a:DungeonRoom} where the exits seal and ${flag_shape}-shaped holes on the wall pour out silver ${AnimalInsectStinging}s", weight: 2 },
+	{ value: "${a:DungeonRoom} where the exits seal and ${flag_shape} holes on the wall pour out silver ${AnimalInsectStinging}s", weight: 2 },
   ],
   
   trap_cage_bars: [
@@ -12408,6 +12425,7 @@ door_type: [
 	{ value: "great chieftain", weight: 1 },
 	{ value: "shaman", weight: 1 },
 	{ value: "white-haired androgyne", weight: 1 },
+	{ value: "unknown hero", weight: 1 },
   ],
   
   dungeon_mural_divine: [
@@ -12449,7 +12467,7 @@ door_type: [
 	{ value: "leading their people to touch a strange ${wilds_noun} and gain ${short_inherited_trait}", weight: 1 },
 	{ value: "burying ${a:magicalcommonobject} given to them by ${dungeon_mural_divine} near ${landmark_natural}", weight: 1 },
 	{ value: "ascending the long stairs to meet ${dungeon_mural_divine} in their eerie realm, depicted as a jeweled ${aristocratic_home}", weight: 1 },
-	{ value: "journeying through a desert of rusted ${rusted} to meet ${dungeon_mural_divine} in their eerie realm, depicted as an edenic ${landscape_types_basic_singular}", weight: 1 },
+	{ value: "journeying through a desert of rusted ${rusted} to meet ${dungeon_mural_divine} in their eerie realm, depicted as a kind of edenic ${landscape_types_basic_singular}", weight: 1 },
 	{ value: "being taught by ${a:dungeon_mural_monster_primal} to smash ${a:Colors} crystal with a stone mallet and be transported to the ${otherworld_names}", weight: 1 },
   ],
   
