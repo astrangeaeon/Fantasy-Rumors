@@ -1584,7 +1584,7 @@ const tables = {
 	{ value: "well-cared-for", weight: 1 },
 	{ value: "sun-bleached", weight: 1 },
 	{ value: "soot-stained", weight: 1 },
-	{ value: "brightly-painted", weight: 1 },
+	{ value: "brightly-colored", weight: 1 },
 	{ value: "chipped and eroded", weight: 1 },
   ],
 
@@ -12377,11 +12377,7 @@ door_type: [
   ],
   
   dungeon_mural: [
-    { value: "Chokoro releasing his magic horse from a gigantic gourd", weight: 1 },
-	{ value: "Gama with his wizard toad", weight: 1 },
-	{ value: "Tekkai blowing his soul into space", weight: 1 },
-	{ value: "Roko balancing on a flying tortoise", weight: 1 },
-	{ value: "Kume falling from his chariot of cloud", weight: 1 },
+    { value: "${dungeon_mural_individual}", weight: 1 },
 	{ value: "${a:dungeon_mural_human} ${dungeon_mural_human_dress} ${dungeon_mural_human_act}", weight: 10 },
 	{ value: "${dungeon_mural_divine} draping fur over the skeleton of ${a:AnimalBigCat}", weight: 1 },
 	{ value: "${dungeon_mural_divine} giving bloody birth to ${huntingmonster} through its open mouth", weight: 1 },
@@ -12396,6 +12392,17 @@ door_type: [
 	{ value: "${dungeon_mural_divine} kissing life into a sculpture of ${creepyvillain} they've carved from a block of ${Colors} stone", weight: 1 },
 	{ value: "${dungeon_mural_divine} sealing ${creepyvillain} to slumber in ${slumberplace} until the ${prophecyartifact} is found by ${who_finds_it} from ${propheticnearcity} ${urbn_cityname}", weight: 1 },
 	{ value: "${a:dungeon_mural_monster_primal} dressing a shadow in the flesh of ${a:humanoid}", weight: 1 },
+	{ value: "${hieroglyphics}", weight: 1 },
+	{ value: "a great warrior, wounded in a battle with ${hiero_b}, being laid to sleep on a stone slab in a cave protected by ${a:dungeon_mural_monster_primal}", weight: 1 },
+  ],
+  
+  dungeon_mural_individual: [
+    { value: "Chokoro releasing his magic horse from a gigantic gourd", weight: 1 },
+	{ value: "Gama with his wizard toad", weight: 1 },
+	{ value: "Tekkai blowing his soul into space", weight: 1 },
+	{ value: "Roko balancing on a flying tortoise", weight: 1 },
+	{ value: "Kume falling from his chariot of cloud", weight: 1 },
+	{ value: "Torgo touching the fire", weight: 1 },
   ],
   
   dungeon_mural_monster_primal: [
@@ -12415,7 +12422,7 @@ door_type: [
     { value: "conceals a mysterious passage", weight: 1 },
 	{ value: "alerts the wary of a nearby trap", weight: 1 },
 	{ value: "conveys the answer to a riddle", weight: 1 },
-	{ value: "means the ${lair_synonyms} of ${monstertype} is near", weight: 2 },
+	{ value: "means the ${lair_synonyms} of ${monstertype} is near", weight: 1 },
 	{ value: "contradicts the teachings of the Church", weight: 1 },
 	{ value: "cleverly hides the runes needed to learn a spell of power", weight: 1 },
 	{ value: "can be found on the ${floors} floor", weight: 10 },
@@ -12471,6 +12478,7 @@ door_type: [
 	{ value: "ascending the long stairs to meet ${dungeon_mural_divine} in their eerie realm, portrayed as a jeweled ${aristocratic_home}", weight: 1 },
 	{ value: "journeying through a desert of rusted ${rusted} to meet ${dungeon_mural_divine} in their eerie realm, rendered as a kind of edenic ${landscape_types_basic_singular}", weight: 1 },
 	{ value: "being taught by ${a:dungeon_mural_monster_primal} to smash ${a:Colors} crystal with a stone mallet and be transported to the ${otherworld_names}", weight: 1 },
+	{ value: "burning leaves from ${a:cod_tree_type} tree and striking an ornate bronze gong to summon ${a:dungeon_mural_monster_primal}", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
