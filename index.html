@@ -4886,6 +4886,20 @@ const tables = {
 	{ value: "squares", weight: 1 },
     { value: "hands", weight: 1 },
   ],
+  
+  shapes3d: [
+    { value: "cube", weight: 1 },
+    { value: "pyramid", weight: 1 },
+    { value: "cone", weight: 1 },
+    { value: "cylinder", weight: 1 },
+	{ value: "sphere", weight: 1 },
+    { value: "square frustum", weight: 1 },
+	{ value: "pentagonal prism", weight: 1 },
+    { value: "triangular prism", weight: 1 },
+	{ value: "torus", weight: 1 },
+	{ value: "hemisphere", weight: 1 },
+    { value: "ring", weight: 1 },
+  ],
 
   shipwreck: [
     { value: "ship named ${ShipNames} that carried the second prince and his bride and was lost", weight: 1 },
@@ -5729,6 +5743,7 @@ trap_location: [
 	{ value: "the villagers of ${village_names} have all been dreaming of ${urbn_cityname}, a beautiful city of ${city_features} that's yet to be built", weight: 1 },
 	{ value: "the harbor warehouses of ${urbn_cityname}, City of ${urbn_citynickname}, have lately been filled with the plaintive wails and horrendous smells of the miserable ${AnimalFarm}s from distant ${foreignland}, diseased and quarantined within", weight: 1 },
 	{ value: "${urbn_cityname}, the City of ${urbn_citynickname}, is so loud with voice and celebration that the thunder of God cannot be heard", weight: 1 },
+	{ value: "${urbn_cityname}, the City of ${urbn_citynickname}, is known for ${dungeon_mural_type} depicting ${dungeon_mural}", weight: 1 },
   ],
 
    urbn_traders: [
@@ -12399,6 +12414,9 @@ door_type: [
 	{ value: "the city of ${urbn_cityname} being overrun by ${hiero_b} and a handful of ${humanoid} refugees escaping", weight: 1 },
 	{ value: "${dungeon_mural_divine} chaining ${creepyvillain} to ${a:Colors} comet", weight: 1 },
 	{ value: "${a:dungeon_mural_monster_primal} teaching the early ${ancientpeople} to water their fields with the blood of ${humanoids_nonhuman}", weight: 1 },
+	{ value: "${dungeon_mural_divine} building a wall between the ${otherworld_names} and the realms of men", weight: 1 },
+	{ value: "the ${ancientpeople} being punished for their ${sins} by ${dungeon_mural_divine} in the Hell ${hell_names}", weight: 1 },
+	{ value: "a giant ${AnimalInsect} laying clutches of loathsome eggs in tunnels below the major ${humanoid} cities of the continent", weight: 1 },
   ],
   
   dungeon_mural_individual: [
@@ -12473,6 +12491,7 @@ door_type: [
 	{ value: "a being of pure darkness", weight: 1 },
 	{ value: "${a:severe_weather} given vaguely human form", weight: 1 },
 	{ value: "a hideous ${Colors} slime", weight: 1 },
+	{ value: "an enormous floating ${Colors} ${shapes3d}", weight: 1 },
   ],
   
    dungeon_mural_human_dress: [
