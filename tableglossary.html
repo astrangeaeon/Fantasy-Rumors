@@ -17,6 +17,9 @@ border: 1px solid black;
   padding-bottom: 50px;
   padding-left: 40px;
   }
+  
+  li {font-weight: bold;}
+   .text-normal {font-weight: 400;}
 
 </style>
 
@@ -159,7 +162,7 @@ console.log("resolve function template return: " + template);
   console.log("loop " + i + " " + key);
   
   const displayDiv = document.createElement('div');
-  displayDiv.className = "resolved-text" + i;
+  displayDiv.className = "text-normal resolved-text" + i;
   
   // Creates exactly what you want: "foreign_phrase1", "foreign_phrase2", etc.
   const uniqueId = `${key}${i}`; 
