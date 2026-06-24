@@ -1,4 +1,4 @@
-var tables = {
+const tables = {
   foreign_adj: [
     // { value: "**add space at end**", weight: 0 },
     { value: "", weight: 10 },
@@ -1864,6 +1864,7 @@ var tables = {
 	{ value: "a dragon that transforms into a bird with the voice of a howling wolf every fifty years, signifying famine", weight: 1 },
 	{ value: "a mercenary band called the Floating Swords who travel by balloon", weight: 1 },
 	{ value: "${a:humanoid} who disguised themselves as ${a:huntingmonster_singular} to study their habits", weight: 1 },
+	{ value: "a dragon set upon by a thousand hawks and killed", weight: 1 },
   ],
 
   feature: [
