@@ -80,6 +80,7 @@ const tables = {
 	{ value: " where the leaves darken in the autumn to shades of indigo and mulberry", weight: 1 },
 	{ value: " where women show their elbows and men eat spiders", weight: 1 },
 	{ value: " where they manufacture spoorns, trows, calcars and other terrors of antiquity", weight: 1 },
+	{ value: " with its curious underground ${aristocratic_robbed_place_religious}", weight: 1 },
   ],
 
   herdwith: [
@@ -298,6 +299,7 @@ const tables = {
 	{ value: " who plunged the kingdoms into war to assert the superiority of the tea-plant over the juice of the grape,", weight: 1 },
 	{ value: " who stole the Lake of the Gazelle from the ancient ${ancientpeople} by freezing it into blocks of ice and transporting it to ${foreignland},", weight: 1 },
 	{ value: " who whenever they burned heretics, fetched and piled up the wood themselves,", weight: 1 },
+	{ value: " who caused all the witches of Amneran to scream,", weight: 1 },
 	
   ],
 
@@ -1865,6 +1867,7 @@ const tables = {
 	{ value: "a mercenary band called the Floating Swords who travel by balloon", weight: 1 },
 	{ value: "${a:humanoid} who disguised themselves as ${a:huntingmonster_singular} to study their habits", weight: 1 },
 	{ value: "a dragon set upon by a thousand hawks and killed", weight: 1 },
+	{ value: "a bronze leopard that eats faces and a necromancer who raises faceless zombies", weight: 1 },
   ],
 
   feature: [
@@ -2436,7 +2439,7 @@ const tables = {
 
   huntingmonster: [
     { value: "${daemontype} daemons", weight: 2 },
-    { value: "${elemntl_type} spirits", weight: 1 },
+    { value: "${elemntl_type} elementals", weight: 1 },
     { value: "angels", weight: 1 },
     { value: "centaurs", weight: 1 },
     { value: "giant ${AnimalInsect}s", weight: 1 },
@@ -2461,7 +2464,7 @@ const tables = {
   
   huntingmonster_singular: [
     { value: "daemon", weight: 1 },
-    { value: "spirit", weight: 1 },
+    { value: "elemental", weight: 1 },
     { value: "angel", weight: 1 },
     { value: "centaur", weight: 1 },
     { value: "djinn", weight: 1 },
@@ -2688,6 +2691,7 @@ const tables = {
     { value: "washed-up survivors from a future calamity", weight: 1 },
     { value: "wise giant tortoises", weight: 1 },
 	{ value: "an antediluvian people who survive by root-digging and berry-picking", weight: 1 },
+	{ value: "empath-martyrs whose touch heals others by transferring the wounds to themselves", weight: 1 },
   ],
 
   islandprotector: [
@@ -3304,6 +3308,7 @@ const tables = {
 	{ value: "threatening serpentine gourds have taken over the pumpkin patch", weight: 1 },
 	{ value: "the dogs have gone mute and refuse to bark", weight: 1 },
 	{ value: "the Princess who Makes the Flowers of the Trees to Blossom has arrived in town", weight: 1 },
+	{ value: "a farmer's prize ${AnimalFarm} has been stolen by a river goblin", weight: 1 },
   ],
 
   localtopic: [
@@ -5661,7 +5666,7 @@ trap_location: [
     { value: "${tombprotection}", weight: 1 },
     { value: "${sculptr_subj}", weight: 1 },
     { value: "a band of ${posse_quality} ${posse}", weight: 1 },
-    { value: "a geyser which sprays out ${geyserspray} several times a day", weight: 1 },
+    { value: "a geyser which sprays out ${geyserspray} ${fairy_number} times a day", weight: 1 },
     { value: "a pack of ${herd_adj} ${herdanimal} ${herdwith}", weight: 1 },
     { value: "an immortal ${profession} ${facial_desc}", weight: 1 },
 	{ value: "${fairy_folk_named}", weight: 1 },
@@ -10317,6 +10322,7 @@ vehicle: [
 	{ value: "from the floods that ruined ${urbn_cityname} ${historicalage}", weight: 1 },
 	{ value: "from a factory in ${urbn_cityname}", weight: 1 },
 	{ value: "from the Age of Miracles", weight: 1 },
+	{ value: "from a mountain of water", weight: 1 },
   ],
   
   exotic_water_types: [
@@ -10542,6 +10548,7 @@ ship_type: [
 	{ value: "a talking ${ship_cargo_animal_type}", weight: 1 },
 	{ value: "${a:undead_intangible} trapped in ${a:liquid_containers_personal}", weight: 1 },
 	{ value: "a miniature ${AnimalMagicMount} in a glass bottle from the collection of ${vancian_wizards}", weight: 1 },
+	{ value: "a chunk from a mountain of fire", weight: 1 },
   ],
   
   ship_cargo_novelty_type: [
@@ -11381,6 +11388,7 @@ door_type: [
 	{ value: "to have a court of talking ${AnimalFarm}s", weight: 1 },
 	{ value: "to be ${castle_protector}", weight: 1 },
 	{ value: "to have been built to safeguard the living sword named ${sword_names}, an ancient ${BladedWeapons_Sword} that ${sword_desire}", weight: 1 },
+	{ value: "to be unwelcoming, with no fire in the hearth and no wine or beer or cider", weight: 1 },
   ],
   
   castle_moat: [
@@ -12008,6 +12016,7 @@ door_type: [
 	{ value: "spoiled rations", weight: 1 },
 	{ value: "bits of cracked leather and a pair of scorched iron boots fused to the floor", weight: 1 },
 	{ value: "the scattered bones of ${a:AnimalPredator}", weight: 1 },
+	{ value: "ashes and a broken ${broken_objects}", weight: 2 },
   ],
   
   fetch_quest_object: [
@@ -12028,7 +12037,7 @@ door_type: [
 	{ value: "100 platinum ${coins}", weight: 1 },
 	{ value: "1000 golden ${coins}", weight: 1 },
 	{ value: "excellent seats at the upcoming ${athletic_games} Games", weight: 1 },
-	{ value: "a tattoo of ${tattoos}", weight: 1 },
+	{ value: "a tattoo of ${tattoos} by the Royal Tattooist", weight: 1 },
 	{ value: "a month of free dinners at the Inn of the Three ${tc:inn_name_subjects}", weight: 1 },
 	{ value: "a scroll reputedly from the collection of ${vancian_wizards}", weight: 1 },
 	{ value: "${shield}", weight: 1 },
