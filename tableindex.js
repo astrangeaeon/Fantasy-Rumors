@@ -81,6 +81,8 @@ const tables = {
 	{ value: " where women show their elbows and men eat spiders", weight: 1 },
 	{ value: " where they manufacture spoorns, trows, calcars and other terrors of antiquity", weight: 1 },
 	{ value: " with its curious underground ${aristocratic_robbed_place_religious}", weight: 1 },
+	{ value: " where the people speak a language of whistles and hisses", weight: 1 },
+	{ value: " where all the seasons linger pleasantly together", weight: 1 },
   ],
 
   herdwith: [
@@ -300,6 +302,9 @@ const tables = {
 	{ value: " who stole the Lake of the Gazelle from the ancient ${ancientpeople} by freezing it into blocks of ice and transporting it to ${foreignland},", weight: 1 },
 	{ value: " who whenever they burned heretics, fetched and piled up the wood themselves,", weight: 1 },
 	{ value: " who caused all the witches of Amneran to scream,", weight: 1 },
+	{ value: " who rode an enchanted ${AnimalMount} of ebony into battle against the daemons of the sky,", weight: 1 },
+	{ value: " who wore a living creature of dreadful countenance for a helmet,", weight: 1 },
+	{ value: " whose thanes quaffed from mead-cups on the mead-bench, their cries filling the mead-hall,", weight: 1 },
 	
   ],
 
@@ -339,6 +344,7 @@ const tables = {
 	{ value: "can open a door in ${classic_dungeons}", weight: 1 },
 	{ value: "can burn ${a:huntingmonster_singular} like caustic acid", weight: 1 },
 	{ value: "reveals the way to Torolix, the high secret place", weight: 1 },
+	{ value: "can grant an audience with the Kings of Sleep", weight: 1 },
   ],
 
   addiction: [
@@ -486,6 +492,7 @@ const tables = {
 	{ value: "an invitation to the ${otherworld_names}", weight: 1 },
 	{ value: "a magic cake that protects against lions", weight: 1 },
 	{ value: "a map to ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
+	{ value: "a robe of feathers that allows one to transform into ${a:AnimalBird}", weight: 1 },
   ],
 
   bizarrecompanion: [
@@ -1997,6 +2004,7 @@ const tables = {
 	{ value: "Erp", weight: 1 },
 	{ value: "Thann", weight: 1 },
 	{ value: "Upper Morven", weight: 1 },
+	{ value: "Lower Targamon", weight: 1 },
   ],
 
   funeralcustom: [
@@ -2160,6 +2168,7 @@ const tables = {
 	{ value: "their remains now reside at the bottom of ${a:liquid_containers_large} filled with ${alcohol_liquor}", weight: 1 },
 	{ value: "succeeded; but later they ate a cursed sandwich that transformed them into a drawing of ${a:huntingmonster_singular}", weight: 1 },
 	{ value: "their face now lives in a globe of fire upon a distant island", weight: 1 },
+	{ value: "was transformed into ${a:AnimalBird} for their trouble", weight: 1 },
   ],
 
   hero_goal: [
@@ -2211,6 +2220,7 @@ const tables = {
 	{ value: "back before the ${huntingmonster} crawled forth from their caves", weight: 1 },
 	{ value: "back before Saint ${SaintName} exiled ${exiles} from ${urbn_cityname}", weight: 1 },
 	{ value: "back when tigers used to smoke", weight: 1 },
+	{ value: "back when miracles were as common as fruit pies", weight: 1 },
   ],
   
   historicalbuilders: [
@@ -2344,6 +2354,7 @@ const tables = {
 	{ value: "the ${tc:FantasyMeal_Fruit} Harvest Festival", weight: 1 },
 	{ value: "the Ecstasy of Saint ${SaintName}", weight: 1 },
 	{ value: "the Feast of ${constellation}", weight: 1 },
+	{ value: "the Festival of Laughter", weight: 1 },
   ],
 
   holiday_celebration: [
@@ -2766,6 +2777,7 @@ const tables = {
 	{ value: "a knight using a chessboard for a shield", weight: 1 },
 	{ value: "sharks who weep ${Jewel_singular} tears", weight: 1 },
 	{ value: "creatures with unreassuring teeth and claws", weight: 1 },
+	{ value: "angels men complain of that kill whatever they come upon", weight: 1 },
   ],
 
   island_riches: [
@@ -3073,6 +3085,7 @@ const tables = {
 	{ value: "flash pillars", weight: 1 },
 	{ value: "dragon torches", weight: 1 },
 	{ value: "the lamp of Boddhi", weight: 1 },
+	{ value: "blazing ${Colors} fireflies", weight: 1 },
   ],
 
   Local: [
@@ -3190,6 +3203,8 @@ const tables = {
 	{ value: "become a wolf and have the understanding of a wolf", weight: 1 },
 	{ value: "breed the thin black worms beloved by the citizens of ${urbn_cityname}", weight: 1 },
 	{ value: "feed on the poisonous flesh of mermaids and centaurs", weight: 1 },
+	{ value: "stain their lance and naked sword with blood", weight: 1 },
+	{ value: "reconstruct the Combine Empire, that strange and awful dream", weight: 1 },
   ],
 
   local_racist: [
@@ -6492,6 +6507,7 @@ trap_location: [
 	{ value: "attracts vicious hogs that bite the legs off horses", weight: 1 },
 	{ value: "marks the spot where the living sword Jaquays, ${a:Colors} ${BladedWeapons_Sword} that ${sword_desire}, waits impatiently for its next owner", weight: 4 },
 	{ value: "marks a crack in the earth where fumes from the eternally decaying corpse of ${decaying_corpse} escape the underworld and inspire prophetic nightmares", weight: 1 },
+	{ value: "marks one of the secret entrances into ${classic_dungeons}", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -9028,7 +9044,7 @@ celebration_type: [
     { value: "painting ${art_verb} ${painting_subject_matter}", weight: 2 },
 	{ value: "triptych painting ${art_verb} ${painting_subject_matter}", weight: 1 },
 	{ value: "portrait of ${portrait_subject}", weight: 1 },
-	{ value: "${art_verb} the ${nude_type} nude curves and contours of ${prophetic_subject}", weight: 1 },
+	{ value: "painting ${art_verb} the ${nude_type} nude curves and contours of ${prophetic_subject}", weight: 1 },
 	{ value: "landscape ${art_verb} the ${landscape_types} of ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
 	{ value: "landscape ${art_verb} the ${landscape_types} of ${foreign_adj}${foreignland} at ${boundary_times}", weight: 1 },
 	{ value: "still life of ${still_life_subject}", weight: 1 },
