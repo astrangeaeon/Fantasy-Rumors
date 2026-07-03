@@ -107,6 +107,7 @@ const tables = {
     { value: " with the feet of humans", weight: 1 },
     { value: " with the hair of maidens", weight: 1 },
 	{ value: " stamped with a brand of ${tattoos}", weight: 1 },
+	{ value: " whose cries sound like a woman screaming", weight: 1 },
   ],
 
   sign: [
@@ -1875,6 +1876,7 @@ const tables = {
 	{ value: "${a:humanoid} who disguised themselves as ${a:huntingmonster_singular} to study their habits", weight: 1 },
 	{ value: "a dragon set upon by a thousand hawks and killed", weight: 1 },
 	{ value: "a bronze leopard that eats faces and a necromancer who raises faceless zombies", weight: 1 },
+	{ value: "a maiden so beautiful they say God with his bare hands made her", weight: 1 },
   ],
 
   feature: [
@@ -1922,7 +1924,7 @@ const tables = {
     { value: "is made of solid gold", weight: 1 },
     { value: "is only visible to ${humanoids}", weight: 1 },
     { value: "is sacred to ${RealGods}", weight: 1 },
-    { value: "is worshiped by ${urbn_subjectplural}", weight: 1 },
+    { value: "is worshipped by ${urbn_subjectplural}", weight: 1 },
     { value: "points the way to a secret passage", weight: 1 },
     { value: "poisons those who lick it", weight: 1 },
     { value: "recites the sad tale of Rosabeth of Melfia, beautiful and doomed", weight: 1 },
@@ -2355,6 +2357,7 @@ const tables = {
 	{ value: "the Ecstasy of Saint ${SaintName}", weight: 1 },
 	{ value: "the Feast of ${constellation}", weight: 1 },
 	{ value: "the Festival of Laughter", weight: 1 },
+	{ value: "the Feast of Dolls", weight: 1 },
   ],
 
   holiday_celebration: [
@@ -4154,7 +4157,7 @@ const tables = {
 	{ value: "${a:prophetic_visionary} from ${propheticnearcity} ${urbn_cityname} shared a vision where they watched${prophetic_vision_emotion} as ${prophetic_vision}", weight: 7 },
 	{ value: "The ${uc:prophetic_visionary} of ${urbn_cityname} bore psychic witness as ${prophetic_vision}", weight: 7 },
 	{ value: "all the ${prophetic_visionary}s of ${urbn_cityname} have been dreaming of ${a:urbn_place} where ${urbn_subjectverb}", weight: 7 },
-	{ value: "The shaman of the ${uc:AnimalMain} Tribe sacrificed ${a:AnimalSacrifice_adj} ${AnimalSacrifice} to their nameless and numberless gods and saw in the swirling smoke as ${prophetic_vision}", weight: 3 },
+	{ value: "The shaman of the ${tc:AnimalMain} Tribe sacrificed ${a:AnimalSacrifice_adj} ${AnimalSacrifice} to their nameless and numberless gods and saw in the swirling smoke as ${prophetic_vision}", weight: 3 },
 	{ value: "The ${uc:prophetic_visionary} of ${urbn_cityname} revealed that the ${prophecyartifact}, a powerful artifact, is being held in a sinister dungeon called ${random_dungeons}", weight: 2 },
 
   ],
@@ -10505,7 +10508,7 @@ ship_type: [
 	{ value: "with a cargo of ${duo_clothing_adj} ${flag_imperial_color} ${duo_clothing}, ${onedhundred} ${liquid_containers_large}s filled with ${liquid_cargo} and ${onedfive} dozen ${ship_cargo_container} of ${ship_merchandise_adj} ${magicalcommonobject_plural} ${ship_manufacturing_place}", weight: 1 },
 	{ value: "bearing ${onedfive} dozen ${ship_cargo_animal_type}s and a ${flag_condition} tapestry depicting ${painting_subject_matter}", weight: 1 },
 	{ value: "and eager ${ship_cargo_dockworker} are already unloading ${ship_cargo_container} of ${ship_merchandise_adj} ${Tools}s and ${MusicalInstrument}s ${ship_manufacturing_place} as well as ${ship_merchandise_fruit_adj} ${FantasyMeal_Fruit_plural} from the ${dwarfclanname} Clan orchards", weight: 1 },
-	{ value: "carrying a hundred ${ship_cargo_container} of ${ship_merchandise_adj} ${ship_cargo_toy_type}s, popular with local ${humanoid_young}, a few dozen ${ship_cargo_novelty_type} and ${liquid_containers_large}s of ${alcohol_liquor} for the parents", weight: 1 },
+	{ value: "carrying a hundred ${ship_cargo_container} of ${ship_merchandise_adj} ${ship_cargo_toy_type}, popular with local ${humanoid_young}, a few dozen ${ship_cargo_novelty_type} and ${liquid_containers_large}s of ${alcohol_liquor} for the parents", weight: 1 },
 	{ value: "with neat ${ship_cargo_container} of meticulously labeled ${ship_cargo_expedition_type} from the successful ${FantasyLastName} Expedition to ${foreignland}${foreign_phrase} along with ${ship_cargo_wizard_type} that was found there as well", weight: 1 },
 	{ value: "with a hold full of ${ship_cargo_furniture_adj} ${ship_cargo_furniture_type} ${ship_manufacturing_place} and ${ship_cargo_container} of ${Jewels} and scrolls from the House of ${housething}", weight: 1 },
 	{ value: "bearing wounded ${violent_profession_plural} and opportunistic ${travelers}s from the wars in the ${CompassDirectionPrimary}", weight: 1 },
@@ -10545,13 +10548,14 @@ ship_type: [
   ],
   
    ship_cargo_toy_type: [
-	{ value: "model ${vehicle}", weight: 1 },
-	{ value: "toy ${ship_type}", weight: 1 },
-	{ value: "${huntingmonster_singular} doll", weight: 1 },
-	{ value: "wooden practice ${HaftedWeapons}", weight: 1 },
-	{ value: "kites with ${AnimalMain} and ${AnimalWater} design", weight: 1 },
-	{ value: "oddly-tuned ${MusicalInstrument}", weight: 1 },
-	{ value: "miniature ${AnimalMagicMount}", weight: 1 },
+	{ value: "model ${vehicle}s", weight: 1 },
+	{ value: "toy ${ship_type}s", weight: 1 },
+	{ value: "${huntingmonster_singular} dolls", weight: 1 },
+	{ value: "wooden practice ${HaftedWeapons}s", weight: 1 },
+	{ value: "kites with ${AnimalMain} and ${AnimalWater} designs", weight: 1 },
+	{ value: "oddly-tuned ${MusicalInstrument}s", weight: 1 },
+	{ value: "miniature ${AnimalMagicMount}s", weight: 1 },
+	{ value: "trick ${shield_type}s that shatter like ice at the first blow", weight: 1 },
   ],
   
   ship_cargo_wizard_type: [
@@ -11522,6 +11526,7 @@ door_type: [
 	{ value: "ill-fated trip to ${urbn_cityname}, the City of ${urbn_citynickname}", weight: 2 },
 	{ value: "pouch of ${crowns_metal_type} ${coins} that went missing", weight: 2 },
 	{ value: "${FantasyMeal_Fruit_Berry} ${FantasyMeal_Fruit_Berry_Uses}", weight: 2 },
+	{ value: "${FantasyMeal_Fruit}-thief", weight: 2 },
   ],
   
   village_names: [
