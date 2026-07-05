@@ -87,6 +87,7 @@ const tables = {
 	{ value: " where the trees, sea and moon awaken old dreams", weight: 1 },
 	{ value: " where they recite sutras over slain insects and bury them in the temple grounds", weight: 1 },
 	{ value: " where the nobles ride forth in pomp and ceremony to hunt fireflies", weight: 1 },
+	{ value: " where the ${AnimalCanine} and ${AnimalBird} are despised for being the only two creatures not to weep at the death of ${larger_than_life}", weight: 2 },
   ],
 
   herdwith: [
@@ -312,6 +313,10 @@ const tables = {
 	{ value: " whose thanes quaffed from mead-cups on the mead-bench, their cries filling the mead-hall,", weight: 1 },
 	{ value: " who made bargains with powers terrestrial, celestial and infernal,", weight: 1 },
 	{ value: " whose true love was a lady in a tapestry named Bel-Imperia,", weight: 1 },
+	{ value: " whose radiance made a paradise of the ${underworld_names} until its ruler sent them back to the realms above,", weight: 1 },
+	{ value: " who spit upon ${a:daemontype} daemon, slaying it with holy saliva,", weight: 1 },
+	{ value: " who was condemned at the Second Council of Magic presided over by ${vancian_wizards} for murdering the second moon,", weight: 1 },
+	{ value: " who rode a giant ${AnimalBird} and disappeared into the sky,", weight: 1 },
 	
   ],
 
@@ -1822,6 +1827,7 @@ const tables = {
 	{ value: "${crowns_metal_type} ${coins} in their hair", weight: 1 },
 	{ value: "an unusually large and intelligent ${AnimalFamiliar} familiar", weight: 1 },
 	{ value: "a false leg made of silver and jewels", weight: 1 },
+	{ value: "tattooed black lips", weight: 1 },
   ],
 
   fd_tale: [
@@ -1884,6 +1890,7 @@ const tables = {
 	{ value: "a dragon set upon by a thousand hawks and killed", weight: 1 },
 	{ value: "a bronze leopard that eats faces and a necromancer who raises faceless zombies", weight: 1 },
 	{ value: "a maiden so beautiful they say God with his bare hands made her", weight: 1 },
+	{ value: "jellyfish that used to have shells and how they lost them", weight: 1 },
   ],
 
   feature: [
@@ -2414,6 +2421,7 @@ const tables = {
     { value: "unbinding the feet of statues, so they can participate in the holy dances", weight: 1 },
     { value: "using slaves and foreigners as furniture", weight: 1 },
     { value: "wearing black garments and eating black food", weight: 1 },
+	{ value: "riding bronze ${AnimalMount}s through the streets", weight: 1 },
   ],
 
   housething: [
@@ -2481,6 +2489,7 @@ const tables = {
     { value: "witches", weight: 1 },
 	{ value: "harpies", weight: 1 },
 	{ value: "mermaids", weight: 1 },
+	{ value: "basilisks", weight: 1 },
   ],
   
   huntingmonster_singular: [
@@ -2509,6 +2518,7 @@ const tables = {
 	{ value: "hobbit", weight: 1 },
 	{ value: "fairy", weight: 1 },
 	{ value: "wolf", weight: 1 },
+	{ value: "basilisk", weight: 1 },
   ],
 
   husband_adj: [
@@ -2828,6 +2838,7 @@ const tables = {
 	{ value: "a ten-colored stone", weight: 1 },
 	{ value: "a globe of fire with a human face within it", weight: 1 },
 	{ value: "a pair of blue ziggurat boots", weight: 1 },
+	{ value: "the private star of ${vancian_wizards} which provides light only the owner can see", weight: 1 },
   ],
 
   island_sacred: [
@@ -5175,6 +5186,7 @@ const tables = {
 	{ value: "a magical scroll written in the ${handwriting} of ${vancian_wizards}", weight: 1 },
 	{ value: "a book which keeps the names of all those who have perished in the Marshes of Sushupti", weight: 1 },
 	{ value: "an urn of sacred paint that renders one invisible to both daemons and the undead", weight: 1 },
+	{ value: "the Emperor's dragonfly", weight: 1 },
   ],
 
   tombprotection: [
@@ -5571,6 +5583,7 @@ trap_location: [
 	{ value: "the harbor warehouses of ${urbn_cityname}, City of ${urbn_citynickname}, have lately been filled with the plaintive wails and horrendous smells of the miserable ${AnimalFarm}s from distant ${foreignland}, diseased and quarantined within", weight: 1 },
 	{ value: "${urbn_cityname}, the City of ${urbn_citynickname}, is so loud with voice and celebration that the thunder of God cannot be heard", weight: 1 },
 	{ value: "${urbn_cityname}, the City of ${urbn_citynickname}, is known for ${dungeon_mural_type} depicting ${dungeon_mural}", weight: 1 },
+	{ value: "in ${urbn_cityname}, they celebrate ${holiday} by ${holiday_celebration}", weight: 2 },
   ],
 
    urbn_traders: [
@@ -6002,6 +6015,7 @@ trap_location: [
 	{ value: "a pair of ${humanoids} wearing the enchanted ${Colors} ${duo_clothing} worn by the ${trap_builder_servant_adj} servants of ${vancian_wizards}", weight: 1 },
 	{ value: "two djinn called, respectively, Al-Ra’ad al-Kasif (“Ear-deafening Thunder”) and Abú al-Sa’ádát (“the Father of Prosperities”)", weight: 1 },
 	{ value: "men on desperate errands", weight: 1 },
+	{ value: "a lady knight and her pet hound", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -6362,6 +6376,8 @@ trap_location: [
 	{ value: "no longer prays for rain, nor gathers medicines on sacred mountains", weight: 1 },
 	{ value: "makes arrows in preparation for the battle of the last day", weight: 1 },
 	{ value: "recently came into possession of a scroll that will make all the dogs in a 50 mile radius start to bark", weight: 1 },
+	{ value: "embroiders or paints animals which come to life", weight: 1 },
+	{ value: "is known as the ${tc:religious_ranks} of ${tc:huntingmonster}", weight: 1 },
 	
   ],
 
@@ -6730,6 +6746,7 @@ trap_location: [
 	{ value: "in the eerie wilderness beyond the patrols of ${urbn_cityname}, ${a:leader_minion} ${leader_control} serve ${a:leader_adj} ${leader_power_adj} ${AnimalOrdinary}", weight: 5 },
 	{ value: "the spirit of ${po:vancian_wizards} second familiar, ${a:AnimalFamiliar}, haunts the ${local_domestic_spaces} of their first tower, long abandoned", weight: 1 },
 	{ value: "there's a cave that leads deep underground to a chamber with ${dungeon_mural_type} depicting ${dungeon_mural}", weight: 2 },
+	{ value: "${a:AnimalCanine} or ${AnimalBigCat} in human form can be detected by their clothes not getting wet in the rain, or so it is said", weight: 1 },
   ],
   
   
@@ -6883,7 +6900,6 @@ trap_location: [
     { value: "anaconda", weight: 1 },
     { value: "cottonmouth", weight: 1 },
 	{ value: "copperhead", weight: 1 },
-    { value: "boomslang", weight: 1 },
   ],
   
   AnimalPredator: [
@@ -8009,7 +8025,7 @@ trap_location: [
     { value: "livestock", weight: 1 },
     { value: "lumber", weight: 1 },
 	{ value: "cosmetics", weight: 1 },
-	{ value: "${MusicalInstrument}", weight: 1 },
+	{ value: "${MusicalInstrument}s", weight: 1 },
 	{ value: "sand", weight: 1 },
     { value: "feathers", weight: 1 },
     { value: "snow", weight: 1 },
@@ -10692,6 +10708,7 @@ ship_type: [
 	{ value: "Never is a Long, Long Time", weight: 1 },
 	{ value: "The Deeds of Finn Fell Ninefoe", weight: 1 },
 	{ value: "The Beggar Who Asked for Nothing", weight: 1 },
+	{ value: "What Remains of the Terrace of the Lions?", weight: 1 },
   ],
   
   
@@ -12079,6 +12096,7 @@ door_type: [
     { value: "an enchanted ${MusicalInstrument}", weight: 1 },
 	{ value: "deed and title to ${a:aristocratic_home} in the countryside", weight: 1 },
 	{ value: "the ${po:RoyalTitleMale} gratitude", weight: 1 },
+	{ value: "a basket of ${FantasyMeal_Vegetable_plural} with power to delight the soul", weight: 1 },
   ],
   
   hallucination: [
