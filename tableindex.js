@@ -83,6 +83,10 @@ const tables = {
 	{ value: " with its curious underground ${aristocratic_robbed_place_religious}", weight: 1 },
 	{ value: " where the people speak a language of whistles and hisses", weight: 1 },
 	{ value: " where all the seasons linger pleasantly together", weight: 1 },
+	{ value: " where they serve warm ${alcohol_liquor} which brings evil dreams", weight: 1 },
+	{ value: " where the trees, sea and moon awaken old dreams", weight: 1 },
+	{ value: " where they recite sutras over slain insects and bury them in the temple grounds", weight: 1 },
+	{ value: " where the nobles ride forth in pomp and ceremony to hunt fireflies", weight: 1 },
   ],
 
   herdwith: [
@@ -306,6 +310,8 @@ const tables = {
 	{ value: " who rode an enchanted ${AnimalMount} of ebony into battle against the daemons of the sky,", weight: 1 },
 	{ value: " who wore a living creature of dreadful countenance for a helmet,", weight: 1 },
 	{ value: " whose thanes quaffed from mead-cups on the mead-bench, their cries filling the mead-hall,", weight: 1 },
+	{ value: " who made bargains with powers terrestrial, celestial and infernal,", weight: 1 },
+	{ value: " whose true love was a lady in a tapestry named Bel-Imperia,", weight: 1 },
 	
   ],
 
@@ -1303,6 +1309,7 @@ const tables = {
 	{ value: "${a:magicalcommonobject} from the city of ${urbn_cityname} where the master craftsmen make only 4 or 5 in a lifetime", weight: 2 },
 	{ value: "a groach imprisoned in a leather bottle", weight: 1 },
 	{ value: "the shining ${Colors} feather of the Zhar-Ptitza Bird", weight: 1 },
+	{ value: "a pair of red ziggurat boots", weight: 1 },
   ],
 
   decade_event: [
@@ -2820,6 +2827,7 @@ const tables = {
 	{ value: "a herd of zebra whose striped coats are a map of ${random_dungeons}", weight: 1 },
 	{ value: "a ten-colored stone", weight: 1 },
 	{ value: "a globe of fire with a human face within it", weight: 1 },
+	{ value: "a pair of blue ziggurat boots", weight: 1 },
   ],
 
   island_sacred: [
@@ -2968,6 +2976,7 @@ const tables = {
 	{ value: "the Tower of Owls", weight: 1 },
 	{ value: "the Court of Birds", weight: 1 },
 	{ value: "the Inn of Holidays", weight: 1 },
+	{ value: "the Palace of the Dragon King", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -4984,6 +4993,7 @@ const tables = {
 	{ value: "the man with the longest beard and the woman with the longest hair rule jointly", weight: 1 },
 	{ value: "a tree is planted the same moment a man is born; thereafter, tree and man share the same soul", weight: 1 },
 	{ value: "children with the ${ancientpeople_singular} word for ${AnimalBaby} written on their forehead are protected from nightmares", weight: 1 },
+	{ value: "the sacred mysteries are so holy that no living soul can speak the rites of them; they are passed on after death to their progeny through a medium with the dead priest's spirit", weight: 1 },
   ],
 
   strangenoises: [
