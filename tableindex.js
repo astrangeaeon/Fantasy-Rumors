@@ -88,6 +88,7 @@ const tables = {
 	{ value: " where they recite sutras over slain insects and bury them in the temple grounds", weight: 1 },
 	{ value: " where the nobles ride forth in pomp and ceremony to hunt fireflies", weight: 1 },
 	{ value: " where the ${AnimalCanine} and ${AnimalBird} are despised for being the only two creatures not to weep at the death of ${larger_than_life}", weight: 2 },
+	{ value: " where the people have never seen mirrors and do not recognize themselves", weight: 1 },
   ],
 
   herdwith: [
@@ -317,6 +318,9 @@ const tables = {
 	{ value: " who spit upon ${a:daemontype} daemon, slaying it with holy saliva,", weight: 1 },
 	{ value: " who was condemned at the Second Council of Magic presided over by ${vancian_wizards} for murdering the second moon,", weight: 1 },
 	{ value: " who rode a giant ${AnimalBird} and disappeared into the sky,", weight: 1 },
+	{ value: " whose feet shone forth a pure and wonderful light made spiritually strong to crush down all daemons,", weight: 1 },
+	{ value: " who silenced the birds from singing their songs,", weight: 1 },
+	{ value: " who commanded the trees of ${foreignland} Forest to be still and wind has not rustled their leaves ever since,", weight: 1 },
 	
   ],
 
@@ -730,6 +734,7 @@ const tables = {
 	{ value: "the souls of flowers", weight: 1 },
 	{ value: "the teeth of saints and heroes", weight: 1 },
 	{ value: "the sigils of ancient discrowned gods", weight: 1 },
+	{ value: "dark crystals", weight: 1 },
   ],
 
   construction_help: [
@@ -10534,7 +10539,7 @@ ship_type: [
 	{ value: "with a cargo of ${duo_clothing_adj} ${flag_imperial_color} ${duo_clothing}, ${onedhundred} ${liquid_containers_large}s filled with ${liquid_cargo} and ${onedfive} dozen ${ship_cargo_container} of ${ship_merchandise_adj} ${magicalcommonobject_plural} ${ship_manufacturing_place}", weight: 1 },
 	{ value: "bearing ${onedfive} dozen ${ship_cargo_animal_type}s and a ${flag_condition} tapestry depicting ${painting_subject_matter}", weight: 1 },
 	{ value: "and eager ${ship_cargo_dockworker} are already unloading ${ship_cargo_container} of ${ship_merchandise_adj} ${Tools}s and ${MusicalInstrument}s ${ship_manufacturing_place} as well as ${ship_merchandise_fruit_adj} ${FantasyMeal_Fruit_plural} from the ${dwarfclanname} Clan orchards", weight: 1 },
-	{ value: "carrying a hundred ${ship_cargo_container} of ${ship_merchandise_adj} ${ship_cargo_toy_type}, popular with local ${humanoid_young}, a few dozen ${ship_cargo_novelty_type} and ${liquid_containers_large}s of ${alcohol_liquor} for the parents", weight: 1 },
+	{ value: "carrying a hundred ${ship_cargo_container} of ${ship_merchandise_adj} ${ship_cargo_toy_type}, popular with local ${humanoid_young}, a few dozen ${ship_cargo_novelty_type} and ${liquid_containers_large}s of ${alcohol_liquor} for the alehouses", weight: 1 },
 	{ value: "with neat ${ship_cargo_container} of meticulously labeled ${ship_cargo_expedition_type} from the successful ${FantasyLastName} Expedition to ${foreignland}${foreign_phrase} along with ${ship_cargo_wizard_type} that was found there as well", weight: 1 },
 	{ value: "with a hold full of ${ship_cargo_furniture_adj} ${ship_cargo_furniture_type} ${ship_manufacturing_place} and ${ship_cargo_container} of ${Jewels} and scrolls from the House of ${housething}", weight: 1 },
 	{ value: "bearing wounded ${violent_profession_plural} and opportunistic ${travelers}s from the wars in the ${CompassDirectionPrimary}", weight: 1 },
@@ -10595,6 +10600,7 @@ ship_type: [
 	{ value: "${a:undead_intangible} trapped in ${a:liquid_containers_personal}", weight: 1 },
 	{ value: "a miniature ${AnimalMagicMount} in a glass bottle from the collection of ${vancian_wizards}", weight: 1 },
 	{ value: "a chunk from a mountain of fire", weight: 1 },
+	{ value: "${a:MusicalInstrument} that supposedly belonged to ${vancian_wizards}", weight: 1 },
   ],
   
   ship_cargo_novelty_type: [
@@ -11468,6 +11474,7 @@ door_type: [
     { value: "protected by a squad of elite ${violent_profession_plural}, the best in the land", weight: 2 },
 	{ value: "protected by thirteen dwarfs in padded battle-jerkin", weight: 1 },
 	{ value: "protected by a child with a third eye and serious countenance", weight: 1 },
+	{ value: "protected by an immortal ${AnimalSimian} with the brain of ${a:classic_classes}, the result of an experiment by ${vancian_wizards}", weight: 2 },
   ],
   
   god_funeral_body: [
