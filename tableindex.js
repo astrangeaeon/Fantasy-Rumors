@@ -2495,6 +2495,8 @@ const tables = {
 	{ value: "harpies", weight: 1 },
 	{ value: "mermaids", weight: 1 },
 	{ value: "basilisks", weight: 1 },
+	{ value: "chimeras", weight: 1 },
+	{ value: "manticores", weight: 1 },
   ],
   
   huntingmonster_singular: [
@@ -2524,6 +2526,8 @@ const tables = {
 	{ value: "fairy", weight: 1 },
 	{ value: "wolf", weight: 1 },
 	{ value: "basilisk", weight: 1 },
+	{ value: "chimera", weight: 1 },
+	{ value: "manticore", weight: 1 },
   ],
 
   husband_adj: [
@@ -5094,6 +5098,7 @@ const tables = {
 	{ value: "a flower petal", weight: 1 },
     { value: "pollen", weight: 1 },
 	{ value: "a seashell", weight: 1 },
+	{ value: "a mushroom", weight: 1 },
   ],
 
   timeframe: [
@@ -5579,7 +5584,7 @@ trap_location: [
 	{ value: "in ${urbn_cityname}, there are two types of crime; those who commit the Crimes of the ${tc:AnimalPredator} are punished by ${punishment} while those who commit the Crimes of the ${tc:AnimalPest} are punished by ${punishment}", weight: 1 },
 	{ value: "the queen of ${urbn_cityname} has given birth to a baby girl with ${AnimalBigCat} claws for feet that speaks all the tongues of man and daemon", weight: 1 },
 	{ value: "a herald in the ${flag_color} of House ${FantasyLastName} has announced a gathering for bards and ${bard_titles}s of any school to compete in song for glory, gold, and the grand prize, ${mazeprize}", weight: 2 },
-	{ value: "a herald in the ${flag_color} of House ${FantasyLastName} has announced that their liege lord seeks the return of ${fetch_quest_object}, offering as a reward ${fetch_quest_reward}", weight: 3 },
+	{ value: "a herald in the ${flag_color} of House ${FantasyLastName} has announced that their liege lord desires the acquisition of ${fetch_quest_object}, offering as a reward ${fetch_quest_reward}", weight: 3 },
 	{ value: "the statue of the ${uc:statue_adj} ${statue_subject} in ${uc:CompassDirectionPrimary} Square near ${urbn_street_names} has been vandalized, supposedly as part of an initiation by ${humanoid_young} seeking to join the ${tc:AnimalVenomous} Gang", weight: 2 },
 	{ value: "visitors to ${urbn_cityname} who sample the famous ${FantasyMeal_Cooking} ${AnimalMain} meat or drink the ${alcohol_beer_adj} ${alcohol_beer} are likely to catch ${tc:diseases} Disease", weight: 1 },
 	{ value: "the ${aristocratic_home} of ${a:QuickNPCJobElite} was recently burgled, but only paintings depicting vegetables and weapons were stolen", weight: 1 },
@@ -12085,6 +12090,7 @@ door_type: [
 	{ value: "the village of ${village_names} which ${vancian_wizards} made vanish", weight: 1 },
 	{ value: "the Gate ${gates_suffix} torn up and carried away by ${flag_extra_humanoids_adj} giant", weight: 1 },
 	{ value: "a half-dozen ${AnimalSimian}s that escaped from the Royal Laboratory with the help of a radical druid", weight: 1 },
+	{ value: "one of the Living Treasures of Sultan Abdullah Abdullah: ${living_treasure}", weight: 2 },
   ],
   
   fetch_quest_reward: [
@@ -12390,6 +12396,33 @@ door_type: [
 	{ value: "leading a parade of ${humanoid_young} away from a vanquished city towards ${a:landscape_types_basic_singular}", weight: 1 },
 	{ value: "playing ${a:MusicalInstrument} deep underground before ${a:dungeon_mural_monster_primal} that slumbers", weight: 1 },
   ],
+  
+  living_treasure: [
+    { value: "two ${sword_property} blades, ${a:BladedWeapons_Sword} and ${a:BladedWeapons_Sword}, both forged from the same meterorite", weight: 1 },
+	{ value: "a herd of ${herd_adj} ${herdanimal}${herdwith}", weight: 1 },
+	{ value: "a domesticated ${living_treasure_monster} adorned with ${a:Metallic} ${duo_jewlery_singular}", weight: 1 },
+	{ value: "a pair of exotic blue ${AnimalBigCat}s who feed exclusively on ${humanoid} meat", weight: 1 },
+	{ value: "a mycelium spanning hundreds of acres which produces a large ${Colors} mushroom that ${actionbeyond}", weight: 1 },
+	{ value: "a colony of ${Metallic} blacksmith ants ruled by ${a:Jewel_singular} ant-queen that create intricate metalcraft", weight: 1 },
+	{ value: "a seldom seen ${flowers_singular} from ${foreignland} where they are gone now, plucked to extinction long ago by ${AnimalSimian}s in the Flower Crusades", weight: 1 },
+	{ value: "a bloodoak treant and its dryad, refugees from the thickets of ${slumberplace}, the last of their kind", weight: 1 },
+	{ value: "an intelligent talking ${AnimalDogBreed} known for its philosophical insights", weight: 1 },
+	{ value: "an ancient cyclops kept alive against its will through a repellant blend of machinery and sorcery", weight: 1 },
+	{ value: "a being of ${Colors} crystal from the ${Letters} Dimension, stranded here by ${vancian_wizards} long ago", weight: 1 },
+	{ value: "an animated ${broken_objects} with the brain of ${a:classic_classes}", weight: 1 },
+	{ value: "an enormous snail with an opalescent shell and a golden brain encased in crystal", weight: 1 },
+	{ value: "${a:AnimalWater} known to cast the nature spells of druids", weight: 1 },
+  ],
+  
+  living_treasure_monster: [
+    { value: "chimera", weight: 1 },
+	{ value: "hydra", weight: 1 },
+	{ value: "sea serpent", weight: 1 },
+	{ value: "minotaur", weight: 1 },
+	{ value: "manticore", weight: 1 },
+	{ value: "wyvern", weight: 1 },	
+  ],
+  
   
   //urbn subject single whose missingthing is trapped in missingthing place
   
