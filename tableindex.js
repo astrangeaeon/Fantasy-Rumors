@@ -378,6 +378,7 @@ const tables = {
     { value: "near death experiences", weight: 1 },
     { value: "opium", weight: 1 },
     { value: "spilling blood", weight: 1 },
+	{ value: "black honey", weight: 1 },
   ],
 
   allergy: [
@@ -2211,6 +2212,7 @@ const tables = {
 	{ value: "to seek ${wizard_things}", weight: 1 },
 	{ value: "to redeem the wretched people of ${foreignland} who have no clothes or culture and live in human nests", weight: 1 },
 	{ value: "to hide from ${creepyvillain}", weight: 1 },
+	{ value: "to seek one of the Living Treasures of Sultan Abdullah Abdullah: ${living_treasure}", weight: 1 },
   ],
 
   heroname: [
@@ -12412,6 +12414,22 @@ door_type: [
 	{ value: "an animated ${broken_objects} with the brain of ${a:classic_classes}", weight: 1 },
 	{ value: "an enormous snail with an opalescent shell and a golden brain encased in crystal", weight: 1 },
 	{ value: "${a:AnimalWater} known to cast the nature spells of druids", weight: 1 },
+	{ value: "a colossal ${AnimalBird} that feeds on giant apes and young dragons", weight: 1 },
+	{ value: "a lake-sized ${Colors} ooze filled with the skeletons of large fish which appear to swim within it", weight: 1 },
+	{ value: "the Clockwork King, built long ago by the gnomes of ${slumberplace} to serve as a just and perfect lord", weight: 1 },
+	{ value: "a golem made from ${golem_types} with the sign of ${a:SignetSymbol} burnt onto it, the mark of ${vancian_wizards}", weight: 1 },
+	{ value: "a vampiric ${humanoid} kept weakened but 'alive' by being fed the blood of rats and other vermin", weight: 1 },
+	{ value: "a hive of silent bees that seek the ashes of cremated ${humanoids} to produce an addictive black honey", weight: 1 },
+	{ value: "a child ghoul, said to be the same one cursed by Saint ${SaintName} to hunger but never grow ${historicalage}", weight: 1 },
+	{ value: "the chaffering skull of Saint ${SaintName}, denied their eternal reward through daemonic magicks", weight: 1 },
+	{ value: "a snowman granted life via a magical hat once owned by ${vancian_wizards}", weight: 1 },
+	{ value: "a unique species of microfauna found only in the tears of angels and visible with the aid of a magnifying device, with which they can be observed building a primitive civilization with multiple polities", weight: 1 },
+	{ value: "the massive living foot of a god", weight: 1 },
+	{ value: "a mischievous ${fairy_folk}, almost always invisible", weight: 1 },
+	{ value: "a sentient ${severe_weather} that answers to the name of ${FantasyName}", weight: 1 },
+	{ value: "a great ${Colors} dragon in an enchanted dream of ever-increasing accumulation", weight: 1 },
+	{ value: "a minor death from the Deck of Many Things that has been prevented from pursuing its victim for ${when}", weight: 1 },
+	{ value: "a giant toad with a small village of ${trap_builder} inside that live unaware of the outside world", weight: 1 },
   ],
   
   living_treasure_monster: [
