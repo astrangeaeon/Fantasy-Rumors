@@ -6759,6 +6759,7 @@ trap_location: [
 	{ value: "the spirit of ${po:vancian_wizards} second familiar, ${a:AnimalFamiliar}, haunts the ${local_domestic_spaces} of their first tower, long abandoned", weight: 1 },
 	{ value: "there's a cave that leads deep underground to a chamber with ${dungeon_mural_type} depicting ${dungeon_mural}", weight: 2 },
 	{ value: "${a:AnimalCanine} or ${AnimalBigCat} in human form can be detected by their clothes not getting wet in the rain, or so it is said", weight: 1 },
+	{ value: "there's a fancy ${flag_imperial_color}-hued tent that charges a few silver to enter and claims to have on display one of the Living Treasures of Sultan Abdullah Abdullah: ${living_treasure}", weight: 5 },
   ],
   
   
@@ -7260,6 +7261,19 @@ trap_location: [
 	{ value: "burrowers", weight: 1 },
 	{ value: "horned creatures", weight: 1 },
 	{ value: "horses", weight: 1 },
+  ],
+  
+  AnimalHorseType: [
+    { value: "stallion", weight: 1 },
+    { value: "colt", weight: 1 },
+    { value: "mare", weight: 1 },
+    { value: "nag", weight: 1 },
+    { value: "pony", weight: 1 },
+	{ value: "foal", weight: 1 },
+	{ value: "warhorse", weight: 1 },
+    { value: "jennet", weight: 1 },
+	{ value: "palfrey", weight: 1 },
+	{ value: "horse", weight: 1 },
   ],
 
   Colors: [
@@ -12430,6 +12444,19 @@ door_type: [
 	{ value: "a great ${Colors} dragon in an enchanted dream of ever-increasing accumulation", weight: 1 },
 	{ value: "a minor death from the Deck of Many Things that has been prevented from pursuing its victim for ${when}", weight: 1 },
 	{ value: "a giant toad with a small village of ${trap_builder} inside that live unaware of the outside world", weight: 1 },
+	{ value: "a family of mimics, the father a large ${liquid_containers_large}, the mother ${a:ship_cargo_container_singular} and the children ${a:liquid_containers_personal} and ${a:living_treasure_mimic_children}", weight: 1 },
+	{ value: "a talking ${AnimalHorseType} from the land of ${foreignland}${foreign_phrase}", weight: 1 },
+	{ value: "an intelligent and scarred septopus trained to fight with a different weapon in each tentacle", weight: 1 },
+	{ value: "the moving shadow of a peryton-like creature whose physical form resides in the ${Letters} Dimension", weight: 1 },
+	{ value: "a cast off reflection of ${vancian_wizards}, who remains trapped in a magic mirror", weight: 1 },
+	{ value: "a sentient melody that clearly inspiried the folk tune '${ballad_titles}'", weight: 1 },
+	{ value: "a species of ${Colors} light from a distant star that occupies a chamber of mirrors, terrified of mingling with other light", weight: 1 },
+	{ value: "a choir of songbirds that can sing '${ballad_titles}', '${ballad_titles}' and '${bespoke_ballad_titles}'", weight: 1 },
+	{ value: "a pink gas that swirls and eddies of its own volition", weight: 1 },
+	{ value: "a spider that creates imitations of the works of ${artists} in its webs", weight: 1 },
+	{ value: "a floating ${Colors} ${shapes3d} that only changes position when no one is looking and causes gold and ${Jewels} in its proximity to disappear", weight: 1 },
+	{ value: "a dog sphinx that tells strange jokes from the future and eats those who don't laugh", weight: 1 },
+	{ value: "${a:AnimalFarm} that when fed ${humanoid} hair shits ${Jewels}", weight: 1 },
   ],
   
   living_treasure_monster: [
@@ -12441,6 +12468,14 @@ door_type: [
 	{ value: "wyvern", weight: 1 },	
   ],
   
+  living_treasure_mimic_children: [
+    { value: "jewelry box", weight: 1 },
+	{ value: "hat box", weight: 1 },
+	{ value: "humidor", weight: 1 },
+	{ value: "safe", weight: 1 },
+	{ value: "toy chest", weight: 1 },
+	{ value: "music box", weight: 1 },	
+  ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
   
