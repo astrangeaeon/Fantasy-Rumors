@@ -89,6 +89,7 @@ const tables = {
 	{ value: " where the nobles ride forth in pomp and ceremony to hunt fireflies", weight: 1 },
 	{ value: " where the ${AnimalCanine} and ${AnimalBird} are despised for being the only two creatures not to weep at the death of ${larger_than_life}", weight: 2 },
 	{ value: " where the people have never seen mirrors and do not recognize themselves", weight: 1 },
+	{ value: " where those who die by the cold and snow become spirits who serve the lady of the snow", weight: 1 },
   ],
 
   herdwith: [
@@ -321,6 +322,8 @@ const tables = {
 	{ value: " whose feet shone forth a pure and wonderful light made spiritually strong to crush down all daemons,", weight: 1 },
 	{ value: " who silenced the birds from singing their songs,", weight: 1 },
 	{ value: " who commanded the trees of ${foreignland} Forest to be still and wind has not rustled their leaves ever since,", weight: 1 },
+	{ value: " who sat upon the ${tc:famous_thrones} Throne in old ${foreignland},", weight: 1 },
+	{ value: " who was blinded by seeing the goddess ${po:FantasyGodNameFemale} naked form but later grew new eyes,", weight: 1 },
 	
   ],
 
@@ -474,6 +477,8 @@ const tables = {
     { value: "those who cry ’kata-tartaroo! kata-tartaroo!’ hurl the innocent and wicked alike into Tartaros", weight: 1 },
     { value: "time stop, causing all things to succumb to eternal stillness", weight: 1 },
 	{ value: "the taverns will serve only cold meat pies and wine mixed with water", weight: 1 },
+	{ value: "the trees will bleed and cry out in anguish when cut, driving men mad", weight: 1 },
+	{ value: "the sleeping stone statues of cats awaken", weight: 1 },
   ],
 
   behind_mask: [
@@ -736,6 +741,7 @@ const tables = {
 	{ value: "the teeth of saints and heroes", weight: 1 },
 	{ value: "the sigils of ancient discrowned gods", weight: 1 },
 	{ value: "dark crystals", weight: 1 },
+	{ value: "the child-souls of dead flowers", weight: 1 },
   ],
 
   construction_help: [
@@ -1717,6 +1723,7 @@ const tables = {
 	{ value: "wine-soaked ram skins", weight: 1 },
 	{ value: "broken metal coins", weight: 1 },
 	{ value: "thin black worms", weight: 1 },
+	{ value: "pinches of incense that summon the souls of the absent", weight: 1 },
   ],
 
   excitingemployer: [
@@ -2072,6 +2079,7 @@ const tables = {
 	{ value: "pluck a swamp rose from the swamp garden of the Witch of ${coastal}", weight: 1 },
 	{ value: "go to the Lazaret of ${slumberplace} and kiss each leper there on the mouth", weight: 1 },
 	{ value: "tame ${a:AnimalMount} of ${elemntl_type}", weight: 1 },
+	{ value: "travel as a pilgrim to the ${shrine_type} that marks the place where ${shrine}", weight: 2 },
   ],
 
   geyserspray: [
@@ -2213,6 +2221,7 @@ const tables = {
 	{ value: "to redeem the wretched people of ${foreignland} who have no clothes or culture and live in human nests", weight: 1 },
 	{ value: "to hide from ${creepyvillain}", weight: 1 },
 	{ value: "to seek one of the Living Treasures of Sultan Abdullah Abdullah: ${living_treasure}", weight: 1 },
+	{ value: "to sit upon the ${tc:famous_thrones} Throne of ${foreign_adj}${foreignland} which was carried off by raiders from ${coastal} ${historicalage}", weight: 1 },
   ],
 
   heroname: [
@@ -2999,6 +3008,7 @@ const tables = {
 	{ value: "the Court of Birds", weight: 1 },
 	{ value: "the Inn of Holidays", weight: 1 },
 	{ value: "the Palace of the Dragon King", weight: 1 },
+	{ value: "the Garden of ${vancian_wizards}", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -3163,6 +3173,7 @@ const tables = {
 	{ value: "${FantasyName}, following a failed career as ${a:QuickNPCJob}, has been keeping company with ${criminals} of late", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPCJob}, will never ${mindaltering} again after having had a hallucination of ${hallucination} in their ${local_domestic_spaces}", weight: 1 },
 	{ value: "${ntc} was working as ${a:QuickNPCJob} in the village of ${village_names} before they found their destiny", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPCDescriptor} ${humanoid}, woke with a mysterious compulsion to ${geas} before the next full moon", weight: 2 },
   ],
   
   local_obtain_art: [
@@ -3239,6 +3250,8 @@ const tables = {
 	{ value: "feed on the poisonous flesh of mermaids and centaurs", weight: 1 },
 	{ value: "stain their lance and naked sword with blood", weight: 1 },
 	{ value: "reconstruct the Combine Empire, that strange and awful dream", weight: 1 },
+	{ value: "build a tea-house where the tea-girls flit like large brightly winged butterflies", weight: 1 },
+	{ value: "touch the sacred ${tc:famous_thrones} Throne of ${foreign_adj}${foreignland}, though it cost them their very life and soul", weight: 2 },
   ],
 
   local_racist: [
@@ -5307,6 +5320,7 @@ const tables = {
     { value: "the enchanted ${otherworld_names}", weight: 1 },
     { value: "${body_of_water}", weight: 1 },
 	{ value: "a desolate plain dotted with rusted ${rusted}", weight: 1 },
+	{ value: "the Garden of ${vancian_wizards}", weight: 1 },
   ],
   
   trap_pit: [
@@ -5482,6 +5496,7 @@ trap_location: [
 	{ value: "in ${a:DungeonRoom} on the ${floors} floor the living sword named ${sword_names}, an ancient ${BladedWeapons_Sword} that ${sword_desire} waits surrounded by a circle of ${Colors} flame", weight: 1 },
 	{ value: "there's ${a:necklace_type} ${obj_or_room} on the ${floors} floor that if torn from the neck and dashed to the ground will summon ${summon_item}", weight: 1 },
 	{ value: "there's ${a:Metallic} ring with ${a:Jewel_singular} hidden ${obj_or_room} on the ${floors} floor that if worn will trick creatures into believing the wearer to be the Lord of the ${tc:AnimalCategory}", weight: 1 },
+	{ value: "at the bottom of ${a:ship_cargo_container_singular} in ${a:DungeonRoom} on the ${floors} floor is ${a:FantasyMeal_Fruit} from the Garden of ${vancian_wizards}, that teaches one the tongue of ${AnimalCategory} if consumed", weight: 1 },
   ],
 
   treasureA: [
@@ -7147,6 +7162,7 @@ trap_location: [
 	{ value: "dinosaur", weight: 1 },
 	{ value: "sphinx", weight: 1 },
 	{ value: "manticore", weight: 1 },
+	{ value: "phoenix", weight: 1 },
   ],
   
   AnimalLeather: [
@@ -7274,6 +7290,23 @@ trap_location: [
     { value: "jennet", weight: 1 },
 	{ value: "palfrey", weight: 1 },
 	{ value: "horse", weight: 1 },
+  ],
+  
+  AnimalThroneType: [
+    { value: "lion", weight: 1 },
+    { value: "phoenix", weight: 1 },
+    { value: "dragon", weight: 1 },
+    { value: "serpent", weight: 1 },
+    { value: "peacock", weight: 1 },
+	{ value: "eagle", weight: 1 },
+	{ value: "crocodile", weight: 1 },
+    { value: "elephant", weight: 1 },
+	{ value: "hummingbird", weight: 1 },
+	{ value: "nightingale", weight: 1 },
+	{ value: "scorpion", weight: 1 },
+	{ value: "unicorn", weight: 1 },
+	{ value: "octopus", weight: 1 },
+	{ value: "manticore", weight: 1 },
   ],
 
   Colors: [
@@ -10944,6 +10977,7 @@ ship_type: [
     { value: "the 11-foot pole", weight: 1 },
 	{ value: "potent cosmetics", weight: 1 },
 	{ value: "a grease that can only be washed off with water ${exotic_water_provenance}", weight: 1 },
+	{ value: "dwarf-boots armed with kick-knives", weight: 1 },
   ],
   
   undead: [
@@ -11035,6 +11069,7 @@ door_type: [
 	{ value: "a neglected shrine to ${FantasyGods}", weight: 1 },
     { value: "${relic}", weight: 1 },
 	{ value: "the source of the strange noises that sound like ${strangenoises} heard throughout the dungeon", weight: 1 },
+	{ value: "the Garden of ${vancian_wizards}", weight: 1 },
   ],
   
   
@@ -12441,14 +12476,14 @@ door_type: [
 	{ value: "the massive living foot of a god", weight: 1 },
 	{ value: "a mischievous ${fairy_folk}, almost always invisible", weight: 1 },
 	{ value: "a sentient ${severe_weather} that answers to the name of ${FantasyName}", weight: 1 },
-	{ value: "a great ${Colors} dragon in an enchanted dream of ever-increasing accumulation", weight: 1 },
+	{ value: "a great ${Colors} dragon, weakened when its hoard was stolen long ago, in an enchanted dream of ever-increasing accumulation", weight: 1 },
 	{ value: "a minor death from the Deck of Many Things that has been prevented from pursuing its victim for ${when}", weight: 1 },
 	{ value: "a giant toad with a small village of ${trap_builder} inside that live unaware of the outside world", weight: 1 },
 	{ value: "a family of mimics, the father a large ${liquid_containers_large}, the mother ${a:ship_cargo_container_singular} and the children ${a:liquid_containers_personal} and ${a:living_treasure_mimic_children}", weight: 1 },
 	{ value: "a talking ${AnimalHorseType} from the land of ${foreignland}${foreign_phrase}", weight: 1 },
 	{ value: "an intelligent and scarred septopus trained to fight with a different weapon in each tentacle", weight: 1 },
 	{ value: "the moving shadow of a peryton-like creature whose physical form resides in the ${Letters} Dimension", weight: 1 },
-	{ value: "a cast off reflection of ${vancian_wizards}, who remains trapped in a magic mirror", weight: 1 },
+	{ value: "a cast off reflection of ${vancian_wizards}, who remains trapped in an enchanted ${Jewel_singular} mirror", weight: 1 },
 	{ value: "a sentient melody that clearly inspiried the folk tune '${ballad_titles}'", weight: 1 },
 	{ value: "a species of ${Colors} light from a distant star that occupies a chamber of mirrors, terrified of mingling with other light", weight: 1 },
 	{ value: "a choir of songbirds that can sing '${ballad_titles}', '${ballad_titles}' and '${bespoke_ballad_titles}'", weight: 1 },
@@ -12475,6 +12510,18 @@ door_type: [
 	{ value: "safe", weight: 1 },
 	{ value: "toy chest", weight: 1 },
 	{ value: "music box", weight: 1 },	
+  ],
+  
+  famous_thrones: [
+    { value: "sun", weight: 1 },
+	{ value: "moon", weight: 1 },
+	{ value: "star", weight: 1 },
+	{ value: "sky", weight: 1 },
+	{ value: "${Metallic}", weight: 2 },
+	{ value: "${Jewel_singular}", weight: 2 },
+    { value: "${AnimalThroneType}", weight: 2 },
+	{ value: "${flowers_singular}", weight: 2 },
+	{ value: "cloud", weight: 1 },	
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
