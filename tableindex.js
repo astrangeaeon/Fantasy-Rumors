@@ -324,6 +324,9 @@ const tables = {
 	{ value: " who commanded the trees of ${foreignland} Forest to be still and wind has not rustled their leaves ever since,", weight: 1 },
 	{ value: " who sat upon the ${tc:famous_thrones} Throne in old ${foreignland},", weight: 1 },
 	{ value: " who was blinded by seeing the goddess ${po:FantasyGodNameFemale} naked form but later grew new eyes,", weight: 1 },
+	{ value: " who the face of God looked upon with kindness,", weight: 1 },
+	{ value: " who knew everything that the sea contained,", weight: 1 },
+	{ value: " who crossed the Celestial River in flood,", weight: 1 },
 	
   ],
 
@@ -569,6 +572,7 @@ const tables = {
     { value: "teeth", weight: 1 },
     { value: "tongue", weight: 1 },
     { value: "thumbs", weight: 1 },
+	{ value: "kidney", weight: 1 },
   ],
   
    body_part_plural: [
@@ -589,6 +593,7 @@ const tables = {
     { value: "teeth", weight: 1 },
     { value: "tongues", weight: 1 },
     { value: "thumbs", weight: 1 },
+	{ value: "kidneys", weight: 1 },
   ],
 
   brigandnames: [
@@ -611,6 +616,7 @@ const tables = {
     { value: "the Valkyries", weight: 1 },
 	{ value: "the Soldiers of Misfortune", weight: 1 },
 	{ value: "the Bright Swords", weight: 1 },
+	{ value: "the Clean Hands Gang", weight: 1 },
   ],
 
   buryingplace: [
@@ -715,7 +721,7 @@ const tables = {
     { value: "lucky charms", weight: 1 },
     { value: "old-fashioned toys that modern children despise", weight: 1 },
     { value: "placentas and still-born fetuses", weight: 1 },
-    { value: "perfumed coins from ${foreignland}", weight: 1 },
+    { value: "perfumed wooden coins from ${foreignland}", weight: 1 },
     { value: "pornographic illustrations", weight: 1 },
     { value: "ritual daggers that have tasted blood", weight: 1 },
     { value: "rocks from outer space", weight: 1 },
@@ -1053,6 +1059,7 @@ const tables = {
     { value: "Zallen, the ${uc:AnimalMain} of ${urbn_cityname}", weight: 1 },
 	{ value: "Yurt, the Silent Chief", weight: 1 },
 	{ value: "Raitaro, the Child of Thunder", weight: 1 },
+	{ value: "Karibou, the Lady of the Snow", weight: 1 },
   ],
 
   ntc: [
@@ -1633,6 +1640,7 @@ const tables = {
     { value: "we will lose our immunity to the virus whose side effect is happiness", weight: 1 },
 	{ value: "${historybuild} will return to aid mankind once again", weight: 1 },
 	{ value: "the seas will lose their hungry-toothed song and wolfish desire", weight: 1 },
+	{ value: "the Palace of the Moon where thirty monarchs rule, fifteen in robes of white and fifteen in robes of black, will at last bring good government to the earth below", weight: 1 },
   ],
 
   exchangething: [
@@ -1724,6 +1732,8 @@ const tables = {
 	{ value: "broken metal coins", weight: 1 },
 	{ value: "thin black worms", weight: 1 },
 	{ value: "pinches of incense that summon the souls of the absent", weight: 1 },
+	{ value: "black-spore poison", weight: 1 },
+	{ value: "dragon's water (the piss of dragons)", weight: 1 },
   ],
 
   excitingemployer: [
@@ -1751,6 +1761,7 @@ const tables = {
     { value: "with the ${huntingmonster} who dwell beneath the sands of the plateau", weight: 2 },
     { value: "on a barge pulled by swimming ${herdanimal}", weight: 1 },
     { value: "in a dangerous palace known as Parents Forget Their Children", weight: 1 },
+	{ value: "on a beach of golden sand and silver pebbles", weight: 1 },
   ],
 
   facial_desc: [
@@ -1796,6 +1807,7 @@ const tables = {
 	{ value: "covered in ${AnimalInsect}s", weight: 1 },
 	{ value: "holding a bullwhip made from ${AnimalLeather} leather and studded with hard ${Jewels}", weight: 1 },
 	{ value: "whose eyes were stung by ${a:AnimalInsectStinging}", weight: 1 },
+	{ value: "wearing a splendid cloak made from the skins of blue monkeys", weight: 1 },
   ],
 
   fd: [
@@ -1904,6 +1916,8 @@ const tables = {
 	{ value: "a bronze leopard that eats faces and a necromancer who raises faceless zombies", weight: 1 },
 	{ value: "a maiden so beautiful they say God with his bare hands made her", weight: 1 },
 	{ value: "jellyfish that used to have shells and how they lost them", weight: 1 },
+	{ value: "ghouls of three year old children that survive by eating the ${body_part_plural} of the dead", weight: 1 },
+	{ value: "a court painter who painted ${a:AnimalBigCat} that escaped from the canvas and caused havoc in the palace gardens", weight: 1 },
   ],
 
   feature: [
@@ -3130,6 +3144,7 @@ const tables = {
 	{ value: "dragon torches", weight: 1 },
 	{ value: "the lamp of Boddhi", weight: 1 },
 	{ value: "blazing ${Colors} fireflies", weight: 1 },
+	{ value: "the bright golden eyes of the sun goddess", weight: 1 },
   ],
 
   Local: [
@@ -3252,6 +3267,7 @@ const tables = {
 	{ value: "reconstruct the Combine Empire, that strange and awful dream", weight: 1 },
 	{ value: "build a tea-house where the tea-girls flit like large brightly winged butterflies", weight: 1 },
 	{ value: "touch the sacred ${tc:famous_thrones} Throne of ${foreign_adj}${foreignland}, though it cost them their very life and soul", weight: 2 },
+	{ value: "take a harpy as a lover", weight: 1 },
   ],
 
   local_racist: [
@@ -3397,6 +3413,8 @@ const tables = {
     { value: "the treasure-chamber of Rhampsinites", weight: 1 },
     { value: "time vortexes", weight: 1 },
     { value: "what happened to all the ${missingthings}", weight: 1 },
+	{ value: "why the wells in the neighboring village of ${village_names} are square", weight: 1 },
+	{ value: "the ship of death that comes to gather souls", weight: 1 },
   ],
 
   lucrativecareer: [
@@ -3631,6 +3649,9 @@ const tables = {
 	{ value: "${a:magicalcommonobject} that can impregnate the living and resurrect the dead", weight: 1 },
 	{ value: "${a:BladedWeapons_Sword} made of gold with a jeweled scabbard", weight: 1 },
 	{ value: "a spellbook that once belonged to ${vancian_wizards}", weight: 1 },
+	{ value: "${a:magicalcommonobject} that returns life to men four days dead", weight: 1 },
+	{ value: "an inexhaustible purse full of copper ${coins}", weight: 1 },
+	{ value: "a secret key to the treasure vault of the ${po:ancientpeople} gods", weight: 1 },
   ],
 
   membership: [
@@ -5029,6 +5050,7 @@ const tables = {
 	{ value: "a tree is planted the same moment a man is born; thereafter, tree and man share the same soul", weight: 1 },
 	{ value: "children with the ${ancientpeople_singular} word for ${AnimalBaby} written on their forehead are protected from nightmares", weight: 1 },
 	{ value: "the sacred mysteries are so holy that no living soul can speak the rites of them; they are passed on after death to their progeny through a medium with the dead priest's spirit", weight: 1 },
+	{ value: "the painters are so in tune with their creations that if a sword were to sever the brush mid-stroke, it would bleed", weight: 1 },
   ],
 
   strangenoises: [
@@ -5274,6 +5296,7 @@ const tables = {
 	{ value: "a red cockatrice", weight: 1 },
 	{ value: "a bridge of green and blue serpents created by a god", weight: 1 },
 	{ value: "a small white dragon", weight: 1 },
+	{ value: "dangerous invisible rays", weight: 1 },
   ],
   
   
@@ -6043,6 +6066,7 @@ trap_location: [
 	{ value: "two djinn called, respectively, Al-Ra’ad al-Kasif (“Ear-deafening Thunder”) and Abú al-Sa’ádát (“the Father of Prosperities”)", weight: 1 },
 	{ value: "men on desperate errands", weight: 1 },
 	{ value: "a lady knight and her pet hound", weight: 1 },
+	{ value: "the sons and daughters of Saint ${SaintName}", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -7652,6 +7676,8 @@ trap_location: [
 	{ value: ", the ${FamilyMember} of ${ntc}", weight: 1 },
 	{ value: ", who taught men ${FantasyGodExtraTaught} and later regretted it", weight: 1 },
 	{ value: ", depicted as ${a:AnimalTrophy} in religious art for obscure reasons", weight: 1 },
+	{ value: ", accompanied always by ${a:AnimalBigCat} and ${a:AnimalCanine}", weight: 1 },
+	{ value: ", who wears a jeweled ${BladedWeapons_Sword} scabbard", weight: 1 },
   ],
   
    FantasyGodExtraTaught: [
@@ -8456,6 +8482,7 @@ trap_location: [
     { value: "the Peregrine's Wing", weight: 1 },
 	{ value: "the Imperial ${uc:numinous_feeling}", weight: 3 },
     { value: "the ${uc:Colors} ${uc:AnimalBird}", weight: 3 },
+	{ value: "the Luminous Maiden", weight: 1 },
   ],
 
   Smells: [
@@ -8762,6 +8789,7 @@ inherited_traits: [
 	{ value: "all share the missing finger that was bitten off their ancestor's hand by a primal ${AnimalMain}", weight: 1 },
 	{ value: "all cast the strange shadows of ${huntingmonster}", weight: 1 },
 	{ value: "have sensitive skin that ${light_impact} when exposed to ${light_type} due to an ancestor's slight", weight: 2 },
+	{ value: "have little mouths inside of bigger mouths", weight: 1 },
   ],
 
 tail_type: [
@@ -10102,6 +10130,8 @@ celebration_type: [
 	{ value: "of Iron Books", weight: 1 },
 	{ value: "of Weighing Scales", weight: 1 },
 	{ value: "of Roses", weight: 1 },
+	{ value: "of Metal Boxes", weight: 1 },
+	{ value: "of Flowers", weight: 1 },
   ],
   
     taboo: [
@@ -11896,6 +11926,7 @@ door_type: [
 	{ value: "${heroes_and_villains} rang the Bells of Kwalish to bring their companion back from the ${underworld_names}", weight: 1 },
 	{ value: "${heroes_and_villains} traded their ${body_part} to ${a:AnimalCanine} for knowledge of ${knowledgething}", weight: 1 },
 	{ value: "${heroes_and_villains} ${prophetic_mourning_verb} the slain body of their lover, ${ntc}", weight: 1 },
+	{ value: "${heroes_and_villains} tamed the ${AnimalPredator} by playing '${ballad_titles}' on their ${MusicalInstrument}", weight: 1 },
   ],
   
   shrine_type: [
@@ -12492,6 +12523,7 @@ door_type: [
 	{ value: "a floating ${Colors} ${shapes3d} that only changes position when no one is looking and causes gold and ${Jewels} in its proximity to disappear", weight: 1 },
 	{ value: "a dog sphinx that tells strange jokes from the future and eats those who don't laugh", weight: 1 },
 	{ value: "${a:AnimalFarm} that when fed ${humanoid} hair shits ${Jewels}", weight: 1 },
+	{ value: "one of the ${monster_hybrid} abominations created by Hector the Pest for the Nightsoil Queen", weight: 1 },
   ],
   
   living_treasure_monster: [
