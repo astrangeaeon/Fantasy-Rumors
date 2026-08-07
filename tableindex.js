@@ -327,6 +327,7 @@ const tables = {
 	{ value: " who the face of God looked upon with kindness,", weight: 1 },
 	{ value: " who knew everything that the sea contained,", weight: 1 },
 	{ value: " who crossed the Celestial River in flood,", weight: 1 },
+	{ value: " the delighter of all mankind,", weight: 1 },
 	
   ],
 
