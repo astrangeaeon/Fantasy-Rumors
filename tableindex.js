@@ -1335,6 +1335,9 @@ const tables = {
 	{ value: "a groach imprisoned in a leather bottle", weight: 1 },
 	{ value: "the shining ${Colors} feather of the Zhar-Ptitza Bird", weight: 1 },
 	{ value: "a pair of red ziggurat boots", weight: 1 },
+	{ value: "a witch's ${Weapons}", weight: 1 },
+	{ value: "Prince Axum's cataphract", weight: 1 },
+	{ value: "a belt of fire that produces light-obscuring smoke", weight: 1 },
   ],
 
   decade_event: [
@@ -2214,6 +2217,7 @@ const tables = {
 	{ value: "succeeded; but later they ate a cursed sandwich that transformed them into a drawing of ${a:huntingmonster_singular}", weight: 1 },
 	{ value: "their face now lives in a globe of fire upon a distant island", weight: 1 },
 	{ value: "was transformed into ${a:AnimalBird} for their trouble", weight: 1 },
+	{ value: "now mines the light used to build ${ship_cargo_furniture_type} and ${duo_clothing} for the beings in the ${otherworld_names}", weight: 1 },
   ],
 
   hero_goal: [
@@ -2237,6 +2241,7 @@ const tables = {
 	{ value: "to hide from ${creepyvillain}", weight: 1 },
 	{ value: "to seek one of the Living Treasures of Sultan Abdullah Abdullah: ${living_treasure}", weight: 1 },
 	{ value: "to sit upon the ${tc:famous_thrones} Throne of ${foreign_adj}${foreignland} which was carried off by raiders from ${coastal} ${historicalage}", weight: 1 },
+	{ value: "to find a face which has done no wrong", weight: 1 },
   ],
 
   heroname: [
@@ -2944,6 +2949,7 @@ const tables = {
 	{ value: "diseases that infect the dead", weight: 1 },
 	{ value: "the knowledge of good trees and bad trees", weight: 1 },
 	{ value: "the Red Island of Sargyll", weight: 1 },
+	{ value: "the cliff-dwellers who live at the edge of the world", weight: 1 },
   ],
 
   landmark: [
@@ -3190,6 +3196,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPCJob}, will never ${mindaltering} again after having had a hallucination of ${hallucination} in their ${local_domestic_spaces}", weight: 1 },
 	{ value: "${ntc} was working as ${a:QuickNPCJob} in the village of ${village_names} before they found their destiny", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPCDescriptor} ${humanoid}, woke with a mysterious compulsion to ${geas} before the next full moon", weight: 2 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, returned from the ${tc:Colors} Market of ${urbn_cityname} where they barter ${exchangething} and ${exchangething} and other such commodities with ${relic}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -3388,6 +3395,7 @@ const tables = {
 	{ value: "the dogs have gone mute and refuse to bark", weight: 1 },
 	{ value: "the Princess who Makes the Flowers of the Trees to Blossom has arrived in town", weight: 1 },
 	{ value: "a farmer's prize ${AnimalFarm} has been stolen by a river goblin", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, grew suddenly ill; through good leeches he was healed and saved", weight: 1 },
   ],
 
   localtopic: [
@@ -6207,6 +6215,7 @@ trap_location: [
 	{ value: "${a:humanoid}, legless, wearing a bag-like garment, with a scowling face and no eyelids", weight: 1 },
 	{ value: "a time-battered grey vagabond", weight: 1 },
 	{ value: "a giantess in her bridal gown", weight: 1 },
+	{ value: "a young woman with snake-musk coated hands", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -8791,6 +8800,7 @@ inherited_traits: [
 	{ value: "all cast the strange shadows of ${huntingmonster}", weight: 1 },
 	{ value: "have sensitive skin that ${light_impact} when exposed to ${light_type} due to an ancestor's slight", weight: 2 },
 	{ value: "have little mouths inside of bigger mouths", weight: 1 },
+	{ value: "have small ${Colors} feathers instead of hair", weight: 1 },
   ],
 
 tail_type: [
@@ -9809,6 +9819,7 @@ celebration_type: [
 	{ value: " painted with a design of ${flag_extra_humanoids_adj} ${fairy_folk}", weight: 1 },
 	{ value: " with ${rune} carved on it,", weight: 1 },
 	{ value: " with a map leading to ${treasure_map} scratched into the back", weight: 1 },
+	{ value: " that changes form with the phases of the moon", weight: 1 },
   ],
   
    shield_type: [
