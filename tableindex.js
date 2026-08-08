@@ -328,6 +328,7 @@ const tables = {
 	{ value: " who knew everything that the sea contained,", weight: 1 },
 	{ value: " who crossed the Celestial River in flood,", weight: 1 },
 	{ value: " the delighter of all mankind,", weight: 1 },
+	{ value: " who when the battle-fury was upon them, knew not friend from foe,", weight: 1 },
 	
   ],
 
@@ -749,6 +750,8 @@ const tables = {
 	{ value: "the sigils of ancient discrowned gods", weight: 1 },
 	{ value: "dark crystals", weight: 1 },
 	{ value: "the child-souls of dead flowers", weight: 1 },
+	{ value: "the heart's blood of ${a:dungeon_mural_monster_primal}", weight: 1 },
+	{ value: "eye-witness accounts of miracles performed by daemons", weight: 1 },
   ],
 
   construction_help: [
@@ -1338,6 +1341,8 @@ const tables = {
 	{ value: "a witch's ${Weapons}", weight: 1 },
 	{ value: "Prince Axum's cataphract", weight: 1 },
 	{ value: "a belt of fire that produces light-obscuring smoke", weight: 1 },
+	{ value: "${a:Weapons} made of plastic", weight: 1 },
+	{ value: "a spear dipped in a cauldron of noxious poison created through sorcery and the blood of dogs, cats and druids", weight: 1 },
   ],
 
   decade_event: [
@@ -1738,6 +1743,8 @@ const tables = {
 	{ value: "pinches of incense that summon the souls of the absent", weight: 1 },
 	{ value: "black-spore poison", weight: 1 },
 	{ value: "dragon's water (the piss of dragons)", weight: 1 },
+	{ value: "the livers of live foxes", weight: 1 },
+	{ value: "goblin bread", weight: 1 },
   ],
 
   excitingemployer: [
@@ -1812,6 +1819,7 @@ const tables = {
 	{ value: "holding a bullwhip made from ${AnimalLeather} leather and studded with hard ${Jewels}", weight: 1 },
 	{ value: "whose eyes were stung by ${a:AnimalInsectStinging}", weight: 1 },
 	{ value: "wearing a splendid cloak made from the skins of blue monkeys", weight: 1 },
+	{ value: "daubed with ${Colors} war-paint", weight: 1 },
   ],
 
   fd: [
@@ -1922,6 +1930,7 @@ const tables = {
 	{ value: "jellyfish that used to have shells and how they lost them", weight: 1 },
 	{ value: "ghouls of three year old children that survive by eating the ${body_part_plural} of the dead", weight: 1 },
 	{ value: "a court painter who painted ${a:AnimalBigCat} that escaped from the canvas and caused havoc in the palace gardens", weight: 1 },
+	{ value: "${a:HaftedWeapons} so hot it must be kept in ice so the city won't melt down from its fiery heat", weight: 1 },
   ],
 
   feature: [
@@ -2098,6 +2107,7 @@ const tables = {
 	{ value: "go to the Lazaret of ${slumberplace} and kiss each leper there on the mouth", weight: 1 },
 	{ value: "tame ${a:AnimalMount} of ${elemntl_type}", weight: 1 },
 	{ value: "travel as a pilgrim to the ${shrine_type} that marks the place where ${shrine}", weight: 2 },
+	{ value: "open the Great Door in ${slumberplace} made from the bones of two beasts, the serpent Papagast and the fish Orteniaus", weight: 1 },
   ],
 
   geyserspray: [
@@ -2218,6 +2228,7 @@ const tables = {
 	{ value: "their face now lives in a globe of fire upon a distant island", weight: 1 },
 	{ value: "was transformed into ${a:AnimalBird} for their trouble", weight: 1 },
 	{ value: "now mines the light used to build ${ship_cargo_furniture_type} and ${duo_clothing} for the beings in the ${otherworld_names}", weight: 1 },
+	{ value: "was seen no more after eating goblin bread with a hobbit executioner", weight: 1 },
   ],
 
   hero_goal: [
@@ -2950,6 +2961,7 @@ const tables = {
 	{ value: "the knowledge of good trees and bad trees", weight: 1 },
 	{ value: "the Red Island of Sargyll", weight: 1 },
 	{ value: "the cliff-dwellers who live at the edge of the world", weight: 1 },
+	{ value: "how it is that Tara could be seen from Aicill but Aicill could not be seen from Tara", weight: 1 },
   ],
 
   landmark: [
@@ -3276,6 +3288,7 @@ const tables = {
 	{ value: "build a tea-house where the tea-girls flit like large brightly winged butterflies", weight: 1 },
 	{ value: "touch the sacred ${tc:famous_thrones} Throne of ${foreign_adj}${foreignland}, though it cost them their very life and soul", weight: 2 },
 	{ value: "take a harpy as a lover", weight: 1 },
+	{ value: "dress their ${AnimalFarm}s in matching ${Colors} ${duo_clothing}", weight: 2 },
   ],
 
   local_racist: [
@@ -4263,7 +4276,7 @@ const tables = {
     { value: "Kalendar of Filocalus", weight: 1 },
     { value: "Mask of Gorgon", weight: 1 },
     { value: "mummified hand of Vibx which still wears the Rings of Saturnus", weight: 1 },
-    { value: "Platohedron", weight: 1 },
+    { value: "Platohedron of the ${tc:CompassDirectionPrimary}", weight: 1 },
     { value: "quiver holding the deadly arrows of the disease goddess Eresh’kigal", weight: 1 },
     { value: "Rektangel", weight: 1 },
     { value: "Scimitar of Abdullah Abdullah", weight: 1 },
@@ -4762,6 +4775,7 @@ const tables = {
     { value: "the repeating crossbow used to assassinate Empress Moliko the Balance", weight: 1 },
     { value: "the sacred rites of ${RealGods} written on ivory in silver ink", weight: 1 },
     { value: "their life savings", weight: 1 },
+	{ value: "${a:Weapons} that was brought to the court of King ${FantasyNameMale} by a strange damsel", weight: 1 },
   ],
 
   shapes: [
@@ -4942,7 +4956,7 @@ const tables = {
 	{ value: "a medallion of the ram-headed criosphinx Subbiluliuma", weight: 1 },
 	{ value: "a simple ${crowns_metal_type} whistle that makes no sound, no matter how hard they blew it", weight: 1 },
 	{ value: "a golden ${AnimalMain}", weight: 1 },
-	{ value: "an old ${crowns_metal_type} ${coins} with the ancient King ${FantasyNameMale} on the obverse and ${a:magicalcommonobject} on the reverse", weight: 1 },
+	{ value: "an old ${crowns_metal_type} ${coins_singular} with the ancient King ${FantasyNameMale} on the obverse and ${a:magicalcommonobject} on the reverse", weight: 1 },
 	{ value: "a magic ring that can transport the wearer to the nearest Burger King", weight: 1 },
 	{ value: "a manual for ${monster_manual_verb} ${huntingmonster}", weight: 1 },
 	{ value: "${a:former_object} matching the description of the one belonging to ${former_owner}${former_owner_extra}", weight: 5 },
@@ -6439,6 +6453,9 @@ trap_location: [
 	{ value: "recently came into possession of a scroll that will make all the dogs in a 50 mile radius start to bark", weight: 1 },
 	{ value: "embroiders or paints animals which come to life", weight: 1 },
 	{ value: "is known as the ${tc:religious_ranks} of ${tc:huntingmonster}", weight: 1 },
+	{ value: "prophesies a new kind of warfare, where men fight one another with ${symbols}, not swords", weight: 1 },
+	{ value: "preaches to sad hearts the secret of regaining joy and gladness", weight: 1 },
+	{ value: "believes in a patriarchal thunder-hurling pantheon", weight: 1 },
 	
   ],
 
@@ -6809,6 +6826,9 @@ trap_location: [
 	{ value: "there's a cave that leads deep underground to a chamber with ${dungeon_mural_type} depicting ${dungeon_mural}", weight: 2 },
 	{ value: "${a:AnimalCanine} or ${AnimalBigCat} in human form can be detected by their clothes not getting wet in the rain, or so it is said", weight: 1 },
 	{ value: "there's a fancy ${flag_imperial_color}-hued tent that charges a few silver to enter and claims to have on display one of the Living Treasures of Sultan Abdullah Abdullah: ${living_treasure}", weight: 5 },
+	{ value: "a ${flag_pattern} ${flag_basic_color} and black hot air balloon with ${flag_extra_humanoids_adj} ${humanoid} and ${a:AnimalMammal} in the basket was seen floating above ${landmark}", weight: 2 },
+	{ value: "the smell of ${Smells} will supposedly put ${a:WeirdFantasyMonster} to flight, or else drive it berserk, depending on the source", weight: 1 },
+	{ value: "an underwater ${AnimalBigCat} has made its home beneath ${body_of_water}", weight: 1 },
   ],
   
   
@@ -11279,6 +11299,23 @@ door_type: [
 	{ value: "bezants", weight: 1 },
   ],
   
+  coins_singular: [
+	{ value: "obol", weight: 1 },
+	{ value: "penny", weight: 1 },
+    { value: "centime", weight: 1 },
+    { value: "groat", weight: 1 },
+	{ value: "florin", weight: 1 },
+	{ value: "tanner", weight: 1 },
+	{ value: "drachma", weight: 1 },
+	{ value: "shekel", weight: 1 },
+	{ value: "stater", weight: 1 },
+	{ value: "trite", weight: 1 },
+	{ value: "litra", weight: 1 },
+	{ value: "rupee", weight: 1 },
+	{ value: "crown", weight: 1 },
+	{ value: "bezant", weight: 1 },
+  ],
+  
   coins_exotic: [
 	{ value: "knife money", weight: 1 },
 	{ value: "animal money", weight: 1 },
@@ -12204,6 +12241,7 @@ door_type: [
 	{ value: "deed and title to ${a:aristocratic_home} in the countryside", weight: 1 },
 	{ value: "the ${po:RoyalTitleMale} gratitude", weight: 1 },
 	{ value: "a basket of ${FantasyMeal_Vegetable_plural} with power to delight the soul", weight: 1 },
+	{ value: "five measures of wine and a thousand copper cash worth of fish", weight: 1 },
   ],
   
   hallucination: [
