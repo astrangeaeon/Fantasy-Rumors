@@ -90,6 +90,7 @@ const tables = {
 	{ value: " where the ${AnimalCanine} and ${AnimalBird} are despised for being the only two creatures not to weep at the death of ${larger_than_life}", weight: 2 },
 	{ value: " where the people have never seen mirrors and do not recognize themselves", weight: 1 },
 	{ value: " where those who die by the cold and snow become spirits who serve the lady of the snow", weight: 1 },
+	{ value: " with its landscape silent and godless", weight: 1 },
   ],
 
   herdwith: [
@@ -1745,6 +1746,7 @@ const tables = {
 	{ value: "dragon's water (the piss of dragons)", weight: 1 },
 	{ value: "the livers of live foxes", weight: 1 },
 	{ value: "goblin bread", weight: 1 },
+	{ value: "the undecaying grey vomit of sphinxes", weight: 1 },
   ],
 
   excitingemployer: [
@@ -2229,6 +2231,8 @@ const tables = {
 	{ value: "was transformed into ${a:AnimalBird} for their trouble", weight: 1 },
 	{ value: "now mines the light used to build ${ship_cargo_furniture_type} and ${duo_clothing} for the beings in the ${otherworld_names}", weight: 1 },
 	{ value: "was seen no more after eating goblin bread with a hobbit executioner", weight: 1 },
+	{ value: "was paralyzed by a slithering thing", weight: 1 },
+	{ value: "died, struck blind by unicorns", weight: 1 },
   ],
 
   hero_goal: [
@@ -2849,6 +2853,7 @@ const tables = {
 	{ value: "sharks who weep ${Jewel_singular} tears", weight: 1 },
 	{ value: "creatures with unreassuring teeth and claws", weight: 1 },
 	{ value: "angels men complain of that kill whatever they come upon", weight: 1 },
+	{ value: "ferocious sea-dragons frightened by the sight of blood", weight: 1 },
   ],
 
   island_riches: [
@@ -3289,6 +3294,7 @@ const tables = {
 	{ value: "touch the sacred ${tc:famous_thrones} Throne of ${foreign_adj}${foreignland}, though it cost them their very life and soul", weight: 2 },
 	{ value: "take a harpy as a lover", weight: 1 },
 	{ value: "dress their ${AnimalFarm}s in matching ${Colors} ${duo_clothing}", weight: 2 },
+	{ value: "sample the mysteries and delights of the keen keengs who live in a cave with their flame god", weight: 1 },
   ],
 
   local_racist: [
@@ -3674,6 +3680,7 @@ const tables = {
 	{ value: "${a:magicalcommonobject} that returns life to men four days dead", weight: 1 },
 	{ value: "an inexhaustible purse full of copper ${coins}", weight: 1 },
 	{ value: "a secret key to the treasure vault of the ${po:ancientpeople} gods", weight: 1 },
+	{ value: "a digging bone sacred to ${island_sacred}", weight: 1 },
   ],
 
   membership: [
@@ -3747,6 +3754,7 @@ const tables = {
 	{ value: "the river of elf blood that runs beneath the world", weight: 1 },
 	{ value: "${a:lair_synonyms} of eyeless subterranean vampires", weight: 1 },
 	{ value: "a lake of dragon water not meant for mortal eyes", weight: 1 },
+	{ value: "a subterranean ${severe_weather}", weight: 1 },
   ],
 
   mirage: [
@@ -3835,6 +3843,7 @@ const tables = {
     { value: "${a:WeirdFantasyMonster}", weight: 1 },
 	{ value: "${DemonName}, cow-repelling, antelope-footed and bull-toothed,", weight: 1 },
 	{ value: "Lord ${DemonName} the Polite, ${a:undead_thinking} obsessed with the etiquette of the ancient ${ancientpeople},", weight: 1 },
+	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, a lesser daemon who can only be injured by a cursed weapon,", weight: 1 },
   ],
   
   monstertype_ntc: [
@@ -3847,6 +3856,7 @@ const tables = {
     { value: "${a:WeirdFantasyMonster}", weight: 1 },
 	{ value: "${DemonName}, cow-repelling, antelope-footed and bull-toothed", weight: 1 },
 	{ value: "Lord ${DemonName} the Polite, ${a:undead_thinking} obsessed with the etiquette of the ancient ${ancientpeople}", weight: 1 },
+	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, a lesser daemon who can only be injured by a cursed weapon", weight: 1 },
   ],
 
   monstervalue: [
@@ -4757,6 +4767,7 @@ const tables = {
     { value: "water wasps", weight: 1 },
     { value: "waves large as castles", weight: 1 },
 	{ value: "planets and planetary systems under the earth", weight: 1 },
+	{ value: "a maelstrom of pleasure", weight: 1 },
   ],
 
   secret: [
@@ -5099,6 +5110,7 @@ const tables = {
 	{ value: "the squawking of a thousand birds", weight: 1 },
 	{ value: "a mighty chain scraping across stone", weight: 1 },
 	{ value: "the confused shouting of men", weight: 1 },
+	{ value: "the racket of a poltergeist", weight: 1 },
   ],
 
   studysubject: [
@@ -5320,6 +5332,7 @@ const tables = {
 	{ value: "a bridge of green and blue serpents created by a god", weight: 1 },
 	{ value: "a small white dragon", weight: 1 },
 	{ value: "dangerous invisible rays", weight: 1 },
+	{ value: "a headless ${huntingmonster_singular}", weight: 1 },
   ],
   
   
@@ -6090,6 +6103,7 @@ trap_location: [
 	{ value: "men on desperate errands", weight: 1 },
 	{ value: "a lady knight and her pet hound", weight: 1 },
 	{ value: "the sons and daughters of Saint ${SaintName}", weight: 1 },
+	{ value: "a trio of uncomfortable frost dwarfs", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -6456,6 +6470,7 @@ trap_location: [
 	{ value: "prophesies a new kind of warfare, where men fight one another with ${symbols}, not swords", weight: 1 },
 	{ value: "preaches to sad hearts the secret of regaining joy and gladness", weight: 1 },
 	{ value: "believes in a patriarchal thunder-hurling pantheon", weight: 1 },
+	{ value: "peddles a solution for men who have grown tired of their lives", weight: 1 },
 	
   ],
 
@@ -6700,6 +6715,8 @@ trap_location: [
 	{ value: "an enormous talking ${AnimalInsect} makes its home", weight: 1 },
 	{ value: "a tiny man has been painting the flowers", weight: 1 },
 	{ value: "a death-stone haunted by ${a:daemontype} daemon spoils the dreams of those who sleep nearby", weight: 1 },
+	{ value: "a beast dwells that can eat ${a:AnimalMount} in two bites", weight: 1 },
+	{ value: "a strange cottage with red smoke coming from its roof houses a man-eating giant", weight: 1 },
   ],
 
   wilds_locn: [
@@ -11108,6 +11125,7 @@ ship_type: [
 	{ value: "by using the Key of the ${tc:AnimalWater} to unlock it", weight: 1 },
 	{ value: "by producing the aroma of ${Smells}", weight: 1 },
 	{ value: "by exposing it to ${light_type}", weight: 1 },
+	{ value: "by meditating upon the holiness of mountains", weight: 1 },
   ],
 
 
@@ -11478,6 +11496,7 @@ door_type: [
     { value: "${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb2} ${a:flag_extra_humanoids_verb2_object}", weight: 2 },
     { value: "${a:flag_extra_animal_adj} ${AnimalMain} ${flag_extra_animal_verb} ${a:AnimalBaby}", weight: 2 },
     { value: "${flag_extra_humanoids_adj} ${fairy_folk}", weight: 2 },
+	{ value: "${a:AnimalMain} silhouette", weight: 1 },
   ],
   
    weapon_prefix: [
@@ -11976,6 +11995,7 @@ door_type: [
 	{ value: "${heroes_and_villains} traded their ${body_part} to ${a:AnimalCanine} for knowledge of ${knowledgething}", weight: 1 },
 	{ value: "${heroes_and_villains} ${prophetic_mourning_verb} the slain body of their lover, ${ntc}", weight: 1 },
 	{ value: "${heroes_and_villains} tamed the ${AnimalPredator} by playing '${ballad_titles}' on their ${MusicalInstrument}", weight: 1 },
+	{ value: "${heroes_and_villains} stomped on hundreds of invading ${AnimalInsect}s, earning the eternal friendship of a village of tiny gnomes", weight: 1 },
   ],
   
   shrine_type: [
