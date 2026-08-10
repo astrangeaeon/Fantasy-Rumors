@@ -330,6 +330,7 @@ const tables = {
 	{ value: " who crossed the Celestial River in flood,", weight: 1 },
 	{ value: " the delighter of all mankind,", weight: 1 },
 	{ value: " who when the battle-fury was upon them, knew not friend from foe,", weight: 1 },
+	{ value: " who drank wine at the Hour of the Rat to spite the gods,", weight: 1 },
 	
   ],
 
@@ -2094,6 +2095,7 @@ const tables = {
     { value: "the teeth of the dead are extracted and used as artificial teeth by the living", weight: 1 },
     { value: "wax masks are made of the dead and worn by professional actors at the funeral, who imitate the dead’s mannerisms and speech. Every family has a cupboard which contains the masks of their loved ones throughout history, along with instructions to future actors, and large funerals employ many actors who bring the dead back to life in this manner", weight: 1 },
     { value: "a great feast is held in honor of every ${floors} bear killed. Much of the celebration consists of attempting to persuade the spirit of the bear that it died accidentally and was not murdered", weight: 1 },
+	{ value: "the women who die before marriage become brides at their funeral", weight: 1 },
   ],
 
   geas: [
@@ -2233,6 +2235,7 @@ const tables = {
 	{ value: "was seen no more after eating goblin bread with a hobbit executioner", weight: 1 },
 	{ value: "was paralyzed by a slithering thing", weight: 1 },
 	{ value: "died, struck blind by unicorns", weight: 1 },
+	{ value: "lives now as an altered beast", weight: 1 },
   ],
 
   hero_goal: [
@@ -2473,6 +2476,7 @@ const tables = {
     { value: "using slaves and foreigners as furniture", weight: 1 },
     { value: "wearing black garments and eating black food", weight: 1 },
 	{ value: "riding bronze ${AnimalMount}s through the streets", weight: 1 },
+	{ value: "reenacting a group of monsters carrying off their wounded king", weight: 1 },
   ],
 
   housething: [
@@ -2854,6 +2858,7 @@ const tables = {
 	{ value: "creatures with unreassuring teeth and claws", weight: 1 },
 	{ value: "angels men complain of that kill whatever they come upon", weight: 1 },
 	{ value: "ferocious sea-dragons frightened by the sight of blood", weight: 1 },
+	{ value: "an altered beast", weight: 1 },
   ],
 
   island_riches: [
@@ -5670,6 +5675,7 @@ trap_location: [
 	{ value: "${urbn_cityname}, the City of ${urbn_citynickname}, is so loud with voice and celebration that the thunder of God cannot be heard", weight: 1 },
 	{ value: "${urbn_cityname}, the City of ${urbn_citynickname}, is known for ${dungeon_mural_type} depicting ${dungeon_mural}", weight: 1 },
 	{ value: "in ${urbn_cityname}, they celebrate ${holiday} by ${holiday_celebration}", weight: 2 },
+	{ value: "a thief of men's souls and a destroyer of their bodies is the harlot Phryne!", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6471,6 +6477,7 @@ trap_location: [
 	{ value: "preaches to sad hearts the secret of regaining joy and gladness", weight: 1 },
 	{ value: "believes in a patriarchal thunder-hurling pantheon", weight: 1 },
 	{ value: "peddles a solution for men who have grown tired of their lives", weight: 1 },
+	{ value: "has eyes full of a peace that can't be shaken by the storms of the world", weight: 1 },
 	
   ],
 
@@ -6717,6 +6724,7 @@ trap_location: [
 	{ value: "a death-stone haunted by ${a:daemontype} daemon spoils the dreams of those who sleep nearby", weight: 1 },
 	{ value: "a beast dwells that can eat ${a:AnimalMount} in two bites", weight: 1 },
 	{ value: "a strange cottage with red smoke coming from its roof houses a man-eating giant", weight: 1 },
+	{ value: "a jumble of stones and ${a:magicalcommonobject} is all that remains of ${po:ntc} experimental settlement for ${huntingmonster}", weight: 1 },
   ],
 
   wilds_locn: [
@@ -11996,6 +12004,7 @@ door_type: [
 	{ value: "${heroes_and_villains} ${prophetic_mourning_verb} the slain body of their lover, ${ntc}", weight: 1 },
 	{ value: "${heroes_and_villains} tamed the ${AnimalPredator} by playing '${ballad_titles}' on their ${MusicalInstrument}", weight: 1 },
 	{ value: "${heroes_and_villains} stomped on hundreds of invading ${AnimalInsect}s, earning the eternal friendship of a village of tiny gnomes", weight: 1 },
+	{ value: "${heroes_and_villains} was betrayed by their lover, either Princess ${FantasyNameFemale} or a harlot from ${urbn_cityname}", weight: 1 },
   ],
   
   shrine_type: [
