@@ -3219,6 +3219,7 @@ const tables = {
 	{ value: "${ntc} was working as ${a:QuickNPCJob} in the village of ${village_names} before they found their destiny", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPCDescriptor} ${humanoid}, woke with a mysterious compulsion to ${geas} before the next full moon", weight: 2 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, returned from the ${tc:Colors} Market of ${urbn_cityname} where they barter ${exchangething} and ${exchangething} and other such commodities with ${relic}", weight: 1 },
+	{ value: "a stranger ${facial_desc} blew into town with the storm last night and ${FantasyName} the ${QuickNPCJobPoor} seemed to recognize them", weight: 1 },
   ],
   
   local_obtain_art: [
