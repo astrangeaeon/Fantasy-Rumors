@@ -91,6 +91,8 @@ const tables = {
 	{ value: " where the people have never seen mirrors and do not recognize themselves", weight: 1 },
 	{ value: " where those who die by the cold and snow become spirits who serve the lady of the snow", weight: 1 },
 	{ value: " with its landscape silent and godless", weight: 1 },
+	{ value: " where the falcon wolves fuck", weight: 1 },
+	{ value: " where the razor boars fuck", weight: 1 },
   ],
 
   herdwith: [
@@ -331,6 +333,7 @@ const tables = {
 	{ value: " the delighter of all mankind,", weight: 1 },
 	{ value: " who when the battle-fury was upon them, knew not friend from foe,", weight: 1 },
 	{ value: " who drank wine at the Hour of the ${AnimalHour} to spite the gods,", weight: 1 },
+	{ value: " who forced the ${daemontype} daemons to break their horns in submission,", weight: 1 },
 	
   ],
 
@@ -774,6 +777,7 @@ const tables = {
     { value: "so there would be a place worthy of his greatness", weight: 1 },
     { value: "to honor the Lords of ${slumberplace}", weight: 1 },
     { value: "to rival ${landmark_manmade}", weight: 1 },
+	{ value: "to atone for their great sins during the war", weight: 1 },
   ],
 
   coveringthing: [
@@ -876,6 +880,9 @@ const tables = {
 	{ value: "the One-Inch Priests", weight: 1 },
 	{ value: "Baku, the Eater of Dreams", weight: 1 },
 	{ value: "the Child in the River", weight: 1 },
+	{ value: "the Interrogator", weight: 1 },
+	{ value: "the lizard-fish Gurangatch", weight: 1 },
+	{ value: "Mirragen the Cat-man", weight: 1 },
   ],
 
   criminals: [
@@ -1107,7 +1114,7 @@ const tables = {
     { value: "Diagoras of Melos", weight: 1 },
     { value: "Domhnall of Zena", weight: 1 },
     { value: "Detestable Kurt", weight: 1 },
-    { value: "Sweet Jane", weight: 1 },
+    { value: "The Knight of the False Shield", weight: 1 },
     { value: "Gentle Simon", weight: 1 },
     { value: "Elf-Queen Morganae", weight: 1 },
     { value: "Elisabeth the Pursuer", weight: 1 },
@@ -1273,6 +1280,7 @@ const tables = {
     { value: "the ${prophecyartifact}", weight: 1 },
 	{ value: "the living sword named ${sword_names}, an ancient ${BladedWeapons_Sword} that ${sword_desire},", weight: 1 },
 	{ value: "a map leading to ${treasure_map}", weight: 1 },
+	{ value: "four companions: ${a:AnimalBigCat}, ${a:AnimalBird}, ${a:classic_classes} and ${a:AnimalOrdinary}", weight: 1 },
   ],
 
   deadlootmisc: [
@@ -1345,6 +1353,7 @@ const tables = {
 	{ value: "a belt of fire that produces light-obscuring smoke", weight: 1 },
 	{ value: "${a:Weapons} made of plastic", weight: 1 },
 	{ value: "a spear dipped in a cauldron of noxious poison created through sorcery and the blood of dogs, cats and druids", weight: 1 },
+	{ value: "${a:container_bag} filled with dried Ardoa Herb, which only grows on land where ${huntingmonster} have been laid to rest,", weight: 1 },
   ],
 
   decade_event: [
@@ -2064,6 +2073,7 @@ const tables = {
 	{ value: "Thann", weight: 1 },
 	{ value: "Upper Morven", weight: 1 },
 	{ value: "Lower Targamon", weight: 1 },
+	{ value: "Reeda", weight: 1 },
   ],
 
   funeralcustom: [
@@ -2237,6 +2247,8 @@ const tables = {
 	{ value: "died, struck blind by unicorns", weight: 1 },
 	{ value: "lives now as an altered beast", weight: 1 },
 	{ value: "was possessed by a spirit, becoming the horse of a god that rides them", weight: 1 },
+	{ value: "became the latest tree to join a forest of dark singing trees", weight: 1 },
+	{ value: "now wanders lost in the underground maze of the Genowlan caves", weight: 1 },
   ],
 
   hero_goal: [
@@ -2783,6 +2795,7 @@ const tables = {
     { value: "wise giant tortoises", weight: 1 },
 	{ value: "an antediluvian people who survive by root-digging and berry-picking", weight: 1 },
 	{ value: "empath-martyrs whose touch heals others by transferring the wounds to themselves", weight: 1 },
+	{ value: "a hermit who has retreated from the world, communicating only through melodic messages played on ${a:MusicalInstrument},", weight: 1 },
   ],
 
   islandprotector: [
@@ -2860,6 +2873,8 @@ const tables = {
 	{ value: "angels men complain of that kill whatever they come upon", weight: 1 },
 	{ value: "ferocious sea-dragons frightened by the sight of blood", weight: 1 },
 	{ value: "an altered beast", weight: 1 },
+	{ value: "${a:fairy_folk} with the power to name and rename things", weight: 1 },
+	{ value: "a centipede coiled around a mountain, two balls of fire for eyes", weight: 1 },
   ],
 
   island_riches: [
@@ -5093,6 +5108,7 @@ const tables = {
 	{ value: "the sacred mysteries are so holy that no living soul can speak the rites of them; they are passed on after death to their progeny through a medium with the dead priest's spirit", weight: 1 },
 	{ value: "the painters are so in tune with their creations that if a sword were to sever the brush mid-stroke, it would bleed", weight: 1 },
 	{ value: "the people paint their ${coins} ${Colors} and punch holes in them for use in numismatic rituals", weight: 1 },
+	{ value: "none can be wed until they have killed an enemy of the tribe", weight: 1 },
   ],
 
   strangenoises: [
@@ -5341,6 +5357,7 @@ const tables = {
 	{ value: "a small white dragon", weight: 1 },
 	{ value: "dangerous invisible rays", weight: 1 },
 	{ value: "a headless ${huntingmonster_singular}", weight: 1 },
+	{ value: "walls that breathe, walls with eyes, ears, mouths", weight: 1 },
   ],
   
   
@@ -6114,6 +6131,7 @@ trap_location: [
 	{ value: "a lady knight and her pet hound", weight: 1 },
 	{ value: "the sons and daughters of Saint ${SaintName}", weight: 1 },
 	{ value: "a trio of uncomfortable frost dwarfs", weight: 1 },
+	{ value: "the four companions of ${ntc}: ${a:AnimalSimian}, ${a:AnimalBigCat}, ${a:AnimalCanine} and ${a:AnimalBird}", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -6254,6 +6272,8 @@ trap_location: [
 	{ value: "a time-battered grey vagabond", weight: 1 },
 	{ value: "a giantess in her bridal gown", weight: 1 },
 	{ value: "a young woman with snake-musk coated hands", weight: 1 },
+	{ value: "a lustful ${fairy_folk}", weight: 1 },
+	{ value: "a temptress of knights", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6483,6 +6503,8 @@ trap_location: [
 	{ value: "believes in a patriarchal thunder-hurling pantheon", weight: 1 },
 	{ value: "peddles a solution for men who have grown tired of their lives", weight: 1 },
 	{ value: "has eyes full of a peace that can't be shaken by the storms of the world", weight: 1 },
+	{ value: "barters the location of a field of Ardoa Herb, which only grows on land where ${huntingmonster} have been laid to rest", weight: 1 },
+	{ value: "offers a baptism with earth from a dry well sacred to ${FantasyGods}", weight: 1 },
 	
   ],
 
@@ -6564,6 +6586,7 @@ trap_location: [
 	{ value: "Killer Mike, whose count of slain men is second only to the great assassin Time,${tomb_anecdote}", weight: 1 },
 	{ value: "Sweet Jane, who knew every future but her own,${tomb_anecdote}", weight: 1 },
 	{ value: "Agon the Proud, who knelt to no emperor, tzar, sultan, prince, pope, or pharaoh,${tomb_anecdote}", weight: 1 },
+	{ value: "Holy Nahara, who traveled west as an old woman and returned from the east as a young girl,${tomb_anecdote}", weight: 1 },
   ],
   
   larger_than_life: [
@@ -6579,6 +6602,7 @@ trap_location: [
 	{ value: "Killer Mike, whose count of slain men is second only to the great assassin Time", weight: 1 },
 	{ value: "Sweet Jane, who knew every future but her own", weight: 1 },
 	{ value: "Agon the Proud, who knelt to no emperor, tzar, sultan, prince, pope, or pharaoh", weight: 1 },
+	{ value: "Holy Nahara, who traveled west as an old woman and returned from the east as a young girl", weight: 1 },
   ],
 
   wilds_adj: [
@@ -6642,6 +6666,7 @@ trap_location: [
 	{ value: "marks the spot where the living sword Jaquays, ${a:Colors} ${BladedWeapons_Sword} that ${sword_desire}, waits impatiently for its next owner", weight: 4 },
 	{ value: "marks a crack in the earth where fumes from the eternally decaying corpse of ${decaying_corpse} escape the underworld and inspire prophetic nightmares", weight: 1 },
 	{ value: "marks one of the secret entrances into ${classic_dungeons}", weight: 1 },
+	{ value: "marks the entrance to a grove of dark singing trees", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -6731,6 +6756,7 @@ trap_location: [
 	{ value: "a strange cottage with red smoke coming from its roof houses a man-eating giant", weight: 1 },
 	{ value: "a jumble of stones and ${a:magicalcommonobject} is all that remains of ${po:ntc} experimental settlement for ${huntingmonster}", weight: 1 },
 	{ value: "smoke still curls up to mingle with the clouds from where the God-Emperor Vibx had a scroll and the elixir of life burned ${when} ago", weight: 1 },
+	{ value: "a grey-haired knight in ${Colors} mail guards a burned down old castle, still faithful to his oaths", weight: 1 },
   ],
 
   wilds_locn: [
@@ -6793,6 +6819,7 @@ trap_location: [
     { value: "three leagues from ${landmark}", weight: 1 },
 	{ value: "beyond the Jade Gate", weight: 1 },
 	{ value: "among the ${landscape_types} near the village of ${village_names}", weight: 1 },
+	{ value: "near a forest of dark singing trees", weight: 1 },
   ],
 
   Wilds: [
@@ -6860,6 +6887,7 @@ trap_location: [
 	{ value: "a ${flag_pattern} ${flag_basic_color} and black hot air balloon with ${flag_extra_humanoids_adj} ${humanoid} and ${a:AnimalMammal} in the basket was seen floating above ${landmark}", weight: 2 },
 	{ value: "the smell of ${Smells} will supposedly put ${a:WeirdFantasyMonster} to flight, or else drive it berserk, depending on the source", weight: 1 },
 	{ value: "an underwater ${AnimalBigCat} has made its home beneath ${body_of_water}", weight: 1 },
+	{ value: "seasoned travelers say you are unlikely to encounter more than ${fairy_number} ${huntingmonster} in close proximity", weight: 1 },
   ],
   
   
@@ -7791,6 +7819,8 @@ trap_location: [
 	{ value: "Lufa", weight: 1 },
 	{ value: "Smaadra", weight: 1 },
 	{ value: "Zinctra", weight: 1 },
+	{ value: "Perindi", weight: 1 },
+	{ value: "Harrimiah", weight: 1 },
   ],
 
   FantasyGodNameMale: [
@@ -10758,6 +10788,7 @@ ship_type: [
 	{ value: "a miniature ${AnimalMagicMount} in a glass bottle from the collection of ${vancian_wizards}", weight: 1 },
 	{ value: "a chunk from a mountain of fire", weight: 1 },
 	{ value: "${a:MusicalInstrument} that supposedly belonged to ${vancian_wizards}", weight: 1 },
+	{ value: "armor from the ${underworld_names}", weight: 1 },
   ],
   
   ship_cargo_novelty_type: [
@@ -10872,6 +10903,7 @@ ship_type: [
 	{ value: "The Deeds of Finn Fell Ninefoe", weight: 1 },
 	{ value: "The Beggar Who Asked for Nothing", weight: 1 },
 	{ value: "What Remains of the Terrace of the Lions?", weight: 1 },
+	{ value: "The Factory of Blood", weight: 1 },
   ],
   
   
@@ -11150,6 +11182,7 @@ ship_type: [
 	{ value: "by producing the aroma of ${Smells}", weight: 1 },
 	{ value: "by exposing it to ${light_type}", weight: 1 },
 	{ value: "by meditating upon the holiness of mountains", weight: 1 },
+	{ value: "by waiting until the Hour of the ${AnimalHour}", weight: 1 },
   ],
 
 
@@ -11925,6 +11958,7 @@ door_type: [
 	{ value: "the Anaconda Mine", weight: 1 },
 	{ value: "the Playground for Snakes", weight: 1 },
 	{ value: "the Black Spiral", weight: 1 },
+	{ value: "the Factory of Blood", weight: 1 },
   ],
   
   pain_synonyms: [
@@ -12287,6 +12321,7 @@ door_type: [
 	{ value: "the ${po:RoyalTitleMale} gratitude", weight: 1 },
 	{ value: "a basket of ${FantasyMeal_Vegetable_plural} with power to delight the soul", weight: 1 },
 	{ value: "five measures of wine and a thousand copper cash worth of fish", weight: 1 },
+	{ value: "an enchanted ${ship_type_small}", weight: 1 },
   ],
   
   hallucination: [
@@ -12649,6 +12684,18 @@ door_type: [
     { value: "${AnimalThroneType}", weight: 2 },
 	{ value: "${flowers_singular}", weight: 2 },
 	{ value: "cloud", weight: 1 },	
+  ],
+  
+  container_bag: [
+    { value: "sack", weight: 1 },
+	{ value: "pouch", weight: 1 },
+	{ value: "backpack", weight: 1 },
+	{ value: "bag", weight: 1 },
+	{ value: "rucksack", weight: 1 },
+	{ value: "haversack", weight: 1 },
+    { value: "purse", weight: 1 },
+	{ value: "belt-pouch", weight: 1 },
+	{ value: "saddlebag", weight: 1 },	
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
