@@ -330,7 +330,7 @@ const tables = {
 	{ value: " who crossed the Celestial River in flood,", weight: 1 },
 	{ value: " the delighter of all mankind,", weight: 1 },
 	{ value: " who when the battle-fury was upon them, knew not friend from foe,", weight: 1 },
-	{ value: " who drank wine at the Hour of the Rat to spite the gods,", weight: 1 },
+	{ value: " who drank wine at the Hour of the ${AnimalHour} to spite the gods,", weight: 1 },
 	
   ],
 
@@ -2236,6 +2236,7 @@ const tables = {
 	{ value: "was paralyzed by a slithering thing", weight: 1 },
 	{ value: "died, struck blind by unicorns", weight: 1 },
 	{ value: "lives now as an altered beast", weight: 1 },
+	{ value: "was possessed by a spirit, becoming the horse of a god that rides them", weight: 1 },
   ],
 
   hero_goal: [
@@ -5091,6 +5092,7 @@ const tables = {
 	{ value: "children with the ${ancientpeople_singular} word for ${AnimalBaby} written on their forehead are protected from nightmares", weight: 1 },
 	{ value: "the sacred mysteries are so holy that no living soul can speak the rites of them; they are passed on after death to their progeny through a medium with the dead priest's spirit", weight: 1 },
 	{ value: "the painters are so in tune with their creations that if a sword were to sever the brush mid-stroke, it would bleed", weight: 1 },
+	{ value: "the people paint their ${coins} ${Colors} and punch holes in them for use in numismatic rituals", weight: 1 },
   ],
 
   strangenoises: [
@@ -5677,6 +5679,7 @@ trap_location: [
 	{ value: "${urbn_cityname}, the City of ${urbn_citynickname}, is known for ${dungeon_mural_type} depicting ${dungeon_mural}", weight: 1 },
 	{ value: "in ${urbn_cityname}, they celebrate ${holiday} by ${holiday_celebration}", weight: 2 },
 	{ value: "a thief of men's souls and a destroyer of their bodies is the harlot Phryne!", weight: 1 },
+	{ value: "the city of New ${urbn_cityname} differs from the old in that the economy runs on ${exchangething}, not ${Metallic} ${coins}", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6338,6 +6341,7 @@ trap_location: [
 	{ value: "known for worshipping gold and strangling the weak", weight: 1 },
 	{ value: "inflict spiritual wounds that their victims won't feel until they arrive in the afterlife greviously wounded", weight: 1 },
 	{ value: "boasts of knowing all but one of the 240,000 spells of the ${ancientpeople}", weight: 1 },
+	{ value: "sip on powerfully weak tea from ${foreignland}${foreign_phrase}", weight: 1 },
   ],
 
   urbn_verbsingular: [
@@ -6726,6 +6730,7 @@ trap_location: [
 	{ value: "a beast dwells that can eat ${a:AnimalMount} in two bites", weight: 1 },
 	{ value: "a strange cottage with red smoke coming from its roof houses a man-eating giant", weight: 1 },
 	{ value: "a jumble of stones and ${a:magicalcommonobject} is all that remains of ${po:ntc} experimental settlement for ${huntingmonster}", weight: 1 },
+	{ value: "smoke still curls up to mingle with the clouds from where the God-Emperor Vibx had a scroll and the elixir of life burned ${when} ago", weight: 1 },
   ],
 
   wilds_locn: [
@@ -7093,6 +7098,7 @@ trap_location: [
 	{ value: "chipmunk", weight: 1 },
 	{ value: "bat", weight: 1 },
 	{ value: "snake", weight: 1 },
+	{ value: "kangaroo-rat", weight: 1 },
   ],
   
   AnimalFamiliar: [
@@ -7387,6 +7393,15 @@ trap_location: [
 	{ value: "unicorn", weight: 1 },
 	{ value: "octopus", weight: 1 },
 	{ value: "manticore", weight: 1 },
+  ],
+  
+  AnimalHour: [
+    { value: "Rat", weight: 1 },
+    { value: "Dog", weight: 1 },
+    { value: "Unicorn", weight: 1 },
+	{ value: "Dragon", weight: 1 },
+    { value: "Tiger", weight: 1 },
+    { value: "Snake", weight: 1 },
   ],
 
   Colors: [
