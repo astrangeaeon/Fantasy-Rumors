@@ -93,6 +93,7 @@ const tables = {
 	{ value: " with its landscape silent and godless", weight: 1 },
 	{ value: " where the falcon wolves fuck", weight: 1 },
 	{ value: " where the razor boars fuck", weight: 1 },
+	{ value: " where the dogs have whiskers and the cats bark", weight: 1 },
   ],
 
   herdwith: [
@@ -334,6 +335,8 @@ const tables = {
 	{ value: " who when the battle-fury was upon them, knew not friend from foe,", weight: 1 },
 	{ value: " who drank wine at the Hour of the ${AnimalHour} to spite the gods,", weight: 1 },
 	{ value: " who forced the ${daemontype} daemons to break their horns in submission,", weight: 1 },
+	{ value: " who spat on the world from their great palace of black iron,", weight: 1 },
+	{ value: " who sat after much striving upon the Chair of Forgetting,", weight: 1 },
 	
   ],
 
@@ -549,6 +552,7 @@ const tables = {
     { value: "with the skin of a wolf", weight: 1 },
 	{ value: "formed of ${MarbleTypes} marble", weight: 1 },
 	{ value: "with poisonous skin and alien blood, fatal to snake and vampire bite", weight: 1 },
+	{ value: "half made of wood", weight: 1 },
   ],
 
   body_part_fate: [
@@ -2273,6 +2277,7 @@ const tables = {
 	{ value: "to seek one of the Living Treasures of Sultan Abdullah Abdullah: ${living_treasure}", weight: 1 },
 	{ value: "to sit upon the ${tc:famous_thrones} Throne of ${foreign_adj}${foreignland} which was carried off by raiders from ${coastal} ${historicalage}", weight: 1 },
 	{ value: "to find a face which has done no wrong", weight: 1 },
+	{ value: "to sit upon the Chair of Forgetting", weight: 1 },
   ],
 
   heroname: [
@@ -2875,6 +2880,7 @@ const tables = {
 	{ value: "an altered beast", weight: 1 },
 	{ value: "${a:fairy_folk} with the power to name and rename things", weight: 1 },
 	{ value: "a centipede coiled around a mountain, two balls of fire for eyes", weight: 1 },
+	{ value: "a great palace of black iron", weight: 1 },
   ],
 
   island_riches: [
@@ -3145,6 +3151,7 @@ const tables = {
 	{ value: "the ${AnimalOrdinary}-shaped cloud", weight: 1 },
 	{ value: "the Hard River", weight: 1 },
 	{ value: "the Cape of the Woman's Sword", weight: 1 },
+	{ value: "the water-mountains of Lumi", weight: 1 },
   ],
 
   lawnornament: [
@@ -3317,6 +3324,7 @@ const tables = {
 	{ value: "take a harpy as a lover", weight: 1 },
 	{ value: "dress their ${AnimalFarm}s in matching ${Colors} ${duo_clothing}", weight: 2 },
 	{ value: "sample the mysteries and delights of the keen keengs who live in a cave with their flame god", weight: 1 },
+	{ value: "become as skilled with lathe and adze as the wheelwrights and artisans of ${urbn_cityname}", weight: 1 },
   ],
 
   local_racist: [
@@ -3437,6 +3445,7 @@ const tables = {
 	{ value: "the Princess who Makes the Flowers of the Trees to Blossom has arrived in town", weight: 1 },
 	{ value: "a farmer's prize ${AnimalFarm} has been stolen by a river goblin", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, grew suddenly ill; through good leeches he was healed and saved", weight: 1 },
+	{ value: "half the village woke up missing one of their eyes after dreaming of ${creepyvillain} last week", weight: 1 },
   ],
 
   localtopic: [
@@ -3703,6 +3712,7 @@ const tables = {
 	{ value: "an inexhaustible purse full of copper ${coins}", weight: 1 },
 	{ value: "a secret key to the treasure vault of the ${po:ancientpeople} gods", weight: 1 },
 	{ value: "a digging bone sacred to ${island_sacred}", weight: 1 },
+	{ value: "the reanimated hands of ${artists} the great ${MusicalInstrument} player", weight: 1 },
   ],
 
   membership: [
@@ -3814,6 +3824,7 @@ const tables = {
 	{ value: "${a:monsterA} cursed by ${RealGods} to only gain sustenance from decomposing sonnets and riddles yearns for novel words and exotic flavors", weight: 1 },
 	{ value: "${a:magicusertype} on the ${floors} floor, cursed by Saint ${SaintName} to eat the written word in order to gain further knowledge, longs for books and scrolls to devour", weight: 1 },
 	{ value: "A monstrous bloated ${monsterA} on the ${floors} floor feeds ${humanoids_nonhuman} to its ravenous brood", weight: 1 },
+	{ value: "an aggressive ${AnimalMain} encased in a metallic exo-skeleton has been leaving corpses and creating havoc on the ${floors} floor", weight: 1 },
   ],
   
   monster_hybrid: [
@@ -4321,6 +4332,7 @@ const tables = {
 	{ value: "Crown of ${uc:AnimalBigCat}s", weight: 1 },
 	{ value: "Crown of Command", weight: 1 },
 	{ value: "Eye of the Crystal Eel", weight: 1 },
+	{ value: "Aard of Being", weight: 1 },
   ],
 
   prophecyfate: [
@@ -4998,6 +5010,7 @@ const tables = {
 	{ value: "the arms and hands of Old King Half which communicate in signs and gestures", weight: 1 },
 	{ value: "a bejeweled collar and leash", weight: 1 },
 	{ value: "a lucky mallet dropped by an oni that grants a wish", weight: 1 },
+	{ value: "a catfish that speaks the tongues of man", weight: 1 },
   ],
 
   strangecustom: [
@@ -6505,6 +6518,7 @@ trap_location: [
 	{ value: "has eyes full of a peace that can't be shaken by the storms of the world", weight: 1 },
 	{ value: "barters the location of a field of Ardoa Herb, which only grows on land where ${huntingmonster} have been laid to rest", weight: 1 },
 	{ value: "offers a baptism with earth from a dry well sacred to ${FantasyGods}", weight: 1 },
+	{ value: "communicates through glimmerings and dreams", weight: 1 },
 	
   ],
 
@@ -6587,6 +6601,7 @@ trap_location: [
 	{ value: "Sweet Jane, who knew every future but her own,${tomb_anecdote}", weight: 1 },
 	{ value: "Agon the Proud, who knelt to no emperor, tzar, sultan, prince, pope, or pharaoh,${tomb_anecdote}", weight: 1 },
 	{ value: "Holy Nahara, who traveled west as an old woman and returned from the east as a young girl,${tomb_anecdote}", weight: 1 },
+	{ value: "Merrill the Wise, who thought, but never spoke aloud, that more powerful than the sultan and all his armies is the locust,${tomb_anecdote}", weight: 1 },
   ],
   
   larger_than_life: [
@@ -6603,6 +6618,7 @@ trap_location: [
 	{ value: "Sweet Jane, who knew every future but her own", weight: 1 },
 	{ value: "Agon the Proud, who knelt to no emperor, tzar, sultan, prince, pope, or pharaoh", weight: 1 },
 	{ value: "Holy Nahara, who traveled west as an old woman and returned from the east as a young girl", weight: 1 },
+	{ value: "Merrill the Wise, who thought, but never spoke aloud, that more powerful than the sultan and all his armies is the locust", weight: 1 },
   ],
 
   wilds_adj: [
@@ -7200,6 +7216,7 @@ trap_location: [
     { value: "lightning-bug", weight: 1 },
     { value: "beetle", weight: 1 },
 	{ value: "caterpillar", weight: 1 },
+	{ value: "locust", weight: 1 },
   ],
   
   AnimalInsectStinging: [
@@ -7672,6 +7689,9 @@ trap_location: [
 	{ value: "Stavoren", weight: 1 },
 	{ value: "Wagmund", weight: 1 },
 	{ value: "Rannafast", weight: 1 },
+	{ value: "Wendell", weight: 1 },
+	{ value: "Euclid", weight: 1 },
+	{ value: "Virgil", weight: 1 },
   ],
 
   FantasyNameFemale: [
@@ -7698,6 +7718,7 @@ trap_location: [
     { value: "Zandra", weight: 1 },
 	{ value: "Veena", weight: 1 },
 	{ value: "Reyona", weight: 1 },
+	{ value: "Kubbitha", weight: 1 },
   ],
 
   FantasyLastName: [
@@ -11959,6 +11980,7 @@ door_type: [
 	{ value: "the Playground for Snakes", weight: 1 },
 	{ value: "the Black Spiral", weight: 1 },
 	{ value: "the Factory of Blood", weight: 1 },
+	{ value: "the Chateau of the Black Fly", weight: 1 },
   ],
   
   pain_synonyms: [
