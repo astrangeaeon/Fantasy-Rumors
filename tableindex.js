@@ -524,7 +524,7 @@ const tables = {
     { value: "the answer to any question", weight: 1 },
     { value: "the boon of choosing your own death", weight: 1 },
     { value: "the other horn of the unicorn", weight: 1 },
-	{ value: "an invitation to the ${otherworld_names}", weight: 1 },
+	{ value: "an invitation to the enchanted ${otherworld_names}", weight: 1 },
 	{ value: "a magic cake that protects against lions", weight: 1 },
 	{ value: "a map to ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
 	{ value: "a robe of feathers that allows one to transform into ${a:AnimalBird}", weight: 1 },
@@ -887,6 +887,7 @@ const tables = {
 	{ value: "the Interrogator", weight: 1 },
 	{ value: "the lizard-fish Gurangatch", weight: 1 },
 	{ value: "Mirragen the Cat-man", weight: 1 },
+	{ value: "Vuur Aag, the Annihilating Fire", weight: 1 },
   ],
 
   criminals: [
@@ -2245,7 +2246,7 @@ const tables = {
 	{ value: "succeeded; but later they ate a cursed sandwich that transformed them into a drawing of ${a:huntingmonster_singular}", weight: 1 },
 	{ value: "their face now lives in a globe of fire upon a distant island", weight: 1 },
 	{ value: "was transformed into ${a:AnimalBird} for their trouble", weight: 1 },
-	{ value: "now mines the light used to build ${ship_cargo_furniture_type} and ${duo_clothing} for the beings in the ${otherworld_names}", weight: 1 },
+	{ value: "now mines the light used to build ${ship_cargo_furniture_type} and ${duo_clothing} for the beings in the enchanted ${otherworld_names}", weight: 1 },
 	{ value: "was seen no more after eating goblin bread with a hobbit executioner", weight: 1 },
 	{ value: "was paralyzed by a slithering thing", weight: 1 },
 	{ value: "died, struck blind by unicorns", weight: 1 },
@@ -5122,6 +5123,7 @@ const tables = {
 	{ value: "the painters are so in tune with their creations that if a sword were to sever the brush mid-stroke, it would bleed", weight: 1 },
 	{ value: "the people paint their ${coins} ${Colors} and punch holes in them for use in numismatic rituals", weight: 1 },
 	{ value: "none can be wed until they have killed an enemy of the tribe", weight: 1 },
+	{ value: "the souls of the dead follow ${a:AnimalPsychopomp} named ${DemonName} to the enchanted ${otherworld_names}", weight: 1 },
   ],
 
   strangenoises: [
@@ -5710,6 +5712,7 @@ trap_location: [
 	{ value: "in ${urbn_cityname}, they celebrate ${holiday} by ${holiday_celebration}", weight: 2 },
 	{ value: "a thief of men's souls and a destroyer of their bodies is the harlot Phryne!", weight: 1 },
 	{ value: "the city of New ${urbn_cityname} differs from the old in that the economy runs on ${exchangething}, not ${Metallic} ${coins}", weight: 1 },
+	{ value: "thousands of ${AnimalBird}s massed outside the ${aristocratic_home} of ${heroes_and_villains} as they lay dying, prepared to guide that powerful soul to the ${afterlife}", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6243,7 +6246,7 @@ trap_location: [
 	{ value: "${a:prophetic_visionary} from ${urbn_cityname}", weight: 1 },
 	{ value: "a multi-armed bandit", weight: 1 },
 	{ value: "an assassin who took their face from the Tree of Masks", weight: 1 },
-	{ value: "${a:pet_adj} ${pet} named ${pet_name}, one of only ten animals allowed to enter the ${otherworld_names} as a reward for their great deeds,", weight: 1 },
+	{ value: "${a:pet_adj} ${pet} named ${pet_name}, one of only ten animals allowed to enter the enchanted ${otherworld_names} as a reward for their great deeds,", weight: 1 },
 	{ value: "a bewigged truculent ${humanoid}", weight: 1 },
 	{ value: "a monk from the Order of Loup-Garou", weight: 1 },
 	{ value: "a doppelganger of Mama ${FantasyLastName}", weight: 1 },
@@ -6683,6 +6686,7 @@ trap_location: [
 	{ value: "marks a crack in the earth where fumes from the eternally decaying corpse of ${decaying_corpse} escape the underworld and inspire prophetic nightmares", weight: 1 },
 	{ value: "marks one of the secret entrances into ${classic_dungeons}", weight: 1 },
 	{ value: "marks the entrance to a grove of dark singing trees", weight: 1 },
+	{ value: "marks the spot where ${RealGods} comes to fish souls out of the river and welcome them to the enchanted ${otherworld_names}", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -6904,6 +6908,7 @@ trap_location: [
 	{ value: "the smell of ${Smells} will supposedly put ${a:WeirdFantasyMonster} to flight, or else drive it berserk, depending on the source", weight: 1 },
 	{ value: "an underwater ${AnimalBigCat} has made its home beneath ${body_of_water}", weight: 1 },
 	{ value: "seasoned travelers say you are unlikely to encounter more than ${fairy_number} ${huntingmonster} in close proximity", weight: 1 },
+	{ value: "${gates_prefix} Gate, the first of the nine gates travelers must pass through to get to that gloomy place the ${ancientpeople} called the ${underworld_names} and the only one visible by daylight can be found ${fairy_number} leagues beyond ${landmark}", weight: 1 },
   ],
   
   
@@ -7185,6 +7190,7 @@ trap_location: [
 	{ value: "goshawk", weight: 1 },
 	{ value: "tercel", weight: 1 },
 	{ value: "musket", weight: 1 },
+	{ value: "heron", weight: 1 },
   ],
   
   AnimalFarm: [
@@ -7447,6 +7453,14 @@ trap_location: [
 	{ value: "Dragon", weight: 1 },
     { value: "Tiger", weight: 1 },
     { value: "Snake", weight: 1 },
+  ],
+  
+  AnimalPsychopomp: [
+    { value: "${AnimalBird}", weight: 1 },
+    { value: "${AnimalCanine}", weight: 1 },
+	{ value: "${AnimalBigCat}", weight: 1 },
+    { value: "${AnimalMount}", weight: 1 },
+    { value: "${AnimalReptile}", weight: 1 },
   ],
 
   Colors: [
@@ -10169,6 +10183,11 @@ celebration_type: [
 	{ value: "the Iron-nose Midwife", weight: 1 },
   ],
   
+  afterlife: [
+    { value: "enchanted ${otherworld_names}", weight: 1 },
+	{ value: "${underworld_names}", weight: 1 },
+  ],
+  
   otherworld_names: [
     { value: "Place of Happy Swine", weight: 1 },
 	{ value: "Land Under the Wave", weight: 1 },
@@ -10193,6 +10212,8 @@ celebration_type: [
 	{ value: "lamplit vaults below Mount ${slumberplace}", weight: 1 },
 	{ value: "Nangiyala, land of campfires and sagas", weight: 1 },
 	{ value: "Garden of Light", weight: 1 },
+	{ value: "House of Song", weight: 1 },
+	{ value: "Mansion of Light", weight: 1 },
   ],
   // a place of the dead the ancientpeople named the underworld_names
   underworld_names: [
@@ -10222,9 +10243,10 @@ celebration_type: [
 	{ value: "Ninth World", weight: 1 },
 	{ value: "Shore of Corpses", weight: 1 },
 	{ value: "Dry Bed of the River of Souls", weight: 1 },
-	{ value: "Hell ${hell_names}", weight: 1 },
+	{ value: "Hell ${hell_names}", weight: 2 },
 	{ value: "Fields of Mourning", weight: 1 },
 	{ value: "Room Below", weight: 1 },
+	{ value: "House of Lies", weight: 1 },
   ],
   
   hell_names: [
@@ -11011,8 +11033,8 @@ ship_type: [
   ],
   
   aristocratic_extra: [
-	{ value: "rumored ${aristocratic_quirk}", weight: 1 },
-	{ value: "who made their fortune ${aristocratic_new_money}", weight: 1 },
+	{ value: "rumored ${aristocratic_quirk}", weight: 2 },
+	{ value: "who made their fortune ${aristocratic_new_money}", weight: 2 },
 	{ value: "who is said to display hunting trophies in their great hall: the skeleton of ${a:AnimalTrophy}, the skins of ${AnimalSnake}s, the preserved body of ${a:AnimalSimian}, and, shown only to special guests, ${aristocratic_head}", weight: 1 },
   ],
   
@@ -12419,7 +12441,7 @@ door_type: [
 	{ value: "the ${aristocratic_home} of ${vancian_wizards}", weight: 1 },
 	{ value: "the best brothel in the City of Pleasure", weight: 1 },
 	{ value: "the ${lair_synonyms} of ${dragon_name} the Wurm", weight: 1 },
-	{ value: "the ${otherworld_names}", weight: 1 },
+	{ value: "the enchanted ${otherworld_names}", weight: 1 },
 	{ value: "the ${underworld_names}", weight: 1 },
   ],
   
@@ -12514,7 +12536,7 @@ door_type: [
 	{ value: "the city of ${urbn_cityname} being overrun by ${hiero_b} and a handful of ${humanoid} refugees escaping", weight: 1 },
 	{ value: "${dungeon_mural_divine} chaining ${creepyvillain} to ${a:Colors} comet", weight: 1 },
 	{ value: "${a:dungeon_mural_monster_primal} teaching the early ${ancientpeople} to water their fields with the blood of ${humanoids_nonhuman}", weight: 1 },
-	{ value: "${dungeon_mural_divine} building a wall between the ${otherworld_names} and the realms of men", weight: 1 },
+	{ value: "${dungeon_mural_divine} building a wall between the enchanted ${otherworld_names} and the realms of men", weight: 1 },
 	{ value: "the ${ancientpeople} being punished for their ${sins} by ${dungeon_mural_divine} in the Hell ${hell_names}", weight: 1 },
 	{ value: "a giant ${AnimalInsect} laying clutches of loathsome eggs in tunnels below the major ${humanoid} cities of the continent", weight: 1 },
   ],
@@ -12623,7 +12645,7 @@ door_type: [
 	{ value: "burying ${a:magicalcommonobject} given to them by ${dungeon_mural_divine} near ${landmark_natural}", weight: 1 },
 	{ value: "ascending the long stairs to meet ${dungeon_mural_divine} in their eerie realm, portrayed as a jeweled ${aristocratic_home}", weight: 1 },
 	{ value: "journeying through a desert of rusted ${rusted} to meet ${dungeon_mural_divine} in their eerie realm, rendered as a kind of edenic ${landscape_types_basic_singular}", weight: 1 },
-	{ value: "being taught by ${a:dungeon_mural_monster_primal} to smash ${a:Colors} crystal with a stone mallet and be transported to the ${otherworld_names}", weight: 1 },
+	{ value: "being taught by ${a:dungeon_mural_monster_primal} to smash ${a:Colors} crystal with a stone mallet and be transported to the enchanted ${otherworld_names}", weight: 1 },
 	{ value: "burning leaves from ${a:cod_tree_type} tree and striking an ornate bronze gong to summon ${a:dungeon_mural_monster_primal}", weight: 1 },
 	{ value: "eating a peculiar-looking ${FantasyMeal_Fruit} and ${dungeon_mural_magical_effect}", weight: 1 },
 	{ value: "trapping ${a:dungeon_mural_monster_primal} inside a huge ${Jewel_singular}", weight: 1 },
