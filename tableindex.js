@@ -5713,6 +5713,7 @@ trap_location: [
 	{ value: "a thief of men's souls and a destroyer of their bodies is the harlot Phryne!", weight: 1 },
 	{ value: "the city of New ${urbn_cityname} differs from the old in that the economy runs on ${exchangething}, not ${Metallic} ${coins}", weight: 1 },
 	{ value: "thousands of ${AnimalBird}s massed outside the ${aristocratic_home} of ${heroes_and_villains} as they lay dying, prepared to guide that powerful soul to the ${afterlife}", weight: 1 },
+	{ value: "${a:QuickNPCJob} claims that the city of ${urbn_cityname} is a paradise that makes ${urbn_cityname} a sty for hogs in comparison", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6554,6 +6555,7 @@ trap_location: [
 	{ value: "a slab of ${MarbleTypes} marble carved with hieroglyphics of ${hieroglyphics}", weight: 1 },
 	{ value: "an inert golem made of ${golem_types}", weight: 1 },
 	{ value: "a massive cauldron that can summon ${severe_weather}s", weight: 1 },
+	{ value: "${a:magicalcommonobject} left by ${ancientpeople_singular} mariners {when} ago", weight: 1 },
   ],
 
   weapon_land_type: [
@@ -6777,6 +6779,7 @@ trap_location: [
 	{ value: "a jumble of stones and ${a:magicalcommonobject} is all that remains of ${po:ntc} experimental settlement for ${huntingmonster}", weight: 1 },
 	{ value: "smoke still curls up to mingle with the clouds from where the God-Emperor Vibx had a scroll and the elixir of life burned ${when} ago", weight: 1 },
 	{ value: "a grey-haired knight in ${Colors} mail guards a burned down old castle, still faithful to his oaths", weight: 1 },
+	{ value: "a talking ${AnimalBird} guards a chest of iron", weight: 1 },
   ],
 
   wilds_locn: [
@@ -6909,6 +6912,7 @@ trap_location: [
 	{ value: "an underwater ${AnimalBigCat} has made its home beneath ${body_of_water}", weight: 1 },
 	{ value: "seasoned travelers say you are unlikely to encounter more than ${fairy_number} ${huntingmonster} in close proximity", weight: 1 },
 	{ value: "${gates_prefix} Gate, the first of the nine gates travelers must pass through to get to that gloomy place the ${ancientpeople} called the ${underworld_names} and the only one visible by daylight can be found ${fairy_number} leagues beyond ${landmark}", weight: 1 },
+	{ value: "if you travel far enough to the north, you'll reach a point where every wind blows from the south to the south", weight: 1 },
   ],
   
   
