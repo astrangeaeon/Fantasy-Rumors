@@ -492,6 +492,7 @@ const tables = {
 	{ value: "the taverns will serve only cold meat pies and wine mixed with water", weight: 1 },
 	{ value: "the trees will bleed and cry out in anguish when cut, driving men mad", weight: 1 },
 	{ value: "the sleeping stone statues of cats awaken", weight: 1 },
+	{ value: "the raiding-men will twang the yew and raise the battle-axe once more", weight: 1 },
   ],
 
   behind_mask: [
@@ -3153,6 +3154,8 @@ const tables = {
 	{ value: "the Hard River", weight: 1 },
 	{ value: "the Cape of the Woman's Sword", weight: 1 },
 	{ value: "the water-mountains of Lumi", weight: 1 },
+	{ value: "the black precipice of Horneel", weight: 1 },
+	{ value: "the Hill of the Baboons", weight: 1 },
   ],
 
   lawnornament: [
@@ -3447,6 +3450,7 @@ const tables = {
 	{ value: "a farmer's prize ${AnimalFarm} has been stolen by a river goblin", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, grew suddenly ill; through good leeches he was healed and saved", weight: 1 },
 	{ value: "half the village woke up missing one of their eyes after dreaming of ${creepyvillain} last week", weight: 1 },
+	{ value: "${a:severe_weather} has come to take the place of the wives of town", weight: 1 },
   ],
 
   localtopic: [
@@ -5373,6 +5377,7 @@ const tables = {
 	{ value: "dangerous invisible rays", weight: 1 },
 	{ value: "a headless ${huntingmonster_singular}", weight: 1 },
 	{ value: "walls that breathe, walls with eyes, ears, mouths", weight: 1 },
+	{ value: "the spirit of dark and pleasant water", weight: 1 },
   ],
   
   
@@ -5714,6 +5719,7 @@ trap_location: [
 	{ value: "the city of New ${urbn_cityname} differs from the old in that the economy runs on ${exchangething}, not ${Metallic} ${coins}", weight: 1 },
 	{ value: "thousands of ${AnimalBird}s massed outside the ${aristocratic_home} of ${heroes_and_villains} as they lay dying, prepared to guide that powerful soul to the ${afterlife}", weight: 1 },
 	{ value: "${a:QuickNPCJob} claims that the city of ${urbn_cityname} is a paradise that makes ${urbn_cityname} a sty for hogs in comparison", weight: 1 },
+	{ value: "Sandhana, the disgraced apprentice of ${vancian_wizards} can supposedly be found living with ${a:huntingmonster_singular} in an abandoned ${urbn_place} in ${urbn_cityname}, the City of ${urbn_citynickname}", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6607,6 +6613,7 @@ trap_location: [
 	{ value: "Agon the Proud, who knelt to no emperor, tzar, sultan, prince, pope, or pharaoh,${tomb_anecdote}", weight: 1 },
 	{ value: "Holy Nahara, who traveled west as an old woman and returned from the east as a young girl,${tomb_anecdote}", weight: 1 },
 	{ value: "Merrill the Wise, who thought, but never spoke aloud, that more powerful than the sultan and all his armies is the locust,${tomb_anecdote}", weight: 1 },
+	{ value: "Saint ${SaintName}, one of the big saints,${tomb_anecdote}", weight: 1 },
   ],
   
   larger_than_life: [
@@ -6780,6 +6787,8 @@ trap_location: [
 	{ value: "smoke still curls up to mingle with the clouds from where the God-Emperor Vibx had a scroll and the elixir of life burned ${when} ago", weight: 1 },
 	{ value: "a grey-haired knight in ${Colors} mail guards a burned down old castle, still faithful to his oaths", weight: 1 },
 	{ value: "a talking ${AnimalBird} guards a chest of iron", weight: 1 },
+	{ value: "sits the well of old Saint ${SaintName}, rumored to have a secret tunnel that leads into the Castle of ${castle_name} at the bottom", weight: 1 },
+	{ value: "the Knight ${taboo_consequence_knight} guards a bridge, geased to collect 100 swords from knights who seek to cross", weight: 1 },
   ],
 
   wilds_locn: [
@@ -10387,6 +10396,7 @@ celebration_type: [
 	{ value: "their past and future destiny will have been rewritten with the only change being their name is now Odor the Filthy", weight: 1 },
 	{ value: "their hair will be tangled into hundreds of knots and if cut will grow back an unruly mop of riotous green", weight: 1 },
 	{ value: "they will be unable to sleep two consecutive nights in the same place without dying", weight: 1 },
+	{ value: "they will find that flies and other insects treat their body as though it were dead", weight: 1 },
 	
   ],
   
