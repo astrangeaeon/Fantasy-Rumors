@@ -337,6 +337,7 @@ const tables = {
 	{ value: " who forced the ${daemontype} daemons to break their horns in submission,", weight: 1 },
 	{ value: " who spat on the world from their great palace of black iron,", weight: 1 },
 	{ value: " who sat after much striving upon the Chair of Forgetting,", weight: 1 },
+	{ value: " for whom the smell of sin was an affront,", weight: 1 },
 	
   ],
 
@@ -1883,6 +1884,7 @@ const tables = {
 	{ value: "an unusually large and intelligent ${AnimalFamiliar} familiar", weight: 1 },
 	{ value: "a false leg made of silver and jewels", weight: 1 },
 	{ value: "tattooed black lips", weight: 1 },
+	{ value: "false hair and false teeth", weight: 1 },
   ],
 
   fd_tale: [
@@ -2497,6 +2499,7 @@ const tables = {
     { value: "wearing black garments and eating black food", weight: 1 },
 	{ value: "riding bronze ${AnimalMount}s through the streets", weight: 1 },
 	{ value: "reenacting a group of monsters carrying off their wounded king", weight: 1 },
+	{ value: "meeting under the 31st arch of the aqueduct for smooching", weight: 1 },
   ],
 
   housething: [
@@ -2996,6 +2999,7 @@ const tables = {
 	{ value: "the Red Island of Sargyll", weight: 1 },
 	{ value: "the cliff-dwellers who live at the edge of the world", weight: 1 },
 	{ value: "how it is that Tara could be seen from Aicill but Aicill could not be seen from Tara", weight: 1 },
+	{ value: "the fine ${Colors} ash that coats the groves and gardens of ${foreignland}", weight: 1 },
   ],
 
   landmark: [
@@ -3247,6 +3251,8 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPCDescriptor} ${humanoid}, woke with a mysterious compulsion to ${geas} before the next full moon", weight: 2 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, returned from the ${tc:Colors} Market of ${urbn_cityname} where they barter ${exchangething} and ${exchangething} and other such commodities with ${relic}", weight: 1 },
 	{ value: "a stranger ${facial_desc} blew into town with the storm last night and ${FantasyName} the ${QuickNPCJobPoor} seemed to recognize them", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC} by day, serves as the night mayor of the village of ${village_names}", weight: 1 },
+	{ value: "${FantasyName}, after serving as mayor of the village of ${village_names} from sunrise to sunset, returns to their role as ${a:QuickNPCJob}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -4489,6 +4495,7 @@ const tables = {
     { value: "those who speak the holy word have holes drilled into their teeth and cords laced through to bind them shut", weight: 1 },
 	{ value: "those who sing the song '${ballad_titles}' are punished by ${punishment}", weight: 1 },
 	{ value: "crimes against trees are punished by the criminal being turned into a tree", weight: 1 },
+	{ value: "those attainted of high treason swing from the aqueduct", weight: 1 },
   ],
 
   punishment: [
@@ -5154,6 +5161,8 @@ const tables = {
 	{ value: "a mighty chain scraping across stone", weight: 1 },
 	{ value: "the confused shouting of men", weight: 1 },
 	{ value: "the racket of a poltergeist", weight: 1 },
+	{ value: "the night-song of birds and thousands of crickets", weight: 1 },
+	{ value: "horrible machines crashing into each other", weight: 1 },
   ],
 
   studysubject: [
@@ -5834,6 +5843,8 @@ trap_location: [
     { value: "Zodiac", weight: 1 },
 	{ value: "${uc:QuickNPCJobMid}s", weight: 1 },
 	{ value: "Hot Iron", weight: 1 },
+	{ value: "Rascals", weight: 1 },
+	{ value: "${uc:violent_profession_plural}", weight: 1 },
   ],
 
   urbn_danger: [
@@ -6529,6 +6540,7 @@ trap_location: [
 	{ value: "barters the location of a field of Ardoa Herb, which only grows on land where ${huntingmonster} have been laid to rest", weight: 1 },
 	{ value: "offers a baptism with earth from a dry well sacred to ${FantasyGods}", weight: 1 },
 	{ value: "communicates through glimmerings and dreams", weight: 1 },
+	{ value: "chops the wings off ${a:AnimalBird} with a stone tomahawk", weight: 1 },
 	
   ],
 
@@ -11392,6 +11404,7 @@ door_type: [
 	{ value: "${tc:boundary_times}", weight: 2 },
 	{ value: "${tc:po:AnimalBigCat} Claw", weight: 2 },
 	{ value: "the ${tc:AnimalVenomous} Blade", weight: 2 },
+	{ value: "the King of Lions", weight: 1 },
   ],
   
   sword_property: [
@@ -11772,6 +11785,7 @@ door_type: [
 	{ value: "all gathered to weep", weight: 1 },
 	{ value: "sang '${ballad_titles}' in a mighty chorus", weight: 1 },
     { value: "bowed low and murmurred prayers in unison", weight: 1 },
+	{ value: "mourned with a great mourning", weight: 1 },
   ],
   
   god_funeral_transform: [
@@ -11847,6 +11861,7 @@ door_type: [
 	{ value: "Puzzlewater", weight: 1 },
 	{ value: "Lumarth", weight: 1 },
 	{ value: "Cannara", weight: 1 },
+	{ value: "High Brooms", weight: 1 },
   ],
   
    flowers_singular: [
@@ -12113,6 +12128,7 @@ door_type: [
 	{ value: "${heroes_and_villains} tamed the ${AnimalPredator} by playing '${ballad_titles}' on their ${MusicalInstrument}", weight: 1 },
 	{ value: "${heroes_and_villains} stomped on hundreds of invading ${AnimalInsect}s, earning the eternal friendship of a village of tiny gnomes", weight: 1 },
 	{ value: "${heroes_and_villains} was betrayed by their lover, either Princess ${FantasyNameFemale} or a harlot from ${urbn_cityname}", weight: 1 },
+	{ value: "${heroes_and_villains} won ${a:AnimalFarm} in a game of ${board_games} against ${board_game_opponent}", weight: 1 },
   ],
   
   shrine_type: [
@@ -12712,6 +12728,7 @@ door_type: [
 	{ value: "a dog sphinx that tells strange jokes from the future and eats those who don't laugh", weight: 1 },
 	{ value: "${a:AnimalFarm} that when fed ${humanoid} hair shits ${Jewels}", weight: 1 },
 	{ value: "one of the ${monster_hybrid} abominations created by Hector the Pest for the Nightsoil Queen", weight: 1 },
+	{ value: "${a:daemontype} daemon from the Hell ${hell_names}", weight: 1 },
   ],
   
   living_treasure_monster: [
