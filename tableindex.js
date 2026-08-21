@@ -9244,10 +9244,11 @@ saint_curse: [
   ],
   
    board_game_opponent: [
-    { value: "${creepyvillain}", weight: 5 },
+    { value: "${creepyvillain}", weight: 2 },
     { value: "${a:QuickNPCDescriptor} ${monsterA}", weight: 1 },
     { value: "${a:QuickNPCDescriptor} ${AnimalMain}", weight: 1 },
 	{ value: "${FantasyGods}", weight: 1 },
+	{ value: "${fairy_folk_named}", weight: 1 },
   ],
   
 
