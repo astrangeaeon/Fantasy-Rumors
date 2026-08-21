@@ -338,6 +338,8 @@ const tables = {
 	{ value: " who spat on the world from their great palace of black iron,", weight: 1 },
 	{ value: " who sat after much striving upon the Chair of Forgetting,", weight: 1 },
 	{ value: " for whom the smell of sin was an affront,", weight: 1 },
+	{ value: " who drew smoke from the waterpipe in a genie's tent and was overcome by ${numinous_feeling},", weight: 1 },
+	{ value: " who wore a thousand arrow quiver and a five hundred arrow quiver,", weight: 1 },
 	
   ],
 
@@ -3335,6 +3337,7 @@ const tables = {
 	{ value: "dress their ${AnimalFarm}s in matching ${Colors} ${duo_clothing}", weight: 2 },
 	{ value: "sample the mysteries and delights of the keen keengs who live in a cave with their flame god", weight: 1 },
 	{ value: "become as skilled with lathe and adze as the wheelwrights and artisans of ${urbn_cityname}", weight: 1 },
+	{ value: "draw smoke from the waterpipe in a genie's tent", weight: 1 },
   ],
 
   local_racist: [
@@ -6308,6 +6311,7 @@ trap_location: [
 	{ value: "a young woman with snake-musk coated hands", weight: 1 },
 	{ value: "a lustful ${fairy_folk}", weight: 1 },
 	{ value: "a temptress of knights", weight: 1 },
+	{ value: "the notorious she-thug Onnamen", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6541,6 +6545,7 @@ trap_location: [
 	{ value: "offers a baptism with earth from a dry well sacred to ${FantasyGods}", weight: 1 },
 	{ value: "communicates through glimmerings and dreams", weight: 1 },
 	{ value: "chops the wings off ${a:AnimalBird} with a stone tomahawk", weight: 1 },
+	{ value: "speaks the tongue of the ancient ${ancientpeople}, whom the demon ${DemonName} spent seven years among before departing, finding himself unable to understand or make himself understood", weight: 1 },
 	
   ],
 
@@ -7626,6 +7631,7 @@ trap_location: [
 	{ value: "the Inundater", weight: 1 },
 	{ value: "Goomblegubbon", weight: 1 },
 	{ value: "Wolf Clothed", weight: 1 },
+	{ value: "Lowdemon", weight: 1 },
   ],
 
   DungeonAdjective: [
@@ -9381,6 +9387,7 @@ celebration_type: [
 	{ value: "${prophetic_subject} weeping as two ${violent_profession_plural} execute a kneeling ${humanoid}", weight: 1 },
 	{ value: "${prophetic_subject} ringing the Bells of Kwalish to bring their companion back from the ${underworld_names}", weight: 1 },
 	{ value: "${prophetic_subject} holding up the snarling head of ${DemonName} the ${daemontype} daemon in grim triumph", weight: 1 },
+	{ value: "Saint ${SaintName} ${miracles}", weight: 1 },
   ],
   
   
