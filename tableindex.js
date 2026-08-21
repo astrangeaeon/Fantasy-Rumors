@@ -1363,6 +1363,7 @@ const tables = {
 	{ value: "${a:Weapons} made of plastic", weight: 1 },
 	{ value: "a spear dipped in a cauldron of noxious poison created through sorcery and the blood of dogs, cats and druids", weight: 1 },
 	{ value: "${a:container_bag} filled with dried Ardoa Herb, which only grows on land where ${huntingmonster} have been laid to rest,", weight: 1 },
+	{ value: "a wand carved from a bone left behind after a man-eating ${po:maneating} meal", weight: 1 },
   ],
 
   decade_event: [
@@ -1766,6 +1767,7 @@ const tables = {
 	{ value: "the livers of live foxes", weight: 1 },
 	{ value: "goblin bread", weight: 1 },
 	{ value: "the undecaying grey vomit of sphinxes", weight: 1 },
+	{ value: "the bones left behind after a man-eating ${po:maneating} meal", weight: 1 },
   ],
 
   excitingemployer: [
@@ -2259,6 +2261,7 @@ const tables = {
 	{ value: "was possessed by a spirit, becoming the horse of a god that rides them", weight: 1 },
 	{ value: "became the latest tree to join a forest of dark singing trees", weight: 1 },
 	{ value: "now wanders lost in the underground maze of the Genowlan caves", weight: 1 },
+	{ value: "now sleeps eternally dreaming of Balder the Beloved, who wandered through fields of battle and wild lands and not so much as a dog barked at him", weight: 1 },
   ],
 
   hero_goal: [
@@ -2888,6 +2891,7 @@ const tables = {
 	{ value: "${a:fairy_folk} with the power to name and rename things", weight: 1 },
 	{ value: "a centipede coiled around a mountain, two balls of fire for eyes", weight: 1 },
 	{ value: "a great palace of black iron", weight: 1 },
+	{ value: "a man-eating ${maneating}", weight: 1 },
   ],
 
   island_riches: [
@@ -3488,6 +3492,7 @@ const tables = {
     { value: "what happened to all the ${missingthings}", weight: 1 },
 	{ value: "why the wells in the neighboring village of ${village_names} are square", weight: 1 },
 	{ value: "the ship of death that comes to gather souls", weight: 1 },
+	{ value: "${vancian_wizards}, for whom all mirrors were magic mirrors,", weight: 1 },
   ],
 
   lucrativecareer: [
@@ -3839,6 +3844,7 @@ const tables = {
 	{ value: "${a:magicusertype} on the ${floors} floor, cursed by Saint ${SaintName} to eat the written word in order to gain further knowledge, longs for books and scrolls to devour", weight: 1 },
 	{ value: "A monstrous bloated ${monsterA} on the ${floors} floor feeds ${humanoids_nonhuman} to its ravenous brood", weight: 1 },
 	{ value: "an aggressive ${AnimalMain} encased in a metallic exo-skeleton has been leaving corpses and creating havoc on the ${floors} floor", weight: 1 },
+	{ value: "${a:daemontype} daemon can appear in the form of ${a:humanoid}, but cannot disguise the oppressive scent of ${Smells} that emanates from their horns", weight: 1 },
   ],
   
   monster_hybrid: [
@@ -4347,6 +4353,9 @@ const tables = {
 	{ value: "Crown of Command", weight: 1 },
 	{ value: "Eye of the Crystal Eel", weight: 1 },
 	{ value: "Aard of Being", weight: 1 },
+	{ value: "Sword of Virtue", weight: 1 },
+	{ value: "Scepter of Dominion", weight: 1 },
+	{ value: "Book of the Law", weight: 1 },
   ],
 
   prophecyfate: [
@@ -6806,6 +6815,7 @@ trap_location: [
 	{ value: "a talking ${AnimalBird} guards a chest of iron", weight: 1 },
 	{ value: "sits the well of old Saint ${SaintName}, rumored to have a secret tunnel that leads into the Castle of ${castle_name} at the bottom", weight: 1 },
 	{ value: "the Knight ${taboo_consequence_knight} guards a bridge, geased to collect 100 swords from knights who seek to cross", weight: 1 },
+	{ value: "a grove of ${cod_tree_type} trees whose lumber is used to build and repair bridges in the ${underworld_names} is being logged by a ${daemontype} daemon and a team of captive ${humanoids_nonhuman}", weight: 1 },
   ],
 
   wilds_locn: [
@@ -6939,6 +6949,7 @@ trap_location: [
 	{ value: "seasoned travelers say you are unlikely to encounter more than ${fairy_number} ${huntingmonster} in close proximity", weight: 1 },
 	{ value: "${gates_prefix} Gate, the first of the nine gates travelers must pass through to get to that gloomy place the ${ancientpeople} called the ${underworld_names} and the only one visible by daylight can be found ${fairy_number} leagues beyond ${landmark}", weight: 1 },
 	{ value: "if you travel far enough to the north, you'll reach a point where every wind blows from the south to the south", weight: 1 },
+	{ value: "visions of ${naturalthing} and a creeping feeling of ${numinous_feeling} means one has wandered close to the sacred ${landscape_types_basic_singular} where the gods travel to swear their oaths", weight: 1 },
   ],
   
   
@@ -7764,6 +7775,8 @@ trap_location: [
 	{ value: "Veena", weight: 1 },
 	{ value: "Reyona", weight: 1 },
 	{ value: "Kubbitha", weight: 1 },
+	{ value: "Ratri", weight: 1 },
+	{ value: "Chacurra", weight: 1 },
   ],
 
   FantasyLastName: [
@@ -10175,6 +10188,8 @@ celebration_type: [
 	{ value: "goblin", weight: 1 },
 	{ value: "giant", weight: 1 },
 	{ value: "gremlin", weight: 1 },
+	{ value: "satyr", weight: 1 },
+	{ value: "nymph", weight: 1 },
   ],
   
   fairy_folk_named: [
@@ -10350,6 +10365,7 @@ celebration_type: [
 	{ value: "must eat nothing after ${boundary_times}", weight: 1 },
 	{ value: "must never answer honestly the question of ${a:fairy_folk}", weight: 1 },
 	{ value: "must never allow the shadow of a bird to merge with their own shadow", weight: 1 },
+	{ value: "must not enter a dwelling without being invited", weight: 1 },
   ],
   
   taboo_path_type: [
@@ -10370,6 +10386,7 @@ celebration_type: [
 	{ value: "must lay with their head facing ${CompassDirection}", weight: 1 },
 	{ value: "must dismount after crossing the threshold", weight: 1 },
 	{ value: "must spit out the first bite of every meal", weight: 1 },
+	{ value: "must accept the invitation of ${a:fairy_folk}", weight: 1 },
   ],
   
   taboo_consequence: [
@@ -12779,6 +12796,29 @@ door_type: [
     { value: "purse", weight: 1 },
 	{ value: "belt-pouch", weight: 1 },
 	{ value: "saddlebag", weight: 1 },	
+  ],
+  
+  maneating: [
+    { value: "centaur", weight: 1 },
+	{ value: "dryad", weight: 1 },
+	{ value: "mermaid", weight: 1 },
+	{ value: "naga", weight: 1 },
+	{ value: "fairy", weight: 1 },
+	{ value: "hobgoblin", weight: 1 },
+    { value: "goblin", weight: 1 },
+	{ value: "leprechaun", weight: 1 },
+	{ value: "treant", weight: 1 },
+    { value: "brownie", weight: 1 },
+	{ value: "pixie", weight: 1 },
+	{ value: "troll", weight: 1 },
+	{ value: "nymph", weight: 1 },
+	{ value: "satyr", weight: 1 },
+	{ value: "kobold", weight: 1 },
+    { value: "gremlin", weight: 1 },
+	{ value: "unicorn", weight: 1 },
+	{ value: "giant", weight: 1 },
+    { value: "witch", weight: 1 },
+	{ value: "${humanoid}", weight: 1 },		
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
