@@ -94,6 +94,7 @@ const tables = {
 	{ value: " where the falcon wolves fuck", weight: 1 },
 	{ value: " where the razor boars fuck", weight: 1 },
 	{ value: " where the dogs have whiskers and the cats bark", weight: 1 },
+	{ value: " where somber children play the game High King in the Judgement Seat", weight: 1 },
   ],
 
   herdwith: [
@@ -340,7 +341,10 @@ const tables = {
 	{ value: " for whom the smell of sin was an affront,", weight: 1 },
 	{ value: " who drew smoke from the waterpipe in a genie's tent and was overcome by ${numinous_feeling},", weight: 1 },
 	{ value: " who wore a thousand arrow quiver and a five hundred arrow quiver,", weight: 1 },
-	
+	{ value: " who sailed across the Lake of Dreams on a raft of serpents,", weight: 1 },
+	{ value: " whose loins were the loins of the Lords of Kher-aba,", weight: 1 },
+	{ value: " who hath covered the sky with crystal,", weight: 1 },
+	{ value: " who was told by ${vancian_wizards} 'a strange life thou hath led, and a strange death thou shalt die',", weight: 1 },
   ],
 
   hundred_words: [
@@ -693,6 +697,7 @@ const tables = {
 	{ value: "the Father of the Forests and all things that inhabit them and that are constructed of wood will lose his patience with man at last", weight: 1 },
 	{ value: "the Great Toad will emerge from the bogs", weight: 1 },
 	{ value: "a dry rain will parch throats and desiccate vegetable life", weight: 1 },
+	{ value: "a tyrant titan named Taraka will rise and usurp mastery of the world", weight: 1 },
   ],
 
   coastal: [
@@ -930,6 +935,7 @@ const tables = {
     { value: "water squanderers", weight: 1 },
 	{ value: "${criminals_esoteric}", weight: 1 },
 	{ value: "plagiarists", weight: 1 },
+	{ value: "smugglers", weight: 1 },
   ],
   
   criminals_esoteric: [
@@ -990,6 +996,39 @@ const tables = {
     { value: "vandal", weight: 1 },
     { value: "squanderer", weight: 1 },
 	{ value: "plagiarist", weight: 1 },
+	{ value: "smuggler", weight: 1 },
+  ],
+  
+  crime_singular: [
+    { value: "acting", weight: 1 },
+    { value: "arson", weight: 1 },
+    { value: "cheating", weight: 1 },
+    { value: "fraud", weight: 1 },
+    { value: "counterfeiting", weight: 1 },
+    { value: "desertion", weight: 1 },
+    { value: "public drunkeness", weight: 1 },
+    { value: "hoarding", weight: 1 },
+    { value: "fornication", weight: 1 },
+    { value: "theft", weight: 1 },
+    { value: "heresy", weight: 1 },
+    { value: "idolatry", weight: 1 },
+    { value: "kidnapping", weight: 1 },
+    { value: "lying", weight: 1 },
+    { value: "loitering", weight: 1 },
+    { value: "necromancy", weight: 1 },
+    { value: "masturbation", weight: 1 },
+    { value: "murder", weight: 1 },
+    { value: "mutiny", weight: 1 },
+    { value: "poaching", weight: 1 },
+    { value: "prostitution", weight: 1 },
+    { value: "sedition", weight: 1 },
+    { value: "slander", weight: 1 },
+    { value: "swindling", weight: 1 },
+    { value: "smuggling", weight: 1 },
+    { value: "treason", weight: 1 },
+    { value: "usury", weight: 1 },
+    { value: "vandalism", weight: 1 },
+    { value: "plagiarism", weight: 1 },
   ],
 
   culprit: [
@@ -1224,7 +1263,7 @@ const tables = {
     { value: "Sir Alonne", weight: 1 },
     { value: "Nikon of the Black Mountain", weight: 1 },
     { value: "Solemn Veiled Orual", weight: 1 },
-    { value: "Steady Hand McDuff", weight: 1 },
+    { value: "The Golden Youth", weight: 1 },
     { value: "Steel-willed Lorrie", weight: 1 },
     { value: "Steelheart Ellie", weight: 1 },
     { value: "Stone Trader Chloanne", weight: 1 },
@@ -1269,7 +1308,7 @@ const tables = {
     { value: "Witch Beatrice", weight: 1 },
     { value: "Wounded Peri’el", weight: 1 },
     { value: "Forgall the Wily", weight: 1 },
-    { value: "Grave Warden Agdayne", weight: 1 },
+    { value: "The Jade Maiden", weight: 1 },
     { value: "Vengarl the Calligrapher", weight: 1 },
 	{ value: "Geoffrey of the Great Tooth", weight: 1 },
 	{ value: "Miriam of Nazara", weight: 1 },
@@ -1364,6 +1403,7 @@ const tables = {
 	{ value: "a spear dipped in a cauldron of noxious poison created through sorcery and the blood of dogs, cats and druids", weight: 1 },
 	{ value: "${a:container_bag} filled with dried Ardoa Herb, which only grows on land where ${huntingmonster} have been laid to rest,", weight: 1 },
 	{ value: "a wand carved from a bone left behind after a man-eating ${po:maneating} meal", weight: 1 },
+	{ value: "a magic kangaroo bone", weight: 1 },
   ],
 
   decade_event: [
@@ -1843,6 +1883,7 @@ const tables = {
 	{ value: "whose eyes were stung by ${a:AnimalInsectStinging}", weight: 1 },
 	{ value: "wearing a splendid cloak made from the skins of blue monkeys", weight: 1 },
 	{ value: "daubed with ${Colors} war-paint", weight: 1 },
+	{ value: "brandishing a handgun", weight: 1 },
   ],
 
   fd: [
@@ -1955,6 +1996,7 @@ const tables = {
 	{ value: "ghouls of three year old children that survive by eating the ${body_part_plural} of the dead", weight: 1 },
 	{ value: "a court painter who painted ${a:AnimalBigCat} that escaped from the canvas and caused havoc in the palace gardens", weight: 1 },
 	{ value: "${a:HaftedWeapons} so hot it must be kept in ice so the city won't melt down from its fiery heat", weight: 1 },
+	{ value: "a clever prince who slowly conquered the ${uc:fairy_number} Kingdoms by stealthily seeding poison sumac and manticore grass in the fertile farmlands and gardens of his neighbors", weight: 1 },
   ],
 
   feature: [
@@ -2118,6 +2160,7 @@ const tables = {
     { value: "wax masks are made of the dead and worn by professional actors at the funeral, who imitate the dead’s mannerisms and speech. Every family has a cupboard which contains the masks of their loved ones throughout history, along with instructions to future actors, and large funerals employ many actors who bring the dead back to life in this manner", weight: 1 },
     { value: "a great feast is held in honor of every ${floors} bear killed. Much of the celebration consists of attempting to persuade the spirit of the bear that it died accidentally and was not murdered", weight: 1 },
 	{ value: "the women who die before marriage become brides at their funeral", weight: 1 },
+	{ value: "the dead are buried with papers and gifts to present to the lord of the dead in the ${underworld_names}", weight: 1 },
   ],
 
   geas: [
@@ -2203,6 +2246,7 @@ const tables = {
     { value: "winged", weight: 1 },
 	{ value: "three-eyed", weight: 1 },
 	{ value: "miniature", weight: 1 },
+	{ value: "half-mummified", weight: 1 },
   ],
 
   herdanimal: [
@@ -3259,6 +3303,7 @@ const tables = {
 	{ value: "a stranger ${facial_desc} blew into town with the storm last night and ${FantasyName} the ${QuickNPCJobPoor} seemed to recognize them", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC} by day, serves as the night mayor of the village of ${village_names}", weight: 1 },
 	{ value: "${FantasyName}, after serving as mayor of the village of ${village_names} from sunrise to sunset, returns to their role as ${a:QuickNPCJob}", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} dreamt last night of ${vancian_wizards} consulting with the king about a date circled ${fairy_number} days hence in the divine calendar of ${FantasyGods}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -3342,6 +3387,7 @@ const tables = {
 	{ value: "sample the mysteries and delights of the keen keengs who live in a cave with their flame god", weight: 1 },
 	{ value: "become as skilled with lathe and adze as the wheelwrights and artisans of ${urbn_cityname}", weight: 1 },
 	{ value: "draw smoke from the waterpipe in a genie's tent", weight: 1 },
+	{ value: "sail across the Lake of Dreams on a raft of serpents", weight: 1 },
   ],
 
   local_racist: [
@@ -3845,6 +3891,7 @@ const tables = {
 	{ value: "A monstrous bloated ${monsterA} on the ${floors} floor feeds ${humanoids_nonhuman} to its ravenous brood", weight: 1 },
 	{ value: "an aggressive ${AnimalMain} encased in a metallic exo-skeleton has been leaving corpses and creating havoc on the ${floors} floor", weight: 1 },
 	{ value: "${a:daemontype} daemon can appear in the form of ${a:humanoid}, but cannot disguise the oppressive scent of ${Smells} that emanates from their horns", weight: 1 },
+	{ value: "${a:herd_adj} ${monsterA} on the ${floors} floor has learned to mimic the cry of an injured ${AnimalMount}", weight: 1 },
   ],
   
   monster_hybrid: [
@@ -4508,6 +4555,7 @@ const tables = {
 	{ value: "those who sing the song '${ballad_titles}' are punished by ${punishment}", weight: 1 },
 	{ value: "crimes against trees are punished by the criminal being turned into a tree", weight: 1 },
 	{ value: "those attainted of high treason swing from the aqueduct", weight: 1 },
+	{ value: "the talking ${AnimalSimian}s found guilty of ${crime_singular} are punished by ${punishment}", weight: 1 },
   ],
 
   punishment: [
@@ -4801,6 +4849,7 @@ const tables = {
     { value: "the ruins of the demon settlement", weight: 1 },
     { value: "the western waters of Mert", weight: 1 },
 	{ value: "the island of Kharg in the gulf", weight: 1 },
+	{ value: "Mullian the Eagle-hawk, an immortal ${humanoid} chained forever to a rock in a fit of spite by ${FantasyGods} for the crime of ${crime_singular}", weight: 2 },
   ],
 
   seaterror: [
@@ -5399,6 +5448,7 @@ const tables = {
 	{ value: "a headless ${huntingmonster_singular}", weight: 1 },
 	{ value: "walls that breathe, walls with eyes, ears, mouths", weight: 1 },
 	{ value: "the spirit of dark and pleasant water", weight: 1 },
+	{ value: "the wind of the obsidian knives", weight: 1 },
   ],
   
   
@@ -6321,6 +6371,8 @@ trap_location: [
 	{ value: "a lustful ${fairy_folk}", weight: 1 },
 	{ value: "a temptress of knights", weight: 1 },
 	{ value: "the notorious she-thug Onnamen", weight: 1 },
+	{ value: "a battle-goddess with tiger claws", weight: 1 },
+	{ value: "${a:fairy_folk} named Putana with poison in her breasts", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6555,6 +6607,7 @@ trap_location: [
 	{ value: "communicates through glimmerings and dreams", weight: 1 },
 	{ value: "chops the wings off ${a:AnimalBird} with a stone tomahawk", weight: 1 },
 	{ value: "speaks the tongue of the ancient ${ancientpeople}, whom the demon ${DemonName} spent seven years among before departing, finding himself unable to understand or make himself understood", weight: 1 },
+	{ value: "holds court, attended by humpbacks and dwarfs", weight: 1 },
 	
   ],
 
@@ -6588,6 +6641,7 @@ trap_location: [
 	{ value: "an inert golem made of ${golem_types}", weight: 1 },
 	{ value: "a massive cauldron that can summon ${severe_weather}s", weight: 1 },
 	{ value: "${a:magicalcommonobject} left by ${ancientpeople_singular} mariners {when} ago", weight: 1 },
+	{ value: "a grotesque deity, one head a serpent and the other head a sword,", weight: 1 },
   ],
 
   weapon_land_type: [
@@ -7963,7 +8017,7 @@ trap_location: [
     { value: "sturdy Boots", weight: 1 },
 	{ value: "white Lies", weight: 1 },
     { value: "two in the Afternoon", weight: 1 },
-    { value: "the ${uc:QuickNPCJob}", weight: 1 },
+    { value: "the ${tc:QuickNPCJob}", weight: 1 },
 	{ value: "the Next Ten Minutes", weight: 1 },
     { value: "rain", weight: 1 },
 	{ value: "the Hour Badly Spent", weight: 1 },
@@ -10960,6 +11014,7 @@ ship_type: [
 	{ value: "Ten Unlucky ${tc:violent_profession_plural}", weight: 1 },
 	{ value: "The Theft of the ${tc:FantasyMeal_Fruit_Berry} ${tc:FantasyMeal_Fruit_Berry_Uses}", weight: 1 },
 	{ value: "The Lesser Miracles of Saint ${SaintName}", weight: 1 },
+	{ value: "The ${tc:ballad_subject} Who Wore White", weight: 1 },
 	
   ],
   
