@@ -345,6 +345,8 @@ const tables = {
 	{ value: " whose loins were the loins of the Lords of Kher-aba,", weight: 1 },
 	{ value: " who hath covered the sky with crystal,", weight: 1 },
 	{ value: " who was told by ${vancian_wizards} 'a strange life thou hath led, and a strange death thou shalt die',", weight: 1 },
+	{ value: " whose delight was to meditate on burial grounds amidst the reek of corpses,", weight: 1 },
+	{ value: " who poisoned his god with terrible smoke from the sacrifice of a diseased ${AnimalFarm},", weight: 1 },
   ],
 
   hundred_words: [
@@ -561,6 +563,7 @@ const tables = {
 	{ value: "formed of ${MarbleTypes} marble", weight: 1 },
 	{ value: "with poisonous skin and alien blood, fatal to snake and vampire bite", weight: 1 },
 	{ value: "half made of wood", weight: 1 },
+	{ value: "said to be a red gremlin with a crossbow", weight: 1 },
   ],
 
   body_part_fate: [
@@ -897,6 +900,7 @@ const tables = {
 	{ value: "the lizard-fish Gurangatch", weight: 1 },
 	{ value: "Mirragen the Cat-man", weight: 1 },
 	{ value: "Vuur Aag, the Annihilating Fire", weight: 1 },
+	{ value: "the Dog Punisher", weight: 1 },
   ],
 
   criminals: [
@@ -1997,6 +2001,7 @@ const tables = {
 	{ value: "a court painter who painted ${a:AnimalBigCat} that escaped from the canvas and caused havoc in the palace gardens", weight: 1 },
 	{ value: "${a:HaftedWeapons} so hot it must be kept in ice so the city won't melt down from its fiery heat", weight: 1 },
 	{ value: "a clever prince who slowly conquered the ${uc:fairy_number} Kingdoms by stealthily seeding poison sumac and manticore grass in the fertile farmlands and gardens of his neighbors", weight: 1 },
+	{ value: "a man with the head of ${a:AnimalMammal} who discovered 70 poisonous plants and their antidotes in a single day by observing the digestion of each herb through a glass covering over his stomach", weight: 1 },
   ],
 
   feature: [
@@ -2247,11 +2252,12 @@ const tables = {
 	{ value: "three-eyed", weight: 1 },
 	{ value: "miniature", weight: 1 },
 	{ value: "half-mummified", weight: 1 },
+	{ value: "masterless", weight: 1 },
   ],
 
   herdanimal: [
     { value: "camels", weight: 1 },
-    { value: "dogs", weight: 1 },
+    { value: "hounds", weight: 1 },
     { value: "elephants", weight: 1 },
     { value: "horses", weight: 1 },
     { value: "reindeer", weight: 1 },
@@ -2305,7 +2311,8 @@ const tables = {
 	{ value: "was possessed by a spirit, becoming the horse of a god that rides them", weight: 1 },
 	{ value: "became the latest tree to join a forest of dark singing trees", weight: 1 },
 	{ value: "now wanders lost in the underground maze of the Genowlan caves", weight: 1 },
-	{ value: "now sleeps eternally dreaming of Balder the Beloved, who wandered through fields of battle and wild lands and not so much as a dog barked at him", weight: 1 },
+	{ value: "now sleeps eternally dreaming of Balder the Beloved, who wandered gaily through fields of battle and wild lands and not so much as a dog barked at him", weight: 1 },
+	{ value: "fell victim to powers beyond the sphere of the measured and the named", weight: 1 },
   ],
 
   hero_goal: [
@@ -2795,6 +2802,7 @@ const tables = {
 	{ value: "with a watery course where people place wagers on ${AnimalWater} races", weight: 1 },
 	{ value: "with an old tower of ${po:vancian_wizards} who kept ${wizard_servant} as servants", weight: 2 },
 	{ value: "where all share the same evil dream of two serpents intertwined, ${a:AnimalPest} with the voice of a man, a blood-stained ${duo_clothing_singular} and a talking ${magicalcommonobject}", weight: 1 },
+	{ value: "where a choir of ${AnimalBird}s sing the song that conjures up the storm", weight: 1 },
   ],
 
   island_bound: [
@@ -3892,6 +3900,7 @@ const tables = {
 	{ value: "an aggressive ${AnimalMain} encased in a metallic exo-skeleton has been leaving corpses and creating havoc on the ${floors} floor", weight: 1 },
 	{ value: "${a:daemontype} daemon can appear in the form of ${a:humanoid}, but cannot disguise the oppressive scent of ${Smells} that emanates from their horns", weight: 1 },
 	{ value: "${a:herd_adj} ${monsterA} on the ${floors} floor has learned to mimic the cry of an injured ${AnimalMount}", weight: 1 },
+	{ value: "${vancian_wizards} claimed that a doppelgänger will not recognize itself in a mirror, ignoring its reflection like a dog or a cat would", weight: 1 },
   ],
   
   monster_hybrid: [
@@ -4850,6 +4859,7 @@ const tables = {
     { value: "the western waters of Mert", weight: 1 },
 	{ value: "the island of Kharg in the gulf", weight: 1 },
 	{ value: "Mullian the Eagle-hawk, an immortal ${humanoid} chained forever to a rock in a fit of spite by ${FantasyGods} for the crime of ${crime_singular}", weight: 2 },
+	{ value: "Zipangu, the island of the dragonfly", weight: 1 },
   ],
 
   seaterror: [
@@ -5791,6 +5801,8 @@ trap_location: [
 	{ value: "thousands of ${AnimalBird}s massed outside the ${aristocratic_home} of ${heroes_and_villains} as they lay dying, prepared to guide that powerful soul to the ${afterlife}", weight: 1 },
 	{ value: "${a:QuickNPCJob} claims that the city of ${urbn_cityname} is a paradise that makes ${urbn_cityname} a sty for hogs in comparison", weight: 1 },
 	{ value: "Sandhana, the disgraced apprentice of ${vancian_wizards} can supposedly be found living with ${a:huntingmonster_singular} in an abandoned ${urbn_place} in ${urbn_cityname}, the City of ${urbn_citynickname}", weight: 1 },
+	{ value: "they say ${urbn_cityname} is a veritable pageant of marvels, where even the ${QuickNPCJobPoor}s are as likely to go about mounted on ${a:AnimalMagicMount} with a jeweled saddle as on a horse or mule", weight: 1 },
+	{ value: "everyone at ${po:FantasyNameMale} Trough in ${urbn_cityname} has a story; for instance, that ${QuickNPCJob} sitting there nursing their ${alcohol_beer} was born of noble twins who committed incest at the behest of either the ${daemontype} daemon ${DemonName} or ${FantasyGods}", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6608,6 +6620,7 @@ trap_location: [
 	{ value: "chops the wings off ${a:AnimalBird} with a stone tomahawk", weight: 1 },
 	{ value: "speaks the tongue of the ancient ${ancientpeople}, whom the demon ${DemonName} spent seven years among before departing, finding himself unable to understand or make himself understood", weight: 1 },
 	{ value: "holds court, attended by humpbacks and dwarfs", weight: 1 },
+	{ value: "neither slumbers nor sleeps", weight: 1 },
 	
   ],
 
@@ -6870,6 +6883,7 @@ trap_location: [
 	{ value: "sits the well of old Saint ${SaintName}, rumored to have a secret tunnel that leads into the Castle of ${castle_name} at the bottom", weight: 1 },
 	{ value: "the Knight ${taboo_consequence_knight} guards a bridge, geased to collect 100 swords from knights who seek to cross", weight: 1 },
 	{ value: "a grove of ${cod_tree_type} trees whose lumber is used to build and repair bridges in the ${underworld_names} is being logged by a ${daemontype} daemon and a team of captive ${humanoids_nonhuman}", weight: 1 },
+	{ value: "a forgotten cemetery holds the bones of eleven ancient ${ancientpeople_singular} queens", weight: 1 },
   ],
 
   wilds_locn: [
@@ -8745,6 +8759,7 @@ trap_location: [
 	{ value: "${AnimalFarm} shit", weight: 1 },
 	{ value: "blooming ${flowers_singular}", weight: 1 },
 	{ value: "horse sweat", weight: 1 },
+	{ value: "unwashed ${humanoid}", weight: 1 },
   ],
 
   TradeGoods: [
@@ -10937,6 +10952,7 @@ ship_type: [
 	{ value: "a chunk from a mountain of fire", weight: 1 },
 	{ value: "${a:MusicalInstrument} that supposedly belonged to ${vancian_wizards}", weight: 1 },
 	{ value: "armor from the ${underworld_names}", weight: 1 },
+	{ value: "a sinister ${Metallic} crown", weight: 1 },
   ],
   
   ship_cargo_novelty_type: [
