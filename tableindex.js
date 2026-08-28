@@ -347,6 +347,7 @@ const tables = {
 	{ value: " who was told by ${vancian_wizards} 'a strange life thou hath led, and a strange death thou shalt die',", weight: 1 },
 	{ value: " whose delight was to meditate on burial grounds amidst the reek of corpses,", weight: 1 },
 	{ value: " who poisoned his god with terrible smoke from the sacrifice of a diseased ${AnimalFarm},", weight: 1 },
+	{ value: " whose feet never trod upon the dull earth, as their attendants laid exquisite tapestries down to walk upon,", weight: 1 },
   ],
 
   hundred_words: [
@@ -2338,6 +2339,7 @@ const tables = {
 	{ value: "to sit upon the ${tc:famous_thrones} Throne of ${foreign_adj}${foreignland} which was carried off by raiders from ${coastal} ${historicalage}", weight: 1 },
 	{ value: "to find a face which has done no wrong", weight: 1 },
 	{ value: "to sit upon the Chair of Forgetting", weight: 1 },
+	{ value: "to break the malign power of a ${idol_material} idol of ${a:idol_subject}", weight: 1 },
   ],
 
   heroname: [
@@ -3138,6 +3140,7 @@ const tables = {
 	{ value: "the Inn of Holidays", weight: 1 },
 	{ value: "the Palace of the Dragon King", weight: 1 },
 	{ value: "the Garden of ${vancian_wizards}", weight: 1 },
+	{ value: "the Cemetery of the ${tc:QuickNPCJobPoor}, the ${tc:QuickNPCJobMid} and the ${tc:QuickNPCJobRich}", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -6385,6 +6388,7 @@ trap_location: [
 	{ value: "the notorious she-thug Onnamen", weight: 1 },
 	{ value: "a battle-goddess with tiger claws", weight: 1 },
 	{ value: "${a:fairy_folk} named Putana with poison in her breasts", weight: 1 },
+	{ value: "a beautiful woman with the head of ${a:AnimalCanine}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6831,7 +6835,7 @@ trap_location: [
     { value: "a temple stands, wherein the voices of children playing outside assume a rhythmic answer to the seeker’s question", weight: 1 },
     { value: "a temple stands, whose doors only open in times of great conflict", weight: 1 },
     { value: "a thousand broken statues endure the elements", weight: 1 },
-    { value: "a tree stands, from whose upper branches climbers can peer into the underworld", weight: 1 },
+    { value: "a white tree stands, from whose upper branches climbers can peer into the underworld", weight: 1 },
     { value: "a tree stands, whose upper branches turn climbers into monkeys", weight: 1 },
     { value: "a vast white fungus that spreads for miles underground breaches the surface", weight: 1 },
     { value: "an abandoned doll-maker’s workshop sinks into ruin", weight: 1 },
@@ -7018,6 +7022,7 @@ trap_location: [
 	{ value: "${gates_prefix} Gate, the first of the nine gates travelers must pass through to get to that gloomy place the ${ancientpeople} called the ${underworld_names} and the only one visible by daylight can be found ${fairy_number} leagues beyond ${landmark}", weight: 1 },
 	{ value: "if you travel far enough to the north, you'll reach a point where every wind blows from the south to the south", weight: 1 },
 	{ value: "visions of ${naturalthing} and a creeping feeling of ${numinous_feeling} means one has wandered close to the sacred ${landscape_types_basic_singular} where the gods travel to swear their oaths", weight: 1 },
+	{ value: "${a:fairy_folk} who witnesses the sunrise will turn into ${thingbeyond} for ${fairy_number} days", weight: 1 },
   ],
   
   
@@ -10364,6 +10369,7 @@ celebration_type: [
 	{ value: "Fields of Mourning", weight: 1 },
 	{ value: "Room Below", weight: 1 },
 	{ value: "House of Lies", weight: 1 },
+	{ value: "House of No Cheer", weight: 1 },
   ],
   
   hell_names: [
