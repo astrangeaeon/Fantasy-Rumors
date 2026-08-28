@@ -348,6 +348,7 @@ const tables = {
 	{ value: " whose delight was to meditate on burial grounds amidst the reek of corpses,", weight: 1 },
 	{ value: " who poisoned his god with terrible smoke from the sacrifice of a diseased ${AnimalFarm},", weight: 1 },
 	{ value: " whose feet never trod upon the dull earth, as their attendants laid exquisite tapestries down to walk upon,", weight: 1 },
+	{ value: " may they be riddled with bullets and carved by the blade,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1322,6 +1323,7 @@ const tables = {
 	{ value: "Quiet Norman", weight: 1 },
 	{ value: "Gross Michael", weight: 1 },
 	{ value: "Giant Hunter Matsieng", weight: 1 },
+	{ value: "Mullian the Eagle-hawk", weight: 1 },
   ],
 
   deadadventurerloot: [
@@ -1935,6 +1937,7 @@ const tables = {
 	{ value: "a false leg made of silver and jewels", weight: 1 },
 	{ value: "tattooed black lips", weight: 1 },
 	{ value: "false hair and false teeth", weight: 1 },
+	{ value: "floor-length hair and blackened teeth", weight: 1 },
   ],
 
   fd_tale: [
@@ -2351,12 +2354,14 @@ const tables = {
     { value: "${historicalbuilders}, who were known for building ${historicalinfrastructure} ${historicalage},", weight: 1 },
 	{ value: "${historicalbuilders}, who were known for burying caches of ${exchangething} ${historicalage},", weight: 1 },
 	{ value: "${historicalbuilders}, who were known for their devout faith in ${RealGods} until ${creepyvillain} claimed their hearts,", weight: 1 },
+	{ value: "${historicalbuilders}, who were known for immuring dryads, dogs, or druids into the foundations of the ${historicalinfrastructure} they built ${historicalage},", weight: 1 },
   ],
   
   historybuild_ntc: [
     { value: "${historicalbuilders}, who were known for building ${historicalinfrastructure} ${historicalage}", weight: 1 },
 	{ value: "${historicalbuilders}, who were known for burying caches of ${exchangething} ${historicalage}", weight: 1 },
 	{ value: "${historicalbuilders}, who were known for their devout faith in ${RealGods} until ${creepyvillain} claimed their hearts", weight: 1 },
+	{ value: "${historicalbuilders}, who were known for immuring dryads, dogs, or druids into the foundations of the ${historicalinfrastructure} they built ${historicalage}", weight: 1 },
   ],
   
    historicalage: [
@@ -3050,7 +3055,7 @@ const tables = {
     { value: "the Kavorka, a sect of ${huntingmonster} of which there can only be 40 at a given time", weight: 1 },
     { value: "the laws of Numa", weight: 1 },
     { value: "the Limmungerran", weight: 1 },
-    { value: "the others", weight: 1 },
+    { value: "the beings who know not food, know not water", weight: 1 },
     { value: "the paintings, poems, and architecture—in short, the culture—of daemons", weight: 1 },
     { value: "the Turnings and Windings", weight: 1 },
 	{ value: "the Nymph of Tartaros and her light-shunning brood", weight: 1 },
@@ -3060,6 +3065,7 @@ const tables = {
 	{ value: "the cliff-dwellers who live at the edge of the world", weight: 1 },
 	{ value: "how it is that Tara could be seen from Aicill but Aicill could not be seen from Tara", weight: 1 },
 	{ value: "the fine ${Colors} ash that coats the groves and gardens of ${foreignland}", weight: 1 },
+	{ value: "${creepyvillain}", weight: 1 },
   ],
 
   landmark: [
@@ -3399,6 +3405,7 @@ const tables = {
 	{ value: "become as skilled with lathe and adze as the wheelwrights and artisans of ${urbn_cityname}", weight: 1 },
 	{ value: "draw smoke from the waterpipe in a genie's tent", weight: 1 },
 	{ value: "sail across the Lake of Dreams on a raft of serpents", weight: 1 },
+	{ value: "luxuriate in the warm baths of the king", weight: 1 },
   ],
 
   local_racist: [
@@ -4064,6 +4071,7 @@ const tables = {
 	{ value: "in ${a:DungeonRoom} with two ${humanoid} skeletons", weight: 1 },
 	{ value: "in ${a:DungeonRoom} littered with ${dungeon_litter}", weight: 2 },
 	{ value: "in ${a:DungeonRoom} where an eidolon of ${vancian_wizards} can be seen writing in a book behind a window of impenetrable glass", weight: 1 },
+	{ value: "in the ${DungeonRoom} where Saint ${SaintName} was supposedly immured with only ${a:magicalcommonobject}, a book, and a candlestick", weight: 1 },
   ],
 
   occupation: [
@@ -4617,6 +4625,7 @@ const tables = {
 	{ value: "having their eyes sewn shut", weight: 1 },
 	{ value: "having their tongue and hands removed and fed to ${a:AnimalFarm}", weight: 1 },
 	{ value: "having their legs broken with heavy wooden mallets", weight: 1 },
+	{ value: "immurement within the walls of ${a:urbn_place}", weight: 1 },
   ],
 
   rm: [
@@ -5462,6 +5471,7 @@ const tables = {
 	{ value: "walls that breathe, walls with eyes, ears, mouths", weight: 1 },
 	{ value: "the spirit of dark and pleasant water", weight: 1 },
 	{ value: "the wind of the obsidian knives", weight: 1 },
+	{ value: "the dreaded centaur-medusa, thought to be only ${a:ancientpeople_singular} myth", weight: 1 },
   ],
   
   
@@ -5806,6 +5816,7 @@ trap_location: [
 	{ value: "Sandhana, the disgraced apprentice of ${vancian_wizards} can supposedly be found living with ${a:huntingmonster_singular} in an abandoned ${urbn_place} in ${urbn_cityname}, the City of ${urbn_citynickname}", weight: 1 },
 	{ value: "they say ${urbn_cityname} is a veritable pageant of marvels, where even the ${QuickNPCJobPoor}s are as likely to go about mounted on ${a:AnimalMagicMount} with a jeweled saddle as on a horse or mule", weight: 1 },
 	{ value: "everyone at ${po:FantasyNameMale} Trough in ${urbn_cityname} has a story; for instance, that ${QuickNPCJob} sitting there nursing their ${alcohol_beer} was born of noble twins who committed incest at the behest of either the ${daemontype} daemon ${DemonName} or ${FantasyGods}", weight: 1 },
+	{ value: "the old saying is true, 'what good can come from ${urbn_cityname}?'", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6230,7 +6241,7 @@ trap_location: [
 	{ value: "recreant knights who live by robbery in the forest", weight: 1 },
 	{ value: "cursed fishers whose nets catch nothing, whose kreels are empty", weight: 1 },
 	{ value: "${travelers}s from ${urbn_cityname}, the City of ${tc:urbn_citynickname}", weight: 1 },
-	{ value: "a trio of ${violent_profession_plural}", weight: 1 },
+	{ value: "a trio of ${violent_profession_plural} armed with strange triangular daggers", weight: 1 },
 	{ value: "knights in ${Colors} armor", weight: 1 },
 	{ value: "the highborn of ${urbn_cityname}", weight: 1 },
 	{ value: "the sullen, proud and rarely courteous lords of the city", weight: 1 },
@@ -6389,6 +6400,7 @@ trap_location: [
 	{ value: "a battle-goddess with tiger claws", weight: 1 },
 	{ value: "${a:fairy_folk} named Putana with poison in her breasts", weight: 1 },
 	{ value: "a beautiful woman with the head of ${a:AnimalCanine}", weight: 1 },
+	{ value: "a girl named ${tc:flowers_singular} who escaped from the Harem of Flowers", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6888,6 +6900,7 @@ trap_location: [
 	{ value: "the Knight ${taboo_consequence_knight} guards a bridge, geased to collect 100 swords from knights who seek to cross", weight: 1 },
 	{ value: "a grove of ${cod_tree_type} trees whose lumber is used to build and repair bridges in the ${underworld_names} is being logged by a ${daemontype} daemon and a team of captive ${humanoids_nonhuman}", weight: 1 },
 	{ value: "a forgotten cemetery holds the bones of eleven ancient ${ancientpeople_singular} queens", weight: 1 },
+	{ value: "there stand ${fairy_number} brick pillars with men inside", weight: 1 },
   ],
 
   wilds_locn: [
@@ -10303,6 +10316,7 @@ celebration_type: [
 	{ value: "the Rye Mother", weight: 1 },
 	{ value: "the Cornflower Wraith", weight: 1 },
 	{ value: "the Iron-nose Midwife", weight: 1 },
+	{ value: "Thardid Jimbo", weight: 1 },
   ],
   
   afterlife: [
@@ -11037,6 +11051,7 @@ ship_type: [
 	{ value: "The Theft of the ${tc:FantasyMeal_Fruit_Berry} ${tc:FantasyMeal_Fruit_Berry_Uses}", weight: 1 },
 	{ value: "The Lesser Miracles of Saint ${SaintName}", weight: 1 },
 	{ value: "The ${tc:ballad_subject} Who Wore White", weight: 1 },
+	{ value: "the ${uc:po:QuickNPCJob} Wish", weight: 1 },
 	
   ],
   
@@ -11796,6 +11811,7 @@ door_type: [
 	{ value: "the ${uc:humanoid}", weight: 2 },
 	{ value: "Gloom", weight: 1 },
 	{ value: "Victory", weight: 1 },
+	{ value: "the Slaughter-House", weight: 1 },
   ],
   
   //the castle of ntc, sometimes called the castle of castle_name, is said to have castle_extra
@@ -12231,6 +12247,7 @@ door_type: [
 	{ value: "${heroes_and_villains} stomped on hundreds of invading ${AnimalInsect}s, earning the eternal friendship of a village of tiny gnomes", weight: 1 },
 	{ value: "${heroes_and_villains} was betrayed by their lover, either Princess ${FantasyNameFemale} or a harlot from ${urbn_cityname}", weight: 1 },
 	{ value: "${heroes_and_villains} won ${a:AnimalFarm} in a game of ${board_games} against ${board_game_opponent}", weight: 1 },
+	{ value: "Saint ${SaintName} was martyred by ${violent_profession_plural} in the pay of ${creepyvillain}", weight: 1 },
   ],
   
   shrine_type: [
@@ -12477,6 +12494,7 @@ door_type: [
 	{ value: "the Gate ${gates_suffix} torn up and carried away by ${flag_extra_humanoids_adj} giant", weight: 1 },
 	{ value: "a half-dozen ${AnimalSimian}s that escaped from the Royal Laboratory with the help of a radical druid", weight: 1 },
 	{ value: "one of the Living Treasures of Sultan Abdullah Abdullah: ${living_treasure}", weight: 2 },
+	{ value: "a runaway from the Harem of Flowers named ${tc:flowers_singular}", weight: 1 },
   ],
   
   fetch_quest_reward: [
