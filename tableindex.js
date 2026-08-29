@@ -15,6 +15,7 @@ const tables = {
     { value: "treacherous ", weight: 1 },
     { value: "unhappy ", weight: 1 },
 	{ value: "dark ", weight: 1 },
+	{ value: "ruined ", weight: 1 },
   ],
 
   foreign_phrase: [
@@ -95,6 +96,7 @@ const tables = {
 	{ value: " where the razor boars fuck", weight: 1 },
 	{ value: " where the dogs have whiskers and the cats bark", weight: 1 },
 	{ value: " where somber children play the game High King in the Judgement Seat", weight: 1 },
+	{ value: " among the wild deer and forest peacocks", weight: 1 },
   ],
 
   herdwith: [
@@ -349,6 +351,9 @@ const tables = {
 	{ value: " who poisoned his god with terrible smoke from the sacrifice of a diseased ${AnimalFarm},", weight: 1 },
 	{ value: " whose feet never trod upon the dull earth, as their attendants laid exquisite tapestries down to walk upon,", weight: 1 },
 	{ value: " may they be riddled with bullets and carved by the blade,", weight: 1 },
+	{ value: " child of the night wind and mountain witches,", weight: 1 },
+	{ value: " who feared only insects, thunder and the face of the dead,", weight: 1 },
+	{ value: " who breathed only the rare air of high mountain storms,", weight: 1 },
   ],
 
   hundred_words: [
@@ -903,6 +908,8 @@ const tables = {
 	{ value: "Mirragen the Cat-man", weight: 1 },
 	{ value: "Vuur Aag, the Annihilating Fire", weight: 1 },
 	{ value: "the Dog Punisher", weight: 1 },
+	{ value: "the Blood Nymph Hamadryas", weight: 1 },
+	{ value: "Ugallu the Big Weather-Beast", weight: 1 },
   ],
 
   criminals: [
@@ -2006,6 +2013,8 @@ const tables = {
 	{ value: "${a:HaftedWeapons} so hot it must be kept in ice so the city won't melt down from its fiery heat", weight: 1 },
 	{ value: "a clever prince who slowly conquered the ${uc:fairy_number} Kingdoms by stealthily seeding poison sumac and manticore grass in the fertile farmlands and gardens of his neighbors", weight: 1 },
 	{ value: "a man with the head of ${a:AnimalMammal} who discovered 70 poisonous plants and their antidotes in a single day by observing the digestion of each herb through a glass covering over his stomach", weight: 1 },
+	{ value: "a race of winged ${humanoids_nonhuman}, free to swim in the depths of the sky", weight: 1 },
+	{ value: "a house that had no right but was nonetheless driven to speak", weight: 1 },
   ],
 
   feature: [
@@ -2137,6 +2146,7 @@ const tables = {
 	{ value: "Upper Morven", weight: 1 },
 	{ value: "Lower Targamon", weight: 1 },
 	{ value: "Reeda", weight: 1 },
+	{ value: "Combia", weight: 1 },
   ],
 
   funeralcustom: [
@@ -2287,6 +2297,8 @@ const tables = {
     { value: "trespassing in sacred ${slumberplace}", weight: 1 },
 	{ value: "stealing ${a:idol}", weight: 1 },
 	{ value: "killing a unicorn", weight: 1 },
+	{ value: "conjuring the daemon ${DemonName} who took the form of ${a:Weapons}", weight: 1 },
+	{ value: "immersing their feet in the grey ice water of the sacred river", weight: 1 },
   ],
 
   hero_fate: [
@@ -2951,6 +2963,7 @@ const tables = {
 	{ value: "a centipede coiled around a mountain, two balls of fire for eyes", weight: 1 },
 	{ value: "a great palace of black iron", weight: 1 },
 	{ value: "a man-eating ${maneating}", weight: 1 },
+	{ value: "a hysterical sobbing ${humanoid} with a powerful and destrutive magic staff", weight: 1 },
   ],
 
   island_riches: [
@@ -3066,6 +3079,7 @@ const tables = {
 	{ value: "how it is that Tara could be seen from Aicill but Aicill could not be seen from Tara", weight: 1 },
 	{ value: "the fine ${Colors} ash that coats the groves and gardens of ${foreignland}", weight: 1 },
 	{ value: "${creepyvillain}", weight: 1 },
+	{ value: "the women whose bodies themselves are gardens", weight: 1 },
   ],
 
   landmark: [
@@ -3963,6 +3977,7 @@ const tables = {
 	{ value: "${DemonName}, cow-repelling, antelope-footed and bull-toothed,", weight: 1 },
 	{ value: "Lord ${DemonName} the Polite, ${a:undead_thinking} obsessed with the etiquette of the ancient ${ancientpeople},", weight: 1 },
 	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, a lesser daemon who can only be injured by a cursed weapon,", weight: 1 },
+	{ value: "${DemonName}, ${a:daemontype} daemon who secretly longs for ${thingbeyond} from the childhood of the world, before man, when the earth gave birth only to trees, animals and gods,", weight: 1 },
   ],
   
   monstertype_ntc: [
@@ -3976,6 +3991,7 @@ const tables = {
 	{ value: "${DemonName}, cow-repelling, antelope-footed and bull-toothed", weight: 1 },
 	{ value: "Lord ${DemonName} the Polite, ${a:undead_thinking} obsessed with the etiquette of the ancient ${ancientpeople}", weight: 1 },
 	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, a lesser daemon who can only be injured by a cursed weapon", weight: 1 },
+	{ value: "${DemonName}, ${a:daemontype} daemon who secretly longs for ${thingbeyond} from the childhood of the world, before man, when the earth gave birth only to trees, animals and gods", weight: 1 },
   ],
 
   monstervalue: [
@@ -4038,6 +4054,7 @@ const tables = {
     { value: "unseasonable snows", weight: 1 },
 	{ value: "taunting crows and mockingbirds", weight: 1 },
 	{ value: "massive upside-down trees rooted in the inscrutable heights", weight: 1 },
+	{ value: "corrupted animals", weight: 1 },
   ],
 
   nontextualprophecysource: [
@@ -4626,6 +4643,7 @@ const tables = {
 	{ value: "having their tongue and hands removed and fed to ${a:AnimalFarm}", weight: 1 },
 	{ value: "having their legs broken with heavy wooden mallets", weight: 1 },
 	{ value: "immurement within the walls of ${a:urbn_place}", weight: 1 },
+	{ value: "finger torture", weight: 1 },
   ],
 
   rm: [
@@ -4774,6 +4792,8 @@ const tables = {
     { value: "Royal Remembrancer", weight: 1 },
 	{ value: "First Butcher", weight: 1 },
     { value: "First Gardener", weight: 1 },
+	{ value: "Minister of Perfect Pleasures", weight: 1 },
+    { value: "Counselor of Just Torments", weight: 1 },
   ],
 
   ruinedtower: [
@@ -5472,6 +5492,8 @@ const tables = {
 	{ value: "the spirit of dark and pleasant water", weight: 1 },
 	{ value: "the wind of the obsidian knives", weight: 1 },
 	{ value: "the dreaded centaur-medusa, thought to be only ${a:ancientpeople_singular} myth", weight: 1 },
+	{ value: "the night wind and mountain witches", weight: 1 },
+	{ value: "a demon-god with ${Metallic} horns and a snake-headed penis named ${LowerRankedDemonName}", weight: 1 },
   ],
   
   
@@ -6489,6 +6511,7 @@ trap_location: [
 	{ value: "inflict spiritual wounds that their victims won't feel until they arrive in the afterlife greviously wounded", weight: 1 },
 	{ value: "boasts of knowing all but one of the 240,000 spells of the ${ancientpeople}", weight: 1 },
 	{ value: "sip on powerfully weak tea from ${foreignland}${foreign_phrase}", weight: 1 },
+	{ value: "drink eagle's water to prolong their lives", weight: 1 },
   ],
 
   urbn_verbsingular: [
@@ -7036,6 +7059,7 @@ trap_location: [
 	{ value: "if you travel far enough to the north, you'll reach a point where every wind blows from the south to the south", weight: 1 },
 	{ value: "visions of ${naturalthing} and a creeping feeling of ${numinous_feeling} means one has wandered close to the sacred ${landscape_types_basic_singular} where the gods travel to swear their oaths", weight: 1 },
 	{ value: "${a:fairy_folk} who witnesses the sunrise will turn into ${thingbeyond} for ${fairy_number} days", weight: 1 },
+	{ value: "one who has spent the night under the Black Stone of Arduu on Mount ${slumberplace} will descend the next morning as either a madman, ${a:QuickNPCJobExotic} or a saint", weight: 1 },
   ],
   
   
@@ -8663,6 +8687,8 @@ trap_location: [
 	{ value: "bell-founder", weight: 1 },
     { value: "grave-filler", weight: 1 },
 	{ value: "talismonger", weight: 1 },
+	{ value: "fire-perfumer", weight: 1 },
+	{ value: "finger-torturer", weight: 1 },
   ],
 
   RealGods: [
