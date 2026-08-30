@@ -355,6 +355,7 @@ const tables = {
 	{ value: " child of the night wind and mountain witches,", weight: 1 },
 	{ value: " who feared only insects, thunder and the face of the dead,", weight: 1 },
 	{ value: " who breathed only the rare air of high mountain storms,", weight: 1 },
+	{ value: " who faithfully celebrated the Feast of the Peaches every six thousand years,", weight: 1 },
   ],
 
   hundred_words: [
@@ -2018,6 +2019,7 @@ const tables = {
 	{ value: "a man with the head of ${a:AnimalMammal} who discovered 70 poisonous plants and their antidotes in a single day by observing the digestion of each herb through a glass covering over his stomach", weight: 1 },
 	{ value: "a race of winged ${humanoids_nonhuman}, free to swim in the depths of the sky", weight: 1 },
 	{ value: "a house that had no right but was nonetheless driven to speak", weight: 1 },
+	{ value: "elves who removed the intestines of a centaur and substituted pebbles, quartz crystals, a quantity of rope and a little snake endowed with power", weight: 1 },
   ],
 
   feature: [
@@ -2526,6 +2528,7 @@ const tables = {
 	{ value: "the Feast of ${constellation}", weight: 1 },
 	{ value: "the Festival of Laughter", weight: 1 },
 	{ value: "the Feast of Dolls", weight: 1 },
+	{ value: "the Feast of the Peaches", weight: 1 },
   ],
 
   holiday_celebration: [
@@ -3342,6 +3345,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC} by day, serves as the night mayor of the village of ${village_names}", weight: 1 },
 	{ value: "${FantasyName}, after serving as mayor of the village of ${village_names} from sunrise to sunset, returns to their role as ${a:QuickNPCJob}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} dreamt last night of ${vancian_wizards} consulting with the king about a date circled ${fairy_number} days hence in the divine calendar of ${FantasyGods}", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} was bit by ${a:AnimalInsectBiting}, one of the millions that spoil the otherwise idyllic Lake of ${uc:Jewels}, and was stricken with ${diseases}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -3428,6 +3432,7 @@ const tables = {
 	{ value: "sail across the Lake of Dreams on a raft of serpents", weight: 1 },
 	{ value: "luxuriate in the warm baths of the king", weight: 1 },
 	{ value: "follow in the footsteps of ${vancian_wizards} who was supposed to have spent their later years studying ${knowledgething}", weight: 2 },
+	{ value: "eat the inexhaustible flesh of Sachrimnir, the Cosmic Boar", weight: 1 },
   ],
 
   local_racist: [
