@@ -97,6 +97,7 @@ const tables = {
 	{ value: " where the dogs have whiskers and the cats bark", weight: 1 },
 	{ value: " where somber children play the game High King in the Judgement Seat", weight: 1 },
 	{ value: " among the wild deer and forest peacocks", weight: 1 },
+	{ value: " lonely land of peaks and lamas", weight: 1 },
   ],
 
   herdwith: [
@@ -910,6 +911,7 @@ const tables = {
 	{ value: "the Dog Punisher", weight: 1 },
 	{ value: "the Blood Nymph Hamadryas", weight: 1 },
 	{ value: "Ugallu the Big Weather-Beast", weight: 1 },
+	{ value: "a poisonous black smoke called Kalakuta", weight: 1 },
   ],
 
   criminals: [
@@ -1010,6 +1012,7 @@ const tables = {
     { value: "squanderer", weight: 1 },
 	{ value: "plagiarist", weight: 1 },
 	{ value: "smuggler", weight: 1 },
+	{ value: "thief", weight: 1 },
   ],
   
   crime_singular: [
@@ -2964,6 +2967,7 @@ const tables = {
 	{ value: "a great palace of black iron", weight: 1 },
 	{ value: "a man-eating ${maneating}", weight: 1 },
 	{ value: "a hysterical sobbing ${humanoid} with a powerful and destrutive magic staff", weight: 1 },
+	{ value: "Ko Hung's empty clothes", weight: 1 },
   ],
 
   island_riches: [
@@ -3005,6 +3009,7 @@ const tables = {
 	{ value: "a globe of fire with a human face within it", weight: 1 },
 	{ value: "a pair of blue ziggurat boots", weight: 1 },
 	{ value: "the private star of ${vancian_wizards} which provides light only the owner can see", weight: 1 },
+	{ value: "the source of the Nectar of Deathlessness", weight: 1 },
   ],
 
   island_sacred: [
@@ -3053,18 +3058,18 @@ const tables = {
   ],
 
   knowledgething: [
-    { value: "ancient languages", weight: 1 },
+    { value: "the ancient tongues which pre-date man", weight: 1 },
     { value: "Darkness-With-No-Bottom", weight: 1 },
-    { value: "ghost rock", weight: 1 },
-    { value: "stones which fall from the sky", weight: 1 },
+    { value: "the properties of ghost rock", weight: 1 },
+    { value: "the ${Metallic} spheres which fall from the sky", weight: 1 },
     { value: "the ${huntingmonster} of ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
     { value: "the Aten Heresy", weight: 1 },
     { value: "the “bonus” bones found in ancient skeletons", weight: 1 },
-    { value: "the broken places", weight: 1 },
-    { value: "the cruelty of angels", weight: 1 },
-    { value: "the gods of blood and thunder", weight: 1 },
-    { value: "the history of gray elves", weight: 1 },
-    { value: "the iron ratio", weight: 1 },
+    { value: "the broken places around the lost city of ${urbn_cityname}", weight: 1 },
+    { value: "the reasonless, animal cruelty of angels", weight: 1 },
+    { value: "the old gods of blood and thunder", weight: 1 },
+    { value: "the history of the sky elves", weight: 1 },
+    { value: "the iron ratio proposed by the philosopher Rashko", weight: 1 },
     { value: "the Kavorka, a sect of ${huntingmonster} of which there can only be 40 at a given time", weight: 1 },
     { value: "the laws of Numa", weight: 1 },
     { value: "the Limmungerran", weight: 1 },
@@ -3072,7 +3077,7 @@ const tables = {
     { value: "the paintings, poems, and architecture—in short, the culture—of daemons", weight: 1 },
     { value: "the Turnings and Windings", weight: 1 },
 	{ value: "the Nymph of Tartaros and her light-shunning brood", weight: 1 },
-	{ value: "diseases that infect the dead", weight: 1 },
+	{ value: "the loathsome diseases that infect the dead", weight: 1 },
 	{ value: "the knowledge of good trees and bad trees", weight: 1 },
 	{ value: "the Red Island of Sargyll", weight: 1 },
 	{ value: "the cliff-dwellers who live at the edge of the world", weight: 1 },
@@ -3080,6 +3085,7 @@ const tables = {
 	{ value: "the fine ${Colors} ash that coats the groves and gardens of ${foreignland}", weight: 1 },
 	{ value: "${creepyvillain}", weight: 1 },
 	{ value: "the women whose bodies themselves are gardens", weight: 1 },
+	{ value: "the black mourning flame of the ancient ${ancientpeople}", weight: 1 },
   ],
 
   landmark: [
@@ -3161,6 +3167,7 @@ const tables = {
 	{ value: "the Palace of the Dragon King", weight: 1 },
 	{ value: "the Garden of ${vancian_wizards}", weight: 1 },
 	{ value: "the Cemetery of the ${tc:QuickNPCJobPoor}, the ${tc:QuickNPCJobMid} and the ${tc:QuickNPCJobRich}", weight: 1 },
+	{ value: "the ${uc:aristocratic_robbed_place_religious} of Thieves", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -3420,6 +3427,7 @@ const tables = {
 	{ value: "draw smoke from the waterpipe in a genie's tent", weight: 1 },
 	{ value: "sail across the Lake of Dreams on a raft of serpents", weight: 1 },
 	{ value: "luxuriate in the warm baths of the king", weight: 1 },
+	{ value: "follow in the footsteps of ${vancian_wizards} who was supposed to have spent their later years studying ${knowledgething}", weight: 2 },
   ],
 
   local_racist: [
@@ -3978,6 +3986,7 @@ const tables = {
 	{ value: "Lord ${DemonName} the Polite, ${a:undead_thinking} obsessed with the etiquette of the ancient ${ancientpeople},", weight: 1 },
 	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, a lesser daemon who can only be injured by a cursed weapon,", weight: 1 },
 	{ value: "${DemonName}, ${a:daemontype} daemon who secretly longs for ${thingbeyond} from the childhood of the world, before man, when the earth gave birth only to trees, animals and gods,", weight: 1 },
+	{ value: "${a:WeirdFantasyMonster} with a mutation such that it only derives sustenance from consuming ${diet_restriction},", weight: 1 },
   ],
   
   monstertype_ntc: [
@@ -3992,6 +4001,7 @@ const tables = {
 	{ value: "Lord ${DemonName} the Polite, ${a:undead_thinking} obsessed with the etiquette of the ancient ${ancientpeople}", weight: 1 },
 	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, a lesser daemon who can only be injured by a cursed weapon", weight: 1 },
 	{ value: "${DemonName}, ${a:daemontype} daemon who secretly longs for ${thingbeyond} from the childhood of the world, before man, when the earth gave birth only to trees, animals and gods", weight: 1 },
+	{ value: "${a:WeirdFantasyMonster} with a mutation such that it only derives sustenance from ${diet_restriction}", weight: 1 },
   ],
 
   monstervalue: [
@@ -5717,6 +5727,7 @@ trap_location: [
 	{ value: "there's ${a:necklace_type} ${obj_or_room} on the ${floors} floor that if torn from the neck and dashed to the ground will summon ${summon_item}", weight: 1 },
 	{ value: "there's ${a:Metallic} ring with ${a:Jewel_singular} hidden ${obj_or_room} on the ${floors} floor that if worn will trick creatures into believing the wearer to be the Lord of the ${tc:AnimalCategory}", weight: 1 },
 	{ value: "at the bottom of ${a:ship_cargo_container_singular} in ${a:DungeonRoom} on the ${floors} floor is ${a:FantasyMeal_Fruit} from the Garden of ${vancian_wizards}, that teaches one the tongue of ${AnimalCategory} if consumed", weight: 1 },
+	{ value: "a plain-looking ${liquid_containers_large} on the ${floors} floor holds a corpulent djinn who will serve their rescuer halfheartedly until the next ${boundary_times}", weight: 1 },
   ],
 
   treasureA: [
@@ -6423,6 +6434,7 @@ trap_location: [
 	{ value: "${a:fairy_folk} named Putana with poison in her breasts", weight: 1 },
 	{ value: "a beautiful woman with the head of ${a:AnimalCanine}", weight: 1 },
 	{ value: "a girl named ${tc:flowers_singular} who escaped from the Harem of Flowers", weight: 1 },
+	{ value: "a hostile jester", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6512,6 +6524,7 @@ trap_location: [
 	{ value: "boasts of knowing all but one of the 240,000 spells of the ${ancientpeople}", weight: 1 },
 	{ value: "sip on powerfully weak tea from ${foreignland}${foreign_phrase}", weight: 1 },
 	{ value: "drink eagle's water to prolong their lives", weight: 1 },
+	{ value: "take offense at the holy stench of God", weight: 1 },
   ],
 
   urbn_verbsingular: [
@@ -7054,7 +7067,7 @@ trap_location: [
 	{ value: "a ${flag_pattern} ${flag_basic_color} and black hot air balloon with ${flag_extra_humanoids_adj} ${humanoid} and ${a:AnimalMammal} in the basket was seen floating above ${landmark}", weight: 2 },
 	{ value: "the smell of ${Smells} will supposedly put ${a:WeirdFantasyMonster} to flight, or else drive it berserk, depending on the source", weight: 1 },
 	{ value: "an underwater ${AnimalBigCat} has made its home beneath ${body_of_water}", weight: 1 },
-	{ value: "seasoned travelers say you are unlikely to encounter more than ${fairy_number} ${huntingmonster} in close proximity", weight: 1 },
+	{ value: "seasoned travelers say that ${huntingmonster} only travel in groups of ${fairy_number}", weight: 1 },
 	{ value: "${gates_prefix} Gate, the first of the nine gates travelers must pass through to get to that gloomy place the ${ancientpeople} called the ${underworld_names} and the only one visible by daylight can be found ${fairy_number} leagues beyond ${landmark}", weight: 1 },
 	{ value: "if you travel far enough to the north, you'll reach a point where every wind blows from the south to the south", weight: 1 },
 	{ value: "visions of ${naturalthing} and a creeping feeling of ${numinous_feeling} means one has wandered close to the sacred ${landscape_types_basic_singular} where the gods travel to swear their oaths", weight: 1 },
@@ -12274,6 +12287,7 @@ door_type: [
 	{ value: "${heroes_and_villains} was betrayed by their lover, either Princess ${FantasyNameFemale} or a harlot from ${urbn_cityname}", weight: 1 },
 	{ value: "${heroes_and_villains} won ${a:AnimalFarm} in a game of ${board_games} against ${board_game_opponent}", weight: 1 },
 	{ value: "Saint ${SaintName} was martyred by ${violent_profession_plural} in the pay of ${creepyvillain}", weight: 1 },
+	{ value: "an unknown but no doubt virtuous ${classic_classes} fell", weight: 1 },
   ],
   
   shrine_type: [
@@ -12284,6 +12298,7 @@ door_type: [
 	{ value: "monument", weight: 1 },
 	{ value: "statue", weight: 1 },
 	{ value: "obelisk", weight: 1 },
+	{ value: "cairn", weight: 1 },
   ],
   
   shrine_adj: [
@@ -12302,6 +12317,7 @@ door_type: [
 	{ value: "${fairy_number} ${crowns_metal_type} ${coins}", weight: 1 },
 	{ value: "${fairy_number} ${Colors} candles", weight: 1 },
 	{ value: "a single ${flowers_singular}", weight: 1 },
+	{ value: "${a:magicalcommonobject}, the symbolism obscure", weight: 1 },
   ],
   
   hieroglyphics: [
@@ -12940,6 +12956,17 @@ door_type: [
 	{ value: "giant", weight: 1 },
     { value: "witch", weight: 1 },
 	{ value: "${humanoid}", weight: 1 },		
+  ],
+  
+  diet_restriction: [
+    { value: "the blood of vampires", weight: 1 },
+	{ value: "lycanthrope meat", weight: 1 },
+	{ value: "${humanoid} bones", weight: 1 },
+	{ value: "${Colors} slime", weight: 1 },
+	{ value: "living ${AnimalBird}s", weight: 1 },
+	{ value: "${Jewels}", weight: 1 },
+    { value: "followers of Chaos", weight: 1 },
+	{ value: "followers of Law", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
