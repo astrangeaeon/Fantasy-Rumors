@@ -782,6 +782,7 @@ const tables = {
 	{ value: "the child-souls of dead flowers", weight: 1 },
 	{ value: "the heart's blood of ${a:dungeon_mural_monster_primal}", weight: 1 },
 	{ value: "eye-witness accounts of miracles performed by daemons", weight: 1 },
+	{ value: "rare coins of purple gold", weight: 1 },
   ],
 
   construction_help: [
@@ -1335,6 +1336,7 @@ const tables = {
 	{ value: "Gross Michael", weight: 1 },
 	{ value: "Giant Hunter Matsieng", weight: 1 },
 	{ value: "Mullian the Eagle-hawk", weight: 1 },
+	{ value: "The Poet-Saint Milarepa", weight: 1 },
   ],
 
   deadadventurerloot: [
@@ -1515,6 +1517,7 @@ const tables = {
 	{ value: "${a:door_type} door on the ${floors} floor hasn't been opened for at least a century; it supposedly leads to ${door_destination}", weight: 1 },
 	{ value: "${a:door_type} trapdoor in an abandoned ${DungeonRoom} on the ${floors} floor is concealed beneath piles of broken ${ship_cargo_furniture_adj} ${ship_cargo_furniture_type}", weight: 1 },
 	{ value: "${a:Colors} curtain on the ${floors} floor conceals ${a:door_type} door that can only be passed through ${door_opened}", weight: 1 },
+	{ value: "${a:door_type} locked door on the ${floors} floor can only be unlocked with a key ${key_location}", weight: 1 },
   ],
 
 
@@ -1753,7 +1756,7 @@ const tables = {
     { value: "fist-sized clumps of greasy hair", weight: 1 },
     { value: "foreign coin", weight: 1 },
     { value: "fresh corpses", weight: 1 },
-    { value: "frozen cubes of blood", weight: 1 },
+    { value: "frozen cubes of ${humanoid} blood", weight: 1 },
     { value: "garments sewn by virgins", weight: 1 },
     { value: "gold from the sea", weight: 1 },
     { value: "historical artifacts", weight: 1 },
@@ -2020,6 +2023,7 @@ const tables = {
 	{ value: "a race of winged ${humanoids_nonhuman}, free to swim in the depths of the sky", weight: 1 },
 	{ value: "a house that had no right but was nonetheless driven to speak", weight: 1 },
 	{ value: "elves who removed the intestines of a centaur and substituted pebbles, quartz crystals, a quantity of rope and a little snake endowed with power", weight: 1 },
+	{ value: "a strange cult whose members are only given names after death", weight: 1 },
   ],
 
   feature: [
@@ -2334,6 +2338,7 @@ const tables = {
 	{ value: "now wanders lost in the underground maze of the Genowlan caves", weight: 1 },
 	{ value: "now sleeps eternally dreaming of Balder the Beloved, who wandered gaily through fields of battle and wild lands and not so much as a dog barked at him", weight: 1 },
 	{ value: "fell victim to powers beyond the sphere of the measured and the named", weight: 1 },
+	{ value: "only their ${duo_clothing_singular}, steeped in the stench of ${huntingmonster}, was recovered", weight: 1 },
   ],
 
   hero_goal: [
@@ -3346,6 +3351,7 @@ const tables = {
 	{ value: "${FantasyName}, after serving as mayor of the village of ${village_names} from sunrise to sunset, returns to their role as ${a:QuickNPCJob}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} dreamt last night of ${vancian_wizards} consulting with the king about a date circled ${fairy_number} days hence in the divine calendar of ${FantasyGods}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} was bit by ${a:AnimalInsectBiting}, one of the millions that spoil the otherwise idyllic Lake of ${uc:Jewels}, and was stricken with ${diseases}", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPCDescriptor} ${humanoid}, returned from the city of ${urbn_cityname} with ${a:duo_clothing_singular} steeped in the stench of ${huntingmonster}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -3992,6 +3998,7 @@ const tables = {
 	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, a lesser daemon who can only be injured by a cursed weapon,", weight: 1 },
 	{ value: "${DemonName}, ${a:daemontype} daemon who secretly longs for ${thingbeyond} from the childhood of the world, before man, when the earth gave birth only to trees, animals and gods,", weight: 1 },
 	{ value: "${a:WeirdFantasyMonster} with a mutation such that it only derives sustenance from consuming ${diet_restriction},", weight: 1 },
+	{ value: "${DemonName}, a granter of boons and deprivation,", weight: 1 },
   ],
   
   monstertype_ntc: [
@@ -4007,6 +4014,7 @@ const tables = {
 	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, a lesser daemon who can only be injured by a cursed weapon", weight: 1 },
 	{ value: "${DemonName}, ${a:daemontype} daemon who secretly longs for ${thingbeyond} from the childhood of the world, before man, when the earth gave birth only to trees, animals and gods", weight: 1 },
 	{ value: "${a:WeirdFantasyMonster} with a mutation such that it only derives sustenance from ${diet_restriction}", weight: 1 },
+	{ value: "${DemonName}, a granter of boons and deprivation", weight: 1 },
   ],
 
   monstervalue: [
@@ -4078,6 +4086,7 @@ const tables = {
     { value: "Oracles at Delphi", weight: 1 },
     { value: "star signs", weight: 1 },
 	{ value: "feathered priests of ancient ${slumberplace}", weight: 1 },
+	{ value: "sages who dwell amid the mists of sacred mountains", weight: 1 },
   ],
 
   npctonpc: [
@@ -5855,6 +5864,8 @@ trap_location: [
 	{ value: "they say ${urbn_cityname} is a veritable pageant of marvels, where even the ${QuickNPCJobPoor}s are as likely to go about mounted on ${a:AnimalMagicMount} with a jeweled saddle as on a horse or mule", weight: 1 },
 	{ value: "everyone at ${po:FantasyNameMale} Trough in ${urbn_cityname} has a story; for instance, that ${QuickNPCJob} sitting there nursing their ${alcohol_beer} was born of noble twins who committed incest at the behest of either the ${daemontype} daemon ${DemonName} or ${FantasyGods}", weight: 1 },
 	{ value: "the old saying is true, 'what good can come from ${urbn_cityname}?'", weight: 1 },
+	{ value: "outside the city of ${urbn_cityname} some mad vigilante group has ${vigilante_punishment} ${fairy_number} ${humanoids_nonhuman} all bearing the brand for ${criminal_singular}", weight: 1 },
+	{ value: "the barons of ${urbn_cityname} have always added a lock to ${a:door_type} door in ${a:urbn_place} in the old part of the city upon coronation; there are over a dozen locks but no one remembers why the tradition started", weight: 1 },
   ],
 
    urbn_traders: [
@@ -10094,6 +10105,7 @@ celebration_type: [
 	{ value: ", with its ${flag_extra_style} design of ${a:flag_extra_animal_adj} ${AnimalMain} ${flag_extra_animal_verb} ${a:AnimalBaby},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${fairy_folk},", weight: 1 },
 	{ value: ", with ${rune} sewn on it,", weight: 1 },
+	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${classic_classes} ${flag_extra_humanoids_verb3},", weight: 1 },
   ],
   
   
@@ -10235,6 +10247,8 @@ celebration_type: [
 	{ value: "enthroned", weight: 1 },
 	{ value: "mounted upon ${a:AnimalMount}", weight: 1 },
 	{ value: "making a rude gesture", weight: 1 },
+	{ value: "swallowing ${a:BladedWeapons_Sword}", weight: 1 },
+	{ value: "holding ${a:BladedWeapons_Sword} in each hand", weight: 1 },
   ],
   
   flag_extra_humanoids_adj: [
@@ -11741,6 +11755,7 @@ door_type: [
 	{ value: "growing ${a:AnimalBird} to enormous size and flying upon it up to Paradise", weight: 1 },
 	{ value: "creating a double out of cloud to fool the spouse of ${ntc}", weight: 1 },
 	{ value: "praying for rain that came and quenched half of the flames of a burning ${urbn_place}", weight: 1 },
+	{ value: "breaking the magic of ${vancian_wizards}, who crumbled to dust, being old and full of days", weight: 1 },
   ],
   
   diseases: [
@@ -12293,6 +12308,7 @@ door_type: [
 	{ value: "${heroes_and_villains} won ${a:AnimalFarm} in a game of ${board_games} against ${board_game_opponent}", weight: 1 },
 	{ value: "Saint ${SaintName} was martyred by ${violent_profession_plural} in the pay of ${creepyvillain}", weight: 1 },
 	{ value: "an unknown but no doubt virtuous ${classic_classes} fell", weight: 1 },
+	{ value: "Saint ${SaintName} was born, or martyred, or resurrected, it's not quite clear", weight: 1 },
   ],
   
   shrine_type: [
@@ -12972,6 +12988,21 @@ door_type: [
 	{ value: "${Jewels}", weight: 1 },
     { value: "followers of Chaos", weight: 1 },
 	{ value: "followers of Law", weight: 1 },
+  ],
+  
+  vigilante_punishment: [
+    { value: "crucified", weight: 1 },
+	{ value: "buried up to the neck", weight: 1 },
+	{ value: "locked in narrow iron cages", weight: 1 },
+	{ value: "chained to a great stone", weight: 1 },
+  ],
+  
+  key_location: [
+    { value: "found at the bottom of a fire", weight: 1 },
+	{ value: "that's been dipped in water ${exotic_water_provenance}", weight: 2 },
+	{ value: "known to be in the possession of ${monstertype_ntc}", weight: 2 },
+	{ value: "last seen in ${classic_dungeons}", weight: 2 },
+	{ value: "found in the lair of the great dragon ${dragon_name}", weight: 2 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
