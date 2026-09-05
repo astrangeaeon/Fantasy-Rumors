@@ -573,6 +573,7 @@ const tables = {
 	{ value: "with poisonous skin and alien blood, fatal to snake and vampire bite", weight: 1 },
 	{ value: "half made of wood", weight: 1 },
 	{ value: "said to be a red gremlin with a crossbow", weight: 1 },
+	{ value: "known as the Bleeder, with his fleams of white iron", weight: 1 },
   ],
 
   body_part_fate: [
@@ -3094,6 +3095,8 @@ const tables = {
 	{ value: "${creepyvillain}", weight: 1 },
 	{ value: "the women whose bodies themselves are gardens", weight: 1 },
 	{ value: "the black mourning flame of the ancient ${ancientpeople}", weight: 1 },
+	{ value: "${alt_metals}", weight: 1 },
+	{ value: "why the beautiful gods give birth to monsters", weight: 1 },
   ],
 
   landmark: [
@@ -3829,6 +3832,10 @@ const tables = {
 	{ value: "a secret key to the treasure vault of the ${po:ancientpeople} gods", weight: 1 },
 	{ value: "a digging bone sacred to ${island_sacred}", weight: 1 },
 	{ value: "the reanimated hands of ${artists} the great ${MusicalInstrument} player", weight: 1 },
+	{ value: "the Robe of Dawn", weight: 1 },
+	{ value: "the Robe of Blue Sky", weight: 1 },
+	{ value: "the Robe of Yellow Evening Light", weight: 1 },
+	{ value: "the Robe of Darkness", weight: 1 },
   ],
 
   membership: [
@@ -3944,6 +3951,7 @@ const tables = {
 	{ value: "${a:daemontype} daemon can appear in the form of ${a:humanoid}, but cannot disguise the oppressive scent of ${Smells} that emanates from their horns", weight: 1 },
 	{ value: "${a:herd_adj} ${monsterA} on the ${floors} floor has learned to mimic the cry of an injured ${AnimalMount}", weight: 1 },
 	{ value: "${vancian_wizards} claimed that a doppelgänger will not recognize itself in a mirror, ignoring its reflection like a dog or a cat would", weight: 1 },
+	{ value: "Here the ${huntingmonster} of ${foreign_adj}${foreignland}${foreign_phrase} with bull voices roar like thunder underground", weight: 1 },
   ],
   
   monster_hybrid: [
@@ -3999,6 +4007,8 @@ const tables = {
 	{ value: "${DemonName}, ${a:daemontype} daemon who secretly longs for ${thingbeyond} from the childhood of the world, before man, when the earth gave birth only to trees, animals and gods,", weight: 1 },
 	{ value: "${a:WeirdFantasyMonster} with a mutation such that it only derives sustenance from consuming ${diet_restriction},", weight: 1 },
 	{ value: "${DemonName}, a granter of boons and deprivation,", weight: 1 },
+	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who is disgusted by meat-eaters, who can smell it on their breath and sweat,", weight: 1 },
+	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, known for weaving voluptuous hallucinations to trouble desert mountain hermits practicing austerity,", weight: 1 },
   ],
   
   monstertype_ntc: [
@@ -4015,6 +4025,8 @@ const tables = {
 	{ value: "${DemonName}, ${a:daemontype} daemon who secretly longs for ${thingbeyond} from the childhood of the world, before man, when the earth gave birth only to trees, animals and gods", weight: 1 },
 	{ value: "${a:WeirdFantasyMonster} with a mutation such that it only derives sustenance from ${diet_restriction}", weight: 1 },
 	{ value: "${DemonName}, a granter of boons and deprivation", weight: 1 },
+	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who is disgusted by meat-eaters, who can smell it on their breath and sweat", weight: 1 },
+	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, known for weaving voluptuous hallucinations to trouble desert mountain hermits practicing austerity", weight: 1 },
   ],
 
   monstervalue: [
@@ -5518,6 +5530,7 @@ const tables = {
 	{ value: "the dreaded centaur-medusa, thought to be only ${a:ancientpeople_singular} myth", weight: 1 },
 	{ value: "the night wind and mountain witches", weight: 1 },
 	{ value: "a demon-god with ${Metallic} horns and a snake-headed penis named ${LowerRankedDemonName}", weight: 1 },
+	{ value: "a huge and loathsome ${AnimalInsect}", weight: 1 },
   ],
   
   
@@ -7089,6 +7102,7 @@ trap_location: [
 	{ value: "visions of ${naturalthing} and a creeping feeling of ${numinous_feeling} means one has wandered close to the sacred ${landscape_types_basic_singular} where the gods travel to swear their oaths", weight: 1 },
 	{ value: "${a:fairy_folk} who witnesses the sunrise will turn into ${thingbeyond} for ${fairy_number} days", weight: 1 },
 	{ value: "one who has spent the night under the Black Stone of Arduu on Mount ${slumberplace} will descend the next morning as either a madman, ${a:QuickNPCJobExotic} or a saint", weight: 1 },
+	{ value: "every ${daemontype} daemon was once a man who ate an immortality-granting herb that grows in ${slumberplace}, or so they say", weight: 1 },
   ],
   
   
@@ -12643,6 +12657,8 @@ door_type: [
 	{ value: "Sallura", weight: 1 },
 	{ value: "Rozbityblad", weight: 1 },
 	{ value: "Sortagyar", weight: 1 },
+	{ value: "Alkmaar", weight: 1 },
+	{ value: "Callantsoog", weight: 1 },
   ],
   
   treasure_map: [
@@ -12752,6 +12768,7 @@ door_type: [
 	{ value: "${dungeon_mural_divine} building a wall between the enchanted ${otherworld_names} and the realms of men", weight: 1 },
 	{ value: "the ${ancientpeople} being punished for their ${sins} by ${dungeon_mural_divine} in the Hell ${hell_names}", weight: 1 },
 	{ value: "a giant ${AnimalInsect} laying clutches of loathsome eggs in tunnels below the major ${humanoid} cities of the continent", weight: 1 },
+	{ value: "what can only be ${dragon_name}, the blasphemous iridescent wyrm whose black blood taints the golden fields", weight: 1 },
   ],
   
   dungeon_mural_individual: [
@@ -13003,6 +13020,14 @@ door_type: [
 	{ value: "known to be in the possession of ${monstertype_ntc}", weight: 2 },
 	{ value: "last seen in ${classic_dungeons}", weight: 2 },
 	{ value: "found in the lair of the great dragon ${dragon_name}", weight: 2 },
+  ],
+  
+  alt_metals: [
+    { value: "red bronze", weight: 1 },
+	{ value: "black copper", weight: 1 },
+	{ value: "blue silver", weight: 1 },
+	{ value: "purple gold", weight: 1 },
+	{ value: "white iron", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
