@@ -98,6 +98,8 @@ const tables = {
 	{ value: " where somber children play the game High King in the Judgement Seat", weight: 1 },
 	{ value: " among the wild deer and forest peacocks", weight: 1 },
 	{ value: " lonely land of peaks and lamas", weight: 1 },
+	{ value: " where immense swine stalk about intermingled with naked children", weight: 1 },
+	{ value: " where the trees shed leaves of bronze and silver", weight: 1 },
   ],
 
   herdwith: [
@@ -356,6 +358,7 @@ const tables = {
 	{ value: " who feared only insects, thunder and the face of the dead,", weight: 1 },
 	{ value: " who breathed only the rare air of high mountain storms,", weight: 1 },
 	{ value: " who faithfully celebrated the Feast of the Peaches every six thousand years,", weight: 1 },
+	{ value: " whose mind was so strong, their dreams were dreamt by the whole kingdom,", weight: 1 },
   ],
 
   hundred_words: [
@@ -511,6 +514,7 @@ const tables = {
 	{ value: "the trees will bleed and cry out in anguish when cut, driving men mad", weight: 1 },
 	{ value: "the sleeping stone statues of cats awaken", weight: 1 },
 	{ value: "the raiding-men will twang the yew and raise the battle-axe once more", weight: 1 },
+	{ value: "the stars turn their backs and shine their light away from the earth", weight: 1 },
   ],
 
   behind_mask: [
@@ -574,6 +578,7 @@ const tables = {
 	{ value: "half made of wood", weight: 1 },
 	{ value: "said to be a red gremlin with a crossbow", weight: 1 },
 	{ value: "known as the Bleeder, with his fleams of white iron", weight: 1 },
+	{ value: "known as the Lord of the Feast", weight: 1 },
   ],
 
   body_part_fate: [
@@ -784,6 +789,7 @@ const tables = {
 	{ value: "the heart's blood of ${a:dungeon_mural_monster_primal}", weight: 1 },
 	{ value: "eye-witness accounts of miracles performed by daemons", weight: 1 },
 	{ value: "rare coins of purple gold", weight: 1 },
+	{ value: "stones chipped off the Clashing Rocks in the Age of Miracles that did not become earth elementals", weight: 1 },
   ],
 
   construction_help: [
@@ -915,6 +921,7 @@ const tables = {
 	{ value: "the Blood Nymph Hamadryas", weight: 1 },
 	{ value: "Ugallu the Big Weather-Beast", weight: 1 },
 	{ value: "a poisonous black smoke called Kalakuta", weight: 1 },
+	{ value: "the Sow that Eats its Own Farrow", weight: 1 },
   ],
 
   criminals: [
@@ -1338,6 +1345,8 @@ const tables = {
 	{ value: "Giant Hunter Matsieng", weight: 1 },
 	{ value: "Mullian the Eagle-hawk", weight: 1 },
 	{ value: "The Poet-Saint Milarepa", weight: 1 },
+	{ value: "Sol ${tc:AnimalMain}-Shadow", weight: 1 },
+	{ value: "Gil the Clockmaker", weight: 1 },
   ],
 
   deadadventurerloot: [
@@ -1830,6 +1839,7 @@ const tables = {
 	{ value: "goblin bread", weight: 1 },
 	{ value: "the undecaying grey vomit of sphinxes", weight: 1 },
 	{ value: "the bones left behind after a man-eating ${po:maneating} meal", weight: 1 },
+	{ value: "leaves of bronze and silver", weight: 1 },
   ],
 
   excitingemployer: [
@@ -1906,6 +1916,7 @@ const tables = {
 	{ value: "wearing a splendid cloak made from the skins of blue monkeys", weight: 1 },
 	{ value: "daubed with ${Colors} war-paint", weight: 1 },
 	{ value: "brandishing a handgun", weight: 1 },
+	{ value: "wearing skins of birds both white and many-colored", weight: 1 },
   ],
 
   fd: [
@@ -2025,6 +2036,7 @@ const tables = {
 	{ value: "a house that had no right but was nonetheless driven to speak", weight: 1 },
 	{ value: "elves who removed the intestines of a centaur and substituted pebbles, quartz crystals, a quantity of rope and a little snake endowed with power", weight: 1 },
 	{ value: "a strange cult whose members are only given names after death", weight: 1 },
+	{ value: "stones chipped off the Clashing Rocks from the Age of Miracles that drifted downstream to become earth elementals in our time", weight: 1 },
   ],
 
   feature: [
@@ -2340,6 +2352,7 @@ const tables = {
 	{ value: "now sleeps eternally dreaming of Balder the Beloved, who wandered gaily through fields of battle and wild lands and not so much as a dog barked at him", weight: 1 },
 	{ value: "fell victim to powers beyond the sphere of the measured and the named", weight: 1 },
 	{ value: "only their ${duo_clothing_singular}, steeped in the stench of ${huntingmonster}, was recovered", weight: 1 },
+	{ value: "has rested these past ${fairy_number} years in a magical slumber", weight: 1 },
   ],
 
   hero_goal: [
@@ -4953,6 +4966,7 @@ const tables = {
     { value: "waves large as castles", weight: 1 },
 	{ value: "planets and planetary systems under the earth", weight: 1 },
 	{ value: "a maelstrom of pleasure", weight: 1 },
+	{ value: "${a:Metallic} eel that swam through ${elemntl_type}", weight: 1 },
   ],
 
   secret: [
@@ -5879,6 +5893,8 @@ trap_location: [
 	{ value: "the old saying is true, 'what good can come from ${urbn_cityname}?'", weight: 1 },
 	{ value: "outside the city of ${urbn_cityname} some mad vigilante group has ${vigilante_punishment} ${fairy_number} ${humanoids_nonhuman} all bearing the brand for ${criminal_singular}", weight: 1 },
 	{ value: "the barons of ${urbn_cityname} have always added a lock to ${a:door_type} door in ${a:urbn_place} in the old part of the city upon coronation; there are over a dozen locks but no one remembers why the tradition started", weight: 1 },
+	{ value: "in ${urbn_cityname}, those born with ${short_inherited_trait} are called the Children of Saint ${SaintName}", weight: 1 },
+	{ value: "since visiting ${urbn_cityname} last ${season}, ${domain_events}", weight: 2 },
   ],
 
    urbn_traders: [
@@ -6464,6 +6480,8 @@ trap_location: [
 	{ value: "a beautiful woman with the head of ${a:AnimalCanine}", weight: 1 },
 	{ value: "a girl named ${tc:flowers_singular} who escaped from the Harem of Flowers", weight: 1 },
 	{ value: "a hostile jester", weight: 1 },
+	{ value: "${a:QuickNPCJobExotic}", weight: 1 },
+	{ value: "a tome-smuggler", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -9083,6 +9101,7 @@ trap_location: [
 	{ value: "was killed after provoking the constellation known as ${constellation}", weight: 1 },
 	{ value: "was killed by bandits in a random encounter on their way to ${classic_dungeons}", weight: 1 },
 	{ value: "died, struck blind by unicorns", weight: 1 },
+	{ value: "beheld the nude form of the goddess ${FantasyGodNameFemale} and vanished from the realms of men", weight: 1 },
 ],
 
 cod_ose: [
@@ -9757,6 +9776,7 @@ celebration_type: [
 	{ value: "ice-fields", weight: 1 },
 	{ value: "caverns", weight: 1 },
 	{ value: "canyons", weight: 1 },
+	{ value: "hills", weight: 1 },
   ],
   
   landscape_types_basic_singular: [
@@ -9770,6 +9790,7 @@ celebration_type: [
 	{ value: "ice-field", weight: 1 },
 	{ value: "cavern", weight: 1 },
 	{ value: "canyon", weight: 1 },
+	{ value: "hill", weight: 1 },
   ],
   
   still_life_surface: [
@@ -10595,6 +10616,7 @@ celebration_type: [
 	{ value: "their hair will be tangled into hundreds of knots and if cut will grow back an unruly mop of riotous green", weight: 1 },
 	{ value: "they will be unable to sleep two consecutive nights in the same place without dying", weight: 1 },
 	{ value: "they will find that flies and other insects treat their body as though it were dead", weight: 1 },
+	{ value: "they will trade shadows with ${a:AnimalMain}", weight: 1 },
 	
   ],
   
@@ -11162,6 +11184,9 @@ ship_type: [
 	{ value: "The Beggar Who Asked for Nothing", weight: 1 },
 	{ value: "What Remains of the Terrace of the Lions?", weight: 1 },
 	{ value: "The Factory of Blood", weight: 1 },
+	{ value: "Mother, Sister, Mistress, Bride", weight: 1 },
+	{ value: "There Are No Endings Truly", weight: 1 },
+	{ value: "The Mortal and the Pestle", weight: 1 },
   ],
   
   
@@ -13028,6 +13053,19 @@ door_type: [
 	{ value: "blue silver", weight: 1 },
 	{ value: "purple gold", weight: 1 },
 	{ value: "white iron", weight: 1 },
+  ],
+  
+  domain_events: [
+    { value: "an unnatural ${severe_weather} has damaged ${damaged_city_thing} and caused the people much misery", weight: 1 },
+	{ value: "Prince ${FantasyNameMale} and Princess ${FantasyNameFemale} have become twin rulers since their father's disappearance", weight: 1 },
+	{ value: "the ${landscape_types_basic} near ${landmark} outside the city have become infested with ${huntingmonster}", weight: 1 },
+	{ value: "the two Fiends, Assassination and Plunder, have made the city their home", weight: 1 },
+  ],
+  
+  damaged_city_thing: [
+    { value: "the statue of the ${uc:statue_adj} ${statue_subject} in ${uc:CompassDirectionPrimary} Square near ${urbn_street_names}", weight: 1 },
+	{ value: "the Gate ${gates_suffix}", weight: 1 },
+	{ value: "the ${aristocratic_home} of ${royals} ${FantasyLastName}", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
