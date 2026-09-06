@@ -3272,6 +3272,7 @@ const tables = {
 	{ value: "the water-mountains of Lumi", weight: 1 },
 	{ value: "the black precipice of Horneel", weight: 1 },
 	{ value: "the Hill of the Baboons", weight: 1 },
+	{ value: "the Place of Black Spiders", weight: 1 },
   ],
 
   lawnornament: [
@@ -3605,7 +3606,7 @@ const tables = {
     { value: "what happened to all the ${missingthings}", weight: 1 },
 	{ value: "why the wells in the neighboring village of ${village_names} are square", weight: 1 },
 	{ value: "the ship of death that comes to gather souls", weight: 1 },
-	{ value: "${vancian_wizards}, for whom all mirrors were magic mirrors,", weight: 1 },
+	{ value: "${vancian_wizards}, for whom all mirrors were magic mirrors", weight: 1 },
   ],
 
   lucrativecareer: [
@@ -3888,6 +3889,7 @@ const tables = {
     { value: "ingest mind-altering fungi", weight: 1 },
     { value: "lick psychedelic jungle toads", weight: 1 },
 	{ value: "pierce their neck with the stinger of ${a:Jewel_singular} scorpion", weight: 1 },
+	{ value: "swallow a live ${Colors} snake", weight: 1 },
   ],
 
   minename: [
@@ -6566,7 +6568,7 @@ trap_location: [
 	{ value: "cheerfully offer sips from ${a:liquid_containers_large} containing ${exotic_water_types}", weight: 1 },
 	{ value: "seek a memory-erasing beer that will erase their former lives", weight: 1 },
 	{ value: "won't stop spitting on the floor", weight: 1 },
-	{ value: "known for worshipping gold and strangling the weak", weight: 1 },
+	{ value: "are known for worshipping gold and strangling the weak", weight: 1 },
 	{ value: "inflict spiritual wounds that their victims won't feel until they arrive in the afterlife greviously wounded", weight: 1 },
 	{ value: "boasts of knowing all but one of the 240,000 spells of the ${ancientpeople}", weight: 1 },
 	{ value: "sip on powerfully weak tea from ${foreignland}${foreign_phrase}", weight: 1 },
@@ -8027,6 +8029,7 @@ trap_location: [
 	{ value: ", depicted as ${a:AnimalTrophy} in religious art for obscure reasons", weight: 1 },
 	{ value: ", accompanied always by ${a:AnimalBigCat} and ${a:AnimalCanine}", weight: 1 },
 	{ value: ", who wears a jeweled ${BladedWeapons_Sword} scabbard", weight: 1 },
+	{ value: ", who is so holy, not even other gods can look into their eyes", weight: 1 },
   ],
   
    FantasyGodExtraTaught: [
@@ -9102,6 +9105,7 @@ trap_location: [
 	{ value: "was killed by bandits in a random encounter on their way to ${classic_dungeons}", weight: 1 },
 	{ value: "died, struck blind by unicorns", weight: 1 },
 	{ value: "beheld the nude form of the goddess ${FantasyGodNameFemale} and vanished from the realms of men", weight: 1 },
+	{ value: "was stomped to pulp by the bull god's hooves", weight: 1 },
 ],
 
 cod_ose: [
