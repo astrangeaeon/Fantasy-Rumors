@@ -359,6 +359,7 @@ const tables = {
 	{ value: " who breathed only the rare air of high mountain storms,", weight: 1 },
 	{ value: " who faithfully celebrated the Feast of the Peaches every six thousand years,", weight: 1 },
 	{ value: " whose mind was so strong, their dreams were dreamt by the whole kingdom,", weight: 1 },
+	{ value: " who believed, wrongly, that a man without enemies was a nobody,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1166,7 +1167,7 @@ const tables = {
     { value: "Big Hat Tollan", weight: 1 },
     { value: "Black Iron Tarkus", weight: 1 },
     { value: "Blacksmith Lenigrast", weight: 1 },
-    { value: "Blue Sentinel Targray", weight: 1 },
+    { value: "Old Gorwel", weight: 1 },
     { value: "Bowman Guthrie", weight: 1 },
     { value: "Broodwife Greyjoy", weight: 1 },
     { value: "Captain Drummond", weight: 1 },
@@ -1919,6 +1920,7 @@ const tables = {
 	{ value: "brandishing a handgun", weight: 1 },
 	{ value: "wearing skins of birds both white and many-colored", weight: 1 },
 	{ value: "who chews on the hair of a maiden", weight: 1 },
+	{ value: "covered in ${FantasyMeal_Fruit_Berry} stains", weight: 1 },
   ],
 
   fd: [
@@ -1966,6 +1968,7 @@ const tables = {
 	{ value: "tattooed black lips", weight: 1 },
 	{ value: "false hair and false teeth", weight: 1 },
 	{ value: "floor-length hair and blackened teeth", weight: 1 },
+	{ value: "${alcohol_liquor} on their breath", weight: 1 },
   ],
 
   fd_tale: [
@@ -3065,7 +3068,7 @@ const tables = {
     { value: "the snake-haired, darkness-vomiting Limmungerran", weight: 1 },
     { value: "worshipers of ${RealGods}", weight: 1 },
 	{ value: "the ${tc:FantasyMeal_Fruit} Witches", weight: 1 },
-	{ value: "the tiny daemons who live inside ${FantasyMeal_Fruit_plural} and ${FantasyMeal_Fruit_plural}", weight: 1 },
+	{ value: "the tiny devils who live inside ${FantasyMeal_Fruit_plural} and ${FantasyMeal_Fruit_plural}", weight: 1 },
   ],
 
   kinganimal: [
@@ -4028,6 +4031,7 @@ const tables = {
 	{ value: "${DemonName}, a granter of boons and deprivation,", weight: 1 },
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who is disgusted by meat-eaters, who can smell it on their breath and sweat,", weight: 1 },
 	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, known for weaving voluptuous hallucinations to trouble desert mountain hermits practicing austerity,", weight: 1 },
+	{ value: "${dragon_name}, ${a:monsterdragontype} dragon whose tail was cut off by ${ntc} when they were young,", weight: 1 },
   ],
   
   monstertype_ntc: [
@@ -4046,6 +4050,7 @@ const tables = {
 	{ value: "${DemonName}, a granter of boons and deprivation", weight: 1 },
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who is disgusted by meat-eaters, who can smell it on their breath and sweat", weight: 1 },
 	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, known for weaving voluptuous hallucinations to trouble desert mountain hermits practicing austerity", weight: 1 },
+	{ value: "${dragon_name}, ${a:monsterdragontype} dragon whose tail was cut off by ${ntc} when they were young", weight: 1 },
   ],
 
   monstervalue: [
@@ -4880,6 +4885,7 @@ const tables = {
     { value: "whose window looks out on another time", weight: 1 },
 	{ value: "that's home to yellow birds with the voices of goats", weight: 1 },
 	{ value: "where ${duo_name1} and ${duo_name2} have been hiding out after looting the Old Summer Palace", weight: 1 },
+	{ value: "that gets struck continously by mystical lightning bolts", weight: 1 },
   ],
 
   I_herd: [
@@ -6729,6 +6735,7 @@ trap_location: [
 	{ value: "speaks the tongue of the ancient ${ancientpeople}, whom the demon ${DemonName} spent seven years among before departing, finding himself unable to understand or make himself understood", weight: 1 },
 	{ value: "holds court, attended by humpbacks and dwarfs", weight: 1 },
 	{ value: "neither slumbers nor sleeps", weight: 1 },
+	{ value: "measures bodies for wooden suits", weight: 1 },
 	
   ],
 
@@ -6993,6 +7000,7 @@ trap_location: [
 	{ value: "a grove of ${cod_tree_type} trees whose lumber is used to build and repair bridges in the ${underworld_names} is being logged by a ${daemontype} daemon and a team of captive ${humanoids_nonhuman}", weight: 1 },
 	{ value: "a forgotten cemetery holds the bones of eleven ancient ${ancientpeople_singular} queens", weight: 1 },
 	{ value: "there stand ${fairy_number} brick pillars with men inside", weight: 1 },
+	{ value: "${a:humanoid_monsters} keeps a larder of smoked horse and knight meat", weight: 1 },
   ],
 
   wilds_locn: [
@@ -8876,6 +8884,7 @@ trap_location: [
 	{ value: "blooming ${flowers_singular}", weight: 1 },
 	{ value: "horse sweat", weight: 1 },
 	{ value: "unwashed ${humanoid}", weight: 1 },
+	{ value: "${alcohol_liquor}", weight: 1 },
   ],
 
   TradeGoods: [
@@ -12711,6 +12720,7 @@ door_type: [
 	{ value: "the ${lair_synonyms} of ${dragon_name} the Wurm", weight: 1 },
 	{ value: "the enchanted ${otherworld_names}", weight: 1 },
 	{ value: "the ${underworld_names}", weight: 1 },
+	{ value: "a bewitching naga curled around an enormous ${cod_tree_type} tree", weight: 1 },
   ],
   
   tax_table: [
