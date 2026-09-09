@@ -3065,6 +3065,7 @@ const tables = {
     { value: "the snake-haired, darkness-vomiting Limmungerran", weight: 1 },
     { value: "worshipers of ${RealGods}", weight: 1 },
 	{ value: "the ${tc:FantasyMeal_Fruit} Witches", weight: 1 },
+	{ value: "the tiny daemons who live inside ${FantasyMeal_Fruit_plural} and ${FantasyMeal_Fruit_plural}", weight: 1 },
   ],
 
   kinganimal: [
@@ -5551,6 +5552,7 @@ const tables = {
 	{ value: "the night wind and mountain witches", weight: 1 },
 	{ value: "a demon-god with ${Metallic} horns and a snake-headed penis named ${LowerRankedDemonName}", weight: 1 },
 	{ value: "a huge and loathsome ${AnimalInsect}", weight: 1 },
+	{ value: "boar-men clad in chainmail", weight: 1 },
   ],
   
   
@@ -9156,6 +9158,7 @@ inherited_traits: [
 	{ value: "have sensitive skin that ${light_impact} when exposed to ${light_type} due to an ancestor's slight", weight: 2 },
 	{ value: "have little mouths inside of bigger mouths", weight: 1 },
 	{ value: "have small ${Colors} feathers instead of hair", weight: 1 },
+	{ value: "are all born with fingers and toes twice the average length", weight: 1 },
   ],
 
 tail_type: [
