@@ -790,6 +790,7 @@ const tables = {
 	{ value: "eye-witness accounts of miracles performed by daemons", weight: 1 },
 	{ value: "rare coins of purple gold", weight: 1 },
 	{ value: "stones chipped off the Clashing Rocks in the Age of Miracles that did not become earth elementals", weight: 1 },
+	{ value: "the auburn hair of maidens", weight: 1 },
   ],
 
   construction_help: [
@@ -1917,6 +1918,7 @@ const tables = {
 	{ value: "daubed with ${Colors} war-paint", weight: 1 },
 	{ value: "brandishing a handgun", weight: 1 },
 	{ value: "wearing skins of birds both white and many-colored", weight: 1 },
+	{ value: "who chews on the hair of a maiden", weight: 1 },
   ],
 
   fd: [
@@ -2621,6 +2623,7 @@ const tables = {
 	{ value: "the ${uc:huntingmonster_singular}", weight: 1 },
 	{ value: "the ${uc:QuickNPCJobPoor}", weight: 1 },
 	{ value: "Jubilee", weight: 1 },
+	{ value: "Slumber", weight: 1 },
   ],
 
   howitwaslost: [
@@ -5290,6 +5293,7 @@ const tables = {
 	{ value: "the people paint their ${coins} ${Colors} and punch holes in them for use in numismatic rituals", weight: 1 },
 	{ value: "none can be wed until they have killed an enemy of the tribe", weight: 1 },
 	{ value: "the souls of the dead follow ${a:AnimalPsychopomp} named ${DemonName} to the enchanted ${otherworld_names}", weight: 1 },
+	{ value: "a woman having twins shames the father", weight: 1 },
   ],
 
   strangenoises: [
@@ -5771,6 +5775,7 @@ trap_location: [
 	{ value: "there's ${a:Metallic} ring with ${a:Jewel_singular} hidden ${obj_or_room} on the ${floors} floor that if worn will trick creatures into believing the wearer to be the Lord of the ${tc:AnimalCategory}", weight: 1 },
 	{ value: "at the bottom of ${a:ship_cargo_container_singular} in ${a:DungeonRoom} on the ${floors} floor is ${a:FantasyMeal_Fruit} from the Garden of ${vancian_wizards}, that teaches one the tongue of ${AnimalCategory} if consumed", weight: 1 },
 	{ value: "a plain-looking ${liquid_containers_large} on the ${floors} floor holds a corpulent djinn who will serve their rescuer halfheartedly until the next ${boundary_times}", weight: 1 },
+	{ value: "there's ${a:DecorativeStone} ${duo_jewlery_singular} ${obj_or_room} on the ${floors} floor that is said to give the owner command over ${command_item}", weight: 1 },
   ],
 
   treasureA: [
@@ -7853,6 +7858,7 @@ trap_location: [
     { value: "dartboard", weight: 1 },
     { value: "latrine", weight: 1 },
     { value: "skeleton", weight: 1 },
+	{ value: "${AnimalLeather} skin rug", weight: 1 },
   ],
 
   DungeonRoom: [
@@ -10621,6 +10627,7 @@ celebration_type: [
 	{ value: "they will be unable to sleep two consecutive nights in the same place without dying", weight: 1 },
 	{ value: "they will find that flies and other insects treat their body as though it were dead", weight: 1 },
 	{ value: "they will trade shadows with ${a:AnimalMain}", weight: 1 },
+	{ value: "they will no longer dream, transforming into ${a:fairy_folk} in ${fairy_number} days", weight: 1 },
 	
   ],
   
@@ -13070,6 +13077,16 @@ door_type: [
     { value: "the statue of the ${uc:statue_adj} ${statue_subject} in ${uc:CompassDirectionPrimary} Square near ${urbn_street_names}", weight: 1 },
 	{ value: "the Gate ${gates_suffix}", weight: 1 },
 	{ value: "the ${aristocratic_home} of ${royals} ${FantasyLastName}", weight: 1 },
+  ],
+  
+  command_item: [
+    { value: "fish", weight: 1 },
+    { value: "birds", weight: 1 },
+    { value: "animals", weight: 1 },
+    { value: "${huntingmonster}", weight: 1 },
+    { value: "insects", weight: 1 },
+	{ value: "${humanoids}", weight: 1 },
+    { value: "the undead", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
