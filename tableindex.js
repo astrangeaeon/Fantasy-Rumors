@@ -3887,6 +3887,7 @@ const tables = {
     { value: "spend thirteen days beneath the Grand Waterfall in ${foreignland}", weight: 1 },
     { value: "trade their ${body_part} with another", weight: 1 },
 	{ value: "pray ${onednine} days before ${relic}", weight: 1 },
+	{ value: "take vows of ${vows}", weight: 1 },
   ],
 
   mindaltering: [
@@ -3974,6 +3975,7 @@ const tables = {
 	{ value: "${a:herd_adj} ${monsterA} on the ${floors} floor has learned to mimic the cry of an injured ${AnimalMount}", weight: 1 },
 	{ value: "${vancian_wizards} claimed that a doppelgänger will not recognize itself in a mirror, ignoring its reflection like a dog or a cat would", weight: 1 },
 	{ value: "Here the ${huntingmonster} of ${foreign_adj}${foreignland}${foreign_phrase} with bull voices roar like thunder underground", weight: 1 },
+	{ value: "${monstertype} has recently taken a vow of ${vows}", weight: 1 },
   ],
   
   monster_hybrid: [
@@ -6497,6 +6499,7 @@ trap_location: [
 	{ value: "a hostile jester", weight: 1 },
 	{ value: "${a:QuickNPCJobExotic}", weight: 1 },
 	{ value: "a tome-smuggler", weight: 1 },
+	{ value: "a lunatic, beloved by lunatics,", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -8065,6 +8068,7 @@ trap_location: [
 	{ value: "often play sacred hymns on ${a:MusicalInstrument}", weight: 1 },
 	{ value: "dye their hair ${Colors}", weight: 1 },
 	{ value: "bear tattoos of ${tattoos}", weight: 1 },
+	{ value: "take vows of ${vows}", weight: 1 },
   ],	
   
   FantasyGodFollowersAbstain: [
@@ -13100,6 +13104,13 @@ door_type: [
     { value: "insects", weight: 1 },
 	{ value: "${humanoids}", weight: 1 },
     { value: "the undead", weight: 1 },
+  ],
+  
+  vows: [
+    { value: "silence", weight: 1 },
+    { value: "chastity", weight: 1 },
+    { value: "poverty", weight: 1 },
+    { value: "pacifism", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
