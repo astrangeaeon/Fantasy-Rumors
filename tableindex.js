@@ -100,6 +100,8 @@ const tables = {
 	{ value: " lonely land of peaks and lamas", weight: 1 },
 	{ value: " where immense swine stalk about intermingled with naked children", weight: 1 },
 	{ value: " where the trees shed leaves of bronze and silver", weight: 1 },
+	{ value: " where they fire bow and arrow with their feet", weight: 1 },
+	{ value: " where rude plows are drawn by lean oxen", weight: 1 },
   ],
 
   herdwith: [
@@ -580,6 +582,7 @@ const tables = {
 	{ value: "said to be a red gremlin with a crossbow", weight: 1 },
 	{ value: "known as the Bleeder, with his fleams of white iron", weight: 1 },
 	{ value: "known as the Lord of the Feast", weight: 1 },
+	{ value: "from ${foreignland}${foreign_phrase}", weight: 1 },
   ],
 
   body_part_fate: [
@@ -924,6 +927,7 @@ const tables = {
 	{ value: "Ugallu the Big Weather-Beast", weight: 1 },
 	{ value: "a poisonous black smoke called Kalakuta", weight: 1 },
 	{ value: "the Sow that Eats its Own Farrow", weight: 1 },
+	{ value: "the Genius of Pranks", weight: 1 },
   ],
 
   criminals: [
@@ -2337,9 +2341,9 @@ const tables = {
     { value: "was defeated by a beast with a hundred legs", weight: 1 },
     { value: "was eaten by a grue", weight: 1 },
 	{ value: "now hangs in chains before ${a:idol}", weight: 1 },
-    { value: "his skull now houses a family of mice", weight: 1 },
+    { value: "their skull now houses a family of mice", weight: 1 },
 	{ value: "now dwells in a reverse aquarium at the bottom of the Lake of Dreams", weight: 1 },
-	{ value: "his talking skull now sits upon a pike", weight: 1 },
+	{ value: "their talking skull now sits upon a pike", weight: 1 },
 	{ value: "now wears midnight green in fealty to the Counts of Elz", weight: 1 },
 	{ value: "their spirit now haunts ${haunted_place}", weight: 1 },
 	{ value: "their remains now reside at the bottom of ${a:liquid_containers_large} filled with ${alcohol_liquor}", weight: 1 },
@@ -2364,7 +2368,7 @@ const tables = {
     { value: "to dispel the ${elemntl_type} curse placed on them by ${creepyvillain} for ${hero_curse_reason}", weight: 1 },
     { value: "to find the Tree of Giraff which bears ${treebears}", weight: 1 },
     { value: "to purge it of ${huntingmonster}", weight: 1 },
-    { value: "to put an end to ${creepyvillain}", weight: 1 },
+    { value: "to put an end to ${creepyvillain}, who if slain by ordinary means will return again at midnight,", weight: 1 },
     { value: "to question the oldest ${oldest} in the world", weight: 1 },
     { value: "to reclaim the ${prophecyartifact} rumored to be hidden within", weight: 1 },
     { value: "to recover the bones of ${heroes_and_villains}", weight: 1 },
@@ -3585,6 +3589,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC}, grew suddenly ill; through good leeches he was healed and saved", weight: 1 },
 	{ value: "half the village woke up missing one of their eyes after dreaming of ${creepyvillain} last week", weight: 1 },
 	{ value: "${a:severe_weather} has come to take the place of the wives of town", weight: 1 },
+	{ value: "${FantasyName}, a local ${QuickNPCJob}, has taken a vow of ${vows}", weight: 1 },
   ],
 
   localtopic: [
@@ -5912,6 +5917,8 @@ trap_location: [
 	{ value: "the barons of ${urbn_cityname} have always added a lock to ${a:door_type} door in ${a:urbn_place} in the old part of the city upon coronation; there are over a dozen locks but no one remembers why the tradition started", weight: 1 },
 	{ value: "in ${urbn_cityname}, those born with ${short_inherited_trait} are called the Children of Saint ${SaintName}", weight: 1 },
 	{ value: "since visiting ${urbn_cityname} last ${season}, ${domain_events}", weight: 2 },
+	{ value: "the ${urbn_traders} of ${urbn_street_names} have recently been plagued by ${undead_intangible}s; a priest they hired said they are attracted by deceit to ${urbn_place_plural} and other places where lies are told", weight: 1 },
+	{ value: "ever since ${creepyvillain} visited the city of ${urbn_cityname}, the ${urbn_place_plural} are cheerless and the few people who gather near ${urbn_street_names} are sullen and silent-tongued", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6500,6 +6507,7 @@ trap_location: [
 	{ value: "${a:QuickNPCJobExotic}", weight: 1 },
 	{ value: "a tome-smuggler", weight: 1 },
 	{ value: "a lunatic, beloved by lunatics,", weight: 1 },
+	{ value: "a knight forlorn", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -8571,6 +8579,19 @@ trap_location: [
     { value: "cello", weight: 1 },
 	{ value: "lute", weight: 1 },
 	{ value: "lyre", weight: 1 },
+	{ value: "mandolin", weight: 1 },
+  ],
+  
+  MusicalInstrument_String: [
+    { value: "harp", weight: 1 },
+    { value: "violin", weight: 1 },
+	{ value: "guitar", weight: 1 },
+    { value: "dulcimer", weight: 1 },
+    { value: "banjo", weight: 1 },
+    { value: "cello", weight: 1 },
+	{ value: "lute", weight: 1 },
+	{ value: "lyre", weight: 1 },
+	{ value: "mandolin", weight: 1 },
   ],
 
   OutlandishCityRumors: [
@@ -10644,6 +10665,9 @@ celebration_type: [
 	{ value: "they will find that flies and other insects treat their body as though it were dead", weight: 1 },
 	{ value: "they will trade shadows with ${a:AnimalMain}", weight: 1 },
 	{ value: "they will no longer dream, transforming into ${a:fairy_folk} in ${fairy_number} days", weight: 1 },
+	{ value: "they will be ${fairy_number} years older or younger", weight: 1 },
+	{ value: "they will only be able to bellow or whisper", weight: 1 },
+	{ value: "they will fear the color ${Colors}", weight: 1 },
 	
   ],
   
@@ -11646,6 +11670,7 @@ door_type: [
 	{ value: "${tc:po:AnimalBigCat} Claw", weight: 2 },
 	{ value: "the ${tc:AnimalVenomous} Blade", weight: 2 },
 	{ value: "the King of Lions", weight: 1 },
+	{ value: "the Sword of the Rose", weight: 1 },
   ],
   
   sword_property: [
@@ -12645,6 +12670,7 @@ door_type: [
 	{ value: "a basket of ${FantasyMeal_Vegetable_plural} with power to delight the soul", weight: 1 },
 	{ value: "five measures of wine and a thousand copper cash worth of fish", weight: 1 },
 	{ value: "an enchanted ${ship_type_small}", weight: 1 },
+	{ value: "${a:MusicalInstrument_String} strung with silver strings", weight: 1 },
   ],
   
   hallucination: [
