@@ -102,6 +102,7 @@ const tables = {
 	{ value: " where the trees shed leaves of bronze and silver", weight: 1 },
 	{ value: " where they fire bow and arrow with their feet", weight: 1 },
 	{ value: " where rude plows are drawn by lean oxen", weight: 1 },
+	{ value: " where the birds fly upside-down and the fish swim backwards", weight: 1 },
   ],
 
   herdwith: [
@@ -362,6 +363,7 @@ const tables = {
 	{ value: " who faithfully celebrated the Feast of the Peaches every six thousand years,", weight: 1 },
 	{ value: " whose mind was so strong, their dreams were dreamt by the whole kingdom,", weight: 1 },
 	{ value: " who believed, wrongly, that a man without enemies was a nobody,", weight: 1 },
+	{ value: " who held the power to bid and forbid,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1274,7 +1276,7 @@ const tables = {
     { value: "Quelana of Izalith", weight: 1 },
     { value: "Quicksword Rachel", weight: 1 },
     { value: "Rapacious Andrei", weight: 1 },
-    { value: "Jemshid of Thorolund", weight: 1 },
+    { value: "Prince Six-Weapons", weight: 1 },
     { value: "Rhoy the Explorer", weight: 1 },
     { value: "Rickert of Vinheim", weight: 1 },
     { value: "Rimsin of Larsa", weight: 1 },
@@ -1846,6 +1848,7 @@ const tables = {
 	{ value: "the undecaying grey vomit of sphinxes", weight: 1 },
 	{ value: "the bones left behind after a man-eating ${po:maneating} meal", weight: 1 },
 	{ value: "leaves of bronze and silver", weight: 1 },
+	{ value: "tusks of green ivory", weight: 1 },
   ],
 
   excitingemployer: [
@@ -2363,6 +2366,7 @@ const tables = {
 	{ value: "only their ${duo_clothing_singular}, steeped in the stench of ${huntingmonster}, was recovered", weight: 1 },
 	{ value: "has rested these past ${fairy_number} years in a magical slumber", weight: 1 },
 	{ value: "was laid low by a two-headed ${humanoid_monsters} with one Bloodsucking Head and one Disgorging Head", weight: 1 },
+	{ value: "the bones of their hands and all their other bones now lay scattered about the ${floors} floor", weight: 1 },
   ],
 
   hero_goal: [
@@ -3865,6 +3869,7 @@ const tables = {
 	{ value: "the Robe of Blue Sky", weight: 1 },
 	{ value: "the Robe of Yellow Evening Light", weight: 1 },
 	{ value: "the Robe of Darkness", weight: 1 },
+	{ value: "the secret seventh weapon of Prince Six-Weapons", weight: 1 },
   ],
 
   membership: [
@@ -4042,6 +4047,7 @@ const tables = {
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who is disgusted by meat-eaters, who can smell it on their breath and sweat,", weight: 1 },
 	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, known for weaving voluptuous hallucinations to trouble desert mountain hermits practicing austerity,", weight: 1 },
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon whose tail was cut off by ${ntc} when they were young,", weight: 1 },
+	{ value: "${FantasyGodNameFemale}, a sea dragon that appears as an attractive woman but for her elbows and knees that bend the wrong way,", weight: 1 },
   ],
   
   monstertype_ntc: [
@@ -4061,6 +4067,7 @@ const tables = {
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who is disgusted by meat-eaters, who can smell it on their breath and sweat", weight: 1 },
 	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, known for weaving voluptuous hallucinations to trouble desert mountain hermits practicing austerity", weight: 1 },
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon whose tail was cut off by ${ntc} when they were young", weight: 1 },
+	{ value: "${FantasyGodNameFemale}, a sea dragon that appears as an attractive woman but for her elbows and knees that bend the wrong way", weight: 1 },
   ],
 
   monstervalue: [
@@ -5311,6 +5318,7 @@ const tables = {
 	{ value: "none can be wed until they have killed an enemy of the tribe", weight: 1 },
 	{ value: "the souls of the dead follow ${a:AnimalPsychopomp} named ${DemonName} to the enchanted ${otherworld_names}", weight: 1 },
 	{ value: "a woman having twins shames the father", weight: 1 },
+	{ value: "the ${AnimalPest} is honored because it supposedly warned the ancestors of a coming ${severe_weather} long ago", weight: 1 },
   ],
 
   strangenoises: [
@@ -5923,6 +5931,7 @@ trap_location: [
 	{ value: "since visiting ${urbn_cityname} last ${season}, ${domain_events}", weight: 2 },
 	{ value: "the ${urbn_traders} of ${urbn_street_names} have recently been plagued by ${undead_intangible}s; a priest they hired said they are attracted by deceit to ${urbn_place_plural} and other places where lies are told", weight: 1 },
 	{ value: "ever since ${creepyvillain} visited the city of ${urbn_cityname}, the ${urbn_place_plural} are cheerless and the few people who gather near ${urbn_street_names} are sullen and silent-tongued", weight: 1 },
+	{ value: "${urbn_cityname}, famous for its ${historicalarchitecturestyles} ${urbn_place_plural}, is a city of ${trap_builder} ${trap_builder_origin}; the people there obey ${a:herd_adj} ${humanoid_monsters} named ${pet_name}", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6360,6 +6369,7 @@ trap_location: [
 	{ value: "the sons and daughters of Saint ${SaintName}", weight: 1 },
 	{ value: "a trio of uncomfortable frost dwarfs", weight: 1 },
 	{ value: "the four companions of ${ntc}: ${a:AnimalSimian}, ${a:AnimalBigCat}, ${a:AnimalCanine} and ${a:AnimalBird}", weight: 1 },
+	{ value: "devil-slayers with sword in hand", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -6602,6 +6612,7 @@ trap_location: [
 	{ value: "sip on powerfully weak tea from ${foreignland}${foreign_phrase}", weight: 1 },
 	{ value: "drink eagle's water to prolong their lives", weight: 1 },
 	{ value: "take offense at the holy stench of God", weight: 1 },
+	{ value: "trade conspiracies using the language of the rose", weight: 1 },
   ],
 
   urbn_verbsingular: [
@@ -6919,6 +6930,8 @@ trap_location: [
 	{ value: "marks one of the secret entrances into ${classic_dungeons}", weight: 1 },
 	{ value: "marks the entrance to a grove of dark singing trees", weight: 1 },
 	{ value: "marks the spot where ${RealGods} comes to fish souls out of the river and welcome them to the enchanted ${otherworld_names}", weight: 1 },
+	{ value: "emanates the keening moans of ${fairy_folk_named}", weight: 1 },
+	{ value: "marks a well which draws from the underground river that nourishes the garden of the fairy maiden men call the Queen of Springtime", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -7017,6 +7030,7 @@ trap_location: [
 	{ value: "there stand ${fairy_number} brick pillars with men inside", weight: 1 },
 	{ value: "${a:humanoid_monsters} keeps a larder of smoked horse and knight meat", weight: 1 },
 	{ value: "there's an old war god's altar where devout ${violent_profession_plural} can sacrifice the ${Weapons} or shield they took from a defeated foe for protection in battle", weight: 1 },
+	{ value: "there stands a carnivorous ${cod_tree_type} tree surrounded by ${AnimalPrey} bones", weight: 1 },
   ],
 
   wilds_locn: [
@@ -7334,8 +7348,8 @@ trap_location: [
     { value: "cow", weight: 2 },
     { value: "zebra", weight: 2 },
 	{ value: "gazelle", weight: 2 },
-    { value: "man", weight: 1 },
-	{ value: "woman", weight: 1 },
+    { value: "human", weight: 1 },
+	{ value: "mouse", weight: 1 },
     { value: "elf", weight: 1 },
     { value: "dwarf", weight: 1 },
 	{ value: "gnome", weight: 1 },
@@ -8180,6 +8194,7 @@ trap_location: [
 	{ value: "first Kiss", weight: 1 },
 	{ value: "last Breath", weight: 1 },
 	{ value: "balefires", weight: 1 },
+	{ value: "desert Roads", weight: 1 },
   ],
 
   FantasyMeal: [
