@@ -289,7 +289,7 @@ const tables = {
 	{ value: " whose songs came armed and clad in armour,", weight: 1 },
 	{ value: " who used their brother's gravestone as a shield,", weight: 1 },
 	{ value: " whose name meant ax-time, sword-time, wind-time, wolf-time to the people of the islands,", weight: 1 },
-	{ value: " who slowly conquered the ${fairy_number} Kingdoms by planting poison sumac and manticore grass in the fertile farmland and garden soil,", weight: 1 },
+	{ value: " who slowly conquered the ${uc:fairy_number} Kingdoms by planting poison sumac and manticore grass in the fertile farmland and garden soil,", weight: 1 },
 	{ value: " whose children were all hero saviors or world-annihilating demons,", weight: 1 },
 	{ value: " whose garden attracted the phoenix and dragon and unicorn,", weight: 1 },
 	{ value: " who pulled the child from the breast of the nursing mother,", weight: 1 },
@@ -2362,6 +2362,7 @@ const tables = {
 	{ value: "fell victim to powers beyond the sphere of the measured and the named", weight: 1 },
 	{ value: "only their ${duo_clothing_singular}, steeped in the stench of ${huntingmonster}, was recovered", weight: 1 },
 	{ value: "has rested these past ${fairy_number} years in a magical slumber", weight: 1 },
+	{ value: "was laid low by a two-headed ${humanoid_monsters} with one Bloodsucking Head and one Disgorging Head", weight: 1 },
   ],
 
   hero_goal: [
@@ -2557,6 +2558,7 @@ const tables = {
 	{ value: "the Festival of Laughter", weight: 1 },
 	{ value: "the Feast of Dolls", weight: 1 },
 	{ value: "the Feast of the Peaches", weight: 1 },
+	{ value: "the Day of Blood", weight: 1 },
   ],
 
   holiday_celebration: [
@@ -3203,6 +3205,7 @@ const tables = {
 	{ value: "the Garden of ${vancian_wizards}", weight: 1 },
 	{ value: "the Cemetery of the ${tc:QuickNPCJobPoor}, the ${tc:QuickNPCJobMid} and the ${tc:QuickNPCJobRich}", weight: 1 },
 	{ value: "the ${uc:aristocratic_robbed_place_religious} of Thieves", weight: 1 },
+	{ value: "the Seven Green Men of ${slumberplace}", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -5566,6 +5569,7 @@ const tables = {
 	{ value: "a demon-god with ${Metallic} horns and a snake-headed penis named ${LowerRankedDemonName}", weight: 1 },
 	{ value: "a huge and loathsome ${AnimalInsect}", weight: 1 },
 	{ value: "boar-men clad in chainmail", weight: 1 },
+	{ value: "a nude giant with the head of ${a:AnimalMain}", weight: 1 },
   ],
   
   
@@ -7012,6 +7016,7 @@ trap_location: [
 	{ value: "a forgotten cemetery holds the bones of eleven ancient ${ancientpeople_singular} queens", weight: 1 },
 	{ value: "there stand ${fairy_number} brick pillars with men inside", weight: 1 },
 	{ value: "${a:humanoid_monsters} keeps a larder of smoked horse and knight meat", weight: 1 },
+	{ value: "there's an old war god's altar where devout ${violent_profession_plural} can sacrifice the ${Weapons} or shield they took from a defeated foe for protection in battle", weight: 1 },
   ],
 
   wilds_locn: [
@@ -10457,6 +10462,9 @@ celebration_type: [
 	{ value: "the Cornflower Wraith", weight: 1 },
 	{ value: "the Iron-nose Midwife", weight: 1 },
 	{ value: "Thardid Jimbo", weight: 1 },
+	{ value: "Meg of the Hairy Arms", weight: 1 },
+	{ value: "the Hag of Warning", weight: 1 },
+	{ value: "the Queen of Springtime", weight: 1 },
   ],
   
   afterlife: [
