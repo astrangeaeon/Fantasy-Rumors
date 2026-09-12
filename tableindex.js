@@ -5578,12 +5578,14 @@ const tables = {
 	{ value: "a huge and loathsome ${AnimalInsect}", weight: 1 },
 	{ value: "boar-men clad in chainmail", weight: 1 },
 	{ value: "a nude giant with the head of ${a:AnimalMain}", weight: 1 },
+	{ value: "the halfman, invisible from the off side, who will teach medicine if defeated", weight: 1 },
   ],
   
   
    trap: [
-    { value: "${trap_builder} ${trap_builder_origin} have been spotted ${trap_setup} ${trap_quality} ${trap_type} traps ${trap_location} ${trap_reason}", weight: 1 },
-	{ value: "${a:defeated_adj} ${classic_classes} told everyone at the bar who would listen about ${trap_specific}", weight: 1 },
+    { value: "${trap_builder} ${trap_builder_origin} have been spotted ${trap_setup} ${trap_quality} ${trap_type} traps ${trap_location} ${trap_reason}", weight: 2 },
+	{ value: "${a:defeated_adj} ${classic_classes} told everyone at the bar who would listen about ${trap_specific}", weight: 2 },
+	{ value: "a network of secret passages concealed by jib doors allow the dungeon's ${trap_builder} to travel unseen", weight: 1 },
   ],
   
   trap_builder: [
@@ -8138,6 +8140,7 @@ trap_location: [
 	{ value: "Mummol", weight: 1 },
 	{ value: "Dangott", weight: 1 },
 	{ value: "Lucanor", weight: 1 },
+	{ value: "Min", weight: 1 },
   ],
 
   FantasyDomain: [
@@ -10437,6 +10440,7 @@ celebration_type: [
 	{ value: "gremlin", weight: 1 },
 	{ value: "satyr", weight: 1 },
 	{ value: "nymph", weight: 1 },
+	{ value: "spriggan", weight: 1 },
   ],
   
   fairy_folk_named: [
