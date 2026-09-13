@@ -2049,6 +2049,7 @@ const tables = {
 	{ value: "elves who removed the intestines of a centaur and substituted pebbles, quartz crystals, a quantity of rope and a little snake endowed with power", weight: 1 },
 	{ value: "a strange cult whose members are only given names after death", weight: 1 },
 	{ value: "stones chipped off the Clashing Rocks from the Age of Miracles that drifted downstream to become earth elementals in our time", weight: 1 },
+	{ value: "a princess, the water of her mouth sweeter than old wine, with a taste that would quench hell's fiery pain", weight: 1 },
   ],
 
   feature: [
@@ -3729,6 +3730,7 @@ const tables = {
 	{ value: "jars", weight: 1 },
 	{ value: "pipes", weight: 1 },
 	{ value: "${duo_clothing}", weight: 2 },
+	{ value: "dice", weight: 1 },
   ],
 
   magictype: [
@@ -5805,6 +5807,7 @@ trap_location: [
 	{ value: "at the bottom of ${a:ship_cargo_container_singular} in ${a:DungeonRoom} on the ${floors} floor is ${a:FantasyMeal_Fruit} from the Garden of ${vancian_wizards}, that teaches one the tongue of ${AnimalCategory} if consumed", weight: 1 },
 	{ value: "a plain-looking ${liquid_containers_large} on the ${floors} floor holds a corpulent djinn who will serve their rescuer halfheartedly until the next ${boundary_times}", weight: 1 },
 	{ value: "there's ${a:DecorativeStone} ${duo_jewlery_singular} ${obj_or_room} on the ${floors} floor that is said to give the owner command over ${command_item}", weight: 1 },
+	{ value: "in ${a:DungeonRoom} on the ${floors} floor there's ${a:ship_cargo_furniture_adj} ${ship_cargo_container_singular} filled with golden ${FantasyMeal_Fruit_plural} from the Garden of ${vancian_wizards}", weight: 1 },
   ],
 
   treasureA: [
@@ -6524,6 +6527,7 @@ trap_location: [
 	{ value: "a tome-smuggler", weight: 1 },
 	{ value: "a lunatic, beloved by lunatics,", weight: 1 },
 	{ value: "a knight forlorn", weight: 1 },
+	{ value: "a dealer in ${collection}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -11063,6 +11067,7 @@ ship_type: [
 	{ value: "bundles", weight: 1 },
 	{ value: "bins", weight: 1 },
 	{ value: "baskets", weight: 1 },
+	{ value: "coffins", weight: 1 },
   ],
   
   ship_cargo_container_singular: [
@@ -11074,6 +11079,7 @@ ship_type: [
 	{ value: "bundle", weight: 1 },
 	{ value: "bin", weight: 1 },
 	{ value: "basket", weight: 1 },
+	{ value: "coffin", weight: 1 },
   ],
   
   
@@ -12698,6 +12704,7 @@ door_type: [
 	{ value: "five measures of wine and a thousand copper cash worth of fish", weight: 1 },
 	{ value: "an enchanted ${ship_type_small}", weight: 1 },
 	{ value: "${a:MusicalInstrument_String} strung with silver strings", weight: 1 },
+	{ value: "${a:magicalcommonobject} made of gold", weight: 1 },
   ],
   
   hallucination: [
@@ -12773,11 +12780,12 @@ door_type: [
 	{ value: "the lost city of ${urbn_cityname}", weight: 1 },
 	{ value: "the tomb of ${ntc}", weight: 1 },
 	{ value: "the ${aristocratic_home} of ${vancian_wizards}", weight: 1 },
-	{ value: "the best brothel in the City of Pleasure", weight: 1 },
+	{ value: "the best brothel in the City of ${urbn_cityname}", weight: 1 },
 	{ value: "the ${lair_synonyms} of ${dragon_name} the Wurm", weight: 1 },
 	{ value: "the enchanted ${otherworld_names}", weight: 1 },
 	{ value: "the ${underworld_names}", weight: 1 },
 	{ value: "a bewitching naga curled around an enormous ${cod_tree_type} tree", weight: 1 },
+	{ value: "${landmark}", weight: 1 },
   ],
   
   tax_table: [
