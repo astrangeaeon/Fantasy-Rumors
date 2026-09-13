@@ -364,6 +364,7 @@ const tables = {
 	{ value: " whose mind was so strong, their dreams were dreamt by the whole kingdom,", weight: 1 },
 	{ value: " who believed, wrongly, that a man without enemies was a nobody,", weight: 1 },
 	{ value: " who held the power to bid and forbid,", weight: 1 },
+	{ value: " who tricked the giant Gwon into filling a bottomless hole with blood,", weight: 1 },
   ],
 
   hundred_words: [
@@ -520,6 +521,7 @@ const tables = {
 	{ value: "the sleeping stone statues of cats awaken", weight: 1 },
 	{ value: "the raiding-men will twang the yew and raise the battle-axe once more", weight: 1 },
 	{ value: "the stars turn their backs and shine their light away from the earth", weight: 1 },
+	{ value: "the black bodies of bees fly frantically from one dead plant to another", weight: 1 },
   ],
 
   behind_mask: [
@@ -1152,7 +1154,7 @@ const tables = {
     { value: "Vendrick, the Throne Watcher", weight: 1 },
     { value: "Yurt, the Silent Chief", weight: 1 },
     { value: "Zallen, the ${uc:AnimalMain} of ${urbn_cityname}", weight: 1 },
-	{ value: "Yurt, the Silent Chief", weight: 1 },
+	{ value: "Goanna, Wise Among the Reptiles", weight: 1 },
 	{ value: "Raitaro, the Child of Thunder", weight: 1 },
 	{ value: "Karibou, the Lady of the Snow", weight: 1 },
   ],
@@ -1849,6 +1851,7 @@ const tables = {
 	{ value: "the bones left behind after a man-eating ${po:maneating} meal", weight: 1 },
 	{ value: "leaves of bronze and silver", weight: 1 },
 	{ value: "tusks of green ivory", weight: 1 },
+	{ value: "the gray bark of the eucalypt", weight: 1 },
   ],
 
   excitingemployer: [
@@ -3007,6 +3010,7 @@ const tables = {
 	{ value: "a man-eating ${maneating}", weight: 1 },
 	{ value: "a hysterical sobbing ${humanoid} with a powerful and destrutive magic staff", weight: 1 },
 	{ value: "Ko Hung's empty clothes", weight: 1 },
+	{ value: "a 'tredusa' whose gaze turns its victims into topiary", weight: 1 },
   ],
 
   island_riches: [
@@ -3128,6 +3132,7 @@ const tables = {
 	{ value: "the black mourning flame of the ancient ${ancientpeople}", weight: 1 },
 	{ value: "${alt_metals}", weight: 1 },
 	{ value: "why the beautiful gods give birth to monsters", weight: 1 },
+	{ value: "time not measured in sunrises and sunsets", weight: 1 },
   ],
 
   landmark: [
@@ -3292,6 +3297,8 @@ const tables = {
 	{ value: "the black precipice of Horneel", weight: 1 },
 	{ value: "the Hill of the Baboons", weight: 1 },
 	{ value: "the Place of Black Spiders", weight: 1 },
+	{ value: "the Nullarbor Plain", weight: 1 },
+	{ value: "the spring at Coorigil", weight: 1 },
   ],
 
   lawnornament: [
@@ -3475,6 +3482,9 @@ const tables = {
 	{ value: "luxuriate in the warm baths of the king", weight: 1 },
 	{ value: "follow in the footsteps of ${vancian_wizards} who was supposed to have spent their later years studying ${knowledgething}", weight: 2 },
 	{ value: "eat the inexhaustible flesh of Sachrimnir, the Cosmic Boar", weight: 1 },
+	{ value: "live the simple life of the ancients, who had hours for work, hours for play, hours for sleep and hours to adore the Goddess", weight: 1 },
+	{ value: "see ${landmark} with their own eyes", weight: 1 },
+	{ value: "bathe in the spring at Coorigil", weight: 1 },
   ],
 
   local_racist: [
@@ -6375,6 +6385,7 @@ trap_location: [
 	{ value: "a trio of uncomfortable frost dwarfs", weight: 1 },
 	{ value: "the four companions of ${ntc}: ${a:AnimalSimian}, ${a:AnimalBigCat}, ${a:AnimalCanine} and ${a:AnimalBird}", weight: 1 },
 	{ value: "devil-slayers with sword in hand", weight: 1 },
+	{ value: "men with efreet blood and spirits of subtle fire", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -6528,6 +6539,7 @@ trap_location: [
 	{ value: "a lunatic, beloved by lunatics,", weight: 1 },
 	{ value: "a knight forlorn", weight: 1 },
 	{ value: "a dealer in ${collection}", weight: 1 },
+	{ value: "${a:fairy_folk} dressed like ${a:QuickNPCJob}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6619,6 +6631,7 @@ trap_location: [
 	{ value: "drink eagle's water to prolong their lives", weight: 1 },
 	{ value: "take offense at the holy stench of God", weight: 1 },
 	{ value: "trade conspiracies using the language of the rose", weight: 1 },
+	{ value: "argue over who has cumulatively been awake the longest", weight: 1 },
   ],
 
   urbn_verbsingular: [
@@ -9331,6 +9344,7 @@ saint_curse: [
 	{ value: "Saint ${SaintName} in answer to their prayers", weight: 1 },
 	{ value: "an animated ${magicalcommonobject} given sapience by the god ${RealGods}", weight: 1 },
     { value: "a mysterious ${oldest} ${wilds_specific_locn}", weight: 1 },
+	{ value: "a water nymph living at the bottom of ${body_of_water}", weight: 1 },
   ],
   
    wish_granter_nonliving: [
@@ -12433,6 +12447,7 @@ door_type: [
 	{ value: "Saint ${SaintName} was martyred by ${violent_profession_plural} in the pay of ${creepyvillain}", weight: 1 },
 	{ value: "an unknown but no doubt virtuous ${classic_classes} fell", weight: 1 },
 	{ value: "Saint ${SaintName} was born, or martyred, or resurrected, it's not quite clear", weight: 1 },
+	{ value: "${heroes_and_villains} was visited by ${FantasyGods} in the guise of ${a:AnimalThroneType}", weight: 1 },
   ],
   
   shrine_type: [
