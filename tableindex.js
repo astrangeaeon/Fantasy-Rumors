@@ -103,6 +103,7 @@ const tables = {
 	{ value: " where they fire bow and arrow with their feet", weight: 1 },
 	{ value: " where rude plows are drawn by lean oxen", weight: 1 },
 	{ value: " where the birds fly upside-down and the fish swim backwards", weight: 1 },
+	{ value: " where the artists paint with shadows and darkness and blood", weight: 1 },
   ],
 
   herdwith: [
@@ -365,6 +366,7 @@ const tables = {
 	{ value: " who believed, wrongly, that a man without enemies was a nobody,", weight: 1 },
 	{ value: " who held the power to bid and forbid,", weight: 1 },
 	{ value: " who tricked the giant Gwon into filling a bottomless hole with blood,", weight: 1 },
+	{ value: " who married ${a:fairy_folk},", weight: 1 },
   ],
 
   hundred_words: [
@@ -1538,6 +1540,7 @@ const tables = {
 	{ value: "${a:door_type} trapdoor in an abandoned ${DungeonRoom} on the ${floors} floor is concealed beneath piles of broken ${ship_cargo_furniture_adj} ${ship_cargo_furniture_type}", weight: 1 },
 	{ value: "${a:Colors} curtain on the ${floors} floor conceals ${a:door_type} door that can only be passed through ${door_opened}", weight: 1 },
 	{ value: "${a:door_type} locked door on the ${floors} floor can only be unlocked with a key ${key_location}", weight: 1 },
+	{ value: "${a:door_type} trapdoor on the ${floors} floor is hidden under a pool of ${liquid_cargo}", weight: 1 },
   ],
 
 
@@ -2053,6 +2056,7 @@ const tables = {
 	{ value: "a strange cult whose members are only given names after death", weight: 1 },
 	{ value: "stones chipped off the Clashing Rocks from the Age of Miracles that drifted downstream to become earth elementals in our time", weight: 1 },
 	{ value: "a princess, the water of her mouth sweeter than old wine, with a taste that would quench hell's fiery pain", weight: 1 },
+	{ value: "a coin so magically potent and rare it can be used to bribe gods and greater daemons and purchase whole kingdoms", weight: 1 },
   ],
 
   feature: [
@@ -2234,6 +2238,7 @@ const tables = {
 	{ value: "tame ${a:AnimalMount} of ${elemntl_type}", weight: 1 },
 	{ value: "travel as a pilgrim to the ${shrine_type} that marks the place where ${shrine}", weight: 2 },
 	{ value: "open the Great Door in ${slumberplace} made from the bones of two beasts, the serpent Papagast and the fish Orteniaus", weight: 1 },
+	{ value: "retrieve the shield of a famous knight", weight: 1 },
   ],
 
   geyserspray: [
@@ -3485,6 +3490,7 @@ const tables = {
 	{ value: "live the simple life of the ancients, who had hours for work, hours for play, hours for sleep and hours to adore the Goddess", weight: 1 },
 	{ value: "see ${landmark} with their own eyes", weight: 1 },
 	{ value: "bathe in the spring at Coorigil", weight: 1 },
+	{ value: "don armor, fight in the wars, and joust in the lists", weight: 1 },
   ],
 
   local_racist: [
@@ -3608,6 +3614,8 @@ const tables = {
 	{ value: "half the village woke up missing one of their eyes after dreaming of ${creepyvillain} last week", weight: 1 },
 	{ value: "${a:severe_weather} has come to take the place of the wives of town", weight: 1 },
 	{ value: "${FantasyName}, a local ${QuickNPCJob}, has taken a vow of ${vows}", weight: 1 },
+	{ value: "${a:fairy_folk} has been collecting the hair from children’s haircuts", weight: 1 },
+	{ value: "the churchbell rang thirteen times", weight: 1 },
   ],
 
   localtopic: [
@@ -5660,6 +5668,7 @@ const tables = {
 	{ value: "the yawning maw of a colossal ${AnimalReptile}", weight: 1 },
 	{ value: "a nauseating heap of rotting ${FantasyMeal_Vegetable_plural}, offal and other wet foodscraps all smeared with a mysterious black grease", weight: 1 },
 	{ value: "a massive black cauldron kept by the terrifying twelve-foot tall witch Grandmother Hunger", weight: 1 },
+	{ value: "a pool of sticky black honey in a chamber filled with the susurrations of innumerable stinging insects", weight: 1 },
   ],
   
   trap_pit_verb: [
@@ -5738,6 +5747,7 @@ const tables = {
     { value: "with the reputation of being ${criminals}", weight: 2 },
 	{ value: "who keep herds of ${herdanimal} deeper down", weight: 2 },
 	{ value: "who are known to eat the food in peoples' dreams", weight: 1 },
+	{ value: "whose ancestors were forced to spend their lives digging mile-wide graves so they'd be ready when the titans died at last", weight: 1 },
   ],
   
   
@@ -8785,6 +8795,9 @@ trap_location: [
     { value: "farrier", weight: 1 },
 	{ value: "lanternmaker", weight: 1 },
 	{ value: "silk weaver", weight: 1 },
+	{ value: "tailor", weight: 1 },
+	{ value: "knife-maker", weight: 1 },
+	{ value: "chain-forger", weight: 1 },
   ],
 
   QuickNPCJobRich: [
@@ -9233,6 +9246,7 @@ inherited_traits: [
 	{ value: "have little mouths inside of bigger mouths", weight: 1 },
 	{ value: "have small ${Colors} feathers instead of hair", weight: 1 },
 	{ value: "are all born with fingers and toes twice the average length", weight: 1 },
+	{ value: "are said to be descended from those unfortunate ${trap_builder} who were forced to spend their lives digging mile-wide graves so they'd be ready when the titans died at last", weight: 1 },
   ],
 
 tail_type: [
@@ -10459,6 +10473,7 @@ celebration_type: [
 	{ value: "satyr", weight: 1 },
 	{ value: "nymph", weight: 1 },
 	{ value: "spriggan", weight: 1 },
+	{ value: "swan-may", weight: 1 },
   ],
   
   fairy_folk_named: [
@@ -10713,6 +10728,7 @@ celebration_type: [
 	{ value: "they will be ${fairy_number} years older or younger", weight: 1 },
 	{ value: "they will only be able to bellow or whisper", weight: 1 },
 	{ value: "they will fear the color ${Colors}", weight: 1 },
+	{ value: "their meals will plead and scream to not be eaten", weight: 1 },
 	
   ],
   
@@ -12448,6 +12464,7 @@ door_type: [
 	{ value: "an unknown but no doubt virtuous ${classic_classes} fell", weight: 1 },
 	{ value: "Saint ${SaintName} was born, or martyred, or resurrected, it's not quite clear", weight: 1 },
 	{ value: "${heroes_and_villains} was visited by ${FantasyGods} in the guise of ${a:AnimalThroneType}", weight: 1 },
+	{ value: "${dragon_name} the great wyrm was defeated by a pack of wolves and snake-eagles", weight: 1 },
   ],
   
   shrine_type: [
@@ -12662,6 +12679,7 @@ door_type: [
 	{ value: "${a:classic_classes} ${facial_desc}", weight: 1 },
 	{ value: "${a:bard_titles} of old with ${a:MusicalInstrument}", weight: 1 },
 	{ value: "a sorrowful ${undead_intangible}", weight: 1 },
+	{ value: "a whirling, burning plant", weight: 1 },
   ],
   
   necklace_type: [
