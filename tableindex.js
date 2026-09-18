@@ -104,6 +104,11 @@ const tables = {
 	{ value: " where rude plows are drawn by lean oxen", weight: 1 },
 	{ value: " where the birds fly upside-down and the fish swim backwards", weight: 1 },
 	{ value: " where the artists paint with shadows and darkness and blood", weight: 1 },
+	{ value: " with its ${arabian_cliche}", weight: 1 },
+	{ value: " with its red waters and translucent soil", weight: 1 },
+	{ value: " with its sterile rock and poisoned sand", weight: 1 },
+	{ value: " lit by a perpetual sunset", weight: 1 },
+	{ value: " with its trees of stone and mountains of wood", weight: 1 },
   ],
 
   herdwith: [
@@ -367,6 +372,10 @@ const tables = {
 	{ value: " who held the power to bid and forbid,", weight: 1 },
 	{ value: " who tricked the giant Gwon into filling a bottomless hole with blood,", weight: 1 },
 	{ value: " who married ${a:fairy_folk},", weight: 1 },
+	{ value: " who fed on wolf and snake meat and became savage of nature,", weight: 1 },
+	{ value: " who lived when wishing could still lead to something,", weight: 1 },
+	{ value: " who refused to drink the Cup of Death,", weight: 1 },
+	{ value: " who fought and died for the slender promise of a better age,", weight: 1 },
   ],
 
   hundred_words: [
@@ -406,6 +415,7 @@ const tables = {
 	{ value: "can burn ${a:huntingmonster_singular} like caustic acid", weight: 1 },
 	{ value: "reveals the way to Torolix, the high secret place", weight: 1 },
 	{ value: "can grant an audience with the Kings of Sleep", weight: 1 },
+	{ value: "if touched against the skin allows the language of ${AnimalCategory} to be understood", weight: 1 },
   ],
 
   addiction: [
@@ -726,6 +736,7 @@ const tables = {
 	{ value: "the Great Toad will emerge from the bogs", weight: 1 },
 	{ value: "a dry rain will parch throats and desiccate vegetable life", weight: 1 },
 	{ value: "a tyrant titan named Taraka will rise and usurp mastery of the world", weight: 1 },
+	{ value: "the fires will all be smothered by snow", weight: 1 },
   ],
 
   coastal: [
@@ -934,6 +945,7 @@ const tables = {
 	{ value: "a poisonous black smoke called Kalakuta", weight: 1 },
 	{ value: "the Sow that Eats its Own Farrow", weight: 1 },
 	{ value: "the Genius of Pranks", weight: 1 },
+	{ value: "the Crawling Fire", weight: 1 },
   ],
 
   criminals: [
@@ -1089,7 +1101,7 @@ const tables = {
   daemontype: [
     { value: "blood", weight: 1 },
     { value: "crane", weight: 1 },
-    { value: "crying", weight: 1 },
+    { value: "cursing", weight: 1 },
     { value: "crystal", weight: 1 },
     { value: "feathered", weight: 1 },
     { value: "festering", weight: 1 },
@@ -1855,6 +1867,9 @@ const tables = {
 	{ value: "leaves of bronze and silver", weight: 1 },
 	{ value: "tusks of green ivory", weight: 1 },
 	{ value: "the gray bark of the eucalypt", weight: 1 },
+	{ value: "life-feathers plucked from a living ${AnimalBird} which have power only while the bird lives", weight: 1 },
+	{ value: "the fiery ${Jewels} that give light to the daemon cities of the underworld", weight: 1 },
+	{ value: "the corpses of imperial spies", weight: 1 },
   ],
 
   excitingemployer: [
@@ -2133,7 +2148,7 @@ const tables = {
     { value: "barren women", weight: 1 },
     { value: "castrated boys", weight: 1 },
     { value: "celibate priests", weight: 1 },
-    { value: "dying elders", weight: 1 },
+    { value: "elderly ${humanoids_nonhuman}", weight: 1 },
     { value: "starving eunuchs", weight: 1 },
     { value: "temple whores", weight: 1 },
     { value: "tongueless children", weight: 1 },
@@ -2189,6 +2204,9 @@ const tables = {
 	{ value: "Lower Targamon", weight: 1 },
 	{ value: "Reeda", weight: 1 },
 	{ value: "Combia", weight: 1 },
+	{ value: "Firalond", weight: 1 },
+	{ value: "Karlysh", weight: 1 },
+	{ value: "Parigi", weight: 1 },
   ],
 
   funeralcustom: [
@@ -2239,6 +2257,7 @@ const tables = {
 	{ value: "travel as a pilgrim to the ${shrine_type} that marks the place where ${shrine}", weight: 2 },
 	{ value: "open the Great Door in ${slumberplace} made from the bones of two beasts, the serpent Papagast and the fish Orteniaus", weight: 1 },
 	{ value: "retrieve the shield of a famous knight", weight: 1 },
+	{ value: "retrieve a copper ${coins_singular} from the Fountain of the ${tc:AnimalBird} in the city of ${urbn_cityname}", weight: 1 },
   ],
 
   geyserspray: [
@@ -3016,6 +3035,7 @@ const tables = {
 	{ value: "a hysterical sobbing ${humanoid} with a powerful and destrutive magic staff", weight: 1 },
 	{ value: "Ko Hung's empty clothes", weight: 1 },
 	{ value: "a 'tredusa' whose gaze turns its victims into topiary", weight: 1 },
+	{ value: "a strange beast whose cry sounds like thirty hunting hounds", weight: 1 },
   ],
 
   island_riches: [
@@ -3221,6 +3241,7 @@ const tables = {
 	{ value: "the Cemetery of the ${tc:QuickNPCJobPoor}, the ${tc:QuickNPCJobMid} and the ${tc:QuickNPCJobRich}", weight: 1 },
 	{ value: "the ${uc:aristocratic_robbed_place_religious} of Thieves", weight: 1 },
 	{ value: "the Seven Green Men of ${slumberplace}", weight: 1 },
+	{ value: "the Vault of Tekaro where the old king sleeps", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -3304,6 +3325,7 @@ const tables = {
 	{ value: "the Place of Black Spiders", weight: 1 },
 	{ value: "the Nullarbor Plain", weight: 1 },
 	{ value: "the spring at Coorigil", weight: 1 },
+	{ value: "the Drachenfels", weight: 1 },
   ],
 
   lawnornament: [
@@ -3400,6 +3422,8 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} dreamt last night of ${vancian_wizards} consulting with the king about a date circled ${fairy_number} days hence in the divine calendar of ${FantasyGods}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} was bit by ${a:AnimalInsectBiting}, one of the millions that spoil the otherwise idyllic Lake of ${uc:Jewels}, and was stricken with ${diseases}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPCDescriptor} ${humanoid}, returned from the city of ${urbn_cityname} with ${a:duo_clothing_singular} steeped in the stench of ${huntingmonster}", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, has been undergoing a kind of second puberty as they transform slowly into ${a:huntingmonster_singular}", weight: 1 },
+	{ value: "two ${trap_builder} came to town with a basket of delicious ${FantasyMeal_Fruit_plural} that they'd stolen from ${a:po:fairy_folk} garden; everyone who ate one has been cursed ${saint_curse}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -4068,6 +4092,7 @@ const tables = {
 	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, known for weaving voluptuous hallucinations to trouble desert mountain hermits practicing austerity,", weight: 1 },
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon whose tail was cut off by ${ntc} when they were young,", weight: 1 },
 	{ value: "${FantasyGodNameFemale}, a sea dragon that appears as an attractive woman but for her elbows and knees that bend the wrong way,", weight: 1 },
+	{ value: "${DemonName}, ${a:daemontype} daemon who delights in pulling the legs off of centaurs and the roots and branches from captive treants,", weight: 1 },
   ],
   
   monstertype_ntc: [
@@ -4088,6 +4113,7 @@ const tables = {
 	{ value: "${DemonName} the ${uc:QuickNPCDescriptor}, known for weaving voluptuous hallucinations to trouble desert mountain hermits practicing austerity", weight: 1 },
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon whose tail was cut off by ${ntc} when they were young", weight: 1 },
 	{ value: "${FantasyGodNameFemale}, a sea dragon that appears as an attractive woman but for her elbows and knees that bend the wrong way", weight: 1 },
+	{ value: "${DemonName}, ${a:daemontype} daemon who delights in pulling the legs off of centaurs and the roots and branches from captive treants", weight: 1 },
   ],
 
   monstervalue: [
@@ -4923,6 +4949,7 @@ const tables = {
 	{ value: "that's home to yellow birds with the voices of goats", weight: 1 },
 	{ value: "where ${duo_name1} and ${duo_name2} have been hiding out after looting the Old Summer Palace", weight: 1 },
 	{ value: "that gets struck continously by mystical lightning bolts", weight: 1 },
+	{ value: "which contains the eye of a god which allows one to see anything that transpires in darkness, no matter the distance", weight: 1 },
   ],
 
   I_herd: [
@@ -4990,6 +5017,7 @@ const tables = {
 	{ value: "the island of Kharg in the gulf", weight: 1 },
 	{ value: "Mullian the Eagle-hawk, an immortal ${humanoid} chained forever to a rock in a fit of spite by ${FantasyGods} for the crime of ${crime_singular}", weight: 2 },
 	{ value: "Zipangu, the island of the dragonfly", weight: 1 },
+	{ value: "the Seven Seas of Rhye", weight: 1 },
   ],
 
   seaterror: [
@@ -5339,6 +5367,8 @@ const tables = {
 	{ value: "the souls of the dead follow ${a:AnimalPsychopomp} named ${DemonName} to the enchanted ${otherworld_names}", weight: 1 },
 	{ value: "a woman having twins shames the father", weight: 1 },
 	{ value: "the ${AnimalPest} is honored because it supposedly warned the ancestors of a coming ${severe_weather} long ago", weight: 1 },
+	{ value: "${violent_profession_plural} make their faces hideous with deep wounds and mourn a fallen warrior with blood not tears", weight: 1 },
+	{ value: "those who spy ${a:fairy_folk} become steadfast, prepared to face evil hap or good", weight: 1 },
   ],
 
   strangenoises: [
@@ -5367,6 +5397,7 @@ const tables = {
 	{ value: "the racket of a poltergeist", weight: 1 },
 	{ value: "the night-song of birds and thousands of crickets", weight: 1 },
 	{ value: "horrible machines crashing into each other", weight: 1 },
+	{ value: "the distinct sound of ${a:MusicalInstrument}", weight: 1 },
   ],
 
   studysubject: [
@@ -5599,6 +5630,7 @@ const tables = {
 	{ value: "boar-men clad in chainmail", weight: 1 },
 	{ value: "a nude giant with the head of ${a:AnimalMain}", weight: 1 },
 	{ value: "the halfman, invisible from the off side, who will teach medicine if defeated", weight: 1 },
+	{ value: "a mighty titan and his ${bard_titles}", weight: 1 },
   ],
   
   
@@ -5691,6 +5723,7 @@ const tables = {
 	{ value: "skulking ankle-high gorgons that stalk the ${floors} floor, spewing petrifying gas, turning feet into stone", weight: 1 },
 	{ value: "${a:DungeonRoom} where the exits seal and a shoulder-mounted ${AnimalMount} trophy high on the wall vomits forth ${trap_cage_fill}", weight: 2 },
 	{ value: "${a:DungeonRoom} where the exits seal and ${flag_shape} holes on the wall pour out silver ${AnimalInsectStinging}s", weight: 2 },
+	{ value: "${a:DungeonRoom} where powerful magnets pull metal swords and shields and armor clad warriors to a spiked ceiling high above", weight: 1 },
   ],
   
   trap_cage_bars: [
@@ -5948,7 +5981,7 @@ trap_location: [
 	{ value: "${a:QuickNPCJob} claims that the city of ${urbn_cityname} is a paradise that makes ${urbn_cityname} a sty for hogs in comparison", weight: 1 },
 	{ value: "Sandhana, the disgraced apprentice of ${vancian_wizards} can supposedly be found living with ${a:huntingmonster_singular} in an abandoned ${urbn_place} in ${urbn_cityname}, the City of ${urbn_citynickname}", weight: 1 },
 	{ value: "they say ${urbn_cityname} is a veritable pageant of marvels, where even the ${QuickNPCJobPoor}s are as likely to go about mounted on ${a:AnimalMagicMount} with a jeweled saddle as on a horse or mule", weight: 1 },
-	{ value: "everyone at ${po:FantasyNameMale} Trough in ${urbn_cityname} has a story; for instance, that ${QuickNPCJob} sitting there nursing their ${alcohol_beer} was born of noble twins who committed incest at the behest of either the ${daemontype} daemon ${DemonName} or ${FantasyGods}", weight: 1 },
+	{ value: "everyone at ${po:FantasyNameMale} Trough in ${urbn_cityname} has a story; for instance, that ${QuickNPCJob} sitting there nursing their ${alcohol_beer} ${bar_stories}", weight: 1 },
 	{ value: "the old saying is true, 'what good can come from ${urbn_cityname}?'", weight: 1 },
 	{ value: "outside the city of ${urbn_cityname} some mad vigilante group has ${vigilante_punishment} ${fairy_number} ${humanoids_nonhuman} all bearing the brand for ${criminal_singular}", weight: 1 },
 	{ value: "the barons of ${urbn_cityname} have always added a lock to ${a:door_type} door in ${a:urbn_place} in the old part of the city upon coronation; there are over a dozen locks but no one remembers why the tradition started", weight: 1 },
@@ -6396,6 +6429,7 @@ trap_location: [
 	{ value: "the four companions of ${ntc}: ${a:AnimalSimian}, ${a:AnimalBigCat}, ${a:AnimalCanine} and ${a:AnimalBird}", weight: 1 },
 	{ value: "devil-slayers with sword in hand", weight: 1 },
 	{ value: "men with efreet blood and spirits of subtle fire", weight: 1 },
+	{ value: "a group of ${magicalcommonobject}-sellers", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -6550,6 +6584,8 @@ trap_location: [
 	{ value: "a knight forlorn", weight: 1 },
 	{ value: "a dealer in ${collection}", weight: 1 },
 	{ value: "${a:fairy_folk} dressed like ${a:QuickNPCJob}", weight: 1 },
+	{ value: "a wise and ruthless duenna", weight: 1 },
+	{ value: "${a:fairy_folk} who delights in causing strife", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6787,10 +6823,11 @@ trap_location: [
 	{ value: "offers a baptism with earth from a dry well sacred to ${FantasyGods}", weight: 1 },
 	{ value: "communicates through glimmerings and dreams", weight: 1 },
 	{ value: "chops the wings off ${a:AnimalBird} with a stone tomahawk", weight: 1 },
-	{ value: "speaks the tongue of the ancient ${ancientpeople}, whom the demon ${DemonName} spent seven years among before departing, finding himself unable to understand or make himself understood", weight: 1 },
+	{ value: "speaks only the tongue of the ancient ${ancientpeople}, whom the demon ${DemonName} spent seven years among before departing, finding himself unable to understand or make himself understood", weight: 1 },
 	{ value: "holds court, attended by humpbacks and dwarfs", weight: 1 },
 	{ value: "neither slumbers nor sleeps", weight: 1 },
 	{ value: "measures bodies for wooden suits", weight: 1 },
+	{ value: "can control others by tying ${a:Colors} ribbon around them", weight: 1 },
 	
   ],
 
@@ -6961,6 +6998,7 @@ trap_location: [
 	{ value: "marks the spot where ${RealGods} comes to fish souls out of the river and welcome them to the enchanted ${otherworld_names}", weight: 1 },
 	{ value: "emanates the keening moans of ${fairy_folk_named}", weight: 1 },
 	{ value: "marks a well which draws from the underground river that nourishes the garden of the fairy maiden men call the Queen of Springtime", weight: 1 },
+	{ value: "marks the entrance to a surreal mall", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -7197,6 +7235,7 @@ trap_location: [
 	{ value: "${a:fairy_folk} who witnesses the sunrise will turn into ${thingbeyond} for ${fairy_number} days", weight: 1 },
 	{ value: "one who has spent the night under the Black Stone of Arduu on Mount ${slumberplace} will descend the next morning as either a madman, ${a:QuickNPCJobExotic} or a saint", weight: 1 },
 	{ value: "every ${daemontype} daemon was once a man who ate an immortality-granting herb that grows in ${slumberplace}, or so they say", weight: 1 },
+	{ value: "there's an isolated ${aristocratic_robbed_place_religious} where the corpulent ${religious_ranks}s are infamous for their gluttonous 30-course meals and week-long feasts", weight: 1 },
   ],
   
   
@@ -9140,6 +9179,7 @@ trap_location: [
     { value: "in a puddle of ${cod_liquid}", weight: 1 },
     { value: "in the ${Colors} sand of a giant hourglass", weight: 1 },
 	{ value: "in the rough waters off ${coastal}", weight: 1 },
+	{ value: "in ${a:liquid_containers_large} of ${alcohol}", weight: 1 },
   ],
   
   cod_fire: [
@@ -10517,6 +10557,7 @@ celebration_type: [
 	{ value: "Meg of the Hairy Arms", weight: 1 },
 	{ value: "the Hag of Warning", weight: 1 },
 	{ value: "the Queen of Springtime", weight: 1 },
+	{ value: "Grandmother Spider", weight: 1 },
   ],
   
   afterlife: [
@@ -10729,6 +10770,9 @@ celebration_type: [
 	{ value: "they will only be able to bellow or whisper", weight: 1 },
 	{ value: "they will fear the color ${Colors}", weight: 1 },
 	{ value: "their meals will plead and scream to not be eaten", weight: 1 },
+	{ value: "they will be unable to take their boots off", weight: 1 },
+	{ value: "all their hair will be shorn, never to grow again", weight: 1 },
+	{ value: "they will be transformed into ${a:AnimalReptile} for ${fairy_number} years", weight: 1 },
 	
   ],
   
@@ -11467,6 +11511,7 @@ ship_type: [
 	{ value: "one sack of gold at a time in exchange for a single hair to a smiling and silent yellow dwarf", weight: 1 },
 	{ value: "by inventing and marketing ${aristocratic_new_money_invention}", weight: 1 },
 	{ value: "by discovering and exploiting the gold and silver mines of ${slumberplace}", weight: 1 },
+	{ value: "by having ${a:undead_thinking} in the family tree that continues to enrich their descendants to preserve the family honor", weight: 1 },
   ],
   
    aristocratic_robbed_place: [
@@ -12054,6 +12099,7 @@ door_type: [
 	{ value: "to be ${castle_protector}", weight: 1 },
 	{ value: "to have been built to safeguard the living sword named ${sword_names}, an ancient ${BladedWeapons_Sword} that ${sword_desire}", weight: 1 },
 	{ value: "to be unwelcoming, with no fire in the hearth and no wine or beer or cider", weight: 1 },
+	{ value: "to have been built by a drunk carpenter and an idiotic mason", weight: 1 },
   ],
   
   castle_moat: [
@@ -12193,6 +12239,7 @@ door_type: [
 	{ value: "Lumarth", weight: 1 },
 	{ value: "Cannara", weight: 1 },
 	{ value: "High Brooms", weight: 1 },
+	{ value: "Lorch", weight: 1 },
   ],
   
    flowers_singular: [
@@ -12265,6 +12312,7 @@ door_type: [
 	{ value: "the Queen of ${foreignland}", weight: 1 },
 	{ value: "the King of ${foreignland}", weight: 1 },
 	{ value: "${larger_than_life}", weight: 1 },
+	{ value: "${a:classic_classes} from the city of ${urbn_cityname} named ${FantasyName}", weight: 1 },
   ],
   
   former_owner_extra: [
@@ -12274,6 +12322,7 @@ door_type: [
 	{ value: "; it would be worth a fortune to a member of ${membership}", weight: 1 },
 	{ value: "; it should probably be buried with them", weight: 1 },
 	{ value: "; any ${huntingmonster_singular} who sees it will probably want it destroyed", weight: 1 },
+	{ value: "; supposedly they lost it to ${a:fairy_folk} over a game of ${board_games}", weight: 1 },
   ],
   
   former_object: [
@@ -12320,6 +12369,7 @@ door_type: [
 	{ value: "magister", weight: 1 },
 	{ value: "cleric", weight: 1 },
 	{ value: "vicar", weight: 1 },
+	{ value: "monk", weight: 1 },
   ],
   
   random_dungeons: [
@@ -12680,6 +12730,7 @@ door_type: [
 	{ value: "${a:bard_titles} of old with ${a:MusicalInstrument}", weight: 1 },
 	{ value: "a sorrowful ${undead_intangible}", weight: 1 },
 	{ value: "a whirling, burning plant", weight: 1 },
+	{ value: "a living ${Weapons}", weight: 1 },
   ],
   
   necklace_type: [
@@ -12738,6 +12789,7 @@ door_type: [
 	{ value: "an enchanted ${ship_type_small}", weight: 1 },
 	{ value: "${a:MusicalInstrument_String} strung with silver strings", weight: 1 },
 	{ value: "${a:magicalcommonobject} made of gold", weight: 1 },
+	{ value: "a life-sized ${DecorativeStone} sculpture of ${a:AnimalBigCat} in repose by ${artists}", weight: 1 },
   ],
   
   hallucination: [
@@ -13182,6 +13234,7 @@ door_type: [
 	{ value: "Prince ${FantasyNameMale} and Princess ${FantasyNameFemale} have become twin rulers since their father's disappearance", weight: 1 },
 	{ value: "the ${landscape_types_basic} near ${landmark} outside the city have become infested with ${huntingmonster}", weight: 1 },
 	{ value: "the two Fiends, Assassination and Plunder, have made the city their home", weight: 1 },
+	{ value: "the burgermeister has laid claim to all the property of the dead and a brave ${religious_ranks} has stood up to denounce it", weight: 1 },
   ],
   
   damaged_city_thing: [
@@ -13205,6 +13258,19 @@ door_type: [
     { value: "chastity", weight: 1 },
     { value: "poverty", weight: 1 },
     { value: "pacifism", weight: 1 },
+  ],
+  
+  arabian_cliche: [
+    { value: "mamelukes and eunuchs", weight: 1 },
+    { value: "harems and genies", weight: 1 },
+    { value: "camels and palm trees", weight: 1 },
+    { value: "turbans and scimitars", weight: 1 },
+  ],
+  
+  bar_stories: [
+    { value: "was born of noble twins who committed incest at the behest of either the ${daemontype} daemon ${DemonName} or ${FantasyGods}", weight: 1 },
+    { value: "and eating flies spent ${fairy_number} years as ${a:AnimalReptile} for breaking a taboo in the enchanted ${otherworld_names} that they ${taboo_donot}", weight: 1 },
+	{ value: "has a tattoo of ${tattoos} they got in prison serving time for ${crime_singular}", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
