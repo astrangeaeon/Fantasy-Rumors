@@ -376,6 +376,8 @@ const tables = {
 	{ value: " who lived when wishing could still lead to something,", weight: 1 },
 	{ value: " who refused to drink the Cup of Death,", weight: 1 },
 	{ value: " who fought and died for the slender promise of a better age,", weight: 1 },
+	{ value: " who, when their talisman was broken, spent the remainder of their days ${monster_manual_verb} ${huntingmonster},", weight: 1 },
+	{ value: " who spent their middle years with no gold or silver in their coffer and no wine or corn in their magazine,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1192,7 +1194,7 @@ const tables = {
     { value: "Old Gorwel", weight: 1 },
     { value: "Bowman Guthrie", weight: 1 },
     { value: "Broodwife Greyjoy", weight: 1 },
-    { value: "Captain Drummond", weight: 1 },
+    { value: "Warmarshal Drummond", weight: 1 },
     { value: "Carhillion of the Fold", weight: 1 },
     { value: "Castaway Witch Donna", weight: 1 },
     { value: "Chancellor Wellager", weight: 1 },
@@ -3640,6 +3642,7 @@ const tables = {
 	{ value: "${FantasyName}, a local ${QuickNPCJob}, has taken a vow of ${vows}", weight: 1 },
 	{ value: "${a:fairy_folk} has been collecting the hair from children’s haircuts", weight: 1 },
 	{ value: "the churchbell rang thirteen times", weight: 1 },
+	{ value: "the men of fighting age have vowed to not shave their beards or bathe until the ${humanoids_nonhuman} of ${foreignland}${foreign_phrase} have been conquered, but any historian knows this already happened ${when} ago", weight: 1 },
   ],
 
   localtopic: [
@@ -5369,6 +5372,8 @@ const tables = {
 	{ value: "the ${AnimalPest} is honored because it supposedly warned the ancestors of a coming ${severe_weather} long ago", weight: 1 },
 	{ value: "${violent_profession_plural} make their faces hideous with deep wounds and mourn a fallen warrior with blood not tears", weight: 1 },
 	{ value: "those who spy ${a:fairy_folk} become steadfast, prepared to face evil hap or good", weight: 1 },
+	{ value: "seventy-two friendly voices must declare the innocence of a plaintiff before the tribunal", weight: 1 },
+	{ value: "the warlike people resolve matters by combat because they cannot believe a brave man deserves to suffer or a coward deserves to live", weight: 1 },
   ],
 
   strangenoises: [
@@ -5658,7 +5663,7 @@ const tables = {
   trap_magic: [
     { value: "a fiendish teleportation trap ${trap_location} that whisks away its victims to ${teleport_destination}", weight: 1 },
     { value: "an alarm ${trap_location} that summons ${trap_summon}", weight: 1 },
-    { value: "${a:Colors} light ${trap_location} that transforms humans into ${AnimalBird}s and demihumans into ${AnimalMount}s", weight: 1 },
+    { value: "${a:Colors} light ${trap_location} that transforms humans into ${AnimalBird}s and ${humanoids_nonhuman} into ${AnimalMount}s", weight: 1 },
   ],
   
    trap_summon: [
@@ -5669,6 +5674,7 @@ const tables = {
 	{ value: "a terribly swift dancing ${Weapons}", weight: 1 },
 	{ value: "a grim and relentless ${elemntl_type} ${RoyalTitleMale}", weight: 1 },
 	{ value: "a golem made of ${golem_types}", weight: 1 },
+	{ value: "${trap_builder} whose touch cause shields to splinter and armor to fall apart", weight: 1 },
   ],
   
   teleport_destination: [
@@ -6828,6 +6834,7 @@ trap_location: [
 	{ value: "neither slumbers nor sleeps", weight: 1 },
 	{ value: "measures bodies for wooden suits", weight: 1 },
 	{ value: "can control others by tying ${a:Colors} ribbon around them", weight: 1 },
+	{ value: "can fly by turning their arms into the wings of ${a:AnimalBird}", weight: 1 },
 	
   ],
 
@@ -7510,8 +7517,8 @@ trap_location: [
     { value: "crow", weight: 1 },
     { value: "raven", weight: 1 },
 	{ value: "peacock", weight: 1 },
-    { value: "chicken", weight: 1 },
-    { value: "turkey", weight: 1 },
+    { value: "pelican", weight: 1 },
+    { value: "wren", weight: 1 },
 	{ value: "flamingo", weight: 1 },
 	{ value: "parrot", weight: 1 },
 	{ value: "goshawk", weight: 1 },
@@ -12280,6 +12287,7 @@ door_type: [
 	{ value: "trapping", weight: 1 },
 	{ value: "interpreting the dreams of", weight: 1 },
 	{ value: "learning the language of", weight: 1 },
+	{ value: "arranging the marriages of", weight: 1 },
   ],
   
   sport_adj: [
