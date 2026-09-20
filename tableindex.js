@@ -47,7 +47,7 @@ const tables = {
     { value: " where the tallest man is king", weight: 1 },
     { value: " where men${herdwith} are revered", weight: 1 },
     { value: " where women${herdwith} are revered", weight: 1 },
-    { value: " with its forests", weight: 1 },
+    { value: " with its forests of bleak grey trees", weight: 1 },
 	{ value: " with its people abandoned by heaven", weight: 1 },
     { value: " with its lakes", weight: 1 },
     { value: " with its mountains", weight: 1 },
@@ -67,7 +67,7 @@ const tables = {
 	{ value: " with its despised shrieking birds", weight: 1 },
 	{ value: " with its ${QuickNPCDescriptor} ${QuickNPCJob}s", weight: 3 },
 	{ value: " where herds of ${herdanimal} move like slow rivers", weight: 1 },
-	{ value: " with its trees of stone", weight: 1 },
+	{ value: " with its quays and cracked stone jetties", weight: 1 },
 	{ value: " where ${FantasyMeal_Fruit_plural} grow with human faces", weight: 1 },
 	{ value: " where a Wizard arose among the horses", weight: 1 },
 	{ value: " where the wolf and the dagger hold the day", weight: 1 },
@@ -109,6 +109,7 @@ const tables = {
 	{ value: " with its sterile rock and poisoned sand", weight: 1 },
 	{ value: " lit by a perpetual sunset", weight: 1 },
 	{ value: " with its trees of stone and mountains of wood", weight: 1 },
+	{ value: " with its ecclesiastical tyrants", weight: 1 },
   ],
 
   herdwith: [
@@ -1259,7 +1260,7 @@ const tables = {
     { value: "Lone Hunter Schmidt", weight: 1 },
     { value: "Lonesome Gavlan", weight: 1 },
     { value: "Bad Ronald", weight: 1 },
-    { value: "Lucatiel of Mirrah", weight: 1 },
+    { value: "Glad Olaf", weight: 1 },
     { value: "Magerold of Lanafir", weight: 1 },
     { value: "Maldron the Assassin", weight: 1 },
     { value: "Heraclitus the Paradoxographer", weight: 1 },
@@ -2159,7 +2160,7 @@ const tables = {
   foreignland: [
     { value: "Adommim", weight: 1 },
     { value: "Astora", weight: 1 },
-    { value: "Boleria", weight: 1 },
+    { value: "Tentarias", weight: 1 },
     { value: "Calatin", weight: 1 },
     { value: "Carim", weight: 1 },
     { value: "Dilmun", weight: 1 },
@@ -2260,6 +2261,8 @@ const tables = {
 	{ value: "open the Great Door in ${slumberplace} made from the bones of two beasts, the serpent Papagast and the fish Orteniaus", weight: 1 },
 	{ value: "retrieve the shield of a famous knight", weight: 1 },
 	{ value: "retrieve a copper ${coins_singular} from the Fountain of the ${tc:AnimalBird} in the city of ${urbn_cityname}", weight: 1 },
+	{ value: "wait at the crossroads near ${landmark} and challenge all who pass by to a duel until ${fairy_number} victories are obtained", weight: 1 },
+	{ value: "pass through the Gate ${gates_suffix} into the holy city of ${urbn_cityname}", weight: 1 },
   ],
 
   geyserspray: [
@@ -3111,6 +3114,7 @@ const tables = {
     { value: "worshipers of ${RealGods}", weight: 1 },
 	{ value: "the ${tc:FantasyMeal_Fruit} Witches", weight: 1 },
 	{ value: "the tiny devils who live inside ${FantasyMeal_Fruit_plural} and ${FantasyMeal_Fruit_plural}", weight: 1 },
+	{ value: "the Lord of the Sun-realm", weight: 1 },
   ],
 
   kinganimal: [
@@ -4760,7 +4764,7 @@ const tables = {
     { value: "the creative use of 300 nails", weight: 1 },
     { value: "vivisection", weight: 1 },
 	{ value: "being bound to the Shame Pole", weight: 1 },
-	{ value: "death by whip", weight: 1 },
+	{ value: "being subjected to death by whip", weight: 1 },
 	{ value: "being lacerated by shards of a broken mirror", weight: 1 },
 	{ value: "being exposed to sharp water and hot needles", weight: 1 },
 	{ value: "being forced to stand before a statue of ${RealGods} and be bitten by a cobra", weight: 1 },
@@ -4770,6 +4774,7 @@ const tables = {
 	{ value: "having their legs broken with heavy wooden mallets", weight: 1 },
 	{ value: "immurement within the walls of ${a:urbn_place}", weight: 1 },
 	{ value: "finger torture", weight: 1 },
+	{ value: "amputation of the ears, nose, tongue and right hand", weight: 1 },
   ],
 
   rm: [
@@ -5636,6 +5641,7 @@ const tables = {
 	{ value: "a nude giant with the head of ${a:AnimalMain}", weight: 1 },
 	{ value: "the halfman, invisible from the off side, who will teach medicine if defeated", weight: 1 },
 	{ value: "a mighty titan and his ${bard_titles}", weight: 1 },
+	{ value: "cave-dwellers who were human once, but far from human now", weight: 1 },
   ],
   
   
@@ -5996,6 +6002,7 @@ trap_location: [
 	{ value: "the ${urbn_traders} of ${urbn_street_names} have recently been plagued by ${undead_intangible}s; a priest they hired said they are attracted by deceit to ${urbn_place_plural} and other places where lies are told", weight: 1 },
 	{ value: "ever since ${creepyvillain} visited the city of ${urbn_cityname}, the ${urbn_place_plural} are cheerless and the few people who gather near ${urbn_street_names} are sullen and silent-tongued", weight: 1 },
 	{ value: "${urbn_cityname}, famous for its ${historicalarchitecturestyles} ${urbn_place_plural}, is a city of ${trap_builder} ${trap_builder_origin}; the people there obey ${a:herd_adj} ${humanoid_monsters} named ${pet_name}", weight: 1 },
+	{ value: "the wind brings ill news from ${urbn_cityname} to the ${CompassDirectionPrimary}, where Glad Olaf has been captured by the authorities and scheduled to be punished by ${punishment} in ${fairy_number} days' time", weight: 1 },
   ],
 
    urbn_traders: [
@@ -9481,7 +9488,7 @@ saint_curse: [
 	{ value: "${who_is_buried} ${prophetic_vision_throne_posture} the ${prophetic_vision_thrones}, as ${a:oldest} ${facial_desc} bowed low before them", weight: 1 },
 	{ value: "${prophetic_subject} recoiled in disgust from what they saw in the mirror", weight: 1 },
 	{ value: "${prophetic_subject} devoured ${Jewels} off the filthy ground like ${a:AnimalMammal}", weight: 1 },
-	{ value: "${prophetic_subject} bartered for ${exchangething} in the markets of ${foreign_adj}${foreignland}", weight: 1 },
+	{ value: "${prophetic_subject} bartered for ${exchangething} in the nightmarkets of ${foreign_adj}${foreignland}", weight: 1 },
 	{ value: "${creepyvillain}, unnoticed by the other guests, attended the wedding of ${uc:RoyalTitleFemale} ${FantasyNameFemale} of ${foreignland} and ${uc:RoyalTitleMale} ${FantasyNameMale} of ${foreignland}", weight: 1 },
 	{ value: "${prophetic_subject} ${prophetic_mourning_verb} the ${prophetic_vision_mourning_place_adj} ${prophetic_vision_mourning_place} of ${prophetic_subject}", weight: 1 },
 	{ value: "${prophetic_subject} danced ${dance} with ${prophetic_vision_born_subject}", weight: 1 },
@@ -12247,6 +12254,9 @@ door_type: [
 	{ value: "Cannara", weight: 1 },
 	{ value: "High Brooms", weight: 1 },
 	{ value: "Lorch", weight: 1 },
+	{ value: "Dankwart", weight: 1 },
+	{ value: "Orello", weight: 1 },
+	{ value: "Balonn", weight: 1 },
   ],
   
    flowers_singular: [
