@@ -379,6 +379,7 @@ const tables = {
 	{ value: " who fought and died for the slender promise of a better age,", weight: 1 },
 	{ value: " who, when their talisman was broken, spent the remainder of their days ${monster_manual_verb} ${huntingmonster},", weight: 1 },
 	{ value: " who spent their middle years with no gold or silver in their coffer and no wine or corn in their magazine,", weight: 1 },
+	{ value: " who grazed in the field with the common herd,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1556,6 +1557,7 @@ const tables = {
 	{ value: "${a:Colors} curtain on the ${floors} floor conceals ${a:door_type} door that can only be passed through ${door_opened}", weight: 1 },
 	{ value: "${a:door_type} locked door on the ${floors} floor can only be unlocked with a key ${key_location}", weight: 1 },
 	{ value: "${a:door_type} trapdoor on the ${floors} floor is hidden under a pool of ${liquid_cargo}", weight: 1 },
+	{ value: "${a:door_type} door on the ${floors} floor tells a tale in a thick ${ancientpeople_singular} accent of ${fd_tale} ", weight: 1 },
   ],
 
 
@@ -2400,6 +2402,7 @@ const tables = {
 	{ value: "has rested these past ${fairy_number} years in a magical slumber", weight: 1 },
 	{ value: "was laid low by a two-headed ${humanoid_monsters} with one Bloodsucking Head and one Disgorging Head", weight: 1 },
 	{ value: "the bones of their hands and all their other bones now lay scattered about the ${floors} floor", weight: 1 },
+	{ value: "fills their vacant hours with prayer, neither business nor pleasure", weight: 1 },
   ],
 
   hero_goal: [
@@ -2956,6 +2959,7 @@ const tables = {
 	{ value: "an antediluvian people who survive by root-digging and berry-picking", weight: 1 },
 	{ value: "empath-martyrs whose touch heals others by transferring the wounds to themselves", weight: 1 },
 	{ value: "a hermit who has retreated from the world, communicating only through melodic messages played on ${a:MusicalInstrument},", weight: 1 },
+	{ value: "a savage solitary saint, his nakedness covered only by his unkempt hair", weight: 1 },
   ],
 
   islandprotector: [
@@ -3248,6 +3252,7 @@ const tables = {
 	{ value: "the ${uc:aristocratic_robbed_place_religious} of Thieves", weight: 1 },
 	{ value: "the Seven Green Men of ${slumberplace}", weight: 1 },
 	{ value: "the Vault of Tekaro where the old king sleeps", weight: 1 },
+	{ value: "the Maze of Zahda", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -3430,6 +3435,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPCDescriptor} ${humanoid}, returned from the city of ${urbn_cityname} with ${a:duo_clothing_singular} steeped in the stench of ${huntingmonster}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, has been undergoing a kind of second puberty as they transform slowly into ${a:huntingmonster_singular}", weight: 1 },
 	{ value: "two ${trap_builder} came to town with a basket of delicious ${FantasyMeal_Fruit_plural} that they'd stolen from ${a:po:fairy_folk} garden; everyone who ate one has been cursed ${saint_curse}", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} has spent many days without food, many nights without sleep and many years without speaking", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -4040,6 +4046,7 @@ const tables = {
 	{ value: "${vancian_wizards} claimed that a doppelgänger will not recognize itself in a mirror, ignoring its reflection like a dog or a cat would", weight: 1 },
 	{ value: "Here the ${huntingmonster} of ${foreign_adj}${foreignland}${foreign_phrase} with bull voices roar like thunder underground", weight: 1 },
 	{ value: "${monstertype} has recently taken a vow of ${vows}", weight: 1 },
+	{ value: "${monstertype} ran afoul of ${fairy_folk_named} and can now be greviously wounded by the mere scent of ${a:flowers_singular}", weight: 1 },
   ],
   
   monster_hybrid: [
@@ -11639,6 +11646,7 @@ ship_type: [
 	{ value: "by exposing it to ${light_type}", weight: 1 },
 	{ value: "by meditating upon the holiness of mountains", weight: 1 },
 	{ value: "by waiting until the Hour of the ${AnimalHour}", weight: 1 },
+	{ value: "by telling it a joke about ${a:humanoid} and ${a:QuickNPCJob}", weight: 1 },
   ],
 
 
@@ -11969,6 +11977,7 @@ door_type: [
 	{ value: "creating a double out of cloud to fool the spouse of ${ntc}", weight: 1 },
 	{ value: "praying for rain that came and quenched half of the flames of a burning ${urbn_place}", weight: 1 },
 	{ value: "breaking the magic of ${vancian_wizards}, who crumbled to dust, being old and full of days", weight: 1 },
+	{ value: "commanding the lions and serpents of the desert to dig graves for the ${ancientpeople}", weight: 1 },
   ],
   
   diseases: [
