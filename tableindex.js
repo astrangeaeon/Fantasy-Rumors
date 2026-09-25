@@ -381,6 +381,8 @@ const tables = {
 	{ value: " who spent their middle years with no gold or silver in their coffer and no wine or corn in their magazine,", weight: 1 },
 	{ value: " who grazed in the field with the common herd,", weight: 1 },
 	{ value: " whose splendor passed through the four portals of fire, earthquake, storm and hail,", weight: 1 },
+	{ value: " whose pet ${AnimalBigCat} spoke with a hundred, a thousand, a hundred thousand roars,", weight: 1 },
+	{ value: " who played cards where kingdoms and bloodlines and myriads of souls were table stakes,", weight: 1 },
   ],
 
   hundred_words: [
@@ -604,6 +606,7 @@ const tables = {
 	{ value: "known as the Bleeder, with his fleams of white iron", weight: 1 },
 	{ value: "known as the Lord of the Feast", weight: 1 },
 	{ value: "from ${foreignland}${foreign_phrase}", weight: 1 },
+	{ value: "cursed with too much good luck", weight: 1 },
   ],
 
   body_part_fate: [
@@ -742,6 +745,7 @@ const tables = {
 	{ value: "a dry rain will parch throats and desiccate vegetable life", weight: 1 },
 	{ value: "a tyrant titan named Taraka will rise and usurp mastery of the world", weight: 1 },
 	{ value: "the fires will all be smothered by snow", weight: 1 },
+	{ value: "the loud and loathsome clang of the bell which wakes the Dreamer from his slumbers will be heard across the land", weight: 1 },
   ],
 
   coastal: [
@@ -3438,7 +3442,8 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPCDescriptor} ${humanoid}, returned from the city of ${urbn_cityname} with ${a:duo_clothing_singular} steeped in the stench of ${huntingmonster}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, has been undergoing a kind of second puberty as they transform slowly into ${a:huntingmonster_singular}", weight: 1 },
 	{ value: "two ${trap_builder} came to town with a basket of delicious ${FantasyMeal_Fruit_plural} that they'd stolen from ${a:po:fairy_folk} garden; everyone who ate one has been cursed ${saint_curse}", weight: 1 },
-	{ value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} has spent many days without food, many nights without sleep and many years without speaking", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} has spent many days without food, many nights without sleep and many years without speaking since ${a:fairy_folk} knocked on their door", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, swears they saw ${a:vehicle_adj} ${vehicle} pulled by ${herdanimal} and driven by ${a:undead_intangible}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -3657,6 +3662,7 @@ const tables = {
 	{ value: "the churchbell rang thirteen times", weight: 1 },
 	{ value: "the men of fighting age have vowed to not shave their beards or bathe until the ${humanoids_nonhuman} of ${foreignland}${foreign_phrase} have been conquered, but any historian knows this already happened ${when} ago", weight: 1 },
 	{ value: "a druid in the nearby forest has been blessing rats and termites and other vermin to be fruitful and multiply", weight: 1 },
+	{ value: "a goblin knight riding a Spanish cat rode through town on a quest involving ${landmark}", weight: 1 },
   ],
 
   localtopic: [
@@ -4195,6 +4201,7 @@ const tables = {
 	{ value: "taunting crows and mockingbirds", weight: 1 },
 	{ value: "massive upside-down trees rooted in the inscrutable heights", weight: 1 },
 	{ value: "corrupted animals", weight: 1 },
+	{ value: "strange gigantic toads", weight: 1 },
   ],
 
   nontextualprophecysource: [
@@ -6017,6 +6024,7 @@ trap_location: [
 	{ value: "${urbn_cityname}, famous for its ${historicalarchitecturestyles} ${urbn_place_plural}, is a city of ${trap_builder} ${trap_builder_origin}; the people there obey ${a:herd_adj} ${humanoid_monsters} named ${pet_name}", weight: 1 },
 	{ value: "the wind brings ill news from ${urbn_cityname} to the ${CompassDirectionPrimary}, where Glad Olaf has been captured by the authorities and scheduled to be punished by ${punishment} in ${fairy_number} days' time", weight: 1 },
 	{ value: "the ${royals} in ${urbn_cityname} had ${vancian_wizards} install a door in the ${aristocratic_home_rooms} of their ${aristocratic_home} that can only be passed through ${door_opened}", weight: 1 },
+	{ value: "in ${urbn_cityname}, City of ${urbn_citynickname}, no ravens or pigeons or sparrows dwell around the ${urbn_place} near ${urbn_street_names}, but magpies only", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6614,6 +6622,8 @@ trap_location: [
 	{ value: "a wise and ruthless duenna", weight: 1 },
 	{ value: "${a:fairy_folk} who delights in causing strife", weight: 1 },
 	{ value: "a fabulously wealthy ${humanoid_monsters}", weight: 1 },
+	{ value: "a wolf-sorcerer from ${foreignland}", weight: 1 },
+	{ value: "a great tamer of monsters", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -12149,6 +12159,7 @@ door_type: [
 	{ value: "to have been built to safeguard the living sword named ${sword_names}, an ancient ${BladedWeapons_Sword} that ${sword_desire}", weight: 1 },
 	{ value: "to be unwelcoming, with no fire in the hearth and no wine or beer or cider", weight: 1 },
 	{ value: "to have been built by a drunk carpenter and an idiotic mason", weight: 1 },
+	{ value: "to have a courtyard that rings at all hours with the clangor of sword-play and manly sport", weight: 1 },
   ],
   
   castle_moat: [
@@ -13289,6 +13300,10 @@ door_type: [
 	{ value: "the ${landscape_types_basic} near ${landmark} outside the city have become infested with ${huntingmonster}", weight: 1 },
 	{ value: "the two Fiends, Assassination and Plunder, have made the city their home", weight: 1 },
 	{ value: "the burgermeister has laid claim to all the property of the dead and a brave ${religious_ranks} has stood up to denounce it", weight: 1 },
+	{ value: "the people have been crying out for relief from the bewigged lizardmen who enforce the merciless curfew of the city", weight: 1 },
+	{ value: "a trend for chimneys shaped like the mouths and nostrils of great dragons spewing smoke has overtaken the city", weight: 1 },
+	{ value: "construction on a magnificent temple with caryatidal ${herdanimal} supporting the roof has been completed", weight: 1 },
+	{ value: "smoking weapons with keen edges have become all the rage", weight: 1 },
   ],
   
   damaged_city_thing: [
