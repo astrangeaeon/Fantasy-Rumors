@@ -380,6 +380,7 @@ const tables = {
 	{ value: " who, when their talisman was broken, spent the remainder of their days ${monster_manual_verb} ${huntingmonster},", weight: 1 },
 	{ value: " who spent their middle years with no gold or silver in their coffer and no wine or corn in their magazine,", weight: 1 },
 	{ value: " who grazed in the field with the common herd,", weight: 1 },
+	{ value: " whose splendor passed through the four portals of fire, earthquake, storm and hail,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1632,7 +1633,7 @@ const tables = {
     { value: "distinctive ${Colors} eyes", weight: 1 },
     { value: "shocking ${Colors} hair", weight: 1 },
     { value: "${duo_clothing_adj} ${Colors} ${duo_clothing}", weight: 1 },
-	{ value: "stench of ${Smells}", weight: 1 },
+	{ value: "stench of ${Smells_Bad}", weight: 1 },
 	{ value: "${duo_clothing_adj} ${Colors} ${duo_jewlery}", weight: 1 },
   ],
 
@@ -2077,6 +2078,7 @@ const tables = {
 	{ value: "stones chipped off the Clashing Rocks from the Age of Miracles that drifted downstream to become earth elementals in our time", weight: 1 },
 	{ value: "a princess, the water of her mouth sweeter than old wine, with a taste that would quench hell's fiery pain", weight: 1 },
 	{ value: "a coin so magically potent and rare it can be used to bribe gods and greater daemons and purchase whole kingdoms", weight: 1 },
+	{ value: "a knight who after losing ${sword_names} ever after had a poor sword unworthy of its scabbard", weight: 1 },
   ],
 
   feature: [
@@ -2336,6 +2338,7 @@ const tables = {
 	{ value: "miniature", weight: 1 },
 	{ value: "half-mummified", weight: 1 },
 	{ value: "masterless", weight: 1 },
+	{ value: "shape-changing", weight: 1 },
   ],
 
   herdanimal: [
@@ -3653,6 +3656,7 @@ const tables = {
 	{ value: "${a:fairy_folk} has been collecting the hair from children’s haircuts", weight: 1 },
 	{ value: "the churchbell rang thirteen times", weight: 1 },
 	{ value: "the men of fighting age have vowed to not shave their beards or bathe until the ${humanoids_nonhuman} of ${foreignland}${foreign_phrase} have been conquered, but any historian knows this already happened ${when} ago", weight: 1 },
+	{ value: "a druid in the nearby forest has been blessing rats and termites and other vermin to be fruitful and multiply", weight: 1 },
   ],
 
   localtopic: [
@@ -4041,7 +4045,7 @@ const tables = {
 	{ value: "${a:magicusertype} on the ${floors} floor, cursed by Saint ${SaintName} to eat the written word in order to gain further knowledge, longs for books and scrolls to devour", weight: 1 },
 	{ value: "A monstrous bloated ${monsterA} on the ${floors} floor feeds ${humanoids_nonhuman} to its ravenous brood", weight: 1 },
 	{ value: "an aggressive ${AnimalMain} encased in a metallic exo-skeleton has been leaving corpses and creating havoc on the ${floors} floor", weight: 1 },
-	{ value: "${a:daemontype} daemon can appear in the form of ${a:humanoid}, but cannot disguise the oppressive scent of ${Smells} that emanates from their horns", weight: 1 },
+	{ value: "${a:daemontype} daemon can appear in the form of ${a:humanoid}, but cannot disguise the repugnant odor of ${Smells_Bad} that emanates from their horns", weight: 1 },
 	{ value: "${a:herd_adj} ${monsterA} on the ${floors} floor has learned to mimic the cry of an injured ${AnimalMount}", weight: 1 },
 	{ value: "${vancian_wizards} claimed that a doppelgänger will not recognize itself in a mirror, ignoring its reflection like a dog or a cat would", weight: 1 },
 	{ value: "Here the ${huntingmonster} of ${foreign_adj}${foreignland}${foreign_phrase} with bull voices roar like thunder underground", weight: 1 },
@@ -4530,6 +4534,7 @@ const tables = {
 	{ value: "all the ${prophetic_visionary}s of ${urbn_cityname} have been dreaming of ${a:urbn_place} where ${urbn_subjectverb}", weight: 7 },
 	{ value: "The shaman of the ${tc:AnimalMain} Tribe sacrificed ${a:AnimalSacrifice_adj} ${AnimalSacrifice} to their nameless and numberless gods and saw in the swirling smoke as ${prophetic_vision}", weight: 3 },
 	{ value: "The ${uc:prophetic_visionary} of ${urbn_cityname} revealed that the ${prophecyartifact}, a powerful artifact, is being held in a sinister dungeon called ${random_dungeons}", weight: 2 },
+	{ value: "${vancian_wizards} sought the oracle of ${a:dungeon_mural_monster_primal} before grimly setting off for ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
 
   ],
 
@@ -5033,6 +5038,7 @@ const tables = {
 	{ value: "Mullian the Eagle-hawk, an immortal ${humanoid} chained forever to a rock in a fit of spite by ${FantasyGods} for the crime of ${crime_singular}", weight: 2 },
 	{ value: "Zipangu, the island of the dragonfly", weight: 1 },
 	{ value: "the Seven Seas of Rhye", weight: 1 },
+	{ value: "the horseshoe reef of jagged black rocks", weight: 1 },
   ],
 
   seaterror: [
@@ -5123,7 +5129,7 @@ const tables = {
     { value: "is addicted to ${addiction}", weight: 2 },
     { value: "is notoriously prejudiced against ${prejudicetarget}", weight: 2 },
     { value: "abandoned their spouse and children to move here", weight: 1 },
-    { value: "always smells like ${Smells}", weight: 1 },
+    { value: "always smells like ${Smells_Bad}", weight: 1 },
     { value: "beats their pet ${pet}", weight: 1 },
     { value: "collects erotic wood cuts", weight: 1 },
     { value: "doesn’t believe in bathing", weight: 1 },
@@ -6010,6 +6016,7 @@ trap_location: [
 	{ value: "ever since ${creepyvillain} visited the city of ${urbn_cityname}, the ${urbn_place_plural} are cheerless and the few people who gather near ${urbn_street_names} are sullen and silent-tongued", weight: 1 },
 	{ value: "${urbn_cityname}, famous for its ${historicalarchitecturestyles} ${urbn_place_plural}, is a city of ${trap_builder} ${trap_builder_origin}; the people there obey ${a:herd_adj} ${humanoid_monsters} named ${pet_name}", weight: 1 },
 	{ value: "the wind brings ill news from ${urbn_cityname} to the ${CompassDirectionPrimary}, where Glad Olaf has been captured by the authorities and scheduled to be punished by ${punishment} in ${fairy_number} days' time", weight: 1 },
+	{ value: "the ${royals} in ${urbn_cityname} had ${vancian_wizards} install a door in the ${aristocratic_home_rooms} of their ${aristocratic_home} that can only be passed through ${door_opened}", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6476,7 +6483,7 @@ trap_location: [
     { value: "a gigantic master of riddles", weight: 1 },
     { value: "a girl with the fierce beauty of a seven-year-old", weight: 1 },
     { value: "a god punished by another god to be the slave of a mortal man", weight: 1 },
-    { value: "a gorgeous naked man (actually the devil) who smells unmistakably like shit", weight: 1 },
+    { value: "a gorgeous naked man (actually the devil) who smells unmistakably like ${Smells_Bad}", weight: 1 },
     { value: "a grail knight, virtuous but loyal,", weight: 1 },
     { value: "a gray-haired merchant, deep in his cups,", weight: 1 },
     { value: "a great knight, raised from the dead,", weight: 1 },
@@ -6606,6 +6613,7 @@ trap_location: [
 	{ value: "${a:fairy_folk} dressed like ${a:QuickNPCJob}", weight: 1 },
 	{ value: "a wise and ruthless duenna", weight: 1 },
 	{ value: "${a:fairy_folk} who delights in causing strife", weight: 1 },
+	{ value: "a fabulously wealthy ${humanoid_monsters}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6849,6 +6857,7 @@ trap_location: [
 	{ value: "measures bodies for wooden suits", weight: 1 },
 	{ value: "can control others by tying ${a:Colors} ribbon around them", weight: 1 },
 	{ value: "can fly by turning their arms into the wings of ${a:AnimalBird}", weight: 1 },
+	{ value: "is by miracle somehow not yet acquainted with the deceits of this world", weight: 1 },
 	
   ],
 
@@ -9011,7 +9020,7 @@ trap_location: [
 	{ value: "fragrant anointing oil", weight: 1 },
 	{ value: "smoke", weight: 1 },
 	{ value: "sweat", weight: 1 },
-	{ value: "fish", weight: 1 },
+	{ value: "gutted fish", weight: 1 },
 	{ value: "saltwater", weight: 1 },
 	{ value: "decaying horseshoe crab", weight: 1 },
 	{ value: "putrid milk", weight: 1 },
@@ -9023,6 +9032,21 @@ trap_location: [
 	{ value: "horse sweat", weight: 1 },
 	{ value: "unwashed ${humanoid}", weight: 1 },
 	{ value: "${alcohol_liquor}", weight: 1 },
+  ],
+  
+  Smells_Bad: [
+    { value: "wet dog", weight: 1 },
+    { value: "sulphur", weight: 1 },
+    { value: "gutted fish", weight: 1 },
+    { value: "cat urine", weight: 1 },
+    { value: "decaying horseshoe crab", weight: 1 },
+    { value: "putrid milk", weight: 1 },
+	{ value: "skunkberry", weight: 1 },
+    { value: "rotting ${AnimalWater}", weight: 1 },
+    { value: "${AnimalFarm} shit", weight: 1 },
+    { value: "unwashed ${humanoid}", weight: 1 },
+    { value: "horse sweat", weight: 1 },
+    { value: "offal", weight: 1 },
   ],
 
   TradeGoods: [
@@ -9396,7 +9420,7 @@ saint_curse: [
 	{ value: "bloats", weight: 1 },
 	{ value: "painfully sheds", weight: 1 },
 	{ value: "turns grey until it sloughs off", weight: 1 },
-    { value: "begins to smell like ${Smells}", weight: 1 },
+    { value: "begins to smell like ${Smells_Bad}", weight: 1 },
 	{ value: "disappears revealing the crimson muscle underneath", weight: 1 },
 	{ value: "disappears revealing the stark bone underneath", weight: 1 },
   ],
@@ -11576,6 +11600,8 @@ ship_type: [
 	{ value: "potent cosmetics", weight: 1 },
 	{ value: "a grease that can only be washed off with water ${exotic_water_provenance}", weight: 1 },
 	{ value: "dwarf-boots armed with kick-knives", weight: 1 },
+	{ value: "a dark lantern", weight: 1 },
+	{ value: "the ring of protection", weight: 1 },
   ],
   
   undead: [
@@ -13024,6 +13050,7 @@ door_type: [
 	{ value: "fairy", weight: 1 },
 	{ value: "cyclops", weight: 1 },
 	{ value: "daemon", weight: 1 },
+	{ value: "mermaid", weight: 1 },
   ],
   
   dungeon_mural_conceals: [
