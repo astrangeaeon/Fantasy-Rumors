@@ -110,6 +110,8 @@ const tables = {
 	{ value: " lit by a perpetual sunset", weight: 1 },
 	{ value: " with its trees of stone and mountains of wood", weight: 1 },
 	{ value: " with its ecclesiastical tyrants", weight: 1 },
+	{ value: " where children are born with beards and long teeth", weight: 1 },
+	{ value: " with its purple grass and lime-green wine", weight: 1 },
   ],
 
   herdwith: [
@@ -383,6 +385,7 @@ const tables = {
 	{ value: " whose splendor passed through the four portals of fire, earthquake, storm and hail,", weight: 1 },
 	{ value: " whose pet ${AnimalBigCat} spoke with a hundred, a thousand, a hundred thousand roars,", weight: 1 },
 	{ value: " who played cards where kingdoms and bloodlines and myriads of souls were table stakes,", weight: 1 },
+	{ value: " whose crown could only be seen by those with eyes to see the invisible,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1380,6 +1383,7 @@ const tables = {
 	{ value: "The Poet-Saint Milarepa", weight: 1 },
 	{ value: "Sol ${tc:AnimalMain}-Shadow", weight: 1 },
 	{ value: "Gil the Clockmaker", weight: 1 },
+	{ value: "The Hero with a Thousand Faces", weight: 1 },
   ],
 
   deadadventurerloot: [
@@ -1959,6 +1963,7 @@ const tables = {
 	{ value: "wearing skins of birds both white and many-colored", weight: 1 },
 	{ value: "who chews on the hair of a maiden", weight: 1 },
 	{ value: "covered in ${FantasyMeal_Fruit_Berry} stains", weight: 1 },
+	{ value: "wearing a helm made of crystal", weight: 1 },
   ],
 
   fd: [
@@ -2083,6 +2088,7 @@ const tables = {
 	{ value: "a princess, the water of her mouth sweeter than old wine, with a taste that would quench hell's fiery pain", weight: 1 },
 	{ value: "a coin so magically potent and rare it can be used to bribe gods and greater daemons and purchase whole kingdoms", weight: 1 },
 	{ value: "a knight who after losing ${sword_names} ever after had a poor sword unworthy of its scabbard", weight: 1 },
+	{ value: "a giant chained to a dead giant at the bottom of the Lake of Dreams", weight: 1 },
   ],
 
   feature: [
@@ -2140,6 +2146,7 @@ const tables = {
     { value: "used properly can render even a god nameless, natureless, futureless", weight: 1 },
     { value: "casts a shadow which, if stood in, renders someone invisible to the gods", weight: 1 },
     { value: "traps the spirits of things that die in the dungeon", weight: 1 },
+	{ value: "gives prophetic advice", weight: 1 },
   ],
 
   fetishtype: [
@@ -2410,6 +2417,7 @@ const tables = {
 	{ value: "was laid low by a two-headed ${humanoid_monsters} with one Bloodsucking Head and one Disgorging Head", weight: 1 },
 	{ value: "the bones of their hands and all their other bones now lay scattered about the ${floors} floor", weight: 1 },
 	{ value: "fills their vacant hours with prayer, neither business nor pleasure", weight: 1 },
+	{ value: "was broken upon the Wheel of the Law", weight: 1 },
   ],
 
   hero_goal: [
@@ -2967,6 +2975,7 @@ const tables = {
 	{ value: "empath-martyrs whose touch heals others by transferring the wounds to themselves", weight: 1 },
 	{ value: "a hermit who has retreated from the world, communicating only through melodic messages played on ${a:MusicalInstrument},", weight: 1 },
 	{ value: "a savage solitary saint, his nakedness covered only by his unkempt hair", weight: 1 },
+	{ value: "large crabs with shells of translucent ${Jewel_singular}", weight: 1 },
   ],
 
   islandprotector: [
@@ -4742,6 +4751,7 @@ const tables = {
 	{ value: "crimes against trees are punished by the criminal being turned into a tree", weight: 1 },
 	{ value: "those attainted of high treason swing from the aqueduct", weight: 1 },
 	{ value: "the talking ${AnimalSimian}s found guilty of ${crime_singular} are punished by ${punishment}", weight: 1 },
+	{ value: "merciless ${huntingmonster} appointed by Saint ${SaintName} serve as judges for terms of ${fairy_number} years", weight: 1 },
   ],
 
   punishment: [
@@ -5662,6 +5672,7 @@ const tables = {
 	{ value: "the halfman, invisible from the off side, who will teach medicine if defeated", weight: 1 },
 	{ value: "a mighty titan and his ${bard_titles}", weight: 1 },
 	{ value: "cave-dwellers who were human once, but far from human now", weight: 1 },
+	{ value: "the wrestling gods", weight: 1 },
   ],
   
   
@@ -5794,6 +5805,7 @@ const tables = {
 	{ value: "foul rotgut ${alcohol_liquor}", weight: 2 },
 	{ value: "mysterious black grease that can only be washed off with water ${exotic_water_provenance}", weight: 2 },
 	{ value: "sticky red sap", weight: 1 },
+	{ value: "${FantasyMeal_Fruit_Berry} jam", weight: 1 },
   ],
   
   trap_prank_gas: [
@@ -6465,6 +6477,7 @@ trap_location: [
 	{ value: "devil-slayers with sword in hand", weight: 1 },
 	{ value: "men with efreet blood and spirits of subtle fire", weight: 1 },
 	{ value: "a group of ${magicalcommonobject}-sellers", weight: 1 },
+	{ value: "the wrestling gods", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -6624,6 +6637,7 @@ trap_location: [
 	{ value: "a fabulously wealthy ${humanoid_monsters}", weight: 1 },
 	{ value: "a wolf-sorcerer from ${foreignland}", weight: 1 },
 	{ value: "a great tamer of monsters", weight: 1 },
+	{ value: "a breeder of ${AnimalCategory}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -7048,7 +7062,7 @@ trap_location: [
     { value: "a tree older than the world itself grows, which bears ${treebears}", weight: 3 },
     { value: "there stands a ruined tower ${ruinedtower}", weight: 6 },
     { value: "${a:WeirdFantasyMonster} lies entombed in ice", weight: 1 },
-    { value: "/ there’s a lady who’s sure / all that glitters is ${bizarrecompanion} / and she’s buying ${beyondreward}", weight: 1 },
+    { value: "a tall tree grows with a map of ${classic_dungeons} carved into it high above the ground", weight: 1 },
     { value: "a bed has been carved from the massive stump of a tree, still rooted to the ground", weight: 1 },
     { value: "a chamber carved from one massive stone emits the scent of ${Smells}", weight: 1 },
     { value: "a chest full of cursèd gold lies, surrounded by skeletons", weight: 1 },
@@ -8007,6 +8021,7 @@ trap_location: [
     { value: "latrine", weight: 1 },
     { value: "skeleton", weight: 1 },
 	{ value: "${AnimalLeather} skin rug", weight: 1 },
+	{ value: "mounted ${AnimalTrophy} head", weight: 1 },
   ],
 
   DungeonRoom: [
@@ -8143,6 +8158,7 @@ trap_location: [
 	{ value: "Geg", weight: 1 },
 	{ value: "Tosk", weight: 1 },
 	{ value: "Waldshut", weight: 1 },
+	{ value: "Brimble", weight: 1 },
   ],
 
   FamilyMember: [
@@ -10293,6 +10309,7 @@ celebration_type: [
 	{ value: "celadon", weight: 1 },
 	{ value: "xanthous", weight: 1 },
 	{ value: "saffron", weight: 1 },
+	{ value: "turquoise", weight: 1 },
   ],
   
   flag_imperial_color_adj: [
@@ -10338,6 +10355,7 @@ celebration_type: [
 	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${fairy_folk},", weight: 1 },
 	{ value: ", with ${rune} sewn on it,", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${classic_classes} ${flag_extra_humanoids_verb3},", weight: 1 },
+	{ value: ", with its ${flag_extra_style} design of ${a:foreignland} ${ship_type} consumed by ${Colors} flames,", weight: 1 },
   ],
   
   
@@ -10367,6 +10385,7 @@ celebration_type: [
 	{ value: " with ${rune} carved on it,", weight: 1 },
 	{ value: " with a map leading to ${treasure_map} scratched into the back", weight: 1 },
 	{ value: " that changes form with the phases of the moon", weight: 1 },
+	{ value: " painted with a design of ${a:foreignland} ${ship_type} consumed by ${Colors} flames,", weight: 1 },
   ],
   
    shield_type: [
@@ -10448,6 +10467,7 @@ celebration_type: [
 	{ value: "shaking hands", weight: 1 },
 	{ value: "praying", weight: 1 },
 	{ value: "riding ${AnimalMagicMount}s", weight: 1 },
+	{ value: "stabbing each other", weight: 1 },
   ],
   
   flag_extra_humanoids_verb2_object: [
