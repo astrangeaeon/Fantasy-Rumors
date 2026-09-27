@@ -426,6 +426,7 @@ const tables = {
 	{ value: "reveals the way to Torolix, the high secret place", weight: 1 },
 	{ value: "can grant an audience with the Kings of Sleep", weight: 1 },
 	{ value: "if touched against the skin allows the language of ${AnimalCategory} to be understood", weight: 1 },
+	{ value: "looks like gold under ${light_type}", weight: 1 },
   ],
 
   addiction: [
@@ -544,6 +545,7 @@ const tables = {
 	{ value: "the raiding-men will twang the yew and raise the battle-axe once more", weight: 1 },
 	{ value: "the stars turn their backs and shine their light away from the earth", weight: 1 },
 	{ value: "the black bodies of bees fly frantically from one dead plant to another", weight: 1 },
+	{ value: "the oceans and seas will shrink to become stagnant lakes and ponds", weight: 1 },
   ],
 
   behind_mask: [
@@ -611,6 +613,7 @@ const tables = {
 	{ value: "from ${foreignland}${foreign_phrase}", weight: 1 },
 	{ value: "cursed with too much good luck", weight: 1 },
 	{ value: "known for using the femur of a giant as a great club", weight: 1 },
+	{ value: "with a neck of iron", weight: 1 },
   ],
 
   body_part_fate: [
@@ -1344,7 +1347,7 @@ const tables = {
     { value: "The Hound of Rutilor", weight: 1 },
     { value: "The Lady of Teka", weight: 1 },
     { value: "The Lady of the Pillar", weight: 1 },
-    { value: "The Looking Glass Knight", weight: 1 },
+    { value: "The Feathered Knight", weight: 1 },
     { value: "The Lord of Rubbish", weight: 1 },
     { value: "The Mage of Storms", weight: 1 },
     { value: "The Maiden in Black", weight: 1 },
@@ -2092,6 +2095,7 @@ const tables = {
 	{ value: "a coin so magically potent and rare it can be used to bribe gods and greater daemons and purchase whole kingdoms", weight: 1 },
 	{ value: "a knight who after losing ${sword_names} ever after had a poor sword unworthy of its scabbard", weight: 1 },
 	{ value: "a giant chained to a dead giant at the bottom of the Lake of Dreams", weight: 1 },
+	{ value: "red, white and black horsemen that change the time of day to dawn, day or night", weight: 1 },
   ],
 
   feature: [
@@ -2448,6 +2452,7 @@ const tables = {
 	{ value: "to find a face which has done no wrong", weight: 1 },
 	{ value: "to sit upon the Chair of Forgetting", weight: 1 },
 	{ value: "to break the malign power of a ${idol_material} idol of ${a:idol_subject}", weight: 1 },
+	{ value: "to find a particular shade of ${Colors}", weight: 1 },
   ],
 
   heroname: [
@@ -4070,6 +4075,7 @@ const tables = {
 	{ value: "Here the ${huntingmonster} of ${foreign_adj}${foreignland}${foreign_phrase} with bull voices roar like thunder underground", weight: 1 },
 	{ value: "${monstertype} has recently taken a vow of ${vows}", weight: 1 },
 	{ value: "${monstertype} ran afoul of ${fairy_folk_named} and can now be greviously wounded by the mere scent of ${a:flowers_singular}", weight: 1 },
+	{ value: "${a:monsterA} whose transparent flesh reveals strange organs within courtesy of the tinkering of ${vancian_wizards} claims to know why the 108 sons and daughters of the Immortal Sultan Abdullah Abdullah ${wild_princes}", weight: 1 },
   ],
   
   monster_hybrid: [
@@ -5060,6 +5066,7 @@ const tables = {
 	{ value: "Zipangu, the island of the dragonfly", weight: 1 },
 	{ value: "the Seven Seas of Rhye", weight: 1 },
 	{ value: "the horseshoe reef of jagged black rocks", weight: 1 },
+	{ value: "the eastern waters where the islands drift around like lazy clouds", weight: 1 },
   ],
 
   seaterror: [
@@ -5677,6 +5684,7 @@ const tables = {
 	{ value: "a mighty titan and his ${bard_titles}", weight: 1 },
 	{ value: "cave-dwellers who were human once, but far from human now", weight: 1 },
 	{ value: "the wrestling gods", weight: 1 },
+	{ value: "dangerous ${trap_builder} wearing bone armor and wielding crystal ${HaftedWeapons}s", weight: 1 },
   ],
   
   
@@ -9363,6 +9371,7 @@ inherited_traits: [
 	{ value: "have small ${Colors} feathers instead of hair", weight: 1 },
 	{ value: "are all born with fingers and toes twice the average length", weight: 1 },
 	{ value: "are said to be descended from those unfortunate ${trap_builder} who were forced to spend their lives digging mile-wide graves so they'd be ready when the titans died at last", weight: 1 },
+	{ value: "can hold their breath forever", weight: 1 },
   ],
 
 tail_type: [
@@ -9475,6 +9484,7 @@ saint_curse: [
 	{ value: "an animated ${magicalcommonobject} given sapience by the god ${RealGods}", weight: 1 },
     { value: "a mysterious ${oldest} ${wilds_specific_locn}", weight: 1 },
 	{ value: "a water nymph living at the bottom of ${body_of_water}", weight: 1 },
+	{ value: "${a:fairy_folk} visiting from the enchanted ${otherworld_names}", weight: 1 },
   ],
   
    wish_granter_nonliving: [
@@ -11732,6 +11742,7 @@ door_type: [
     { value: "${relic}", weight: 1 },
 	{ value: "the source of the strange noises that sound like ${strangenoises} heard throughout the dungeon", weight: 1 },
 	{ value: "the Garden of ${vancian_wizards}", weight: 1 },
+	{ value: "a prison for ${daemontype} daemons known as the Hell ${hell_names}", weight: 1 },
   ],
   
   
