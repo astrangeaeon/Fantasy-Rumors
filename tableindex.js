@@ -610,6 +610,7 @@ const tables = {
 	{ value: "known as the Lord of the Feast", weight: 1 },
 	{ value: "from ${foreignland}${foreign_phrase}", weight: 1 },
 	{ value: "cursed with too much good luck", weight: 1 },
+	{ value: "known for using the femur of a giant as a great club", weight: 1 },
   ],
 
   body_part_fate: [
@@ -1471,6 +1472,7 @@ const tables = {
 	{ value: "${a:container_bag} filled with dried Ardoa Herb, which only grows on land where ${huntingmonster} have been laid to rest,", weight: 1 },
 	{ value: "a wand carved from a bone left behind after a man-eating ${po:maneating} meal", weight: 1 },
 	{ value: "a magic kangaroo bone", weight: 1 },
+	{ value: "a quiver of arrows blessed by ${a:daemontype} daemon", weight: 1 },
   ],
 
   decade_event: [
@@ -1741,6 +1743,7 @@ const tables = {
 	{ value: "shadow", weight: 1 },
 	{ value: "light", weight: 1 },
 	{ value: "gold", weight: 1 },
+	{ value: "cloud", weight: 1 },
   ],
 
   eucatastrophe: [
@@ -2418,6 +2421,7 @@ const tables = {
 	{ value: "the bones of their hands and all their other bones now lay scattered about the ${floors} floor", weight: 1 },
 	{ value: "fills their vacant hours with prayer, neither business nor pleasure", weight: 1 },
 	{ value: "was broken upon the Wheel of the Law", weight: 1 },
+	{ value: "encountered a creature that resembled ${a:AnimalWater} or ${a:AnimalPredator} but composed entirely out of living ${elemntl_type}", weight: 1 },
   ],
 
   hero_goal: [
@@ -6037,6 +6041,7 @@ trap_location: [
 	{ value: "the wind brings ill news from ${urbn_cityname} to the ${CompassDirectionPrimary}, where Glad Olaf has been captured by the authorities and scheduled to be punished by ${punishment} in ${fairy_number} days' time", weight: 1 },
 	{ value: "the ${royals} in ${urbn_cityname} had ${vancian_wizards} install a door in the ${aristocratic_home_rooms} of their ${aristocratic_home} that can only be passed through ${door_opened}", weight: 1 },
 	{ value: "in ${urbn_cityname}, City of ${urbn_citynickname}, no ravens or pigeons or sparrows dwell around the ${urbn_place} near ${urbn_street_names}, but magpies only", weight: 1 },
+	{ value: "since a fire ruined the ${urbn_place} on ${urbn_street_names}, ${a:urbn_place_adj} ${urbn_place} near the Statue of the ${uc:statue_adj} ${statue_subject} has become a local trysting place", weight: 1 },
   ],
 
    urbn_traders: [
@@ -12983,6 +12988,7 @@ door_type: [
 	{ value: "the ${landscape_types_artificial} of ${foreignland}", weight: 2 },
 	{ value: "${a:magicalcommonobject} in the possession of ${a:huntingmonster_singular}", weight: 2 },
 	{ value: "${a:local_domestic_spaces} in the village of ${village_names}", weight: 2 },
+	{ value: "the silent banquet hall of the ruined Castle of ${castle_name}", weight: 1 },
   ],
   
   leader_power_adj: [
