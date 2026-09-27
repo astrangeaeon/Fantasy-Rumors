@@ -112,6 +112,8 @@ const tables = {
 	{ value: " with its ecclesiastical tyrants", weight: 1 },
 	{ value: " where children are born with beards and long teeth", weight: 1 },
 	{ value: " with its purple grass and lime-green wine", weight: 1 },
+	{ value: " with its violets and rusts", weight: 1 },
+	{ value: " land of muttered incantations and midnight rituals", weight: 1 },
   ],
 
   herdwith: [
@@ -614,6 +616,7 @@ const tables = {
 	{ value: "cursed with too much good luck", weight: 1 },
 	{ value: "known for using the femur of a giant as a great club", weight: 1 },
 	{ value: "with a neck of iron", weight: 1 },
+	{ value: "with tornados for legs", weight: 1 },
   ],
 
   body_part_fate: [
@@ -1890,6 +1893,8 @@ const tables = {
 	{ value: "life-feathers plucked from a living ${AnimalBird} which have power only while the bird lives", weight: 1 },
 	{ value: "the fiery ${Jewels} that give light to the daemon cities of the underworld", weight: 1 },
 	{ value: "the corpses of imperial spies", weight: 1 },
+	{ value: "the seeds of extinct plants", weight: 1 },
+	{ value: "the stone eggs of basilisks", weight: 1 },
   ],
 
   excitingemployer: [
@@ -2096,6 +2101,7 @@ const tables = {
 	{ value: "a knight who after losing ${sword_names} ever after had a poor sword unworthy of its scabbard", weight: 1 },
 	{ value: "a giant chained to a dead giant at the bottom of the Lake of Dreams", weight: 1 },
 	{ value: "red, white and black horsemen that change the time of day to dawn, day or night", weight: 1 },
+	{ value: "a kind of reverse ghoul who desires its own flesh to be eaten, who attempts to get close and make it an intimate act", weight: 1 },
   ],
 
   feature: [
@@ -2432,7 +2438,7 @@ const tables = {
     { value: "to dispel the ${elemntl_type} curse placed on them by ${creepyvillain} for ${hero_curse_reason}", weight: 1 },
     { value: "to find the Tree of Giraff which bears ${treebears}", weight: 1 },
     { value: "to purge it of ${huntingmonster}", weight: 1 },
-    { value: "to put an end to ${creepyvillain}, who if slain by ordinary means will return again at midnight,", weight: 1 },
+    { value: "to put an end to ${creepyvillain}, who, if slain by ordinary means, will return again at midnight", weight: 1 },
     { value: "to question the oldest ${oldest} in the world", weight: 1 },
     { value: "to reclaim the ${prophecyartifact} rumored to be hidden within", weight: 1 },
     { value: "to recover the bones of ${heroes_and_villains}", weight: 1 },
@@ -3681,6 +3687,8 @@ const tables = {
 	{ value: "the men of fighting age have vowed to not shave their beards or bathe until the ${humanoids_nonhuman} of ${foreignland}${foreign_phrase} have been conquered, but any historian knows this already happened ${when} ago", weight: 1 },
 	{ value: "a druid in the nearby forest has been blessing rats and termites and other vermin to be fruitful and multiply", weight: 1 },
 	{ value: "a goblin knight riding a Spanish cat rode through town on a quest involving ${landmark}", weight: 1 },
+	{ value: "the children have all gone fishing, hoping to catch Grandfather Carp", weight: 1 },
+	{ value: "the stone eggs of basilisks that litter the nearby ${landscape_types_basic_singular} have begun to hatch", weight: 1 },
   ],
 
   localtopic: [
@@ -4076,6 +4084,8 @@ const tables = {
 	{ value: "${monstertype} has recently taken a vow of ${vows}", weight: 1 },
 	{ value: "${monstertype} ran afoul of ${fairy_folk_named} and can now be greviously wounded by the mere scent of ${a:flowers_singular}", weight: 1 },
 	{ value: "${a:monsterA} whose transparent flesh reveals strange organs within courtesy of the tinkering of ${vancian_wizards} claims to know why the 108 sons and daughters of the Immortal Sultan Abdullah Abdullah ${wild_princes}", weight: 1 },
+	{ value: "${a:WeirdFantasyMonster} who was cursed to steal luck and good fortune from others that they cannot use but are compelled to hoard and protect nonetheless for ${hero_curse_reason} is said to have its ${lair_synonyms} in a former ${DungeonRoom} on the ${floors} floor", weight: 1 },
+	{ value: "${a:monsterA} on the ${floors} floor wears the ${Metallic} key to a forgotten workshop of ${vancian_wizards} on a chain around its neck", weight: 1 },
   ],
   
   monster_hybrid: [
@@ -6895,6 +6905,7 @@ trap_location: [
 	{ value: "can control others by tying ${a:Colors} ribbon around them", weight: 1 },
 	{ value: "can fly by turning their arms into the wings of ${a:AnimalBird}", weight: 1 },
 	{ value: "is by miracle somehow not yet acquainted with the deceits of this world", weight: 1 },
+	{ value: "sells a small pouch with three of ${po:ntc} baby teeth inside, sure to add potency to certain rituals", weight: 1 },
 	
   ],
 
@@ -13341,6 +13352,7 @@ door_type: [
 	{ value: "a trend for chimneys shaped like the mouths and nostrils of great dragons spewing smoke has overtaken the city", weight: 1 },
 	{ value: "construction on a magnificent temple with caryatidal ${herdanimal} supporting the roof has been completed", weight: 1 },
 	{ value: "smoking weapons with keen edges have become all the rage", weight: 1 },
+	{ value: "the palace is abuzz over an imperial spy who was discovered with orders in the ${handwriting} of the ${uc:Colors} ${uc:RoyalTitleFemale}", weight: 1 },
   ],
   
   damaged_city_thing: [
