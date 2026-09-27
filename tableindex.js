@@ -388,6 +388,8 @@ const tables = {
 	{ value: " whose pet ${AnimalBigCat} spoke with a hundred, a thousand, a hundred thousand roars,", weight: 1 },
 	{ value: " who played cards where kingdoms and bloodlines and myriads of souls were table stakes,", weight: 1 },
 	{ value: " whose crown could only be seen by those with eyes to see the invisible,", weight: 1 },
+	{ value: " who held Black Steel in the Hour of Chaos,", weight: 1 },
+	{ value: " who once tortured ${a:flowers_singular} by watering other flowers in front of it,", weight: 1 },
   ],
 
   hundred_words: [
@@ -2102,6 +2104,7 @@ const tables = {
 	{ value: "a giant chained to a dead giant at the bottom of the Lake of Dreams", weight: 1 },
 	{ value: "red, white and black horsemen that change the time of day to dawn, day or night", weight: 1 },
 	{ value: "a kind of reverse ghoul who desires its own flesh to be eaten, who attempts to get close and make it an intimate act", weight: 1 },
+	{ value: "courtesans who plant strange thoughts in their lovers' minds by running their fingers through their hair", weight: 1 },
   ],
 
   feature: [
@@ -2492,6 +2495,7 @@ const tables = {
 	{ value: "back before Saint ${SaintName} exiled ${exiles} from ${urbn_cityname}", weight: 1 },
 	{ value: "back when tigers used to smoke", weight: 1 },
 	{ value: "back when miracles were as common as fruit pies", weight: 1 },
+	{ value: "during the Age of the Black Moon", weight: 1 },
   ],
   
   historicalbuilders: [
@@ -3559,6 +3563,8 @@ const tables = {
 	{ value: "see ${landmark} with their own eyes", weight: 1 },
 	{ value: "bathe in the spring at Coorigil", weight: 1 },
 	{ value: "don armor, fight in the wars, and joust in the lists", weight: 1 },
+	{ value: "sail in a floating ${ship_type} across the deserts of the ${CompassDirectionPrimary}", weight: 1 },
+	{ value: "wake the painted kings who sleep", weight: 1 },
   ],
 
   local_racist: [
@@ -3982,6 +3988,7 @@ const tables = {
 	{ value: "the Companions of Saint ${SaintName}", weight: 1 },
 	{ value: "the Friends of Basilisks", weight: 1 },
 	{ value: "the Children of the Eel", weight: 1 },
+	{ value: "the Order of the White Mountain", weight: 1 },
   ],
 
   membership_initiation: [
@@ -6501,6 +6508,7 @@ trap_location: [
 	{ value: "men with efreet blood and spirits of subtle fire", weight: 1 },
 	{ value: "a group of ${magicalcommonobject}-sellers", weight: 1 },
 	{ value: "the wrestling gods", weight: 1 },
+	{ value: "a group of shape-changing ${herdanimal} who have mastered every part of looking human except the feet", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -7176,6 +7184,7 @@ trap_location: [
 	{ value: "${a:humanoid_monsters} keeps a larder of smoked horse and knight meat", weight: 1 },
 	{ value: "there's an old war god's altar where devout ${violent_profession_plural} can sacrifice the ${Weapons} or shield they took from a defeated foe for protection in battle", weight: 1 },
 	{ value: "there stands a carnivorous ${cod_tree_type} tree surrounded by ${AnimalPrey} bones", weight: 1 },
+	{ value: "a traveler saw ${a:humanoid} driving a flying ${vehicle} pulled by bats", weight: 1 },
   ],
 
   wilds_locn: [
@@ -9432,6 +9441,7 @@ tail_type: [
 	{ value: "feet as sensitive and dexterous as hands", weight: 1 },
 	{ value: "beaks like snapping turtles", weight: 1 },
 	{ value: "long bifurcated fingernails", weight: 1 },
+	{ value: "skin hard as tortoise shell", weight: 1 },
   ],
   
   saint_blessing: [
@@ -11075,6 +11085,7 @@ vehicle: [
 	{ value: "${AnimalPrey} urine", weight: 1 },
 	{ value: "water ${exotic_water_provenance}", weight: 1 },
 	{ value: "${alcohol_beer_adj} ${humanoid_adj} ${alcohol_beer}", weight: 1 },
+	{ value: "freshwater that's been fouled by ${creepyvillain}", weight: 1 },
   ],
   
   exotic_water_provenance: [
@@ -11196,6 +11207,7 @@ ship_type: [
 	{ value: "which keeps ${a:AnimalSnake} on board for luck", weight: 1 },
 	{ value: "whose crew all bear tattoos of ${tattoos}", weight: 1 },
 	{ value: "whose ${ship_crew_rank} has been seen flashing around ${a:former_object} matching the description of the one belonging to ${former_owner}", weight: 1 },
+	{ value: "flying the ${flag} updside-down (a signal of distress)", weight: 1 },
   ],
   
   ship_crew_rank: [
@@ -12350,6 +12362,7 @@ door_type: [
 	{ value: "Dankwart", weight: 1 },
 	{ value: "Orello", weight: 1 },
 	{ value: "Balonn", weight: 1 },
+	{ value: "Ragadorn", weight: 1 },
   ],
   
    flowers_singular: [
