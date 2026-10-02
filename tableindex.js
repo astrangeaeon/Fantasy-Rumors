@@ -114,6 +114,7 @@ const tables = {
 	{ value: " with its purple grass and lime-green wine", weight: 1 },
 	{ value: " with its violets and rusts", weight: 1 },
 	{ value: " land of muttered incantations and midnight rituals", weight: 1 },
+	{ value: " with its gloomy comfortless inns", weight: 1 },
   ],
 
   herdwith: [
@@ -390,6 +391,8 @@ const tables = {
 	{ value: " whose crown could only be seen by those with eyes to see the invisible,", weight: 1 },
 	{ value: " who held Black Steel in the Hour of Chaos,", weight: 1 },
 	{ value: " who once tortured ${a:flowers_singular} by watering other flowers in front of it,", weight: 1 },
+	{ value: " who lent the day a larger light,", weight: 1 },
+	{ value: " who turned barren and thirsty wilderness into green and smiling fields,", weight: 1 },
   ],
 
   hundred_words: [
@@ -619,6 +622,7 @@ const tables = {
 	{ value: "known for using the femur of a giant as a great club", weight: 1 },
 	{ value: "with a neck of iron", weight: 1 },
 	{ value: "with tornados for legs", weight: 1 },
+	{ value: "said to be a stone dryad with curious breasts of rock-crystal", weight: 1 },
   ],
 
   body_part_fate: [
@@ -2105,6 +2109,7 @@ const tables = {
 	{ value: "red, white and black horsemen that change the time of day to dawn, day or night", weight: 1 },
 	{ value: "a kind of reverse ghoul who desires its own flesh to be eaten, who attempts to get close and make it an intimate act", weight: 1 },
 	{ value: "courtesans who plant strange thoughts in their lovers' minds by running their fingers through their hair", weight: 1 },
+	{ value: "an immortal sphinx who gave laws to the world", weight: 1 },
   ],
 
   feature: [
@@ -3203,6 +3208,7 @@ const tables = {
 	{ value: "${alt_metals}", weight: 1 },
 	{ value: "why the beautiful gods give birth to monsters", weight: 1 },
 	{ value: "time not measured in sunrises and sunsets", weight: 1 },
+	{ value: "the small miracles that ${a:fairy_folk} can perform", weight: 1 },
   ],
 
   landmark: [
@@ -3695,6 +3701,7 @@ const tables = {
 	{ value: "a goblin knight riding a Spanish cat rode through town on a quest involving ${landmark}", weight: 1 },
 	{ value: "the children have all gone fishing, hoping to catch Grandfather Carp", weight: 1 },
 	{ value: "the stone eggs of basilisks that litter the nearby ${landscape_types_basic_singular} have begun to hatch", weight: 1 },
+	{ value: "the corpse of an enormous ${humanoid_monsters} has dammed up the nearby river", weight: 1 },
   ],
 
   localtopic: [
@@ -3969,6 +3976,7 @@ const tables = {
 	{ value: "the Robe of Yellow Evening Light", weight: 1 },
 	{ value: "the Robe of Darkness", weight: 1 },
 	{ value: "the secret seventh weapon of Prince Six-Weapons", weight: 1 },
+	{ value: "the journal of Mickey the Gallivanter", weight: 1 },
   ],
 
   membership: [
@@ -4153,6 +4161,9 @@ const tables = {
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon whose tail was cut off by ${ntc} when they were young,", weight: 1 },
 	{ value: "${FantasyGodNameFemale}, a sea dragon that appears as an attractive woman but for her elbows and knees that bend the wrong way,", weight: 1 },
 	{ value: "${DemonName}, ${a:daemontype} daemon who delights in pulling the legs off of centaurs and the roots and branches from captive treants,", weight: 1 },
+	{ value: "${a:dungeon_mural_monster_primal} of old, with ${jewel_eyes} for eyes,", weight: 1 },
+	{ value: "${EgyptianNameMale}, a ${foreignland} sphinx who must hear riddles to survive,", weight: 1 },
+	{ value: "${dragon_name}, ${a:monsterdragontype} dragon compelled by ${vancian_wizards} to give away its cursed treasure hoard,", weight: 1 },
   ],
   
   monstertype_ntc: [
@@ -4174,6 +4185,9 @@ const tables = {
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon whose tail was cut off by ${ntc} when they were young", weight: 1 },
 	{ value: "${FantasyGodNameFemale}, a sea dragon that appears as an attractive woman but for her elbows and knees that bend the wrong way", weight: 1 },
 	{ value: "${DemonName}, ${a:daemontype} daemon who delights in pulling the legs off of centaurs and the roots and branches from captive treants", weight: 1 },
+	{ value: "${a:dungeon_mural_monster_primal} with ${jewel_eyes} for eyes", weight: 1 },
+	{ value: "${EgyptianNameMale}, a ${foreignland} sphinx who must hear riddles to survive", weight: 1 },
+	{ value: "${dragon_name}, ${a:monsterdragontype} dragon compelled by ${vancian_wizards} to give away its cursed treasure hoard", weight: 1 },
   ],
 
   monstervalue: [
@@ -6509,6 +6523,7 @@ trap_location: [
 	{ value: "a group of ${magicalcommonobject}-sellers", weight: 1 },
 	{ value: "the wrestling gods", weight: 1 },
 	{ value: "a group of shape-changing ${herdanimal} who have mastered every part of looking human except the feet", weight: 1 },
+	{ value: "the Dame Etelina and her mutilated paramour", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -6761,6 +6776,7 @@ trap_location: [
 	{ value: "take offense at the holy stench of God", weight: 1 },
 	{ value: "trade conspiracies using the language of the rose", weight: 1 },
 	{ value: "argue over who has cumulatively been awake the longest", weight: 1 },
+	{ value: "seek the perfect dissonance", weight: 1 },
   ],
 
   urbn_verbsingular: [
@@ -7261,7 +7277,7 @@ trap_location: [
     { value: "${naturalthing} mark the former lands of the ${wilds_people}", weight: 1 },
     { value: "${who_is_buried} constructed ${landmark_manmade} using ${construction_help} ${construction_motivation}", weight: 1 },
     { value: "${wilds_locn}, a dozen ${sculptr_adj} statues carved from ${sculptr_subst} and depicting ${sculptr_subj} are arranged ${sculptr_arr}", weight: 1 },
-    { value: "a great ${Colors} fire that neither spreads nor goes out has burned for over a hundred years ${wilds_locn}", weight: 1 },
+    { value: "a great ${Colors} fire fed by invisible fuel from the ${Letters} Dimension that neither spreads nor goes out has been burning for ${when}; only water ${exotic_water_provenance} can extinguish the flames", weight: 1 },
     { value: "a wild ${AnimalMount}, large enough to hold 14 men on its back, has been seen ${wilds_specific_locn}", weight: 1 },
     { value: "a young ${magicusertype} performs dangerous ${magictype} rituals out in the ${magicuserlandtype}, maiming people with extravagant sorceries", weight: 1 },
     { value: "an entire alien ecosystem surrounds the slowly decaying corpse of ${decaying_corpse} ${wilds_locn}", weight: 1 },
@@ -8055,6 +8071,7 @@ trap_location: [
     { value: "skeleton", weight: 1 },
 	{ value: "${AnimalLeather} skin rug", weight: 1 },
 	{ value: "mounted ${AnimalTrophy} head", weight: 1 },
+	{ value: "statue of ${a:daemonttype} daemon holding fishing rod and net", weight: 1 },
   ],
 
   DungeonRoom: [
@@ -10625,6 +10642,7 @@ celebration_type: [
 	{ value: "nymph", weight: 1 },
 	{ value: "spriggan", weight: 1 },
 	{ value: "swan-may", weight: 1 },
+	{ value: "dryad", weight: 1 },
   ],
   
   fairy_folk_named: [
@@ -13402,6 +13420,14 @@ door_type: [
     { value: "was born of noble twins who committed incest at the behest of either the ${daemontype} daemon ${DemonName} or ${FantasyGods}", weight: 1 },
     { value: "and eating flies spent ${fairy_number} years as ${a:AnimalReptile} for breaking a taboo in the enchanted ${otherworld_names} that they ${taboo_donot}", weight: 1 },
 	{ value: "has a tattoo of ${tattoos} they got in prison serving time for ${crime_singular}", weight: 1 },
+  ],
+  
+  jewel_eyes: [
+    { value: "pale green beryls", weight: 1 },
+	{ value: "sea-dark sapphires", weight: 1 },
+	{ value: "blood-red rubies", weight: 1 },
+	{ value: "milk-white pearls", weight: 1 },
+	{ value: "soft chromatic opals", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
