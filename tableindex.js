@@ -4163,7 +4163,7 @@ const tables = {
 	{ value: "${DemonName}, ${a:daemontype} daemon who delights in pulling the legs off of centaurs and the roots and branches from captive treants,", weight: 1 },
 	{ value: "${a:dungeon_mural_monster_primal} of old, with ${jewel_eyes} for eyes,", weight: 1 },
 	{ value: "${EgyptianNameMale}, a ${foreignland} sphinx who must hear riddles to survive,", weight: 1 },
-	{ value: "${dragon_name}, ${a:monsterdragontype} dragon compelled by ${vancian_wizards} to give away its cursed treasure hoard,", weight: 1 },
+	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who cursed every piece of its treasure after being compelled by ${vancian_wizards} to give away its hoard,", weight: 1 },
   ],
   
   monstertype_ntc: [
@@ -4187,7 +4187,7 @@ const tables = {
 	{ value: "${DemonName}, ${a:daemontype} daemon who delights in pulling the legs off of centaurs and the roots and branches from captive treants", weight: 1 },
 	{ value: "${a:dungeon_mural_monster_primal} with ${jewel_eyes} for eyes", weight: 1 },
 	{ value: "${EgyptianNameMale}, a ${foreignland} sphinx who must hear riddles to survive", weight: 1 },
-	{ value: "${dragon_name}, ${a:monsterdragontype} dragon compelled by ${vancian_wizards} to give away its cursed treasure hoard", weight: 1 },
+	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who cursed every piece of its treasure after being compelled by ${vancian_wizards} to give away its hoard", weight: 1 },
   ],
 
   monstervalue: [
@@ -5948,6 +5948,7 @@ trap_location: [
 	{ value: "a plain-looking ${liquid_containers_large} on the ${floors} floor holds a corpulent djinn who will serve their rescuer halfheartedly until the next ${boundary_times}", weight: 1 },
 	{ value: "there's ${a:DecorativeStone} ${duo_jewlery_singular} ${obj_or_room} on the ${floors} floor that is said to give the owner command over ${command_item}", weight: 1 },
 	{ value: "in ${a:DungeonRoom} on the ${floors} floor there's ${a:ship_cargo_furniture_adj} ${ship_cargo_container_singular} filled with golden ${FantasyMeal_Fruit_plural} from the Garden of ${vancian_wizards}", weight: 1 },
+	{ value: "in ${a:DungeonRoom} on the ${floors} floor ${a:QuickNPCDescriptor} ${humanoid_monsters} wears ${a:duo_clothing_adj} ${duo_clothing_singular} that imbues it with all the skills of a master ${QuickNPCJob}", weight: 1 },
   ],
 
   treasureA: [
@@ -8071,7 +8072,7 @@ trap_location: [
     { value: "skeleton", weight: 1 },
 	{ value: "${AnimalLeather} skin rug", weight: 1 },
 	{ value: "mounted ${AnimalTrophy} head", weight: 1 },
-	{ value: "statue of ${a:daemonttype} daemon holding fishing rod and net", weight: 1 },
+	{ value: "statue of ${a:daemontype} daemon holding fishing rod and net", weight: 1 },
   ],
 
   DungeonRoom: [
@@ -12261,6 +12262,7 @@ door_type: [
 	{ value: "walls of delicate paper", weight: 1 },
 	{ value: "strong walls of ironbark timber", weight: 1 },
 	{ value: "invisible walls", weight: 1 },
+	{ value: "walls that grow and groan", weight: 1 },
   ],
   
   castle_protector: [
