@@ -115,6 +115,7 @@ const tables = {
 	{ value: " with its violets and rusts", weight: 1 },
 	{ value: " land of muttered incantations and midnight rituals", weight: 1 },
 	{ value: " with its gloomy comfortless inns", weight: 1 },
+	{ value: " where the fauna laugh with hellish glee", weight: 1 },
   ],
 
   herdwith: [
@@ -393,6 +394,7 @@ const tables = {
 	{ value: " who once tortured ${a:flowers_singular} by watering other flowers in front of it,", weight: 1 },
 	{ value: " who lent the day a larger light,", weight: 1 },
 	{ value: " who turned barren and thirsty wilderness into green and smiling fields,", weight: 1 },
+	{ value: " who had the eyes plucked out of ${FantasyName} the Archer for some trivial crime,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1901,6 +1903,7 @@ const tables = {
 	{ value: "the corpses of imperial spies", weight: 1 },
 	{ value: "the seeds of extinct plants", weight: 1 },
 	{ value: "the stone eggs of basilisks", weight: 1 },
+	{ value: "cursed mirrors", weight: 1 },
   ],
 
   excitingemployer: [
@@ -3000,6 +3003,7 @@ const tables = {
 	{ value: "a hermit who has retreated from the world, communicating only through melodic messages played on ${a:MusicalInstrument},", weight: 1 },
 	{ value: "a savage solitary saint, his nakedness covered only by his unkempt hair", weight: 1 },
 	{ value: "large crabs with shells of translucent ${Jewel_singular}", weight: 1 },
+	{ value: "ox-horned and stag-horned centaurs", weight: 1 },
   ],
 
   islandprotector: [
@@ -3571,6 +3575,7 @@ const tables = {
 	{ value: "don armor, fight in the wars, and joust in the lists", weight: 1 },
 	{ value: "sail in a floating ${ship_type} across the deserts of the ${CompassDirectionPrimary}", weight: 1 },
 	{ value: "wake the painted kings who sleep", weight: 1 },
+	{ value: "live alone with the bitterness of their thoughts", weight: 1 },
   ],
 
   local_racist: [
@@ -5093,11 +5098,12 @@ const tables = {
     { value: "the ruins of the demon settlement", weight: 1 },
     { value: "the western waters of Mert", weight: 1 },
 	{ value: "the island of Kharg in the gulf", weight: 1 },
-	{ value: "Mullian the Eagle-hawk, an immortal ${humanoid} chained forever to a rock in a fit of spite by ${FantasyGods} for the crime of ${crime_singular}", weight: 2 },
+	{ value: "Mullian the Eagle-hawk, an immortal ${humanoid} chained forever to a rock in a fit of spite by ${FantasyGods} for the crime of ${crime_singular}", weight: 1 },
 	{ value: "Zipangu, the island of the dragonfly", weight: 1 },
 	{ value: "the Seven Seas of Rhye", weight: 1 },
 	{ value: "the horseshoe reef of jagged black rocks", weight: 1 },
 	{ value: "the eastern waters where the islands drift around like lazy clouds", weight: 1 },
+	{ value: "the Sand Gyre, a dangerous eddy", weight: 1 },
   ],
 
   seaterror: [
@@ -7340,6 +7346,7 @@ trap_location: [
 	{ value: "one who has spent the night under the Black Stone of Arduu on Mount ${slumberplace} will descend the next morning as either a madman, ${a:QuickNPCJobExotic} or a saint", weight: 1 },
 	{ value: "every ${daemontype} daemon was once a man who ate an immortality-granting herb that grows in ${slumberplace}, or so they say", weight: 1 },
 	{ value: "there's an isolated ${aristocratic_robbed_place_religious} where the corpulent ${religious_ranks}s are infamous for their gluttonous 30-course meals and week-long feasts", weight: 1 },
+	{ value: "there's a barren patch on a hill where the dead maidens dance and no plant or herb can grow", weight: 1 },
   ],
   
   
@@ -7821,7 +7828,7 @@ trap_location: [
     { value: "octopus", weight: 1 },
     { value: "crab", weight: 1 },
     { value: "lobster", weight: 1 },
-    { value: "sea serpent", weight: 1 },
+    { value: "sea snake", weight: 1 },
     { value: "alligator", weight: 1 },
 	{ value: "seahorse", weight: 1 },
     { value: "oyster", weight: 1 },
@@ -7829,6 +7836,7 @@ trap_location: [
     { value: "eel", weight: 1 },
 	{ value: "manta ray", weight: 1 },
 	{ value: "frog", weight: 1 },
+	{ value: "mermaid", weight: 1 },
   ],
   
    AnimalCategory: [
@@ -11296,7 +11304,7 @@ ship_type: [
 	{ value: "carrying a hundred ${ship_cargo_container} of ${ship_merchandise_adj} ${ship_cargo_toy_type}, popular with local ${humanoid_young}, a few dozen ${ship_cargo_novelty_type} and ${liquid_containers_large}s of ${alcohol_liquor} for the alehouses", weight: 1 },
 	{ value: "with neat ${ship_cargo_container} of meticulously labeled ${ship_cargo_expedition_type} from the successful ${FantasyLastName} Expedition to ${foreignland}${foreign_phrase} along with ${ship_cargo_wizard_type} that was found there as well", weight: 1 },
 	{ value: "with a hold full of ${ship_cargo_furniture_adj} ${ship_cargo_furniture_type} ${ship_manufacturing_place} and ${ship_cargo_container} of ${Jewels} and scrolls from the House of ${housething}", weight: 1 },
-	{ value: "bearing wounded ${violent_profession_plural} and opportunistic ${travelers}s from the wars in the ${CompassDirectionPrimary}", weight: 1 },
+	{ value: "bearing wounded ${violent_profession_plural} and opportunistic ${travelers}s from the wars in the ${CompassDirectionPrimary}, as well as nets filled with ${AnimalWater}, fish and ${AnimalWater}", weight: 1 },
   ],
   
   ship_merchandise_adj: [
@@ -11341,6 +11349,8 @@ ship_type: [
 	{ value: "oddly-tuned ${MusicalInstrument}s", weight: 1 },
 	{ value: "miniature ${AnimalMagicMount}s", weight: 1 },
 	{ value: "trick ${shield_type}s that shatter like ice at the first blow", weight: 1 },
+	{ value: "wooden puzzles depicting ${painting_subject_matter}", weight: 1 },
+	{ value: "${huntingmonster_singular} costumes", weight: 1 },
   ],
   
   ship_cargo_wizard_type: [
@@ -11357,6 +11367,7 @@ ship_type: [
 	{ value: "${a:MusicalInstrument} that supposedly belonged to ${vancian_wizards}", weight: 1 },
 	{ value: "armor from the ${underworld_names}", weight: 1 },
 	{ value: "a sinister ${Metallic} crown", weight: 1 },
+	{ value: "an enchanted ${MusicalInstrument} that can play '${ballad_titles}' all by itself", weight: 1 },
   ],
   
   ship_cargo_novelty_type: [
@@ -12875,6 +12886,7 @@ door_type: [
 	{ value: "a sorrowful ${undead_intangible}", weight: 1 },
 	{ value: "a whirling, burning plant", weight: 1 },
 	{ value: "a living ${Weapons}", weight: 1 },
+	{ value: "a confused ${ModernOccupation} who approached a strange ${Colors} mist near ${a:historicalinfrastructure_modern_singular} outside Pittsburgh", weight: 1 },
   ],
   
   necklace_type: [
@@ -13386,6 +13398,7 @@ door_type: [
 	{ value: "construction on a magnificent temple with caryatidal ${herdanimal} supporting the roof has been completed", weight: 1 },
 	{ value: "smoking weapons with keen edges have become all the rage", weight: 1 },
 	{ value: "the palace is abuzz over an imperial spy who was discovered with orders in the ${handwriting} of the ${uc:Colors} ${uc:RoyalTitleFemale}", weight: 1 },
+	{ value: "a satiric puppet show depicting a king showering gold on worthless charlatans and useless experiments has landed the troupe in jail", weight: 1 },
   ],
   
   damaged_city_thing: [
