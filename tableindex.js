@@ -395,6 +395,8 @@ const tables = {
 	{ value: " who lent the day a larger light,", weight: 1 },
 	{ value: " who turned barren and thirsty wilderness into green and smiling fields,", weight: 1 },
 	{ value: " who had the eyes plucked out of ${FantasyName} the Archer for some trivial crime,", weight: 1 },
+	{ value: " who hunted, fornicated, slew men and ate meat on holy days in defiance of the gods,", weight: 1 },
+	{ value: " who danced for a year and a day in honor of the divine ${RealGods},", weight: 1 },
   ],
 
   hundred_words: [
@@ -2113,6 +2115,7 @@ const tables = {
 	{ value: "a kind of reverse ghoul who desires its own flesh to be eaten, who attempts to get close and make it an intimate act", weight: 1 },
 	{ value: "courtesans who plant strange thoughts in their lovers' minds by running their fingers through their hair", weight: 1 },
 	{ value: "an immortal sphinx who gave laws to the world", weight: 1 },
+	{ value: "a mad baron in ${foreignland}${foreign_phrase} who exacted a human life for every ${AnimalInsect} killed in his realm", weight: 1 },
   ],
 
   feature: [
@@ -2443,6 +2446,8 @@ const tables = {
 	{ value: "fills their vacant hours with prayer, neither business nor pleasure", weight: 1 },
 	{ value: "was broken upon the Wheel of the Law", weight: 1 },
 	{ value: "encountered a creature that resembled ${a:AnimalWater} or ${a:AnimalPredator} but composed entirely out of living ${elemntl_type}", weight: 1 },
+	{ value: "was impaled on the wide hunting spear of ${a:humanoid_monsters}", weight: 1 },
+	{ value: "was made to dance ${dance} until their feet blistered and bled", weight: 1 },
   ],
 
   hero_goal: [
@@ -2693,6 +2698,7 @@ const tables = {
 	{ value: "riding bronze ${AnimalMount}s through the streets", weight: 1 },
 	{ value: "reenacting a group of monsters carrying off their wounded king", weight: 1 },
 	{ value: "meeting under the 31st arch of the aqueduct for smooching", weight: 1 },
+	{ value: "seeking the joy of revenge", weight: 1 },
   ],
 
   housething: [
@@ -3707,6 +3713,7 @@ const tables = {
 	{ value: "the children have all gone fishing, hoping to catch Grandfather Carp", weight: 1 },
 	{ value: "the stone eggs of basilisks that litter the nearby ${landscape_types_basic_singular} have begun to hatch", weight: 1 },
 	{ value: "the corpse of an enormous ${humanoid_monsters} has dammed up the nearby river", weight: 1 },
+	{ value: "${a:QuickNPC} saw a wolf in the empty church", weight: 1 },
   ],
 
   localtopic: [
@@ -6088,6 +6095,7 @@ trap_location: [
 	{ value: "the ${royals} in ${urbn_cityname} had ${vancian_wizards} install a door in the ${aristocratic_home_rooms} of their ${aristocratic_home} that can only be passed through ${door_opened}", weight: 1 },
 	{ value: "in ${urbn_cityname}, City of ${urbn_citynickname}, no ravens or pigeons or sparrows dwell around the ${urbn_place} near ${urbn_street_names}, but magpies only", weight: 1 },
 	{ value: "since a fire ruined the ${urbn_place} on ${urbn_street_names}, ${a:urbn_place_adj} ${urbn_place} near the Statue of the ${uc:statue_adj} ${statue_subject} has become a local trysting place", weight: 1 },
+	{ value: "a gang of ${trap_quality} ${criminals} led by ${a:humanoid} ${facial_desc} has its hideout beneath ${a:urbn_place} in ${urbn_cityname}", weight: 1 },
   ],
 
    urbn_traders: [
@@ -7108,6 +7116,7 @@ trap_location: [
 	{ value: "emanates the keening moans of ${fairy_folk_named}", weight: 1 },
 	{ value: "marks a well which draws from the underground river that nourishes the garden of the fairy maiden men call the Queen of Springtime", weight: 1 },
 	{ value: "marks the entrance to a surreal mall", weight: 1 },
+	{ value: "marks the area where a skeletal hunter riding a skeletal ${AnimalMount} has been seen", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -10911,6 +10920,7 @@ celebration_type: [
 	{ value: "they will be unable to take their boots off", weight: 1 },
 	{ value: "all their hair will be shorn, never to grow again", weight: 1 },
 	{ value: "they will be transformed into ${a:AnimalReptile} for ${fairy_number} years", weight: 1 },
+	{ value: "they will dance ${dance} whenever they hear music", weight: 1 },
 	
   ],
   
@@ -11488,6 +11498,7 @@ ship_type: [
 	{ value: "Mother, Sister, Mistress, Bride", weight: 1 },
 	{ value: "There Are No Endings Truly", weight: 1 },
 	{ value: "The Mortal and the Pestle", weight: 1 },
+	{ value: "The Rash Oath of the Baron", weight: 1 },
   ],
   
   
@@ -12394,6 +12405,7 @@ door_type: [
 	{ value: "Orello", weight: 1 },
 	{ value: "Balonn", weight: 1 },
 	{ value: "Ragadorn", weight: 1 },
+	{ value: "Okkenfels", weight: 1 },
   ],
   
    flowers_singular: [
