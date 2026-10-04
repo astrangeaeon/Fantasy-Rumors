@@ -116,6 +116,7 @@ const tables = {
 	{ value: " land of muttered incantations and midnight rituals", weight: 1 },
 	{ value: " with its gloomy comfortless inns", weight: 1 },
 	{ value: " where the fauna laugh with hellish glee", weight: 1 },
+	{ value: " where the clang of the hammer and the axe resounds without cease", weight: 1 },
   ],
 
   herdwith: [
@@ -2116,6 +2117,7 @@ const tables = {
 	{ value: "courtesans who plant strange thoughts in their lovers' minds by running their fingers through their hair", weight: 1 },
 	{ value: "an immortal sphinx who gave laws to the world", weight: 1 },
 	{ value: "a mad baron in ${foreignland}${foreign_phrase} who exacted a human life for every ${AnimalInsect} killed in his realm", weight: 1 },
+	{ value: "beings who meet at midnight in the fish-market of the city of ${urbn_cityname} under the weird light of the witches' sabbath", weight: 1 },
   ],
 
   feature: [
@@ -2698,7 +2700,7 @@ const tables = {
 	{ value: "riding bronze ${AnimalMount}s through the streets", weight: 1 },
 	{ value: "reenacting a group of monsters carrying off their wounded king", weight: 1 },
 	{ value: "meeting under the 31st arch of the aqueduct for smooching", weight: 1 },
-	{ value: "seeking the joy of revenge", weight: 1 },
+	{ value: "practicing the sanctioned joys of revenge", weight: 1 },
   ],
 
   housething: [
@@ -3486,8 +3488,9 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPCDescriptor} ${humanoid}, returned from the city of ${urbn_cityname} with ${a:duo_clothing_singular} steeped in the stench of ${huntingmonster}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, has been undergoing a kind of second puberty as they transform slowly into ${a:huntingmonster_singular}", weight: 1 },
 	{ value: "two ${trap_builder} came to town with a basket of delicious ${FantasyMeal_Fruit_plural} that they'd stolen from ${a:po:fairy_folk} garden; everyone who ate one has been cursed ${saint_curse}", weight: 1 },
-	{ value: "${FantasyName}, ${a:QuickNPC},${claim_to_fame} has spent many days without food, many nights without sleep and many years without speaking since ${a:fairy_folk} knocked on their door", weight: 1 },
+	{ value: "${FantasyName}, formerly ${a:QuickNPC},${claim_to_fame} has spent many days without food, many nights without sleep and many years without speaking since ${a:fairy_folk} knocked on their door", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, swears they saw ${a:vehicle_adj} ${vehicle} pulled by ${herdanimal} and driven by ${a:undead_intangible}", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, is so offended by the smell of ${FantasyMeal_Fruit_plural} that they would fall a'bleeding if one were held up to their nose", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -3714,6 +3717,7 @@ const tables = {
 	{ value: "the stone eggs of basilisks that litter the nearby ${landscape_types_basic_singular} have begun to hatch", weight: 1 },
 	{ value: "the corpse of an enormous ${humanoid_monsters} has dammed up the nearby river", weight: 1 },
 	{ value: "${a:QuickNPC} saw a wolf in the empty church", weight: 1 },
+	{ value: "a skinny ${AnimalDogBreed} wanders the streets, a threatening light behind its dark and hollow eyes", weight: 1 },
   ],
 
   localtopic: [
@@ -6096,6 +6100,8 @@ trap_location: [
 	{ value: "in ${urbn_cityname}, City of ${urbn_citynickname}, no ravens or pigeons or sparrows dwell around the ${urbn_place} near ${urbn_street_names}, but magpies only", weight: 1 },
 	{ value: "since a fire ruined the ${urbn_place} on ${urbn_street_names}, ${a:urbn_place_adj} ${urbn_place} near the Statue of the ${uc:statue_adj} ${statue_subject} has become a local trysting place", weight: 1 },
 	{ value: "a gang of ${trap_quality} ${criminals} led by ${a:humanoid} ${facial_desc} has its hideout beneath ${a:urbn_place} in ${urbn_cityname}", weight: 1 },
+	{ value: "no one can play the ${MusicalInstrument} like the hunchback of ${urbn_cityname}!", weight: 1 },
+	{ value: "in ${urbn_cityname}, the bells of the ${aristocratic_robbed_place_religious} ring so loudly that they shatter the bones of birds", weight: 1 },
   ],
 
    urbn_traders: [
@@ -7117,6 +7123,8 @@ trap_location: [
 	{ value: "marks a well which draws from the underground river that nourishes the garden of the fairy maiden men call the Queen of Springtime", weight: 1 },
 	{ value: "marks the entrance to a surreal mall", weight: 1 },
 	{ value: "marks the area where a skeletal hunter riding a skeletal ${AnimalMount} has been seen", weight: 1 },
+	{ value: "stands near the ruin of ${a:aristocratic_robbed_place_religious} where now moss, grass and wild parsley flourish", weight: 1 },
+	{ value: "lies on the outskirts of where a half-finished cathedral, the construction long abandoned, resembles a falling ruin", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -12201,6 +12209,39 @@ door_type: [
 	{ value: "of ${uc:numinous_feeling}", weight: 2 },
 	{ value: "of Victory", weight: 1 },
 	{ value: "of ${uc:sins}", weight: 1 },
+	{ value: "${gates_suffix_repeat} (sometimes called ${gate_history})", weight: 1 },
+  ],
+  
+  gates_suffix_repeat: [
+	{ value: "of the Tribes", weight: 1 },
+	{ value: "of Remission", weight: 1 },
+    { value: "of Darkness", weight: 1 },
+    { value: "of the Seraglio", weight: 1 },
+	{ value: "of the Divine Presence", weight: 1 },
+	{ value: "of Fat Profit", weight: 1 },
+	{ value: "of the Prophet", weight: 1 },
+	{ value: "of Saint ${SaintName}", weight: 3 },
+	{ value: "of Mercy", weight: 1 },
+	{ value: "of the Funerals", weight: 1 },
+	{ value: "of the Baker", weight: 1 },
+    { value: "of ${RealGods}", weight: 3 },
+    { value: "of the Tannery", weight: 1 },
+	{ value: "of the Spring", weight: 1 },
+	{ value: "of the Bootmakers' Quarter", weight: 1 },
+	{ value: "of the Hunters", weight: 1 },
+	{ value: "of the Holy Well", weight: 1 },
+	{ value: "of the Flour Depot", weight: 1 },
+	{ value: "of the Fish Market", weight: 1 },
+	{ value: "of the ${tc:AnimalBird}", weight: 3 },
+	{ value: "of the ${tc:QuickNPCJob}", weight: 3 },
+	{ value: "of the ${uc:WeirdFantasyMonster}", weight: 2 },
+	{ value: "of ${uc:numinous_feeling}", weight: 2 },
+	{ value: "of Victory", weight: 1 },
+	{ value: "of ${uc:sins}", weight: 1 },
+  ],
+  
+  gate_history: [
+	{ value: "Priests' Gate for where the priests were hanged", weight: 1 },
   ],
   
   gates_prefix: [
@@ -13039,6 +13080,7 @@ door_type: [
 	{ value: "the ${underworld_names}", weight: 1 },
 	{ value: "a bewitching naga curled around an enormous ${cod_tree_type} tree", weight: 1 },
 	{ value: "${landmark}", weight: 1 },
+	{ value: "a badly neglected ${aristocratic_home} in the wilds, where screech-owls nest", weight: 1 },
   ],
   
   tax_table: [
