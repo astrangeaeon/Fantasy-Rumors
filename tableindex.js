@@ -398,6 +398,7 @@ const tables = {
 	{ value: " who had the eyes plucked out of ${FantasyName} the Archer for some trivial crime,", weight: 1 },
 	{ value: " who hunted, fornicated, slew men and ate meat on holy days in defiance of the gods,", weight: 1 },
 	{ value: " who danced for a year and a day in honor of the divine ${RealGods},", weight: 1 },
+	{ value: " whose fame shall never grow silent,", weight: 1 },
   ],
 
   hundred_words: [
@@ -628,6 +629,7 @@ const tables = {
 	{ value: "with a neck of iron", weight: 1 },
 	{ value: "with tornados for legs", weight: 1 },
 	{ value: "said to be a stone dryad with curious breasts of rock-crystal", weight: 1 },
+	{ value: "with the brazen throat of the fire-bell", weight: 1 },
   ],
 
   body_part_fate: [
@@ -830,7 +832,7 @@ const tables = {
     { value: "wine from fallen cultures", weight: 1 },
     { value: "wood from the Holy Woods, where to break one twig is a sin", weight: 1 },
 	{ value: "polyphallic wind chimes", weight: 1 },
-	{ value: "the hair of a nixie, golden and always wet", weight: 1 },
+	{ value: "the hair of nixies, golden and always wet", weight: 1 },
 	{ value: "strangely designed implements of torture or agriculture", weight: 1 },
 	{ value: "the souls of flowers", weight: 1 },
 	{ value: "the teeth of saints and heroes", weight: 1 },
@@ -2118,6 +2120,7 @@ const tables = {
 	{ value: "an immortal sphinx who gave laws to the world", weight: 1 },
 	{ value: "a mad baron in ${foreignland}${foreign_phrase} who exacted a human life for every ${AnimalInsect} killed in his realm", weight: 1 },
 	{ value: "beings who meet at midnight in the fish-market of the city of ${urbn_cityname} under the weird light of the witches' sabbath", weight: 1 },
+	{ value: "Sir ${FantasyNameMale} who rode with two hundred companions, the youngest of which was a hundred years old, their white beards flowing down to their waists", weight: 1 },
   ],
 
   feature: [
@@ -3171,6 +3174,7 @@ const tables = {
 	{ value: "the ${tc:FantasyMeal_Fruit} Witches", weight: 1 },
 	{ value: "the tiny devils who live inside ${FantasyMeal_Fruit_plural} and ${FantasyMeal_Fruit_plural}", weight: 1 },
 	{ value: "the Lord of the Sun-realm", weight: 1 },
+	{ value: "the ${tc:religious_ranks} and his laughing gulls", weight: 1 },
   ],
 
   kinganimal: [
@@ -3390,6 +3394,7 @@ const tables = {
 	{ value: "the Nullarbor Plain", weight: 1 },
 	{ value: "the spring at Coorigil", weight: 1 },
 	{ value: "the Drachenfels", weight: 1 },
+	{ value: "the Devil's Ladder", weight: 1 },
   ],
 
   lawnornament: [
@@ -3491,6 +3496,7 @@ const tables = {
 	{ value: "${FantasyName}, formerly ${a:QuickNPC},${claim_to_fame} has spent many days without food, many nights without sleep and many years without speaking since ${a:fairy_folk} knocked on their door", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, swears they saw ${a:vehicle_adj} ${vehicle} pulled by ${herdanimal} and driven by ${a:undead_intangible}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, is so offended by the smell of ${FantasyMeal_Fruit_plural} that they would fall a'bleeding if one were held up to their nose", weight: 1 },
+	{ value: "the village of ${village_names}, famed for their ${FantasyMeal_Fruit_Berry} ${FantasyMeal_Fruit_Berry_Uses}s, is now filled with ${undead_intangible}s with strange bodies that blow on the wind like smoke", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -3585,6 +3591,8 @@ const tables = {
 	{ value: "sail in a floating ${ship_type} across the deserts of the ${CompassDirectionPrimary}", weight: 1 },
 	{ value: "wake the painted kings who sleep", weight: 1 },
 	{ value: "live alone with the bitterness of their thoughts", weight: 1 },
+	{ value: "climb the Devil's Ladder", weight: 1 },
+	{ value: "be like ${heroes_and_villains} who always adventured in their finest clothes", weight: 1 },
   ],
 
   local_racist: [
@@ -3718,6 +3726,7 @@ const tables = {
 	{ value: "the corpse of an enormous ${humanoid_monsters} has dammed up the nearby river", weight: 1 },
 	{ value: "${a:QuickNPC} saw a wolf in the empty church", weight: 1 },
 	{ value: "a skinny ${AnimalDogBreed} wanders the streets, a threatening light behind its dark and hollow eyes", weight: 1 },
+	{ value: "there was the music of an invisible parade as the helping gnomes departed the village for good", weight: 1 },
   ],
 
   localtopic: [
@@ -5733,6 +5742,8 @@ const tables = {
 	{ value: "cave-dwellers who were human once, but far from human now", weight: 1 },
 	{ value: "the wrestling gods", weight: 1 },
 	{ value: "dangerous ${trap_builder} wearing bone armor and wielding crystal ${HaftedWeapons}s", weight: 1 },
+	{ value: "a slumbering ${WeirdFantasyMonster}", weight: 1 },
+	{ value: "fiends of glade and dell", weight: 1 },
   ],
   
   
@@ -6951,6 +6962,7 @@ trap_location: [
 	{ value: "can fly by turning their arms into the wings of ${a:AnimalBird}", weight: 1 },
 	{ value: "is by miracle somehow not yet acquainted with the deceits of this world", weight: 1 },
 	{ value: "sells a small pouch with three of ${po:ntc} baby teeth inside, sure to add potency to certain rituals", weight: 1 },
+	{ value: "sings the best songs and tells the best stories", weight: 1 },
 	
   ],
 
@@ -7125,6 +7137,7 @@ trap_location: [
 	{ value: "marks the area where a skeletal hunter riding a skeletal ${AnimalMount} has been seen", weight: 1 },
 	{ value: "stands near the ruin of ${a:aristocratic_robbed_place_religious} where now moss, grass and wild parsley flourish", weight: 1 },
 	{ value: "lies on the outskirts of where a half-finished cathedral, the construction long abandoned, resembles a falling ruin", weight: 1 },
+	{ value: "marks the territory of a group of savage maidens clad in sylvan pageant", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -7225,6 +7238,7 @@ trap_location: [
 	{ value: "there's an old war god's altar where devout ${violent_profession_plural} can sacrifice the ${Weapons} or shield they took from a defeated foe for protection in battle", weight: 1 },
 	{ value: "there stands a carnivorous ${cod_tree_type} tree surrounded by ${AnimalPrey} bones", weight: 1 },
 	{ value: "a traveler saw ${a:humanoid} driving a flying ${vehicle} pulled by bats", weight: 1 },
+	{ value: "there's a huge stone at the bottom of a river which is only visible when the water level is very low called the Altar of ${RealGods}", weight: 1 },
   ],
 
   wilds_locn: [
@@ -8969,6 +8983,7 @@ trap_location: [
 	{ value: "tailor", weight: 1 },
 	{ value: "knife-maker", weight: 1 },
 	{ value: "chain-forger", weight: 1 },
+	{ value: "squire", weight: 1 },
   ],
 
   QuickNPCJobRich: [
@@ -9104,6 +9119,7 @@ trap_location: [
 	{ value: "the Imperial ${uc:numinous_feeling}", weight: 3 },
     { value: "the ${uc:Colors} ${uc:AnimalBird}", weight: 3 },
 	{ value: "the Luminous Maiden", weight: 1 },
+	{ value: "${fairy_folk_named}", weight: 1 },
   ],
 
   Smells: [
@@ -12242,6 +12258,7 @@ door_type: [
   
   gate_history: [
 	{ value: "Priests' Gate for where the priests were hanged", weight: 1 },
+	{ value: "the Gate of Spies for where the spies were hanged", weight: 1 },
   ],
   
   gates_prefix: [
@@ -12545,6 +12562,7 @@ door_type: [
 	{ value: "journey across ${body_of_water} to an island fortress populated by ${islandpop} and protected by ${islandprotector}", weight: 1 },
 	{ value: "tread on secret paths through the enchanted ${otherworld_names} to get to ${classic_dungeons}", weight: 1 },
 	{ value: "confront a fearsome ${huntingmonster_singular} that feeds on the ${body_part_plural} of men in its lair", weight: 1 },
+	{ value: "gag the watchmen and muffle the bells of the wicked city of ${urbn_cityname}", weight: 1 },
   ],
   
   religious_ranks: [
