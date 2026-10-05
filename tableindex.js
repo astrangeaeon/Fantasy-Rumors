@@ -399,6 +399,7 @@ const tables = {
 	{ value: " who hunted, fornicated, slew men and ate meat on holy days in defiance of the gods,", weight: 1 },
 	{ value: " who danced for a year and a day in honor of the divine ${RealGods},", weight: 1 },
 	{ value: " whose fame shall never grow silent,", weight: 1 },
+	{ value: " who had no equal under the heavens,", weight: 1 },
   ],
 
   hundred_words: [
@@ -2480,6 +2481,8 @@ const tables = {
 	{ value: "to sit upon the Chair of Forgetting", weight: 1 },
 	{ value: "to break the malign power of a ${idol_material} idol of ${a:idol_subject}", weight: 1 },
 	{ value: "to find a particular shade of ${Colors}", weight: 1 },
+	{ value: "to ask a boon of King ${FantasyNameMale}, whose body has sat for ${when} upon the ${uc:AnimalThroneType} Throne with ${Metallic} crown on head and ${Jewel_singular} scepter in hand", weight: 1 },
+	{ value: "to seek a famous knight transformed into ${a:AnimalTrophy} by ${fairy_folk_named}", weight: 1 },
   ],
 
   heroname: [
@@ -6963,6 +6966,8 @@ trap_location: [
 	{ value: "is by miracle somehow not yet acquainted with the deceits of this world", weight: 1 },
 	{ value: "sells a small pouch with three of ${po:ntc} baby teeth inside, sure to add potency to certain rituals", weight: 1 },
 	{ value: "sings the best songs and tells the best stories", weight: 1 },
+	{ value: "holds burning coals in their hands until they grow cold", weight: 1 },
+	{ value: "possesses ${a:MusicalInstrument} that will call Death's hunting-steeds", weight: 1 },
 	
   ],
 
@@ -8180,6 +8185,8 @@ trap_location: [
 	{ value: "Wendell", weight: 1 },
 	{ value: "Euclid", weight: 1 },
 	{ value: "Virgil", weight: 1 },
+	{ value: "Andujar", weight: 1 },
+	{ value: "Bailen", weight: 1 },
   ],
 
   FantasyNameFemale: [
@@ -9330,7 +9337,7 @@ trap_location: [
     { value: "drowned ${cod_water}", weight: 1 },
     { value: "${cod_fire}", weight: 1 },
     { value: "${cod_battle}", weight: 1 },
-	{ value: "choked on ${a:cod_choke}", weight: 1 },
+	{ value: "choked on ${cod_choke}", weight: 1 },
 	{ value: "${cod_quiet} and ${cod_post}", weight: 1 },
 	{ value: "${cod_ironic}", weight: 1 },
 	{ value: "${cod_misc}", weight: 1 },
@@ -9365,9 +9372,10 @@ trap_location: [
   ],
   
   cod_choke: [
-    { value: "${AnimalMammal} bone", weight: 1 },
-    { value: "bowl of ${Crop} soup", weight: 1 },
-	{ value: "${FantasyMeal}", weight: 1 },
+    { value: "${a:AnimalMammal} bone", weight: 1 },
+    { value: "a bowl of ${Crop} soup", weight: 1 },
+	{ value: "${a:FantasyMeal}", weight: 1 },
+	{ value: "the long wet hair of a mermaid", weight: 1 },
   ],
   
   cod_liquid: [
@@ -9510,6 +9518,7 @@ tail_type: [
     { value: "with the knowledge of ${knowledgething}", weight: 1 },
 	{ value: "to always be welcome in the House of ${housething}", weight: 1 },
 	{ value: "with a talent for playing the ${MusicalInstrument}", weight: 1 },
+	{ value: "with being unable to see the corruption death works on a mortal body", weight: 1 },
   ],
 
 
@@ -9521,6 +9530,7 @@ saint_curse: [
 	{ value: "to have nightmares of ${a:idol}", weight: 1 },
 	{ value: "to seek out and collect ${collection}", weight: 1 },
 	{ value: "to see the constellation known as ${constellation} even during the day", weight: 1 },
+	{ value: "to have trouble sleeping", weight: 1 },
   ],
   
   light_type: [
