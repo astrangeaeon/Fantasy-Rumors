@@ -117,6 +117,7 @@ const tables = {
 	{ value: " with its gloomy comfortless inns", weight: 1 },
 	{ value: " where the fauna laugh with hellish glee", weight: 1 },
 	{ value: " where the clang of the hammer and the axe resounds without cease", weight: 1 },
+	{ value: " with its unlucky birds", weight: 1 },
   ],
 
   herdwith: [
@@ -1910,6 +1911,7 @@ const tables = {
 	{ value: "the seeds of extinct plants", weight: 1 },
 	{ value: "the stone eggs of basilisks", weight: 1 },
 	{ value: "cursed mirrors", weight: 1 },
+	{ value: "infected ${duo_clothing} and other garments", weight: 1 },
   ],
 
   excitingemployer: [
@@ -2454,6 +2456,7 @@ const tables = {
 	{ value: "encountered a creature that resembled ${a:AnimalWater} or ${a:AnimalPredator} but composed entirely out of living ${elemntl_type}", weight: 1 },
 	{ value: "was impaled on the wide hunting spear of ${a:humanoid_monsters}", weight: 1 },
 	{ value: "was made to dance ${dance} until their feet blistered and bled", weight: 1 },
+	{ value: "awaits the fulfillment of their sentence after being found guilty by a tribunal of ${trap_builder}: to be punished by ${punishment}", weight: 1 },
   ],
 
   hero_goal: [
@@ -11867,6 +11870,7 @@ door_type: [
 	{ value: "assassins", weight: 1 },
 	{ value: "marauders", weight: 1 },
 	{ value: "deserters", weight: 1 },
+	{ value: "catapultists", weight: 1 },
   ],
   
   classic_classes: [
