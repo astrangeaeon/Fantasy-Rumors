@@ -118,6 +118,7 @@ const tables = {
 	{ value: " where the fauna laugh with hellish glee", weight: 1 },
 	{ value: " where the clang of the hammer and the axe resounds without cease", weight: 1 },
 	{ value: " with its unlucky birds", weight: 1 },
+	{ value: " with its soil unkind to fruit-trees", weight: 1 },
   ],
 
   herdwith: [
@@ -2457,6 +2458,8 @@ const tables = {
 	{ value: "was impaled on the wide hunting spear of ${a:humanoid_monsters}", weight: 1 },
 	{ value: "was made to dance ${dance} until their feet blistered and bled", weight: 1 },
 	{ value: "awaits the fulfillment of their sentence after being found guilty by a tribunal of ${trap_builder}: to be punished by ${punishment}", weight: 1 },
+	{ value: "now bears a grim tattoo of ${tattoos} showing their allegiance to some new dark master", weight: 1 },
+	{ value: "their soul is now branded with the ownership mark of ${fairy_folk_named}", weight: 1 },
   ],
 
   hero_goal: [
@@ -3599,6 +3602,7 @@ const tables = {
 	{ value: "live alone with the bitterness of their thoughts", weight: 1 },
 	{ value: "climb the Devil's Ladder", weight: 1 },
 	{ value: "be like ${heroes_and_villains} who always adventured in their finest clothes", weight: 1 },
+	{ value: "judge the living and the dead", weight: 1 },
   ],
 
   local_racist: [
@@ -3734,6 +3738,7 @@ const tables = {
 	{ value: "a skinny ${AnimalDogBreed} wanders the streets, a threatening light behind its dark and hollow eyes", weight: 1 },
 	{ value: "there was the music of an invisible parade as the helping gnomes departed the village for good", weight: 1 },
 	{ value: "${a:QuickNPC} has put a bell outside their home declaring that any who seek justice have but to ring it", weight: 1 },
+	{ value: "each dawn brings word of another townsperson who has been transformed into ${a:AnimalFarm} overnight", weight: 1 },
   ],
 
   localtopic: [
@@ -4009,6 +4014,7 @@ const tables = {
 	{ value: "the Robe of Darkness", weight: 1 },
 	{ value: "the secret seventh weapon of Prince Six-Weapons", weight: 1 },
 	{ value: "the journal of Mickey the Gallivanter", weight: 1 },
+	{ value: "${a:duo_jewlery_singular} of primal ${elemntl_type} that might adorn a god", weight: 1 },
   ],
 
   membership: [
@@ -4196,6 +4202,7 @@ const tables = {
 	{ value: "${a:dungeon_mural_monster_primal} of old, with ${jewel_eyes} for eyes,", weight: 1 },
 	{ value: "${EgyptianNameMale}, a ${foreignland} sphinx who must hear riddles to survive,", weight: 1 },
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who cursed every piece of its treasure after being compelled by ${vancian_wizards} to give away its hoard,", weight: 1 },
+	{ value: "Apu the Luck-bringer, ${a:daemontype} daemon,", weight: 1 },
   ],
   
   monstertype_ntc: [
@@ -4220,6 +4227,7 @@ const tables = {
 	{ value: "${a:dungeon_mural_monster_primal} with ${jewel_eyes} for eyes", weight: 1 },
 	{ value: "${EgyptianNameMale}, a ${foreignland} sphinx who must hear riddles to survive", weight: 1 },
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who cursed every piece of its treasure after being compelled by ${vancian_wizards} to give away its hoard", weight: 1 },
+	{ value: "Apu the Luck-bringer, ${a:daemontype} daemon", weight: 1 },
   ],
 
   monstervalue: [
@@ -6460,6 +6468,7 @@ trap_location: [
 	{ value: "the theft of ${a:idol}", weight: 1 },
 	{ value: "the escalating antics of two rival ${occupation}s named ${duo_name1} and ${duo_name2} ", weight: 1 },
 	{ value: "the arrival of hazardous pink spores", weight: 1 },
+	{ value: "a worthless and imbecile noble class", weight: 1 },
   ],
 
   urbn_subjectplural: [
@@ -8034,6 +8043,7 @@ trap_location: [
     { value: "golden", weight: 1 },
     { value: "steel", weight: 1 },
     { value: "iron", weight: 1 },
+	{ value: "brass", weight: 1 },
   ],
 
 
@@ -10881,6 +10891,7 @@ celebration_type: [
 	{ value: "must never answer honestly the question of ${a:fairy_folk}", weight: 1 },
 	{ value: "must never allow the shadow of a bird to merge with their own shadow", weight: 1 },
 	{ value: "must not enter a dwelling without being invited", weight: 1 },
+	{ value: "must not wear any ${duo_jewlery}", weight: 1 },
   ],
   
   taboo_path_type: [
