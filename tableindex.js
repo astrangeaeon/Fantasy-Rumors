@@ -3733,6 +3733,7 @@ const tables = {
 	{ value: "${a:QuickNPC} saw a wolf in the empty church", weight: 1 },
 	{ value: "a skinny ${AnimalDogBreed} wanders the streets, a threatening light behind its dark and hollow eyes", weight: 1 },
 	{ value: "there was the music of an invisible parade as the helping gnomes departed the village for good", weight: 1 },
+	{ value: "${a:QuickNPC} has put a bell outside their home declaring that any who seek justice have but to ring it", weight: 1 },
   ],
 
   localtopic: [
@@ -10958,6 +10959,7 @@ celebration_type: [
 	{ value: "all their hair will be shorn, never to grow again", weight: 1 },
 	{ value: "they will be transformed into ${a:AnimalReptile} for ${fairy_number} years", weight: 1 },
 	{ value: "they will dance ${dance} whenever they hear music", weight: 1 },
+	{ value: "they will trade voices with ${a:AnimalMammal}", weight: 1 },
 	
   ],
   
@@ -11673,6 +11675,7 @@ ship_type: [
 	{ value: "to host strange parties with monstrous ${criminals} where they dance ${dance} and drink ${alcohol_wine} ${alcohol_vintage}", weight: 1 },
 	{ value: "to resemble their ancestors who had ${short_inherited_trait}", weight: 1 },
 	{ value: "to keep a bust of ${larger_than_life}, in their ${aristocratic_home_rooms}", weight: 1 },
+	{ value: "to have played a significant role in the secret history of the realm", weight: 1 },
   ],
   
   aristocratic_villain: [
@@ -12478,6 +12481,7 @@ door_type: [
 	{ value: "Balonn", weight: 1 },
 	{ value: "Ragadorn", weight: 1 },
 	{ value: "Okkenfels", weight: 1 },
+	{ value: "Errorr", weight: 1 },
   ],
   
    flowers_singular: [
@@ -12992,6 +12996,7 @@ door_type: [
 	{ value: "bits of cracked leather and a pair of scorched iron boots fused to the floor", weight: 1 },
 	{ value: "the scattered bones of ${a:AnimalPredator}", weight: 1 },
 	{ value: "ashes and a broken ${broken_objects}", weight: 2 },
+	{ value: "ogre-sized ${duo_clothing}", weight: 2 },
   ],
   
   fetch_quest_object: [
