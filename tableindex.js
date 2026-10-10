@@ -119,6 +119,7 @@ const tables = {
 	{ value: " where the clang of the hammer and the axe resounds without cease", weight: 1 },
 	{ value: " with its unlucky birds", weight: 1 },
 	{ value: " with its soil unkind to fruit-trees", weight: 1 },
+	{ value: " where the ${herdanimal} have their own priests and philosophers", weight: 1 },
   ],
 
   herdwith: [
@@ -2125,6 +2126,7 @@ const tables = {
 	{ value: "a mad baron in ${foreignland}${foreign_phrase} who exacted a human life for every ${AnimalInsect} killed in his realm", weight: 1 },
 	{ value: "beings who meet at midnight in the fish-market of the city of ${urbn_cityname} under the weird light of the witches' sabbath", weight: 1 },
 	{ value: "Sir ${FantasyNameMale} who rode with two hundred companions, the youngest of which was a hundred years old, their white beards flowing down to their waists", weight: 1 },
+	{ value: "living dungeons who make use of adventurers and dragons to reproduce, like flowers use bees to pollinate", weight: 1 },
   ],
 
   feature: [
@@ -5223,6 +5225,7 @@ const tables = {
     { value: "ship that was lost carrying a mated pair of mimic birds descended from the mimic bird who heard the Prophet’s voice and passed the sound down through generations of other birds", weight: 1 },
     { value: "ship that was part of the treasure fleet of ${who_is_buried} which delivered precious gifts to foreign dignitaries and sank", weight: 1 },
 	{ value: "ship that sank carrying ${liquid_containers_large}s of potent ${alcohol} from ${foreignland} that's made all the fish, mermaids and even ${a:AnimalWater} blind-drunk", weight: 1 },
+	{ value: "ship that was sent by Queen ${FantasyNameFemale} ${when} ago to seek and return with a treasure she did not already possess that's been spotted", weight: 1 },
   ],
 
   slander: [
@@ -6572,6 +6575,7 @@ trap_location: [
 	{ value: "the wrestling gods", weight: 1 },
 	{ value: "a group of shape-changing ${herdanimal} who have mastered every part of looking human except the feet", weight: 1 },
 	{ value: "the Dame Etelina and her mutilated paramour", weight: 1 },
+	{ value: "a trio of hobbits and their mount, a war-boar named Stench", weight: 1 },
   ],
 
   urbn_subjectsingular: [
