@@ -2001,6 +2001,7 @@ const tables = {
 	{ value: "covered in ${FantasyMeal_Fruit_Berry} stains", weight: 1 },
 	{ value: "wearing a helm made of crystal", weight: 1 },
 	{ value: "wearing royal garments", weight: 1 },
+	{ value: "wearing garments fragrant with the odors of paradise", weight: 1 },
   ],
 
   fd: [
@@ -4850,6 +4851,7 @@ const tables = {
 	{ value: "those attainted of high treason swing from the aqueduct", weight: 1 },
 	{ value: "the talking ${AnimalSimian}s found guilty of ${crime_singular} are punished by ${punishment}", weight: 1 },
 	{ value: "merciless ${huntingmonster} appointed by Saint ${SaintName} serve as judges for terms of ${fairy_number} years", weight: 1 },
+	{ value: "they punish strangers the same way they martyred Saint ${SaintName}, who was ${martyrdom}", weight: 2 },
   ],
 
   punishment: [
@@ -11217,6 +11219,7 @@ vehicle: [
 	{ value: "from a factory in ${urbn_cityname}", weight: 1 },
 	{ value: "from the Age of Miracles", weight: 1 },
 	{ value: "from a mountain of water", weight: 1 },
+	{ value: "from a well in ${slumberplace} that's fed by a subterranean channel from paradise", weight: 1 },
   ],
   
   exotic_water_types: [
@@ -12192,6 +12195,7 @@ door_type: [
 	{ value: "praying for rain that came and quenched half of the flames of a burning ${urbn_place}", weight: 1 },
 	{ value: "breaking the magic of ${vancian_wizards}, who crumbled to dust, being old and full of days", weight: 1 },
 	{ value: "commanding the lions and serpents of the desert to dig graves for the ${ancientpeople}", weight: 1 },
+	{ value: "restoring life to the stray dog struck by a runaway ${vehicle}", weight: 1 },
   ],
   
   diseases: [
@@ -13574,6 +13578,15 @@ door_type: [
 	{ value: "blood-red rubies", weight: 1 },
 	{ value: "milk-white pearls", weight: 1 },
 	{ value: "soft chromatic opals", weight: 1 },
+  ],
+  
+  martyrdom: [
+    { value: "crushed beneath a sword-spiked wheel", weight: 1 },
+	{ value: "placed in an iron box set with long nails and flung down a precipice", weight: 1 },
+	{ value: "beaten with sledgehammers", weight: 1 },
+	{ value: "stretched on a red-hot iron bed", weight: 1 },
+	{ value: "cast into a well with a stone around the neck", weight: 1 },
+	{ value: "transfixed by 40 long nails", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
