@@ -120,6 +120,8 @@ const tables = {
 	{ value: " with its unlucky birds", weight: 1 },
 	{ value: " with its soil unkind to fruit-trees", weight: 1 },
 	{ value: " where the ${herdanimal} have their own priests and philosophers", weight: 1 },
+	{ value: " with its kites that shriek and whistle", weight: 1 },
+	{ value: " 'where flowers put forth a fairer hue / and everything is strange and new'", weight: 1 },
   ],
 
   herdwith: [
@@ -403,6 +405,9 @@ const tables = {
 	{ value: " who danced for a year and a day in honor of the divine ${RealGods},", weight: 1 },
 	{ value: " whose fame shall never grow silent,", weight: 1 },
 	{ value: " who had no equal under the heavens,", weight: 1 },
+	{ value: " at whose birth the ${AnimalBird}s circled the island of Delos seven times and sounded songs of joy,", weight: 1 },
+	{ value: " who could read a man's soul better than you or I could read a book,", weight: 1 },
+	{ value: " whose footprints scorched the soil when they left paradise,", weight: 1 },
   ],
 
   hundred_words: [
@@ -982,6 +987,7 @@ const tables = {
 	{ value: "the Sow that Eats its Own Farrow", weight: 1 },
 	{ value: "the Genius of Pranks", weight: 1 },
 	{ value: "the Crawling Fire", weight: 1 },
+	{ value: "the Crowned and Conquering Child", weight: 1 },
   ],
 
   criminals: [
@@ -1994,6 +2000,7 @@ const tables = {
 	{ value: "who chews on the hair of a maiden", weight: 1 },
 	{ value: "covered in ${FantasyMeal_Fruit_Berry} stains", weight: 1 },
 	{ value: "wearing a helm made of crystal", weight: 1 },
+	{ value: "wearing royal garments", weight: 1 },
   ],
 
   fd: [
@@ -2127,6 +2134,8 @@ const tables = {
 	{ value: "beings who meet at midnight in the fish-market of the city of ${urbn_cityname} under the weird light of the witches' sabbath", weight: 1 },
 	{ value: "Sir ${FantasyNameMale} who rode with two hundred companions, the youngest of which was a hundred years old, their white beards flowing down to their waists", weight: 1 },
 	{ value: "living dungeons who make use of adventurers and dragons to reproduce, like flowers use bees to pollinate", weight: 1 },
+	{ value: "a wedding between a green fairy and a prince whose happiness was so great that all who heard it fell asleep for three days and nights", weight: 1 },
+	{ value: "a greedy bishop who stood protected in a circle of flame until the rats chewed through it", weight: 1 },
   ],
 
   feature: [
@@ -2296,6 +2305,7 @@ const tables = {
     { value: "a great feast is held in honor of every ${floors} bear killed. Much of the celebration consists of attempting to persuade the spirit of the bear that it died accidentally and was not murdered", weight: 1 },
 	{ value: "the women who die before marriage become brides at their funeral", weight: 1 },
 	{ value: "the dead are buried with papers and gifts to present to the lord of the dead in the ${underworld_names}", weight: 1 },
+	{ value: "vegetable seeds are placed in the mouths of the dead that grow into communal crops called graveyard ${FantasyMeal_Vegetable} or the like", weight: 1 },
   ],
 
   geas: [
@@ -2462,6 +2472,7 @@ const tables = {
 	{ value: "awaits the fulfillment of their sentence after being found guilty by a tribunal of ${trap_builder}: to be punished by ${punishment}", weight: 1 },
 	{ value: "now bears a grim tattoo of ${tattoos} showing their allegiance to some new dark master", weight: 1 },
 	{ value: "their soul is now branded with the ownership mark of ${fairy_folk_named}", weight: 1 },
+	{ value: "joined the Huntsman to chase the red-deer forever more", weight: 1 },
   ],
 
   hero_goal: [
@@ -2715,6 +2726,7 @@ const tables = {
 	{ value: "reenacting a group of monsters carrying off their wounded king", weight: 1 },
 	{ value: "meeting under the 31st arch of the aqueduct for smooching", weight: 1 },
 	{ value: "practicing the sanctioned joys of revenge", weight: 1 },
+	{ value: "dueling with serpents of light that quiver continuously", weight: 1 },
   ],
 
   housething: [
@@ -3605,6 +3617,7 @@ const tables = {
 	{ value: "climb the Devil's Ladder", weight: 1 },
 	{ value: "be like ${heroes_and_villains} who always adventured in their finest clothes", weight: 1 },
 	{ value: "judge the living and the dead", weight: 1 },
+	{ value: "join the dancers of ${slumberplace} who yearn to spend eternity in their mad gambols", weight: 1 },
   ],
 
   local_racist: [
@@ -3741,6 +3754,7 @@ const tables = {
 	{ value: "there was the music of an invisible parade as the helping gnomes departed the village for good", weight: 1 },
 	{ value: "${a:QuickNPC} has put a bell outside their home declaring that any who seek justice have but to ring it", weight: 1 },
 	{ value: "each dawn brings word of another townsperson who has been transformed into ${a:AnimalFarm} overnight", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, saw a palace of glass floating among the clouds to the ${CompassDirectionPrimary}", weight: 1 },
   ],
 
   localtopic: [
@@ -4094,6 +4108,7 @@ const tables = {
 	{ value: "${a:lair_synonyms} of eyeless subterranean vampires", weight: 1 },
 	{ value: "a lake of dragon water not meant for mortal eyes", weight: 1 },
 	{ value: "a subterranean ${severe_weather}", weight: 1 },
+	{ value: "a subterranean prison for criminals from Dimension ${Letters}", weight: 1 },
   ],
 
   mirage: [
@@ -5068,7 +5083,7 @@ const tables = {
     { value: "whose window looks out on another time", weight: 1 },
 	{ value: "that's home to yellow birds with the voices of goats", weight: 1 },
 	{ value: "where ${duo_name1} and ${duo_name2} have been hiding out after looting the Old Summer Palace", weight: 1 },
-	{ value: "that gets struck continously by mystical lightning bolts", weight: 1 },
+	{ value: "that gets struck continuously by mystical lightning bolts", weight: 1 },
 	{ value: "which contains the eye of a god which allows one to see anything that transpires in darkness, no matter the distance", weight: 1 },
   ],
 
@@ -6200,6 +6215,8 @@ trap_location: [
 	{ value: "Jakalla", weight: 1 },
 	{ value: "Hinmeet", weight: 1 },
 	{ value: "Sateeka", weight: 1 },
+	{ value: "Gemblours", weight: 1 },
+	{ value: "Kedron", weight: 1 },
   ],
 
   urbn_citynickname: [
@@ -6736,6 +6753,7 @@ trap_location: [
 	{ value: "a wolf-sorcerer from ${foreignland}", weight: 1 },
 	{ value: "a great tamer of monsters", weight: 1 },
 	{ value: "a breeder of ${AnimalCategory}", weight: 1 },
+	{ value: "a horror-struck monarch in royal clothes", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6985,6 +7003,7 @@ trap_location: [
 	{ value: "sings the best songs and tells the best stories", weight: 1 },
 	{ value: "holds burning coals in their hands until they grow cold", weight: 1 },
 	{ value: "possesses ${a:MusicalInstrument} that will call Death's hunting-steeds", weight: 1 },
+	{ value: "seeks atonement for past despicable dark deeds through prayer and toil", weight: 1 },
 	
   ],
 
@@ -7261,6 +7280,7 @@ trap_location: [
 	{ value: "there stands a carnivorous ${cod_tree_type} tree surrounded by ${AnimalPrey} bones", weight: 1 },
 	{ value: "a traveler saw ${a:humanoid} driving a flying ${vehicle} pulled by bats", weight: 1 },
 	{ value: "there's a huge stone at the bottom of a river which is only visible when the water level is very low called the Altar of ${RealGods}", weight: 1 },
+	{ value: "there's a ruined ${aristocratic_robbed_place_religious} where a bell rings, untouched by human hands", weight: 1 },
   ],
 
   wilds_locn: [
@@ -10790,6 +10810,7 @@ celebration_type: [
 	{ value: "Garden of Light", weight: 1 },
 	{ value: "House of Song", weight: 1 },
 	{ value: "Mansion of Light", weight: 1 },
+	{ value: "Blessed Realm", weight: 1 },
   ],
   // a place of the dead the ancientpeople named the underworld_names
   underworld_names: [
@@ -11837,6 +11858,7 @@ ship_type: [
 	{ value: "by meditating upon the holiness of mountains", weight: 1 },
 	{ value: "by waiting until the Hour of the ${AnimalHour}", weight: 1 },
 	{ value: "by telling it a joke about ${a:humanoid} and ${a:QuickNPCJob}", weight: 1 },
+	{ value: "by reciting the moral of the fable of the ${AnimalMammal} and the ${AnimalBird}", weight: 1 },
   ],
 
 
@@ -12497,6 +12519,7 @@ door_type: [
 	{ value: "Ragadorn", weight: 1 },
 	{ value: "Okkenfels", weight: 1 },
 	{ value: "Errorr", weight: 1 },
+	{ value: "Sackar", weight: 1 },
   ],
   
    flowers_singular: [
@@ -12774,6 +12797,7 @@ door_type: [
 	{ value: "Saint ${SaintName} was born, or martyred, or resurrected, it's not quite clear", weight: 1 },
 	{ value: "${heroes_and_villains} was visited by ${FantasyGods} in the guise of ${a:AnimalThroneType}", weight: 1 },
 	{ value: "${dragon_name} the great wyrm was defeated by a pack of wolves and snake-eagles", weight: 1 },
+	{ value: "${heroes_and_villains} captured the ${daemontype} daemon ${DemonName} by a ruse, later burying them alive near ${landmark}", weight: 1 },
   ],
   
   shrine_type: [
@@ -13505,6 +13529,7 @@ door_type: [
 	{ value: "smoking weapons with keen edges have become all the rage", weight: 1 },
 	{ value: "the palace is abuzz over an imperial spy who was discovered with orders in the ${handwriting} of the ${uc:Colors} ${uc:RoyalTitleFemale}", weight: 1 },
 	{ value: "a satiric puppet show depicting a king showering gold on worthless charlatans and useless experiments has landed the troupe in jail", weight: 1 },
+	{ value: "a daemonic piper riding ${a:AnimalMount} has drawn all the children irresistibly out of the city", weight: 1 },
   ],
   
   damaged_city_thing: [
