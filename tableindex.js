@@ -122,6 +122,7 @@ const tables = {
 	{ value: " where the ${herdanimal} have their own priests and philosophers", weight: 1 },
 	{ value: " with its kites that shriek and whistle", weight: 1 },
 	{ value: " 'where flowers put forth a fairer hue / and everything is strange and new'", weight: 1 },
+	{ value: " where the tides toss up spray to the height of a cathedral", weight: 1 },
   ],
 
   herdwith: [
@@ -3251,6 +3252,7 @@ const tables = {
 	{ value: "why the beautiful gods give birth to monsters", weight: 1 },
 	{ value: "time not measured in sunrises and sunsets", weight: 1 },
 	{ value: "the small miracles that ${a:fairy_folk} can perform", weight: 1 },
+	{ value: "what happened to the fabulous green sphinx moth", weight: 1 },
   ],
 
   landmark: [
@@ -4224,6 +4226,7 @@ const tables = {
 	{ value: "${EgyptianNameMale}, a ${foreignland} sphinx who must hear riddles to survive,", weight: 1 },
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who cursed every piece of its treasure after being compelled by ${vancian_wizards} to give away its hoard,", weight: 1 },
 	{ value: "Apu the Luck-bringer, ${a:daemontype} daemon,", weight: 1 },
+	{ value: "an ancient ${humanoid_monsters} known as the Librarian, originally from the ${landscape_types_basic} of ${foreignland},", weight: 1 },
   ],
   
   monstertype_ntc: [
@@ -4249,6 +4252,7 @@ const tables = {
 	{ value: "${EgyptianNameMale}, a ${foreignland} sphinx who must hear riddles to survive", weight: 1 },
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who cursed every piece of its treasure after being compelled by ${vancian_wizards} to give away its hoard", weight: 1 },
 	{ value: "Apu the Luck-bringer, ${a:daemontype} daemon", weight: 1 },
+	{ value: "an ancient ${humanoid_monsters} known as the Librarian", weight: 1 },
   ],
 
   monstervalue: [
@@ -4313,6 +4317,7 @@ const tables = {
 	{ value: "massive upside-down trees rooted in the inscrutable heights", weight: 1 },
 	{ value: "corrupted animals", weight: 1 },
 	{ value: "strange gigantic toads", weight: 1 },
+	{ value: "forked red lightning", weight: 1 },
   ],
 
   nontextualprophecysource: [
@@ -5515,6 +5520,8 @@ const tables = {
 	{ value: "those who spy ${a:fairy_folk} become steadfast, prepared to face evil hap or good", weight: 1 },
 	{ value: "seventy-two friendly voices must declare the innocence of a plaintiff before the tribunal", weight: 1 },
 	{ value: "the warlike people resolve matters by combat because they cannot believe a brave man deserves to suffer or a coward deserves to live", weight: 1 },
+	{ value: "shepherds pasture their elephants in fields where the soil is full of tiny ${Jewels} which are watched over by giant man-eating ${AnimalBird}s; inevitably, the elephants consume some of the soil and later their dung is rifled through for gems", weight: 1 },
+	{ value: "people venerate the kanaka snake, also called Saint ${po:SaintName} Snake, as a friend to man because it exclusively hunts and preys upon other snakes", weight: 1 },
   ],
 
   strangenoises: [
@@ -12841,6 +12848,7 @@ door_type: [
 	{ value: "${fairy_number} ${Colors} candles", weight: 1 },
 	{ value: "a single ${flowers_singular}", weight: 1 },
 	{ value: "${a:magicalcommonobject}, the symbolism obscure", weight: 1 },
+	{ value: "a crude ${AnimalMain} made from clay", weight: 1 },
   ],
   
   hieroglyphics: [
@@ -12857,11 +12865,13 @@ door_type: [
   hiero_a: [
     { value: "a somber ${magicusertype} wearing ${Colors} robes", weight: 1 },
 	{ value: "warriors armed with ${HaftedWeapons} and ${BladedWeapons_Sword}", weight: 1 },
+	{ value: "${fairy_number} long-maned horse-sorcerers", weight: 1 },
   ],
   
   hiero_b: [
     { value: "a horde of ${huntingmonster}", weight: 1 },
 	{ value: "a towering ${humanoid_monsters}", weight: 1 },
+	{ value: "${fairy_number} snarling wolf-mages", weight: 1 },
   ],
   
    lair_synonyms: [
@@ -13543,6 +13553,7 @@ door_type: [
 	{ value: "the palace is abuzz over an imperial spy who was discovered with orders in the ${handwriting} of the ${uc:Colors} ${uc:RoyalTitleFemale}", weight: 1 },
 	{ value: "a satiric puppet show depicting a king showering gold on worthless charlatans and useless experiments has landed the troupe in jail", weight: 1 },
 	{ value: "a daemonic piper riding ${a:AnimalMount} has drawn all the children irresistibly out of the city", weight: 1 },
+	{ value: "${gates_prefix} Gate, long-sealed, has been opened, causing the ${urbn_traders} situated in expensive stalls near the Gate ${gates_suffix} to complain", weight: 1 },
   ],
   
   damaged_city_thing: [
