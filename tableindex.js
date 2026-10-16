@@ -2050,6 +2050,7 @@ const tables = {
 	{ value: "false hair and false teeth", weight: 1 },
 	{ value: "floor-length hair and blackened teeth", weight: 1 },
 	{ value: "${alcohol_liquor} on their breath", weight: 1 },
+	{ value: "eyes full of sullen fire", weight: 1 },
   ],
 
   fd_tale: [
@@ -2474,6 +2475,7 @@ const tables = {
 	{ value: "now bears a grim tattoo of ${tattoos} showing their allegiance to some new dark master", weight: 1 },
 	{ value: "their soul is now branded with the ownership mark of ${fairy_folk_named}", weight: 1 },
 	{ value: "joined the Huntsman to chase the red-deer forever more", weight: 1 },
+	{ value: "did not see another morning", weight: 1 },
   ],
 
   hero_goal: [
@@ -3419,6 +3421,7 @@ const tables = {
 	{ value: "the spring at Coorigil", weight: 1 },
 	{ value: "the Drachenfels", weight: 1 },
 	{ value: "the Devil's Ladder", weight: 1 },
+	{ value: "the Cave of the Cats", weight: 1 },
   ],
 
   lawnornament: [
@@ -6595,6 +6598,7 @@ trap_location: [
 	{ value: "a group of shape-changing ${herdanimal} who have mastered every part of looking human except the feet", weight: 1 },
 	{ value: "the Dame Etelina and her mutilated paramour", weight: 1 },
 	{ value: "a trio of hobbits and their mount, a war-boar named Stench", weight: 1 },
+	{ value: "conscripts who have maimed themselves to procure their liberty", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -6756,6 +6760,7 @@ trap_location: [
 	{ value: "a great tamer of monsters", weight: 1 },
 	{ value: "a breeder of ${AnimalCategory}", weight: 1 },
 	{ value: "a horror-struck monarch in royal clothes", weight: 1 },
+	{ value: "a Talking Horse who shrugs off whip and spur", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -7006,6 +7011,7 @@ trap_location: [
 	{ value: "holds burning coals in their hands until they grow cold", weight: 1 },
 	{ value: "possesses ${a:MusicalInstrument} that will call Death's hunting-steeds", weight: 1 },
 	{ value: "seeks atonement for past despicable dark deeds through prayer and toil", weight: 1 },
+	{ value: "is seeking ${a:humanoid} with the strength of ${a:AnimalBigCat}, the soul of ${a:AnimalCanine} and the heart of ${a:AnimalSnake}", weight: 1 },
 	
   ],
 
@@ -7283,6 +7289,8 @@ trap_location: [
 	{ value: "a traveler saw ${a:humanoid} driving a flying ${vehicle} pulled by bats", weight: 1 },
 	{ value: "there's a huge stone at the bottom of a river which is only visible when the water level is very low called the Altar of ${RealGods}", weight: 1 },
 	{ value: "there's a ruined ${aristocratic_robbed_place_religious} where a bell rings, untouched by human hands", weight: 1 },
+	{ value: "there stands an evil ${aristocratic_home}, a harboring place fo thieves and ${criminals} and other ne'er-do-wells", weight: 1 },
+	{ value: "${a:MarbleTypes} marble statue of ${ntc} defies both the tooth of time and the hand of man", weight: 1 },
   ],
 
   wilds_locn: [
@@ -7430,6 +7438,7 @@ trap_location: [
     { value: "grow old", weight: 1 },
     { value: "must pass through the ${landscape_types_artificial} where ${huntingmonster} ${between_landmarks_monster_verb}", weight: 20 },
 	{ value: "will pass ${a:shrine_adj} ${shrine_type} that marks where ${shrine}", weight: 10 },
+	{ value: "must walk among the ancient ${historicalinfrastructure} and ${historicalinfrastructure} built by ${humanoid_monsters} masons or their ${humanoid} slaves ${historicalage}", weight: 10 },
   ],
   
   between_landmarks_monster_verb: [
