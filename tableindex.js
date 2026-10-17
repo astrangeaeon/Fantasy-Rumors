@@ -989,6 +989,8 @@ const tables = {
 	{ value: "the Genius of Pranks", weight: 1 },
 	{ value: "the Crawling Fire", weight: 1 },
 	{ value: "the Crowned and Conquering Child", weight: 1 },
+	{ value: "Those Who Came Before", weight: 1 },
+	{ value: "Those Still to Come", weight: 1 },
   ],
 
   criminals: [
@@ -2477,6 +2479,7 @@ const tables = {
 	{ value: "their soul is now branded with the ownership mark of ${fairy_folk_named}", weight: 1 },
 	{ value: "joined the Huntsman to chase the red-deer forever more", weight: 1 },
 	{ value: "did not see another morning", weight: 1 },
+	{ value: "went on to found the famous company of singing ${violent_profession_plural} known as ${brigandnames}", weight: 1 },
   ],
 
   hero_goal: [
@@ -2540,6 +2543,8 @@ const tables = {
 	{ value: "back when tigers used to smoke", weight: 1 },
 	{ value: "back when miracles were as common as fruit pies", weight: 1 },
 	{ value: "during the Age of the Black Moon", weight: 1 },
+	{ value: "back before the city of ${urbn_cityname} was demolished by ${huntingmonster}", weight: 1 },
+	{ value: "during the reign of King ${FantasyNameMale} and Queen ${FantasyNameFemale}", weight: 1 },
   ],
   
   historicalbuilders: [
@@ -2577,6 +2582,7 @@ const tables = {
     { value: "lighthouses", weight: 1 },
     { value: "mausoleums", weight: 1 },
 	{ value: "bell towers", weight: 1 },
+	{ value: "canals", weight: 1 },
   ],
   
   historicalinfrastructure_modern_singular: [
@@ -2629,6 +2635,7 @@ const tables = {
     { value: "Lighthouses", weight: 1 },
     { value: "Mausoleums", weight: 1 },
 	{ value: "Bell Towers", weight: 1 },
+	{ value: "Canals", weight: 1 },
   ],
 
   historicalperson: [
@@ -3253,6 +3260,7 @@ const tables = {
 	{ value: "time not measured in sunrises and sunsets", weight: 1 },
 	{ value: "the small miracles that ${a:fairy_folk} can perform", weight: 1 },
 	{ value: "what happened to the fabulous green sphinx moth", weight: 1 },
+	{ value: "Those Still to Come", weight: 1 },
   ],
 
   landmark: [
@@ -3761,6 +3769,7 @@ const tables = {
 	{ value: "${a:QuickNPC} has put a bell outside their home declaring that any who seek justice have but to ring it", weight: 1 },
 	{ value: "each dawn brings word of another townsperson who has been transformed into ${a:AnimalFarm} overnight", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, saw a palace of glass floating among the clouds to the ${CompassDirectionPrimary}", weight: 1 },
+	{ value: "${FantasyName}, a local ${QuickNPCJob}, boarded up their well after hearing a noise like ${strangenoises} coming up from it", weight: 1 },
   ],
 
   localtopic: [
@@ -4913,6 +4922,7 @@ const tables = {
 	{ value: "immurement within the walls of ${a:urbn_place}", weight: 1 },
 	{ value: "finger torture", weight: 1 },
 	{ value: "amputation of the ears, nose, tongue and right hand", weight: 1 },
+	{ value: "being made to carry bags of soil and clay", weight: 1 },
   ],
 
   rm: [
@@ -5096,6 +5106,7 @@ const tables = {
 	{ value: "where ${duo_name1} and ${duo_name2} have been hiding out after looting the Old Summer Palace", weight: 1 },
 	{ value: "that gets struck continuously by mystical lightning bolts", weight: 1 },
 	{ value: "which contains the eye of a god which allows one to see anything that transpires in darkness, no matter the distance", weight: 1 },
+	{ value: "that's infested with ${trap_builder} that have been polymorphed into bats", weight: 1 },
   ],
 
   I_herd: [
@@ -5523,6 +5534,7 @@ const tables = {
 	{ value: "the warlike people resolve matters by combat because they cannot believe a brave man deserves to suffer or a coward deserves to live", weight: 1 },
 	{ value: "shepherds pasture their elephants in fields where the soil is full of tiny ${Jewels} which are watched over by giant man-eating ${AnimalBird}s; inevitably, the elephants consume some of the soil and later their dung is rifled through for gems", weight: 1 },
 	{ value: "people venerate the kanaka snake, also called Saint ${po:SaintName} Snake, as a friend to man because it exclusively hunts and preys upon other snakes", weight: 1 },
+	{ value: "the word for to dream means to see god", weight: 1 },
   ],
 
   strangenoises: [
@@ -6230,6 +6242,7 @@ trap_location: [
 	{ value: "Sateeka", weight: 1 },
 	{ value: "Gemblours", weight: 1 },
 	{ value: "Kedron", weight: 1 },
+	{ value: "Oliban", weight: 1 },
   ],
 
   urbn_citynickname: [
@@ -6607,6 +6620,7 @@ trap_location: [
 	{ value: "the Dame Etelina and her mutilated paramour", weight: 1 },
 	{ value: "a trio of hobbits and their mount, a war-boar named Stench", weight: 1 },
 	{ value: "conscripts who have maimed themselves to procure their liberty", weight: 1 },
+	{ value: "a famous company of singing ${violent_profession_plural}", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -6769,6 +6783,7 @@ trap_location: [
 	{ value: "a breeder of ${AnimalCategory}", weight: 1 },
 	{ value: "a horror-struck monarch in royal clothes", weight: 1 },
 	{ value: "a Talking Horse who shrugs off whip and spur", weight: 1 },
+	{ value: "a discalced ${religious_ranks}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -9649,7 +9664,7 @@ saint_curse: [
     { value: "diviner", weight: 1 },
 	{ value: "soothsayer", weight: 1 },
     { value: "prophet", weight: 1 },
-	{ value: "prophetess", weight: 1 },
+	//{ value: "prophetess", weight: 1 },
     { value: "fortune-teller", weight: 1 },
 	{ value: "oracle", weight: 1 },
     { value: "sibyl", weight: 1 },
@@ -11237,6 +11252,7 @@ vehicle: [
 	{ value: "from the Age of Miracles", weight: 1 },
 	{ value: "from a mountain of water", weight: 1 },
 	{ value: "from a well in ${slumberplace} that's fed by a subterranean channel from paradise", weight: 1 },
+	{ value: "from the bottom of the ocean", weight: 1 },
   ],
   
   exotic_water_types: [
@@ -12673,6 +12689,7 @@ door_type: [
 	{ value: "cleric", weight: 1 },
 	{ value: "vicar", weight: 1 },
 	{ value: "monk", weight: 1 },
+	{ value: "friar", weight: 1 },
   ],
   
   random_dungeons: [
@@ -13555,6 +13572,7 @@ door_type: [
 	{ value: "a satiric puppet show depicting a king showering gold on worthless charlatans and useless experiments has landed the troupe in jail", weight: 1 },
 	{ value: "a daemonic piper riding ${a:AnimalMount} has drawn all the children irresistibly out of the city", weight: 1 },
 	{ value: "${gates_prefix} Gate, long-sealed, has been opened, causing the ${urbn_traders} situated in expensive stalls near the Gate ${gates_suffix} to complain", weight: 1 },
+	{ value: "as a symbol of high justice a permanent and busy gallows has been set up in the center of town", weight: 1 },
   ],
   
   damaged_city_thing: [
