@@ -123,6 +123,7 @@ const tables = {
 	{ value: " with its kites that shriek and whistle", weight: 1 },
 	{ value: " 'where flowers put forth a fairer hue / and everything is strange and new'", weight: 1 },
 	{ value: " where the tides toss up spray to the height of a cathedral", weight: 1 },
+	{ value: " country of ten thousand chariots", weight: 1 },
   ],
 
   herdwith: [
@@ -715,6 +716,8 @@ const tables = {
 	{ value: "the Soldiers of Misfortune", weight: 1 },
 	{ value: "the Bright Swords", weight: 1 },
 	{ value: "the Clean Hands Gang", weight: 1 },
+	{ value: "the Husbands of ${FantasyGodNameFemale}", weight: 1 },
+	{ value: "the Brides of ${FantasyGodNameMale}", weight: 1 },
   ],
 
   buryingplace: [
@@ -854,6 +857,7 @@ const tables = {
 	{ value: "rare coins of purple gold", weight: 1 },
 	{ value: "stones chipped off the Clashing Rocks in the Age of Miracles that did not become earth elementals", weight: 1 },
 	{ value: "the auburn hair of maidens", weight: 1 },
+	{ value: "ghosts of rain from the Baarish Desert", weight: 1 },
   ],
 
   construction_help: [
@@ -991,6 +995,7 @@ const tables = {
 	{ value: "the Crowned and Conquering Child", weight: 1 },
 	{ value: "Those Who Came Before", weight: 1 },
 	{ value: "Those Still to Come", weight: 1 },
+	{ value: "the worst and darkest darkness in the world", weight: 1 },
   ],
 
   criminals: [
@@ -1417,6 +1422,8 @@ const tables = {
 	{ value: "Sol ${tc:AnimalMain}-Shadow", weight: 1 },
 	{ value: "Gil the Clockmaker", weight: 1 },
 	{ value: "The Hero with a Thousand Faces", weight: 1 },
+	{ value: "Finn the Human", weight: 1 },
+	{ value: "Carlos the Dwarf", weight: 1 },
   ],
 
   deadadventurerloot: [
@@ -2480,6 +2487,7 @@ const tables = {
 	{ value: "joined the Huntsman to chase the red-deer forever more", weight: 1 },
 	{ value: "did not see another morning", weight: 1 },
 	{ value: "went on to found the famous company of singing ${violent_profession_plural} known as ${brigandnames}", weight: 1 },
+	{ value: "now languishes in ${a:DungeonRoom} lit by ${light_source}", weight: 1 },
   ],
 
   hero_goal: [
@@ -3134,6 +3142,8 @@ const tables = {
 	{ value: "Ko Hung's empty clothes", weight: 1 },
 	{ value: "a 'tredusa' whose gaze turns its victims into topiary", weight: 1 },
 	{ value: "a strange beast whose cry sounds like thirty hunting hounds", weight: 1 },
+	{ value: "a false ${false_monsters}", weight: 1 },
+	{ value: "a lesser ${lesser_monsters}", weight: 1 },
   ],
 
   island_riches: [
@@ -3632,6 +3642,7 @@ const tables = {
 	{ value: "be like ${heroes_and_villains} who always adventured in their finest clothes", weight: 1 },
 	{ value: "judge the living and the dead", weight: 1 },
 	{ value: "join the dancers of ${slumberplace} who yearn to spend eternity in their mad gambols", weight: 1 },
+	{ value: "keep a small dragon in their ${local_domestic_spaces} tethered with a chain of gold", weight: 1 },
   ],
 
   local_racist: [
@@ -4327,6 +4338,7 @@ const tables = {
 	{ value: "corrupted animals", weight: 1 },
 	{ value: "strange gigantic toads", weight: 1 },
 	{ value: "forked red lightning", weight: 1 },
+	{ value: "red and white lions", weight: 1 },
   ],
 
   nontextualprophecysource: [
@@ -5534,7 +5546,8 @@ const tables = {
 	{ value: "the warlike people resolve matters by combat because they cannot believe a brave man deserves to suffer or a coward deserves to live", weight: 1 },
 	{ value: "shepherds pasture their elephants in fields where the soil is full of tiny ${Jewels} which are watched over by giant man-eating ${AnimalBird}s; inevitably, the elephants consume some of the soil and later their dung is rifled through for gems", weight: 1 },
 	{ value: "people venerate the kanaka snake, also called Saint ${po:SaintName} Snake, as a friend to man because it exclusively hunts and preys upon other snakes", weight: 1 },
-	{ value: "the word for to dream means to see god", weight: 1 },
+	{ value: "the ${ancientpeople_singular} word for to dream means to see god", weight: 1 },
+	{ value: "the buildings are all made from the wrecks of ships", weight: 1 },
   ],
 
   strangenoises: [
@@ -6171,6 +6184,8 @@ trap_location: [
 	{ value: "a gang of ${trap_quality} ${criminals} led by ${a:humanoid} ${facial_desc} has its hideout beneath ${a:urbn_place} in ${urbn_cityname}", weight: 1 },
 	{ value: "no one can play the ${MusicalInstrument} like the hunchback of ${urbn_cityname}!", weight: 1 },
 	{ value: "in ${urbn_cityname}, the bells of the ${aristocratic_robbed_place_religious} ring so loudly that they shatter the bones of birds", weight: 1 },
+	{ value: "a dozen mournful pilgrims from ${a:aristocratic_robbed_place_religious} in ${foreign_adj}${foreignland} led by ${a:religious_ranks} ${facial_desc} seek the ${shrine_type} marking where ${shrine}, but they have been stuck sleeping in the streets outside ${a:urbn_place} due to the intervening ${landscape_types_basic} being infested with ${huntingmonster} and other dangers", weight: 2 },
+	{ value: "the ancient ${ancientpeople}, when they were first brought to the gates of the city of ${urbn_cityname}, called it Akmong, meaning 'an evil black dream'", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6621,6 +6636,7 @@ trap_location: [
 	{ value: "a trio of hobbits and their mount, a war-boar named Stench", weight: 1 },
 	{ value: "conscripts who have maimed themselves to procure their liberty", weight: 1 },
 	{ value: "a famous company of singing ${violent_profession_plural}", weight: 1 },
+	{ value: "nymphs of the ${landscape_types_artificial}", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -7035,6 +7051,8 @@ trap_location: [
 	{ value: "possesses ${a:MusicalInstrument} that will call Death's hunting-steeds", weight: 1 },
 	{ value: "seeks atonement for past despicable dark deeds through prayer and toil", weight: 1 },
 	{ value: "is seeking ${a:humanoid} with the strength of ${a:AnimalBigCat}, the soul of ${a:AnimalCanine} and the heart of ${a:AnimalSnake}", weight: 1 },
+	{ value: "teaches the difference between a false ${false_monsters} and a true", weight: 1 },
+	{ value: "teaches the difference between a lesser ${lesser_monsters} and their more dangerous cousins", weight: 1 },
 	
   ],
 
@@ -8259,6 +8277,7 @@ trap_location: [
 	{ value: "Virgil", weight: 1 },
 	{ value: "Andujar", weight: 1 },
 	{ value: "Bailen", weight: 1 },
+	{ value: "Orvar", weight: 1 },
   ],
 
   FantasyNameFemale: [
@@ -9560,6 +9579,7 @@ tail_type: [
 	{ value: "hair and animal fur", weight: 1 },
 	{ value: "coins and other metals", weight: 1 },
 	{ value: "gold coins and jewels", weight: 1 },
+	{ value: "${AnimalInsect}s and other insects", weight: 1 },
   ],
   
   short_inherited_trait: [
@@ -9603,6 +9623,7 @@ saint_curse: [
 	{ value: "to seek out and collect ${collection}", weight: 1 },
 	{ value: "to see the constellation known as ${constellation} even during the day", weight: 1 },
 	{ value: "to have trouble sleeping", weight: 1 },
+	{ value: "to only gain sustenance from swallowing ${AnimalInsect}s and other insects", weight: 1 },
   ],
   
   light_type: [
@@ -11436,6 +11457,7 @@ ship_type: [
 	{ value: "ornamental", weight: 1 },
 	{ value: "second-and-thirdhand", weight: 1 },
 	{ value: "luxurious", weight: 1 },
+	{ value: "counterfeit", weight: 1 },
   ],
   
   ship_merchandise_fruit_adj: [
@@ -11446,6 +11468,7 @@ ship_type: [
 	{ value: "miniature", weight: 1 },
 	{ value: "misshapen", weight: 1 },
 	{ value: "artificial", weight: 1 },
+	{ value: "stone", weight: 1 },
   ],
   
   ship_cargo_animal_type: [
@@ -11472,6 +11495,7 @@ ship_type: [
 	{ value: "trick ${shield_type}s that shatter like ice at the first blow", weight: 1 },
 	{ value: "wooden puzzles depicting ${painting_subject_matter}", weight: 1 },
 	{ value: "${huntingmonster_singular} costumes", weight: 1 },
+	{ value: "painted ${classic_classes} toys and accessories", weight: 1 },
   ],
   
   ship_cargo_wizard_type: [
@@ -11489,6 +11513,8 @@ ship_type: [
 	{ value: "armor from the ${underworld_names}", weight: 1 },
 	{ value: "a sinister ${Metallic} crown", weight: 1 },
 	{ value: "an enchanted ${MusicalInstrument} that can play '${ballad_titles}' all by itself", weight: 1 },
+	{ value: "the living head of ${a:AnimalBigCat} that purrs and roars", weight: 1 },
+	{ value: "an eerie ${Colors} flame", weight: 1 },
   ],
   
   ship_cargo_novelty_type: [
@@ -11499,6 +11525,7 @@ ship_type: [
 	{ value: "${liquid_containers_personal}s of bottled ${Colors} light from a star named Dilgan or Cetus", weight: 1 },
 	{ value: "${ship_cargo_container} of potent cosmetics from the enchanted ${otherworld_names}", weight: 1 },
 	{ value: "${ship_cargo_container} of decorative ivory ${Tools}s", weight: 1 },
+	{ value: "${DecorativeStone} idols of strange gods", weight: 1 },
   ],
   
   ship_cargo_expedition_type: [
@@ -12557,6 +12584,8 @@ door_type: [
 	{ value: "Okkenfels", weight: 1 },
 	{ value: "Errorr", weight: 1 },
 	{ value: "Sackar", weight: 1 },
+	{ value: "Vimmerby", weight: 1 },
+	{ value: "Wild Rose Valley", weight: 1 },
   ],
   
    flowers_singular: [
@@ -13690,6 +13719,30 @@ door_type: [
 	{ value: "kingdom", weight: 1 },
 	{ value: "barony", weight: 1 },
 	{ value: "domain", weight: 1 },
+  ],
+  //know the difference between a false false_monsters and a true
+  false_monsters: [
+    { value: "angel", weight: 1 },
+	{ value: "dryad", weight: 1 },
+	{ value: "naga", weight: 1 },
+	{ value: "vampire", weight: 1 },
+	{ value: "unicorn", weight: 1 },
+	{ value: "mermaid", weight: 1 },
+	{ value: "basilisk", weight: 1 },
+	{ value: "dragon", weight: 1 },
+	{ value: "sphinx", weight: 1 },
+	{ value: "${Colors} ooze", weight: 1 },
+  ],
+  //know difference between lesser lesser_monsters and more dangerous cousins
+  lesser_monsters: [
+    { value: "${daemontype} daemon", weight: 1 },
+	{ value: "${elemntl_type} elemental", weight: 1 },
+	{ value: "hydra", weight: 1 },
+	{ value: "basilisk", weight: 1 },
+	{ value: "chimera", weight: 1 },
+	{ value: "manticore", weight: 1 },
+	{ value: "devil", weight: 1 },
+	{ value: "harpy", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
