@@ -124,6 +124,8 @@ const tables = {
 	{ value: " 'where flowers put forth a fairer hue / and everything is strange and new'", weight: 1 },
 	{ value: " where the tides toss up spray to the height of a cathedral", weight: 1 },
 	{ value: " country of ten thousand chariots", weight: 1 },
+	{ value: " where the birds make their nests with the hair of dead maidens", weight: 1 },
+	{ value: " where the deer and the antelope play", weight: 1 },
   ],
 
   herdwith: [
@@ -410,6 +412,7 @@ const tables = {
 	{ value: " at whose birth the ${AnimalBird}s circled the island of Delos seven times and sounded songs of joy,", weight: 1 },
 	{ value: " who could read a man's soul better than you or I could read a book,", weight: 1 },
 	{ value: " whose footprints scorched the soil when they left paradise,", weight: 1 },
+	{ value: " who had more wives and slayed more dragons than they had fingers on their hands,", weight: 1 },
   ],
 
   hundred_words: [
@@ -585,6 +588,7 @@ const tables = {
 	{ value: "the face of ${a:AnimalMain}", weight: 1 },
     { value: "utter darkness", weight: 1 },
     { value: "vistas of the sky at night", weight: 1 },
+	{ value: "the constellation known as ${constellation}", weight: 1 },
   ],
 
   beyondreward: [
@@ -996,6 +1000,7 @@ const tables = {
 	{ value: "Those Who Came Before", weight: 1 },
 	{ value: "Those Still to Come", weight: 1 },
 	{ value: "the worst and darkest darkness in the world", weight: 1 },
+	{ value: "the Corrector of Errors", weight: 1 },
   ],
 
   criminals: [
@@ -2012,6 +2017,7 @@ const tables = {
 	{ value: "wearing a helm made of crystal", weight: 1 },
 	{ value: "wearing royal garments", weight: 1 },
 	{ value: "wearing garments fragrant with the odors of paradise", weight: 1 },
+	{ value: "wearing silk and ${Jewels}", weight: 1 },
   ],
 
   fd: [
@@ -2061,6 +2067,7 @@ const tables = {
 	{ value: "floor-length hair and blackened teeth", weight: 1 },
 	{ value: "${alcohol_liquor} on their breath", weight: 1 },
 	{ value: "eyes full of sullen fire", weight: 1 },
+	{ value: "the Katla mark on the back of their neck", weight: 1 },
   ],
 
   fd_tale: [
@@ -2148,6 +2155,7 @@ const tables = {
 	{ value: "living dungeons who make use of adventurers and dragons to reproduce, like flowers use bees to pollinate", weight: 1 },
 	{ value: "a wedding between a green fairy and a prince whose happiness was so great that all who heard it fell asleep for three days and nights", weight: 1 },
 	{ value: "a greedy bishop who stood protected in a circle of flame until the rats chewed through it", weight: 1 },
+	{ value: "a god who dug hundreds of treasure pits into the earth when the world was still soft and young", weight: 1 },
   ],
 
   feature: [
@@ -2338,6 +2346,7 @@ const tables = {
 	{ value: "retrieve a copper ${coins_singular} from the Fountain of the ${tc:AnimalBird} in the city of ${urbn_cityname}", weight: 1 },
 	{ value: "wait at the crossroads near ${landmark} and challenge all who pass by to a duel until ${fairy_number} victories are obtained", weight: 1 },
 	{ value: "pass through the Gate ${gates_suffix} into the holy city of ${urbn_cityname}", weight: 1 },
+	{ value: "travel to the resting place of ${ntc} in ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
   ],
 
   geyserspray: [
@@ -4727,6 +4736,7 @@ const tables = {
 	{ value: "Sword of Virtue", weight: 1 },
 	{ value: "Scepter of Dominion", weight: 1 },
 	{ value: "Book of the Law", weight: 1 },
+	{ value: "Battlehorn of Cormyn", weight: 1 },
   ],
 
   prophecyfate: [
@@ -5314,6 +5324,8 @@ const tables = {
     { value: "writes fantasy stories starring great adventurers", weight: 1 },
     { value: "writes really bad erotic poetry", weight: 1 },
 	{ value: "raises ${AnimalFarm}s that all have blackleg", weight: 1 },
+	{ value: "forces their ${FamilyMember} to live at the bottom of a deep hole with a long ladder the only way up", weight: 1 },
+	{ value: "eats a disgusting meat product called horse bacon", weight: 1 },
   ],
 
   sleepwalkers: [
@@ -5426,6 +5438,7 @@ const tables = {
 	{ value: "a bejeweled collar and leash", weight: 1 },
 	{ value: "a lucky mallet dropped by an oni that grants a wish", weight: 1 },
 	{ value: "a catfish that speaks the tongues of man", weight: 1 },
+	{ value: "a medallion of Saint ${SaintName}, the patron saint of ${criminals} and ${QuickNPCJobPoor}s}", weight: 1 },
   ],
 
   strangecustom: [
@@ -5548,6 +5561,7 @@ const tables = {
 	{ value: "people venerate the kanaka snake, also called Saint ${po:SaintName} Snake, as a friend to man because it exclusively hunts and preys upon other snakes", weight: 1 },
 	{ value: "the ${ancientpeople_singular} word for to dream means to see god", weight: 1 },
 	{ value: "the buildings are all made from the wrecks of ships", weight: 1 },
+	{ value: "the priests have sacrficed ${a:AnimalSacrifice_adj} ${AnimalSacrifice} at ${boundary_times} for unbroken centuries", weight: 1 },
   ],
 
   strangenoises: [
@@ -6048,6 +6062,7 @@ trap_location: [
 	{ value: "there's ${a:DecorativeStone} ${duo_jewlery_singular} ${obj_or_room} on the ${floors} floor that is said to give the owner command over ${command_item}", weight: 1 },
 	{ value: "in ${a:DungeonRoom} on the ${floors} floor there's ${a:ship_cargo_furniture_adj} ${ship_cargo_container_singular} filled with golden ${FantasyMeal_Fruit_plural} from the Garden of ${vancian_wizards}", weight: 1 },
 	{ value: "in ${a:DungeonRoom} on the ${floors} floor ${a:QuickNPCDescriptor} ${humanoid_monsters} wears ${a:duo_clothing_adj} ${duo_clothing_singular} that imbues it with all the skills of a master ${QuickNPCJob}", weight: 1 },
+	{ value: "${a:undead_corporeal}, mindless with hunger and rage, in ${a:DungeonRoom} on the ${floors} floor wears the nest-shaped Crown of Birds, unaware of its true power", weight: 1 },
   ],
 
   treasureA: [
@@ -7087,6 +7102,7 @@ trap_location: [
 	{ value: "a massive cauldron that can summon ${severe_weather}s", weight: 1 },
 	{ value: "${a:magicalcommonobject} left by ${ancientpeople_singular} mariners {when} ago", weight: 1 },
 	{ value: "a grotesque deity, one head a serpent and the other head a sword,", weight: 1 },
+	{ value: "a huge stone body part", weight: 1 },
   ],
 
   weapon_land_type: [
@@ -11644,6 +11660,7 @@ ship_type: [
 	{ value: "the ${rune_origin} runes for ${rune_concept} and ${rune_structure}", weight: 1 },
 	{ value: "the ${rune_origin} warning runes for ${rune_concept} and ${rune_being}", weight: 1 },
 	{ value: "the ${rune_origin} travel runes for ${rune_concept} and ${rune_nature}", weight: 1 },
+	{ value: "the ${rune_origin} treasure runes for ${rune_concept} and ${rune_object}", weight: 1 },
   ],
   
   
@@ -11663,6 +11680,10 @@ ship_type: [
 	{ value: "${crowns_metal_type}", weight: 1 },
 	{ value: "blood", weight: 1 },
 	{ value: "power", weight: 1 },
+	{ value: "catastrophe", weight: 1 },
+	{ value: "sickness", weight: 1 },
+	{ value: "madness", weight: 1 },
+	{ value: "light", weight: 1 },
   ],
   
   rune_structure: [
@@ -11720,6 +11741,19 @@ ship_type: [
 	{ value: "river", weight: 1 },
 	{ value: "cave", weight: 1 },
 	{ value: "swamp", weight: 1 },
+  ],
+  
+  rune_object: [
+	{ value: "shield", weight: 1 },
+	{ value: "sword", weight: 1 },
+	{ value: "helmet", weight: 1 },
+	{ value: "bow and arrow", weight: 1 },
+	{ value: "armor", weight: 1 },
+	{ value: "boots", weight: 1 },
+	{ value: "ring", weight: 1 },
+	{ value: "necklace", weight: 1 },
+	{ value: "staff", weight: 1 },
+	{ value: "hammer", weight: 1 },
   ],
   
   aristocratic_extra: [
@@ -13577,6 +13611,7 @@ door_type: [
 	{ value: "known to be in the possession of ${monstertype_ntc}", weight: 2 },
 	{ value: "last seen in ${classic_dungeons}", weight: 2 },
 	{ value: "found in the lair of the great dragon ${dragon_name}", weight: 2 },
+	{ value: "buried near ${landmark}", weight: 2 },
   ],
   
   alt_metals: [
