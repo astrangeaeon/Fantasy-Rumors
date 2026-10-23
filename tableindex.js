@@ -2451,6 +2451,7 @@ const tables = {
 	{ value: "killing a unicorn", weight: 1 },
 	{ value: "conjuring the daemon ${DemonName} who took the form of ${a:Weapons}", weight: 1 },
 	{ value: "immersing their feet in the grey ice water of the sacred river", weight: 1 },
+	{ value: "scattering ${weed_one} grass seeds around the fertile valleys and small villages of ${foreignland}", weight: 1 },
   ],
 
   hero_fate: [
@@ -3790,6 +3791,7 @@ const tables = {
 	{ value: "each dawn brings word of another townsperson who has been transformed into ${a:AnimalFarm} overnight", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, saw a palace of glass floating among the clouds to the ${CompassDirectionPrimary}", weight: 1 },
 	{ value: "${FantasyName}, a local ${QuickNPCJob}, boarded up their well after hearing a noise like ${strangenoises} coming up from it", weight: 1 },
+	{ value: "${a:AnimalPest} has begun performing Boddhist rituals at ${boundary_times} in ${po:FantasyName} ${local_domestic_spaces}", weight: 1 },
   ],
 
   localtopic: [
@@ -4442,6 +4444,7 @@ const tables = {
     { value: "train ${profession}s in the ways of old", weight: 1 },
     { value: "uncover the ${ordinal} name of ${RealGods}", weight: 1 },
 	{ value: "venerate ${relic}", weight: 1 },
+	{ value: "chronicle the life and deeds of ${ntc}", weight: 1 },
   ],
 
   order_secret: [
@@ -7348,6 +7351,8 @@ trap_location: [
 	{ value: "there's a ruined ${aristocratic_robbed_place_religious} where a bell rings, untouched by human hands", weight: 1 },
 	{ value: "there stands an evil ${aristocratic_home}, a harboring place fo thieves and ${criminals} and other ne'er-do-wells", weight: 1 },
 	{ value: "${a:MarbleTypes} marble statue of ${ntc} defies both the tooth of time and the hand of man", weight: 1 },
+	{ value: "a simple stone marks the burying place of a woodsman who feared only the sight of a thousand chimneys spewing smoke", weight: 1 },
+	{ value: "traces of a village and ${historicalinfrastructure} destroyed in some ancient war have yet to be rebuilt", weight: 1 },
   ],
 
   wilds_locn: [
@@ -10445,6 +10450,7 @@ celebration_type: [
 	{ value: "the Boulevard of ${uc:Jewels}", weight: 1 },
 	{ value: "${tc:huntingmonster_singular} Plaza", weight: 1 },
 	{ value: "${tc:FantasyMeal_Fruit} Lane", weight: 1 },
+	{ value: "${tc:po:QuickNPCJob} Way", weight: 1 },
   ],
   
    flag: [
@@ -11611,6 +11617,7 @@ ship_type: [
 	{ value: "The Lesser Miracles of Saint ${SaintName}", weight: 1 },
 	{ value: "The ${tc:ballad_subject} Who Wore White", weight: 1 },
 	{ value: "the ${uc:po:QuickNPCJob} Wish", weight: 1 },
+	{ value: "the Merchant and the ${po:QuickNPCJobPoor} Corpse", weight: 1 },
 	
   ],
   
