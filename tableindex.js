@@ -413,6 +413,8 @@ const tables = {
 	{ value: " who could read a man's soul better than you or I could read a book,", weight: 1 },
 	{ value: " whose footprints scorched the soil when they left paradise,", weight: 1 },
 	{ value: " who had more wives and slayed more dragons than they had fingers on their hands,", weight: 1 },
+	{ value: " who spoke to stones, crows and their dead wife,", weight: 1 },
+	{ value: " whose brilliant mind mastered opposition, containing both the bottomless pit and the unending stairs,", weight: 1 },
   ],
 
   hundred_words: [
@@ -873,6 +875,7 @@ const tables = {
     { value: "the guidance of a master architect and 24 elephants", weight: 1 },
     { value: "the raw muscle of a hundred thousand slaves", weight: 1 },
 	{ value: "the devils that build castles in a single night", weight: 1 },
+	{ value: "hammers and dynamite", weight: 1 },
   ],
 
   construction_motivation: [
@@ -1935,6 +1938,8 @@ const tables = {
 	{ value: "the stone eggs of basilisks", weight: 1 },
 	{ value: "cursed mirrors", weight: 1 },
 	{ value: "infected ${duo_clothing} and other garments", weight: 1 },
+	{ value: "the teeth of angels", weight: 1 },
+	{ value: "the feathers of birds", weight: 1 },
   ],
 
   excitingemployer: [
@@ -6277,7 +6282,7 @@ trap_location: [
 	{ value: "Kedron", weight: 1 },
 	{ value: "Oliban", weight: 1 },
   ],
-
+//need to overhaul nicknames, city of the x, jewels, masked beggars, and just more specific nouns like of color silk, of infrastructure, urbnplace plural, etc
   urbn_citynickname: [
     { value: "${RealGods}", weight: 1 },
     { value: "Angels", weight: 1 },
@@ -6818,6 +6823,7 @@ trap_location: [
 	{ value: "a horror-struck monarch in royal clothes", weight: 1 },
 	{ value: "a Talking Horse who shrugs off whip and spur", weight: 1 },
 	{ value: "a discalced ${religious_ranks}", weight: 1 },
+	{ value: "a succubus named Vara", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6911,6 +6917,7 @@ trap_location: [
 	{ value: "trade conspiracies using the language of the rose", weight: 1 },
 	{ value: "argue over who has cumulatively been awake the longest", weight: 1 },
 	{ value: "seek the perfect dissonance", weight: 1 },
+	{ value: "seek to trade the wisdom of the serpent for the innocence of the dove", weight: 1 },
   ],
 
   urbn_verbsingular: [
@@ -7486,12 +7493,13 @@ trap_location: [
 	{ value: "seasoned travelers say that ${huntingmonster} only travel in groups of ${fairy_number}", weight: 1 },
 	{ value: "${gates_prefix} Gate, the first of the nine gates travelers must pass through to get to that gloomy place the ${ancientpeople} called the ${underworld_names} and the only one visible by daylight can be found ${fairy_number} leagues beyond ${landmark}", weight: 1 },
 	{ value: "if you travel far enough to the north, you'll reach a point where every wind blows from the south to the south", weight: 1 },
-	{ value: "visions of ${naturalthing} and a creeping feeling of ${numinous_feeling} means one has wandered close to the sacred ${landscape_types_basic_singular} where the gods travel to swear their oaths", weight: 1 },
+	{ value: "visions of ${naturalthing} and a creeping feeling of ${numinous_feeling} means one has wandered close to the sacred ${landscape_types_basic_singular} where the gods travel in procession to swear their oaths", weight: 1 },
 	{ value: "${a:fairy_folk} who witnesses the sunrise will turn into ${thingbeyond} for ${fairy_number} days", weight: 1 },
 	{ value: "one who has spent the night under the Black Stone of Arduu on Mount ${slumberplace} will descend the next morning as either a madman, ${a:QuickNPCJobExotic} or a saint", weight: 1 },
 	{ value: "every ${daemontype} daemon was once a man who ate an immortality-granting herb that grows in ${slumberplace}, or so they say", weight: 1 },
 	{ value: "there's an isolated ${aristocratic_robbed_place_religious} where the corpulent ${religious_ranks}s are infamous for their gluttonous 30-course meals and week-long feasts", weight: 1 },
 	{ value: "there's a barren patch on a hill where the dead maidens dance and no plant or herb can grow", weight: 1 },
+	{ value: "a small patch of earth preserved by some ancient sorcery holds a half-dozen undecayed ${violent_profession_plural} in the archiac ${flag_imperial_color} colored uniforms of the ${flag_provenance}, laying where they were cut down ${when} ago", weight: 1 },
   ],
   
   
@@ -9902,11 +9910,13 @@ celebration_type: [
   art_title_abstract: [
     { value: "${art_title_abstract_first} ${art_title_abstract_subject}", weight: 1 },
 	{ value: "the ${historicalinfrastructure_capitalized} of ${foreignland}, though none are depicted", weight: 1 },
+	{ value: "the Spirit of ${urbn_cityname}", weight: 1 },
   ],
   
   art_title_abstract_first: [
     { value: "the ${uc:numinous_feeling} of", weight: 1 },
 	{ value: "At Peace with", weight: 1 },
+	{ value: "Honoring", weight: 1 },
   ],
 
    art_title_abstract_subject: [
@@ -9917,6 +9927,7 @@ celebration_type: [
 	{ value: "the Dead", weight: 1 },
 	{ value: "the Unborn", weight: 1 },
 	{ value: "Saint ${SaintName}", weight: 2 },
+	{ value: "${uc:Jewels}", weight: 2 },
   ],
 
     art_visual: [
@@ -13219,6 +13230,12 @@ door_type: [
 	{ value: "dying", weight: 1 },
   ],
   
+  statue_condition: [
+    { value: "had its head removed", weight: 1 },
+	{ value: "been toppled down", weight: 1 },
+	{ value: "been vandalized", weight: 1 },
+  ],
+  
   wizard_servant: [
     { value: "${trap_builder_servant_adj} ${trap_builder}", weight: 1 },
 	{ value: "talking ${AnimalSimian}s", weight: 1 },
@@ -13619,6 +13636,7 @@ door_type: [
 	{ value: "last seen in ${classic_dungeons}", weight: 2 },
 	{ value: "found in the lair of the great dragon ${dragon_name}", weight: 2 },
 	{ value: "buried near ${landmark}", weight: 2 },
+	{ value: "found in the closet of the Whore-Queen hidden amongst the ${duo_clothing_adj} ${duo_clothing} laid out in orderly rows", weight: 2 },
   ],
   
   alt_metals: [
@@ -13644,6 +13662,7 @@ door_type: [
 	{ value: "a daemonic piper riding ${a:AnimalMount} has drawn all the children irresistibly out of the city", weight: 1 },
 	{ value: "${gates_prefix} Gate, long-sealed, has been opened, causing the ${urbn_traders} situated in expensive stalls near the Gate ${gates_suffix} to complain", weight: 1 },
 	{ value: "as a symbol of high justice a permanent and busy gallows has been set up in the center of town", weight: 1 },
+	{ value: "the ${DecorativeStone} statue of the ${tc:statue_adj} ${statue_subject} that's stood for decades near ${urbn_street_names} has ${statue_condition}", weight: 1 },
   ],
   
   damaged_city_thing: [
