@@ -1520,6 +1520,7 @@ const tables = {
 	{ value: "a wand carved from a bone left behind after a man-eating ${po:maneating} meal", weight: 1 },
 	{ value: "a magic kangaroo bone", weight: 1 },
 	{ value: "a quiver of arrows blessed by ${a:daemontype} daemon", weight: 1 },
+	{ value: "a powerful wand carved from a branch of ${a:cod_tree_type} tree that was used to kill a snake", weight: 1 },
   ],
 
   decade_event: [
@@ -1705,6 +1706,14 @@ const tables = {
 	{ value: "scented", weight: 1 },
 	{ value: "stained", weight: 1 },
 	{ value: "ragged", weight: 1 },
+  ],
+  
+  duo_clothing_material: [
+    { value: "silk", weight: 1 },
+    { value: "cotton", weight: 1 },
+    { value: "wool", weight: 1 },
+	{ value: "linen", weight: 1 },
+	{ value: "leather", weight: 1 },
   ],
 
   duo_clothing: [
@@ -2023,6 +2032,7 @@ const tables = {
 	{ value: "wearing royal garments", weight: 1 },
 	{ value: "wearing garments fragrant with the odors of paradise", weight: 1 },
 	{ value: "wearing silk and ${Jewels}", weight: 1 },
+	{ value: "whom stern old Time has rubbed with his iron tooth", weight: 1 },
   ],
 
   fd: [
@@ -2331,6 +2341,7 @@ const tables = {
 	{ value: "the women who die before marriage become brides at their funeral", weight: 1 },
 	{ value: "the dead are buried with papers and gifts to present to the lord of the dead in the ${underworld_names}", weight: 1 },
 	{ value: "vegetable seeds are placed in the mouths of the dead that grow into communal crops called graveyard ${FantasyMeal_Vegetable} or the like", weight: 1 },
+	{ value: "the dead are clothed in feathers like birds", weight: 1 },
   ],
 
   geas: [
@@ -2503,6 +2514,7 @@ const tables = {
 	{ value: "did not see another morning", weight: 1 },
 	{ value: "went on to found the famous company of singing ${violent_profession_plural} known as ${brigandnames}", weight: 1 },
 	{ value: "now languishes in ${a:DungeonRoom} lit by ${light_source}", weight: 1 },
+	{ value: "survived, but found little reason to bless their good fortune", weight: 1 },
   ],
 
   hero_goal: [
@@ -2707,6 +2719,7 @@ const tables = {
 	{ value: "the Feast of Dolls", weight: 1 },
 	{ value: "the Feast of the Peaches", weight: 1 },
 	{ value: "the Day of Blood", weight: 1 },
+	{ value: "the Festival of the Boar", weight: 1 },
   ],
 
   holiday_celebration: [
@@ -3159,6 +3172,7 @@ const tables = {
 	{ value: "a strange beast whose cry sounds like thirty hunting hounds", weight: 1 },
 	{ value: "a false ${false_monsters}", weight: 1 },
 	{ value: "a lesser ${lesser_monsters}", weight: 1 },
+	{ value: "amphibious vampires who feed on the blood of sharks and squid", weight: 1 },
   ],
 
   island_riches: [
@@ -4093,6 +4107,8 @@ const tables = {
 	{ value: "the Friends of Basilisks", weight: 1 },
 	{ value: "the Children of the Eel", weight: 1 },
 	{ value: "the Order of the White Mountain", weight: 1 },
+	{ value: "the Sons of the ${uc:CompassDirectionPrimary}", weight: 1 },
+	{ value: "the Daughters of the ${uc:CompassDirectionPrimary}", weight: 1 },
   ],
 
   membership_initiation: [
@@ -4105,6 +4121,7 @@ const tables = {
     { value: "trade their ${body_part} with another", weight: 1 },
 	{ value: "pray ${onednine} days before ${relic}", weight: 1 },
 	{ value: "take vows of ${vows}", weight: 1 },
+	{ value: "walk barefoot down the path of sharp stones that leads to ${landmark}", weight: 1 },
   ],
 
   mindaltering: [
@@ -5334,6 +5351,7 @@ const tables = {
 	{ value: "raises ${AnimalFarm}s that all have blackleg", weight: 1 },
 	{ value: "forces their ${FamilyMember} to live at the bottom of a deep hole with a long ladder the only way up", weight: 1 },
 	{ value: "eats a disgusting meat product called horse bacon", weight: 1 },
+	{ value: "envies the ancient ${po:ancientpeople} devotion to trap-ball and cudgel play", weight: 1 },
   ],
 
   sleepwalkers: [
@@ -5585,7 +5603,7 @@ const tables = {
     { value: "stone being quarried", weight: 1 },
     { value: "the beating of powerful wings", weight: 1 },
     { value: "the buzzing of a thousand wasps", weight: 1 },
-    { value: "the clash of arms of an ancient battle", weight: 1 },
+    { value: "the clash of arms and shouted orders", weight: 1 },
     { value: "the crackle of a bonfire", weight: 1 },
     { value: "the low rumble of continuous thunder", weight: 1 },
     { value: "the screech of two subterranean dragons fighting", weight: 1 },
@@ -5599,6 +5617,7 @@ const tables = {
 	{ value: "the night-song of birds and thousands of crickets", weight: 1 },
 	{ value: "horrible machines crashing into each other", weight: 1 },
 	{ value: "the distinct sound of ${a:MusicalInstrument}", weight: 1 },
+	{ value: "the music of forests and streams", weight: 1 },
   ],
 
   studysubject: [
@@ -5837,6 +5856,7 @@ const tables = {
 	{ value: "dangerous ${trap_builder} wearing bone armor and wielding crystal ${HaftedWeapons}s", weight: 1 },
 	{ value: "a slumbering ${WeirdFantasyMonster}", weight: 1 },
 	{ value: "fiends of glade and dell", weight: 1 },
+	{ value: "those lesser dragons that began their lives as snakes", weight: 1 },
   ],
   
   
@@ -6071,6 +6091,7 @@ trap_location: [
 	{ value: "in ${a:DungeonRoom} on the ${floors} floor there's ${a:ship_cargo_furniture_adj} ${ship_cargo_container_singular} filled with golden ${FantasyMeal_Fruit_plural} from the Garden of ${vancian_wizards}", weight: 1 },
 	{ value: "in ${a:DungeonRoom} on the ${floors} floor ${a:QuickNPCDescriptor} ${humanoid_monsters} wears ${a:duo_clothing_adj} ${duo_clothing_singular} that imbues it with all the skills of a master ${QuickNPCJob}", weight: 1 },
 	{ value: "${a:undead_corporeal}, mindless with hunger and rage, in ${a:DungeonRoom} on the ${floors} floor wears the nest-shaped Crown of Birds, unaware of its true power", weight: 1 },
+	{ value: "${historicalperson} left behind ${a:Weapons} forged from a strange metal in the enchanted ${otherworld_names} that ${light_impact} when exposed to ${light_type} ${obj_or_room} on the ${floors} floor", weight: 1 },
   ],
 
   treasureA: [
@@ -6824,6 +6845,8 @@ trap_location: [
 	{ value: "a Talking Horse who shrugs off whip and spur", weight: 1 },
 	{ value: "a discalced ${religious_ranks}", weight: 1 },
 	{ value: "a succubus named Vara", weight: 1 },
+	{ value: "${a:AnimalMammal}-person merchant wearing ${a:duo_clothing_material} ${duo_clothing_singular}", weight: 1 },
+	{ value: "a painter obsessed with capturing the entrancing beauty of ${foreign_adj}${po:foreignland} ${landscape_types}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -9675,6 +9698,7 @@ saint_curse: [
     { value: "begins to smell like ${Smells_Bad}", weight: 1 },
 	{ value: "disappears revealing the crimson muscle underneath", weight: 1 },
 	{ value: "disappears revealing the stark bone underneath", weight: 1 },
+	{ value: "gushes sweat", weight: 1 },
   ],
   
   wish_granter: [
@@ -10019,6 +10043,7 @@ celebration_type: [
 	{ value: "${prophetic_subject} ringing the Bells of Kwalish to bring their companion back from the ${underworld_names}", weight: 1 },
 	{ value: "${prophetic_subject} holding up the snarling head of ${DemonName} the ${daemontype} daemon in grim triumph", weight: 1 },
 	{ value: "Saint ${SaintName} ${miracles}", weight: 1 },
+	{ value: "${prophetic_subject} casting a silver line and a golden hook baited with ${a:Jewel_singular} into the Lake of Dreams to catch the sea-dragon ${dragon_name}", weight: 1 },
   ],
   
   
@@ -11671,6 +11696,7 @@ ship_type: [
 	{ value: "There Are No Endings Truly", weight: 1 },
 	{ value: "The Mortal and the Pestle", weight: 1 },
 	{ value: "The Rash Oath of the Baron", weight: 1 },
+	{ value: "Bowstrings and Arrowheads", weight: 1 },
   ],
   
   
