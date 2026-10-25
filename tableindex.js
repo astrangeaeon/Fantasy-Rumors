@@ -415,6 +415,7 @@ const tables = {
 	{ value: " who had more wives and slayed more dragons than they had fingers on their hands,", weight: 1 },
 	{ value: " who spoke to stones, crows and their dead wife,", weight: 1 },
 	{ value: " whose brilliant mind mastered opposition, containing both the bottomless pit and the unending stairs,", weight: 1 },
+	{ value: " who loved their horses more than their wives, husbands and children,", weight: 1 },
   ],
 
   hundred_words: [
@@ -3085,6 +3086,7 @@ const tables = {
 	{ value: "a savage solitary saint, his nakedness covered only by his unkempt hair", weight: 1 },
 	{ value: "large crabs with shells of translucent ${Jewel_singular}", weight: 1 },
 	{ value: "ox-horned and stag-horned centaurs", weight: 1 },
+	{ value: "${humanoid_young} and ${undead_intangible}s", weight: 1 },
   ],
 
   islandprotector: [
@@ -3173,6 +3175,7 @@ const tables = {
 	{ value: "a false ${false_monsters}", weight: 1 },
 	{ value: "a lesser ${lesser_monsters}", weight: 1 },
 	{ value: "amphibious vampires who feed on the blood of sharks and squid", weight: 1 },
+	{ value: "a child vampire", weight: 1 },
   ],
 
   island_riches: [
@@ -3248,6 +3251,7 @@ const tables = {
 	{ value: "the tiny devils who live inside ${FantasyMeal_Fruit_plural} and ${FantasyMeal_Fruit_plural}", weight: 1 },
 	{ value: "the Lord of the Sun-realm", weight: 1 },
 	{ value: "the ${tc:religious_ranks} and his laughing gulls", weight: 1 },
+	{ value: "${EgyptianNameMale}, the ${ordinal} prince of the ${uc:ordinal} Dynasty, mummified when he was eight years old", weight: 1 },
   ],
 
   kinganimal: [
@@ -3672,6 +3676,7 @@ const tables = {
 	{ value: "judge the living and the dead", weight: 1 },
 	{ value: "join the dancers of ${slumberplace} who yearn to spend eternity in their mad gambols", weight: 1 },
 	{ value: "keep a small dragon in their ${local_domestic_spaces} tethered with a chain of gold", weight: 1 },
+	{ value: "ride through all five gates of the city of ${urbn_cityname} on ${a:AnimalMount}: ${gates_prefix} Gate, ${gates_prefix} Gate, ${gates_prefix} Gate, the Gate ${gates_suffix_repeat} and the Gate ${gates_suffix}", weight: 1 },
   ],
 
   local_racist: [
@@ -5251,6 +5256,7 @@ const tables = {
 	{ value: "planets and planetary systems under the earth", weight: 1 },
 	{ value: "a maelstrom of pleasure", weight: 1 },
 	{ value: "${a:Metallic} eel that swam through ${elemntl_type}", weight: 1 },
+	{ value: "menacing octopus creatures with human hands at the ends of their tentacles", weight: 1 },
   ],
 
   secret: [
@@ -5588,6 +5594,7 @@ const tables = {
 	{ value: "the ${ancientpeople_singular} word for to dream means to see god", weight: 1 },
 	{ value: "the buildings are all made from the wrecks of ships", weight: 1 },
 	{ value: "the priests have sacrficed ${a:AnimalSacrifice_adj} ${AnimalSacrifice} at ${boundary_times} for unbroken centuries", weight: 1 },
+	{ value: "children are given three names at birth, their human name, their ${AnimalMain} name, and their secret name", weight: 1 },
   ],
 
   strangenoises: [
@@ -6092,6 +6099,7 @@ trap_location: [
 	{ value: "in ${a:DungeonRoom} on the ${floors} floor ${a:QuickNPCDescriptor} ${humanoid_monsters} wears ${a:duo_clothing_adj} ${duo_clothing_singular} that imbues it with all the skills of a master ${QuickNPCJob}", weight: 1 },
 	{ value: "${a:undead_corporeal}, mindless with hunger and rage, in ${a:DungeonRoom} on the ${floors} floor wears the nest-shaped Crown of Birds, unaware of its true power", weight: 1 },
 	{ value: "${historicalperson} left behind ${a:Weapons} forged from a strange metal in the enchanted ${otherworld_names} that ${light_impact} when exposed to ${light_type} ${obj_or_room} on the ${floors} floor", weight: 1 },
+	{ value: "${a:humanoid_monsters} roams the ${floors} floor, randomly firing a magic crossbow whose quarrels slip effortlessly through solid doors and stone walls but not the flesh of men", weight: 1 },
   ],
 
   treasureA: [
@@ -6229,7 +6237,7 @@ trap_location: [
 	{ value: "no one can play the ${MusicalInstrument} like the hunchback of ${urbn_cityname}!", weight: 1 },
 	{ value: "in ${urbn_cityname}, the bells of the ${aristocratic_robbed_place_religious} ring so loudly that they shatter the bones of birds", weight: 1 },
 	{ value: "a dozen mournful pilgrims from ${a:aristocratic_robbed_place_religious} in ${foreign_adj}${foreignland} led by ${a:religious_ranks} ${facial_desc} seek the ${shrine_type} marking where ${shrine}, but they have been stuck sleeping in the streets outside ${a:urbn_place} due to the intervening ${landscape_types_basic} being infested with ${huntingmonster} and other dangers", weight: 2 },
-	{ value: "the ancient ${ancientpeople}, when they were first brought to the gates of the city of ${urbn_cityname}, called it Akmong, meaning 'an evil black dream'", weight: 1 },
+	{ value: "the ancient ${ancientpeople}, when they were first brought from their tents in the desert to the gates of the city of ${urbn_cityname}, called it Akmong, meaning 'an evil black dream'", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6681,6 +6689,7 @@ trap_location: [
 	{ value: "conscripts who have maimed themselves to procure their liberty", weight: 1 },
 	{ value: "a famous company of singing ${violent_profession_plural}", weight: 1 },
 	{ value: "nymphs of the ${landscape_types_artificial}", weight: 1 },
+	{ value: "diplomats representing the ${monster_royalty}", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -6847,6 +6856,8 @@ trap_location: [
 	{ value: "a succubus named Vara", weight: 1 },
 	{ value: "${a:AnimalMammal}-person merchant wearing ${a:duo_clothing_material} ${duo_clothing_singular}", weight: 1 },
 	{ value: "a painter obsessed with capturing the entrancing beauty of ${foreign_adj}${po:foreignland} ${landscape_types}", weight: 1 },
+	{ value: "the ${monster_royalty}", weight: 1 },
+	{ value: "a relative of the ${monster_royalty}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -6941,6 +6952,7 @@ trap_location: [
 	{ value: "argue over who has cumulatively been awake the longest", weight: 1 },
 	{ value: "seek the perfect dissonance", weight: 1 },
 	{ value: "seek to trade the wisdom of the serpent for the innocence of the dove", weight: 1 },
+	{ value: "seek to demolish with sacrilegious hands the labors of their ancestors", weight: 1 },
   ],
 
   urbn_verbsingular: [
@@ -7101,6 +7113,7 @@ trap_location: [
 	{ value: "is seeking ${a:humanoid} with the strength of ${a:AnimalBigCat}, the soul of ${a:AnimalCanine} and the heart of ${a:AnimalSnake}", weight: 1 },
 	{ value: "teaches the difference between a false ${false_monsters} and a true", weight: 1 },
 	{ value: "teaches the difference between a lesser ${lesser_monsters} and their more dangerous cousins", weight: 1 },
+	{ value: "solicits signatures for a petition calling on ${FantasyGods} to account for their crimes", weight: 1 },
 	
   ],
 
@@ -7806,6 +7819,7 @@ trap_location: [
 	{ value: "tercel", weight: 1 },
 	{ value: "musket", weight: 1 },
 	{ value: "heron", weight: 1 },
+	{ value: "pigeon", weight: 1 },
   ],
   
   AnimalFarm: [
@@ -11697,6 +11711,7 @@ ship_type: [
 	{ value: "The Mortal and the Pestle", weight: 1 },
 	{ value: "The Rash Oath of the Baron", weight: 1 },
 	{ value: "Bowstrings and Arrowheads", weight: 1 },
+	{ value: "The Raccoon Opera", weight: 1 },
   ],
   
   
@@ -13830,6 +13845,14 @@ door_type: [
 	{ value: "manticore", weight: 1 },
 	{ value: "devil", weight: 1 },
 	{ value: "harpy", weight: 1 },
+  ],
+  
+  monster_royalty: [
+    { value: "Queen of the ${uc:CompassDirectionPrimary}-Wind Harpies", weight: 1 },
+	{ value: "Sultan of the ${uc:elemntl_type} Elementals", weight: 1 },
+	{ value: "Chief of the ${tc:landscape_types_basic_singular} Centaurs", weight: 1 },
+	{ value: "Princess of the ${tc:humanoid_watertype} Mermaids", weight: 1 },
+	{ value: "Maharani of the ${uc:Colors} Nagas", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
