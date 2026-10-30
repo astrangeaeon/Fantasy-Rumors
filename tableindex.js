@@ -2518,6 +2518,7 @@ const tables = {
 	{ value: "now languishes in ${a:DungeonRoom} lit by ${light_source}", weight: 1 },
 	{ value: "survived, but found little reason to bless their good fortune", weight: 1 },
 	{ value: "ended up involuntarily donating their blood to a beguiling ${humanoids_nonhuman}", weight: 1 },
+	{ value: "was blessed by Saint ${SaintName} ${saint_blessing}", weight: 1 },
   ],
 
   hero_goal: [
@@ -2621,6 +2622,25 @@ const tables = {
     { value: "mausoleums", weight: 1 },
 	{ value: "bell towers", weight: 1 },
 	{ value: "canals", weight: 1 },
+  ],
+  
+  historicalinfrastructure_singular: [
+    { value: "road", weight: 1 },
+    { value: "windmill", weight: 1 },
+	{ value: "watchtower", weight: 1 },
+	{ value: "aqueduct", weight: 1 },
+    { value: "bridge", weight: 1 },
+    { value: "tunnel", weight: 1 },
+    { value: "dam", weight: 1 },
+    { value: "boundary wall", weight: 1 },
+    { value: "underground dungeon", weight: 1 },
+    { value: "well", weight: 1 },
+    { value: "temple", weight: 1 },
+    { value: "harbor", weight: 1 },
+    { value: "lighthouse", weight: 1 },
+    { value: "mausoleum", weight: 1 },
+	{ value: "bell tower", weight: 1 },
+	{ value: "canal", weight: 1 },
   ],
   
   historicalinfrastructure_modern_singular: [
@@ -2777,6 +2797,7 @@ const tables = {
 	{ value: "meeting under the 31st arch of the aqueduct for smooching", weight: 1 },
 	{ value: "practicing the sanctioned joys of revenge", weight: 1 },
 	{ value: "dueling with serpents of light that quiver continuously", weight: 1 },
+	{ value: "choosing a new pariah to be shunned until the next celebration", weight: 1 },
   ],
 
   housething: [
@@ -3391,6 +3412,7 @@ const tables = {
 	{ value: "the Seven Green Men of ${slumberplace}", weight: 1 },
 	{ value: "the Vault of Tekaro where the old king sleeps", weight: 1 },
 	{ value: "the Maze of Zahda", weight: 1 },
+	{ value: "the Plaza of the Inquisition", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -3700,6 +3722,7 @@ const tables = {
     { value: "dwarfs worship a deity best likened to a living slot machine who rewards their greed with increased material returns", weight: 1 },
     { value: "female dwarfs have beards that rival the males’", weight: 1 },
 	{ value: "${humanoids}, well, you know, the bad ones, are to blame for these appalling times we find ourselves in", weight: 1 },
+	{ value: "that compared to ${humanoids}, the clothesless nomad ${AnimalSimian}s who roam the ${landscape_types} of ${foreign_adj}${foreignland} are overly civilized", weight: 1 },
   ],
 
   local_racist_elf: [
@@ -3713,6 +3736,7 @@ const tables = {
     { value: "one should never accept an elf’s dinner invitation: they’ll serve non-elves their own sweet-smelling waste", weight: 1 },
     { value: "the great elf folk-hero Peri’el actually died during an epileptic fit among a herd of swine", weight: 1 },
 	{ value: "${humanoids}, well, you know, the bad ones, are to blame for these appalling times we find ourselves in", weight: 1 },
+	{ value: "that compared to ${humanoids}, the clothesless nomad ${AnimalSimian}s who roam the ${landscape_types} of ${foreign_adj}${foreignland} are overly civilized", weight: 1 },
   ],
 
   local_racist_hobbit: [
@@ -3726,6 +3750,7 @@ const tables = {
     { value: "Titchy Gren, the great hobbit burglar who supposedly stole a dragon’s hoard, actually just snuck into the king’s treasury the day of the great castle fire like a common looter", weight: 1 },
 	{ value: "${humanoids}, well, you know, the bad ones, are to blame for these appalling times we find ourselves in", weight: 1 },
 	{ value: "hobbits were given a divine revelation from their god but wrote it down on cabbage leaves and let a donkey eat it...explains a lot, don't it?", weight: 1 },
+	{ value: "that compared to ${humanoids}, the clothesless nomad ${AnimalSimian}s who roam the ${landscape_types} of ${foreign_adj}${foreignland} are overly civilized", weight: 1 },
   ],
 
   local_racist_human: [
@@ -3740,6 +3765,7 @@ const tables = {
     { value: "that the philosophies of humans obscure the truth, like a torch which gives off smoke but no light", weight: 1 },
     { value: "when a human is talking, he’s lying, and when silent, he’s stealing", weight: 1 },
 	{ value: "${humanoids}, well, you know, the bad ones, are to blame for these appalling times we find ourselves in", weight: 1 },
+	{ value: "that compared to ${humanoids}, the clothesless nomad ${AnimalSimian}s who roam the ${landscape_types} of ${foreign_adj}${foreignland} are overly civilized", weight: 1 },
   ],
 
   local_strange_thing: [
@@ -6103,6 +6129,8 @@ trap_location: [
 	{ value: "${a:undead_corporeal}, mindless with hunger and rage, in ${a:DungeonRoom} on the ${floors} floor wears the nest-shaped Crown of Birds, unaware of its true power", weight: 1 },
 	{ value: "${historicalperson} left behind ${a:Weapons} forged from a strange metal in the enchanted ${otherworld_names} that ${light_impact} when exposed to ${light_type} ${obj_or_room} on the ${floors} floor", weight: 1 },
 	{ value: "${a:humanoid_monsters} roams the ${floors} floor, randomly firing a magic crossbow whose quarrels slip effortlessly through solid doors and stone walls but not the flesh of men", weight: 1 },
+	{ value: "the boss of a gang of ${trap_builder} on the ${floors} floor found an ancient ${ancientpeople_singular} weapon inscribed with text roughly translated as ${po:FantasyGodName} ${tc:MusicalInstrument} in ${a:DungeonRoom} but has not figured out how to use it yet", weight: 1 },
+	{ value: "for some mysterious reason, ${vancian_wizards} gave an arcane device known only as ${po:FantasyGodName} ${tc:magicalcommonobject} to ${a:humanoid_monsters} with ${a:vocal_range} voice on the ${floors} floor who has been creating havoc with it ever since", weight: 1 },
   ],
 
   treasureA: [
@@ -6861,6 +6889,7 @@ trap_location: [
 	{ value: "a painter obsessed with capturing the entrancing beauty of ${foreign_adj}${po:foreignland} ${landscape_types}", weight: 1 },
 	{ value: "the ${monster_royalty}", weight: 1 },
 	{ value: "a relative of the ${monster_royalty}", weight: 1 },
+	{ value: "a daemonic talent scout", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -7117,6 +7146,7 @@ trap_location: [
 	{ value: "teaches the difference between a false ${false_monsters} and a true", weight: 1 },
 	{ value: "teaches the difference between a lesser ${lesser_monsters} and their more dangerous cousins", weight: 1 },
 	{ value: "solicits signatures for a petition calling on ${FantasyGods} to account for their crimes", weight: 1 },
+	{ value: "looks for someone with ${a:vocal_range} voice to join a most unheavenly choir", weight: 1 },
 	
   ],
 
@@ -7294,6 +7324,7 @@ trap_location: [
 	{ value: "lies on the outskirts of where a half-finished cathedral, the construction long abandoned, resembles a falling ruin", weight: 1 },
 	{ value: "marks the territory of a group of savage maidens clad in sylvan pageant", weight: 1 },
 	{ value: "is where a magical replica of the corpse of ${ntc} made of wood can be found", weight: 1 },
+	{ value: "is near the ruined tower where ${vancian_wizards} of old was said to consult with the preserved heads of three ancient ${ancientpeople_singular} kings", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -7566,6 +7597,7 @@ trap_location: [
 	{ value: "${FantasyGodFollowers} to honor their horrible ${flag_extra_animal_adj} deity", weight: 1 },
 	{ value: "carve their totem poles with figures of ${AnimalMammal} and ${AnimalBird}", weight: 1 },
 	{ value: "light their eerie ${Colors} balefires", weight: 1 },
+	{ value: "howl their praises to the Mother of the Waters", weight: 1 },
   ],
 
   onedfive: [
@@ -8241,6 +8273,7 @@ trap_location: [
 	{ value: "Goomblegubbon", weight: 1 },
 	{ value: "Wolf Clothed", weight: 1 },
 	{ value: "Lowdemon", weight: 1 },
+	{ value: "She-Butcher", weight: 1 },
   ],
 
   DungeonAdjective: [
@@ -8490,6 +8523,11 @@ trap_location: [
     { value: "using bladed weapons", weight: 1 },
 	{ value: "eating meat", weight: 1 },
 	{ value: "wearing armor or shield", weight: 1 },
+  ],
+  
+  FantasyGodName: [
+    { value: "${FantasyGodNameFemale}", weight: 1 },
+    { value: "${FantasyGodNameMale}", weight: 1 },
   ],
 
   FantasyGodNameFemale: [
@@ -9465,6 +9503,7 @@ trap_location: [
 	{ value: " who composed the popular tune '${ballad_titles}',", weight: 1 },
 	{ value: " who can recite the ${poem_types} '${ballad_titles}',", weight: 1 },
 	{ value: " who has friends in every village from ${landmark} to ${landmark},", weight: 1 },
+	{ value: " who composed ${a:poem_types} celebrating ${ntc},", weight: 1 },
   ],
   
   pet_adj: [
@@ -9481,6 +9520,7 @@ trap_location: [
   triad_superlative: [
     { value: "best", weight: 1 },
 	{ value: "worst", weight: 1 },
+	{ value: "most original", weight: 1 },
   ],
   
    triad_person_claim: [
@@ -9489,6 +9529,7 @@ trap_location: [
 	{ value: "dancers", weight: 1 },
 	{ value: "dressers", weight: 1 },
 	{ value: "${MusicalInstrument} players", weight: 5 },
+	{ value: "${QuickNPCJobMid}s", weight: 3 },
   ],
   
   triad_person_scope: [
@@ -9687,6 +9728,7 @@ tail_type: [
 	{ value: "to always be welcome in the House of ${housething}", weight: 1 },
 	{ value: "with a talent for playing the ${MusicalInstrument}", weight: 1 },
 	{ value: "with being unable to see the corruption death works on a mortal body", weight: 1 },
+	{ value: "to know the power and virtues of words, stones and herbs", weight: 1 },
   ],
 
 
@@ -10122,6 +10164,7 @@ celebration_type: [
 	{ value: "${uc:RoyalTitleMale}", weight: 1 },
 	{ value: "${uc:RoyalTitleMale} ${uc:FantasyMeal_Fruit}", weight: 1 },
 	{ value: "${uc:RoyalTitleFemale} ${uc:FantasyMeal_Fruit}", weight: 1 },
+	{ value: "Sloppy Jo", weight: 1 },
   ],
   
   dining_companion: [
@@ -11307,6 +11350,9 @@ vehicle: [
 	{ value: "from the Spring of ${onednine}${onednine}${onednine}", weight: 1 },
 	{ value: "from the reign of King ${FantasyNameMale} the ${uc:QuickNPCDescriptor}", weight: 1 },
 	{ value: "from the reign of Queen ${FantasyNameFemale} the ${uc:QuickNPCDescriptor}", weight: 1 },
+	{ value: "from the Year of the Great ${tc:severe_weather}", weight: 1 },
+	{ value: "from the year the city of ${urbn_cityname} was founded", weight: 1 },
+	{ value: "from the year the Great ${tc:historicalinfrastructure_singular} was built", weight: 1 },
   ],
   
   alcohol_liquor: [
