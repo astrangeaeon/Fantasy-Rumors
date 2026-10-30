@@ -1950,6 +1950,7 @@ const tables = {
 	{ value: "infected ${duo_clothing} and other garments", weight: 1 },
 	{ value: "the teeth of angels", weight: 1 },
 	{ value: "the feathers of birds", weight: 1 },
+	{ value: "the ${duo_clothing_material} robes of mages and ${magicusertype}s", weight: 1 },
   ],
 
   excitingemployer: [
@@ -2516,6 +2517,7 @@ const tables = {
 	{ value: "went on to found the famous company of singing ${violent_profession_plural} known as ${brigandnames}", weight: 1 },
 	{ value: "now languishes in ${a:DungeonRoom} lit by ${light_source}", weight: 1 },
 	{ value: "survived, but found little reason to bless their good fortune", weight: 1 },
+	{ value: "ended up involuntarily donating their blood to a beguiling ${humanoids_nonhuman}", weight: 1 },
   ],
 
   hero_goal: [
@@ -3677,6 +3679,7 @@ const tables = {
 	{ value: "join the dancers of ${slumberplace} who yearn to spend eternity in their mad gambols", weight: 1 },
 	{ value: "keep a small dragon in their ${local_domestic_spaces} tethered with a chain of gold", weight: 1 },
 	{ value: "ride through all five gates of the city of ${urbn_cityname} on ${a:AnimalMount}: ${gates_prefix} Gate, ${gates_prefix} Gate, ${gates_prefix} Gate, the Gate ${gates_suffix_repeat} and the Gate ${gates_suffix}", weight: 1 },
+	{ value: "put on the ${Colors} ${duo_clothing_material} robes of ${a:magicusertype} brought back from ${foreign_adj}${foreignland}${foreign_phrase} by their grandfather in his youth and kept stored in the ${local_domestic_spaces} of the family home ever since", weight: 1 },
   ],
 
   local_racist: [
@@ -3972,7 +3975,7 @@ const tables = {
     { value: "shaman", weight: 1 },
     { value: "sorcerer", weight: 1 },
     { value: "warlock", weight: 1 },
-    { value: "witch", weight: 1 },
+    { value: "hag", weight: 1 },
     { value: "wizard", weight: 1 },
 	{ value: "necromancer", weight: 1 },
 	{ value: "charmer", weight: 1 },
@@ -5314,7 +5317,7 @@ const tables = {
     { value: "ship that was blown off course, now crewed by the Father of Fish and his children", weight: 1 },
     { value: "ship that was lost carrying a mated pair of mimic birds descended from the mimic bird who heard the Prophet’s voice and passed the sound down through generations of other birds", weight: 1 },
     { value: "ship that was part of the treasure fleet of ${who_is_buried} which delivered precious gifts to foreign dignitaries and sank", weight: 1 },
-	{ value: "ship that sank carrying ${liquid_containers_large}s of potent ${alcohol} from ${foreignland} that's made all the fish, mermaids and even ${a:AnimalWater} blind-drunk", weight: 1 },
+	{ value: "ship that sank carrying ${liquid_containers_large}s of potent ${alcohol} from ${foreignland} that's made all the fish, seafolk and even ${a:AnimalWater} blind-drunk", weight: 1 },
 	{ value: "ship that was sent by Queen ${FantasyNameFemale} ${when} ago to seek and return with a treasure she did not already possess that's been spotted", weight: 1 },
   ],
 
@@ -7290,6 +7293,7 @@ trap_location: [
 	{ value: "stands near the ruin of ${a:aristocratic_robbed_place_religious} where now moss, grass and wild parsley flourish", weight: 1 },
 	{ value: "lies on the outskirts of where a half-finished cathedral, the construction long abandoned, resembles a falling ruin", weight: 1 },
 	{ value: "marks the territory of a group of savage maidens clad in sylvan pageant", weight: 1 },
+	{ value: "is where a magical replica of the corpse of ${ntc} made of wood can be found", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -7396,6 +7400,7 @@ trap_location: [
 	{ value: "${a:MarbleTypes} marble statue of ${ntc} defies both the tooth of time and the hand of man", weight: 1 },
 	{ value: "a simple stone marks the burying place of a woodsman who feared only the sight of a thousand chimneys spewing smoke", weight: 1 },
 	{ value: "traces of a village and ${historicalinfrastructure} destroyed in some ancient war have yet to be rebuilt", weight: 1 },
+	{ value: "a pack of ${herdanimal} wearing ${Colors} ${duo_clothing} graze year-round on ${weed_one} ${weed_two}", weight: 1 },
   ],
 
   wilds_locn: [
@@ -7536,6 +7541,8 @@ trap_location: [
 	{ value: "there's an isolated ${aristocratic_robbed_place_religious} where the corpulent ${religious_ranks}s are infamous for their gluttonous 30-course meals and week-long feasts", weight: 1 },
 	{ value: "there's a barren patch on a hill where the dead maidens dance and no plant or herb can grow", weight: 1 },
 	{ value: "a small patch of earth preserved by some ancient sorcery holds a half-dozen undecayed ${violent_profession_plural} in the archiac ${flag_imperial_color} colored uniforms of the ${flag_provenance}, laying where they were cut down ${when} ago", weight: 1 },
+	{ value: "if you run into ${a:fairy_folk} while wandering among the ${landscape_types} of ${foreign_adj}${foreignland}, speak only true words, for it is said that lies smell like ${Smells_Bad} to such a creature", weight: 1 },
+	{ value: "those who dally and cavort with the ${fairy_folk_plural} and ${fairy_folk_plural} in the enchanted ${otherworld_names} may prolong their unfinished lives, but at great cost to their souls, or so Saint ${SaintName} preached", weight: 1 },
   ],
   
   
@@ -7852,6 +7859,7 @@ trap_location: [
     { value: "beetle", weight: 1 },
 	{ value: "caterpillar", weight: 1 },
 	{ value: "locust", weight: 1 },
+	{ value: "centipede", weight: 1 },
   ],
   
   AnimalInsectStinging: [
@@ -8945,6 +8953,7 @@ trap_location: [
     { value: "TV and VCR specialist", weight: 1 },
     { value: "special agent", weight: 1 },
 	{ value: "data scientist", weight: 1 },
+	{ value: "podcaster", weight: 1 },
   ],
 
   MusicalInstrument: [
@@ -9148,6 +9157,7 @@ trap_location: [
 	{ value: "knife-maker", weight: 1 },
 	{ value: "chain-forger", weight: 1 },
 	{ value: "squire", weight: 1 },
+	{ value: "tattoo-artist", weight: 1 },
   ],
 
   QuickNPCJobRich: [
@@ -10461,6 +10471,7 @@ celebration_type: [
 	{ value: "sandstorm", weight: 1 },
 	{ value: "typhoon", weight: 1 },
 	{ value: "cyclone", weight: 1 },
+	{ value: "tempest", weight: 1 },
 	{ value: "drought", weight: 1 },
   ],
   
@@ -10862,6 +10873,35 @@ celebration_type: [
 	{ value: "dryad", weight: 1 },
   ],
   
+   fairy_folk_plural: [
+    { value: "white fairies", weight: 1 },
+	{ value: "black fairies", weight: 1 },
+	{ value: "green fairies", weight: 1 },
+	{ value: "hobgoblins", weight: 1 },
+	{ value: "leprechauns", weight: 1 },
+	{ value: "banshees", weight: 1 },
+	{ value: "brownies", weight: 1 },
+	{ value: "lake maidens", weight: 1 },
+	{ value: "river maidens", weight: 1 },
+	{ value: "pixies", weight: 1 },
+	{ value: "trolls", weight: 1 },
+	{ value: "selkies", weight: 1 },
+	{ value: "kelpies", weight: 1 },
+	{ value: "boggarts", weight: 1 },
+	{ value: "kobolds", weight: 1 },
+	{ value: "nine-tailed foxes", weight: 1 },
+	{ value: "${elemntl_type} sprites", weight: 1 },
+	{ value: "joint-eaters", weight: 1 },
+	{ value: "goblins", weight: 1 },
+	{ value: "giants", weight: 1 },
+	{ value: "gremlins", weight: 1 },
+	{ value: "satyrs", weight: 1 },
+	{ value: "nymphs", weight: 1 },
+	{ value: "spriggans", weight: 1 },
+	{ value: "swan-mays", weight: 1 },
+	{ value: "dryads", weight: 1 },
+  ],
+  
   fairy_folk_named: [
     { value: "Granny Squannit", weight: 1 },
 	{ value: "Yallery Brown", weight: 1 },
@@ -10938,6 +10978,7 @@ celebration_type: [
 	{ value: "House of Song", weight: 1 },
 	{ value: "Mansion of Light", weight: 1 },
 	{ value: "Blessed Realm", weight: 1 },
+	{ value: "Place of ${tc:FantasyMeal_Fruit_plural}", weight: 1 },
   ],
   // a place of the dead the ancientpeople named the underworld_names
   underworld_names: [
