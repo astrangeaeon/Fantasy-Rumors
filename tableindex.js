@@ -418,6 +418,7 @@ const tables = {
 	{ value: " who spoke to stones, crows and their dead wife,", weight: 1 },
 	{ value: " whose brilliant mind mastered opposition, containing both the bottomless pit and the unending stairs,", weight: 1 },
 	{ value: " who loved their horses more than their wives, husbands and children,", weight: 1 },
+	{ value: " who shrank the ${prophecyartifact} and hid it in ${a:Metallic} ant hill,", weight: 1 },
   ],
 
   hundred_words: [
@@ -2440,6 +2441,7 @@ const tables = {
 	{ value: "half-mummified", weight: 1 },
 	{ value: "masterless", weight: 1 },
 	{ value: "shape-changing", weight: 1 },
+	{ value: "anguiped", weight: 1 },
   ],
 
   herdanimal: [
@@ -2474,6 +2476,7 @@ const tables = {
 	{ value: "immersing their feet in the grey ice water of the sacred river", weight: 1 },
 	{ value: "scattering ${weed_one} grass seeds around the fertile valleys and small villages of ${foreignland}", weight: 1 },
 	{ value: "foolishly drinking from the Well of Thirst", weight: 1 },
+	{ value: "drawing blood from the moon with their ${BladedWeapons_Sword}", weight: 1 },
   ],
 
   hero_fate: [
@@ -3332,6 +3335,7 @@ const tables = {
 	{ value: "the small miracles that ${a:fairy_folk} can perform", weight: 1 },
 	{ value: "what happened to the fabulous green sphinx moth", weight: 1 },
 	{ value: "Those Still to Come", weight: 1 },
+	{ value: "the ${elemntl_type}-fairies and their prey", weight: 1 },
   ],
 
   landmark: [
@@ -3607,6 +3611,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC}, swears they saw ${a:vehicle_adj} ${vehicle} pulled by ${herdanimal} and driven by ${a:undead_intangible}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, is so offended by the smell of ${FantasyMeal_Fruit_plural} that they would fall a'bleeding if one were held up to their nose", weight: 1 },
 	{ value: "the village of ${village_names}, famed for their ${FantasyMeal_Fruit_Berry} ${FantasyMeal_Fruit_Berry_Uses}s, is now filled with ${undead_intangible}s with strange bodies that blow on the wind like smoke", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, just returned from a terrible trip to the city of ${urbn_cityname}, where 'the hospital is the street, and the stray dogs are nurses, licking your wounds'", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -3851,6 +3856,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC}, saw a palace of glass floating among the clouds to the ${CompassDirectionPrimary}", weight: 1 },
 	{ value: "${FantasyName}, a local ${QuickNPCJob}, boarded up their well after hearing a noise like ${strangenoises} coming up from it", weight: 1 },
 	{ value: "${a:AnimalPest} has begun performing Boddhist rituals at ${boundary_times} in ${po:FantasyName} ${local_domestic_spaces}", weight: 1 },
+	{ value: "the ${AnimalBigCat} with the golden key in its mouth returned as it does every seven years", weight: 1 },
   ],
 
   localtopic: [
@@ -4257,6 +4263,7 @@ const tables = {
 	{ value: "${a:monsterA} whose transparent flesh reveals strange organs within courtesy of the tinkering of ${vancian_wizards} claims to know why the 108 sons and daughters of the Immortal Sultan Abdullah Abdullah ${wild_princes}", weight: 1 },
 	{ value: "${a:WeirdFantasyMonster} who was cursed to steal luck and good fortune from others that they cannot use but are compelled to hoard and protect nonetheless for ${hero_curse_reason} is said to have its ${lair_synonyms} in a former ${DungeonRoom} on the ${floors} floor", weight: 1 },
 	{ value: "${a:monsterA} on the ${floors} floor wears the ${Metallic} key to a forgotten workshop of ${vancian_wizards} on a chain around its neck", weight: 1 },
+	{ value: "${monstertype} guards the skeleton of Saint ${SaintName}, whose bones have slowly transformed into ${Jewels} after they were martyred by being ${martyrdom} ${when} ago", weight: 1 },
   ],
   
   monster_hybrid: [
@@ -4758,6 +4765,7 @@ const tables = {
 	{ value: "The ${uc:prophetic_visionary} of ${urbn_cityname} revealed that the ${prophecyartifact}, a powerful artifact, is being held in a sinister dungeon called ${random_dungeons}", weight: 2 },
 	{ value: "${vancian_wizards} sought the oracle of ${a:dungeon_mural_monster_primal} before grimly setting off for ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
 	{ value: "We asked for signs and signs were sent: ${prophecy_signs}", weight: 2 },
+	{ value: "${vancian_wizards} captured the secret lore of ${knowledgething} in a book with ${Metallic} pages in a dream they had after celebrating ${holiday}", weight: 1 },
 
   ],
 
@@ -7160,6 +7168,7 @@ trap_location: [
 	{ value: "solicits signatures for a petition calling on ${FantasyGods} to account for their crimes", weight: 1 },
 	{ value: "looks for someone with ${a:vocal_range} voice to join a most unheavenly choir", weight: 1 },
 	{ value: "sells wands carved from the bones of ${a:AnimalBigCat}", weight: 1 },
+	{ value: "sells timeshares to ${a:aristocratic_home} in the enchanted ${otherworld_names}", weight: 1 },
 	
   ],
 
@@ -10676,6 +10685,7 @@ celebration_type: [
 	{ value: "House of ${housething}", weight: 1 },
 	{ value: "${uc:ordinal} Legion", weight: 1 },
 	{ value: "mercenary company ${brigandnames}", weight: 1 },
+	{ value: "Guild of ${tc:QuickNPCJobMid}s", weight: 1 },
   ],
   
   flag_extra: [
@@ -10694,6 +10704,7 @@ celebration_type: [
 	{ value: ", with ${rune} sewn on it,", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${classic_classes} ${flag_extra_humanoids_verb3},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${a:foreignland} ${ship_type} consumed by ${Colors} flames,", weight: 1 },
+	{ value: ", with its ${flag_extra_style} design of ${a:AnimalMammal} wearing ${a:Colors} ${duo_clothing_singular} and being struck by ${a:Weapons},", weight: 1 },
   ],
   
   
@@ -13841,6 +13852,7 @@ door_type: [
     { value: "was born of noble twins who committed incest at the behest of either the ${daemontype} daemon ${DemonName} or ${FantasyGods}", weight: 1 },
     { value: "and eating flies spent ${fairy_number} years as ${a:AnimalReptile} for breaking a taboo in the enchanted ${otherworld_names} that they ${taboo_donot}", weight: 1 },
 	{ value: "has a tattoo of ${tattoos} they got in prison serving time for ${crime_singular}", weight: 1 },
+	{ value: "is no friend of time -- they returned from the enchanted ${otherworld_names} to find their children old, their lovers dead, and their deeds forgotten", weight: 1 },
   ],
   
   jewel_eyes: [
@@ -14004,6 +14016,7 @@ door_type: [
 	{ value: "foul-smelling", weight: 1 },
 	{ value: "naked", weight: 1 },
     { value: "lacerated", weight: 1 },
+	{ value: "still-breathing", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
