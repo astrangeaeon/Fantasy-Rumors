@@ -126,6 +126,8 @@ const tables = {
 	{ value: " country of ten thousand chariots", weight: 1 },
 	{ value: " where the birds make their nests with the hair of dead maidens", weight: 1 },
 	{ value: " where the deer and the antelope play", weight: 1 },
+	{ value: " with its tress that bear ${AnimalInsect}s instead of fruit", weight: 1 },
+	{ value: " where zucchiniboys, onionmen and cabbagegirls rule", weight: 1 },
   ],
 
   herdwith: [
@@ -1005,6 +1007,7 @@ const tables = {
 	{ value: "Those Still to Come", weight: 1 },
 	{ value: "the worst and darkest darkness in the world", weight: 1 },
 	{ value: "the Corrector of Errors", weight: 1 },
+	{ value: "the Sisters Grey", weight: 1 },
   ],
 
   criminals: [
@@ -2470,6 +2473,7 @@ const tables = {
 	{ value: "conjuring the daemon ${DemonName} who took the form of ${a:Weapons}", weight: 1 },
 	{ value: "immersing their feet in the grey ice water of the sacred river", weight: 1 },
 	{ value: "scattering ${weed_one} grass seeds around the fertile valleys and small villages of ${foreignland}", weight: 1 },
+	{ value: "foolishly drinking from the Well of Thirst", weight: 1 },
   ],
 
   hero_fate: [
@@ -2548,6 +2552,7 @@ const tables = {
 	{ value: "to find a particular shade of ${Colors}", weight: 1 },
 	{ value: "to ask a boon of King ${FantasyNameMale}, whose body has sat for ${when} upon the ${uc:AnimalThroneType} Throne with ${Metallic} crown on head and ${Jewel_singular} scepter in hand", weight: 1 },
 	{ value: "to seek a famous knight transformed into ${a:AnimalTrophy} by ${fairy_folk_named}", weight: 1 },
+	{ value: "to pay homage to the First ${tc:oldest}", weight: 1 },
   ],
 
   heroname: [
@@ -3413,6 +3418,7 @@ const tables = {
 	{ value: "the Vault of Tekaro where the old king sleeps", weight: 1 },
 	{ value: "the Maze of Zahda", weight: 1 },
 	{ value: "the Plaza of the Inquisition", weight: 1 },
+	{ value: "the Well of Thirst", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -3940,6 +3946,7 @@ const tables = {
 	{ value: "pipe", weight: 1 },
 	{ value: "${duo_clothing_singular}", weight: 2 },
 	{ value: "${duo_jewlery_singular}", weight: 1 },
+	{ value: "hourglass", weight: 1 },
   ],
   
   magicalcommonobject_plural: [
@@ -3978,6 +3985,7 @@ const tables = {
 	{ value: "pipes", weight: 1 },
 	{ value: "${duo_clothing}", weight: 2 },
 	{ value: "dice", weight: 1 },
+	{ value: "hourglasses", weight: 1 },
   ],
 
   magictype: [
@@ -4466,6 +4474,7 @@ const tables = {
 	{ value: "dryad", weight: 1 },
 	{ value: "fairy", weight: 1 },
 	{ value: "mermaid", weight: 1 },
+	{ value: "${AnimalMain}", weight: 1 },
   ],
 
   oppressed_grp: [
@@ -5901,6 +5910,7 @@ const tables = {
     { value: "${trap_builder} ${trap_builder_origin} have been spotted ${trap_setup} ${trap_quality} ${trap_type} traps ${trap_location} ${trap_reason}", weight: 2 },
 	{ value: "${a:defeated_adj} ${classic_classes} told everyone at the bar who would listen about ${trap_specific}", weight: 2 },
 	{ value: "a network of secret passages concealed by jib doors allow the dungeon's ${trap_builder} to travel unseen", weight: 1 },
+	{ value: "the ${corpse_condition} ${god_funeral_body} of ${ntc} can be seen ${obj_or_room} on the ${floors} floor", weight: 1 },
   ],
   
   trap_builder: [
@@ -6046,6 +6056,7 @@ const tables = {
 	{ value: "who keep herds of ${herdanimal} deeper down", weight: 2 },
 	{ value: "who are known to eat the food in peoples' dreams", weight: 1 },
 	{ value: "whose ancestors were forced to spend their lives digging mile-wide graves so they'd be ready when the titans died at last", weight: 1 },
+	{ value: "whose ancestors were bred to have all the vulnerabilities of a vampire and none of the strengths", weight: 1 },
   ],
   
   
@@ -7148,6 +7159,7 @@ trap_location: [
 	{ value: "teaches the difference between a lesser ${lesser_monsters} and their more dangerous cousins", weight: 1 },
 	{ value: "solicits signatures for a petition calling on ${FantasyGods} to account for their crimes", weight: 1 },
 	{ value: "looks for someone with ${a:vocal_range} voice to join a most unheavenly choir", weight: 1 },
+	{ value: "sells wands carved from the bones of ${a:AnimalBigCat}", weight: 1 },
 	
   ],
 
@@ -9743,6 +9755,7 @@ saint_curse: [
 	{ value: "to see the constellation known as ${constellation} even during the day", weight: 1 },
 	{ value: "to have trouble sleeping", weight: 1 },
 	{ value: "to only gain sustenance from swallowing ${AnimalInsect}s and other insects", weight: 1 },
+	{ value: "to be hated by dogs", weight: 1 },
   ],
   
   light_type: [
@@ -13957,6 +13970,40 @@ door_type: [
 	{ value: "'${FantasyName}, head ${CompassDirectionPrimary}'", weight: 1 },
 	{ value: "'RIP ${FantasyName}'", weight: 1 },
 	{ value: "'${FantasyName} the ${classic_classes} was here'", weight: 1 },
+  ],
+  
+  corpse_condition: [
+	{ value: "eternally-bleeding", weight: 1 },
+	{ value: "blood-drained", weight: 1 },
+    { value: "bloated", weight: 1 },
+	{ value: "badly-burnt", weight: 1 },
+	{ value: "frozen", weight: 1 },
+    { value: "mummified", weight: 1 },
+	{ value: "blistered", weight: 1 },
+	{ value: "incorruptible", weight: 1 },
+    { value: "half-decomposed", weight: 1 },
+	{ value: "mostly liquid", weight: 1 },
+	{ value: "limbless", weight: 1 },
+    { value: "headless", weight: 1 },
+	{ value: "eyeless", weight: 1 },
+	{ value: "skinless", weight: 1 },
+    { value: "insect-filled", weight: 1 },
+	{ value: "organ-less", weight: 1 },
+	{ value: "diseased", weight: 1 },
+    { value: "half-devoured", weight: 1 },
+	{ value: "hairless", weight: 1 },
+	{ value: "${AnimalInsect}-covered", weight: 2 },
+    { value: "embalmed", weight: 1 },
+	{ value: "perfumed", weight: 1 },
+	{ value: "crystallized", weight: 1 },
+    { value: "ever-burning", weight: 1 },
+	{ value: "mostly ash", weight: 1 },
+	{ value: "sundered", weight: 1 },
+    { value: "pickled", weight: 1 },
+	{ value: "perforated", weight: 1 },
+	{ value: "foul-smelling", weight: 1 },
+	{ value: "naked", weight: 1 },
+    { value: "lacerated", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
