@@ -11642,6 +11642,7 @@ ship_type: [
 	{ value: "with neat ${ship_cargo_container} of meticulously labeled ${ship_cargo_expedition_type} from the successful ${FantasyLastName} Expedition to ${foreignland}${foreign_phrase} along with ${ship_cargo_wizard_type} that was found there as well", weight: 1 },
 	{ value: "with a hold full of ${ship_cargo_furniture_adj} ${ship_cargo_furniture_type} ${ship_manufacturing_place} and ${ship_cargo_container} of ${Jewels} and scrolls from the House of ${housething}", weight: 1 },
 	{ value: "bearing wounded ${violent_profession_plural} and opportunistic ${travelers}s from the wars in the ${CompassDirectionPrimary}, as well as nets filled with ${AnimalWater}, fish and ${AnimalWater}", weight: 1 },
+	{ value: "bringing ${ship_manufacturing_place_laborer} with sullen faces bound in iron shackles and ${a:ship_cargo_container_singular} filled with ${exchangething} destined for the ${Colors} markets near ${urbn_street_names}", weight: 1 },
   ],
   
   ship_merchandise_adj: [
