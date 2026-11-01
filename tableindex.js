@@ -128,6 +128,9 @@ const tables = {
 	{ value: " where the deer and the antelope play", weight: 1 },
 	{ value: " with its tress that bear ${AnimalInsect}s instead of fruit", weight: 1 },
 	{ value: " where zucchiniboys, onionmen and cabbagegirls rule", weight: 1 },
+	{ value: " where they keep black wine in underground cisterns, drawing bucketfuls up at mealtimes", weight: 1 },
+	{ value: " where love can only be expressed through cruel spider marriages", weight: 1 },
+	{ value: " where the gods lay scattered here and there", weight: 1 },
   ],
 
   herdwith: [
@@ -728,6 +731,7 @@ const tables = {
 	{ value: "the Clean Hands Gang", weight: 1 },
 	{ value: "the Husbands of ${FantasyGodNameFemale}", weight: 1 },
 	{ value: "the Brides of ${FantasyGodNameMale}", weight: 1 },
+	{ value: "the Friends of the Basilisk", weight: 1 },
   ],
 
   buryingplace: [
@@ -1593,6 +1597,7 @@ const tables = {
 	{ value: "${a:uc:art_visual_painting}...hangs near ${a:DungeonObject} on the ${floors} floor", weight: 1 },
 	{ value: "A gallery curated by ${fire_tender} on the ${floors} floor contains dozens of paintings of ${AnimalMain}s, including one by ${artists}, the famous ${huntingmonster_singular} painter ", weight: 1 },
 	{ value: "${dungeon_mural_type} depicting ${dungeon_mural} ${dungeon_mural_conceals}", weight: 1 },
+	{ value: "the body of ${a:humanoid} wrapped mockingly in the ${flag} hangs from the ceiling of ${a:DungeonRoom} on the ${floors} floor", weight: 1 },
   ],
   
   dungeon_mural_type: [
@@ -2526,6 +2531,7 @@ const tables = {
 	{ value: "survived, but found little reason to bless their good fortune", weight: 1 },
 	{ value: "ended up involuntarily donating their blood to a beguiling ${humanoids_nonhuman}", weight: 1 },
 	{ value: "was blessed by Saint ${SaintName} ${saint_blessing}", weight: 1 },
+	{ value: "was defeated by ${a:humanoid_monsters} who played ${a:MusicalInstrument} and wore ${a:Colors} ${duo_clothing_singular}", weight: 1 },
   ],
 
   hero_goal: [
@@ -3857,6 +3863,7 @@ const tables = {
 	{ value: "${FantasyName}, a local ${QuickNPCJob}, boarded up their well after hearing a noise like ${strangenoises} coming up from it", weight: 1 },
 	{ value: "${a:AnimalPest} has begun performing Boddhist rituals at ${boundary_times} in ${po:FantasyName} ${local_domestic_spaces}", weight: 1 },
 	{ value: "the ${AnimalBigCat} with the golden key in its mouth returned as it does every seven years", weight: 1 },
+	{ value: "${FantasyName}, a local ${QuickNPCJob}, lost their ${duo_clothing_singular} in the ${uc:Jewel_singular} District of ${urbn_cityname}, only to find it had somehow made its way back to their ${local_domestic_spaces}", weight: 1 },
   ],
 
   localtopic: [
@@ -6910,6 +6917,7 @@ trap_location: [
 	{ value: "the ${monster_royalty}", weight: 1 },
 	{ value: "a relative of the ${monster_royalty}", weight: 1 },
 	{ value: "a daemonic talent scout", weight: 1 },
+	{ value: "${uc:a:AnimalThroneType} Prince from ${foreign_adj}${foreignland}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -7169,6 +7177,7 @@ trap_location: [
 	{ value: "looks for someone with ${a:vocal_range} voice to join a most unheavenly choir", weight: 1 },
 	{ value: "sells wands carved from the bones of ${a:AnimalBigCat}", weight: 1 },
 	{ value: "sells timeshares to ${a:aristocratic_home} in the enchanted ${otherworld_names}", weight: 1 },
+	{ value: "seeks ${grand_scheme}", weight: 1 },
 	
   ],
 
@@ -7596,6 +7605,8 @@ trap_location: [
 	{ value: "a small patch of earth preserved by some ancient sorcery holds a half-dozen undecayed ${violent_profession_plural} in the archiac ${flag_imperial_color} colored uniforms of the ${flag_provenance}, laying where they were cut down ${when} ago", weight: 1 },
 	{ value: "if you run into ${a:fairy_folk} while wandering among the ${landscape_types} of ${foreign_adj}${foreignland}, speak only true words, for it is said that lies smell like ${Smells_Bad} to such a creature", weight: 1 },
 	{ value: "those who dally and cavort with the ${fairy_folk_plural} and ${fairy_folk_plural} in the enchanted ${otherworld_names} may prolong their unfinished lives, but at great cost to their souls, or so Saint ${SaintName} preached", weight: 1 },
+	{ value: "a grizzled ranger has reported seeing the traces and spoor of giant ${AnimalInsect}s ${wilds_specific_locn}", weight: 1 },
+	{ value: "a species of ${herd_adj} ${herdanimal} that hibernate underground for cycles of ${fairy_number} decades are beginning to awaken", weight: 1 },
   ],
   
   
@@ -10462,10 +10473,10 @@ celebration_type: [
 	{ value: "the ${uc:daemontype} ${tc:huntingmonster_singular}", weight: 1 },
 	{ value: "the Sarcophagus of ${RealGods}", weight: 1 },
 	{ value: "the ${uc:po:magicusertype} ${tc:magicalcommonobject}", weight: 1 },
-	{ value: "the ${uc:constellation_adj_person} ${uc:QuickNPCJob}", weight: 1 },
+	{ value: "the ${uc:constellation_adj_person} ${tc:QuickNPCJob}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_person} ${uc:constellation_archetype}", weight: 1 },
 	{ value: "the ${uc:constellation_adj_compass} ${constellation_adj_compass_stars}", weight: 1 },
-	{ value: "the ${uc:criminal_singular}", weight: 1 },
+	{ value: "the ${tc:criminal_singular}", weight: 1 },
   ],
   
   constellation_adj_obj: [
@@ -10695,7 +10706,7 @@ celebration_type: [
 	{ value: ", with its ${onedten} ${flag_basic_color} ${shapes} in the canton,", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${a:AnimalPredator} ${flag_extra_animal_verb} ${a:AnimalPrey},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${a:flag_extra_animal_adj} ${AnimalPrey},", weight: 1 },
-	{ value: ", with its pattern of ${constellation_repeat} constellation in ${flag_imperial_color_adj} ${flag_imperial_color},", weight: 1 },
+	{ value: ", with its pattern of ${tc:constellation_repeat} constellation in ${flag_imperial_color_adj} ${flag_imperial_color},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of two ${humanoids} ${flag_extra_humanoids_verb},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb3},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb2} ${a:flag_extra_humanoids_verb2_object},", weight: 1 },
@@ -14017,6 +14028,12 @@ door_type: [
 	{ value: "naked", weight: 1 },
     { value: "lacerated", weight: 1 },
 	{ value: "still-breathing", weight: 1 },
+  ],
+  
+  grand_scheme: [
+    { value: "to tear down the barricade between the mortal realm and the enchanted ${otherworld_names}", weight: 1 },
+	{ value: "to make contact with the beings from Dimension ${Letters}", weight: 1 },
+	{ value: "to rinse their unclean hands in ${exotic_water_types}", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
