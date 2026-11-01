@@ -131,6 +131,7 @@ const tables = {
 	{ value: " where they keep black wine in underground cisterns, drawing bucketfuls up at mealtimes", weight: 1 },
 	{ value: " where love can only be expressed through cruel spider marriages", weight: 1 },
 	{ value: " where the gods lay scattered here and there", weight: 1 },
+	{ value: " where hobbits live in the skulls of giants their forefathers slew", weight: 1 },
   ],
 
   herdwith: [
@@ -796,6 +797,7 @@ const tables = {
 	{ value: "a tyrant titan named Taraka will rise and usurp mastery of the world", weight: 1 },
 	{ value: "the fires will all be smothered by snow", weight: 1 },
 	{ value: "the loud and loathsome clang of the bell which wakes the Dreamer from his slumbers will be heard across the land", weight: 1 },
+	{ value: "the Calendar of Martyrs on both sides of the ${slumberplace} heresy will receive a considerable augmentation", weight: 1 },
   ],
 
   coastal: [
@@ -1441,6 +1443,7 @@ const tables = {
 	{ value: "The Hero with a Thousand Faces", weight: 1 },
 	{ value: "Finn the Human", weight: 1 },
 	{ value: "Carlos the Dwarf", weight: 1 },
+	{ value: "Coatel of Scorn", weight: 1 },
   ],
 
   deadadventurerloot: [
@@ -3618,6 +3621,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC}, is so offended by the smell of ${FantasyMeal_Fruit_plural} that they would fall a'bleeding if one were held up to their nose", weight: 1 },
 	{ value: "the village of ${village_names}, famed for their ${FantasyMeal_Fruit_Berry} ${FantasyMeal_Fruit_Berry_Uses}s, is now filled with ${undead_intangible}s with strange bodies that blow on the wind like smoke", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, just returned from a terrible trip to the city of ${urbn_cityname}, where 'the hospital is the street, and the stray dogs are nurses, licking your wounds'", weight: 1 },
+	{ value: "the ${corpse_condition} ${god_funeral_body} of ${a:humanoid} appeared overnight in the town square, ${pocket_items} laying nearby the only clue", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -6296,6 +6300,7 @@ trap_location: [
 	{ value: "in ${urbn_cityname}, the bells of the ${aristocratic_robbed_place_religious} ring so loudly that they shatter the bones of birds", weight: 1 },
 	{ value: "a dozen mournful pilgrims from ${a:aristocratic_robbed_place_religious} in ${foreign_adj}${foreignland} led by ${a:religious_ranks} ${facial_desc} seek the ${shrine_type} marking where ${shrine}, but they have been stuck sleeping in the streets outside ${a:urbn_place} due to the intervening ${landscape_types_basic} being infested with ${huntingmonster} and other dangers", weight: 2 },
 	{ value: "the ancient ${ancientpeople}, when they were first brought from their tents in the desert to the gates of the city of ${urbn_cityname}, called it Akmong, meaning 'an evil black dream'", weight: 1 },
+	{ value: "the great traveler ${FantasyNameMale} described the city of ${urbn_cityname} as 'a splendid desert--a domed and steepled solitude, where a stranger is lonely in the midst of a million of his race'", weight: 1 },
   ],
 
    urbn_traders: [
@@ -7013,6 +7018,7 @@ trap_location: [
 	{ value: "seek the perfect dissonance", weight: 1 },
 	{ value: "seek to trade the wisdom of the serpent for the innocence of the dove", weight: 1 },
 	{ value: "seek to demolish with sacrilegious hands the labors of their ancestors", weight: 1 },
+	{ value: "have no qualms about using urine for evil", weight: 1 },
   ],
 
   urbn_verbsingular: [
@@ -7356,6 +7362,7 @@ trap_location: [
 	{ value: "marks the territory of a group of savage maidens clad in sylvan pageant", weight: 1 },
 	{ value: "is where a magical replica of the corpse of ${ntc} made of wood can be found", weight: 1 },
 	{ value: "is near the ruined tower where ${vancian_wizards} of old was said to consult with the preserved heads of three ancient ${ancientpeople_singular} kings", weight: 1 },
+	{ value: "attracts an uncivilized giant whose stony shits are the size of ${a:AnimalDogBreed}", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -8487,6 +8494,7 @@ trap_location: [
 	{ value: "Tosk", weight: 1 },
 	{ value: "Waldshut", weight: 1 },
 	{ value: "Brimble", weight: 1 },
+	{ value: "Sternwinder", weight: 1 },
   ],
 
   FamilyMember: [
@@ -14035,6 +14043,18 @@ door_type: [
     { value: "to tear down the barricade between the mortal realm and the enchanted ${otherworld_names}", weight: 1 },
 	{ value: "to make contact with the beings from Dimension ${Letters}", weight: 1 },
 	{ value: "to rinse their unclean hands in ${exotic_water_types}", weight: 1 },
+  ],
+  
+  pocket_items: [
+    { value: "a single ${FantasyMeal_Fruit_Berry}", weight: 1 },
+	{ value: "a small ${Jewel_singular}", weight: 1 },
+	{ value: "a piece of ${Colors} chalk", weight: 1 },
+	{ value: "a hard-boiled egg", weight: 1 },
+	{ value: "a magnetic stone", weight: 1 },
+	{ value: "a flask of ${alcohol_liquor}", weight: 1 },
+	{ value: "a small ${Metallic} key", weight: 1 },
+	{ value: "ashes from ${a:cod_tree_type} tree", weight: 1 },
+	{ value: "a ring with ${a:SignetSymbol} inscribed on it", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
