@@ -132,6 +132,7 @@ const tables = {
 	{ value: " where love can only be expressed through cruel spider marriages", weight: 1 },
 	{ value: " where the gods lay scattered here and there", weight: 1 },
 	{ value: " where hobbits live in the skulls of giants their forefathers slew", weight: 1 },
+	{ value: " where horses are valued only for their bashimi", weight: 1 },
   ],
 
   herdwith: [
@@ -3622,6 +3623,8 @@ const tables = {
 	{ value: "the village of ${village_names}, famed for their ${FantasyMeal_Fruit_Berry} ${FantasyMeal_Fruit_Berry_Uses}s, is now filled with ${undead_intangible}s with strange bodies that blow on the wind like smoke", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, just returned from a terrible trip to the city of ${urbn_cityname}, where 'the hospital is the street, and the stray dogs are nurses, licking your wounds'", weight: 1 },
 	{ value: "the ${corpse_condition} ${god_funeral_body} of ${a:humanoid} appeared overnight in the town square, ${pocket_items} laying nearby the only clue", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, has been training to undergo the ancient and grueling trial known as ${tc:flag_extra_humanoids_verb2} the ${tc:trial_object} at the behest of ${wish_granter}", weight: 2 },
+	{ value: "every ${fairy_number} years, the villagers of ${village_names} must pay the brigands known as ${brigandnames} in ${exchangething} to renew an ancient ${agreement}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -3723,6 +3726,7 @@ const tables = {
 	{ value: "keep a small dragon in their ${local_domestic_spaces} tethered with a chain of gold", weight: 1 },
 	{ value: "ride through all five gates of the city of ${urbn_cityname} on ${a:AnimalMount}: ${gates_prefix} Gate, ${gates_prefix} Gate, ${gates_prefix} Gate, the Gate ${gates_suffix_repeat} and the Gate ${gates_suffix}", weight: 1 },
 	{ value: "put on the ${Colors} ${duo_clothing_material} robes of ${a:magicusertype} brought back from ${foreign_adj}${foreignland}${foreign_phrase} by their grandfather in his youth and kept stored in the ${local_domestic_spaces} of the family home ever since", weight: 1 },
+	{ value: "open ${a:theme_tavern}", weight: 1 },
   ],
 
   local_racist: [
@@ -9033,6 +9037,7 @@ trap_location: [
     { value: "special agent", weight: 1 },
 	{ value: "data scientist", weight: 1 },
 	{ value: "podcaster", weight: 1 },
+	{ value: "helicopter pilot", weight: 1 },
   ],
 
   MusicalInstrument: [
@@ -9834,7 +9839,7 @@ saint_curse: [
    wish_granter_nonliving: [
     { value: "a talking ${cod_tree_type} tree", weight: 1 },
     { value: "a voice at the bottom of a well ${wilds_specific_locn}", weight: 1 },
-	{ value: "interpreting the pages of an ancient book inked in the blood of ${prejudicetarget}", weight: 1 },
+	{ value: "the pages of an ancient book inked in the blood of ${prejudicetarget}", weight: 1 },
 	{ value: "a lucky mallet dropped by an oni", weight: 1 },
   ],
   
@@ -10854,6 +10859,10 @@ celebration_type: [
 	{ value: "making love to", weight: 1 },
 	{ value: "decapitating", weight: 1 },
 	{ value: "stabbing", weight: 1 },
+	{ value: "tickling", weight: 1 },
+	{ value: "teasing", weight: 1 },
+	{ value: "torturing", weight: 1 },
+	{ value: "robbing", weight: 1 },
   ],
   
   flag_extra_humanoids_verb3: [
@@ -12742,6 +12751,7 @@ door_type: [
 	{ value: "hobbit-themed alehouse where the doors and tables are small and the human waitstaff hobble about on their knees", weight: 1 },
     { value: "dryad-themed cafe where the waitresses are beautiful nymphs and sounds of birdsong match the sylvan decor", weight: 1 },
 	{ value: "vampire-themed pub with trick mirrors that don't reflect people and lots of blood-punned drink names", weight: 1 },
+	{ value: "restaurant with decent food, cheap ${alcohol} and the main attraction, a house band of ${humanoids} who play ${music_desc} tunes on ${MusicalInstrument} while their singer hypnotizes with ${a:vocal_range} voice", weight: 1 },
   ],
   
   missing_thing_place: [
@@ -14055,6 +14065,22 @@ door_type: [
 	{ value: "a small ${Metallic} key", weight: 1 },
 	{ value: "ashes from ${a:cod_tree_type} tree", weight: 1 },
 	{ value: "a ring with ${a:SignetSymbol} inscribed on it", weight: 1 },
+  ],
+  
+  trial_object: [
+    { value: "${AnimalInsect}", weight: 1 },
+	{ value: "${AnimalBird}", weight: 1 },
+	{ value: "${huntingmonster_singular}", weight: 1 },
+	{ value: "${cod_tree_type} tree", weight: 1 },
+	{ value: "${Colors} flame", weight: 1 },
+  ],
+  
+  music_desc: [
+    { value: "traditional", weight: 1 },
+	{ value: "noisy", weight: 1 },
+	{ value: "original", weight: 1 },
+	{ value: "popular", weight: 1 },
+	{ value: "dance", weight: 1 },
   ],
   
   //urbn subject single whose missingthing is trapped in missingthing place
