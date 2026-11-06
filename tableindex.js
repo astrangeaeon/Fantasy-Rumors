@@ -1016,6 +1016,7 @@ const tables = {
 	{ value: "the worst and darkest darkness in the world", weight: 1 },
 	{ value: "the Corrector of Errors", weight: 1 },
 	{ value: "the Sisters Grey", weight: 1 },
+	{ value: "the Annealer", weight: 1 },
   ],
 
   criminals: [
@@ -2816,6 +2817,7 @@ const tables = {
 	{ value: "practicing the sanctioned joys of revenge", weight: 1 },
 	{ value: "dueling with serpents of light that quiver continuously", weight: 1 },
 	{ value: "choosing a new pariah to be shunned until the next celebration", weight: 1 },
+	{ value: "undergoing the Trial of the ${tc:AnimalMain}", weight: 1 },
   ],
 
   housething: [
@@ -4344,6 +4346,7 @@ const tables = {
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who cursed every piece of its treasure after being compelled by ${vancian_wizards} to give away its hoard,", weight: 1 },
 	{ value: "Apu the Luck-bringer, ${a:daemontype} daemon,", weight: 1 },
 	{ value: "an ancient ${humanoid_monsters} known as the Librarian, originally from the ${landscape_types_basic} of ${foreignland},", weight: 1 },
+	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who hoards false ${Jewels}, fool's gold and cursed objects,", weight: 1 },
   ],
   
   monstertype_ntc: [
@@ -4370,6 +4373,7 @@ const tables = {
 	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who cursed every piece of its treasure after being compelled by ${vancian_wizards} to give away its hoard", weight: 1 },
 	{ value: "Apu the Luck-bringer, ${a:daemontype} daemon", weight: 1 },
 	{ value: "an ancient ${humanoid_monsters} known as the Librarian", weight: 1 },
+	{ value: "${dragon_name}, ${a:monsterdragontype} dragon who hoards false ${Jewels}, fool's gold and cursed objects", weight: 1 },
   ],
 
   monstervalue: [
@@ -6927,6 +6931,7 @@ trap_location: [
 	{ value: "a relative of the ${monster_royalty}", weight: 1 },
 	{ value: "a daemonic talent scout", weight: 1 },
 	{ value: "${uc:a:AnimalThroneType} Prince from ${foreign_adj}${foreignland}", weight: 1 },
+	{ value: "an accomplished ${AnimalMammal} assassin trained by Killer Mike himself, whose count of slain men is second only to the great assassin Time", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -8988,6 +8993,7 @@ trap_location: [
     { value: "snow", weight: 1 },
 	{ value: "wind", weight: 1 },
 	{ value: "rain", weight: 1 },
+	{ value: "animals", weight: 1 },
   ],
   
   Tools: [
@@ -12084,6 +12090,7 @@ ship_type: [
 	{ value: "dwarf-boots armed with kick-knives", weight: 1 },
 	{ value: "a dark lantern", weight: 1 },
 	{ value: "the ring of protection", weight: 1 },
+	{ value: "an oracle small enough to live in ${a:liquid_containers_personal}", weight: 1 },
   ],
   
   undead: [
@@ -13846,6 +13853,7 @@ door_type: [
 	{ value: "${gates_prefix} Gate, long-sealed, has been opened, causing the ${urbn_traders} situated in expensive stalls near the Gate ${gates_suffix} to complain", weight: 1 },
 	{ value: "as a symbol of high justice a permanent and busy gallows has been set up in the center of town", weight: 1 },
 	{ value: "the ${DecorativeStone} statue of the ${tc:statue_adj} ${statue_subject} that's stood for decades near ${urbn_street_names} has ${statue_condition}", weight: 1 },
+	{ value: "the king's ${prophetic_visionary} gave displeasing counsel and was forced from their roomy ${aristocratic_home} to live in ${a:liquid_containers_large} in an alcove on the outer walls of the city", weight: 1 },
   ],
   
   damaged_city_thing: [
