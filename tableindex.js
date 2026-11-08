@@ -133,6 +133,8 @@ const tables = {
 	{ value: " where the gods lay scattered here and there", weight: 1 },
 	{ value: " where hobbits live in the skulls of giants their forefathers slew", weight: 1 },
 	{ value: " where horses are valued only for their bashimi", weight: 1 },
+	{ value: " where they sleep on beds of fire with a nail for a pillow", weight: 1 },
+	{ value: " where the spiders spin webs of gold", weight: 1 },
   ],
 
   herdwith: [
@@ -875,6 +877,7 @@ const tables = {
 	{ value: "stones chipped off the Clashing Rocks in the Age of Miracles that did not become earth elementals", weight: 1 },
 	{ value: "the auburn hair of maidens", weight: 1 },
 	{ value: "ghosts of rain from the Baarish Desert", weight: 1 },
+	{ value: "peculiar ${MusicalInstrument}s and other instruments from ${foreignland}", weight: 1 },
   ],
 
   construction_help: [
@@ -1446,6 +1449,10 @@ const tables = {
 	{ value: "Finn the Human", weight: 1 },
 	{ value: "Carlos the Dwarf", weight: 1 },
 	{ value: "Coatel of Scorn", weight: 1 },
+	{ value: "Cha'Tima the Caller", weight: 1 },
+	{ value: "Elsu Flying-Falcon", weight: 1 },
+	{ value: "Peragur Thorgils", weight: 1 },
+	{ value: "Onacona White-Owl", weight: 1 },
   ],
 
   deadadventurerloot: [
@@ -1721,6 +1728,8 @@ const tables = {
 	{ value: "scented", weight: 1 },
 	{ value: "stained", weight: 1 },
 	{ value: "ragged", weight: 1 },
+	{ value: "clinging", weight: 1 },
+	{ value: "diaphanous", weight: 1 },
   ],
   
   duo_clothing_material: [
@@ -1963,8 +1972,9 @@ const tables = {
 	{ value: "cursed mirrors", weight: 1 },
 	{ value: "infected ${duo_clothing} and other garments", weight: 1 },
 	{ value: "the teeth of angels", weight: 1 },
-	{ value: "the feathers of birds", weight: 1 },
+	{ value: "the metal feathers of birds", weight: 1 },
 	{ value: "the ${duo_clothing_material} robes of mages and ${magicusertype}s", weight: 1 },
+	{ value: "the shells, claws and discarded carapaces of the crustaceans who roam the oceans underground", weight: 1 },
   ],
 
   excitingemployer: [
@@ -2188,6 +2198,7 @@ const tables = {
 	{ value: "a wedding between a green fairy and a prince whose happiness was so great that all who heard it fell asleep for three days and nights", weight: 1 },
 	{ value: "a greedy bishop who stood protected in a circle of flame until the rats chewed through it", weight: 1 },
 	{ value: "a god who dug hundreds of treasure pits into the earth when the world was still soft and young", weight: 1 },
+	{ value: "a race of miniature ${humanoids_nonhuman} who live on the back of ${a:AnimalCanine} in ${foreignland}", weight: 1 },
   ],
 
   feature: [
@@ -2488,6 +2499,7 @@ const tables = {
 	{ value: "scattering ${weed_one} grass seeds around the fertile valleys and small villages of ${foreignland}", weight: 1 },
 	{ value: "foolishly drinking from the Well of Thirst", weight: 1 },
 	{ value: "drawing blood from the moon with their ${BladedWeapons_Sword}", weight: 1 },
+	{ value: "failing to ring the bell of warning when ${huntingmonster} approached the walls of ${urbn_cityname} under cover of darkness", weight: 1 },
   ],
 
   hero_fate: [
@@ -2570,6 +2582,7 @@ const tables = {
 	{ value: "to seek a famous knight transformed into ${a:AnimalTrophy} by ${fairy_folk_named}", weight: 1 },
 	{ value: "to pay homage to the First ${tc:oldest}", weight: 1 },
 	{ value: "to retrieve a device created by ${vancian_wizards} that can create or reverse ${a:severe_weather} for the ${monster_royalty}", weight: 1 },
+	{ value: "to carry light from the surface deep underground", weight: 1 },
   ],
 
   heroname: [
@@ -3440,6 +3453,8 @@ const tables = {
 	{ value: "the Plaza of the Inquisition", weight: 1 },
 	{ value: "the Well of Thirst", weight: 1 },
 	{ value: "the Raccoon Opera", weight: 1 },
+	{ value: "the Court of Fallen Stars", weight: 1 },
+	{ value: "the Pyramid of the Sun", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -3526,6 +3541,7 @@ const tables = {
 	{ value: "the Drachenfels", weight: 1 },
 	{ value: "the Devil's Ladder", weight: 1 },
 	{ value: "the Cave of the Cats", weight: 1 },
+	{ value: "the harsh desert of Pityus", weight: 1 },
   ],
 
   lawnornament: [
@@ -3571,6 +3587,7 @@ const tables = {
 	{ value: "the lamp of Boddhi", weight: 1 },
 	{ value: "blazing ${Colors} fireflies", weight: 1 },
 	{ value: "the bright golden eyes of the sun goddess", weight: 1 },
+	{ value: "the candles in the paintings that line the walls", weight: 1 },
   ],
 
   Local: [
@@ -4159,6 +4176,7 @@ const tables = {
 	{ value: "the journal of Mickey the Gallivanter", weight: 1 },
 	{ value: "${a:duo_jewlery_singular} of primal ${elemntl_type} that might adorn a god", weight: 1 },
 	{ value: "a map of the cramped and labyrinthine tunnels through the mountains of ${slumberplace} that the people of that land learn to navigate through as children, offering their services as guides for tremendous sums", weight: 1 },
+	{ value: "a mirror that used to hang in the tower of ${vancian_wizards} which only reflects the past or the future, never the present", weight: 1 },
   ],
 
   membership: [
@@ -5167,6 +5185,7 @@ const tables = {
     { value: "${Smells}", weight: 3 },
     { value: "the burnt ozone scorch of recent lightning", weight: 1 },
     { value: "the copper tang of bloodstained axes", weight: 1 },
+	{ value: "the brave smell of a stone", weight: 1 },
   ],
 
   royal_secret: [
@@ -6104,6 +6123,7 @@ const tables = {
     { value: "captured", weight: 1 },
     { value: "leashed", weight: 1 },
 	{ value: "grotesque", weight: 1 },
+	{ value: "white-livered", weight: 1 },
   ],
   
   trap_setup: [
@@ -6320,6 +6340,7 @@ trap_location: [
 	{ value: "the ancient ${ancientpeople}, when they were first brought from their tents in the desert to the gates of the city of ${urbn_cityname}, called it Akmong, meaning 'an evil black dream'", weight: 1 },
 	{ value: "the great traveler ${FantasyNameMale} described the city of ${urbn_cityname} as 'a splendid desert--a domed and steepled solitude, where a stranger is lonely in the midst of a million of his race'", weight: 1 },
 	{ value: "in ${urbn_cityname}, conflict between the Grand Bailiff of the ${tc:guild_adj} ${tc:guild_synonym} of ${tc:QuickNPCJobMid}s and the Prime Warden of the ${tc:guild_adj} ${tc:guild_synonym} of ${tc:QuickNPCJobMid}s has turned violent, spilling blood onto the streets", weight: 2 },
+	{ value: "in the city of ${urbn_cityname}, every last brick and cobblestone and piece of public infrastructure bears the signature of the proud artisan who created it", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6772,6 +6793,7 @@ trap_location: [
 	{ value: "a famous company of singing ${violent_profession_plural}", weight: 1 },
 	{ value: "nymphs of the ${landscape_types_artificial}", weight: 1 },
 	{ value: "diplomats representing the ${monster_royalty}", weight: 1 },
+	{ value: "apprentices from the ${tc:guild_adj} ${tc:guild_synonym} of ${tc:QuickNPCJobMid}s", weight: 1 },
   ],
 
   urbn_subjectsingular: [
@@ -6943,6 +6965,7 @@ trap_location: [
 	{ value: "a daemonic talent scout", weight: 1 },
 	{ value: "${uc:a:AnimalThroneType} Prince from ${foreign_adj}${foreignland}", weight: 1 },
 	{ value: "an accomplished ${AnimalMammal} assassin trained by Killer Mike himself, whose count of slain men is second only to the great assassin Time", weight: 1 },
+	{ value: "${a:undead} whose soul is too weighted with sin and regret to depart to the ${afterlife}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -7490,6 +7513,7 @@ trap_location: [
 	{ value: "a simple stone marks the burying place of a woodsman who feared only the sight of a thousand chimneys spewing smoke", weight: 1 },
 	{ value: "traces of a village and ${historicalinfrastructure} destroyed in some ancient war have yet to be rebuilt", weight: 1 },
 	{ value: "a pack of ${herdanimal} wearing ${Colors} ${duo_clothing} graze year-round on ${weed_one} ${weed_two}", weight: 1 },
+	{ value: "there stand three ancient wells whose waters reflect scenes of the past, present and future", weight: 1 },
   ],
 
   wilds_locn: [
@@ -10798,6 +10822,7 @@ celebration_type: [
 	{ value: " with a map leading to ${treasure_map} scratched into the back", weight: 1 },
 	{ value: " that changes form with the phases of the moon", weight: 1 },
 	{ value: " painted with a design of ${a:foreignland} ${ship_type} consumed by ${Colors} flames,", weight: 1 },
+	{ value: " made from an unbreakable mirror", weight: 1 },
   ],
   
    shield_type: [
@@ -11721,6 +11746,7 @@ ship_type: [
 	{ value: "misshapen", weight: 1 },
 	{ value: "artificial", weight: 1 },
 	{ value: "stone", weight: 1 },
+	{ value: "ice-frozen", weight: 1 },
   ],
   
   ship_cargo_animal_type: [
@@ -12651,6 +12677,7 @@ door_type: [
   gate_history: [
 	{ value: "Priests' Gate for where the priests were hanged", weight: 1 },
 	{ value: "the Gate of Spies for where the spies were hanged", weight: 1 },
+	{ value: "Holy Gate for where the heretics were burned", weight: 1 },
   ],
   
   gates_prefix: [
