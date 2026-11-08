@@ -2049,6 +2049,7 @@ const tables = {
 	{ value: "wearing garments fragrant with the odors of paradise", weight: 1 },
 	{ value: "wearing silk and ${Jewels}", weight: 1 },
 	{ value: "whom stern old Time has rubbed with his iron tooth", weight: 1 },
+	{ value: "covered in scratches", weight: 1 },
   ],
 
   fd: [
@@ -2537,6 +2538,7 @@ const tables = {
 	{ value: "ended up involuntarily donating their blood to a beguiling ${humanoids_nonhuman}", weight: 1 },
 	{ value: "was blessed by Saint ${SaintName} ${saint_blessing}", weight: 1 },
 	{ value: "was defeated by ${a:humanoid_monsters} who played ${a:MusicalInstrument} and wore ${a:Colors} ${duo_clothing_singular}", weight: 1 },
+	{ value: "escaped with their life, but none of their luck", weight: 1 },
   ],
 
   hero_goal: [
@@ -2567,6 +2569,7 @@ const tables = {
 	{ value: "to ask a boon of King ${FantasyNameMale}, whose body has sat for ${when} upon the ${uc:AnimalThroneType} Throne with ${Metallic} crown on head and ${Jewel_singular} scepter in hand", weight: 1 },
 	{ value: "to seek a famous knight transformed into ${a:AnimalTrophy} by ${fairy_folk_named}", weight: 1 },
 	{ value: "to pay homage to the First ${tc:oldest}", weight: 1 },
+	{ value: "to retrieve a device created by ${vancian_wizards} that can create or reverse ${a:severe_weather} for the ${monster_royalty}", weight: 1 },
   ],
 
   heroname: [
@@ -4993,6 +4996,7 @@ const tables = {
 	{ value: "the talking ${AnimalSimian}s found guilty of ${crime_singular} are punished by ${punishment}", weight: 1 },
 	{ value: "merciless ${huntingmonster} appointed by Saint ${SaintName} serve as judges for terms of ${fairy_number} years", weight: 1 },
 	{ value: "they punish strangers the same way they martyred Saint ${SaintName}, who was ${martyrdom}", weight: 2 },
+	{ value: "confessions drawn from Fire Torture are weighted less than confessions drawn from Blade or Blood Torture", weight: 1 },
   ],
 
   punishment: [
@@ -5854,6 +5858,7 @@ const tables = {
 	{ value: "a book which keeps the names of all those who have perished in the Marshes of Sushupti", weight: 1 },
 	{ value: "an urn of sacred paint that renders one invisible to both daemons and the undead", weight: 1 },
 	{ value: "the Emperor's dragonfly", weight: 1 },
+	{ value: "a machine or device created by ${vancian_wizards} that creates ${a:severe_weather}", weight: 1 },
   ],
 
   tombprotection: [
@@ -9176,6 +9181,9 @@ trap_location: [
 	{ value: "secretive", weight: 1 },
 	{ value: "surly", weight: 1 },
 	{ value: "sleazy", weight: 1 },
+	{ value: "boring", weight: 1 },
+	{ value: "bored", weight: 1 },
+	{ value: "stingy", weight: 1 },
   ],
 
   QuickNPCJob: [
@@ -14046,6 +14054,7 @@ door_type: [
 	{ value: "'${FantasyName}, head ${CompassDirectionPrimary}'", weight: 1 },
 	{ value: "'RIP ${FantasyName}'", weight: 1 },
 	{ value: "'${FantasyName} the ${classic_classes} was here'", weight: 1 },
+	{ value: "a sorrowful ${AnimalOrdinary}", weight: 1 },
   ],
   
   corpse_condition: [
