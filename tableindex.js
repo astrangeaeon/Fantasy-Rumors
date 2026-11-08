@@ -3435,6 +3435,7 @@ const tables = {
 	{ value: "the Maze of Zahda", weight: 1 },
 	{ value: "the Plaza of the Inquisition", weight: 1 },
 	{ value: "the Well of Thirst", weight: 1 },
+	{ value: "the Raccoon Opera", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -9248,6 +9249,24 @@ trap_location: [
 	{ value: "chain-forger", weight: 1 },
 	{ value: "squire", weight: 1 },
 	{ value: "tattoo-artist", weight: 1 },
+	{ value: "cook", weight: 1 },
+	{ value: "piebaker", weight: 1 },
+	{ value: "brewer", weight: 1 },
+	{ value: "merchant adventurer", weight: 1 },
+	{ value: "shipwright", weight: 1 },
+	{ value: "haberdasher", weight: 1 },
+	{ value: "innholder", weight: 1 },
+	{ value: "spectacle maker", weight: 1 },
+	{ value: "fishmonger", weight: 1 },
+	{ value: "salter", weight: 1 },
+	{ value: "vintner", weight: 1 },
+	{ value: "leatherseller", weight: 1 },
+	{ value: "dyer", weight: 1 },
+	{ value: "pewterer", weight: 1 },
+	{ value: "glazier", weight: 1 },
+	{ value: "glover", weight: 1 },
+	{ value: "gardener", weight: 1 },
+	{ value: "lightmonger", weight: 1 },
   ],
 
   QuickNPCJobRich: [
@@ -14090,6 +14109,32 @@ door_type: [
 	{ value: "popular", weight: 1 },
 	{ value: "dance", weight: 1 },
   ],
+  
+  guild_adj: [
+    { value: "honorable", weight: 1 },
+	{ value: "worshipful", weight: 1 },
+	{ value: "wonderful", weight: 1 },
+	{ value: "marvelous", weight: 1 },
+	{ value: "fantastic", weight: 1 },
+  ],
+  
+  guild_synonym: [
+    { value: "guild", weight: 1 },
+	{ value: "fellowship", weight: 1 },
+	{ value: "fraternity", weight: 1 },
+	{ value: "company", weight: 1 },
+	{ value: "society", weight: 1 },
+	{ value: "order", weight: 1 },
+  ],
+  
+  guild_rank: [
+    { value: "apprentice", weight: 1 },
+	{ value: "journeyman", weight: 1 },
+	{ value: "master", weight: 1 },
+	{ value: "prime warden", weight: 1 },
+	{ value: "upper bailiff", weight: 1 },
+  ],
+  
   
   //urbn subject single whose missingthing is trapped in missingthing place
   
