@@ -2818,6 +2818,7 @@ const tables = {
 	{ value: "dueling with serpents of light that quiver continuously", weight: 1 },
 	{ value: "choosing a new pariah to be shunned until the next celebration", weight: 1 },
 	{ value: "undergoing the Trial of the ${tc:AnimalMain}", weight: 1 },
+	{ value: "performing the Rites of Hamm", weight: 1 },
   ],
 
   housething: [
@@ -3730,6 +3731,7 @@ const tables = {
 	{ value: "ride through all five gates of the city of ${urbn_cityname} on ${a:AnimalMount}: ${gates_prefix} Gate, ${gates_prefix} Gate, ${gates_prefix} Gate, the Gate ${gates_suffix_repeat} and the Gate ${gates_suffix}", weight: 1 },
 	{ value: "put on the ${Colors} ${duo_clothing_material} robes of ${a:magicusertype} brought back from ${foreign_adj}${foreignland}${foreign_phrase} by their grandfather in his youth and kept stored in the ${local_domestic_spaces} of the family home ever since", weight: 1 },
 	{ value: "open ${a:theme_tavern}", weight: 1 },
+	{ value: "join the ${tc:guild_adj} ${tc:guild_synonym} of ${tc:QuickNPCJobMid}s and become ${tc:a:guild_rank}", weight: 1 },
   ],
 
   local_racist: [
@@ -4153,6 +4155,7 @@ const tables = {
 	{ value: "the secret seventh weapon of Prince Six-Weapons", weight: 1 },
 	{ value: "the journal of Mickey the Gallivanter", weight: 1 },
 	{ value: "${a:duo_jewlery_singular} of primal ${elemntl_type} that might adorn a god", weight: 1 },
+	{ value: "a map of the cramped and labyrinthine tunnels through the mountains of ${slumberplace} that the people of that land learn to navigate through as children, offering their services as guides for tremendous sums", weight: 1 },
   ],
 
   membership: [
@@ -4175,6 +4178,7 @@ const tables = {
 	{ value: "the Order of the White Mountain", weight: 1 },
 	{ value: "the Sons of the ${uc:CompassDirectionPrimary}", weight: 1 },
 	{ value: "the Daughters of the ${uc:CompassDirectionPrimary}", weight: 1 },
+	{ value: "the ${tc:guild_adj} ${tc:guild_synonym} of ${tc:QuickNPCJobMid}s", weight: 1 },
   ],
 
   membership_initiation: [
@@ -6310,6 +6314,7 @@ trap_location: [
 	{ value: "a dozen mournful pilgrims from ${a:aristocratic_robbed_place_religious} in ${foreign_adj}${foreignland} led by ${a:religious_ranks} ${facial_desc} seek the ${shrine_type} marking where ${shrine}, but they have been stuck sleeping in the streets outside ${a:urbn_place} due to the intervening ${landscape_types_basic} being infested with ${huntingmonster} and other dangers", weight: 2 },
 	{ value: "the ancient ${ancientpeople}, when they were first brought from their tents in the desert to the gates of the city of ${urbn_cityname}, called it Akmong, meaning 'an evil black dream'", weight: 1 },
 	{ value: "the great traveler ${FantasyNameMale} described the city of ${urbn_cityname} as 'a splendid desert--a domed and steepled solitude, where a stranger is lonely in the midst of a million of his race'", weight: 1 },
+	{ value: "in ${urbn_cityname}, conflict between the Grand Bailiff of the ${tc:guild_adj} ${tc:guild_synonym} of ${tc:QuickNPCJobMid}s and the Prime Warden of the ${tc:guild_adj} ${tc:guild_synonym} of ${tc:QuickNPCJobMid}s has turned violent, spilling blood onto the streets", weight: 2 },
   ],
 
    urbn_traders: [
@@ -9814,6 +9819,7 @@ saint_curse: [
 	{ value: "to have trouble sleeping", weight: 1 },
 	{ value: "to only gain sustenance from swallowing ${AnimalInsect}s and other insects", weight: 1 },
 	{ value: "to be hated by dogs", weight: 1 },
+	{ value: "to find clean fresh water too plain", weight: 1 },
   ],
   
   light_type: [
@@ -13873,6 +13879,7 @@ door_type: [
 	{ value: "as a symbol of high justice a permanent and busy gallows has been set up in the center of town", weight: 1 },
 	{ value: "the ${DecorativeStone} statue of the ${tc:statue_adj} ${statue_subject} that's stood for decades near ${urbn_street_names} has ${statue_condition}", weight: 1 },
 	{ value: "the king's ${prophetic_visionary} gave displeasing counsel and was forced from their roomy ${aristocratic_home} to live in ${a:liquid_containers_large} in an alcove on the outer walls of the city", weight: 1 },
+	{ value: "real ${trap_builder} have moved into the picturesque artifical ruins on the grounds of the baron's ${aristocratic_home}", weight: 1 },
   ],
   
   damaged_city_thing: [
@@ -14116,6 +14123,9 @@ door_type: [
 	{ value: "wonderful", weight: 1 },
 	{ value: "marvelous", weight: 1 },
 	{ value: "fantastic", weight: 1 },
+	{ value: "royal", weight: 1 },
+	{ value: "secret", weight: 1 },
+	{ value: "glorious", weight: 1 },
   ],
   
   guild_synonym: [
@@ -14128,11 +14138,11 @@ door_type: [
   ],
   
   guild_rank: [
-    { value: "apprentice", weight: 1 },
-	{ value: "journeyman", weight: 1 },
-	{ value: "master", weight: 1 },
+    { value: "apprentice", weight: 5 },
+	{ value: "journeyman", weight: 4 },
+	{ value: "master", weight: 3 },
 	{ value: "prime warden", weight: 1 },
-	{ value: "upper bailiff", weight: 1 },
+	{ value: "upper bailiff", weight: 2 },
   ],
   
   
