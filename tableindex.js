@@ -135,6 +135,7 @@ const tables = {
 	{ value: " where horses are valued only for their bashimi", weight: 1 },
 	{ value: " where they sleep on beds of fire with a nail for a pillow", weight: 1 },
 	{ value: " where the spiders spin webs of gold", weight: 1 },
+	{ value: " where fashionable men go about in ${duo_clothing_adj} ${duo_clothing_material} ${duo_clothing} and stylish women wear ${duo_clothing_adj} ${Colors} ${duo_clothing}", weight: 1 },
   ],
 
   herdwith: [
@@ -1730,6 +1731,7 @@ const tables = {
 	{ value: "ragged", weight: 1 },
 	{ value: "clinging", weight: 1 },
 	{ value: "diaphanous", weight: 1 },
+	{ value: "uncomfortable", weight: 1 },
   ],
   
   duo_clothing_material: [
@@ -2684,7 +2686,7 @@ const tables = {
 	{ value: "bus station", weight: 1 },
 	{ value: "railroad depot", weight: 1 },
     { value: "recycling plant", weight: 1 },
-    { value: "nuclear power plant", weight: 1 },
+    { value: "atomic power plant", weight: 1 },
     { value: "broadcast antenna", weight: 1 },
     { value: "petroleum refinery", weight: 1 },
     { value: "chemical shed", weight: 1 },
