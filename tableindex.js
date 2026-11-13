@@ -136,6 +136,7 @@ const tables = {
 	{ value: " where they sleep on beds of fire with a nail for a pillow", weight: 1 },
 	{ value: " where the spiders spin webs of gold", weight: 1 },
 	{ value: " where fashionable men go about in ${duo_clothing_adj} ${duo_clothing_material} ${duo_clothing} and stylish women wear ${duo_clothing_adj} ${Colors} ${duo_clothing}", weight: 1 },
+	{ value: " with its eerie ${Colors} mists and fogs", weight: 1 },
   ],
 
   herdwith: [
@@ -428,6 +429,7 @@ const tables = {
 	{ value: " who loved their horses more than their wives, husbands and children,", weight: 1 },
 	{ value: " who shrank the ${prophecyartifact} and hid it in ${a:Metallic} ant hill,", weight: 1 },
 	{ value: " whose glory tarnished to vainglory,", weight: 1 },
+	{ value: " who drank the blood of ${huntingmonster} from ${a:liquid_containers_personal},", weight: 1 },
   ],
 
   hundred_words: [
@@ -1021,7 +1023,11 @@ const tables = {
 	{ value: "the worst and darkest darkness in the world", weight: 1 },
 	{ value: "the Corrector of Errors", weight: 1 },
 	{ value: "the Sisters Grey", weight: 1 },
-	{ value: "the Annealer", weight: 1 },
+	{ value: "the One Who Anneals", weight: 1 },
+	{ value: "the Minister of Public Misfortune", weight: 1 },
+	{ value: "the Emasculator", weight: 1 },
+	{ value: "Thade, whose hated name spells death", weight: 1 },
+	{ value: "the False ${uc:FamilyMember}", weight: 1 },
   ],
 
   criminals: [
@@ -2113,6 +2119,7 @@ const tables = {
 	{ value: "${alcohol_liquor} on their breath", weight: 1 },
 	{ value: "eyes full of sullen fire", weight: 1 },
 	{ value: "the Katla mark on the back of their neck", weight: 1 },
+	{ value: "gigantic mirths and gigantic melancholies", weight: 1 },
   ],
 
   fd_tale: [
@@ -2202,6 +2209,7 @@ const tables = {
 	{ value: "a greedy bishop who stood protected in a circle of flame until the rats chewed through it", weight: 1 },
 	{ value: "a god who dug hundreds of treasure pits into the earth when the world was still soft and young", weight: 1 },
 	{ value: "a race of miniature ${humanoids_nonhuman} who live on the back of ${a:AnimalCanine} in ${foreignland}", weight: 1 },
+	{ value: "a tiny knight known as the Knight of the Thimble who wore a thimble for a helmet", weight: 1 },
   ],
 
   feature: [
@@ -2503,6 +2511,7 @@ const tables = {
 	{ value: "foolishly drinking from the Well of Thirst", weight: 1 },
 	{ value: "drawing blood from the moon with their ${BladedWeapons_Sword}", weight: 1 },
 	{ value: "failing to ring the bell of warning when ${huntingmonster} approached the walls of ${urbn_cityname} under cover of darkness", weight: 1 },
+	{ value: "trespassing in the sacred ${landscape_types} of ${a:maneating} blessed by Law", weight: 1 },
   ],
 
   hero_fate: [
@@ -2586,6 +2595,7 @@ const tables = {
 	{ value: "to pay homage to the First ${tc:oldest}", weight: 1 },
 	{ value: "to retrieve a device created by ${vancian_wizards} that can create or reverse ${a:severe_weather} for the ${monster_royalty}", weight: 1 },
 	{ value: "to carry light from the surface deep underground", weight: 1 },
+	{ value: "to wake the slumbering ${AnimalHorseType} whose dream has been the last 400 years of history", weight: 1 },
   ],
 
   heroname: [
@@ -3458,6 +3468,7 @@ const tables = {
 	{ value: "the Raccoon Opera", weight: 1 },
 	{ value: "the Court of Fallen Stars", weight: 1 },
 	{ value: "the Pyramid of the Sun", weight: 1 },
+	{ value: "the Cradle of Despair", weight: 1 },
   ],
   
   inn_name_subjects: [
@@ -3591,6 +3602,7 @@ const tables = {
 	{ value: "blazing ${Colors} fireflies", weight: 1 },
 	{ value: "the bright golden eyes of the sun goddess", weight: 1 },
 	{ value: "the candles in the paintings that line the walls", weight: 1 },
+	{ value: "glowing ${Jewels} in the floor, walls and ceiling", weight: 1 },
   ],
 
   Local: [
@@ -3653,6 +3665,8 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC}, has been training to undergo the ancient and grueling trial known as ${tc:flag_extra_humanoids_verb2} the ${tc:trial_object} at the behest of ${wish_granter}", weight: 2 },
 	{ value: "every ${fairy_number} years, the villagers of ${village_names} must pay the brigands known as ${brigandnames} in ${exchangething} to renew an ancient ${agreement}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC} from the village of ${village_names}, believes that every child living today in the city of ${urbn_cityname} is ${a:criminal_singular} in training", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC} from the village of ${village_names}, believes that cities like ${urbn_cityname} are crowded warrens where none can experience the tranquillity of solitude", weight: 1 },
+	{ value: "the grudge between ${vancian_wizards} and ${vancian_wizards} originated ${historicalage}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -5073,6 +5087,7 @@ const tables = {
 	{ value: "finger torture", weight: 1 },
 	{ value: "amputation of the ears, nose, tongue and right hand", weight: 1 },
 	{ value: "being made to carry bags of soil and clay", weight: 1 },
+	{ value: "being auctioned off by the state to buyers from foreign lands", weight: 1 },
   ],
 
   rm: [
@@ -5964,6 +5979,10 @@ const tables = {
 	{ value: "a slumbering ${WeirdFantasyMonster}", weight: 1 },
 	{ value: "fiends of glade and dell", weight: 1 },
 	{ value: "those lesser dragons that began their lives as snakes", weight: 1 },
+	{ value: "metaphysical hazards and temptations", weight: 1 },
+	{ value: "scimitar birds", weight: 1 },
+	{ value: "assassin snails", weight: 1 },
+	{ value: "creeping arms", weight: 1 },
   ],
   
   
@@ -6011,7 +6030,7 @@ const tables = {
     { value: "${a:urbn_place_adj} ${urbn_place} in ${urbn_cityname}", weight: 1 },
     { value: "${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
     { value: "the enchanted ${otherworld_names}", weight: 1 },
-    { value: "${body_of_water}", weight: 1 },
+    { value: "${body_of_water}${body_of_water_properties}", weight: 1 },
 	{ value: "a desolate plain dotted with rusted ${rusted}", weight: 1 },
 	{ value: "the Garden of ${vancian_wizards}", weight: 1 },
   ],
@@ -6088,6 +6107,8 @@ const tables = {
 	{ value: "bursts in a great spray of reeking musk that attracts ${trap_builder} and other dungeon vermin", weight: 1 },
 	{ value: "painlessly brands the party's souls with the ownership mark of ${fairy_folk_named}", weight: 1 },
 	{ value: "fills the area with ${trap_prank_gas}", weight: 1 },
+	{ value: "fills the room up with mosquitoes", weight: 1 },
+	{ value: "spews out super-heated glue which fuses victims together", weight: 1 },
   ],
   
   trap_prank_liquid: [
@@ -6347,6 +6368,7 @@ trap_location: [
 	{ value: "in ${urbn_cityname}, conflict between the Grand Bailiff of the ${tc:guild_adj} ${tc:guild_synonym} of ${tc:QuickNPCJobMid}s and the Prime Warden of the ${tc:guild_adj} ${tc:guild_synonym} of ${tc:QuickNPCJobMid}s has turned violent, spilling blood onto the streets", weight: 2 },
 	{ value: "in the city of ${urbn_cityname}, every last brick and cobblestone and piece of public infrastructure bears the signature of the proud artisan who created it", weight: 1 },
 	{ value: "the ruined city of ${urbn_cityname} is haunted by ${undead_intangible}s, its silent boulevards lined with the broken statues of forgotten ${military_rank}s whose deeds may live yet in some ${po:bard_titles} song", weight: 1 },
+	{ value: "when Archon Rabindranath's lover left his ${aristocratic_home}, his heart became like the once great city of ${urbn_cityname}, a place of bricked up windows, boarded up doorways, sealed up hearths and chimneys", weight: 1 },
   ],
 
    urbn_traders: [
@@ -7652,7 +7674,7 @@ trap_location: [
 	{ value: "there's a fancy ${flag_imperial_color}-hued tent that charges a few silver to enter and claims to have on display one of the Living Treasures of Sultan Abdullah Abdullah: ${living_treasure}", weight: 5 },
 	{ value: "a ${flag_pattern} ${flag_basic_color} and black hot air balloon with ${flag_extra_humanoids_adj} ${humanoid} and ${a:AnimalMammal} in the basket was seen floating above ${landmark}", weight: 2 },
 	{ value: "the smell of ${Smells} will supposedly put ${a:WeirdFantasyMonster} to flight, or else drive it berserk, depending on the source", weight: 1 },
-	{ value: "an underwater ${AnimalBigCat} has made its home beneath ${body_of_water}", weight: 1 },
+	{ value: "an underwater ${AnimalBigCat} has made its home beneath ${body_of_water}${body_of_water_properties}", weight: 1 },
 	{ value: "seasoned travelers say that ${huntingmonster} only travel in groups of ${fairy_number}", weight: 1 },
 	{ value: "${gates_prefix} Gate, the first of the nine gates travelers must pass through to get to that gloomy place the ${ancientpeople} called the ${underworld_names} and the only one visible by daylight can be found ${fairy_number} leagues beyond ${landmark}", weight: 1 },
 	{ value: "if you travel far enough to the north, you'll reach a point where every wind blows from the south to the south", weight: 1 },
@@ -7667,6 +7689,9 @@ trap_location: [
 	{ value: "those who dally and cavort with the ${fairy_folk_plural} and ${fairy_folk_plural} in the enchanted ${otherworld_names} may prolong their unfinished lives, but at great cost to their souls, or so Saint ${SaintName} preached", weight: 1 },
 	{ value: "a grizzled ranger has reported seeing the traces and spoor of giant ${AnimalInsect}s ${wilds_specific_locn}", weight: 1 },
 	{ value: "a species of ${herd_adj} ${herdanimal} that hibernate underground for cycles of ${fairy_number} decades are beginning to awaken", weight: 1 },
+	{ value: "the believers who attend ${aristocratic_robbed_place_religious} in the wilds of ${foreign_adj}${foreignland} have been performing a continuous endless prayer that was started by a young ${religious_ranks} ${when} ago", weight: 1 },
+	{ value: "the way to the enchanted ${otherworld_names} can be found by wounding a wild ${AnimalPrey} and then giving chase as it flees away", weight: 1 },
+	{ value: "if you travel far enough ${CompassDirectionPrimary}, you'll come across signs of the army of Prince Axum who marched to the edge of the world", weight: 1 },
   ],
   
   
@@ -7691,6 +7716,7 @@ trap_location: [
 	{ value: "carve their totem poles with figures of ${AnimalMammal} and ${AnimalBird}", weight: 1 },
 	{ value: "light their eerie ${Colors} balefires", weight: 1 },
 	{ value: "howl their praises to the Mother of the Waters", weight: 1 },
+	{ value: "rob travellers and put their victims in bags hung from tall trees", weight: 1 },
   ],
 
   onedfive: [
@@ -9218,6 +9244,11 @@ trap_location: [
 	{ value: "boring", weight: 1 },
 	{ value: "bored", weight: 1 },
 	{ value: "stingy", weight: 1 },
+	{ value: "irresponsible", weight: 1 },
+	{ value: "unlucky", weight: 1 },
+	{ value: "lucky", weight: 1 },
+	{ value: "polite", weight: 1 },
+	{ value: "sweaty", weight: 1 },
   ],
 
   QuickNPCJob: [
@@ -9905,7 +9936,7 @@ saint_curse: [
 	{ value: "Saint ${SaintName} in answer to their prayers", weight: 1 },
 	{ value: "an animated ${magicalcommonobject} given sapience by the god ${RealGods}", weight: 1 },
     { value: "a mysterious ${oldest} ${wilds_specific_locn}", weight: 1 },
-	{ value: "a water nymph living at the bottom of ${body_of_water}", weight: 1 },
+	{ value: "a water nymph living at the bottom of ${body_of_water}${body_of_water_properties}", weight: 1 },
 	{ value: "${a:fairy_folk} visiting from the enchanted ${otherworld_names}", weight: 1 },
   ],
   
@@ -10203,7 +10234,7 @@ celebration_type: [
 	{ value: "Saint ${SaintName} ${exile_verb} ${exiles} of ${urbn_cityname} to an island populated by ${islandpop}", weight: 1 },
 	{ value: "the ancient ${ancientpeople}, who valued ${monstervalue} above all else, forging the ${prophecyartifact}", weight: 1 },
 	{ value: "the ${FantasyLastName} Expedition, who sought ${expeditions} ${when} ago, making camp near the ${Colors} waters of the ${RealGods} River", weight: 1 },
-	{ value: "${prophetic_subject} bathing with ${oppressed_grp} in ${body_of_water}", weight: 1 },
+	{ value: "${prophetic_subject} bathing with ${oppressed_grp} in ${body_of_water}${body_of_water_properties}", weight: 1 },
 	{ value: "${prophetic_subject} sitting with ${a:QuickNPCJob} and ${a:magicusertype} around a blindingly bright bonfire built from the scrolls and ${Jewels} of the House of ${housething} which smolders in the distance", weight: 1 },
 	{ value: "${prophetic_subject} brokering peace between the ${AnimalMain}s and the ${AnimalMain}s", weight: 1 },
 	{ value: "elders of the ${dwarfclanname} Clan sending Skuld down from the mountain with ${deadadventurerloot} to follow in the footsteps of ${historicalperson}", weight: 1 },
@@ -10247,7 +10278,7 @@ celebration_type: [
 	{ value: "out new species of ${AnimalInsect}", weight: 1 },
 	{ value: "out a legendary grove of trees that bear ${Jewels}", weight: 1 },
 	{ value: "the final resting place of ${heroes_and_villains}", weight: 1 },
-	{ value: "out new species of ${AnimalWater} in ${body_of_water}", weight: 1 },
+	{ value: "out new species of ${AnimalWater} in ${body_of_water}${body_of_water_properties}", weight: 1 },
   ],
   
   body_of_water: [
@@ -10452,6 +10483,7 @@ celebration_type: [
     { value: "a table draped with ${a:Colors} cloth", weight: 1 },
 	{ value: "a worn wooden desk", weight: 1 },
 	{ value: "the stone floor of ${a:urbn_place_adj} ${urbn_place}", weight: 1 },
+	{ value: "the ${flag}", weight: 1 },
   ],
   
   
@@ -10782,7 +10814,7 @@ celebration_type: [
 	{ value: "House of ${housething}", weight: 1 },
 	{ value: "${uc:ordinal} Legion", weight: 1 },
 	{ value: "mercenary company ${brigandnames}", weight: 1 },
-	{ value: "Guild of ${tc:QuickNPCJobMid}s", weight: 1 },
+	{ value: "${uc:guild_adj} ${uc:guild_synonym} of ${tc:QuickNPCJobMid}s", weight: 1 },
   ],
   
   flag_extra: [
@@ -10792,7 +10824,7 @@ celebration_type: [
 	{ value: ", with its ${onedten} ${flag_basic_color} ${shapes} in the canton,", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${a:AnimalPredator} ${flag_extra_animal_verb} ${a:AnimalPrey},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${a:flag_extra_animal_adj} ${AnimalPrey},", weight: 1 },
-	{ value: ", with its pattern of ${tc:constellation_repeat} constellation in ${flag_imperial_color_adj} ${flag_imperial_color},", weight: 1 },
+	{ value: ", with its pattern of ${uc:constellation_repeat} constellation in ${flag_imperial_color_adj} ${flag_imperial_color},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of two ${humanoids} ${flag_extra_humanoids_verb},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb3},", weight: 1 },
 	{ value: ", with its ${flag_extra_style} design of ${flag_extra_humanoids_adj} ${humanoid} ${flag_extra_humanoids_verb2} ${a:flag_extra_humanoids_verb2_object},", weight: 1 },
@@ -10952,6 +10984,7 @@ celebration_type: [
 	{ value: "making a rude gesture", weight: 1 },
 	{ value: "swallowing ${a:BladedWeapons_Sword}", weight: 1 },
 	{ value: "holding ${a:BladedWeapons_Sword} in each hand", weight: 1 },
+	{ value: "crying softly with joy", weight: 1 },
   ],
   
   flag_extra_humanoids_adj: [
@@ -11509,6 +11542,7 @@ vehicle: [
 	{ value: "amphora", weight: 1 },
 	{ value: "carafe", weight: 1 },
 	{ value: "stein", weight: 1 },
+	{ value: "jeweled bowl", weight: 1 },
   ],
   
   liquid_containers_large: [
@@ -11544,7 +11578,7 @@ vehicle: [
   exotic_water_provenance: [
     { value: "from the scrying pool in ${slumberplace}", weight: 1 },
 	{ value: "from the Fountain of the ${uc:AnimalBigCat} in ${urbn_cityname}", weight: 1 },
-	{ value: "from ${body_of_water}", weight: 1 },
+	{ value: "from ${body_of_water}${body_of_water_properties}", weight: 1 },
 	{ value: "from the healing baths in ${foreignland}", weight: 1 },
 	{ value: "from the hot springs of ${coastal}", weight: 1 },
 	{ value: "from ${placebeyond}", weight: 1 },
@@ -12733,6 +12767,7 @@ door_type: [
 	{ value: "Mirrors", weight: 1 },
 	{ value: "Oblivion", weight: 1 },
 	{ value: "Light", weight: 1 },
+	{ value: "Truth", weight: 1 },
   ],
   
   castle_extra: [
@@ -14094,6 +14129,7 @@ door_type: [
 	{ value: "'RIP ${FantasyName}'", weight: 1 },
 	{ value: "'${FantasyName} the ${classic_classes} was here'", weight: 1 },
 	{ value: "a sorrowful ${AnimalOrdinary}", weight: 1 },
+	{ value: "'Blood alone unlocks the door'", weight: 1 },
   ],
   
   corpse_condition: [
@@ -14216,6 +14252,13 @@ door_type: [
 	{ value: "${crowns_metal_type}", weight: 1 },
 	{ value: "${season}", weight: 1 },
 	{ value: "${famous_thrones}", weight: 1 },
+  ],
+  
+  body_of_water_properties: [
+    { value: "", weight: 10 },
+	{ value: ", whose stains will never dry or wash out", weight: 1 },
+	{ value: ", whose waters are always icy", weight: 1 },
+	{ value: ", whose waters are always warm", weight: 1 },
   ],
   
   
