@@ -427,6 +427,7 @@ const tables = {
 	{ value: " whose brilliant mind mastered opposition, containing both the bottomless pit and the unending stairs,", weight: 1 },
 	{ value: " who loved their horses more than their wives, husbands and children,", weight: 1 },
 	{ value: " who shrank the ${prophecyartifact} and hid it in ${a:Metallic} ant hill,", weight: 1 },
+	{ value: " whose glory tarnished to vainglory,", weight: 1 },
   ],
 
   hundred_words: [
@@ -3651,6 +3652,7 @@ const tables = {
 	{ value: "the ${corpse_condition} ${god_funeral_body} of ${a:humanoid} appeared overnight in the town square, ${pocket_items} laying nearby the only clue", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, has been training to undergo the ancient and grueling trial known as ${tc:flag_extra_humanoids_verb2} the ${tc:trial_object} at the behest of ${wish_granter}", weight: 2 },
 	{ value: "every ${fairy_number} years, the villagers of ${village_names} must pay the brigands known as ${brigandnames} in ${exchangething} to renew an ancient ${agreement}", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC} from the village of ${village_names}, believes that every child living today in the city of ${urbn_cityname} is ${a:criminal_singular} in training", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -3754,6 +3756,7 @@ const tables = {
 	{ value: "put on the ${Colors} ${duo_clothing_material} robes of ${a:magicusertype} brought back from ${foreign_adj}${foreignland}${foreign_phrase} by their grandfather in his youth and kept stored in the ${local_domestic_spaces} of the family home ever since", weight: 1 },
 	{ value: "open ${a:theme_tavern}", weight: 1 },
 	{ value: "join the ${tc:guild_adj} ${tc:guild_synonym} of ${tc:QuickNPCJobMid}s and become ${tc:a:guild_rank}", weight: 1 },
+	{ value: "learn the ways of the ${ancientpeople}, who were known as the ${tc:type_peoples}-People", weight: 1 },
   ],
 
   local_racist: [
@@ -6343,6 +6346,7 @@ trap_location: [
 	{ value: "the great traveler ${FantasyNameMale} described the city of ${urbn_cityname} as 'a splendid desert--a domed and steepled solitude, where a stranger is lonely in the midst of a million of his race'", weight: 1 },
 	{ value: "in ${urbn_cityname}, conflict between the Grand Bailiff of the ${tc:guild_adj} ${tc:guild_synonym} of ${tc:QuickNPCJobMid}s and the Prime Warden of the ${tc:guild_adj} ${tc:guild_synonym} of ${tc:QuickNPCJobMid}s has turned violent, spilling blood onto the streets", weight: 2 },
 	{ value: "in the city of ${urbn_cityname}, every last brick and cobblestone and piece of public infrastructure bears the signature of the proud artisan who created it", weight: 1 },
+	{ value: "the ruined city of ${urbn_cityname} is haunted by ${undead_intangible}s, its silent boulevards lined with the broken statues of forgotten ${military_rank}s whose deeds may live yet in some ${po:bard_titles} song", weight: 1 },
   ],
 
    urbn_traders: [
@@ -6770,7 +6774,7 @@ trap_location: [
 	{ value: "young squires without beard or mustache", weight: 1 },
 	{ value: "recreant knights who live by robbery in the forest", weight: 1 },
 	{ value: "cursed fishers whose nets catch nothing, whose kreels are empty", weight: 1 },
-	{ value: "${travelers}s from ${urbn_cityname}, the City of ${tc:urbn_citynickname}", weight: 1 },
+	{ value: "${travelers}s from ${urbn_cityname}, the City of ${uc:urbn_citynickname}", weight: 1 },
 	{ value: "a trio of ${violent_profession_plural} armed with strange triangular daggers", weight: 1 },
 	{ value: "knights in ${Colors} armor", weight: 1 },
 	{ value: "the highborn of ${urbn_cityname}", weight: 1 },
@@ -6968,6 +6972,7 @@ trap_location: [
 	{ value: "${uc:a:AnimalThroneType} Prince from ${foreign_adj}${foreignland}", weight: 1 },
 	{ value: "an accomplished ${AnimalMammal} assassin trained by Killer Mike himself, whose count of slain men is second only to the great assassin Time", weight: 1 },
 	{ value: "${a:undead} whose soul is too weighted with sin and regret to depart to the ${afterlife}", weight: 1 },
+	{ value: "the great artist ${artists}, said to also be ${a:criminal_singular},", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -7408,6 +7413,7 @@ trap_location: [
 	{ value: "is where a magical replica of the corpse of ${ntc} made of wood can be found", weight: 1 },
 	{ value: "is near the ruined tower where ${vancian_wizards} of old was said to consult with the preserved heads of three ancient ${ancientpeople_singular} kings", weight: 1 },
 	{ value: "attracts an uncivilized giant whose stony shits are the size of ${a:AnimalDogBreed}", weight: 1 },
+	{ value: "marks a plot of land where fallen trees lay undecayed, where nature's works are stopt", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -7516,6 +7522,7 @@ trap_location: [
 	{ value: "traces of a village and ${historicalinfrastructure} destroyed in some ancient war have yet to be rebuilt", weight: 1 },
 	{ value: "a pack of ${herdanimal} wearing ${Colors} ${duo_clothing} graze year-round on ${weed_one} ${weed_two}", weight: 1 },
 	{ value: "there stand three ancient wells whose waters reflect scenes of the past, present and future", weight: 1 },
+	{ value: "lays the scattered wreckage of an ancient ${ship_type}, with the ${flag} faded but recognizable not far away", weight: 1 },
   ],
 
   wilds_locn: [
@@ -7850,6 +7857,7 @@ trap_location: [
     { value: "hobbit", weight: 1 },
 	{ value: "lamb", weight: 1 },
     { value: "bull", weight: 1 },
+	{ value: "porcupine", weight: 1 },
   ],
   
     AnimalTrophy: [
@@ -13425,6 +13433,7 @@ door_type: [
 	{ value: "a half-dozen ${AnimalSimian}s that escaped from the Royal Laboratory with the help of a radical druid", weight: 1 },
 	{ value: "one of the Living Treasures of Sultan Abdullah Abdullah: ${living_treasure}", weight: 2 },
 	{ value: "a runaway from the Harem of Flowers named ${tc:flowers_singular}", weight: 1 },
+	{ value: "a tame ${AnimalPredator}, the mascot of the city of ${urbn_cityname}, which has gone missing and must be returned before ${holiday}", weight: 1 },
   ],
   
   fetch_quest_reward: [
@@ -13470,6 +13479,7 @@ door_type: [
 	{ value: "${tc:travelers}", weight: 1 },
 	{ value: "${tc:religious_ranks}", weight: 1 },
 	{ value: "${tc:QuickNPCJobExotic}", weight: 1 },
+	{ value: "${tc:military_rank}", weight: 1 },
   ],
   
   statue_adj: [
@@ -14181,6 +14191,31 @@ door_type: [
 	{ value: "master", weight: 3 },
 	{ value: "prime warden", weight: 1 },
 	{ value: "upper bailiff", weight: 2 },
+  ],
+  
+  military_rank: [
+    { value: "marshal", weight: 1 },
+	{ value: "field marshal", weight: 1 },
+	{ value: "general", weight: 1 },
+	{ value: "admiral", weight: 1 },
+	{ value: "captain", weight: 1 },
+	{ value: "colonel", weight: 1 },
+	{ value: "lieutenant", weight: 1 },
+	{ value: "major", weight: 1 },
+	{ value: "commander", weight: 1 },
+	{ value: "commodore", weight: 1 },
+	{ value: "sergeant", weight: 1 },
+  ],
+  //the mountain-people, the candle-people, the jaguar-people
+  type_peoples: [
+    { value: "${landscape_types_basic_singular}", weight: 1 },
+	{ value: "${grave_synonyms}", weight: 1 },
+	{ value: "${Tools}", weight: 1 },
+	{ value: "${magicalcommonobject}", weight: 1 },
+	{ value: "${AnimalMain}", weight: 1 },
+	{ value: "${crowns_metal_type}", weight: 1 },
+	{ value: "${season}", weight: 1 },
+	{ value: "${famous_thrones}", weight: 1 },
   ],
   
   
