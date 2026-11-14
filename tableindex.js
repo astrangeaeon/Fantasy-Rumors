@@ -137,6 +137,7 @@ const tables = {
 	{ value: " where the spiders spin webs of gold", weight: 1 },
 	{ value: " where fashionable men go about in ${duo_clothing_adj} ${duo_clothing_material} ${duo_clothing} and stylish women wear ${duo_clothing_adj} ${Colors} ${duo_clothing}", weight: 1 },
 	{ value: " with its eerie ${Colors} mists and fogs", weight: 1 },
+	{ value: " with its children bald and wrinkled like old men", weight: 1 },
   ],
 
   herdwith: [
@@ -430,6 +431,7 @@ const tables = {
 	{ value: " who shrank the ${prophecyartifact} and hid it in ${a:Metallic} ant hill,", weight: 1 },
 	{ value: " whose glory tarnished to vainglory,", weight: 1 },
 	{ value: " who drank the blood of ${huntingmonster} from ${a:liquid_containers_personal},", weight: 1 },
+	{ value: " who performed their dawn ablutions with ${huntingmonster_singular} blood,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1028,6 +1030,7 @@ const tables = {
 	{ value: "the Emasculator", weight: 1 },
 	{ value: "Thade, whose hated name spells death", weight: 1 },
 	{ value: "the False ${uc:FamilyMember}", weight: 1 },
+	{ value: "the Kisser of Wounds", weight: 1 },
   ],
 
   criminals: [
@@ -4326,6 +4329,7 @@ const tables = {
 	{ value: "${a:WeirdFantasyMonster} who was cursed to steal luck and good fortune from others that they cannot use but are compelled to hoard and protect nonetheless for ${hero_curse_reason} is said to have its ${lair_synonyms} in a former ${DungeonRoom} on the ${floors} floor", weight: 1 },
 	{ value: "${a:monsterA} on the ${floors} floor wears the ${Metallic} key to a forgotten workshop of ${vancian_wizards} on a chain around its neck", weight: 1 },
 	{ value: "${monstertype} guards the skeleton of Saint ${SaintName}, whose bones have slowly transformed into ${Jewels} after they were martyred by being ${martyrdom} ${when} ago", weight: 1 },
+	{ value: "a strange creature that looks vaguely like an upside-down ${AnimalMain} and smells like ${Smells_Bad} is a devout follower of ${FantasyGods}", weight: 1 },
   ],
   
   monster_hybrid: [
@@ -4714,6 +4718,7 @@ const tables = {
     { value: "ill-equipped", weight: 1 },
     { value: "spell-versed", weight: 1 },
     { value: "well-equipped", weight: 1 },
+	{ value: "tattooed", weight: 1 },
   ],
 
   posse: [
@@ -6995,6 +7000,7 @@ trap_location: [
 	{ value: "an accomplished ${AnimalMammal} assassin trained by Killer Mike himself, whose count of slain men is second only to the great assassin Time", weight: 1 },
 	{ value: "${a:undead} whose soul is too weighted with sin and regret to depart to the ${afterlife}", weight: 1 },
 	{ value: "the great artist ${artists}, said to also be ${a:criminal_singular},", weight: 1 },
+	{ value: "a neutral colporteur with books about the divine ${RealGods} and saints like Saint ${SaintName} as well as tomes about the daemon lord ${DemonName} and infernal ${military_rank}s with names like ${LowerRankedDemonName}", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -7545,6 +7551,7 @@ trap_location: [
 	{ value: "a pack of ${herdanimal} wearing ${Colors} ${duo_clothing} graze year-round on ${weed_one} ${weed_two}", weight: 1 },
 	{ value: "there stand three ancient wells whose waters reflect scenes of the past, present and future", weight: 1 },
 	{ value: "lays the scattered wreckage of an ancient ${ship_type}, with the ${flag} faded but recognizable not far away", weight: 1 },
+	{ value: "${a:living_treasure_monster} has made its lair in the discarded boot of a giant", weight: 1 },
   ],
 
   wilds_locn: [
@@ -7692,6 +7699,7 @@ trap_location: [
 	{ value: "the believers who attend ${aristocratic_robbed_place_religious} in the wilds of ${foreign_adj}${foreignland} have been performing a continuous endless prayer that was started by a young ${religious_ranks} ${when} ago", weight: 1 },
 	{ value: "the way to the enchanted ${otherworld_names} can be found by wounding a wild ${AnimalPrey} and then giving chase as it flees away", weight: 1 },
 	{ value: "if you travel far enough ${CompassDirectionPrimary}, you'll come across signs of the army of Prince Axum who marched to the edge of the world", weight: 1 },
+	{ value: "a band of ${humanoid} ${violent_profession_plural} marching under the ${flag} have been spotted near the ${regions} of ${foreignland}", weight: 1 },
   ],
   
   
@@ -10985,6 +10993,7 @@ celebration_type: [
 	{ value: "swallowing ${a:BladedWeapons_Sword}", weight: 1 },
 	{ value: "holding ${a:BladedWeapons_Sword} in each hand", weight: 1 },
 	{ value: "crying softly with joy", weight: 1 },
+	{ value: "covering its face with its hands", weight: 1 },
   ],
   
   flag_extra_humanoids_adj: [
@@ -12432,6 +12441,7 @@ door_type: [
 	{ value: "${humanoid}-slaying", weight: 1 },
 	{ value: "${huntingmonster_singular}-slaying", weight: 1 },
 	{ value: "eerie ${Colors}", weight: 1 },
+	{ value: "metal-thorned", weight: 1 },
   ],
   
   humanoid_monsters: [
