@@ -126,7 +126,7 @@ const tables = {
 	{ value: " country of ten thousand chariots", weight: 1 },
 	{ value: " where the birds make their nests with the hair of dead maidens", weight: 1 },
 	{ value: " where the deer and the antelope play", weight: 1 },
-	{ value: " with its tress that bear ${AnimalInsect}s instead of fruit", weight: 1 },
+	{ value: " with its trees that bear ${AnimalInsect}s instead of fruit", weight: 1 },
 	{ value: " where zucchiniboys, onionmen and cabbagegirls rule", weight: 1 },
 	{ value: " where they keep black wine in underground cisterns, drawing bucketfuls up at mealtimes", weight: 1 },
 	{ value: " where love can only be expressed through cruel spider marriages", weight: 1 },
@@ -3670,6 +3670,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC} from the village of ${village_names}, believes that every child living today in the city of ${urbn_cityname} is ${a:criminal_singular} in training", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC} from the village of ${village_names}, believes that cities like ${urbn_cityname} are crowded warrens where none can experience the tranquillity of solitude", weight: 1 },
 	{ value: "the grudge between ${vancian_wizards} and ${vancian_wizards} originated ${historicalage}", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, has been described as having the ${animal_analogy_noun} of ${a:animal_analogy_subject}", weight: 100 },
   ],
   
   local_obtain_art: [
@@ -5714,6 +5715,7 @@ const tables = {
 	{ value: "the buildings are all made from the wrecks of ships", weight: 1 },
 	{ value: "the priests have sacrficed ${a:AnimalSacrifice_adj} ${AnimalSacrifice} at ${boundary_times} for unbroken centuries", weight: 1 },
 	{ value: "children are given three names at birth, their human name, their ${AnimalMain} name, and their secret name", weight: 1 },
+	{ value: "the people are said to heap praises on those who are as ${animal_analogy_adj} as ${a:animal_analogy_subject}", weight: 1 },
   ],
 
   strangenoises: [
@@ -7805,6 +7807,27 @@ trap_location: [
 	{ value: "${AnimalSnake}", weight: 1 },
   ],
   
+  AnimalMainExpanded: [
+    { value: "${AnimalBird}", weight: 1 },
+    { value: "${AnimalCanine}", weight: 1 },
+	{ value: "${AnimalBigCat}", weight: 1 },
+    { value: "${AnimalMount}", weight: 1 },
+    { value: "${AnimalReptile}", weight: 1 },
+	{ value: "${AnimalInsect}", weight: 1 },
+    { value: "${AnimalMammal}", weight: 1 },
+    { value: "${AnimalOrdinary}", weight: 1 },
+	{ value: "${AnimalFarm}", weight: 1 },
+	{ value: "${AnimalSnake}", weight: 1 },
+	{ value: "${AnimalSimian}", weight: 1 },
+	{ value: "${AnimalTrophy}", weight: 1 },
+	{ value: "${AnimalPest}", weight: 1 },
+	{ value: "${AnimalPredator}", weight: 1 },
+	{ value: "${AnimalPrey}", weight: 1 },
+	{ value: "${AnimalDogBreed}", weight: 1 },
+	{ value: "${AnimalWater}", weight: 1 },
+	{ value: "${AnimalHorseType}", weight: 1 },
+  ],
+  
   AnimalSimian: [
     { value: "ape", weight: 1 },
     { value: "gorilla", weight: 1 },
@@ -8814,6 +8837,7 @@ trap_location: [
 	{ value: "onion", weight: 1 },
 	{ value: "${Colors} pumpkin", weight: 1 },
 	{ value: "Saint Olaf's Toe", weight: 1 },
+	{ value: "turnip", weight: 1 },
   ],
   
   FantasyMeal_Vegetable_plural: [
@@ -8840,6 +8864,7 @@ trap_location: [
 	{ value: "leeks", weight: 1 },
 	{ value: "onions", weight: 1 },
 	{ value: "${Colors} pumpkins", weight: 1 },
+	{ value: "turnips", weight: 1 },
   ],
   
   FantasyMeal_Fruit: [
@@ -14269,6 +14294,48 @@ door_type: [
 	{ value: ", whose stains will never dry or wash out", weight: 1 },
 	{ value: ", whose waters are always icy", weight: 1 },
 	{ value: ", whose waters are always warm", weight: 1 },
+  ],
+  
+  animal_analogy_subject: [
+    { value: "${AnimalMainExpanded}", weight: 1 },
+	{ value: "${huntingmonster_singular}", weight: 1 },
+	{ value: "${FantasyMeal_Vegetable}", weight: 1 },
+  ],
+  
+  animal_analogy_noun: [
+    { value: "loyalty", weight: 1 },
+	{ value: "patience", weight: 1 },
+	{ value: "strength", weight: 1 },
+	{ value: "cunning", weight: 1 },
+	{ value: "beauty", weight: 1 },
+	{ value: "passion", weight: 1 },
+	{ value: "ferocity", weight: 1 },
+	{ value: "solemnity", weight: 1 },
+	{ value: "melancholy", weight: 1 },
+	{ value: "fury", weight: 1 },
+	{ value: "quickness", weight: 1 },
+	{ value: "forgetfulness", weight: 1 },
+	{ value: "courage", weight: 1 },
+	{ value: "memory", weight: 1 },
+	{ value: "viciousness", weight: 1 },
+  ],
+  
+  animal_analogy_adj: [
+    { value: "loyal", weight: 1 },
+	{ value: "patient", weight: 1 },
+	{ value: "strong", weight: 1 },
+	{ value: "cunning", weight: 1 },
+	{ value: "beautiful", weight: 1 },
+	{ value: "passionate", weight: 1 },
+	{ value: "fierce", weight: 1 },
+	{ value: "solemn", weight: 1 },
+	{ value: "melancholy", weight: 1 },
+	{ value: "furious", weight: 1 },
+	{ value: "quick", weight: 1 },
+	{ value: "forgetful", weight: 1 },
+	{ value: "brave", weight: 1 },
+	{ value: "watchful", weight: 1 },
+	{ value: "vicious", weight: 1 },
   ],
   
   
