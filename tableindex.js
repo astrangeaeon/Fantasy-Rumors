@@ -138,6 +138,7 @@ const tables = {
 	{ value: " where fashionable men go about in ${duo_clothing_adj} ${duo_clothing_material} ${duo_clothing} and stylish women wear ${duo_clothing_adj} ${Colors} ${duo_clothing}", weight: 1 },
 	{ value: " with its eerie ${Colors} mists and fogs", weight: 1 },
 	{ value: " with its children bald and wrinkled like old men", weight: 1 },
+	{ value: " with its strange tailless ${AnimalPest}s", weight: 1 },
   ],
 
   herdwith: [
@@ -432,6 +433,7 @@ const tables = {
 	{ value: " whose glory tarnished to vainglory,", weight: 1 },
 	{ value: " who drank the blood of ${huntingmonster} from ${a:liquid_containers_personal},", weight: 1 },
 	{ value: " who performed their dawn ablutions with ${huntingmonster_singular} blood,", weight: 1 },
+	{ value: " who stood up next to mountains and chopped them down with the edge of their hand,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1987,6 +1989,7 @@ const tables = {
 	{ value: "the metal feathers of birds", weight: 1 },
 	{ value: "the ${duo_clothing_material} robes of mages and ${magicusertype}s", weight: 1 },
 	{ value: "the shells, claws and discarded carapaces of the crustaceans who roam the oceans underground", weight: 1 },
+	{ value: "the roots of ${cod_tree_type} trees", weight: 1 },
   ],
 
   excitingemployer: [
@@ -2405,6 +2408,7 @@ const tables = {
 	{ value: "wait at the crossroads near ${landmark} and challenge all who pass by to a duel until ${fairy_number} victories are obtained", weight: 1 },
 	{ value: "pass through the Gate ${gates_suffix} into the holy city of ${urbn_cityname}", weight: 1 },
 	{ value: "travel to the resting place of ${ntc} in ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
+	{ value: "wait at ${a:urbn_place} in ${urbn_cityname} until one dark and lithe and shiny-eyed provides further instructions", weight: 1 },
   ],
 
   geyserspray: [
@@ -2851,6 +2855,7 @@ const tables = {
 	{ value: "choosing a new pariah to be shunned until the next celebration", weight: 1 },
 	{ value: "undergoing the Trial of the ${tc:AnimalMain}", weight: 1 },
 	{ value: "performing the Rites of Hamm", weight: 1 },
+	{ value: "smoking the pungent ${cod_tree_type} leaves", weight: 1 },
   ],
 
   housething: [
@@ -3670,7 +3675,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC} from the village of ${village_names}, believes that every child living today in the city of ${urbn_cityname} is ${a:criminal_singular} in training", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC} from the village of ${village_names}, believes that cities like ${urbn_cityname} are crowded warrens where none can experience the tranquillity of solitude", weight: 1 },
 	{ value: "the grudge between ${vancian_wizards} and ${vancian_wizards} originated ${historicalage}", weight: 1 },
-	{ value: "${FantasyName}, ${a:QuickNPC}, has been described as having the ${animal_analogy_noun} of ${a:animal_analogy_subject}", weight: 100 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, has been described as having the ${animal_analogy_noun} of ${a:animal_analogy_subject}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -3920,6 +3925,7 @@ const tables = {
 	{ value: "${a:AnimalPest} has begun performing Boddhist rituals at ${boundary_times} in ${po:FantasyName} ${local_domestic_spaces}", weight: 1 },
 	{ value: "the ${AnimalBigCat} with the golden key in its mouth returned as it does every seven years", weight: 1 },
 	{ value: "${FantasyName}, a local ${QuickNPCJob}, lost their ${duo_clothing_singular} in the ${uc:Jewel_singular} District of ${urbn_cityname}, only to find it had somehow made its way back to their ${local_domestic_spaces}", weight: 1 },
+	{ value: "the children have been insisting that ${a:WeirdFantasyMonster} now lives under the bridge, but adults have not seen anything out of the ordinary", weight: 1 },
   ],
 
   localtopic: [
@@ -4836,6 +4842,7 @@ const tables = {
 	{ value: "${vancian_wizards} sought the oracle of ${a:dungeon_mural_monster_primal} before grimly setting off for ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
 	{ value: "We asked for signs and signs were sent: ${prophecy_signs}", weight: 2 },
 	{ value: "${vancian_wizards} captured the secret lore of ${knowledgething} in a book with ${Metallic} pages in a dream they had after celebrating ${holiday}", weight: 1 },
+	{ value: "The ${uc:prophetic_visionary} of ${urbn_cityname} revealed that the ${prophecyartifact}, a powerful artifact, can be found in the once glorious city of ${urbn_cityname}, its ruins crawling with ${huntingmonster} and ${undead_intangible}s now", weight: 2 },
 
   ],
 
@@ -8606,6 +8613,7 @@ trap_location: [
 	{ value: "Waldshut", weight: 1 },
 	{ value: "Brimble", weight: 1 },
 	{ value: "Sternwinder", weight: 1 },
+	{ value: "Tallcat", weight: 1 },
   ],
 
   FamilyMember: [
@@ -10294,6 +10302,7 @@ celebration_type: [
 	{ value: "${prophetic_subject} holding up the snarling head of ${DemonName} the ${daemontype} daemon in grim triumph", weight: 1 },
 	{ value: "Saint ${SaintName} ${miracles}", weight: 1 },
 	{ value: "${prophetic_subject} casting a silver line and a golden hook baited with ${a:Jewel_singular} into the Lake of Dreams to catch the sea-dragon ${dragon_name}", weight: 1 },
+	{ value: "a herd of ${herd_adj} ${herdanimal}${herdwith} in the ${landscape_types} of ${foreign_adj}${foreignland}", weight: 1 },
   ],
   
   
@@ -11401,6 +11410,7 @@ celebration_type: [
 	{ value: "they will be transformed into ${a:AnimalReptile} for ${fairy_number} years", weight: 1 },
 	{ value: "they will dance ${dance} whenever they hear music", weight: 1 },
 	{ value: "they will trade voices with ${a:AnimalMammal}", weight: 1 },
+	{ value: "they will trip over the roots of the ${cod_tree_type} tree", weight: 1 },
 	
   ],
   
@@ -12785,6 +12795,7 @@ door_type: [
 	{ value: "Gloom", weight: 1 },
 	{ value: "Victory", weight: 1 },
 	{ value: "the Slaughter-House", weight: 1 },
+	{ value: "the Triple Brass", weight: 1 },
   ],
   
   //the castle of ntc, sometimes called the castle of castle_name, is said to have castle_extra
@@ -13188,7 +13199,7 @@ door_type: [
   city_features: [
     { value: "domes and turrets", weight: 1 },
 	{ value: "gateways and bell towers", weight: 1 },
-	{ value: "bridges and waterfalls", weight: 1 },
+	{ value: "living root bridges and waterfalls", weight: 1 },
 	{ value: "lighthouses and corpse-towers", weight: 1 },
 	{ value: "${Jewel_singular} stairs and ${Metallic} fences", weight: 1 },
   ],
