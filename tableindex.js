@@ -704,7 +704,7 @@ const tables = {
     { value: "ears", weight: 1 },
     { value: "fingertips", weight: 1 },
     { value: "genitals", weight: 1 },
-    { value: "hair", weight: 1 },
+    { value: "hairs", weight: 1 },
     { value: "hearts", weight: 1 },
     { value: "left eyes", weight: 1 },
     { value: "left hands", weight: 1 },
@@ -713,7 +713,7 @@ const tables = {
     { value: "toes", weight: 1 },
     { value: "right eyes", weight: 1 },
     { value: "right hands", weight: 1 },
-    { value: "skin", weight: 1 },
+    { value: "skins", weight: 1 },
     { value: "teeth", weight: 1 },
     { value: "tongues", weight: 1 },
     { value: "thumbs", weight: 1 },
@@ -3676,6 +3676,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC} from the village of ${village_names}, believes that cities like ${urbn_cityname} are crowded warrens where none can experience the tranquillity of solitude", weight: 1 },
 	{ value: "the grudge between ${vancian_wizards} and ${vancian_wizards} originated ${historicalage}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, has been described as having the ${animal_analogy_noun} of ${a:animal_analogy_subject}", weight: 1 },
+	{ value: "the locals still tell tales of the deeds and exploits of the heroes of an earlier age, like when ${heroes_and_villains} ${tale_of_old}", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -14347,6 +14348,47 @@ door_type: [
 	{ value: "brave", weight: 1 },
 	{ value: "watchful", weight: 1 },
 	{ value: "vicious", weight: 1 },
+  ],
+  //locals still tell tales of heroes and villains from an earlier age, like when heroesandvillains tale_of_old
+  tale_of_old: [
+    { value: "challenged ${ntc} to ${challenge} for ${challenge_reason}", weight: 2 },
+	{ value: "challenged ${ntc} to a hunting contest and brought back ten ${hunting_trophy}s to their rival's eight", weight: 1 },
+	{ value: "and ${ntc} dueled with ${HaftedWeapons}s in the ruins of the ${historicalinfrastructure_modern_singular} for ${challenge_reason}", weight: 1 },
+	{ value: "competed with ${ntc} to see who could build the best ${historicalinfrastructure_singular}, to be adjudged by ${larger_than_life}", weight: 1 },
+	{ value: "slew ${po:ntc} beloved ${AnimalMagicMount}", weight: 1 },
+	{ value: "called on ${vancian_wizards} to summon ${a:severe_weather} to plague the forces of ${ntc}", weight: 1 },
+	{ value: "joined their forces with ${ntc} to defeat ${creepyvillain}", weight: 1 },
+	{ value: "stumped ${ntc} with a devious riddle: ${riddle}", weight: 1 },
+	{ value: "challenged ${ntc} to a singing contest and their rival's ${vocal_range} won the day", weight: 1 },
+  ],
+  
+  challenge: [
+    { value: "${a:FantasyMeal_Fruit_Berry} pie eating contest", weight: 1 },
+	{ value: "${a:alcohol} drinking contest", weight: 1 },
+	{ value: "${a:AnimalFarm}-hurling contest", weight: 1 },
+	{ value: "a performance of who could play the ${MusicalInstrument} best", weight: 1 },
+	{ value: "${mindaltering} and go on a spirit walk together", weight: 1 },
+  ],
+  
+  challenge_reason: [
+    { value: "the right to cross the ${slumberplace} River", weight: 1 },
+	{ value: "the right to woo their sister, ${FantasyNameFemale}", weight: 1 },
+	{ value: "leadership of ${membership}", weight: 1 },
+	{ value: "the right to wield the ${BladedWeapons_Sword} named ${sword_names}", weight: 1 },
+	{ value: "the right to push the boundary stones of ${foreignland} ${fairy_number} meters ${CompassDirectionPrimary}", weight: 1 },
+  ],
+  
+  hunting_trophy: [
+    { value: "centaur hide", weight: 1 },
+	{ value: "hairy hobbit toe", weight: 1 },
+	{ value: "pointed elf ear", weight: 1 },
+	{ value: "braided dwarf beard", weight: 1 },
+	{ value: "mermaid tail", weight: 1 },
+  ],
+  
+  riddle: [
+    { value: "'what has ${fairy_number} ${body_part_plural} and no ${animal_analogy_noun}?'", weight: 1 },
+	{ value: "'what's bigger than ${a:magicalcommonobject} and smaller than ${a:AnimalMainExpanded}?'", weight: 1 },
   ],
   
   
