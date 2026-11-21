@@ -435,6 +435,7 @@ const tables = {
 	{ value: " who drank the blood of ${huntingmonster} from ${a:liquid_containers_personal},", weight: 1 },
 	{ value: " who performed their dawn ablutions with ${huntingmonster_singular} blood,", weight: 1 },
 	{ value: " who stood up next to mountains and chopped them down with the edge of their hand,", weight: 1 },
+	{ value: " who called the baby ugly,", weight: 1 },
   ],
 
   hundred_words: [
@@ -1993,6 +1994,7 @@ const tables = {
 	{ value: "the shells, claws and discarded carapaces of the crustaceans who roam the oceans underground", weight: 1 },
 	{ value: "the roots of ${cod_tree_type} trees", weight: 1 },
 	{ value: "stout iron nails used in crucifixions", weight: 1 },
+	{ value: "horse-medicine", weight: 1 },
   ],
 
   excitingemployer: [
@@ -2525,6 +2527,7 @@ const tables = {
 	{ value: "drawing blood from the moon with their ${BladedWeapons_Sword}", weight: 1 },
 	{ value: "failing to ring the bell of warning when ${huntingmonster} approached the walls of ${urbn_cityname} under cover of darkness", weight: 1 },
 	{ value: "trespassing in the sacred ${landscape_types} of ${a:maneating} blessed by Law", weight: 1 },
+	{ value: "calling the divine ${po:FantasyGodNameFemale} baby ugly", weight: 1 },
   ],
 
   hero_fate: [
@@ -4218,6 +4221,7 @@ const tables = {
 	{ value: "${a:duo_jewlery_singular} of primal ${elemntl_type} that might adorn a god", weight: 1 },
 	{ value: "a map of the cramped and labyrinthine tunnels through the mountains of ${slumberplace} that the people of that land learn to navigate through as children, offering their services as guides for tremendous sums", weight: 1 },
 	{ value: "a mirror that used to hang in the tower of ${vancian_wizards} which only reflects the past or the future, never the present", weight: 1 },
+	{ value: "the gold-plated bones of a centaur", weight: 1 },
   ],
 
   membership: [
@@ -5735,6 +5739,7 @@ const tables = {
 	{ value: "the priests have sacrficed ${a:AnimalSacrifice_adj} ${AnimalSacrifice} at ${boundary_times} for unbroken centuries", weight: 1 },
 	{ value: "children are given three names at birth, their human name, their ${AnimalMain} name, and their secret name", weight: 1 },
 	{ value: "the people are said to heap praises on those who are as ${animal_analogy_adj} as ${a:animal_analogy_subject}", weight: 1 },
+	{ value: "the people value ${exchangething} more than ${Jewels}, more than good health and long life", weight: 1 },
   ],
 
   strangenoises: [
@@ -6395,6 +6400,7 @@ trap_location: [
 	{ value: "in the city of ${urbn_cityname}, every last brick and cobblestone and piece of public infrastructure bears the signature of the proud artisan who created it", weight: 1 },
 	{ value: "the ruined city of ${urbn_cityname} is haunted by ${undead_intangible}s, its silent boulevards lined with the broken statues of forgotten ${military_rank}s whose deeds may live yet in some ${po:bard_titles} song", weight: 1 },
 	{ value: "when Archon Rabindranath's lover left his ${aristocratic_home}, his heart became like the once great city of ${urbn_cityname}, a place of bricked up windows, boarded up doorways, sealed up hearths and chimneys", weight: 1 },
+	{ value: "${urbn_cityname} is said to be home to a secretive and dangerous sect of assassins who specialize in killing ${classic_classes_plural} and are recognizable by the tattoo of ${tattoos} they all bear somewhere on their body", weight: 1 },
   ],
 
    urbn_traders: [
@@ -8430,6 +8436,7 @@ trap_location: [
 	{ value: "Blikdak", weight: 1 },
 	{ value: "Unda-Hrada", weight: 1 },
 	{ value: "Errigal", weight: 1 },
+	{ value: "Pluk", weight: 1 },
   ],
   
   LowerRankedDemonName: [
@@ -8793,6 +8800,7 @@ trap_location: [
 	{ value: "last Breath", weight: 1 },
 	{ value: "balefires", weight: 1 },
 	{ value: "desert Roads", weight: 1 },
+	{ value: "unsuccessful Hunts", weight: 1 },
   ],
 
   FantasyMeal: [
@@ -12397,6 +12405,26 @@ door_type: [
 	{ value: "psionicist", weight: 1 },
 	{ value: "anti-paladin", weight: 1 },
     { value: "Scourge Aasimar multiclassed paladin / sorcerer / warlock", weight: 1 },
+  ],
+  
+  classic_classes_plural: [
+	{ value: "clerics", weight: 1 },
+    { value: "magic-users", weight: 1 },
+    { value: "fighting men", weight: 1 },
+	{ value: "thieves", weight: 1 },
+	{ value: "paladins", weight: 1 },
+    { value: "monks", weight: 1 },
+	{ value: "druids", weight: 1 },
+    { value: "bards", weight: 1 },
+    { value: "rangers", weight: 1 },
+	{ value: "illusionists", weight: 1 },
+	{ value: "knights", weight: 1 },
+    { value: "barbarians", weight: 1 },
+	{ value: "thief-acrobats", weight: 1 },
+    { value: "assassins", weight: 1 },
+	{ value: "psionicists", weight: 1 },
+	{ value: "anti-paladins", weight: 1 },
+    { value: "Scourge Aasimar multiclassed paladin / sorcerer / warlocks", weight: 1 },
   ],
   
   bard_titles: [
