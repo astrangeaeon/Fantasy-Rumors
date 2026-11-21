@@ -16,6 +16,7 @@ const tables = {
     { value: "unhappy ", weight: 1 },
 	{ value: "dark ", weight: 1 },
 	{ value: "ruined ", weight: 1 },
+	{ value: "distant ", weight: 1 },
   ],
 
   foreign_phrase: [
@@ -1744,6 +1745,7 @@ const tables = {
 	{ value: "clinging", weight: 1 },
 	{ value: "diaphanous", weight: 1 },
 	{ value: "uncomfortable", weight: 1 },
+	{ value: "ceremonial", weight: 1 },
   ],
   
   duo_clothing_material: [
@@ -1990,6 +1992,7 @@ const tables = {
 	{ value: "the ${duo_clothing_material} robes of mages and ${magicusertype}s", weight: 1 },
 	{ value: "the shells, claws and discarded carapaces of the crustaceans who roam the oceans underground", weight: 1 },
 	{ value: "the roots of ${cod_tree_type} trees", weight: 1 },
+	{ value: "stout iron nails used in crucifixions", weight: 1 },
   ],
 
   excitingemployer: [
@@ -2216,6 +2219,7 @@ const tables = {
 	{ value: "a god who dug hundreds of treasure pits into the earth when the world was still soft and young", weight: 1 },
 	{ value: "a race of miniature ${humanoids_nonhuman} who live on the back of ${a:AnimalCanine} in ${foreignland}", weight: 1 },
 	{ value: "a tiny knight known as the Knight of the Thimble who wore a thimble for a helmet", weight: 1 },
+	{ value: "${a:daemontype} daemon outfitted as a knight who hunts his own kind", weight: 1 },
   ],
 
   feature: [
@@ -2387,6 +2391,7 @@ const tables = {
 	{ value: "the dead are buried with papers and gifts to present to the lord of the dead in the ${underworld_names}", weight: 1 },
 	{ value: "vegetable seeds are placed in the mouths of the dead that grow into communal crops called graveyard ${FantasyMeal_Vegetable} or the like", weight: 1 },
 	{ value: "the dead are clothed in feathers like birds", weight: 1 },
+	{ value: "bodies are buried standing up, not at rest", weight: 1 },
   ],
 
   geas: [
@@ -2409,6 +2414,7 @@ const tables = {
 	{ value: "pass through the Gate ${gates_suffix} into the holy city of ${urbn_cityname}", weight: 1 },
 	{ value: "travel to the resting place of ${ntc} in ${foreign_adj}${foreignland}${foreign_phrase}", weight: 1 },
 	{ value: "wait at ${a:urbn_place} in ${urbn_cityname} until one dark and lithe and shiny-eyed provides further instructions", weight: 1 },
+	{ value: "climb Mount Taurus in ${foreign_adj}${foreignland}", weight: 1 },
   ],
 
   geyserspray: [
@@ -2856,6 +2862,7 @@ const tables = {
 	{ value: "undergoing the Trial of the ${tc:AnimalMain}", weight: 1 },
 	{ value: "performing the Rites of Hamm", weight: 1 },
 	{ value: "smoking the pungent ${cod_tree_type} leaves", weight: 1 },
+	{ value: "organizing a three-day festival centered on the wonders of ${FantasyMeal_Vegetable_plural}", weight: 1 },
   ],
 
   housething: [
@@ -3333,6 +3340,7 @@ const tables = {
 	{ value: "the Lord of the Sun-realm", weight: 1 },
 	{ value: "the ${tc:religious_ranks} and his laughing gulls", weight: 1 },
 	{ value: "${EgyptianNameMale}, the ${ordinal} prince of the ${uc:ordinal} Dynasty, mummified when he was eight years old", weight: 1 },
+	{ value: "the ${AnimalFamiliar}-god ${FantasyGodName}", weight: 1 },
   ],
 
   kinganimal: [
@@ -3564,6 +3572,7 @@ const tables = {
 	{ value: "the Devil's Ladder", weight: 1 },
 	{ value: "the Cave of the Cats", weight: 1 },
 	{ value: "the harsh desert of Pityus", weight: 1 },
+	{ value: "Mount Athos", weight: 1 },
   ],
 
   lawnornament: [
@@ -3781,6 +3790,7 @@ const tables = {
 	{ value: "open ${a:theme_tavern}", weight: 1 },
 	{ value: "join the ${tc:guild_adj} ${tc:guild_synonym} of ${tc:QuickNPCJobMid}s and become ${tc:a:guild_rank}", weight: 1 },
 	{ value: "learn the ways of the ${ancientpeople}, who were known as the ${tc:type_peoples}-People", weight: 1 },
+	{ value: "domesticate one of the ${animal_adj1} ${animal_adj2} ${AnimalPest}s found in ${foreignland}", weight: 1 },
   ],
 
   local_racist: [
@@ -3927,6 +3937,7 @@ const tables = {
 	{ value: "the ${AnimalBigCat} with the golden key in its mouth returned as it does every seven years", weight: 1 },
 	{ value: "${FantasyName}, a local ${QuickNPCJob}, lost their ${duo_clothing_singular} in the ${uc:Jewel_singular} District of ${urbn_cityname}, only to find it had somehow made its way back to their ${local_domestic_spaces}", weight: 1 },
 	{ value: "the children have been insisting that ${a:WeirdFantasyMonster} now lives under the bridge, but adults have not seen anything out of the ordinary", weight: 1 },
+	{ value: "a pixie has moved into ${po:FantasyName} bird house", weight: 1 },
   ],
 
   localtopic: [
@@ -7452,6 +7463,7 @@ trap_location: [
 	{ value: "is near the ruined tower where ${vancian_wizards} of old was said to consult with the preserved heads of three ancient ${ancientpeople_singular} kings", weight: 1 },
 	{ value: "attracts an uncivilized giant whose stony shits are the size of ${a:AnimalDogBreed}", weight: 1 },
 	{ value: "marks a plot of land where fallen trees lay undecayed, where nature's works are stopt", weight: 1 },
+	{ value: "marks where a group of ${huntingmonster}, blessed by the ${AnimalFamiliar}-god ${FantasyGodName}, make their home", weight: 1 },
   ],
 
   wilds_hook2: [
@@ -7980,7 +7992,7 @@ trap_location: [
     { value: "cat", weight: 1 },
     { value: "rat", weight: 1 },
     { value: "dog", weight: 1 },
-    { value: "ferret", weight: 1 },
+    { value: "weasel", weight: 1 },
     { value: "bird", weight: 1 },
 	{ value: "toad", weight: 1 },
 	{ value: "rabbit", weight: 1 },
@@ -9858,6 +9870,7 @@ inherited_traits: [
 	{ value: "are all born with fingers and toes twice the average length", weight: 1 },
 	{ value: "are said to be descended from those unfortunate ${trap_builder} who were forced to spend their lives digging mile-wide graves so they'd be ready when the titans died at last", weight: 1 },
 	{ value: "can hold their breath forever", weight: 1 },
+	{ value: "are known to be hated by all ${AnimalCategory}", weight: 1 },
   ],
 
 tail_type: [
@@ -10304,6 +10317,7 @@ celebration_type: [
 	{ value: "Saint ${SaintName} ${miracles}", weight: 1 },
 	{ value: "${prophetic_subject} casting a silver line and a golden hook baited with ${a:Jewel_singular} into the Lake of Dreams to catch the sea-dragon ${dragon_name}", weight: 1 },
 	{ value: "a herd of ${herd_adj} ${herdanimal}${herdwith} in the ${landscape_types} of ${foreign_adj}${foreignland}", weight: 1 },
+	{ value: "the common people of ${urbn_cityname} celebrating ${holiday} by ${holiday_celebration}", weight: 1 },
   ],
   
   
@@ -14009,6 +14023,7 @@ door_type: [
 	{ value: "the ${DecorativeStone} statue of the ${tc:statue_adj} ${statue_subject} that's stood for decades near ${urbn_street_names} has ${statue_condition}", weight: 1 },
 	{ value: "the king's ${prophetic_visionary} gave displeasing counsel and was forced from their roomy ${aristocratic_home} to live in ${a:liquid_containers_large} in an alcove on the outer walls of the city", weight: 1 },
 	{ value: "real ${trap_builder} have moved into the picturesque artifical ruins on the grounds of the baron's ${aristocratic_home}", weight: 1 },
+	{ value: "the nearby farms have been mysteriously abandoned, threatening the city with famine", weight: 1 },
   ],
   
   damaged_city_thing: [
@@ -14257,6 +14272,7 @@ door_type: [
 	{ value: "royal", weight: 1 },
 	{ value: "secret", weight: 1 },
 	{ value: "glorious", weight: 1 },
+	{ value: "ancient", weight: 1 },
   ],
   
   guild_synonym: [
@@ -14360,6 +14376,7 @@ door_type: [
 	{ value: "joined their forces with ${ntc} to defeat ${creepyvillain}", weight: 1 },
 	{ value: "stumped ${ntc} with a devious riddle: ${riddle}", weight: 1 },
 	{ value: "challenged ${ntc} to a singing contest and their rival's ${vocal_range} won the day", weight: 1 },
+	{ value: "swung the dragon ${dragon_name} over their head by the tail and hurled it onto the moon", weight: 1 },
   ],
   
   challenge: [
@@ -14384,11 +14401,30 @@ door_type: [
 	{ value: "pointed elf ear", weight: 1 },
 	{ value: "braided dwarf beard", weight: 1 },
 	{ value: "mermaid tail", weight: 1 },
+	{ value: "dry lizardfolk tail", weight: 1 },
   ],
   
   riddle: [
     { value: "'what has ${fairy_number} ${body_part_plural} and no ${animal_analogy_noun}?'", weight: 1 },
 	{ value: "'what's bigger than ${a:magicalcommonobject} and smaller than ${a:AnimalMainExpanded}?'", weight: 1 },
+  ],
+  
+  animal_adj1: [
+    { value: "curious", weight: 1 },
+	{ value: "playful", weight: 1 },
+	{ value: "intelligent", weight: 1 },
+	{ value: "man-eating", weight: 1 },
+	{ value: "adorable", weight: 1 },
+	{ value: "sinister", weight: 1 },
+  ],
+  
+  animal_adj2: [
+    { value: "spotted", weight: 1 },
+	{ value: "striped", weight: 1 },
+	{ value: "${Colors}", weight: 1 },
+	{ value: "tailless", weight: 1 },
+	{ value: "patterned", weight: 1 },
+	{ value: "double-tailed", weight: 1 },
   ],
   
   
