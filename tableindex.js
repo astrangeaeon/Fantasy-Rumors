@@ -140,6 +140,7 @@ const tables = {
 	{ value: " with its eerie ${Colors} mists and fogs", weight: 1 },
 	{ value: " with its children bald and wrinkled like old men", weight: 1 },
 	{ value: " with its strange tailless ${AnimalPest}s", weight: 1 },
+	{ value: " where it's so cold bread must be chopped with an axe", weight: 1 },
   ],
 
   herdwith: [
@@ -888,6 +889,7 @@ const tables = {
 	{ value: "the auburn hair of maidens", weight: 1 },
 	{ value: "ghosts of rain from the Baarish Desert", weight: 1 },
 	{ value: "peculiar ${MusicalInstrument}s and other instruments from ${foreignland}", weight: 1 },
+	{ value: "the tiny skeletons of hobbits and gnomes and fairies", weight: 1 },
   ],
 
   construction_help: [
@@ -2562,7 +2564,7 @@ const tables = {
 	{ value: "has rested these past ${fairy_number} years in a magical slumber", weight: 1 },
 	{ value: "was laid low by a two-headed ${humanoid_monsters} with one Bloodsucking Head and one Disgorging Head", weight: 1 },
 	{ value: "the bones of their hands and all their other bones now lay scattered about the ${floors} floor", weight: 1 },
-	{ value: "fills their vacant hours with prayer, neither business nor pleasure", weight: 1 },
+	{ value: "now fills their vacant hours with prayer, neither business nor pleasure", weight: 1 },
 	{ value: "was broken upon the Wheel of the Law", weight: 1 },
 	{ value: "encountered a creature that resembled ${a:AnimalWater} or ${a:AnimalPredator} but composed entirely out of living ${elemntl_type}", weight: 1 },
 	{ value: "was impaled on the wide hunting spear of ${a:humanoid_monsters}", weight: 1 },
@@ -2579,6 +2581,7 @@ const tables = {
 	{ value: "was blessed by Saint ${SaintName} ${saint_blessing}", weight: 1 },
 	{ value: "was defeated by ${a:humanoid_monsters} who played ${a:MusicalInstrument} and wore ${a:Colors} ${duo_clothing_singular}", weight: 1 },
 	{ value: "escaped with their life, but none of their luck", weight: 1 },
+	{ value: "learnt a bitter truth from an oracular fish on the ${floors} floor, that they had died ${when} ago, but forgotten, and the memory restored, they watched as their body ${cause_of_death}", weight: 1 },
   ],
 
   hero_goal: [
@@ -3267,6 +3270,7 @@ const tables = {
 	{ value: "a lesser ${lesser_monsters}", weight: 1 },
 	{ value: "amphibious vampires who feed on the blood of sharks and squid", weight: 1 },
 	{ value: "a child vampire", weight: 1 },
+	{ value: "giants whose stone-hard teeth have no trouble crunching the teeth and bones of men, which they treat as a delicacy", weight: 1 },
   ],
 
   island_riches: [
@@ -3344,6 +3348,7 @@ const tables = {
 	{ value: "the ${tc:religious_ranks} and his laughing gulls", weight: 1 },
 	{ value: "${EgyptianNameMale}, the ${ordinal} prince of the ${uc:ordinal} Dynasty, mummified when he was eight years old", weight: 1 },
 	{ value: "the ${AnimalFamiliar}-god ${FantasyGodName}", weight: 1 },
+	{ value: "the ${uc:Colors} Priests and ${uc:Jewel_singular}-wearers of ${foreign_adj}${foreignland}", weight: 1 },
   ],
 
   kinganimal: [
@@ -3689,6 +3694,7 @@ const tables = {
 	{ value: "the grudge between ${vancian_wizards} and ${vancian_wizards} originated ${historicalage}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC}, has been described as having the ${animal_analogy_noun} of ${a:animal_analogy_subject}", weight: 1 },
 	{ value: "the locals still tell tales of the deeds and exploits of the heroes of an earlier age, like when ${heroes_and_villains} ${tale_of_old}", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC} from the village of ${village_names}, believes cities like ${urbn_cityname} are desperate warrens peopled solely by worshippers of gold and stranglers of the weak", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -3941,6 +3947,8 @@ const tables = {
 	{ value: "${FantasyName}, a local ${QuickNPCJob}, lost their ${duo_clothing_singular} in the ${uc:Jewel_singular} District of ${urbn_cityname}, only to find it had somehow made its way back to their ${local_domestic_spaces}", weight: 1 },
 	{ value: "the children have been insisting that ${a:WeirdFantasyMonster} now lives under the bridge, but adults have not seen anything out of the ordinary", weight: 1 },
 	{ value: "a pixie has moved into ${po:FantasyName} bird house", weight: 1 },
+	{ value: "the vines have grown dagger-sized thorns", weight: 1 },
+	{ value: "the cats have begun to eat books", weight: 1 },
   ],
 
   localtopic: [
@@ -4222,6 +4230,9 @@ const tables = {
 	{ value: "a map of the cramped and labyrinthine tunnels through the mountains of ${slumberplace} that the people of that land learn to navigate through as children, offering their services as guides for tremendous sums", weight: 1 },
 	{ value: "a mirror that used to hang in the tower of ${vancian_wizards} which only reflects the past or the future, never the present", weight: 1 },
 	{ value: "the gold-plated bones of a centaur", weight: 1 },
+	{ value: "the bejeweled skull of ${vancian_wizards} with its 300 teeth", weight: 1 },
+	{ value: "the ten-fingered skeletal left arm of ${vancian_wizards}", weight: 1 },
+	{ value: "a golden urn filled with the tears of Saint ${SaintName}", weight: 1 },
   ],
 
   membership: [
@@ -6401,6 +6412,8 @@ trap_location: [
 	{ value: "the ruined city of ${urbn_cityname} is haunted by ${undead_intangible}s, its silent boulevards lined with the broken statues of forgotten ${military_rank}s whose deeds may live yet in some ${po:bard_titles} song", weight: 1 },
 	{ value: "when Archon Rabindranath's lover left his ${aristocratic_home}, his heart became like the once great city of ${urbn_cityname}, a place of bricked up windows, boarded up doorways, sealed up hearths and chimneys", weight: 1 },
 	{ value: "${urbn_cityname} is said to be home to a secretive and dangerous sect of assassins who specialize in killing ${classic_classes_plural} and are recognizable by the tattoo of ${tattoos} they all bear somewhere on their body", weight: 1 },
+	{ value: "${urbn_cityname}, the City of ${urbn_citynickname}, is full of plastic men who change values and beliefs like others change their ${duo_clothing}", weight: 1 },
+	{ value: "due to an old tradition, ${violent_profession_plural} and ${classic_classes_plural} gather in the ${urbn_place_plural} of ${urbn_cityname} to swap stories and share ${alcohol} in celebration of ${holiday}", weight: 1 },
   ],
 
    urbn_traders: [
@@ -7028,6 +7041,7 @@ trap_location: [
 	{ value: "${a:undead} whose soul is too weighted with sin and regret to depart to the ${afterlife}", weight: 1 },
 	{ value: "the great artist ${artists}, said to also be ${a:criminal_singular},", weight: 1 },
 	{ value: "a neutral colporteur with books about the divine ${RealGods} and saints like Saint ${SaintName} as well as tomes about the daemon lord ${DemonName} and infernal ${military_rank}s with names like ${LowerRankedDemonName}", weight: 1 },
+	{ value: "a master of bowing and handclaspings", weight: 1 },
   ],
 
   urbn_subjectverb: [
@@ -7124,6 +7138,7 @@ trap_location: [
 	{ value: "seek to trade the wisdom of the serpent for the innocence of the dove", weight: 1 },
 	{ value: "seek to demolish with sacrilegious hands the labors of their ancestors", weight: 1 },
 	{ value: "have no qualms about using urine for evil", weight: 1 },
+	{ value: "teach lessons in blood to the over-curious", weight: 1 },
   ],
 
   urbn_verbsingular: [
@@ -8563,6 +8578,7 @@ trap_location: [
 	{ value: "Andujar", weight: 1 },
 	{ value: "Bailen", weight: 1 },
 	{ value: "Orvar", weight: 1 },
+	{ value: "Rafoo", weight: 1 },
   ],
 
   FantasyNameFemale: [
@@ -8634,6 +8650,8 @@ trap_location: [
 	{ value: "Brimble", weight: 1 },
 	{ value: "Sternwinder", weight: 1 },
 	{ value: "Tallcat", weight: 1 },
+	{ value: "Chakkar", weight: 1 },
+	{ value: "Throwater", weight: 1 },
   ],
 
   FamilyMember: [
@@ -13481,6 +13499,7 @@ door_type: [
 	{ value: "${historicalinfrastructure}", weight: 1 },
 	{ value: "${exotic_water_body}s", weight: 1 },
 	{ value: "${golem_types}", weight: 1 },
+	{ value: "${local_domestic_spaces}s", weight: 1 },
   ],
   
    local_domestic_spaces: [
