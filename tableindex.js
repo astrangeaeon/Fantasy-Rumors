@@ -2492,6 +2492,8 @@ const tables = {
 	{ value: "masterless", weight: 1 },
 	{ value: "shape-changing", weight: 1 },
 	{ value: "anguiped", weight: 1 },
+	{ value: "${animal_adj1}", weight: 1 },
+	{ value: "tattooed", weight: 1 },
   ],
 
   herdanimal: [
@@ -3695,6 +3697,7 @@ const tables = {
 	{ value: "${FantasyName}, ${a:QuickNPC}, has been described as having the ${animal_analogy_noun} of ${a:animal_analogy_subject}", weight: 1 },
 	{ value: "the locals still tell tales of the deeds and exploits of the heroes of an earlier age, like when ${heroes_and_villains} ${tale_of_old}", weight: 1 },
 	{ value: "${FantasyName}, ${a:QuickNPC} from the village of ${village_names}, believes cities like ${urbn_cityname} are desperate warrens peopled solely by worshippers of gold and stranglers of the weak", weight: 1 },
+	{ value: "${FantasyName}, ${a:QuickNPC}, has been known to ${mindaltering} at ${boundary_times} in their ${local_domestic_spaces} to make theosophical ventures into the garden of esoteric knowledge", weight: 1 },
   ],
   
   local_obtain_art: [
@@ -3948,7 +3951,7 @@ const tables = {
 	{ value: "the children have been insisting that ${a:WeirdFantasyMonster} now lives under the bridge, but adults have not seen anything out of the ordinary", weight: 1 },
 	{ value: "a pixie has moved into ${po:FantasyName} bird house", weight: 1 },
 	{ value: "the vines have grown dagger-sized thorns", weight: 1 },
-	{ value: "the cats have begun to eat books", weight: 1 },
+	{ value: "the cats have begun to lick the words out of books", weight: 1 },
   ],
 
   localtopic: [
@@ -12047,6 +12050,7 @@ ship_type: [
 	{ value: "The Rash Oath of the Baron", weight: 1 },
 	{ value: "Bowstrings and Arrowheads", weight: 1 },
 	{ value: "The Raccoon Opera", weight: 1 },
+	{ value: "Crossing the Border", weight: 1 },
   ],
   
   
@@ -12889,6 +12893,7 @@ door_type: [
 	{ value: "to be unwelcoming, with no fire in the hearth and no wine or beer or cider", weight: 1 },
 	{ value: "to have been built by a drunk carpenter and an idiotic mason", weight: 1 },
 	{ value: "to have a courtyard that rings at all hours with the clangor of sword-play and manly sport", weight: 1 },
+	{ value: "to have trained ${AnimalSimian}s that dance ${dance}", weight: 1 },
   ],
   
   castle_moat: [
@@ -13249,6 +13254,7 @@ door_type: [
 	{ value: "Book of the ${tc:classic_classes}", weight: 1 },
 	{ value: "Book of ${DemonName}", weight: 1 },
 	{ value: "Book of ${uc:crowns_metal_type}", weight: 1 },
+	{ value: "Annals of Saint ${SaintName}", weight: 1 },
   ],
   
   book_synonyms: [
@@ -14424,6 +14430,7 @@ door_type: [
 	{ value: "stumped ${ntc} with a devious riddle: ${riddle}", weight: 1 },
 	{ value: "challenged ${ntc} to a singing contest and their rival's ${vocal_range} won the day", weight: 1 },
 	{ value: "swung the dragon ${dragon_name} over their head by the tail and hurled it onto the moon", weight: 1 },
+	{ value: "lost their left arm to the hungry ${HaftedWeapons} of ${ntc}", weight: 1 },
   ],
   
   challenge: [
