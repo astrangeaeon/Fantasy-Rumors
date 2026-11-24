@@ -6354,7 +6354,7 @@ trap_location: [
 	{ value: "storied ${urbn_cityname}, home of ${landmark_manmade} and known for its Guild of the ${uc:QuickNPCJob}, whose members all wear ${Colors} ${duo_clothing}, is actually a paper city, existing only on maps and in the tales of dishonest travelers", weight: 2 },
 	{ value: "The ${urbn_traders} who flock to ${urbn_street_names} in ${urbn_cityname} trade in all manner of goods, from ${MerchantGoods} and ${Tools}s to ${exchangething} and ${collection}", weight: 3 },
 	{ value: "the city of ${urbn_cityname} was founded by ${criminals_esoteric} and ${criminals} and is governed today by the same", weight: 2 },
-	{ value: "the ${art_visual_painting} that once hung in the ${aristocratic_home} of an eccentric ${humanoid}, ${aristocratic_extra}, recently surfaced in a vendor's tent on ${urbn_street_names}", weight: 3 },
+	{ value: "${a:art_visual_painting}${urban_art_history} recently surfaced in a vendor's tent on ${urbn_street_names}", weight: 3 },
 	{ value: "an unpopular embargo on imported ${Tools}s, ${MusicalInstrument}s and ${FantasyMeal_Fruit_plural} has driven the desperate into the arms of the venal black market ${urbn_traders} of ${urbn_street_names}", weight: 2 },
 	{ value: "the city of ${urbn_cityname} is the home of a living weapon named ${sword_names}, ${a:BladedWeapons_Sword} that ${sword_desire}", weight: 2 },
 	{ value: "the most prosperous ${QuickNPCJobRich} in the city of ${urbn_cityname} is actually ${a:humanoid_exotic} ${prosperous_extra}", weight: 2 },
@@ -8582,6 +8582,7 @@ trap_location: [
 	{ value: "Bailen", weight: 1 },
 	{ value: "Orvar", weight: 1 },
 	{ value: "Rafoo", weight: 1 },
+	{ value: "Gleb", weight: 1 },
   ],
 
   FantasyNameFemale: [
@@ -10347,6 +10348,10 @@ celebration_type: [
 	{ value: "${prophetic_subject} casting a silver line and a golden hook baited with ${a:Jewel_singular} into the Lake of Dreams to catch the sea-dragon ${dragon_name}", weight: 1 },
 	{ value: "a herd of ${herd_adj} ${herdanimal}${herdwith} in the ${landscape_types} of ${foreign_adj}${foreignland}", weight: 1 },
 	{ value: "the common people of ${urbn_cityname} celebrating ${holiday} by ${holiday_celebration}", weight: 1 },
+	{ value: "${prophetic_subject} planting the first flowers in the Garden of Ynn", weight: 1 },
+	{ value: "the ${FantasyLastName} Expedition, who sought ${expeditions} ${when} ago, coming upon ${landmark_natural} at ${boundary_times}", weight: 1 },
+	{ value: "workers constructing ${landmark_manmade} with the aid of ${construction_help} under order from ${tc:RoyalTitleMale} ${FantasyLastName} ${construction_motivation}", weight: 1 },
+	{ value: "${prophetic_subject} laying down the first stones of what would become the great city of ${urbn_cityname}", weight: 1 },
   ],
   
   
@@ -14077,6 +14082,7 @@ door_type: [
 	{ value: "the king's ${prophetic_visionary} gave displeasing counsel and was forced from their roomy ${aristocratic_home} to live in ${a:liquid_containers_large} in an alcove on the outer walls of the city", weight: 1 },
 	{ value: "real ${trap_builder} have moved into the picturesque artifical ruins on the grounds of the baron's ${aristocratic_home}", weight: 1 },
 	{ value: "the nearby farms have been mysteriously abandoned, threatening the city with famine", weight: 1 },
+	{ value: "${FantasyNameMale} the great ${criminal_singular} was captured and sentenced to hang, but the sentence was poorly executed, and so by law he was let go and remains at large", weight: 1 },
   ],
   
   damaged_city_thing: [
@@ -14479,6 +14485,15 @@ door_type: [
 	{ value: "tailless", weight: 1 },
 	{ value: "patterned", weight: 1 },
 	{ value: "double-tailed", weight: 1 },
+  ],
+  
+  urban_art_history: [
+    { value: " that once hung in the ${aristocratic_home} of an eccentric ${humanoid}, ${aristocratic_extra},", weight: 1 },
+	{ value: " that was thought destroyed when ${po:ntc} army of ${violent_profession_plural} captured the city of ${urbn_cityname},", weight: 1 },
+	{ value: " that smells faintly of ${FantasyMeal_Fruit_Berry} like all genuine works by ${artists}", weight: 1 },
+	{ value: " by ${artists} (actually a cunning forgery),", weight: 1 },
+	{ value: ", clearly full of rich symbolic meanings,", weight: 1 },
+	{ value: " that was last seen as part of the dowry of ${tc:RoyalTitleFemale} ${FantasyNameFemale},", weight: 1 },
   ],
   
   
